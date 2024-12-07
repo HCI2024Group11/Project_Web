@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn English</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/header.css" />
+
+    <style>
+        /* Phần main */
+        main {
+            padding: 10px;
+        }
+
+        /* Phần giới thiệu */
+        .intro {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .intro h1 {
+            font-size: 36px;
+            color: #333;
+            margin-bottom: 10px;
+            text-align: left;
+            margin-left: 160px;
+            /* Thêm một khoảng cách bên trái để xích qua phải */
+        }
+
+        /* Bố trí hình ảnh và phần text bên phải */
+        .image-container {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .image-container img {
+            width: 80%;
+            height: 80%;
+            max-width: 1500px;
+            border-radius: 10px;
+            /* Bo tròn các góc của hình ảnh */
+        }
+
+
+        .text-overlay {
+            position: absolute;
+            right: 180px;
+            bottom: 50px;
+            color: white;
+            white-space: nowrap;
+            text-align: center;
+            display: flex;
+            /* Đặt thành flexbox để xếp các phần tử trên cùng một hàng */
+            align-items: center;
+            /* Căn giữa các phần tử theo chiều dọc */
+        }
+
+        .text-overlay p {
+            font-size: 25px;
+            margin-right: 20px;
+            /* Khoảng cách giữa văn bản và nút */
+            background-color: rgba(31, 30, 30, 0.6);
+            /* Nền mờ */
+            padding: 1%;
+            /* Padding chỉ bao quanh text */
+            display: inline-block;
+            /* Lọc phần nền chữ theo đúng kích thước chữ */
+            border-radius: 5px;
+            /* Bo tròn nền chữ */
+        }
+
+        .text-overlay button {
+            padding: 10px 40px;
+            font-size: 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 58px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .text-overlay button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <link rel="stylesheet" href="css/header.css">
+
+        <div class="logoweb">
+            <a href="index.html" style="text-decoration: none; color: inherit; display: flex; align-items: center;">
+                <img src="assets/img/logoWeb.png" alt="LearnEnglish" style="margin-right: 5px;">
+                <!-- Thêm margin-right để tạo khoảng cách giữa logo và chữ -->
+                <span><b>LearnEnglish</b></span>
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="course.html">Course</a></li>
+                <li><a href="flashcards.html">Flashcards</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="progressTracking.html">ProgressTracking</a></li>
+                <li><a href="Gamification.html" class="active">Gamification</a></li>
+                <li><a href="signIn.html" class="signIn">Sign In</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h1>Welcome to a new day of growth and possibilities!</h1>
+            <div class="image-container">
+                <img src="assets/img/blog.jpg" alt="English Learning" />
+                <div class="text-overlay">
+                    <p>Unlock your potential – Free and reliable English</p>
+                    <button>Start!</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="footer-wrapper">
+        <link rel="stylesheet" href="/css/footer.css" />
+        <div class="footer-container">
+            <footer>
+                <div class="footer-row">
+                    <!-- Logo và các mạng xã hội -->
+                    <div class="footer-col">
+                        <a href="index.html" style="
+                  text-decoration: none;
+                  color: inherit;
+                  display: flex;
+                  align-items: center;
+                ">
+                            <img src="assets/img/logoWeb.png" height="65" style="margin-right: 5px" />
+                            <!-- Thêm margin-right để tạo khoảng cách giữa logo và chữ -->
+                            <span><b>LearnEnglish</b></span>
+                        </a>
+
+                        <div class="site-socials">
+                            <!-- Facebook -->
+                            <a target="_blank" href="https://facebook.com">
+                                <img class="social-link" src="assets/img/fb_logo.jpg" height="50" />
+                            </a>
+                            <!-- Instagram -->
+                            <a target="_blank" href="https://instagram.com">
+                                <img class="social-link" src="assets/img/ins_logo.jpg" height="50" />
+                            </a>
+                            <!-- Tiktok -->
+                            <a target="_blank" href="https://www.tiktok.com">
+                                <img class="social-link" src="assets/img/tik_logo.jpg" height="50" />
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Liên kết các mục của footer -->
+                    <div class="footer-col">
+                        <div class="footer-title">STUDY4</div>
+                        <ul class="footer-links">
+                            <li><a href="/about/">Về chúng tôi</a></li>
+                            <li><a href="/contact/">Liên hệ</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <div class="footer-title">Tài nguyên</div>
+                        <ul class="footer-links">
+                            <li><a href="/tests/">Thư viện đề thi</a></li>
+                            <li><a href="/posts/">Blog</a></li>
+                            <li><a href="/materials/">Kho tài liệu</a></li>
+                            <li><a href="/groups/">Nhóm học tập</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <div class="footer-title">Chính sách chung</div>
+                        <ul class="footer-links">
+                            <li><a href="/user-guide/">Hướng dẫn sử dụng</a></li>
+                            <li><a href="/buying-guide/">Hướng dẫn thanh toán</a></li>
+                            <li><a href="/privacy/">Điều khoản bảo mật</a></li>
+                            <li><a href="/terms/">Điều khoản sử dụng</a></li>
+                            <li>
+                                <a href="/buying-terms/">Điều khoản và Điều Kiện Giao Dịch</a>
+                            </li>
+                            <li><a href="/checkout-policy">Chính sách kiểm hàng</a></li>
+                            <li>
+                                <a href="/delivery-policy">Chính sách giao, nhận hàng</a>
+                            </li>
+                            <li><a href="/feedback/">Phản hồi, khiếu nại</a></li>
+                            <li>
+                                <a href="/return-policy">Chính sách chuyển đổi, hoàn hủy</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

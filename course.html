@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn English</title>
+    <link rel="stylesheet" href="css/course.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/header.css" />
+  </head>
+
+  <body>
+    <header>
+      <link rel="stylesheet" href="css/header.css">
+
+      <div class="logoweb">
+          <a href="index.html" style="text-decoration: none; color: inherit; display: flex; align-items: center;">
+              <img src="assets/img/logoWeb.png" alt="LearnEnglish" style="margin-right: 5px;">
+              <!-- Thêm margin-right để tạo khoảng cách giữa logo và chữ -->
+              <span><b>LearnEnglish</b></span>
+          </a>
+      </div>
+      <nav>
+          <ul>
+              <li><a href="course.html" class="active"  >Course</a></li>
+              <li><a href="flashcards.html" >Flashcards</a></li>
+              <li><a href="blog.html" >Blog</a></li>
+              <li><a href="progressTracking.html">ProgressTracking</a></li>
+              <li><a href="Gamification.html">Gamification</a></li>
+              <li><a href="signIn.html" class="signIn">Sign In</a></li>
+          </ul>
+      </nav>
+  </header>
+  
+    <!-- Main Course Section -->
+    <section class="course-section container mx-auto">
+      <h2 class="course-title1">Course</h2>
+
+      <!-- Search Bar -->
+      <div class="search-bar">
+        <input
+          type="text"
+          id="searchInput"
+          oninput="searchCourses()"
+          placeholder="Tìm kiếm khóa học..."
+        />
+      </div>
+
+      <!-- Course 1 -->
+      <div class="course-card course">
+        <img src="assets/img/course_1.png" alt="Course Logo" />
+        <div class="course-info">
+          <h3 class="course-title">
+            Combo 4 kỹ năng IELTS Intensive [Tặng TED Talks]
+          </h3>
+          <div class="course-meta">
+            <span>4.9 </span>
+            <span>(630 Đánh giá)</span>
+            <span>98,671 Học viên</span>
+          </div>
+          <ul>
+            <li>✅ Dành cho các bạn từ band 4.0 trở lên</li>
+            <li>✅ Sở hữu trọn bộ 4 khóa học IELTS Intensive online</li>
+            <li>
+              ✅ Tặng kèm khóa Luyện nghe nói tiếng Anh cùng TED Talks trị giá
+              599k
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Course 2 -->
+      <div class="course-card course">
+        <img src="assets/img/course_2.png" alt="Course Logo" />
+        <div class="course-info">
+          <h3 class="course-title">
+            Combo Advanced IELTS Intensive kèm chấm chữa giáo viên bản ngữ [Tặng
+            khóa TED Talks]
+          </h3>
+          <div class="course-meta">
+            <span>4.9 </span>
+            <span>(680 Đánh giá)</span>
+            <span>107,333 Học viên</span>
+          </div>
+          <ul>
+            <li>✅ Dành cho các bạn từ band 4.0 trở lên, target 7.0+</li>
+            <li>✅ Sở hữu trọn bộ 4 khóa học IELTS Intensive online</li>
+            <li>
+              ✅ 500 bài học và hơn 2000 bài thực hành từ vựng, ngữ pháp
+              mini-game
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Course 3 -->
+      <div class="course-card course">
+        <img src="assets/img/course_3.png" alt="Course Logo" />
+        <div class="course-info">
+          <h3 class="course-title">
+            Combo lộ trình IELTS từ 0-7+ kèm chấm chữa giáo viên bản ngữ [Tặng
+            TED Talks]
+          </h3>
+          <div class="course-meta">
+            <span>4.9 </span>
+            <span>(891 Đánh giá)</span>
+            <span>123,668 Học viên</span>
+          </div>
+          <ul>
+            <li>✅ Dành cho các bạn từ mất gốc, target band 7+</li>
+            <li>✅ Sở hữu trọn bộ 5 khóa học IELTS</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <div class="footer-wrapper">
+      <link rel="stylesheet" href="css/footer.css" />
+      <div class="footer-container">
+        <footer>
+          <div class="footer-row">
+            <!-- Logo và các mạng xã hội -->
+            <div class="footer-col">
+              <a
+                href="index.html"
+                style="
+                  text-decoration: none;
+                  color: inherit;
+                  display: flex;
+                  align-items: center;
+                "
+              >
+                <img
+                  src="assets/img/logoWeb.png"
+                  height="65"
+                  style="margin-right: 5px"
+                />
+                <!-- Thêm margin-right để tạo khoảng cách giữa logo và chữ -->
+                <span><b>LearnEnglish</b></span>
+              </a>
+
+              <div class="site-socials">
+                <!-- Facebook -->
+                <a target="_blank" href="https://facebook.com">
+                  <img
+                    class="social-link"
+                    src="assets/img/fb_logo.jpg"
+                    height="50"
+                  />
+                </a>
+                <!-- Instagram -->
+                <a target="_blank" href="https://instagram.com">
+                  <img
+                    class="social-link"
+                    src="assets/img/ins_logo.jpg"
+                    height="50"
+                  />
+                </a>
+                <!-- Tiktok -->
+                <a target="_blank" href="https://www.tiktok.com">
+                  <img
+                    class="social-link"
+                    src="assets/img/tik_logo.jpg"
+                    height="50"
+                  />
+                </a>
+              </div>
+            </div>
+
+            <!-- Liên kết các mục của footer -->
+            <div class="footer-col">
+              <div class="footer-title">STUDY4</div>
+              <ul class="footer-links">
+                <li><a href="/about/">Về chúng tôi</a></li>
+                <li><a href="/contact/">Liên hệ</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-col">
+              <div class="footer-title">Tài nguyên</div>
+              <ul class="footer-links">
+                <li><a href="/tests/">Thư viện đề thi</a></li>
+                <li><a href="/posts/">Blog</a></li>
+                <li><a href="/materials/">Kho tài liệu</a></li>
+                <li><a href="/groups/">Nhóm học tập</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-col">
+              <div class="footer-title">Chính sách chung</div>
+              <ul class="footer-links">
+                <li><a href="/user-guide/">Hướng dẫn sử dụng</a></li>
+                <li><a href="/buying-guide/">Hướng dẫn thanh toán</a></li>
+                <li><a href="/privacy/">Điều khoản bảo mật</a></li>
+                <li><a href="/terms/">Điều khoản sử dụng</a></li>
+                <li>
+                  <a href="/buying-terms/">Điều khoản và Điều Kiện Giao Dịch</a>
+                </li>
+                <li><a href="/checkout-policy">Chính sách kiểm hàng</a></li>
+                <li>
+                  <a href="/delivery-policy">Chính sách giao, nhận hàng</a>
+                </li>
+                <li><a href="/feedback/">Phản hồi, khiếu nại</a></li>
+                <li>
+                  <a href="/return-policy">Chính sách chuyển đổi, hoàn hủy</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+  <script>
+    // JavaScript function to filter courses based on search input
+    function searchCourses() {
+        const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+        const courses = document.querySelectorAll('.course');
+
+        courses.forEach(course => {
+            const title = course.querySelector('.course-title').textContent.toLowerCase();
+            if (title.includes(searchTerm)) {
+                course.style.display = '';
+            } else {
+                course.style.display = 'none';
+            }
+        });
+    }
+
+    
+</script>
+</html>

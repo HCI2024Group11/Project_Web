@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn English</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://study4.com/static/dist/main.5889fb175716e6740219.min.css?v=1733366677">
+    <!-- <link rel="stylesheet" href="https://study4.com/static/dist/vendor.ad60eb658fc650d75097.min.css?v=1733366678">
+    <link rel="stylesheet" href="https://study4.com/static/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap">
+     -->
+    
+    <style>
+
+/* Phần main */
+main {
+  padding: 40px;
+}
+
+/* Phần giới thiệu */
+.intro {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.intro h1 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Bố trí hình ảnh và phần text bên phải */
+.image-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  max-width: 1200px;
+  border-radius: 10px; /* Bo tròn các góc của hình ảnh */
+}
+
+.text-overlay {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  color: white;
+  text-align: center;
+}
+
+.text-overlay p {
+  font-size: 18px;
+  margin-bottom: 15px;
+  background-color: rgba(0, 0, 0, 0.6);  /* Nền mờ */
+  padding: 1%;   /* Padding chỉ bao quanh text */
+  display: inline-block; /* Lọc phần nền chữ theo đúng kích thước chữ */
+  border-radius: 5px; /* Bo tròn nền chữ */
+}
+
+/* Nút Start assessment không có nền đen */
+.text-overlay button {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 58px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.text-overlay button:hover {
+  background-color: #0056b3;
+}
+
+
+    </style>
+</head>
+
+<body>
+    <header> <link rel="stylesheet" href="css/header.css">
+      <div class="logoweb">
+        <a href="index.html" style="text-decoration: none; color: inherit; display: flex; align-items: center;">
+          <img src="logoWeb.png" alt="LearnEnglish" style="margin-right: 10px;"> <!-- Thêm margin-right để tạo khoảng cách giữa logo và chữ -->
+          <span>LearnEnglish</span> 
+        </a>
+      </div>
+        <nav>
+            <ul>
+                <li><a href="course.html" >Course</a></li>
+                <li><a href="flashcards.html">Flashcards</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="progressTracking.html">ProgressTracking</a></li>
+                <li><a href="Gamification.html">Gamification</a></li>
+                <li><a href="signIn.html" class="signIn">Sign In</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="intro">
+            <h1>Welcome to a new day of growth and possibilities!</h1>
+            <div class="image-container">
+                <img src="anhnen.svg" alt="English Learning">
+                <div class="text-overlay">
+                    <p>Unlock your potential – Free and reliable English</p>
+                    <button>Start !</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+    <div class="footer-wrapper">
+        <link rel="stylesheet" href="/css/footer.css">
+        <div class="footer-container">
+            <footer>
+                <div class="footer-row">
+                    <!-- Logo và các mạng xã hội -->
+                    <div class="footer-col">
+                        <a href="index.html"
+                            style="text-decoration: none; color: inherit; display: flex; align-items: center;">
+                            <img src="assets/img/logoWeb.png" height="65" style="margin-right: 5px;">
+                            <!-- Thêm margin-right để tạo khoảng cách giữa logo và chữ -->
+                            <span><b>LearnEnglish</b></span>
+                        </a>
+
+                        <div class="site-socials">
+                            <!-- Facebook -->
+                            <a target='_blank' href='https://facebook.com'>
+                                <img class='social-link' src='/assets/img/fb_logo.jpg' height="50">
+                            </a>
+                            <!-- Instagram -->
+                            <a target='_blank' href='https://instagram.com'>
+                                <img class='social-link' src='/assets/img/ins_logo.jpg' height="50" >
+                            </a>
+                            <!-- Tiktok -->
+                            <a target='_blank' href='https://www.tiktok.com'>
+                                <img class='social-link' src='/assets/img/tik_logo.jpg' height="50">
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Liên kết các mục của footer -->
+                    <div class="footer-col">
+                        <div class='footer-title'>STUDY4</div>
+                        <ul class="footer-links">
+                            <li><a href="/about/">Về chúng tôi</a></li>
+                            <li><a href="/contact/">Liên hệ</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <div class='footer-title'>Tài nguyên</div>
+                        <ul class="footer-links">
+                            <li><a href="/tests/">Thư viện đề thi</a></li>
+                            <li><a href="/posts/">Blog</a></li>
+                            <li><a href="/materials/">Kho tài liệu</a></li>
+                            <li><a href="/groups/">Nhóm học tập</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <div class='footer-title'>Chính sách chung</div>
+                        <ul class="footer-links">
+                            <li><a href="/user-guide/">Hướng dẫn sử dụng</a></li>
+                            <li><a href="/buying-guide/">Hướng dẫn thanh toán</a></li>
+                            <li><a href="/privacy/">Điều khoản bảo mật</a></li>
+                            <li><a href="/terms/">Điều khoản sử dụng</a></li>
+                            <li><a href="/buying-terms/">Điều khoản và Điều Kiện Giao Dịch</a></li>
+                            <li><a href="/checkout-policy">Chính sách kiểm hàng</a></li>
+                            <li><a href="/delivery-policy">Chính sách giao, nhận hàng</a></li>
+                            <li><a href="/feedback/">Phản hồi, khiếu nại</a></li>
+                            <li><a href="/return-policy">Chính sách chuyển đổi, hoàn hủy</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- <div class='footer-addresses'>
+                <div class="footer-row">
+                    <div class="footer-col">
+                        <h5>Thông tin doanh nghiệp</h5>
+                        <ul>
+                            <li>CÔNG TY TNHH CÔNG NGHỆ TAQ</li>
+                            <li>Điện thoại liên hệ/Hotline: 099 999 8386</li>
+                            <li>Email: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="1f6c6b6a7b662b316b7a7e725f78727e7673317c7072">[email&#160;protected]</a></li>
+                            <li>Địa chỉ trụ sở: Số 15, Ngõ 208 Giải Phóng, Phường Phương Liệt, Quận Thanh Xuân, Thành phố Hà Nội, Việt Nam</li>
+                            <li>Giấy chứng nhận Đăng ký doanh nghiệp số: 0109675459 do Sở Kế hoạch và Đầu tư thành phố Hà Nội cấp</li>
+                            <li>Ngày cấp phép: 17/06/2021</li>
+                            <li>CS1: TRUNG TÂM NGOẠI NGỮ STUDY4 - Số 17, Ngõ 208 Giải Phóng, Phường Phương Liệt, Quận Thanh Xuân, Thành phố Hà Nội, Việt Nam</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class='footer-copyright text-center'>
+                © Bản quyền của Công ty TNHH Công Nghệ TAQ.
+            </div> -->
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

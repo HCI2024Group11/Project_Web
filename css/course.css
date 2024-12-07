@@ -1,0 +1,243 @@
+.fixed-button {
+    position: fixed;
+    right: 100px;  /* Khoảng cách từ bên phải */
+    bottom: 20px; /* Khoảng cách từ dưới cùng */
+    width: 100px;  /* Chiều rộng của nút */
+    height: 100px; /* Chiều cao của nút */
+    /* background-color: #007BFF; */
+    color: rgb(27, 2, 248);
+    border: none;
+    border-radius: 10px; /* Để tạo góc bo tròn */
+    display: flex;
+    flex-direction: column; /* Sắp xếp dấu cộng và chữ "To create" theo chiều dọc */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.fixed-button:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+/* Style cho dấu cộng */
+.fixed-button .plus {
+    font-size: 50px; /* Kích thước dấu "+" */
+    font-weight: bold;
+}
+
+/* Style cho chữ "To create" */
+.fixed-button .text {
+    font-size: 20px; /* Kích thước chữ "To create" */
+    margin-bottom: 15px;
+}
+
+/* Container chứa các phần tử grid */
+.termlist-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Tạo 4 cột */
+    gap: 20px; /* Khoảng cách giữa các phần tử */
+    padding: 20px;
+    justify-items: center; /* Căn giữa các phần tử trong grid */
+}
+
+/* Các phần tử trong grid */
+.termlist-grid-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 300px; /* Đảm bảo các phần tử không quá rộng */
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+/* Thêm hiệu ứng hover cho phần tử */
+.termlist-grid-item:hover {
+    transform: translateY(-5px);
+}
+
+/* Cấu trúc nội dung của phần tử */
+.termlist-grid-item-content-wrap {
+    padding: 15px;
+}
+
+/* Tiêu đề của phần tử */
+.termlist-grid-item-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Nội dung (số từ, lượt học) */
+.termlist-grid-item-content {
+    font-size: 14px;
+    color: #555;
+}
+
+.termlist-grid-item-content span {
+    color: #007BFF;
+    margin-right: 10px;
+}
+
+/* Thông tin người dùng */
+.termlist-grid-item-user {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.termlist-grid-item-user-avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.termlist-grid-item-username {
+    font-size: 14px;
+    color: #333;
+}
+
+/* Nền màu xám cho các phần tử */
+.gray-bg {
+    background-color: #f4f4f4;
+}
+
+/* Định dạng cho liên kết */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* Phần khoá học */
+.course-section {
+    margin-top: 10px; /* Để không bị che khuất bởi header */
+    padding: 1px;
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Xếp theo chiều dọc */
+    align-items: center; /* Canh giữa các phần tử */
+  }
+  
+  .course-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px; /* Khoảng cách giữa tiêu đề và các khóa học */
+  }
+  
+  .course-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%; /* Giảm bớt độ rộng để dễ dàng canh giữa */
+    max-width: 800px; /* Giới hạn chiều rộng tối đa */
+  }
+  
+  .course-card img {
+    width: 100px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .course-card .course-info {
+    flex-grow: 1;
+    margin-left: 20px;
+    text-align: left;
+  }
+  
+  .course-card .course-info h3 {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  
+  .course-card .course-info ul {
+    margin-top: 10px;
+    list-style-type: none;
+    padding-left: 0;
+    font-size: 14px;
+  }
+  
+  .course-card .course-info ul li {
+    margin-bottom: 8px;
+  }
+  
+  .course-card .course-info ul li span {
+    color: #007BFF;
+  }
+  
+  /* Thanh tìm kiếm */
+  .search-bar {
+    margin-bottom: 30px;
+  }
+  
+  .search-bar input {
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    width: 1150px;
+    font-size: 20px;
+  }
+  /* css cho course*/
+.course-card {
+  display: flex;
+  width: 100%; /* Khung chứa sẽ chiếm toàn bộ chiều ngang cha */
+  max-width: 1200px; /* Giới hạn độ rộng tối đa để trông đẹp hơn */
+  margin: 20px auto; /* Canh giữa khung theo chiều ngang */
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
+  overflow: hidden;
+}
+
+.course-card img {
+  width: 40%; /* Chiếm 40% chiều ngang của thẻ cha */
+  height: 100%; /* Kéo dài hình ảnh theo nội dung */
+  object-fit: cover; /* Giữ tỷ lệ hình ảnh và cắt bớt phần thừa nếu cần */
+}
+
+.course-info {
+  padding: 20px; /* Tạo khoảng cách bên trong nội dung */
+  width: 60%; /* Chiếm phần còn lại của khung */
+}
+
+.course-title1 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: left;
+  margin-right: 1000px;
+  white-space: nowrap;
+}
+
+.course-meta {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 15px;
+}
+
+.course-meta span {
+  margin-right: 10px;
+}
+
+.course-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.course-info li {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
