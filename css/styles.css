@@ -284,6 +284,8 @@ a {
 
 .flashcard-container h1 {
     color: #333333;
+    padding-top: 60px; /* Kéo nội dung xuống dưới header */
+    position: relative; /* Giữ vị trí cố định cho nội dung khi header di chuyển */
     margin-bottom: 5px;
 }
 

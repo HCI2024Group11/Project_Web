@@ -1,72 +1,74 @@
 /* Reset các giá trị mặc định */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-  }
-  
-  /* Thiết kế phần header */
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #fff;
-    border-bottom: 2px solid #ddd;
-  }
-  
-  .logoweb img {
-    width: 50px; /* Điều chỉnh kích thước logo */
-  }
-  
-  nav ul {
-    display: flex;
-    list-style: none;
-  }
-  
-  nav ul li {
-    margin-left: 20px;
-  }
-  
-  nav ul li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    padding: 8px 16px;
-    border-radius: 25px; /* Bo tròn các nút */
-    transition: background-color 0.3s ease, color 0.3s ease;
-  }
-  .signIn {
-    color: white;
-    background-color: #007BFF;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 8px 16px;
-    border-radius: 25px; /* Bo tròn các nút */
-    transition: background-color 0.3s ease, color 0.3s ease;
-    
-  }
-    nav ul li a.active {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    padding: 8px 16px;
-    border-radius: 25px; /* Bo tròn các nút */
-    transition: background-color 0.3s ease, color 0.3s ease;
-    
-    text-decoration: underline; /* Gạch chân */
-  }
-  
-  /* Hiệu ứng khi hover */
-  nav ul li a:hover,
-  nav ul li a:active {
-    background-color: #007BFF;
-    color: white;
-  }
-  
- 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Thiết kế phần header */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  border-bottom: 2px solid #ddd;
+  z-index: 1000; /* Đảm bảo header luôn hiển thị trên các phần tử khác */
+}
+
+.logoweb img {
+  width: 50px; /* Điều chỉnh kích thước logo */
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 25px; /* Bo tròn các nút */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.signIn {
+  color: white;
+  background-color: #2B417E;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 25px; /* Bo tròn các nút */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a.active {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 25px; /* Bo tròn các nút */
+  transition: background-color 0.3s ease, color 0.3s ease;
+  text-decoration: underline; /* Gạch chân */
+}
+
+/* Hiệu ứng khi hover */
+nav ul li a:hover,
+nav ul li a:active {
+  background-color: #007BFF;
+  color: white;
+}

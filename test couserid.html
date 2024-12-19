@@ -4,78 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learn English</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/couseid.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/f9374b778e.js" crossorigin="anonymous"></script>
    
-    <style>
-
-/* Phần main */
-main {
-  padding: 40px;
-}
-
-/* Phần giới thiệu */
-.intro {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-.intro h1 {
-  font-size: 36px;
-  color: #333;
-  margin-bottom: 20px;
-}
-
-/* Bố trí hình ảnh và phần text bên phải */
-.image-container {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.image-container img {
-  width: 100%;
-  height: auto;
-  max-width: 1200px;
-  border-radius: 10px; /* Bo tròn các góc của hình ảnh */
-}
-
-.text-overlay {
-  position: absolute;
-  right: 20px;
-  bottom: 20px;
-  color: white;
-  text-align: center;
-}
-
-.text-overlay p {
-  font-size: 18px;
-  margin-bottom: 15px;
-  background-color: rgba(0, 0, 0, 0.6);  /* Nền mờ */
-  padding: 1%;   /* Padding chỉ bao quanh text */
-  display: inline-block; /* Lọc phần nền chữ theo đúng kích thước chữ */
-  border-radius: 5px; /* Bo tròn nền chữ */
-}
-
-/* Nút Start assessment không có nền đen */
-.text-overlay button {
-  padding: 10px 20px;
-  background-color: #007BFF;
-  color: white;
-  border: none;
-  border-radius: 58px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.text-overlay button:hover {
-  background-color: #0056b3;
-}
-
-
-    </style>
+  
 </head>
 
 <body>
@@ -98,21 +34,19 @@ main {
         </nav>
     </header>
     
-    <main>
-        <section class="intro">
-            <h1>Welcome to a new day of growth and possibilities!</h1>
-            <div class="image-container">
-                <img src="assets/img/anhnen.svg" alt="English Learning">
-                <div class="text-overlay">
-                    <p>Unlock your potential – Free and reliable English</p>
-                    <button>Start !</button>
-                </div>
-            </div>
-        </section>
-    </main>
 
 
 
+
+
+
+
+
+
+
+
+
+    
     <div class="footer-wrapper"> <link rel="stylesheet" href="/css/footer.css">
         <div class="footer-container">
             <footer>
@@ -177,6 +111,22 @@ main {
                     </div>
                 </div>
 
+                <!-- <div class='footer-addresses'>
+                <div class="footer-row">
+                    <div class="footer-col">
+                        <h5>Thông tin doanh nghiệp</h5>
+                        <ul>
+                            <li>CÔNG TY TNHH CÔNG NGHỆ TAQ</li>
+                            <li>Điện thoại liên hệ/Hotline: 099 999 8386</li>
+                            <li>Email: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="1f6c6b6a7b662b316b7a7e725f78727e7673317c7072">[email&#160;protected]</a></li>
+                            <li>Địa chỉ trụ sở: Số 15, Ngõ 208 Giải Phóng, Phường Phương Liệt, Quận Thanh Xuân, Thành phố Hà Nội, Việt Nam</li>
+                            <li>Giấy chứng nhận Đăng ký doanh nghiệp số: 0109675459 do Sở Kế hoạch và Đầu tư thành phố Hà Nội cấp</li>
+                            <li>Ngày cấp phép: 17/06/2021</li>
+                            <li>CS1: TRUNG TÂM NGOẠI NGỮ STUDY4 - Số 17, Ngõ 208 Giải Phóng, Phường Phương Liệt, Quận Thanh Xuân, Thành phố Hà Nội, Việt Nam</li>
+                        </ul>
+                    </div>
+                </div>
+            </div> -->
 
             <div class='footer-copyright text-center'>
                 © Bản quyền của Công ty TNHH Công Nghệ TAQ.
@@ -185,5 +135,21 @@ main {
         </div>
     </div>
 </body>
+<script>
+    // Khởi tạo Swiper
+const swiper = new Swiper('.swiper-container', {
+    loop: false, // Không lặp lại slide
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true, // Cho phép nhấn vào pagination để điều hướng
+    },
+    slidesPerView: 1, // Hiển thị 1 slide mỗi lần
+    spaceBetween: 10, // Khoảng cách giữa các slide
+});
 
+</script>
 </html>
