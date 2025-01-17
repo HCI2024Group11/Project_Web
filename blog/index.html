@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn English</title>
+    <link rel="icon" href="/assets/img/Avatar_LearnEnglish.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/f9374b778e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+    
+    <div class="topnav1 topnav-wrapper" bis_skin_checked="1">
+        <div class="topnav-container" bis_skin_checked="1">
+            <nav class="navbar  navbar-expand-lg">
+                <span class="navbar-brand">
+                    <a class="topnav-brand" href="/">
+                        <img class="topnav-logo" src="/assets/img/Logo_LearnEnglish.svg" alt="STUDY4">
+
+                    </a>
+                </span>
+                <button class="navbar-toggler pull-xs-right d-lg-none" type="button" data-toggle="collapse"
+                    data-target="#navbar-collapse">
+                    ☰
+
+                </button>
+                <div class="d-lg-block navbar-collapse justify-content-end collapse" id="navbar-collapse"
+                    bis_skin_checked="1">
+
+                    <ul class="nav">
+
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/courses/" bis_skin_checked="1">Course</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/skills/" bis_skin_checked="1">Skill</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/flashcards/me/" bis_skin_checked="1">Flashcards</a>
+                        </li>
+
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/blog/" bis_skin_checked="1">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/general-english/" bis_skin_checked="1">General english</a>
+                        </li>
+
+
+
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/courses/activate/" bis_skin_checked="1">
+                                Kích hoạt tài khoản
+                            </a>
+                        </li>
+
+                        <li class="nav-item user-topnav dropdown d-none d-lg-block">
+                            <a class="nav-link dropdown-toggle user-topnav-profile" href="/my-account/" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" bis_skin_checked="1">
+                                <span class="account-profile-img">
+
+                                    <img src="/assets/img/user_icon.webp" alt="ChuTanTai23130280">
+
+                                </span>
+
+                            </a>
+
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" bis_skin_checked="1">
+                                <div bis_skin_checked="1">
+                                    <h6 class="dropdown-header" id="thông-báo"> Thông báo </h6>
+                                    <div id="new-notis-dropdown-content" class="jqhtml-loader dropdown-text"
+                                        data-href="/notifications/newest/" bis_skin_checked="1">
+                                        <p class="font-sm"><i>Bạn chưa có thông báo mới.</i></p>
+
+
+                                        <div class="mt-2 link font-sm" bis_skin_checked="1"><a href="/notifications/"
+                                                bis_skin_checked="1">Xem tất cả &gt;&gt;</a></div>
+                                    </div>
+                                </div>
+
+                                <div class="dropdown-divider" bis_skin_checked="1"></div>
+                                <a class="dropdown-item" href="/studyplan/" bis_skin_checked="1">Lịch học của tôi</a>
+                                <a class="dropdown-item" href="/my-account/" bis_skin_checked="1">Trang cá nhân</a>
+                                <a class="dropdown-item" href="/logout/" bis_skin_checked="1">Đăng xuất</a>
+                            </div>
+                        </li>
+                        <li class="nav-item d-lg-none">
+                            <a class="nav-link" href="/notifications/" bis_skin_checked="1">Thông báo </a>
+                        </li>
+                        <li class="nav-item d-lg-none">
+                            <a class="nav-link" href="/studyplan/" bis_skin_checked="1">Lịch học của tôi</a>
+                        </li>
+                        <li class="nav-item d-lg-none">
+                            <a class="nav-link" href="/my-account/" bis_skin_checked="1">Trang cá nhân</a>
+                        </li>
+                        <li class="nav-item d-lg-none">
+                            <a class="nav-link" href="/logout/" bis_skin_checked="1">Đăng xuất</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+<script>
+    // JavaScript để xử lý dropdown
+    document.addEventListener('DOMContentLoaded', function() {
+        const profileBtn = document.querySelector('.user-topnav-profile');
+        const dropdownMenu = document.querySelector('.dropdown-menu');
+    
+        // Toggle dropdown khi click vào profile
+        profileBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            dropdownMenu.classList.toggle('show');
+        });
+    
+        // Đóng dropdown khi click ra ngoài
+        document.addEventListener('click', function(e) {
+            if (!profileBtn.contains(e.target) && !dropdownMenu.contains(e.target)) {
+                dropdownMenu.classList.remove('show');
+            }
+        });
+    });
+</script>
+
+
+<body>
+    
+
+    <div class="content-wrapper">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-10 order-md-2">
+
+
+                    <div class="post-wrapper">
+                        <div class="center">
+
+                            <br><br>
+                            <h2 id="bài-viết-nổi-bật">
+                                Bài viết nổi bật
+
+                            </h2>
+
+                            <div class="posts-list">
+
+<!--MAU            
+-->
+                                <div class="postlist-card">
+
+
+                                    <div class="postlist-card-img md mb-2">
+                                        <a href="/blog/bo-de-du-doan-ielts-speaking-forecast-quy-3-2024-bai-mau-dang-cap-nhat/">
+                                        <img class="lazyel card-img entered loaded" data-ll-status="loaded" src="/assets/img/blog/blog1.webp">
+                                    </a>
+                                    </div>
+
+                                    <div class="postlist-card-content-wrapper">
+
+                                        <span class="d-block post-topic"><a class="font-weight-bold small" href="blog.html">IELTS SPEAKING</a></span>
+
+                                        <div class="postlist-title-wrapper">
+
+                                            <div class="postlist-card-img-sm mb-2">
+                                                <img class="lazyel card-img" data-src="assets/img/blog1.webp">
+                                            </div>
+
+                                            <div class="postlist-title"><a href="/blog/bo-de-du-doan-ielts-speaking-forecast-quy-3-2024-bai-mau-dang-cap-nhat/">Bộ đề dự đoán IELTS Speaking
+                                                    Forecast Quý 3/2024 &amp; Bài mẫu (Đang cập nhật)</a></div>
+                                        </div>
+                                        <div class="postlist-card-content card-body d-flex flex-column p-0">
+                                            <p>Trong bài viết này, STUDY4 đã tổng hợp các topic IELTS Speaking có khả
+                                                năng xuất hiện trong Bộ đề IELTS Speaking Forecast Quý 3/2024 (tháng 9
+                                                đến tháng 12).</p>
+                                        </div>
+
+                                        <div class="postlist-meta">
+                                            30/08/2024 bởi LearnEnglish
+                                            |
+                                            <span class="fal fa-comments-alt"></span> 4 bình luận
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                               
+
+                                <div class="postlist-card">
+
+
+                                    <div class="postlist-card-img md mb-2">
+                                        <a href="/blog/lo-trinh-hoc-toeic-2-ky-nang-tai-nha-dat-450-650-cho-nguoi-moi-bat-dau-cua-study4/">
+                                        <img class="lazyel card-img entered loaded" data-ll-status="loaded" src="/assets/img/blog/blog2.webp"></a>
+                                    </div>
+
+                                    <div class="postlist-card-content-wrapper">
+
+                                        <span class="d-block post-topic"><a class="font-weight-bold small" href="blog.html">KINH NGHIỆM THI TOEIC</a></span>
+
+                                        <div class="postlist-title-wrapper">
+
+                                            <div class="postlist-title"><a href="/blog/lo-trinh-hoc-toeic-2-ky-nang-tai-nha-dat-450-650-cho-nguoi-moi-bat-dau-cua-study4/">Lộ trình học TOEIC 2 kỹ năng
+                                                    tại nhà đạt 450-650+ cho người mới bắt đầu của STUDY4</a></div>
+                                        </div>
+                                        <div class="postlist-card-content card-body d-flex flex-column p-0">
+                                            <p>Bạn đang loay hoay muốn tìm lộ trình luyện TOEIC online đạt 450 - 650+?
+                                                Đọc bài viết của STUDY4 dưới đây để tìm ra câu trả lời!</p>
+                                        </div>
+
+                                        <div class="postlist-meta">
+                                            21/05/2024 bởi LearnEnglish
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+
+                                <div class="postlist-card">
+
+
+                                    <div class="postlist-card-img md mb-2">
+                                        <a href="/blog/lo-trinh-tu-hoc-ielts-online-tai-nha-tu-so-0-den-7-cua-study4/">
+
+                                        <img class="lazyel card-img entered loaded" data-ll-status="loaded" src="/assets/img/blog/blog3.webp"></a>
+                                    </div>
+
+                                    <div class="postlist-card-content-wrapper">
+
+                                        <span class="d-block post-topic"><a class="font-weight-bold small" href="blog.html">KINH NGHIỆM THI IELTS</a></span>
+
+                                        <div class="postlist-title-wrapper">
+
+                                            <div class="postlist-title"><a href="/blog/lo-trinh-tu-hoc-ielts-online-tai-nha-tu-so-0-den-7-cua-study4/">Lộ trình tự học IELTS online
+                                                    tại nhà từ số 0 đến 7+ của STUDY4</a></div>
+                                        </div>
+                                        <div class="postlist-card-content card-body d-flex flex-column p-0">
+                                            <p>Hãy cùng STUDY4 tham khảo ngay lộ trình tự học IELTS từ sơ cấp đến 7.0
+                                                chi tiết nhất ở bài viết dưới đây!</p>
+                                        </div>
+
+                                        <div class="postlist-meta">
+                                            21/05/2024 bởi LearnEnglish
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+
+
+
+
+
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+                    <div class="post-wrapper">
+                        <div class="center">
+
+
+                            <h2 id="luyện-thi-ielts
+        ----------------
+        ----------------
+        --------------------xem-thêm">
+                                Luyện thi IELTS
+
+                                <a class="ml-1 font-1 font-italic" href="/blog/luyen-thi-ielts/">
+                                    Xem thêm
+                                    <span class="fal fa-arrow-right"></span>
+                                </a>
+
+                            </h2>
+
+                            <div class="posts-list">
+
+
+                                <div class="postlist-card">
+
+
+                                    <div class="postlist-card-img md mb-2">
+                                        <a href="/blog/cac-trung-tam-hoc-ielts-o-binh-duong/">
+                                        <img class="lazyel card-img entered loaded" data-ll-status="loaded" src="/assets/img/blog/blog4.webp"></a>
+                                    </div>
+
+                                    <div class="postlist-card-content-wrapper">
+
+                                        <span class="d-block post-topic"><a class="font-weight-bold small" href="blog.html">THÔNG TIN KỲ THI IELTS</a></span>
+
+                                        <div class="postlist-title-wrapper">
+
+
+                                            <div class="postlist-title"><a href="/blog/cac-trung-tam-hoc-ielts-o-binh-duong/">Các trung tâm học IELTS ở
+                                                    Bình Dương</a></div>
+                                        </div>
+                                        <div class="postlist-card-content card-body d-flex flex-column p-0">
+                                            <p>Nếu bạn đang phân vân chưa biết chọn trung tâm nào để ôn thi IELTS ở Bình
+                                                Dương, hãy tham khảo bài viết dưới đây!</p>
+                                        </div>
+
+                                        <div class="postlist-meta">
+                                            30/11/2024 bởi LearnEnglish
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+
+                                <div class="postlist-card">
+
+
+                                    <div class="postlist-card-img md mb-2">
+                                        <a href="/blog/cac-trung-tam-hoc-ielts-o-hung-yen/">
+
+                                        <img class="lazyel card-img entered loaded" data-ll-status="loaded" src="/assets/img/blog/blog5.webp"></a>
+                                    </div>
+
+                                    <div class="postlist-card-content-wrapper">
+
+                                        <span class="d-block post-topic"><a class="font-weight-bold small" href="blog.html">THÔNG TIN KỲ THI IELTS</a></span>
+
+                                        <div class="postlist-title-wrapper">
+
+
+                                            <div class="postlist-title"><a href="/blog/cac-trung-tam-hoc-ielts-o-hung-yen/">Các trung tâm học IELTS ở
+                                                    Hưng Yên</a></div>
+                                        </div>
+                                        <div class="postlist-card-content card-body d-flex flex-column p-0">
+                                            <p>Xem ngay top các trung tâm luyện thi IELTS tại Hưng Yên chất lượng cùng
+                                                với STUDY4!</p>
+                                        </div>
+
+                                        <div class="postlist-meta">
+                                            30/11/2024 bởi LearnEnglish
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+
+                                <div class="postlist-card">
+
+
+                                    <div class="postlist-card-img md mb-2">
+                                        <a href="/blog/cac-trung-tam-hoc-ielts-o-nam-dinh/">
+
+                                        <img class="lazyel card-img entered loaded" data-ll-status="loaded" src="/assets/img/blog/blog6.webp"></a>
+                                    </div>
+
+                                    <div class="postlist-card-content-wrapper">
+
+                                        <span class="d-block post-topic"><a class="font-weight-bold small" href="blog.html">THÔNG TIN KỲ THI IELTS</a></span>
+
+                                        <div class="postlist-title-wrapper">
+
+                                            <div class="postlist-title"><a href="/blog/cac-trung-tam-hoc-ielts-o-nam-dinh/">Các trung tâm học IELTS ở
+                                                    Nam Định</a></div>
+                                        </div>
+                                        <div class="postlist-card-content card-body d-flex flex-column p-0">
+                                            <p>Lưu ngay danh sách các trung tâm luyện thi IELTS uy tín và chất lượng tại
+                                                Nam Định!</p>
+                                        </div>
+
+                                        <div class="postlist-meta">
+                                            30/11/2024 bởi LearnEnglish
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+
+                                <div class="postlist-card">
+
+
+                                    <div class="postlist-card-img md mb-2">
+                                        <a href="/blog/cac-trung-tam-hoc-ielts-o-thai-binh/">
+
+                                        <img class="lazyel card-img entered loaded" =data-ll-status="loaded" src="/assets/img/blog/blog7.webp"></a>
+                                    </div>
+
+                                    <div class="postlist-card-content-wrapper">
+
+                                        <span class="d-block post-topic"><a class="font-weight-bold small" href="blog.html">THÔNG TIN KỲ THI IELTS</a></span>
+
+                                        <div class="postlist-title-wrapper">
+
+
+                                            <div class="postlist-title"><a href="/blog/cac-trung-tam-hoc-ielts-o-thai-binh/">Các trung tâm học IELTS ở
+                                                    Thái Bình</a></div>
+                                        </div>
+                                        <div class="postlist-card-content card-body d-flex flex-column p-0">
+                                            <p>Hãy cùng chúng tôi khám phá bài viết chi tiết về các trung tâm luyện thi
+                                                IELTS tại Thái Bình, đồng thời chinh phục tấm chứng chỉ IELTS danh giá
+                                                để mở ra nhiều cơ hội mới trong cuộc sống!</p>
+                                        </div>
+
+                                        <div class="postlist-meta">
+                                            30/11/2024 bởi LearnEnglish
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+
+
+
+
+
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="post-wrapper">
+
+                    </div>
+
+
+
+
+
+                    <div class="post-wrapper">
+
+                    </div>
+
+
+
+
+
+                    <div class="post-wrapper">
+
+                    </div>
+
+
+
+
+
+                    <div class="post-wrapper">
+
+                    </div>
+
+
+
+
+
+
+                    <div class="post-wrapper">
+
+                    </div>
+
+
+                </div>
+                <div class="col-12 col-md-2 order-md-1">
+
+                    <div class="post-topics-list">
+                        <p class="font-12 font-600">
+                            Chuyên mục
+                        </p>
+                    
+                        <div class="post-topics-listitem my-2">
+                            <a class="text-dark" href="/blog/topics/tim-hieu-ve-learn-english/index.html">
+                                <b>TÌM HIỂU VỀ LearnEnglish</b>
+                            </a>
+                        </div>
+                    
+                        <div class="post-topics-listitem-sub">
+                            <a class="text-dark" href="/blog/topics/tinh-nang-tren-learn-english/index.html">
+                                Tính năng trên LearnEnglish
+                            </a>
+                        </div>
+                    
+                        <div class="post-topics-listitem-sub">
+                            <a class="text-dark" href="#" onclick="showNotification()">KHÓA HỌC TRÊN LearnEnglish</a>
+                        </div>
+                    
+                        <hr>
+                    
+                        <div class="post-topics-listitem my-2">
+                            <a class="text-dark" href="#" onclick="showNotification()">
+                                <b>Review của học viên LearnEnglish</b>
+                            </a>
+                        </div>
+                    
+                        <div class="post-topics-listitem-sub">
+                            <a class="text-dark" href="#" onclick="showNotification()">Học viên IELTS</a>
+                        </div>
+                    
+                        <div class="post-topics-listitem-sub">
+                            <a class="text-dark" href="#" onclick="showNotification()">Học viên TOEIC</a>
+                        </div>
+                    
+                        <hr>
+                    
+                        <div class="post-topics-listitem my-2">
+                            <a class="text-dark" href="#" onclick="showNotification()">
+                                <b>Luyện thi IELTS</b>
+                            </a>
+                        </div>
+                    
+                        <div class="post-topics-listitem-sub">
+                            <a class="text-dark" href="#" onclick="showNotification()">IELTS Listening</a>
+                        </div>
+                    
+                        <div class="post-topics-listitem-sub">
+                            <a class="text-dark" href="#" onclick="showNotification()">IELTS Reading</a>
+                        </div>
+                    
+                        <div class="post-topics-listitem-sub">
+                            <a class="text-dark" href="#" onclick="showNotification()">IELTS Speaking</a>
+                        </div>
+                    
+                        <div class="post-topics-listitem-sub">
+                            <a class="text-dark" href="#" onclick="showNotification()">IELTS Writing</a>
+                        </div>
+                    
+                        <div class="post-topics-listitem-sub">
+                            <a class="text-dark" href="#" onclick="showNotification()">IELTS Materials</a>
+                        </div>
+                    
+                        <div class="post-topics-listitem-sub">
+                            <a class="text-dark" href="#" onclick="showNotification()">Thông tin kỳ thi IELTS</a>
+                        </div>
+                    
+                        <div class="post-topics-listitem-sub">
+                            <a class="text-dark" href="#" onclick="showNotification()">Kinh nghiệm thi IELTS</a>
+                        </div>
+                    
+                        <hr>
+                    
+                        <div class="post-topics-listitem my-2">
+                            <a class="text-dark" href="#" onclick="showNotification()">
+                                <b>Luyện thi TOEIC</b>
+                            </a>
+                        </div>
+                    
+                        <div class="post-topics-listitem-sub">
+                            <a class="text-dark" href="#" onclick="showNotification()">TOEIC Listening</a>
+                        </div>
+                    
+                        <div class="post-topics-listitem-sub">
+                            <a class="text-dark" href="#" onclick="showNotification()">TOEIC Reading</a>
+                        </div>
+                    
+                        <div class="post-topics-listitem-sub">
+                            <a class="text-dark" href="#" onclick="showNotification()">TOEIC Materials</a>
+                        </div>
+                    
+                        <div class="post-topics-listitem-sub">
+                            <a class="text-dark" href="#" onclick="showNotification()">Thông tin kỳ thi TOEIC</a>
+                        </div>
+                    
+                        <div class="post-topics-listitem-sub">
+                            <a class="text-dark" href="#" onclick="showNotification()">Kinh nghiệm thi TOEIC</a>
+                        </div>
+                    
+                        <hr>
+                    
+                        <div class="post-topics-listitem my-2">
+                            <a class="text-dark" href="#" onclick="showNotification()">
+                                <b>Tiếng Anh cơ bản</b>
+                            </a>
+                        </div>
+                    
+                        <div class="post-topics-listitem-sub">
+                            <a class="text-dark" href="#" onclick="showNotification()">Phát âm</a>
+                        </div>
+                    
+                        <div class="post-topics-listitem-sub">
+                            <a class="text-dark" href="#" onclick="showNotification()">Từ vựng</a>
+                        </div>
+                    
+                        <div class="post-topics-listitem-sub">
+                            <a class="text-dark" href="#" onclick="showNotification()">Ngữ pháp</a>
+                        </div>
+                    
+                        <hr>
+                    
+                        <div class="post-topics-listitem my-2">
+                            <a class="text-dark" href="#" onclick="showNotification()">
+                                <b>Luyện Thi HSK-HSKK</b>
+                            </a>
+                        </div>
+                    
+                        <div class="post-topics-listitem-sub">
+                            <a class="text-dark" href="#" onclick="showNotification()">Tiếng Trung cơ bản</a>
+                        </div>
+                    
+                        <div class="post-topics-listitem-sub">
+                            <a class="text-dark" href="#" onclick="showNotification()">Kiến thức HSK-HSKK</a>
+                        </div>
+                    
+                        <div class="post-topics-listitem-sub">
+                            <a class="text-dark" href="#" onclick="showNotification()">Thông tin kỳ thi HSK-HSKK</a>
+                        </div>
+                    
+                        <div class="post-topics-listitem-sub">
+                            <a class="text-dark" href="#" onclick="showNotification()">Kinh nghiệm thi HSK-HSKK</a>
+                        </div>
+                    
+                        <hr>
+                    
+                        <div class="post-topics-listitem my-2">
+                            <a class="text-dark" href="#" onclick="showNotification()">
+                                <b>Tiếng Anh cho người đi làm</b>
+                            </a>
+                        </div>
+                    
+                        <hr>
+                    
+                        <div class="post-topics-listitem my-2">
+                            <a class="text-dark" href="#" onclick="showNotification()">
+                                <b>Du học</b>
+                            </a>
+                        </div>
+                    
+                        <div class="post-topics-listitem-sub">
+                            <a class="text-dark" href="#" onclick="showNotification()">Admission essays</a>
+                        </div>
+                    
+                        <div class="post-topics-listitem-sub">
+                            <a class="text-dark" href="#" onclick="showNotification()">Kinh nghiệm du học</a>
+                        </div>
+                    
+                        <hr>
+                    </div>
+                    
+                    <script>
+                        function showNotification() {
+                            alert("Bài viết này sẽ được cập nhật trong tương lai");
+                        }
+                    </script>
+                    
+
+                </div>
+
+
+
+
+
+            </div>
+
+        </div>
+    </div>
+
+
+    
+
+
+    <div class="footer-wrapper">
+        <link rel="stylesheet" href="/css/footer.css">
+        
+    </div>
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="footer-wrapper" bis_skin_checked="1">
+        <div class="footer-container" bis_skin_checked="1">
+            <footer>
+
+
+
+                <div class="row" bis_skin_checked="1">
+                    <div class="col-12 col-sm-12 col-md" bis_skin_checked="1">
+                        <a href="/"><img class="mb-2" src="/assets/img/Logo_LearnEnglish.svg" alt="" height="30"></a>
+                        <small class="mb-2">©</small>
+                        <div class="site-socials" style="width: 140px !important;" bis_skin_checked="1">
+                            <a target="_blank" href="https://facebook.com/" bis_skin_checked="1"><span
+                                    class="social-link fab fa-facebook-square"></span></a>
+                            <a target="_blank" href="https://instagram.com/" bis_skin_checked="1"><span
+                                    class="social-link fab fa-instagram"></span></a>
+                            <a target="_blank" href="https://twitter.com/" bis_skin_checked="1"><span
+                                    class="social-link fab fa-twitter"></span></a>
+                            <a target="_blank" href="https://youtube.com/" bis_skin_checked="1"><span
+                                    class="social-link fab fa-youtube"></span></a>
+                            <a target="_blank" href="https://www.tiktok.com" bis_skin_checked="1"><span
+                                    class="social-link fab fa-tiktok"></span></a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md" bis_skin_checked="1">
+                        <div class="footer-title" bis_skin_checked="1">Về LearnEnglish</div>
+                        <ul class="list-unstyled text-small">
+                            <li><a href="/about/" bis_skin_checked="1">Giới thiệu</a></li>
+                            <li><a href="/contact/" bis_skin_checked="1">Liên hệ</a></li>
+                            <li><a href="/privacy/" bis_skin_checked="1">Điều khoản bảo mật</a></li>
+                            <li><a href="/terms/" bis_skin_checked="1">Điều khoản sử dụng</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-6 col-md" bis_skin_checked="1">
+                        <div class="footer-title" bis_skin_checked="1">Tài nguyên</div>
+                        <ul class="list-unstyled text-small">
+
+                            <li><a href="/tests/" bis_skin_checked="1">Thư viện đề thi</a></li>
+                            <li><a href="/blog/index.html" bis_skin_checked="1">Blog</a></li>
+                           
+
+
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md" bis_skin_checked="1">
+                        <div class="footer-title" bis_skin_checked="1">Chính sách chung</div>
+                        <ul class="list-unstyled text-small">
+                            <li><a href="/user-guide/" bis_skin_checked="1">Hướng dẫn sử dụng</a></li>
+                            <li><a href="/buying-guide/" bis_skin_checked="1">Hướng dẫn thanh toán</a></li>
+
+                            <li><a href="/buying-terms/" bis_skin_checked="1">Điều khoản và Điều Kiện Giao Dịch</a></li>
+                            <li><a href="/checkout-policy" bis_skin_checked="1">Chính sách kiểm hàng</a></li>
+                            <li><a href="/delivery-policy" bis_skin_checked="1">Chính sách giao, nhận hàng</a></li>
+                            <li><a href="/feedback/" bis_skin_checked="1">Phản hồi, khiếu nại</a></li>
+                            <li><a href="/return-policy" bis_skin_checked="1">Chính sách chuyển đổi, hoàn hủy</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+
+                <div class="footer-copyright text-center" bis_skin_checked="1">
+                    LearnEnglish © Bản quyền của GROUP11.
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

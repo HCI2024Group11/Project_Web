@@ -1,0 +1,1785 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn English</title>
+    <link rel="icon" href="/assets/img/Avatar_LearnEnglish.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/f9374b778e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+    
+    <div class="topnav1 topnav-wrapper" bis_skin_checked="1">
+        <div class="topnav-container" bis_skin_checked="1">
+            <nav class="navbar  navbar-expand-lg">
+                <span class="navbar-brand">
+                    <a class="topnav-brand" href="/">
+                        <img class="topnav-logo" src="/assets/img/Logo_LearnEnglish.svg" alt="STUDY4">
+
+                    </a>
+                </span>
+                <button class="navbar-toggler pull-xs-right d-lg-none" type="button" data-toggle="collapse"
+                    data-target="#navbar-collapse">
+                    ☰
+
+                </button>
+                <div class="d-lg-block navbar-collapse justify-content-end collapse" id="navbar-collapse"
+                    bis_skin_checked="1">
+
+                    <ul class="nav">
+
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/courses/" bis_skin_checked="1">Course</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/skills/" bis_skin_checked="1">Skill</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/flashcards/me/" bis_skin_checked="1">Flashcards</a>
+                        </li>
+
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/blog/" bis_skin_checked="1">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/general-english/" bis_skin_checked="1">General english</a>
+                        </li>
+
+
+
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/courses/activate/" bis_skin_checked="1">
+                                Kích hoạt tài khoản
+                            </a>
+                        </li>
+
+                        <li class="nav-item user-topnav dropdown d-none d-lg-block">
+                            <a class="nav-link dropdown-toggle user-topnav-profile" href="/my-account/" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" bis_skin_checked="1">
+                                <span class="account-profile-img">
+
+                                    <img src="/assets/img/user_icon.webp" alt="ChuTanTai23130280">
+
+                                </span>
+
+                            </a>
+
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" bis_skin_checked="1">
+                                <div bis_skin_checked="1">
+                                    <h6 class="dropdown-header" id="thông-báo"> Thông báo </h6>
+                                    <div id="new-notis-dropdown-content" class="jqhtml-loader dropdown-text"
+                                        data-href="/notifications/newest/" bis_skin_checked="1">
+                                        <p class="font-sm"><i>Bạn chưa có thông báo mới.</i></p>
+
+
+                                        <div class="mt-2 link font-sm" bis_skin_checked="1"><a href="/notifications/"
+                                                bis_skin_checked="1">Xem tất cả &gt;&gt;</a></div>
+                                    </div>
+                                </div>
+
+                                <div class="dropdown-divider" bis_skin_checked="1"></div>
+                                <a class="dropdown-item" href="/studyplan/" bis_skin_checked="1">Lịch học của tôi</a>
+                                <a class="dropdown-item" href="/my-account/" bis_skin_checked="1">Trang cá nhân</a>
+                                <a class="dropdown-item" href="/logout/" bis_skin_checked="1">Đăng xuất</a>
+                            </div>
+                        </li>
+                        <li class="nav-item d-lg-none">
+                            <a class="nav-link" href="/notifications/" bis_skin_checked="1">Thông báo </a>
+                        </li>
+                        <li class="nav-item d-lg-none">
+                            <a class="nav-link" href="/studyplan/" bis_skin_checked="1">Lịch học của tôi</a>
+                        </li>
+                        <li class="nav-item d-lg-none">
+                            <a class="nav-link" href="/my-account/" bis_skin_checked="1">Trang cá nhân</a>
+                        </li>
+                        <li class="nav-item d-lg-none">
+                            <a class="nav-link" href="/logout/" bis_skin_checked="1">Đăng xuất</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+<script>
+    // JavaScript để xử lý dropdown
+    document.addEventListener('DOMContentLoaded', function() {
+        const profileBtn = document.querySelector('.user-topnav-profile');
+        const dropdownMenu = document.querySelector('.dropdown-menu');
+    
+        // Toggle dropdown khi click vào profile
+        profileBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            dropdownMenu.classList.toggle('show');
+        });
+    
+        // Đóng dropdown khi click ra ngoài
+        document.addEventListener('click', function(e) {
+            if (!profileBtn.contains(e.target) && !dropdownMenu.contains(e.target)) {
+                dropdownMenu.classList.remove('show');
+            }
+        });
+    });
+</script>
+    <script>
+        // JavaScript để xử lý dropdown
+        document.addEventListener('DOMContentLoaded', function () {
+            const profileBtn = document.querySelector('.user-topnav-profile');
+            const dropdownMenu = document.querySelector('.dropdown-menu');
+
+            // Toggle dropdown khi click vào profile
+            profileBtn.addEventListener('click', function (e) {
+                e.preventDefault();
+                dropdownMenu.classList.toggle('show');
+            });
+
+            // Đóng dropdown khi click ra ngoài
+            document.addEventListener('click', function (e) {
+                if (!profileBtn.contains(e.target) && !dropdownMenu.contains(e.target)) {
+                    dropdownMenu.classList.remove('show');
+                }
+            });
+        });
+    </script>
+
+
+<body class="highlighter-context">
+        
+    <div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; width: 0px; height: 0px;"><div></div></div></div>
+    <script async="" defer="" crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&amp;version=v20.0&amp;appId=203430341284880&amp;autoLogAppEvents=1" nonce="1d3MdMH8" type="text/javascript"></script>
+    
+    
+
+    
+    <div class="site-elevator">
+        <div class="elevator-item elevator-open d-md-none">
+            <span class="fal fa-chevron-left"></span>
+        </div>
+        <div class="elevator-item elevator-close d-md-none">
+            <span class="fal fa-chevron-right"></span>
+        </div>
+        <div class="elevator-item">
+            <div class="jqdictionary-show" target="#">
+                <img src="/static/img/dictionary.png">
+                <div class="elevator-text">Từ điển</div>
+            </div>
+        </div>
+        <div class="jqdictionary-wrapper">
+            <span class="jqdictionary-expand fal fa-plus-square"></span>
+            <span class="jqdictionary-close far fa-times"></span>
+            <div class="h6 font-500 font-sm">
+                <a class="link jqdictionary-tab active" data-href="https://m.dict.laban.vn/">Anh-Việt</a> |
+                <a class="link jqdictionary-tab" data-href="https://www.wordreference.com/definition/">WordReference</a> |
+                <a class="link jqdictionary-tab" data-href="https://onelook.com/thesaurus/">Thesaurus</a> |
+                <a class="link jqdictionary-tab" data-href="https://vtudien.com/trung-viet/dictionary/nghia-cua-tu-%E4%BD%A0%E5%A5%BD">Tiếng Trung</a>
+            </div>
+            <div class="jqdictionary-iframe">
+                <iframe loading="lazy" frameborder="0"></iframe>
+            </div>
+        </div>
+
+
+        
+        <div class="elevator-item">
+            <a target="_blank" href="https://m.me/LearnEnglish.support">
+                <img src="/static/img/messenger.png">
+            </a>
+        </div>
+        
+
+        <div class="elevator-item">
+            <a target="_blank" href="https://zalo.me/LearnEnglish">
+                <img src="/static/img/zalo.jpg">
+            </a>
+        </div>
+
+
+        
+        <div class="elevator-item site-scrollTop" onclick="if (!window.__cfRLUnblockHandlers) return false; window.topFunction()" id="site-scrollTop" title="Go to top" style="display: flex;">
+            <span class="fal fa-chevron-up"></span>
+        </div>
+    </div>
+    
+
+    
+
+    <div class="site-wrapper">
+
+        
+
+        
+
+
+<div class="topnav1 topnav-wrapper">
+
+</div>
+
+        
+
+        
+        <div class="site-content-wrapper">
+            
+
+            
+
+            
+            
+            
+            
+
+            
+<div class="container pb-0">
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/">Trang chủ</a></li>
+        
+        <li class="breadcrumb-item"><a href="/blog/index.html">Bài viết</a></li>
+        <li class="breadcrumb-item"><a href="/blog/lo-trinh-tu-hoc-ielts-online-tai-nha-tu-so-0-den-7-cua-study4/index.html/index.html">Thông tin kỳ thi IELTS</a></li>
+        
+        <li class="breadcrumb-item active"><a href="/blog/lo-trinh-tu-hoc-ielts-online-tai-nha-tu-so-0-den-7-cua-study4/index.html/so-sanh-ielts-paper-based-va-computer-based-nen-thi-ielts-tren-may-hay-tren-giay.html">So sánh IELTS Paper-based và Computer-based - Nên thi IELTS trên máy hay trên giấy?</a></li>
+    </ol>
+</nav>
+</div>
+
+
+            
+<div class="content-header py-0">
+<div class="container py-0">
+    <div class="image-wrapper">
+        <a href="/courses/level-test/">
+            
+        </a>
+    </div>
+    <br>
+    <h1 class="post-title" id="so-sánh-ielts-paper-based-và-computer-based---nên-thi-ielts-trên-máy-hay-trên-giấy?">
+        So sánh IELTS Paper-based và Computer-based - Nên thi IELTS trên máy hay trên giấy?
+        
+    </h1>
+    
+    <p class="post-description">
+        Thi giấy và thi máy IELTS có điều gì khác nhau không? Nên thi IELTS trên máy hay trên giấy thì có lợi hơn? Theo dõi bài viết sau nhé!
+    </p>
+    
+</div>
+</div>
+
+
+            
+            <div class="content-wrapper">
+                
+                
+<div class="container">
+<div class="row">
+    <div class="col-12 col-md-3 order-md-3">
+        <div class="post-toc-wrapper">
+            <div class="post-toc-title font-11 font-600">Table of contents</div>
+            <div class="js-toc"><ol class="toc-list "><li class="toc-list-item"><a href="#" class="toc-link node-name--H1 "></a><ol class="toc-list  is-collapsible"><li class="toc-list-item"><a href="#i.-ielts-là-gì?" class="toc-link node-name--H2 ">I. IELTS là gì?</a></li><li class="toc-list-item"><a href="#ii.-điểm-giống-nhau-giữa-hai-hình-thức-thi-ielts" class="toc-link node-name--H2 ">II. Điểm giống nhau giữa hai hình thức thi IELTS</a></li><li class="toc-list-item"><a href="#ii.-điểm-khác-nhau-giữa-hai-hình-thức-thi-ielts" class="toc-link node-name--H2 ">II. Điểm khác nhau giữa hai hình thức thi IELTS</a></li><li class="toc-list-item"><a href="#ii.-so-sánh-ưu-và-nhược-điểm-hai-hình-thức-thi-ielts" class="toc-link node-name--H2 ">II. So sánh ưu và nhược điểm hai hình thức thi IELTS</a><ol class="toc-list  is-collapsible is-collapsed"><li class="toc-list-item"><a href="#1.-thi-ielts-trên-máy-ielts-computer-based" class="toc-link node-name--H3 ">1. Thi IELTS trên máy (IELTS Computer-based)</a></li><li class="toc-list-item"><a href="#2.-thi-ielts-trên-giấy-ielts-paper-based" class="toc-link node-name--H3 ">2. Thi IELTS trên giấy (IELTS Paper-based)</a></li></ol></li><li class="toc-list-item is-active-li"><a href="#iii.-nên-thi-ielts-trên-máy-hay-trên-giấy?" class="toc-link node-name--H2  is-active-link">III. Nên thi IELTS trên máy hay trên giấy?</a></li><li class="toc-list-item"><a href="#lời-kết" class="toc-link node-name--H2 ">Lời kết</a></li></ol></li></ol></div>
+        </div>
+        <br>
+
+        
+
+
+<div class="h4">Tìm hiểu thêm</div>
+<div class="site-links">
+
+<a class="site-link" href="https://LearnEnglish.com/l/UUUGo-oOaEI/">🎧 KHÓA HỌC IELTS INTENSIVE LISTENING</a>
+
+<a class="site-link" href="https://LearnEnglish.com/l/MwC86SbHDWk/">📖 KHÓA HỌC IELTS INTENSIVE READING (ACADEMIC)</a>
+
+<a class="site-link" href="https://LearnEnglish.com/l/uuvrH_Ic4yw/">📢 KHÓA HỌC IELTS INTENSIVE SPEAKING</a>
+
+<a class="site-link" href="https://LearnEnglish.com/l/HBhnwajftic/">📝 KHÓA HỌC IELTS INTENSIVE WRITING (ACADEMIC)</a>
+
+<a class="site-link" href="https://LearnEnglish.com/l/MvNPpMGAe2s/">📖 KHÓA HỌC IELTS GENERAL READING</a>
+
+<a class="site-link" href="https://LearnEnglish.com/l/Q5o89C9aOUc/">📝 KHÓA HỌC IELTS GENERAL WRITING</a>
+
+<a class="site-link" href="https://LearnEnglish.com/l/TE5OM6J3mcg/">📒 KHÓA HỌC IELTS FUNDAMENTALS (cơ bản)</a>
+
+<a class="site-link" href="https://LearnEnglish.com/l/s4WacmdglSk/">💻 KHÓA HỌC COMPLETE TOEIC</a>
+
+<a class="site-link" href="https://LearnEnglish.com/posts/259/cau-truc-de-thi-ielts-chi-tiet-va-chuan-nhat-2023/">📌 Cấu trúc đề thi IELTS</a>
+
+<a class="site-link" href="https://LearnEnglish.com/posts/291/cau-truc-de-thi-toeic-chuan-va-chi-tiet-nam-2023/">📌 Cấu trúc đề thi TOEIC</a>
+
+<a class="site-link" href="https://LearnEnglish.com/posts/258/thang-diem-ielts-va-cach-tinh-diem-ielts-overall-chuan-2023/">📌 Thang điểm IELTS và cách tính điểm IELTS Overall</a>
+
+<a class="site-link" href="https://LearnEnglish.com/posts/361/thang-diem-toeic-va-cach-tinh-diem-bai-thi-toeic/">📌 Thang điểm TOEIC và cách tính điểm TOEIC</a>
+
+</div>
+<br>
+
+
+
+        
+
+        <br>
+        
+
+
+
+
+<div class="sidebar-post-wrapper">
+<div class="center">
+    
+        
+        <div class="h4">
+            Review của học viên LearnEnglish
+            
+            <a class="ml-1 font-09 font-italic" href="/topics/review-cua-hoc-vien-LearnEnglish/">
+                Xem thêm
+                <span class="fal fa-arrow-right"></span>
+            </a>
+            
+        </div>
+        
+        <div class="posts-list">
+        
+            
+<div class="postlist-card">
+
+
+<div class="postlist-card-img full mb-2">
+    <img class="lazyel card-img entered loaded" data-src="/media/examprep/Post/files/2024/08/05/865990_toeic.png" data-ll-status="loaded" src="/media/examprep/Post/files/2024/08/05/865990_toeic.png">
+</div>
+
+<div class="postlist-card-content-wrapper">
+    
+    <span class="d-block post-topic"><a class="font-weight-bold small" href="/topics/hoc-vien-toeic/">HỌC VIÊN TOEIC</a></span>
+    
+    <div class="postlist-title-wrapper">
+        
+        <div class="postlist-card-img-sm mb-2">
+            <img class="lazyel card-img" data-src="/media/examprep/Post/files/2024/08/05/865990_toeic.png">
+        </div>
+        
+        <div class="postlist-title"><a href="/posts/1186/kinh-nghiem-tu-hoc-dat-900-toeic-chia-se-tu-hoc-vien-LearnEnglish/">Kinh nghiệm tự học đạt 900 TOEIC - Chia sẻ từ học viên LearnEnglish</a></div>
+    </div>
+    <div class="postlist-card-content card-body d-flex flex-column p-0">
+        <p>Chia sẻ từ bạn Trung Nguyên về khóa học Complete TOEIC của LearnEnglish và kinh nghiệm của bạn để đạt 900 điểm TOEIC.</p>
+    </div>
+    
+</div>
+</div>
+
+        
+            
+<div class="postlist-card">
+
+
+<div class="postlist-card-img full mb-2">
+    <img class="lazyel card-img entered loaded" data-src="/media/examprep/Post/files/2024/06/07/865990_toeic_30.png" data-ll-status="loaded" src="/media/examprep/Post/files/2024/06/07/865990_toeic_30.png">
+</div>
+
+<div class="postlist-card-content-wrapper">
+    
+    <span class="d-block post-topic"><a class="font-weight-bold small" href="/topics/hoc-vien-toeic/">HỌC VIÊN TOEIC</a></span>
+    
+    <div class="postlist-title-wrapper">
+        
+        <div class="postlist-card-img-sm mb-2">
+            <img class="lazyel card-img" data-src="/media/examprep/Post/files/2024/06/07/865990_toeic_30.png">
+        </div>
+        
+        <div class="postlist-title"><a href="/posts/1012/hoc-vien-LearnEnglish-chia-se-bi-quyet-dat-625-diem-toeic/">Học viên LearnEnglish chia sẻ bí quyết đạt 625 điểm TOEIC</a></div>
+    </div>
+    <div class="postlist-card-content card-body d-flex flex-column p-0">
+        <p>Chia sẻ từ bạn Minh Đức về khóa học Complete TOEIC của LearnEnglish và kinh nghiệm của bạn để đạt 625 điểm TOEIC.</p>
+    </div>
+    
+</div>
+</div>
+
+        
+            
+<div class="postlist-card">
+
+
+<div class="postlist-card-img full mb-2">
+    <img class="lazyel card-img entered loaded" data-src="/media/examprep/Post/files/2024/06/07/865990_toeic_28.png" data-ll-status="loaded" src="/media/examprep/Post/files/2024/06/07/865990_toeic_28.png">
+</div>
+
+<div class="postlist-card-content-wrapper">
+    
+    <span class="d-block post-topic"><a class="font-weight-bold small" href="/topics/hoc-vien-toeic/">HỌC VIÊN TOEIC</a></span>
+    
+    <div class="postlist-title-wrapper">
+        
+        <div class="postlist-card-img-sm mb-2">
+            <img class="lazyel card-img" data-src="/media/examprep/Post/files/2024/06/07/865990_toeic_28.png">
+        </div>
+        
+        <div class="postlist-title"><a href="/posts/1011/hoc-vien-LearnEnglish-chia-se-bi-quyet-dat-790-diem-toeic/">Học viên LearnEnglish chia sẻ bí quyết đạt 790 điểm TOEIC</a></div>
+    </div>
+    <div class="postlist-card-content card-body d-flex flex-column p-0">
+        <p>Chia sẻ từ bạn Minh Hoàng về khóa học Complete TOEIC của LearnEnglish và kinh nghiệm của bạn để đạt 790 điểm TOEIC.</p>
+    </div>
+    
+</div>
+</div>
+
+        
+            
+<div class="postlist-card">
+
+
+<div class="postlist-card-img full mb-2">
+    <img class="lazyel card-img entered loaded" data-src="/media/examprep/Post/files/2024/06/07/865990_toeic_32.png" data-ll-status="loaded" src="/media/examprep/Post/files/2024/06/07/865990_toeic_32.png">
+</div>
+
+<div class="postlist-card-content-wrapper">
+    
+    <span class="d-block post-topic"><a class="font-weight-bold small" href="/topics/hoc-vien-toeic/">HỌC VIÊN TOEIC</a></span>
+    
+    <div class="postlist-title-wrapper">
+        
+        <div class="postlist-card-img-sm mb-2">
+            <img class="lazyel card-img" data-src="/media/examprep/Post/files/2024/06/07/865990_toeic_32.png">
+        </div>
+        
+        <div class="postlist-title"><a href="/posts/1010/chia-se-tu-hoc-vien-cua-LearnEnglish-dat-810-toeic/">Chia sẻ từ học viên của LearnEnglish đạt 810 TOEIC</a></div>
+    </div>
+    <div class="postlist-card-content card-body d-flex flex-column p-0">
+        <p>Chia sẻ từ bạn Hoàng Phúc về khóa học Complete TOEIC của LearnEnglish và kinh nghiệm của bạn để đạt 810 điểm TOEIC.</p>
+    </div>
+    
+</div>
+</div>
+
+        
+            
+<div class="postlist-card">
+
+
+<div class="postlist-card-img full mb-2">
+    <img class="lazyel card-img entered loaded" data-src="/media/examprep/Post/files/2024/06/07/865990_toeic_34.png" data-ll-status="loaded" src="/media/examprep/Post/files/2024/06/07/865990_toeic_34.png">
+</div>
+
+<div class="postlist-card-content-wrapper">
+    
+    <span class="d-block post-topic"><a class="font-weight-bold small" href="/topics/hoc-vien-ielts/">HỌC VIÊN IELTS</a></span>
+    
+    <div class="postlist-title-wrapper">
+        
+        <div class="postlist-card-img-sm mb-2">
+            <img class="lazyel card-img" data-src="/media/examprep/Post/files/2024/06/07/865990_toeic_34.png">
+        </div>
+        
+        <div class="postlist-title"><a href="/posts/1009/hoc-vien-LearnEnglish-dat-7-5-ielts-overall-sau-khoa-hoc/">Học viên LearnEnglish đạt 7.5 IELTS Overall sau khóa học</a></div>
+    </div>
+    <div class="postlist-card-content card-body d-flex flex-column p-0">
+        <p>Chia sẻ từ bạn Ngọc Huyền về khóa học IELTS Intensive của LearnEnglish và kinh nghiệm của bạn để đạt 7.5 điểm IELTS.</p>
+    </div>
+    
+</div>
+</div>
+
+        
+        </div>
+
+        
+
+
+
+    
+</div>
+</div>
+<br>
+
+
+
+
+        
+
+
+
+
+
+<h4 id="tham-gia-nhóm-facebook">Tham gia nhóm facebook</h4>
+
+<div class="image-wrapper fb-group mb-3">
+<a target="_blank" href="https://www.facebook.com/groups/1603927746835185"><img class="sidebar-banner" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXcb-nyj7JgdpDjze01TDO3e0wTOGOH20kLCmwTyWLGoulTXiomKbiTH_KI8wjscRzMg3igTeFnqr4OyAwvIk2yi2NrAKF89sooqNM0LoQYk2vj0jrIlACEK8g_Fynh-HWxfsnZYDE763X35JdesvBXmycM7?key=ezwyDTrTlQ8fa4GAczby1g"></a>
+</div>
+
+<div class="image-wrapper fb-group mb-3">
+<a target="_blank" href="https://www.facebook.com/groups/517057750992723"><img class="sidebar-banner" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXe6BuinESoVBd4lsp7D2Ng9_TjTMDDijwiTkdji1Y-L04RrggnZoOS8gdSZqD4OqQY3zsBtG_6N0RjvGQRL_85w3nGPp8UsC1QS572qY_Vf0cC8S-eK51DeDWFDSAw4CIZjlQlNrNxp4Vv7sSUVetoyScxn?key=ezwyDTrTlQ8fa4GAczby1g"></a>
+</div>
+
+<br>
+
+
+
+    </div>
+    <div class="col-12 col-md-7 order-md-2">
+        <div class="post-wrapper">
+            <div class="media post-author-media py-2 mb-3 border-bottom">
+                <div class="post-author-img">
+                    
+                    <img src="https://res.cloudinary.com/sandodep4/image/upload/w_300/sandodep4_x_179027497304743546577679031874613619737_cajgas" alt="hangbm.LearnEnglish">
+                    
+                </div>
+                <div class="media-body">
+                    <div class="post-author-name"><a target="_blank" href="/u/hangbm.LearnEnglish/">Bùi Hằng</a></div>
+                    <div class="post-meta">14/11/2023</div>
+                </div>
+            </div>
+
+            <div class="post-main-wrapper">
+
+                
+
+                
+                <br>
+                <div class="contentblock gray-bg">
+                    <div class="h5 font-italic">Các bài viết liên quan</div>
+                    
+<ul class="post-links">
+
+
+
+<li class="post-link"><a href="https://LearnEnglish.com/posts/635/top-5-websites-luyen-thi-ielts-online-mien-phi-tot-nhat/">Top 5 websites luyện thi IELTS online miễn phí tốt nhất</a></li>
+
+
+
+
+<li class="post-link"><a href="https://LearnEnglish.com/posts/562/nen-khong-nen-thi-ielts-vao-thang-may/">Nên/ không nên thi IELTS vào tháng mấy?</a></li>
+
+
+</ul>
+
+                </div>
+                <br><br>
+                
+
+                <div class="post-main mt-2">
+                    
+                    <div id="post-content" class="post-content md-content js-toc-content" prewrap="">
+                        <h1 style="text-align:center" id=""><img alt="nên thi ielts trên giấy hay trên máy tính ielts paper based vs computer based" src="https://lh7-us.googleusercontent.com/hLT6UBrrgnMU-kmVmhNj9rx8aXB2DYv4n8-2fPOenGStNDCYtbR5SMzUz6naoveq718FndbUrYV3FrUuPtIXXtAo912VTw8N7BUexo3nn6j2SItBmx3-P42UrP1WXDYPcE6ZTdShd4vejEiYB_SN-Ps" style="height:351px; width:624px"></h1>
+
+<p>Hiện nay, có hai hình thức thi đang được áp dụng trong kỳ thi IELTS, đó là IELTS Paper-based (trên giấy) và IELTS Computer-based (trên máy). Mỗi hình thức đều có những ưu và nhược điểm nhất định, tuy nhiên không phải ai cũng hiểu và nắm rõ được sự khác nhau của chúng để đưa ra sự lựa chọn phù hợp cho bản thân. Trong bài viết dưới đây, LearnEnglish sẽ phân tích và đưa ra đánh giá, so sánh về hai hình thức thi IELTS này để giúp bạn đưa ra lựa chọn dễ dàng nhất.&nbsp;</p>
+
+<h2 id="i.-ielts-là-gì?"><strong>I. IELTS là gì?</strong></h2>
+
+<p><strong>IELTS </strong>là viết tắt của International English Language Testing System (Hệ thống kiểm tra tiếng Anh quốc tế). Đây là một bài kiểm tra tiếng Anh được sử dụng rộng rãi trên toàn thế giới để đánh giá khả năng tiếng Anh của người học hoặc người muốn định cư tại các nước nói tiếng Anh.&nbsp;</p>
+
+<p style="text-align:center"><img src="https://lh7-us.googleusercontent.com/40jAc9CpS27AVeYSKAkQpr-Tp2fMGNYWR-riA_RrsT0oa7t-dRQ27fYI3-bHvCkwrwe7TzUKS4B8p34_KoUQnZIDxn_4EKpaTAa15PWWbzsacVwfvUgm15Vt69WYoNTHN_pOi4x2M2bbvkqLu5AeghU" style="height:339px; width:602px"></p>
+
+<p style="text-align:center"><em>Bài thi IELTS tại Việt Nam</em></p>
+
+<p>Bài kiểm tra IELTS đánh giá bốn kỹ năng chính: Listening (Nghe), Reading (Đọc), Writing (Viết) và Speaking (Nói), và có hai phiên bản chính là IELTS Academic và IELTS General Training, tương ứng với mục tiêu khác nhau của người tham dự.</p>
+
+<p>Trong bài viết này, ta sẽ tập trung vào phiên bản <strong>IELTS Academic</strong>.</p>
+
+<h2 id="ii.-điểm-giống-nhau-giữa-hai-hình-thức-thi-ielts"><strong>II. Điểm giống nhau giữa hai hình thức thi IELTS</strong></h2>
+
+<p><span style="font-size:20px"><strong>1. Format bài thi</strong></span></p>
+
+<p>Dù cho bạn chọn hình thức thi nào thì tựu chung lại format thi giấy IELTS và format thi máy IELTS đều giống nhau đối với cả 4 kỹ năng: Listening (Nghe), Reading (Đọc), Writing (Viết) và Speaking (Nói).</p>
+
+<p><strong><em>Xem thêm: </em></strong><a href="https://LearnEnglish.com/posts/259/cau-truc-de-thi-ielts-chi-tiet-va-chuan-nhat-2023/" style="text-decoration:none"><span style="color:#1155cc"><strong><em><u>Cấu trúc đề thi IELTS chi tiết</u></em></strong></span></a></p>
+
+<div style="margin-left:-5px">
+<table cellspacing="0" style="border-collapse:collapse; border:none; width:656px">
+<tbody>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:122px">
+        <p style="text-align:center"><strong>Kỹ năng</strong></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:160px">
+        <p style="text-align:center"><strong>Thời lượng phần thi</strong></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:83px">
+        <p style="text-align:center"><strong>Số phần</strong></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:291px">
+        <p style="text-align:center"><strong>Nội dung các phần</strong></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:122px">
+        <p><strong>IELTS Listening (Nghe)</strong></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:160px">
+        <p><strong><em>40 phút</em></strong><em>:</em></p>
+
+        <ul>
+            <li style="list-style-type:disc"><strong><em>30 phút</em></strong><em> nghe audio</em></li>
+            <li style="list-style-type:disc"><strong><em>10 phút</em></strong><em> viết đáp án (thi giấy)</em></li>
+        </ul>
+
+        <p style="margin-left:48px; text-align:center"><em>hoặc</em></p>
+
+        <p style="margin-left:48px"><strong><em>2 phút</em></strong><em> kiểm tra lại đáp án (thi máy)</em></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:83px">
+        <p style="text-align:center"><em>4</em></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:291px">
+        <p><strong><em>Part 1</em></strong><em>: Đoạn hội thoại giữa hai người trong bối cảnh giao tiếp hàng ngày.&nbsp;</em></p>
+
+        <p><strong><em>Part 2</em></strong><em>: Đoạn độc thoại trong hoàn cảnh xã hội thông thường.&nbsp;</em></p>
+
+        <p><strong><em>Part 3</em></strong><em>: Đoạn hội thoại giữa nhiều người (từ 2-3 người) thường về lĩnh vực giáo dục và đào tạo.&nbsp;</em></p>
+
+        <p><strong><em>Part 4</em></strong><em>: Đoạn độc thoại về một chủ đề học thuật.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:122px">
+        <p><strong>IELTS Reading (Đọc)</strong></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:160px">
+        <p><em>60 phút</em></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:83px">
+        <p style="text-align:center"><em>3</em></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:291px">
+        <p><em>Bao gồm 3 Passage, mỗi passage khoảng 700-800 từ với nhiều chủ đề khác nhau xoay quanh khoa học, kinh tế, văn hóa, nghệ thuật,... và được lấy từ nhiều nguồn tài liệu uy tín như báo chí, tài liệu học thuật,...</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:122px">
+        <p><strong>IELTS Writing (Viết)</strong></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:160px">
+        <p><em>60 phút</em></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:83px">
+        <p style="text-align:center"><em>2</em></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:291px">
+        <p><strong><em>Task 1</em></strong><em> (tối thiểu 150 từ): Mô tả, tóm tắt hoặc giải thích thông tin từ các dạng đồ thị, bảng biểu, biểu đồ hoặc sơ đồ.&nbsp;</em></p>
+
+        <p><strong><em>Task 2</em></strong><em> (tối thiểu 250 từ): Đưa ra ý kiến, quan điểm về một luận điểm nào đó hoặc vấn đề xã hội.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:122px">
+        <p><strong>IELTS Speaking (Nói)</strong></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:160px">
+        <p><em>11 - 15 phút</em></p>
+
+        <p><em>(Tương tác 1:1 với giám khảo)</em></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:83px">
+        <p style="text-align:center"><em>3</em></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:291px">
+        <p><strong><em>Part 1</em></strong><em>: Câu hỏi tổng quát về bản thân các chủ đề thông thường.&nbsp;</em></p>
+
+        <p><strong><em>Part 2</em></strong><em>: Nói liên tục về một chủ đề cụ thể trong vòng tối đa 2 phút. (1 phút chuẩn bị)</em></p>
+
+        <p><strong><em>Part 3</em></strong><em>: Thảo luận chuyên sâu về các vấn đề liên quan đến Part 2.</em></p>
+        </td>
+    </tr>
+</tbody>
+</table>
+</div>
+
+<p><span style="font-size:20px"><strong>2. Tiêu chí chấm điểm</strong></span></p>
+
+<p>Nhiều bạn đặt ra câu hỏi, hình thức thi khác nhau thì tiêu chí chấm điểm liệu có khác nhau không? Câu trả lời là không. Dù cho bạn tham gia thi hình thức nào, các tiêu chí chấm điểm bài thi vẫn sẽ y hệt để đảm bảo tính công bằng cho tất cả các thí sinh tham gia thi IELTS.&nbsp;</p>
+
+<p><strong><em>Xem thêm: </em></strong><a href="https://LearnEnglish.com/posts/258/thang-diem-ielts-va-cach-tinh-diem-ielts-overall-chuan-2023/" style="text-decoration:none"><span style="color:#1155cc"><strong><em><u>Thang điểm IELTS và cách tính điểm IELTS Overall</u></em></strong></span></a></p>
+
+<p><span style="font-size:20px"><strong>3. Lệ phí thi IELTS</strong></span></p>
+
+<p>Cả hai hình thức thi IELTS đều có lệ phí là 4.664.000 VND (đã bao gồm 8% thuế VAT). Bạn có thể tham khảo kỹ hơn về các lệ phí liên quan tại bài viết này.&nbsp;</p>
+
+<p><strong><em>Xem thêm: </em></strong><a href="https://LearnEnglish.com/posts/487/le-phi-thi-ielts-2023-moi-nhat/" style="text-decoration:none"><span style="color:#1155cc"><strong><em><u>Lệ phí thi IELTS</u></em></strong></span></a></p>
+
+<p><span style="font-size:20px"><strong>4. Cách thức đăng ký thi</strong></span></p>
+
+<p>Đối với cách thức đăng ký thi IELTS, các thao tác sẽ tương tự nhau đối với đăng ký thi IELTS trên giấy và trên máy. Tham khảo cách đăng ký thi IELTS tại đây.&nbsp;</p>
+
+<p><strong><em>Xem thêm: </em></strong><a href="https://LearnEnglish.com/posts/565/huong-dan-cach-dang-ky-thi-ielts-tai-idp-va-british-council/" style="text-decoration:none"><span style="color:#1155cc"><strong><em><u>Hướng dẫn cách đăng ký thi IELTS tại IDP và British Council</u></em></strong></span></a></p>
+
+<h2 id="ii.-điểm-khác-nhau-giữa-hai-hình-thức-thi-ielts"><strong>II. Điểm khác nhau giữa hai hình thức thi IELTS</strong></h2>
+
+<p>Vậy điểm khác biệt giữa IELTS Paper-based và IELTS Computer-based là gì? Dưới đây là phần so sánh chi tiết để bạn dễ dàng tham khảo nhé!</p>
+
+<p style="text-align:center"><img alt="thi ielts máy khác gì thi ielts giấy" src="https://lh7-us.googleusercontent.com/UYsh3jyHfGVTmygj82tIn1ff155xLyx6J8emxFycKA49RLrVPcjMYBAdVgICm2Iv8XnO-utE4Fw0tMxjpNMEMtOcSNKs0MiG22CLhSFFaOVG8-BZom5uoj62iqWbd3eNuIWTvoe8rFPblZpHvelrGAc" style="height:329px; width:598px"></p>
+
+<p style="text-align:center"><em>Khác nhau giữa thi máy và thi giấy</em></p>
+
+<p><span style="font-size:20px"><strong>1. Số lượng ngày thi</strong></span></p>
+
+<p>Đối với hình thức thi IELTS trên giấy (Paper-based), sẽ có trung bình 4 - 6 ngày thi trong 1 tháng. Thời gian thi 3 kỹ năng Nghe - Đọc - Viết được đặt cố định vào buổi sáng, còn thời gian thi Nói sẽ được sắp xếp vào cùng ngày hoặc khoảng 1 - 3 ngày trước hoặc sau ngày thi.&nbsp;</p>
+
+<p>Đối với hình thức thi IELTS trên máy (Computer-based), gần như tất cả các ngày trong tháng bạn đều có thể đăng ký thi IELTS. Thời gian thi 3 kỹ năng Nghe - Đọc - Viết có thể được chọn linh hoạt vào sáng hoặc chiều, thời gian thi Nói sẽ được sắp xếp vào cùng ngày thi 3 kỹ năng còn lại.</p>
+
+<p><span style="font-size:20px"><strong>2. Thời gian trả kết quả&nbsp;</strong></span></p>
+
+<p>Đối với hình thức thi IELTS trên giấy (Paper-based), thời gian trả kết quả là <strong>13 ngày</strong>.&nbsp;</p>
+
+<p>Đối với hình thức thi IELTS trên máy (Computer-based), thời gian trả kết quả là từ <strong>3 - 5 ngày</strong>.&nbsp;</p>
+
+<p><span style="font-size:20px"><strong>3. Module đề thi</strong></span></p>
+
+<p>Cả hai hình thức thi IELTS trên máy và trên giấy có cấu trúc đề thi và các loại câu hỏi giống nhau trong tất cả các kỹ năng.&nbsp;</p>
+
+<p>Tuy nhiên, các thí sinh chọn hình thức thi trên giấy (Paper-based) sẽ cùng làm chung 1 module đề thi cho 3 kỹ năng Nghe - Đọc - Viết. Còn đối với hình thức thi trên máy (Computer-based), thí sinh sẽ phải làm các đề thi khác nhau do hệ thống chọn ngẫu nhiên từ ngân hàng đề thi của Đại học Cambridge.&nbsp;</p>
+
+<p>Điều này có nghĩa là hình thức thi máy sẽ được trải nghiệm sự đa dạng từ nhiều đề thi hơn, giúp đảm bảo tính công bằng và khách quan trong kỳ thi IELTS.</p>
+
+<p><span style="color:#213261; font-family:Roboto,Arial,sans-serif"><span style="background-color:#ffffff; font-size:16px"><a href="https://LearnEnglish.com/tests/" style="box-sizing: border-box; color: rgb(33, 50, 97); text-decoration: none; background-color: rgb(255, 255, 255); cursor: pointer; font-family: Roboto, Arial, sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-align: center;"><img src="https://LearnEnglish.com/media/uploads/editor/hangbm.LearnEnglish/2023/05/16/image-20230516155715-2.png" style="border-style:none; box-sizing:border-box; display:block; height:67px; margin:16px auto; max-width:100%; vertical-align:middle; width:400px"></a></span></span></p>
+
+<h2 id="ii.-so-sánh-ưu-và-nhược-điểm-hai-hình-thức-thi-ielts"><strong>II. So sánh ưu và nhược điểm hai hình thức thi IELTS</strong></h2>
+
+<h3 id="1.-thi-ielts-trên-máy-ielts-computer-based"><span style="font-size:20px"><strong>1. Thi IELTS trên máy (IELTS Computer-based)</strong></span></h3>
+
+<p style="text-align:center"><img alt="thi ielts máy tính computer based như nào" src="https://lh7-us.googleusercontent.com/TLCWWRYKZvQmFGruqFnQ9QgmYhGWK0x1ZB02jUpL_FAor2675MsidpFn8CnRKsqtiKb-R15Jp8ie4GlyDcC6u44TOUSHo-5eEuA_fFhuCMwDF3mKQQuDd5YV0hcX6KU9gpdZtOF6QkazySDLNmwatg8" style="height:354px; width:532px"></p>
+
+<p style="text-align:center"><em>Thi IELTS trên máy</em></p>
+
+<p><span style="font-size:18px"><strong>1.1. Ưu điểm thi máy IELTS</strong></span></p>
+
+<p><span style="font-size:18px"><span style="color:#1155cc"><strong>✍️Thuận tiện hơn đối với kỹ năng Writing (Viết)</strong>:</span></span></p>
+
+<p>Bài thi viết đối với hình thức thi máy được thực hiện trên phần mềm Word, cho phép thí sinh dễ dàng cắt, sao chép và chỉnh sửa nội dung thuận tiện hơn hẳn thi giấy.&nbsp;</p>
+
+<p>Phần mềm cho biết số lượng từ đã viết, giảm bớt áp lực về việc kiểm soát số lượng từ cho thí sinh khi không phải vừa viết vừa đếm/ ước lượng từ liên tục.</p>
+
+<p>Hình thức viết trên máy cũng giúp tiết kiệm thời gian và loại bỏ các vấn đề liên quan đến việc viết tay như chữ viết khó nhìn, mờ, nhòe hay tẩy xóa lem nhem,...</p>
+
+<p><span style="font-size:18px"><span style="color:#1155cc"><strong>🖥️Chia đôi màn hình trong phần thi Reading (Đọc)</strong>:</span></span></p>
+
+<p>Để giúp thí sinh tiết kiệm thời gian và tránh việc phải lật giấy qua lại liên tục giữa đề bài và câu hỏi, màn hình trên máy tính được chia thành hai phần. Phần bên trái chứa đề bài, trong khi phần bên phải chứa câu hỏi.&nbsp;</p>
+
+<p>Điều này giúp thí sinh dễ dàng thực hiện việc nhìn qua lại giữa hai phần mà không gặp khó khăn quá nhiều.</p>
+
+<p>Thêm vào đó, tính năng Copy - Paste trên máy tính giúp thí sinh có thể tránh sai sót tối đa về mặt chính tả, đặc biệt thuận tiện đối với các câu hỏi yêu cầu sao chép thông tin dài.</p>
+
+<p><span style="font-size:18px"><span style="color:#1155cc"><strong>🔎Tính năng Review - xem lại bài thi</strong>:</span></span></p>
+
+<p>Trong cả phần thi Reading (Đọc) và Listening (Nghe), thí sinh sẽ có thể xem lại bài thi một cách khoa học hơn hẳn so với hình thức thi giấy. Với 40 câu hỏi hiển thị trên màn hình theo từng phần, thí sinh có thể đánh dấu các câu hỏi mà họ chưa chắc chắn trong ô <strong>Review </strong>để sau này kiểm tra lại.&nbsp;</p>
+
+<p>Điều này giúp thí sinh tổng quan hóa bài thi và tránh việc bỏ sót các câu chưa kịp kiểm tra, một điểm ưu thế hơn hẳn so với hình thức thi giấy.</p>
+
+<p><span style="font-size:18px"><span style="color:#1155cc"><strong>🕒Thời gian thi linh hoạt</strong>:</span></span></p>
+
+<p>Hình thức thi trên máy tính mang lại sự linh hoạt về thời gian dự thi cho thí sinh.</p>
+
+<p>Khác với hình thức thi trên giấy - chỉ có khoảng 4 đến 6 ngày thi một tháng, cố định vào sáng thứ 5 hoặc sáng thứ 7 trong tuần, bạn có thể dễ dàng lựa chọn ngày thi máy vào gần như bất kỳ ngày nào trong tuần và thậm chí có khả năng thi cả bốn kỹ năng trong cùng một ngày.&nbsp;</p>
+
+<p>Hơn nữa, có nhiều khung giờ thi có sẵn (cả sáng và chiều) nếu bạn đăng ký trước ít nhất 2 tuần trước ngày thi.&nbsp;</p>
+
+<p><span style="font-size:18px"><span style="color:#1155cc"><strong>⏳Thời gian trả kết quả nhanh chóng</strong>:</span></span></p>
+
+<p>Một trong những lợi ích nổi bật của việc thi IELTS trên máy tính là tốc độ của việc thông báo kết quả sau khi thi.</p>
+
+<p>Kết quả bài thi sẽ được công bố chỉ trong khoảng thời gian từ 3 đến 5 ngày sau ngày hoàn thành bài thi.</p>
+
+<p>Thời gian nhận kết quả thi máy nhanh hơn đáng kể so với hình thức thi giấy - với khoảng 13 ngày để thí sinh có thể biết điểm thi.</p>
+
+<p><span style="font-size:18px"><strong>1.2. Nhược điểm thi máy IELTS</strong></span></p>
+
+<p><span style="font-size:18px"><span style="color:#1155cc"><strong>✏️Khó khăn trong việc gạch chân keyword cho phần thi Listening (Nghe)</strong>:</span></span></p>
+
+<p>Mặc dù phần mềm thi có hỗ trợ công cụ highlight, phần lớn thí sinh chia sẻ rằng đã gặp khó khăn khi sử dụng nó.</p>
+
+<p>Điều này xảy ra không chỉ với những thí sinh không quen làm việc với máy tính mà còn với cả những bạn đã thành thạo các thao tác sử dụng nó do gặp áp lực phòng thi.&nbsp;</p>
+
+<p>Chuột thường không quá nhạy, bàn phím có độ nảy không cao và cả việc gạch chân keyword tương đối tốn thời gian, đặc biệt trong các phần thi yêu cầu kéo thả thông tin hoặc yêu cầu thao tác đánh máy nhanh nhẹn.&nbsp;</p>
+
+<p>Ngoài ra, thí sinh chỉ có 2 phút kiểm tra lại đáp án (thay vì 10 phút chuyển đáp án như hình thức thi giấy), khó có thể kiểm tra được lại hết các đáp án.&nbsp;</p>
+
+<p><span style="font-size:18px"><span style="color:#1155cc"><strong>📖Mỏi mắt trong phần thi Reading (Đọc)</strong>:</span></span></p>
+
+<p>Trong bài thi Reading, thí sinh cần đọc liên tục trên màn hình trong 60 phút, khiến cho mắt trở nên mệt mỏi và uể oải, có thể gây ảnh hưởng tới phần thi tiếp theo.</p>
+
+<p>Để tránh điều này, thí sinh cần làm quen với việc đọc bài trên màn hình trước khi bước vào phòng thi.</p>
+
+<p><span style="font-size:18px"><span style="color:#1155cc"><strong>📝Khó tập trung trong phần thi Writing (Viết)</strong>:</span></span></p>
+
+<p>Bàn phím máy tính trong phòng thi là bàn phím cơ - khi sử dụng sẽ tạo ra tiếng ồn. Hơn nữa, khi có nhiều người đánh máy cùng một lúc, thí sinh dễ bị mất tập trung do có quá nhiều tiếng ồn trong môi trường xung quanh.</p>
+
+<p>Mặc dù mỗi thí sinh đều được cung cấp bông chặn tiếng ồn, nó vẫn không thể loại bỏ hoàn toàn chúng, dẫn đến sự xao nhãng khi làm bài thi.&nbsp;</p>
+
+<p><span style="font-size:18px"><span style="color:#1155cc"><strong>⏱️Áp lực từ đồng hồ tính giờ</strong>:</span></span></p>
+
+<p>Đồng hồ tính giờ nằm ngay góc màn hình, liên tục đếm ngược và nhảy chữ đỏ khi thời gian cạn kiệt.</p>
+
+<p>Điều này vô tình có thể tạo ra áp lực không cần thiết và ảnh hưởng đến sự tập trung của thí sinh.</p>
+
+<p><span style="font-size:18px"><span style="color:#1155cc"><strong>⌨️Dễ gặp lỗi đánh máy</strong>:</span></span></p>
+
+<p>Với những thí sinh đánh máy chậm hoặc không quen thao tác trên máy tính, thi máy có thể tăng khả năng mắc lỗi typo trong quá trình thi - tốn thời gian chỉnh sửa hoặc dễ bỏ sót lỗi.</p>
+
+<p>Trong tình huống này, bạn nên lựa chọn hình thức thi giấy để đảm bảo an toàn hơn.&nbsp;</p>
+
+<h3 id="2.-thi-ielts-trên-giấy-ielts-paper-based"><span style="font-size:20px"><strong>2. Thi IELTS trên giấy (IELTS Paper-based)</strong></span></h3>
+
+<p style="text-align:center"><img alt="thi ielts trên giấy paper based như thế nào" src="https://lh7-us.googleusercontent.com/8A6MGqoaatyTnIa8DpZ-cSpn8_Te2O1iL5lZmiWz51TT4i1zI80WTjr4spIT3GV3J8JuMwDsOTXMYpqW_aayYuoI6Hsgj0xhS4LVeAHpMLWbN7yh4fdZl71ZRAYfay79Hp2wpJv3Wd87odE25fmdjSY" style="height:339px; width:602px"></p>
+
+<p style="text-align:center"><em>Hình thức thi IELTS trên giấy&nbsp;</em></p>
+
+<p><span style="font-size:18px"><strong>2.1. Ưu điểm thi giấy IELTS</strong></span></p>
+
+<p><span style="font-size:18px"><span style="color:#1155cc"><strong>📃Quen mắt hơn khi làm bài thi Reading (Đọc)</strong>:</span></span></p>
+
+<p>Đối với những bạn thường xuyên đọc báo giấy, tài liệu in ấn, sách hoặc văn bản truyền thống, việc thi IELTS trên giấy mang lại một sự thoải mái và quen thuộc nhất định.</p>
+
+<p>Một số thí sinh thích cảm giác của việc thao tác trên giấy như lật <span style="color:#666666">t</span>ừ trang này sang trang khác hay gạch chân bằng bút chì,... tất cả điều này đều giúp thí sinh tập trung hơn vào nội dung bài thi của họ.</p>
+
+<p><span style="font-size:18px"><span style="color:#1155cc"><strong>🕰️Thời gian chuyển đổi đáp án sang Answer sheet đối với bài thi Listening (Nghe)</strong>:</span></span></p>
+
+<p>Đối với hình thức thi trên giấy, sau khi hoàn thành bài thi thí sinh có thời gian 10 phút cuối để chuyển đáp án từ đề thi vào tờ Answer Sheet riêng.</p>
+
+<p>Điều này giúp thí sinh có thêm thời gian để kiểm tra lại câu trả lời một cách tỉ mỉ, tránh sai sót trong việc sai chính tả, phân vân giữa nhiều đáp án,...&nbsp;</p>
+
+<p><span style="font-size:18px"><span style="color:#1155cc"><strong>🎧Môi trường thi tĩnh lặng</strong>:</span></span></p>
+
+<p>Phòng thi trên giấy thường yên tĩnh hơn và không có tiếng ồn từ việc đánh máy, tiếng click chuột hay tiếng nhấp nút từ thí sinh khác.</p>
+
+<p>Điều này giúp tạo một môi trường thi yên tĩnh, giúp thí sinh tập trung tốt hơn vào bài thi mà họ đang làm.&nbsp;</p>
+
+<p><span style="font-size:18px"><span style="color:#1155cc"><strong>🖊️Dễ dàng ghi chú và gạch chân</strong>:</span></span></p>
+
+<p>Trong phần Reading (Đọc) và Listening (Nghe), thí sinh có thể dễ dàng ghi chú và gạch chân trực tiếp trên đề thi.</p>
+
+<p>Việc này giúp thí sinh có thể tập trung vào những thông tin quan trọng và nắm bắt được chúng nhanh hơn, từ đó làm bài hiệu quả hơn.&nbsp;</p>
+
+<p><span style="font-size:18px"><span style="color:#1155cc"><strong>🖱️Không cần thành thạo sử dụng máy tính</strong>:</span></span></p>
+
+<p>Hình thức thi trên giấy không yêu cầu thí sinh phải có kiến thức về máy tính hoặc kỹ năng sử dụng máy tính.</p>
+
+<p>Điều này rất thuận lợi cho những bạn không quen sử dụng máy tính hoặc không có trình độ về công nghệ thông tin.</p>
+
+<p><span style="font-size:18px"><span style="color:#1155cc"><strong>✒️Thói quen viết tay</strong>:</span></span></p>
+
+<p>Trong phần thi Writing, thí sinh sẽ được viết tay trên giấy, giúp cho những thí sinh đã quen và yêu thích việc viết truyền thống có thể tự do diễn đạt ý tưởng và ý kiến một cách tự nhiên nhất.</p>
+
+<p><span style="font-size:18px"><strong>2.2. Nhược điểm thi giấy IELTS</strong></span></p>
+
+<p><span style="font-size:18px"><span style="color:#1155cc"><strong>🗓️Thời gian chờ kết quả dài hơn</strong>:</span></span></p>
+
+<p>Kết quả thi IELTS trên giấy thường mất nhiều thời gian dài hơn để được chấm điểm và công bố chính thức, thường là từ 13 ngày trở lên, trong khi hình thức thi trên máy tính có thể đưa ra kết quả sau 3 đến 5 ngày.</p>
+
+<p>Việc này có thể gây trì hoãn, chậm trễ đối với một số bạn đang trong quá trình xin visa hoặc gửi hồ sơ cho các trường học.</p>
+
+<p><span style="font-size:18px"><span style="color:#1155cc"><strong>🕒Thời gian thi cố định</strong>:</span></span></p>
+
+<p>Hình thức thi trên giấy thường chỉ tổ chức vào một hoặc hai ngày trong tuần (thường là thứ 5 và thứ 7), tổng cộng khoảng 4 đến 6 ngày một tháng.</p>
+
+<p>Đối với thí sinh có lịch trình bận rộn, đây là một điều vô cùng bất tiện.&nbsp;</p>
+
+<p><span style="font-size:18px"><span style="color:#1155cc"><strong>📜Khó khăn trong việc viết trên giấy</strong>:</span></span></p>
+
+<p>Bên cạnh những người yêu thích viết bằng tay trên giấy, một số người lại đam mê việc gõ máy tính bởi một số lý do như đã quen với việc thường xuyên sử dụng máy tính, chữ viết tay khó nhìn,..</p>
+
+<p>Việc viết tay trong phần thi Writing có thể gây mệt mỏi cho một số người, đặc biệt là những người không có thói quen viết thường xuyên.&nbsp;</p>
+
+<p><span style="font-size:18px"><span style="color:#1155cc"><strong>⚠️Dễ mắc lỗi sai chính tả</strong>:</span></span></p>
+
+<p>Trong các phần thi như Reading (Đọc), Listening (Nghe) hay Writing (Viết), hình thức thi trên giấy không cho phép thí sinh sử dụng chức năng Copy - Paste như thi máy, điều này đôi khi khiến việc sao chép thông tin từ bài đọc gốc vào bài viết có thể xảy ra sai sót do áp lực phòng thi.&nbsp;</p>
+
+<p style="text-align:center"><span style="font-size:18px"><strong><em>Bảng tổng hợp ưu và nhược điểm của hai hình thức thi</em></strong></span></p>
+
+<div style="margin-left:18px">
+<table cellspacing="0" style="border-collapse:collapse; border:none; width:634px">
+<tbody>
+    <tr>
+        <td style="background-color:#cccccc; border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:182px">
+        <p style="text-align:center"><strong>Tiêu chí</strong></p>
+        </td>
+        <td style="background-color:#cccccc; border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:200px">
+        <p style="text-align:center"><strong>IELTS Paper-based&nbsp;</strong></p>
+
+        <p style="text-align:center"><strong>(trên giấy)</strong></p>
+        </td>
+        <td style="background-color:#cccccc; border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:252px">
+        <p style="text-align:center"><strong>IELTS Computer-based&nbsp;</strong></p>
+
+        <p style="text-align:center"><strong>(trên máy)</strong></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:182px">
+        <p><strong>Thời gian chờ kết quả</strong></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:200px">
+        <p>Lâu hơn, thường từ 13 ngày trở lên.</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:252px">
+        <p>Nhanh hơn, sau 3-5 ngày.</p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:182px">
+        <p><strong>Thời gian thi</strong></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:200px">
+        <p>Thường chỉ tổ chức vào một hoặc hai ngày trong tuần.</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:252px">
+        <p>Có thể chọn hầu như tất cả các ngày trong tuần, có nhiều khung giờ thi.</p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:182px">
+        <p><strong>Kỹ năng Writing (Viết)</strong></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:200px">
+        <p>Cần viết tay, có thể gây mệt và sai sót.&nbsp;</p>
+
+        <p>Hợp với những thí sinh quen với cách viết truyền thống.&nbsp;</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:252px">
+        <p>Sử dụng bàn phím máy tính, dễ chỉnh sửa, kiểm soát số từ.</p>
+
+        <p>Gây khó khăn cho những ai không quen thao tác trên máy tính hoặc dễ bị ảnh hưởng bởi tiếng ồn xung quanh.&nbsp;</p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:182px">
+        <p><strong>Kỹ năng Reading (Đọc)</strong></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:200px">
+        <p>Gạch chân và ghi chú trên giấy.</p>
+
+        <p>Không gây mỏi mắt khi đọc lâu (60 phút).</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:252px">
+        <p>Dễ sử dụng công cụ highlight trực tiếp trên màn hình. Có thể tùy chỉnh màn hình để chia đôi cho việc đọc tiện lợi hơn.</p>
+
+        <p>Mỏi mắt khi phải nhìn liên tục vào màn hình máy tính.&nbsp;</p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:182px">
+        <p><strong>Đồng hồ tính giờ</strong></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:200px">
+        <p>Hiển thị trên màn hình chính của phòng thi.</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:252px">
+        <p>Nhấp chữ đỏ khi gần hết giờ, có thể tạo áp lực cho thí sinh.</p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:182px">
+        <p><strong>Copy - Paste</strong></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:200px">
+        <p>Không cho phép sao chép và dán.</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:252px">
+        <p>Có thể sao chép và dán thông tin dễ dàng.</p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:182px">
+        <p><strong>Thời gian kiểm tra lại bài (Review)</strong></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:200px">
+        <p><strong>Kỹ năng Reading</strong>: Khó kiểm tra lại bài một cách tổng quát.</p>
+
+        <p><strong>Kỹ năng Listening</strong>: có 10 phút chuyển đáp án, có thể kiểm tra kỹ hơn.&nbsp;</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:252px">
+        <p><strong>Kỹ năng Reading</strong>: Dễ dàng kiểm tra lại bài với các câu hỏi được hiển thị.</p>
+
+        <p><strong>Kỹ năng Listening</strong>: Chỉ có 2 phút xem lại đáp án, có thể không đủ thời gian kiểm tra toàn bộ bài.&nbsp;</p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:182px">
+        <p><strong>Chất lượng âm thanh (Listening)</strong></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:200px">
+        <p>Tai nghe có thể không đạt chất lượng tốt.</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:252px">
+        <p>Tai nghe to hơn, âm thanh rõ ràng. Thí sinh có thể điều chỉnh âm lượng theo sở thích.</p>
+        </td>
+    </tr>
+</tbody>
+</table>
+</div>
+
+<p style="text-align:center"><img alt="So sánh thi IELTS giấy và máy tính" src="https://lh7-us.googleusercontent.com/_OzasFy1QiiqqmwvQ9L6SyZqineCWKSgGIjCxllZFyb7-UsA_KpLbQcoJXCMU1hsrTPjAWecH1FFtmsXZ-ms0Y1BBnnalgYzqFX_K5-eIwPkwwlKeMFy-IGtQ-4xkpdn7Z1QDF2P6p3dyPUE7MkNfEU" style="height:851px; width:479px"></p>
+
+<p style="text-align:center">So sánh hình thức thi IELTS trên giấy và trên máy tính</p>
+
+<h2 id="iii.-nên-thi-ielts-trên-máy-hay-trên-giấy?"><strong>III. Nên thi IELTS trên máy hay trên giấy?&nbsp;</strong></h2>
+
+<p>Lựa chọn giữa hình thức thi IELTS trên giấy và trên máy nên phụ thuộc vào sở thích và ưu tiên cá nhân của bạn, cũng như tùy thuộc vào mục tiêu của bạn và các trường hợp cụ thể. Dưới đây là tóm tắt một số tiêu chí để giúp bạn quyết định:</p>
+
+<p style="text-align:center"><img alt="nên thi ielts trên giấy hay máy tính" src="https://lh7-us.googleusercontent.com/tp5JO9XSzKJyQDvGaIMKo6UquqhqZ_rJDYgeTGvsDO7Ofw91AsplVwBEEeyN89uj6Y9gvTcu2hJ-SJygtCUlpveqOzCZMwzBqI0wlTlPaZ_CMiBae6c9VnJCZHvO5vPlaFdJ4QrPBfsGRllOXZA6Zqg" style="height:304px; width:533px"></p>
+
+<p style="text-align:center"><em>Chọn hình thức thi IELTS nào có lợi hơn?</em></p>
+
+<p><span style="font-size:18px"><strong>1. Bạn nên chọn IELTS Paper-based (trên giấy) nếu:</strong></span></p>
+
+<ul>
+<li style="list-style-type:disc"><strong>Có kỹ năng viết tay tốt</strong>: Nếu bạn tự tin về việc sử dụng bút chì để ghi chú, gạch chân, hoặc viết bài thi, hình thức thi giấy sẽ rất phù hợp với bạn.</li>
+<li style="list-style-type:disc"><strong>Không quen đọc trên màn hình</strong>: Nếu bạn thấy mệt mắt khi đọc trên màn hình hoặc cần thời gian để thích nghi với việc đọc trên máy tính, thi giấy có thể là lựa chọn tốt.</li>
+<li style="list-style-type:disc"><strong>Không có kỹ năng sử dụng máy tính</strong>: Việc thi máy đòi hỏi sử dụng máy tính thao tác rất nhiều, nếu không quen thuộc sẽ gây khó khăn và mất thời gian, nên hãy cân nhắc tới yếu tố này.</li>
+</ul>
+
+<p><span style="font-size:18px"><strong>2. Bạn nên chọn IELTS Computer-based (trên máy) nếu:</strong></span></p>
+
+<ul>
+<li style="list-style-type:disc"><strong>Muốn nhận kết quả nhanh chóng</strong>: Hình thức thi trên máy thường cho kết quả nhanh hơn, sau 3-5 ngày so với 13 ngày ở hình thức thi giấy.</li>
+<li style="list-style-type:disc"><strong>Thích sự linh động trong lịch thi</strong>: Thi trên máy cho phép bạn chọn ngày và khung giờ thi một cách linh hoạt hơn, và bạn có thể thi cả bốn kỹ năng trong cùng một ngày.</li>
+<li style="list-style-type:disc"><strong>Thành thạo sử dụng bàn phím và công cụ điện tử</strong>: Nếu bạn thoải mái với việc sử dụng bàn phím máy tính, công cụ highlight, và copy-paste, thi trên máy có thể giúp bạn tận dụng các tính năng này.</li>
+<li style="list-style-type:disc"><strong>Khả năng kiểm tra lại bài thi dễ dàng</strong>: Thi trên máy cho phép bạn dò lại các câu hỏi một cách dễ dàng, giúp tránh việc bỏ sót câu hỏi.</li>
+</ul>
+
+<p>Cuối cùng, quyết định lựa chọn hình thức thi nào vẫn nên dựa trên sở thích cá nhân và mục tiêu của bạn. Bạn có thể cân nhắc lựa chọn tùy theo kỹ năng và thoải mái của mình.</p>
+
+<h2 id="lời-kết"><strong>Lời kết</strong></h2>
+
+<p>Trên đây, LearnEnglish đã chia sẻ cho bạn So sánh chi tiết giữa IELTS Paper-based và Computer-based và làm thế nào để lựa chọn hình thức thi có lợi nhất rồi đó. Hy vọng sau khi đọc bài viết này, bạn sẽ có thể có được câu trả lời cho mình nhé!</p>
+
+<p>Nếu bạn có bất kỳ thắc mắc hay câu hỏi nào, hãy bình luận bên dưới để LearnEnglish giải đáp cho bạn nhé!</p>
+                    </div>
+                    
+
+                    
+
+                    
+                </div>
+
+                
+                <div class="post-tags">
+                
+                    <span class="tag">ielts</span>
+                
+                </div>
+                
+                <br>
+
+                <div class="post-comments-wrapper">
+                    <h4 id="bình-luận">Bình luận</h4>
+                    
+
+
+
+<form action="/posts/637/comment/" method="POST" class="mt-2 md-comment-input jqform jqcomment-form" data-reload-html="#obj-comments-637" data-target="#md-comments-box" data-submitting="false">
+    
+<input name="csrfmiddlewaretoken" type="hidden" value="bD0Jvny2UcbmhukUYHg4a7NNqI34jf2CzGkwU5S8eqS5FqMyc7l3rRpBHl76g2oC">
+
+
+    
+    
+
+    <div class="input-group">
+        <textarea name="content" rows="1" class="form-control custom-control jqcomment-textarea" placeholder="Chia sẻ cảm nghĩ của bạn ..."></textarea>
+        <div class="input-group-append">
+            <button class="input-group-addon btn btn-primary jqcomment-submit">Gửi</button>
+        </div>
+    </div>
+</form>
+
+
+
+                    <br>
+                    <div id="obj-comments-637" class="jqhtml-loader" data-href="/posts/637/comments/"><div class="comment-item media" style="margin-left: 0.0rem;">
+
+<img class="comment-avatar" src="https://res.cloudinary.com/sandodep6/image/upload/w_300/sandodep6_x_56458167854570490203256756077546773384_yavkat" alt="tohuu417">
+
+
+<div class="comment-body media-body">
+    <div class="comment-username">
+        <strong>
+            tohuu417
+            
+        </strong>,
+        Tháng 11. 17, 2023
+    </div>
+    <div class="comment-content prewrap">ok</div>
+
+    
+    <div class="comment-reply-action">
+        <a href="#comment-reply-form-60657" data-toggle="collapse" aria-expanded="false"><strong>Trả lời</strong></a>
+
+        
+
+        <div class="comment-reply-form collapse" id="comment-reply-form-60657">
+            
+
+
+
+<form action="/posts/637/comment/" method="POST" class="mt-2 md-comment-input jqform jqcomment-form" data-reload-html="#obj-comments-637" data-target="#md-comments-box" data-submitting="false">
+    
+<input name="csrfmiddlewaretoken" type="hidden" value="HYe3JuAiVdLpbxu8vpWV6QObEZqOlIWw51yQ8cUofrs8ztWMJP1UnAqZVCuQiviw">
+
+
+    
+    <input type="hidden" name="reply_to" value="60657">
+    
+    
+
+    <div class="input-group">
+        <textarea name="content" rows="1" class="form-control custom-control jqcomment-textarea" placeholder="Chia sẻ cảm nghĩ của bạn ..."></textarea>
+        <div class="input-group-append">
+            <button class="input-group-addon btn btn-primary jqcomment-submit">Gửi</button>
+        </div>
+    </div>
+</form>
+
+
+
+        </div>
+    </div>
+    
+</div>
+</div></div>
+                </div>
+
+                
+                <br>
+                <div class="">
+                    <div class="h3">Có thể bạn sẽ quan tâm</div>
+                    
+<ul class="post-links">
+
+
+
+<li class="post-link"><a href="https://LearnEnglish.com/posts/487/le-phi-thi-ielts-2023-moi-nhat/">Lệ phí thi IELTS 2023 mới nhất</a></li>
+
+
+
+
+<li class="post-link"><a href="https://LearnEnglish.com/posts/373/nen-thi-ielts-hay-toeic-lua-chon-the-nao-cho-phu-hop/">Nên thi IELTS hay TOEIC? Lựa chọn thế nào cho phù hợp?</a></li>
+
+
+</ul>
+
+                </div>
+                
+
+                <br>
+                <div>
+                    <div class="h3">Các bài viết cùng chủ đề</div>
+                    
+<div class="">
+<div class="center">
+    
+        
+        <div class="posts-list">
+        
+            
+<div class="postlist-card">
+
+
+<div class="postlist-card-img sm mb-2">
+    <img class="lazyel card-img entered loaded" data-src="/media/examprep/Post/files/2024/12/05/C%C3%A1ch_d%C3%B9ng_25.png" data-ll-status="loaded" src="/media/examprep/Post/files/2024/12/05/C%C3%A1ch_d%C3%B9ng_25.png">
+</div>
+
+<div class="postlist-card-content-wrapper">
+    
+    <span class="d-block post-topic"><a class="font-weight-bold small" href="/topics/ielts-materials/">IELTS MATERIALS</a></span>
+    
+    <div class="postlist-title-wrapper">
+        
+        <div class="postlist-card-img-sm mb-2">
+            <img class="lazyel card-img" data-src="/media/examprep/Post/files/2024/12/05/C%C3%A1ch_d%C3%B9ng_25.png">
+        </div>
+        
+        <div class="postlist-title"><a href="/posts/1566/tong-hop-tu-vung-ielts-chu-de-education-giao-duc/">Tổng hợp từ vựng IELTS chủ đề Education (Giáo dục)</a></div>
+    </div>
+    <div class="postlist-card-content card-body d-flex flex-column p-0">
+        <p>Nằm lòng topic từ vựng Education cho kỳ thi IELTS qua bài viết này nhé!</p>
+    </div>
+    
+    <div class="postlist-meta">
+        02/12/2024 bởi Phuong Anh Do
+        
+    </div>
+    
+</div>
+</div>
+
+        
+            
+<div class="postlist-card">
+
+
+<div class="postlist-card-img sm mb-2">
+    <img class="lazyel card-img entered loaded" data-src="/media/examprep/Post/files/2024/12/05/C%C3%A1ch_d%C3%B9ng_26.png" data-ll-status="loaded" src="/media/examprep/Post/files/2024/12/05/C%C3%A1ch_d%C3%B9ng_26.png">
+</div>
+
+<div class="postlist-card-content-wrapper">
+    
+    <span class="d-block post-topic"><a class="font-weight-bold small" href="/topics/ielts-materials/">IELTS MATERIALS</a></span>
+    
+    <div class="postlist-title-wrapper">
+        
+        <div class="postlist-card-img-sm mb-2">
+            <img class="lazyel card-img" data-src="/media/examprep/Post/files/2024/12/05/C%C3%A1ch_d%C3%B9ng_26.png">
+        </div>
+        
+        <div class="postlist-title"><a href="/posts/1565/tong-hop-tu-vung-ielts-chu-de-crime-toi-pham/">Tổng hợp từ vựng IELTS chủ đề Crime (Tội phạm)</a></div>
+    </div>
+    <div class="postlist-card-content card-body d-flex flex-column p-0">
+        <p>Tham khảo tổng hợp từ vựng IELTS chủ đề Crime đầy đủ nhất để dễ dàng đạt điểm tốt trong kỳ thi IELTS nhé!</p>
+    </div>
+    
+    <div class="postlist-meta">
+        02/12/2024 bởi Phuong Anh Do
+        
+    </div>
+    
+</div>
+</div>
+
+        
+            
+<div class="postlist-card">
+
+
+<div class="postlist-card-img sm mb-2">
+    <img class="lazyel card-img entered loaded" data-src="/media/examprep/Post/files/2024/12/05/C%C3%A1ch_d%C3%B9ng_27.png" data-ll-status="loaded" src="/media/examprep/Post/files/2024/12/05/C%C3%A1ch_d%C3%B9ng_27.png">
+</div>
+
+<div class="postlist-card-content-wrapper">
+    
+    <span class="d-block post-topic"><a class="font-weight-bold small" href="/topics/ielts-materials/">IELTS MATERIALS</a></span>
+    
+    <div class="postlist-title-wrapper">
+        
+        <div class="postlist-card-img-sm mb-2">
+            <img class="lazyel card-img" data-src="/media/examprep/Post/files/2024/12/05/C%C3%A1ch_d%C3%B9ng_27.png">
+        </div>
+        
+        <div class="postlist-title"><a href="/posts/1564/tong-hop-tu-vung-ielts-chu-de-environment-moi-truong/">Tổng hợp từ vựng IELTS chủ đề Environment (Môi trường)</a></div>
+    </div>
+    <div class="postlist-card-content card-body d-flex flex-column p-0">
+        <p>Học và ghi nhớ chủ đề từ vựng Environment nhanh thuộc và nhớ lâu nhờ tổng hợp từ vựng và tip học từ sau đây!</p>
+    </div>
+    
+    <div class="postlist-meta">
+        02/12/2024 bởi Phuong Anh Do
+        
+    </div>
+    
+</div>
+</div>
+
+        
+            
+<div class="postlist-card">
+
+
+<div class="postlist-card-img sm mb-2">
+    <img class="lazyel card-img entered loaded" data-src="/media/examprep/Post/files/2024/12/05/C%C3%A1ch_d%C3%B9ng_28.png" data-ll-status="loaded" src="/media/examprep/Post/files/2024/12/05/C%C3%A1ch_d%C3%B9ng_28.png">
+</div>
+
+<div class="postlist-card-content-wrapper">
+    
+    <span class="d-block post-topic"><a class="font-weight-bold small" href="/topics/ielts-materials/">IELTS MATERIALS</a></span>
+    
+    <div class="postlist-title-wrapper">
+        
+        <div class="postlist-card-img-sm mb-2">
+            <img class="lazyel card-img" data-src="/media/examprep/Post/files/2024/12/05/C%C3%A1ch_d%C3%B9ng_28.png">
+        </div>
+        
+        <div class="postlist-title"><a href="/posts/1563/tong-hop-tu-vung-ielts-chu-de-vietnam/">Tổng hợp từ vựng IELTS chủ đề Vietnam</a></div>
+    </div>
+    <div class="postlist-card-content card-body d-flex flex-column p-0">
+        <p>Củng cố vốn từ vựng về Việt Nam để thật tự tin trình bày ý tưởng trong phòng thi IELTS nhé!</p>
+    </div>
+    
+    <div class="postlist-meta">
+        02/12/2024 bởi Phuong Anh Do
+        
+    </div>
+    
+</div>
+</div>
+
+        
+            
+<div class="postlist-card">
+
+
+<div class="postlist-card-img sm mb-2">
+    <img class="lazyel card-img entered loaded" data-src="/media/examprep/Post/files/2024/12/05/C%C3%A1ch_d%C3%B9ng_29.png" data-ll-status="loaded" src="/media/examprep/Post/files/2024/12/05/C%C3%A1ch_d%C3%B9ng_29.png">
+</div>
+
+<div class="postlist-card-content-wrapper">
+    
+    <span class="d-block post-topic"><a class="font-weight-bold small" href="/topics/ielts-materials/">IELTS MATERIALS</a></span>
+    
+    <div class="postlist-title-wrapper">
+        
+        <div class="postlist-card-img-sm mb-2">
+            <img class="lazyel card-img" data-src="/media/examprep/Post/files/2024/12/05/C%C3%A1ch_d%C3%B9ng_29.png">
+        </div>
+        
+        <div class="postlist-title"><a href="/posts/1562/tong-hop-tu-vung-ielts-chu-de-traveling-du-lich/">Tổng hợp từ vựng IELTS chủ đề Traveling (Du lịch)</a></div>
+    </div>
+    <div class="postlist-card-content card-body d-flex flex-column p-0">
+        <p>Nằm lòng topic từ vựng Traveling cho kỳ thi IELTS qua bài viết này nhé!</p>
+    </div>
+    
+    <div class="postlist-meta">
+        02/12/2024 bởi Phuong Anh Do
+        
+    </div>
+    
+</div>
+</div>
+
+        
+        </div>
+
+        
+
+
+
+    
+</div>
+</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-md-2 order-md-1">
+        
+<div class="post-topics-list">
+
+    <div class="post-topics-list">
+        <p class="font-12 font-600">
+            Chuyên mục
+        </p>
+    
+        <div class="post-topics-listitem my-2">
+            <a class="text-dark" href="/blog/topics/tim-hieu-ve-learn-english/index.html">
+                <b>TÌM HIỂU VỀ LEARNENGLISH</b>
+            </a>
+        </div>
+    
+        <div class="post-topics-listitem-sub">
+            <a class="text-dark" href="/blog/topics/tinh-nang-tren-learn-english/index.html">
+                Tính năng trên LearnEnglish
+            </a>
+        </div>
+    
+        <div class="post-topics-listitem-sub">
+            <a class="text-dark" href="#" onclick="showNotification()">KHÓA HỌC TRÊN LEARNENGLISH</a>
+        </div>
+    
+        <hr>
+    
+        <div class="post-topics-listitem my-2">
+            <a class="text-dark" href="#" onclick="showNotification()">
+                <b>Review của học viên LearnEnglish</b>
+            </a>
+        </div>
+    
+        <div class="post-topics-listitem-sub">
+            <a class="text-dark" href="#" onclick="showNotification()">Học viên IELTS</a>
+        </div>
+    
+        <div class="post-topics-listitem-sub">
+            <a class="text-dark" href="#" onclick="showNotification()">Học viên TOEIC</a>
+        </div>
+    
+        <hr>
+    
+        <div class="post-topics-listitem my-2">
+            <a class="text-dark" href="#" onclick="showNotification()">
+                <b>Luyện thi IELTS</b>
+            </a>
+        </div>
+    
+        <div class="post-topics-listitem-sub">
+            <a class="text-dark" href="#" onclick="showNotification()">IELTS Listening</a>
+        </div>
+    
+        <div class="post-topics-listitem-sub">
+            <a class="text-dark" href="#" onclick="showNotification()">IELTS Reading</a>
+        </div>
+    
+        <div class="post-topics-listitem-sub">
+            <a class="text-dark" href="#" onclick="showNotification()">IELTS Speaking</a>
+        </div>
+    
+        <div class="post-topics-listitem-sub">
+            <a class="text-dark" href="#" onclick="showNotification()">IELTS Writing</a>
+        </div>
+    
+        <div class="post-topics-listitem-sub">
+            <a class="text-dark" href="#" onclick="showNotification()">IELTS Materials</a>
+        </div>
+    
+        <div class="post-topics-listitem-sub">
+            <a class="text-dark" href="#" onclick="showNotification()">Thông tin kỳ thi IELTS</a>
+        </div>
+    
+        <div class="post-topics-listitem-sub">
+            <a class="text-dark" href="#" onclick="showNotification()">Kinh nghiệm thi IELTS</a>
+        </div>
+    
+        <hr>
+    
+        <div class="post-topics-listitem my-2">
+            <a class="text-dark" href="#" onclick="showNotification()">
+                <b>Luyện thi TOEIC</b>
+            </a>
+        </div>
+    
+        <div class="post-topics-listitem-sub">
+            <a class="text-dark" href="#" onclick="showNotification()">TOEIC Listening</a>
+        </div>
+    
+        <div class="post-topics-listitem-sub">
+            <a class="text-dark" href="#" onclick="showNotification()">TOEIC Reading</a>
+        </div>
+    
+        <div class="post-topics-listitem-sub">
+            <a class="text-dark" href="#" onclick="showNotification()">TOEIC Materials</a>
+        </div>
+    
+        <div class="post-topics-listitem-sub">
+            <a class="text-dark" href="#" onclick="showNotification()">Thông tin kỳ thi TOEIC</a>
+        </div>
+    
+        <div class="post-topics-listitem-sub">
+            <a class="text-dark" href="#" onclick="showNotification()">Kinh nghiệm thi TOEIC</a>
+        </div>
+    
+        <hr>
+    
+        <div class="post-topics-listitem my-2">
+            <a class="text-dark" href="#" onclick="showNotification()">
+                <b>Tiếng Anh cơ bản</b>
+            </a>
+        </div>
+    
+        <div class="post-topics-listitem-sub">
+            <a class="text-dark" href="#" onclick="showNotification()">Phát âm</a>
+        </div>
+    
+        <div class="post-topics-listitem-sub">
+            <a class="text-dark" href="#" onclick="showNotification()">Từ vựng</a>
+        </div>
+    
+        <div class="post-topics-listitem-sub">
+            <a class="text-dark" href="#" onclick="showNotification()">Ngữ pháp</a>
+        </div>
+    
+        <hr>
+    
+        <div class="post-topics-listitem my-2">
+            <a class="text-dark" href="#" onclick="showNotification()">
+                <b>Luyện Thi HSK-HSKK</b>
+            </a>
+        </div>
+    
+        <div class="post-topics-listitem-sub">
+            <a class="text-dark" href="#" onclick="showNotification()">Tiếng Trung cơ bản</a>
+        </div>
+    
+        <div class="post-topics-listitem-sub">
+            <a class="text-dark" href="#" onclick="showNotification()">Kiến thức HSK-HSKK</a>
+        </div>
+    
+        <div class="post-topics-listitem-sub">
+            <a class="text-dark" href="#" onclick="showNotification()">Thông tin kỳ thi HSK-HSKK</a>
+        </div>
+    
+        <div class="post-topics-listitem-sub">
+            <a class="text-dark" href="#" onclick="showNotification()">Kinh nghiệm thi HSK-HSKK</a>
+        </div>
+    
+        <hr>
+    
+        <div class="post-topics-listitem my-2">
+            <a class="text-dark" href="#" onclick="showNotification()">
+                <b>Tiếng Anh cho người đi làm</b>
+            </a>
+        </div>
+    
+        <hr>
+    
+        <div class="post-topics-listitem my-2">
+            <a class="text-dark" href="#" onclick="showNotification()">
+                <b>Du học</b>
+            </a>
+        </div>
+    
+        <div class="post-topics-listitem-sub">
+            <a class="text-dark" href="#" onclick="showNotification()">Admission essays</a>
+        </div>
+    
+        <div class="post-topics-listitem-sub">
+            <a class="text-dark" href="#" onclick="showNotification()">Kinh nghiệm du học</a>
+        </div>
+    
+        <hr>
+    </div>
+    
+    <script>
+        function showNotification() {
+            alert("Bài viết này sẽ được cập nhật trong tương lai");
+        }
+    </script>
+    
+
+<hr>
+
+</div>
+
+    </div>
+</div>
+</div>
+
+                
+            </div>
+            
+        </div>
+        
+
+        
+    </div>
+
+    <div class="modal" id="site-modal-lg" tabindex="-1" aria-labelledby="site-modal-lg" aria-hidden="true" data-keyboard="false" data-backdrop="static">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+                <div class="modal-body" id="site-modal-lg-content"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="site-modal-md" tabindex="-1" aria-labelledby="site-modal-md" aria-hidden="true" data-keyboard="false" data-backdrop="static">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+                <div class="modal-body" id="site-modal-md-content"></div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+window.csrf_token = 'bD0Jvny2UcbmhukUYHg4a7NNqI34jf2CzGkwU5S8eqS5FqMyc7l3rRpBHl76g2oC';
+window.current_user =
+
+{
+    is_authenticated: true,
+    id: 1532546,
+    name: "chauthithuyquynh2019",
+    is_admin: false,
+    is_staff: false,
+    is_superuser: false,
+}
+
+</script>
+    <script type="text/javascript" src="/static/ckeditor/ckeditor-init-override.js?v=1735926894"></script>
+    <script type="text/javascript" src="/static/ckeditor/ckeditor/ckeditor.js"></script>
+    <script type="text/javascript" src="/static/js/webaudiorecorder/WebAudioRecorder.min.js"></script>
+    <script type="text/javascript" src="/static/dist/vendor.ad60eb658fc650d75097.js?v=1735926894"></script>
+    <script type="text/javascript" src="/static/dist/main.651d8fa8cadf332cd75a.js?v=1735926894"></script>
+
+    
+
+<script type="text/javascript">
+$(function() {
+    const isInternalCourseURL = (url) => (new URL(url).origin == location.origin && (url.indexOf('/courses/') > -1 || url.indexOf('/lp/')) > -1);
+    $('.post-content a').each(function(idx,el) {
+        var $link = $(el);
+        var url = $link.attr('href');
+        if (isInternalCourseURL(url)) {
+            var qs = generate_qs({
+                'itm_source': 'seo',
+                'itm_medium': 'article',
+                'itm_campaign': 'blogpost_internal_link',
+                'itm_content': '637'
+            });
+            var new_url = url + '?' + qs;
+            $link.attr('href', new_url);
+        }
+    });
+});
+</script>
+
+    <script type="text/javascript">
+        function isFacebookApp() {
+            var ua = navigator.userAgent || navigator.vendor || window.opera;
+            return (ua.indexOf("FBAN") > -1) || (ua.indexOf("FBAV") > -1);
+        }
+        if (isFacebookApp()) {
+            $('.g-login-block').hide();
+        }
+    </script>
+
+    
+
+    
+    
+    
+
+
+    
+    
+    
+
+
+    
+    <script type="text/javascript">
+        (function(w,d,t,u,n,a,m){w['MauticTrackingObject']=n;
+            w[n]=w[n]||function(){(w[n].q=w[n].q||[]).push(arguments)},a=d.createElement(t),
+            m=d.getElementsByTagName(t)[0];a.async=1;a.src=u;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://mautic.LearnEnglish.com/mtc.js','mt');
+
+        
+            
+            mt('send', 'pageview', {
+                email: "chauthithuyquynh2019@gmail.com",
+                uid: "1532546",
+                username: "chauthithuyquynh2019",
+                is_paid: false,
+                is_trial: true
+            });
+            
+        
+    </script>
+    
+<script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon="{&quot;rayId&quot;:&quot;8fcc7bdf49def920&quot;,&quot;serverTiming&quot;:{&quot;name&quot;:{&quot;cfExtPri&quot;:true,&quot;cfL4&quot;:true,&quot;cfSpeedBrain&quot;:true,&quot;cfCacheStatus&quot;:true}},&quot;version&quot;:&quot;2024.10.5&quot;,&quot;token&quot;:&quot;8d646591bd144e069b89dada41cfc02b&quot;}" crossorigin="anonymous"></script>
+
+
+    <div class="highlight-control" style="display: none; top: -35px;">
+        <div>
+            <span class="fas fa-trash highlight-icon highlight-remove"></span>
+            <span class="fas fa-pencil highlight-icon highlight-note"></span>
+            <span class="highlight-icon highlight-color blue"></span>
+            <span class="highlight-icon highlight-color pink"></span>
+            <span class="highlight-icon highlight-color green"></span>
+            <span class="highlight-icon highlight-color yellow"></span>
+            <span class="highlight-icon highlight-color underred"></span>
+            <span class="highlight-icon highlight-color crossed">abc</span>
+            <span class="ml-2 fas fa-plus highlight-icon highlight-flashcard" data-toggle="modal" data-target="#highlight-modal"></span>
+        </div>
+        <div class="highlight-editor" style="display: none;">
+            <textarea rows="3"></textarea>
+            <div><span class="far fa-check highlight-icon highlight-save"></span></div>
+        </div>
+    </div>
+    <div class="modal" id="highlight-modal" tabindex="-1" aria-labelledby="highlight-modal" aria-hidden="true" data-keyboard="false" data-backdrop="static">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+                <div class="modal-body" id="highlight-modal-content"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="footer-wrapper" bis_skin_checked="1">
+        <div class="footer-container" bis_skin_checked="1">
+            <footer>
+
+
+
+                <div class="row" bis_skin_checked="1">
+                    <div class="col-12 col-sm-12 col-md" bis_skin_checked="1">
+                        <a href="/"><img class="mb-2" src="/assets/img/Logo_LearnEnglish.svg" alt="" height="30"></a>
+                        <small class="mb-2">©</small>
+                        <div class="site-socials" style="width: 140px !important;" bis_skin_checked="1">
+                            <a target="_blank" href="https://facebook.com/" bis_skin_checked="1"><span
+                                    class="social-link fab fa-facebook-square"></span></a>
+                            <a target="_blank" href="https://instagram.com/" bis_skin_checked="1"><span
+                                    class="social-link fab fa-instagram"></span></a>
+                            <a target="_blank" href="https://twitter.com/" bis_skin_checked="1"><span
+                                    class="social-link fab fa-twitter"></span></a>
+                            <a target="_blank" href="https://youtube.com/" bis_skin_checked="1"><span
+                                    class="social-link fab fa-youtube"></span></a>
+                            <a target="_blank" href="https://www.tiktok.com" bis_skin_checked="1"><span
+                                    class="social-link fab fa-tiktok"></span></a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md" bis_skin_checked="1">
+                        <div class="footer-title" bis_skin_checked="1">Về LearnEnglish</div>
+                        <ul class="list-unstyled text-small">
+                            <li><a href="/about/" bis_skin_checked="1">Giới thiệu</a></li>
+                            <li><a href="/contact/" bis_skin_checked="1">Liên hệ</a></li>
+                            <li><a href="/privacy/" bis_skin_checked="1">Điều khoản bảo mật</a></li>
+                            <li><a href="/terms/" bis_skin_checked="1">Điều khoản sử dụng</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-6 col-md" bis_skin_checked="1">
+                        <div class="footer-title" bis_skin_checked="1">Tài nguyên</div>
+                        <ul class="list-unstyled text-small">
+
+                            <li><a href="/tests/" bis_skin_checked="1">Thư viện đề thi</a></li>
+                            <li><a href="/posts/" bis_skin_checked="1">Blog</a></li>
+                            <li><a href="/materials/" bis_skin_checked="1">Kho tài liệu</a></li>
+
+
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md" bis_skin_checked="1">
+                        <div class="footer-title" bis_skin_checked="1">Chính sách chung</div>
+                        <ul class="list-unstyled text-small">
+                            <li><a href="/user-guide/" bis_skin_checked="1">Hướng dẫn sử dụng</a></li>
+                            <li><a href="/buying-guide/" bis_skin_checked="1">Hướng dẫn thanh toán</a></li>
+
+                            <li><a href="/buying-terms/" bis_skin_checked="1">Điều khoản và Điều Kiện Giao Dịch</a></li>
+                            <li><a href="/checkout-policy" bis_skin_checked="1">Chính sách kiểm hàng</a></li>
+                            <li><a href="/delivery-policy" bis_skin_checked="1">Chính sách giao, nhận hàng</a></li>
+                            <li><a href="/feedback/" bis_skin_checked="1">Phản hồi, khiếu nại</a></li>
+                            <li><a href="/return-policy" bis_skin_checked="1">Chính sách chuyển đổi, hoàn hủy</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+
+                <div class="footer-copyright text-center" bis_skin_checked="1">
+                    LearnEnglish © Bản quyền của GROUP11.
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,1909 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn English</title>
+    <link rel="icon" href="/assets/img/Avatar_LearnEnglish.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/f9374b778e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+    
+    <div class="topnav1 topnav-wrapper" bis_skin_checked="1">
+        <div class="topnav-container" bis_skin_checked="1">
+            <nav class="navbar  navbar-expand-lg">
+                <span class="navbar-brand">
+                    <a class="topnav-brand" href="/">
+                        <img class="topnav-logo" src="/assets/img/Logo_LearnEnglish.svg" alt="STUDY4">
+
+                    </a>
+                </span>
+                <button class="navbar-toggler pull-xs-right d-lg-none" type="button" data-toggle="collapse"
+                    data-target="#navbar-collapse">
+                    ☰
+
+                </button>
+                <div class="d-lg-block navbar-collapse justify-content-end collapse" id="navbar-collapse"
+                    bis_skin_checked="1">
+
+                    <ul class="nav">
+
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/courses/" bis_skin_checked="1">Course</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/skills/" bis_skin_checked="1">Skill</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/flashcards/me/" bis_skin_checked="1">Flashcards</a>
+                        </li>
+
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/blog/" bis_skin_checked="1">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/general-english/" bis_skin_checked="1">General english</a>
+                        </li>
+
+
+
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/courses/activate/" bis_skin_checked="1">
+                                Kích hoạt tài khoản
+                            </a>
+                        </li>
+
+                        <li class="nav-item user-topnav dropdown d-none d-lg-block">
+                            <a class="nav-link dropdown-toggle user-topnav-profile" href="/my-account/" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" bis_skin_checked="1">
+                                <span class="account-profile-img">
+
+                                    <img src="/assets/img/user_icon.webp" alt="ChuTanTai23130280">
+
+                                </span>
+
+                            </a>
+
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" bis_skin_checked="1">
+                                <div bis_skin_checked="1">
+                                    <h6 class="dropdown-header" id="thông-báo"> Thông báo </h6>
+                                    <div id="new-notis-dropdown-content" class="jqhtml-loader dropdown-text"
+                                        data-href="/notifications/newest/" bis_skin_checked="1">
+                                        <p class="font-sm"><i>Bạn chưa có thông báo mới.</i></p>
+
+
+                                        <div class="mt-2 link font-sm" bis_skin_checked="1"><a href="/notifications/"
+                                                bis_skin_checked="1">Xem tất cả &gt;&gt;</a></div>
+                                    </div>
+                                </div>
+
+                                <div class="dropdown-divider" bis_skin_checked="1"></div>
+                                <a class="dropdown-item" href="/studyplan/" bis_skin_checked="1">Lịch học của tôi</a>
+                                <a class="dropdown-item" href="/my-account/" bis_skin_checked="1">Trang cá nhân</a>
+                                <a class="dropdown-item" href="/logout/" bis_skin_checked="1">Đăng xuất</a>
+                            </div>
+                        </li>
+                        <li class="nav-item d-lg-none">
+                            <a class="nav-link" href="/notifications/" bis_skin_checked="1">Thông báo </a>
+                        </li>
+                        <li class="nav-item d-lg-none">
+                            <a class="nav-link" href="/studyplan/" bis_skin_checked="1">Lịch học của tôi</a>
+                        </li>
+                        <li class="nav-item d-lg-none">
+                            <a class="nav-link" href="/my-account/" bis_skin_checked="1">Trang cá nhân</a>
+                        </li>
+                        <li class="nav-item d-lg-none">
+                            <a class="nav-link" href="/logout/" bis_skin_checked="1">Đăng xuất</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+<script>
+    // JavaScript để xử lý dropdown
+    document.addEventListener('DOMContentLoaded', function() {
+        const profileBtn = document.querySelector('.user-topnav-profile');
+        const dropdownMenu = document.querySelector('.dropdown-menu');
+    
+        // Toggle dropdown khi click vào profile
+        profileBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            dropdownMenu.classList.toggle('show');
+        });
+    
+        // Đóng dropdown khi click ra ngoài
+        document.addEventListener('click', function(e) {
+            if (!profileBtn.contains(e.target) && !dropdownMenu.contains(e.target)) {
+                dropdownMenu.classList.remove('show');
+            }
+        });
+    });
+</script>
+    <script>
+        // JavaScript để xử lý dropdown
+        document.addEventListener('DOMContentLoaded', function () {
+            const profileBtn = document.querySelector('.user-topnav-profile');
+            const dropdownMenu = document.querySelector('.dropdown-menu');
+
+            // Toggle dropdown khi click vào profile
+            profileBtn.addEventListener('click', function (e) {
+                e.preventDefault();
+                dropdownMenu.classList.toggle('show');
+            });
+
+            // Đóng dropdown khi click ra ngoài
+            document.addEventListener('click', function (e) {
+                if (!profileBtn.contains(e.target) && !dropdownMenu.contains(e.target)) {
+                    dropdownMenu.classList.remove('show');
+                }
+            });
+        });
+    </script>
+
+
+
+
+<body class="highlighter-context">
+
+
+    <div class="topnav1 topnav-wrapper" bis_skin_checked="1">
+        
+    </div>
+    <script>
+        // JavaScript để xử lý dropdown
+        document.addEventListener('DOMContentLoaded', function () {
+            const profileBtn = document.querySelector('.user-topnav-profile');
+            const dropdownMenu = document.querySelector('.dropdown-menu');
+
+            // Toggle dropdown khi click vào profile
+            profileBtn.addEventListener('click', function (e) {
+                e.preventDefault();
+                dropdownMenu.classList.toggle('show');
+            });
+
+            // Đóng dropdown khi click ra ngoài
+            document.addEventListener('click', function (e) {
+                if (!profileBtn.contains(e.target) && !dropdownMenu.contains(e.target)) {
+                    dropdownMenu.classList.remove('show');
+                }
+            });
+        });
+    </script>
+
+        
+    <div id="fb-root" class=" fb_reset fb_reset"><div style="position: absolute; top: -10000px; width: 0px; height: 0px;"><div></div></div><div style="position: absolute; top: -10000px; width: 0px; height: 0px;"><div></div></div></div>
+    <script async="" defer="" crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&amp;version=v20.0&amp;appId=203430341284880&amp;autoLogAppEvents=1" nonce="1d3MdMH8" type="text/javascript"></script>
+    
+    
+
+    
+    <div class="site-elevator">
+        <div class="elevator-item elevator-open d-md-none">
+            <span class="fal fa-chevron-left" aria-hidden="true"></span>
+        </div>
+        <div class="elevator-item elevator-close d-md-none">
+            <span class="fal fa-chevron-right" aria-hidden="true"></span>
+        </div>
+        <div class="elevator-item">
+            <div class="jqdictionary-show" target="#">
+                <img src="/static/img/dictionary.png">
+                <div class="elevator-text">Từ điển</div>
+            </div>
+        </div>
+        <div class="jqdictionary-wrapper">
+            <span class="jqdictionary-expand fal fa-plus-square" aria-hidden="true"></span>
+            <span class="jqdictionary-close far fa-times" aria-hidden="true"></span>
+            <div class="h6 font-500 font-sm">
+                <a class="link jqdictionary-tab active" data-href="https://m.dict.laban.vn/">Anh-Việt</a> |
+                <a class="link jqdictionary-tab" data-href="https://www.wordreference.com/definition/">WordReference</a> |
+                <a class="link jqdictionary-tab" data-href="https://onelook.com/thesaurus/">Thesaurus</a> |
+                <a class="link jqdictionary-tab" data-href="https://vtudien.com/trung-viet/dictionary/nghia-cua-tu-%E4%BD%A0%E5%A5%BD">Tiếng Trung</a>
+            </div>
+            <div class="jqdictionary-iframe">
+                <iframe loading="lazy" frameborder="0"></iframe>
+            </div>
+        </div>
+
+
+        
+        <div class="elevator-item">
+            <a target="_blank" href="https://m.me/LearnEnglish.support">
+                <img src="/static/img/messenger.png">
+            </a>
+        </div>
+        
+
+        <div class="elevator-item">
+            <a target="_blank" href="https://zalo.me/LearnEnglish">
+                <img src="/static/img/zalo.jpg">
+            </a>
+        </div>
+
+
+        
+        <div class="elevator-item site-scrollTop" onclick="if (!window.__cfRLUnblockHandlers) return false; window.topFunction()" id="site-scrollTop" title="Go to top" style="display: flex;">
+            <span class="fal fa-chevron-up" aria-hidden="true"></span>
+        </div>
+    </div>
+    
+
+    
+
+    <div class="site-wrapper">
+
+        
+
+        
+
+
+<div class="topnav1 topnav-wrapper">
+
+</div>
+
+        
+
+        
+        <div class="site-content-wrapper">
+            
+
+            
+
+            
+            
+            
+            
+
+            
+<div class="container pb-0">
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/">Trang chủ</a></li>
+        
+        <li class="breadcrumb-item"><a href="/blog/index.html">Bài viết</a></li>
+        <li class="breadcrumb-item"><a href="/blog/lo-trinh-tu-hoc-ielts-online-tai-nha-tu-so-0-den-7-cua-study4/index.html/cau-truc-de-thi-ielts-chi-tiet-va-chuan-nhat-2024.html">Kinh nghiệm thi IELTS</a></li>
+        
+        <li class="breadcrumb-item active"><a href="/blog/lo-trinh-tu-hoc-ielts-online-tai-nha-tu-so-0-den-7-cua-study4/index.html/index.html">Lộ trình tự học IELTS online tại nhà từ số 0 đến 7+ của LearnEnglish</a></li>
+    </ol>
+</nav>
+</div>
+
+
+            
+<div class="content-header py-0">
+<div class="container py-0">
+    <div class="image-wrapper">
+        <a href="/courses/level-test/">
+            
+        </a>
+    </div>
+    <br>
+    <h1 class="post-title" id="lộ-trình-tự-học-ielts-online-tại-nhà-từ-số-0-đến-7+-của-LearnEnglish">
+        Lộ trình tự học IELTS online tại nhà từ số 0 đến 7+ của LearnEnglish
+        
+    </h1>
+    
+    <p class="post-description">
+        Hãy cùng LearnEnglish tham khảo ngay lộ trình tự học IELTS từ sơ cấp đến 7.0 chi tiết nhất ở bài viết dưới đây!
+    </p>
+    
+</div>
+</div>
+
+
+            
+            <div class="content-wrapper">
+                
+                
+<div class="container">
+<div class="row">
+    
+    <div class="col-12 col-md-7 order-md-2">
+        <div class="post-wrapper">
+            <div class="media post-author-media py-2 mb-3 border-bottom">
+                <div class="post-author-img">
+                    
+                    <img src="https://res.cloudinary.com/sandodep4/image/upload/w_300/sandodep4_x_179027497304743546577679031874613619737_cajgas" alt="hangbm.LearnEnglish">
+                    
+                </div>
+                <div class="media-body">
+                    <div class="post-author-name"><a target="_blank" href="/u/hangbm.LearnEnglish/">Bùi Hằng</a></div>
+                    <div class="post-meta">21/05/2024</div>
+                </div>
+            </div>
+
+            <div class="post-main-wrapper">
+
+                
+
+                
+
+                <div class="post-main mt-2">
+                    
+                    <div id="post-content" class="post-content md-content js-toc-content" prewrap="">
+                        <p><img alt="Lộ trình tự học IELTS online tại nhà từ số 0 đến 7+ của LearnEnglish" src="https://lh7-us.googleusercontent.com/wF0Ijm7DmNnMbV_jJHafQVjRh4PrGmVMgjsdN3_4IDc0qUKgZdbFTK9LxYRAg1zAf2ph7wSanRnExqkPQrhVWG5c7stFaw6ey9EFVvzoCx-NiITH5l8e8OmnXGvhrdrsbmtlepFL-wJrvOULvVXkPkw" style="height:351px; width:624px"></p>
+
+<p>HIện nay, chứng chỉ IELTS đã trở thành một phần không thể thiếu đối với các bạn học sinh, sinh viên và cả người đi làm vì những lợi ích to lớn mà nó mang lại. Các cụm từ “ôn thi IELTS”, “tips nâng band điểm IELTS” đã không còn quá xa lạ với đại đa số người Việt Nam.</p>
+
+<p>Thế nhưng, không phải ai cũng có đủ thời gian và điều kiện để đăng ký tham gia vào các lớp học ôn luyện IELTS tại các trung tâm, nơi mà thường yêu cầu bạn tham gia các lớp học cố định với một mức học phí tương đối cao.</p>
+
+<p>Chính vì vậy, một phương án khả thi mà nhiều bạn đang lựa chọn đó là tham gia các khóa học trực tuyến với giờ học linh hoạt hoặc tự xây dựng cho bản thân một lộ trình tự học tại nhà.</p>
+
+<p><span style="color:#0d4fa6"><strong>👉Dành cho các bạn từ sơ cấp (A1-A2) với mục tiêu 7+, trong bài viết này, LearnEnglish sẽ giúp bạn tự xây dựng một lộ trình luyện IELTS tại nhà hiệu quả nhé!</strong></span></p>
+
+<h2 id="i.-tổng-quan-về-kỳ-thi-ielts"><strong>I. Tổng quan về kỳ thi IELTS</strong></h2>
+
+<p><strong>IELTS </strong>là viết tắt của "International English Language Testing System" (Hệ thống kiểm tra tiếng Anh quốc tế). Đây là một bài kiểm tra tiếng Anh quen thuộc được sử dụng rộng rãi để đánh giá khả năng sử dụng tiếng Anh đối với người học.</p>
+
+<p style="text-align:center"><img alt="Lộ trình tự luyện IELTS tại nhà" src="https://lh7-us.googleusercontent.com/_h4X4k8bKpEF9tBvqxqQ86_cicASyzvzF0aDZHZueLco5sJZKzLyx7MNPQ9cPfZjseR80nhE6WmcZhuED2-CUUXVoGive4uMKFeU5QW8XgQ44Y-j6Lovrd3dPrE9WizI7RVGetx8nXLBVRBqUqSoQUk" style="height:336px; width:449px"></p>
+
+<p style="text-align:center"><em>Lộ trình tự luyện IELTS tại nhà</em></p>
+
+<p>IELTS được chấp nhận rộng rãi bởi các tổ chức, trường đại học và cơ quan chính phủ trên khắp thế giới. Bài kiểm tra này thường bao gồm bốn phần: Listening (Nghe), Reading (Đọc), Writing (Viết) và Speaking (Nói) để đánh giá năng lực toàn diện trong việc sử dụng tiếng Anh.</p>
+
+<div>
+<table cellspacing="0" style="border-collapse:collapse; border:none; table-layout:fixed; width:624px">
+<tbody>
+    <tr>
+        <td style="background-color:#fffedd; border-bottom:1px solid #fffedd; border-left:1px solid #fffedd; border-right:1px solid #fffedd; border-top:1px solid #fffedd; vertical-align:top">
+        <p><span style="color:#0d4fa6">👉</span><span style="color:#0d4fa6"><strong>Lợi ích của việc chọn học IELTS online:</strong></span></p>
+
+        <ul>
+            <li style="list-style-type:disc">Chi phí thấp hơn học tại trung tâm;</li>
+            <li style="list-style-type:disc">Thời gian học thoải mái hơn, không gấp rút; phù hợp với những bạn bận rộn;</li>
+            <li style="list-style-type:disc">Tài liệu được tổng hợp sẵn, không mất công đi tra tìm, va chạm những tài liệu không chính thống;</li>
+            <li style="list-style-type:disc">Dễ dàng xem lại bài giảng khi cần;</li>
+            <li style="list-style-type:disc">Giúp bạn tự nâng cao kỷ luật, học cách quản lý thời gian.</li>
+        </ul>
+        </td>
+    </tr>
+</tbody>
+</table>
+</div>
+
+<h2 id="ii.-xác-định-các-yếu-tố-quan-trọng-trước-khi-xây-dựng-lộ-trình-ôn-thi-ielts-tại-nhà"><strong>II. Xác định các yếu tố quan trọng trước khi xây dựng lộ trình ôn thi IELTS tại nhà</strong></h2>
+
+<p>Khi bắt đầu xây dựng lộ trình học IELTS cho người mới bắt đầu, điều quan trọng là cần xác định đúng năm yếu tố then chốt sau:</p>
+
+<ul>
+<li style="list-style-type:disc"><strong>Trình độ tiếng Anh hiện tại;</strong></li>
+<li style="list-style-type:disc"><strong>Thời gian dành cho học IELTS mỗi ngày/ mỗi tuần/ mỗi tháng;</strong></li>
+<li style="list-style-type:disc"><strong>Band điểm IELTS mong muốn;</strong></li>
+<li style="list-style-type:disc"><strong>Mục tiêu của bạn khi chọn thi IELTS;</strong></li>
+<li style="list-style-type:disc"><strong>Hình thức thi IELTS mong muốn.</strong></li>
+</ul>
+
+<p style="text-align:center"><img alt="Lộ trình học ielts cho người mới bắt đầu" src="https://lh7-us.googleusercontent.com/Jat6fSLOBCmdM7wYU_I_tYA8uhmH6W-h7DFBRaxZ2Mm4JstQTfFFw2FW9B3k_AAI9F4II7bWn_itBlEE8oKMVpwS_wuOtiUaAvLO9f9KX3uUY0v9k2hvP9E6wvje6L01QCP4FWHwNQRQrSNXUl72Whk" style="height:258px; width:566px"></p>
+
+<p style="text-align:center"><em>Lộ trình học ielts cho người mới bắt đầu</em></p>
+
+<h3 id="1.-trình-độ-tiếng-anh-hiện-tại"><span style="font-size:20px"><strong>1. Trình độ tiếng Anh hiện tại&nbsp;</strong></span></h3>
+
+<p>Bạn có thể thử làm một đề thi IELTS để xác định được mức band của bản thân. Hiện bạn có thể tìm được rất nhiều tài liệu, đề thi miễn phí để tự test trình độ của mình.</p>
+
+<p>Thông thường, người học IELTS sẽ được chia thành 2 nhóm chính:</p>
+
+<ul>
+<li style="list-style-type:disc"><strong><em>Nhóm 1 - mất gốc</em></strong><em>: Những người thuộc nhóm này chỉ biết một chút về ngôn ngữ tiếng Anh hay thậm chí là không biết gì, thiếu hầu hết các kỹ năng cần thiết cho kỳ thi IELTS.&nbsp;</em></li>
+<li style="list-style-type:disc"><strong><em>Nhóm 2 - có nền tảng</em></strong><em>: Những người thuộc nhóm 2 thường đã có nền tảng vững chắc về tiếng Anh - họ đã tích lũy được một lượng kiến thức cơ bản vững chắc về từ vựng và ngữ pháp, nhưng chưa tập trung vào việc phát triển các kỹ năng cụ thể mà kỳ thi IELTS yêu cầu như kỹ năng nghe, nói, đọc và viết.</em></li>
+</ul>
+
+<h3 id="2.-thời-gian-dành-cho-việc-tự-học-ielts"><span style="font-size:20px"><strong>2. Thời gian dành cho việc tự học IELTS</strong></span></h3>
+
+<p>Đừng đánh giá thấp yếu tố này. Một trong những lý do phổ biến nhất cho việc học IELTS bị gián đoạn/ không đủ thời gian học IELTS chính là không xác định đúng khoảng thời gian bạn có thể dành cho việc học IELTS.</p>
+
+<p><a href="/blog/lo-trinh-tu-hoc-ielts-online-tai-nha-tu-so-0-den-7-cua-study4/index.html/cau-truc-de-thi-ielts-chi-tiet-va-chuan-nhat-2024.html" style="text-decoration:none"><span style="color:#1155cc"><strong><u>IELTS là bài thi bao gồm 4 kỹ năng</u></strong></span></a> với khối lượng kiến thức lớn, đòi hỏi bạn cần dành nhiều thời gian và công sức ôn tập trong một khoảng thời gian dài. Vì vậy, xác định quỹ thời gian học IELTS mỗi ngày/ mỗi tuần/ mỗi tháng là rất quan trọng, đảm bảo việc học của bạn đạt được kết quả tốt nhất.</p>
+
+<p>Bạn có thể tham khảo một số câu hỏi sau để xác định quỹ thời gian học IELTS của bản thân nhé.</p>
+
+<ul>
+<li style="list-style-type:disc"><em>Thời gian bạn có thể dành ra mỗi ngày là bao nhiêu? Bạn có thể tập trung hoàn toàn vào việc học trong khoảng thời gian này hay có những công việc khác gián đoạn không?</em></li>
+<li style="list-style-type:disc"><em>Bạn có thể dành ra thời gian cố định cho việc học không?</em></li>
+<li style="list-style-type:disc"><em>Bạn có tốn nhiều thời gian để di chuyển đến nơi học không? Việc di chuyển xa và liên tục có ảnh hưởng đến việc học và lịch trình hàng ngày của bạn không?</em></li>
+<li style="list-style-type:disc"><em>Có những yếu tố khác nào có thể ảnh hưởng đến thời gian bạn dành cho việc học IELTS?</em></li>
+</ul>
+
+<p>Người chọn học và thi IELTS thường có nhiều mục đích khác nhau: du học, xét tuyển đại học, định cư,... và các hình thức thi IELTS cũng dựa trên các mục đích đó:<a href="/blog/lo-trinh-tu-hoc-ielts-online-tai-nha-tu-so-0-den-7-cua-study4/index.html/cau-truc-de-thi-ielts-general-tat-tan-tat-thong-tin-ve-ielts-general-training.html" style="text-decoration:none"><span style="color:#1155cc"><strong><u> IELTS Academic - IELTS học thuật</u></strong></span></a> và <a href="/blog/lo-trinh-tu-hoc-ielts-online-tai-nha-tu-so-0-den-7-cua-study4/index.html/cau-truc-de-thi-ielts-general-tat-tan-tat-thong-tin-ve-ielts-general-training.html" style="text-decoration:none"><span style="color:#1155cc"><strong><u>IELTS General Training - IELTS tổng quát</u></strong></span></a>.</p>
+
+<p>Nếu bạn là học sinh, sinh viên và có nhu cầu du học, xét tuyển đại học hay quy đổi điểm học phần → hãy lựa chọn học và ôn thi IELTS Academic.</p>
+
+<p>Nếu bạn là người có nhu cầu định cư tại nước ngoài → hãy lựa chọn học và ôn thi IELTS General Training.</p>
+
+<p><strong><em>Xem thêm: </em></strong><a href="/blog/lo-trinh-tu-hoc-ielts-online-tai-nha-tu-so-0-den-7-cua-LearnEnglish/index.html/cau-truc-de-thi-ielts-general-tat-tan-tat-thong-tin-ve-ielts-general-training.html" style="text-decoration:none"><span style="color:#1155cc"><strong><em><u>Cấu trúc đề thi IELTS General - Tất tần tật thông tin về IELTS General Training</u></em></strong></span></a></p>
+
+<p style="text-align:center"><img alt="Học IELTS bắt đầu từ đâu là hợp lý?" src="https://lh7-us.googleusercontent.com/Vhif83Xw9CxORU41WONiDsBUfMNpqpK6hGOWEyT86R_xmSHZCxWgO-4_H7bJeCvyMZqtwHtT_RpyvnvgiYVVmv1JoHsKrHd3r3y7AQvIZvrdFoiovBBEycL4-0KyZtRNjoczn_L0LtlX0Rq1X4dcYD4" style="height:360px; width:360px"></p>
+
+<p style="text-align:center"><em>Học IELTS bắt đầu từ đâu là hợp lý?</em></p>
+
+<h3 id="4.-band-điểm-ielts-mong-muốn"><span style="font-size:20px"><strong>4. Band điểm IELTS mong muốn&nbsp;</strong></span></h3>
+
+<p>Sau khi xác định được mục tiêu thi IELTS, hãy tiếp tục xác định band điểm mong muốn của mình.&nbsp;</p>
+
+<p>Ví dụ, nếu bạn muốn sử dụng chứng chỉ IELTS để xét tuyển vào trường đại học yêu thích, hãy xem xét kỹ lưỡng đề án tuyển sinh của trường đại học đó và điểm chuẩn các năm gần nhất để đối chiếu và so sánh. Một số đại học yêu cầu chứng chỉ IELTS tối thiểu là 5.5, tuy nhiên cũng có một số trường yêu cầu band 6.5 trở lên. Cân nhắc kỹ yếu tố này để xác định cho mình một lộ trình học phù hợp.</p>
+
+<p><strong><em>Xem thêm: </em></strong><a href="/blog/lo-trinh-tu-hoc-ielts-online-tai-nha-tu-so-0-den-7-cua-LearnEnglish/index.html/thang-diem-ielts-va-cach-tinh-diem-ielts-overall-chuan-2024.html" style="text-decoration:none"><span style="color:#1155cc"><strong><em><u>Thang điểm IELTS và cách tính điểm IELTS Overall</u></em></strong></span></a></p>
+
+<h3 id="5.-hình-thức-thi-ielts-mong-muốn-computer-based-hay-paper-based"><span style="font-size:20px"><strong>5. Hình thức thi IELTS mong muốn: Computer-based hay Paper-based</strong></span></h3>
+
+<p>Hiện nay, kỳ thi IELTS được tổ chức dưới hai hình thức thi: Paper-based (trên giấy) và Computer-based (trên máy).&nbsp;</p>
+
+<p>Do có một số điểm khác biệt nhất định giữa hai hình thức thi, ở giai đoạn cuối bạn sẽ cần có chiến lược ôn luyện khác nhau mặc dù có cùng khối lượng kiến thức.&nbsp;</p>
+
+<p><strong>Ví dụ:&nbsp;</strong></p>
+
+<ul>
+<li style="list-style-type:disc"><strong>Nếu chọn hình thức thi giấy (Paper-based)</strong>, bạn sẽ có 10 phút chuyển đáp án trong phần thi Listening (nhiều hơn hẳn so với 2 phút kiểm tra đáp án đối với hình thức thi máy) hoặc cần luyện tập cách ước tính số từ cần viết trong phần thi Writing.&nbsp;</li>
+<li style="list-style-type:disc"><strong>Nếu chọn hình thức thi máy (Computer-based)</strong>, trong phần thi Writing thí sinh sẽ không cần tự ước chừng số từ do máy đã tự động đếm cho bạn, ngoài ra bạn sẽ cần luyện tập thêm về các thao tác sử dụng máy tính sao cho thành thạo nhất.&nbsp;</li>
+</ul>
+
+<p><strong><em>Xem thêm: </em></strong><a href="/blog/lo-trinh-tu-hoc-ielts-online-tai-nha-tu-so-0-den-7-cua-LearnEnglish/index.html/so-sanh-ielts-paper-based-va-computer-based-nen-thi-ielts-tren-may-hay-tren-giay.html" style="text-decoration:none"><span style="color:#1155cc"><strong><em><u>So sánh IELTS Paper-based và Computer-based - Nên thi IELTS trên máy hay trên giấy?</u></em></strong></span></a></p>
+
+<h2 id="iii.-lộ-trình-tự-học-ielts-tại-nhà-từ-số-0-đến-7.0-với-LearnEnglish"><strong>III. Lộ trình tự học IELTS tại nhà từ số 0 đến 7.0 với LearnEnglish</strong></h2>
+
+<p>Hiện nay, việc tự học IELTS tại nhà đã trở nên ngày càng phổ biến. Tuy nhiên, “Học ielts bắt đầu từ đâu?” là một câu hỏi vô cùng khó trả lời do không phải ai cũng biết cách tự xây dựng cho bản thân một lộ trình học phù hợp với trình độ với quỹ thời gian cho phép.</p>
+
+<p>Bạn có thể tham khảo lộ trình tự học dưới đây của LearnEnglish, sau đó làm theo hoặc tự điều chỉnh sao cho phù hợp với nhu cầu của bản thân nhất nhé!</p>
+
+<h3 id="1.-giai-đoạn-1-🚲dành-cho-band-0-đến-4+-xây-dựng-nền-tảng-vững-chắc"><span style="font-size:20px"><strong>1. Giai đoạn 1 (🚲Dành cho band 0 đến 4+): Xây dựng nền tảng vững chắc</strong></span></h3>
+
+<p>Đối với tất các các IELTS-ers, kiến thức về từ vựng, ngữ pháp và phát âm là những phần kiến thức nền tảng mà bạn bắt buộc cần có trước khi ôn luyện sâu hơn vào cấu trúc đề thi IELTS.&nbsp;</p>
+
+<p style="text-align:center"><img src="https://lh7-us.googleusercontent.com/NkCmEgP55_TmW7RieQiaqB_jYinbHhqwa_9tDxLNdRTpPMILA8cZr99V2Db3uN8y_CJFpxt9NbTQiIZtFwluY3x0Q8Oy2js4RNwfy3LmR3OriSQWUr4cetGwbcz_fitRdUeGIkaNoAZf4HzDizwNCTc" style="height:299px; width:413px"></p>
+
+<p style="text-align:center"><em>Xây dựng nền tảng khi học IELTS</em></p>
+
+<p>Đối với tất cả các bạn có nhu cầu học và thi IELTS, LearnEnglish khuyên rằng kể cả khi bạn đã có một nền tảng tiếng Anh vững chắc, bạn vẫn nên dành thời gian để tự ôn luyện và kiểm tra lại nhằm hệ thống hóa các đơn vị kiến thức.</p>
+
+<div>
+<table cellspacing="0" style="border-collapse:collapse; border:none; table-layout:fixed; width:624px">
+<tbody>
+    <tr>
+        <td style="background-color:#e8f5ff; border-bottom:1px solid #e8f5ff; border-left:1px solid #e8f5ff; border-right:1px solid #e8f5ff; border-top:1px solid #e8f5ff; vertical-align:top">
+        <p><strong>Còn đối với các bạn có nhu cầu bắt đầu “lấy gốc” tiếng Anh, bạn có thể tham khảo </strong><a href="https://LearnEnglish.com/courses/26/ielts-fundamentals/?itm_source=seo&amp;itm_medium=article&amp;itm_campaign=blogpost_internal_link&amp;itm_content=927" style="text-decoration:none"><span style="color:#1155cc"><strong><u>khóa học IELTS Fundamentals</u></strong></span></a><strong> của LearnEnglish.</strong></p>
+
+        <p><strong>💡IELTS Fundamentals</strong> là khóa học <strong>xây dựng nền tảng từ vựng và ngữ pháp</strong> cho những người có<strong> mục tiêu đạt điểm tối thiểu 4.0</strong> sau <strong>khoảng 3 - 4 tháng học</strong>.</p>
+
+        <p>💡Khóa học này sẽ giúp bạn hiểu và nắm vững các chủ điểm ngữ pháp quan trọng với IELTS Writing, ngoài ra bạn cũng sẽ được xây dựng vốn từ học thuật để chuẩn bị kỹ càng cho phần thi IELTS Listening và Reading sau này.</p>
+        </td>
+    </tr>
+</tbody>
+</table>
+</div>
+
+<p style="text-align:center"><a href="https://LearnEnglish.com/courses/26/ielts-fundamentals/?itm_source=seo&amp;itm_medium=article&amp;itm_campaign=blogpost_internal_link&amp;itm_content=927" style="text-decoration:none"><span style="color:#1155cc"><strong><u><img src="https://lh7-us.googleusercontent.com/NZ9MUhdJRbjD9vIYSB1dL2yLfglN255UCBA1hxwpD9pdJ1_-BWpc2RBQKXFFgqVrDKMbz9K5g6LIWvXJyvJXRUD0HO1EmY-xDQE9lRMZKsZaNRctgt7rV2_SMnlH9UVDQHKNSGc9wDWajqhWGRAZ5Fw" style="height:84px; width:600px"></u></strong></span></a></p>
+
+<p style="text-align:center"><iframe frameborder="0" height="315" src="https://www.youtube.com/embed/aOXNr-TOxHk?si=CXdWw6qBDz0a1l4H" title="YouTube video player" width="560"></iframe></p>
+
+<h4 id="1.1.-ngữ-pháp"><span style="font-size:18px"><strong>1.1. Ngữ pháp</strong></span></h4>
+
+<p>Đầu tiên, bạn cần nắm vững các đơn vị ngữ pháp cơ bản. Điều này sẽ giúp việc học IELTS sau này của bạn trở nên dễ dàng hơn, tiết kiệm thời gian khi bạn bắt đầu tìm hiểu, đào sâu vào các kỹ năng như Listening (Nghe), Reading (Đọc), Writing (Viết) và Speaking (Nói).</p>
+
+<p><strong>Một số đơn vị </strong><a href="https://LearnEnglish.com/topics/ngu-phap/" style="text-decoration:none"><span style="color:#1155cc"><strong><u>kiến thức ngữ pháp cơ bản</u></strong></span></a><strong> bạn nên nắm vững trước khi ôn thi IELTS như:</strong></p>
+
+<ul>
+<li style="list-style-type:disc"><strong>Phân biệt và sử dụng đúng </strong><a href="https://LearnEnglish.com/posts/859/cac-tu-loai-parts-of-speech-trong-tieng-anh-cach-dung-9-loai-tu-loai-trong-tieng-anh/" style="text-decoration:none"><span style="color:#1155cc"><strong><u>các loại từ</u></strong></span></a><strong> trong ngữ cảnh phù hợp</strong>: <a href="https://LearnEnglish.com/posts/835/tong-hop-kien-thuc-ve-danh-tu-noun-trong-tieng-anh/" style="text-decoration:none"><span style="color:#1155cc"><strong><u>Danh từ (Noun)</u></strong></span></a><strong>, </strong><a href="https://LearnEnglish.com/posts/836/tong-hop-kien-thuc-ve-dong-tu-verb-trong-tieng-anh/" style="text-decoration:none"><span style="color:#1155cc"><strong><u>Động từ (Verb)</u></strong></span></a><strong>, </strong><a href="https://LearnEnglish.com/posts/837/tong-hop-kien-thuc-ve-tinh-tu-adjective-trong-tieng-anh/" style="text-decoration:none"><span style="color:#1155cc"><strong><u>Tính từ (Adjective)</u></strong></span></a><strong>, </strong><a href="https://LearnEnglish.com/posts/838/tong-hop-kien-thuc-ve-trang-tu-adverb-trong-tieng-anh/" style="text-decoration:none"><span style="color:#1155cc"><strong><u>Trạng từ (Adverb)</u></strong></span></a></li>
+<li style="list-style-type:disc"><strong>Sử dụng chính xác các loại </strong><a href="https://LearnEnglish.com/posts/835/tong-hop-kien-thuc-ve-danh-tu-noun-trong-tieng-anh/" style="text-decoration:none"><span style="color:#1155cc"><strong><u>danh từ</u></strong></span></a>: Danh từ đếm được (Countable nouns), danh từ không đếm được (Uncountable nouns), danh từ số ít (Plurals) và số nhiều (Singular)</li>
+<li style="list-style-type:disc"><strong>Sử dụng thành thạo các thì cơ bản</strong>: Có <a href="https://LearnEnglish.com/posts/472/cac-thi-trong-tieng-anh-cong-thuc-va-dau-hieu-nhan-biet-12-thi-tieng-anh/" style="text-decoration:none"><span style="color:#1155cc"><strong><u>12 thì trong tiếng Anh</u></strong></span></a>, tối thiểu bạn nên nắm vững cách áp dụng 7 thì cơ bản trong tiếng Anh như Present Simple/ Continuous/ Perfect (Hiện tại đơn/ tiếp diễn/ hoàn thành), Past Simple/ Continuous/ Perfect (Quá khứ đơn/ tiếp diễn/ hoàn thành) và Future Simple (Tương lai đơn).</li>
+<li style="list-style-type:disc"><strong>Nắm vững cách viết </strong><a href="https://LearnEnglish.com/posts/827/cau-don-trong-tieng-anh-simple-sentence-cong-thuc-cach-viet-cau-don/" style="text-decoration:none"><span style="color:#1155cc"><strong><u>câu đơn</u></strong></span></a><strong> trong tiếng Anh</strong>: Trước khi bắt đầu viết câu dài, bạn nên thành thạo việc xây dựng các câu đơn/ câu ngắn để truyền tải ý của mình một cách rõ ràng và chính xác nhất.</li>
+<li style="list-style-type:disc"><strong>Nắm rõ quy tắc về trật tự từ</strong>: “tính - danh” “động - trạng” là câu cửa miệng của nhiều người học tiếng Anh nhằm phân biệt thứ tự các từ trong câu. Đây cũng là một đơn vị kiến thức ngữ pháp quan trọng.</li>
+<li style="list-style-type:disc"><strong>Hiểu </strong><a href="https://LearnEnglish.com/posts/469/cau-truc-so-sanh-trong-tieng-anh-cach-su-dung-cau-truc-so-sanh/" style="text-decoration:none"><span style="color:#1155cc"><strong><u>cấu trúc so sánh</u></strong></span></a>: Biết cách sử dụng linh hoạt các cấu trúc so sánh: so sánh hơn, so sánh nhất, so sánh bằng để đa dạng hóa bài viết của mình.&nbsp;</li>
+<li style="list-style-type:disc"><strong>Nhận biết và sử dụng đúng </strong><a href="https://LearnEnglish.com/posts/?term=ph%C3%A2n+bi%E1%BB%87t" style="text-decoration:none"><span style="color:#1155cc"><strong><u>các từ chỉ định tính và định lượng</u></strong></span></a>: many/ much, some, a few/ a little, a lot/ a lot of.</li>
+<li style="list-style-type:disc"><strong>Chuyển đổi giữa câu chủ động và </strong><a href="https://LearnEnglish.com/posts/425/cau-bi-dong-passive-voice-cong-thuc-cach-dung-va-cac-bien-the/" style="text-decoration:none"><span style="color:#1155cc"><strong><u>câu bị động</u></strong></span></a>: Nắm vững và biết cách chuyển đổi linh hoạt giữa hai cấu trúc, tăng sự đa dạng cho bài viết.</li>
+<li style="list-style-type:disc"><strong>Thành thạo sử dụng liên từ</strong>: <a href="https://LearnEnglish.com/posts/646/lien-tu-conjunction-cau-truc-va-cach-su-dung-lien-tu/" style="text-decoration:none"><span style="color:#1155cc"><strong><u>Liên từ</u></strong></span></a> cũng là một đơn vị kiến thức quan trọng, để kết nối giữa các ý trong câu, bạn nên nắm vững một số liên từ cơ bản như firstly, moreover, however, and, but, etc.</li>
+</ul>
+
+<h4 id="1.2.-từ-vựng"><span style="font-size:18px"><strong>1.2. Từ vựng</strong></span></h4>
+
+<p>Tiếp theo, một đơn vị kiến thức quan trọng không kém đó là trau dồi <a href="https://LearnEnglish.com/topics/tu-vung/" style="text-decoration:none"><span style="color:#1155cc"><strong><u>vốn từ vựng đa dạng</u></strong></span></a>. Từ vựng là kiến thức nền tảng và bạn chắc chắn cần trau dồi vốn từ nếu muốn đạt band điểm cao trong IELTS nói riêng và học tốt tiếng Anh nói chung.</p>
+
+<p><strong><em>Xem thêm: </em></strong><a href="https://LearnEnglish.com/posts/260/phuong-phap-lap-lai-ngat-quang-va-tip-hoc-tu-vung-tieng-anh-nho-lau/" style="text-decoration:none"><span style="color:#1155cc"><strong><em><u>Phương pháp lặp lại ngắt quãng và tip học từ vựng tiếng Anh nhớ lâu</u></em></strong></span></a></p>
+
+<p>Bạn có thể bắt đầu học từ vựng từ những chủ đề cơ bản như Study (Học tập), Work (Làm việc) hay School (Trường học),.. sau đó mở rộng ra nhiều chủ đề khác nữa.</p>
+
+<p><strong>Một số chủ đề từ vựng cơ bản bạn nên nắm vững trước khi ôn thi IELTS như:</strong></p>
+
+<ul>
+<li style="list-style-type:disc"><strong>Relationships, families and early learning</strong> (Mối quan hệ, gia đình và học tập)</li>
+<li style="list-style-type:disc"><strong>The body, the mind</strong> (Cơ thể và tâm trí)</li>
+<li style="list-style-type:disc"><strong>Diet, health and exercise</strong> (Chế độ ăn uống, sức khỏe và tập thể dục)</li>
+<li style="list-style-type:disc"><strong>Study, education, research </strong>(Học tập, giáo dục, nghiên cứu)</li>
+<li style="list-style-type:disc"><strong>Tourism, travel </strong>(Du lịch, lữ hành)</li>
+<li style="list-style-type:disc"><strong>Space, the planets </strong>(Không gian, các hành tinh)</li>
+<li style="list-style-type:disc"><strong>Technology </strong>(Công nghệ)</li>
+<li style="list-style-type:disc"><strong>Business </strong>(Doanh nghiệp)</li>
+<li style="list-style-type:disc"><strong>The arts </strong>(Nghệ thuật)</li>
+<li style="list-style-type:disc"><strong>The environment </strong>(Môi trường)</li>
+<li style="list-style-type:disc"><strong>Crime and punishment </strong>(Tội phạm và hình phạt)</li>
+<li style="list-style-type:disc"><strong>The media </strong>(Truyền thông)</li>
+</ul>
+
+<p>Và rất nhiều chủ đề khác.</p>
+
+<p><strong><em>Xem thêm: </em></strong><a href="https://LearnEnglish.com/posts/734/cach-hoc-tu-vung-tieng-anh-nhanh-thuoc-nho-lau/" style="text-decoration:none"><span style="color:#1155cc"><strong><em><u>Cách học từ vựng tiếng Anh nhanh thuộc nhớ lâu</u></em></strong></span></a></p>
+
+<h4 id="1.3.-phát-âm"><span style="font-size:18px"><strong>1.3. Phát âm</strong></span></h4>
+
+<p>Khi học từ vựng, không thể không nhắc đến tầm quan trọng của học cách phát âm của nó. Đối với những bạn mới bắt đầu, LearnEnglish khuyên rằng bạn nên bắt đầu bằng việc học thuộc cách phát âm của 44 âm trong<strong> </strong><a href="https://LearnEnglish.com/posts/566/bang-phien-am-tieng-anh-ipa-va-cac-tips-luyen-phat-am-tai-nha/" style="text-decoration:none"><span style="color:#1155cc"><strong><u>bảng IPA</u></strong></span></a> (International Phonetic Alphabet - Bảng Phiên âm Quốc tế), bao gồm 20 nguyên âm và 24 phụ âm.</p>
+
+<p>Sau đó, mỗi lần bạn học từ mới, hãy dành thời gian tra phiên âm của chúng trên từ điển Oxford hoặc từ điển Cambridge - hai nguồn từ điển đáng tin cậy. Ngoài ra, hai trang này còn cung cấp các kiểu phát âm Anh - Mỹ, Anh - Anh để đáp ứng nhu cầu đa dạng của các bạn học sinh.</p>
+
+<p><em>Nếu muốn tiện lợi hơn, bạn có thể </em><a href="https://LearnEnglish.com/extension/download/" style="text-decoration:none"><span style="color:#1155cc"><strong><em><u>download LearnEnglish Dictionary Extension</u></em></strong></span></a><em>. LearnEnglish Extension giúp bạn dễ dàng tra cứu định nghĩa Anh-Anh, Anh-Việt, cách phiên âm và các câu ví dụ trên bất cứ website nào. Các từ sẽ được lưu trữ lại vào mục flashcards (thẻ từ). Sau đó, bạn có thể ôn tập những từ này theo phương pháp spaced repetition ngay trên LearnEnglish.</em></p>
+
+<p style="text-align:center"><iframe frameborder="0" height="315" src="https://www.youtube.com/embed/AMo7GtHsqRI?si=-LoDXSN1J2AALy04" title="YouTube video player" width="560"></iframe></p>
+
+<p style="text-align:center"><em>Extension từ điển của LearnEnglish</em></p>
+
+<p><strong>*Ghi nhớ:</strong> Hãy luyện tập phát âm thường xuyên, sử dụng nhiều phương pháp khác nhau (ví dụ: <a href="https://LearnEnglish.com/posts/262/shadowing-bi-kip-tang-band-ielts-speaking/" style="text-decoration:none"><span style="color:#1155cc"><strong><u>phương pháp Shadowing</u></strong></span></a>) để cải thiện phát âm và ngữ điệu của bản thân.</p>
+
+<h3 id="2.-giai-đoạn-2-🚗dành-cho-mức-đầu-vào-4.0-tìm-hiểu-về-các-dạng-bài"><span style="font-size:20px"><strong>2. Giai đoạn 2 (🚗dành cho mức đầu vào 4.0): Tìm hiểu về các dạng bài</strong></span></h3>
+
+<p>Sau khi đã trang bị cho bản thân một nền tảng vững chắc, bạn cần bắt đầu tìm hiểu các dạng bài cụ thể trong từng kỹ năng của IELTS.</p>
+
+<p>Giai đoạn này là giai đoạn bạn bắt đầu tìm hiểu sâu hơn vào đề thi IELTS cụ thể, bao gồm làm quen với format đề thi hay các dạng bài thường xuyên xuất hiện và các mẹo xử lý chúng.</p>
+
+<h4 id="2.1.-kỹ-năng-ielts-listening"><span style="font-size:18px"><strong>2.1. Kỹ năng IELTS Listening</strong></span></h4>
+
+<p>Kỹ năng Listening (Nghe) là kỹ năng bạn sẽ được kiểm tra đầu tiên khi tham dự kỳ thi IELTS, chính vì vậy giữ vững phong độ ổn định khi làm bài thi Listening sẽ giúp bạn có tâm lý ổn định hơn xuyên suốt phần thi.</p>
+
+<p style="text-align:center"><img src="https://lh7-us.googleusercontent.com/FbhPgV_-tx6PTshreZJhIOfkA0-As0w9Kbh6tjKE4zToOIQAW4Zbs8lWr2G5krgtCs5LFMYaahfa4Y6QTCNMSmFxIucGgFveudUBPGxzGKTk4fOsXwseXcZLOcH-Wp7XHkNJ83pdRI0A30tpLi1oe1A" style="height:198px; width:298px"></p>
+
+<p><a href="https://LearnEnglish.com/posts/313/cac-dang-bai-listening-ielts-va-cac-tip-nang-cao-trinh-do-nghe/" style="text-decoration:none"><span style="color:#1155cc"><strong><u>Format</u></strong></span></a><strong> phần thi IELTS Listening:</strong></p>
+
+<p>Phần thi này sẽ diễn ra trong khoảng 40 phút, bao gồm 30 phút nghe đoạn Audio và 10 phút chuyển đáp án sang Answer sheet (đối với bài thi trên giấy) hoặc 2 phút kiểm tra lại đáp án (đối với bài thi trên máy).</p>
+
+<ul>
+<li style="list-style-type:disc"><strong><em>Part 1</em></strong><em>: là một đoạn hội thoại giữa hai người, tập trung vào các chủ đề hằng ngày như đặt phòng khách sạn, đặt vé xe hay gọi thợ sửa chữa, v.v</em></li>
+<li style="list-style-type:disc"><strong><em>Part 2</em></strong><em>: là một đoạn độc thoại do một người nói, thảo luận về các chủ đề thông thường như giới thiệu địa điểm hoặc mô tả về các công việc.</em></li>
+<li style="list-style-type:disc"><strong><em>Part 3</em></strong><em>: là một đoạn hội thoại của từ hai đến bốn người, tập trung vào các chủ đề học thuật. Nội dung có thể bao gồm sinh viên đặt câu hỏi cho giảng viên về bài tập cũng như cuộc thảo luận của nhiều người về một chủ đề cụ thể.</em></li>
+<li style="list-style-type:disc"><strong><em>Part 4</em></strong><em>: là một đoạn độc thoại do một người nói, thuyết trình về các chủ đề học thuật xoay quanh khoa học, lịch sử, v.v</em></li>
+</ul>
+
+<p><strong>Các dạng bài thường gặp trong phần thi IELTS Listening</strong></p>
+
+<ul>
+<li style="list-style-type:disc"><strong>Matching</strong> (Nối thông tin)</li>
+<li style="list-style-type:disc"><strong>Multiple choice</strong> (Câu hỏi nhiều lựa chọn đáp án)</li>
+<li style="list-style-type:disc"><strong>Note completion </strong>(Hoàn thiện ghi chú)</li>
+<li style="list-style-type:disc"><strong>Form completion</strong> (Hoàn thiện đơn)</li>
+<li style="list-style-type:disc"><strong>Table completion</strong> (Hoàn thiện bảng)</li>
+<li style="list-style-type:disc"><strong>Sentence completion </strong>(Hoàn thiện câu)</li>
+<li style="list-style-type:disc"><strong>Summary completion</strong> (Hoàn thiện đoạn tóm tắt)</li>
+<li style="list-style-type:disc"><strong>Short answer questions</strong> (Câu trả lời ngắn)</li>
+<li style="list-style-type:disc"><strong>Map and Plan Labeling</strong> (Gắn nhãn cho bản đồ/ bản kế hoạch)</li>
+<li style="list-style-type:disc"><strong>Diagram and flowchart completion</strong> (Hoàn thiện biểu đồ/ sơ đồ)</li>
+</ul>
+
+<p><strong><em>Xem thêm: </em></strong><a href="https://LearnEnglish.com/posts/313/cac-dang-bai-listening-ielts-va-cac-tip-nang-cao-trinh-do-nghe/" style="text-decoration:none"><span style="color:#1155cc"><strong><em><u>Các dạng bài Listening IELTS và các Tip nâng cao trình độ nghe</u></em></strong></span></a></p>
+
+<p>Trên đây là khoảng 10 dạng bài thường xuyên gặp nhất trong phần thi IELTS Listening. Lưu ý luyện tập thật kỹ từng dạng bài, khắc phục các lỗi sai thường mắc phải và tham khảo các tips làm bài của từng dạng để đạt được band điểm cao trong phần thi này nhé.</p>
+
+<div>
+<table cellspacing="0" style="border-collapse:collapse; border:none; table-layout:fixed; width:624px">
+<tbody>
+    <tr>
+        <td style="background-color:#e8f5ff; border-bottom:1px solid #e8f5ff; border-left:1px solid #e8f5ff; border-right:1px solid #e8f5ff; border-top:1px solid #e8f5ff; vertical-align:top">
+        <p style="text-align:center"><strong>KHÓA HỌC </strong><span style="background-color:#fff2cc"><strong>IELTS INTENSIVE LISTENING</strong></span><strong> của LearnEnglish</strong></p>
+
+        <p style="text-align:center"><strong>➡️BIẾN </strong><span style="background-color:#fff2cc"><strong>LISTENING</strong></span><strong> THÀNH </strong><span style="background-color:#fff2cc"><strong>KỸ NĂNG IELTS MẠNH NHẤT</strong></span><strong> CHỈ TRONG </strong><span style="background-color:#fff2cc"><strong>50 GIỜ HỌC</strong></span></p>
+
+        <p style="text-align:center"><a href="https://LearnEnglish.com/courses/15/ielts-intensive-listening/?itm_source=seo&amp;itm_medium=article&amp;itm_campaign=blogpost_internal_link&amp;itm_content=927"><img src="https://study4.com/media/uploads/editor/hangbm.LearnEnglish/2024/08/26/LearnEnglish-1.gif" style="height:84px; width:600px"></a></p>
+
+        <p style="text-align:center"><iframe frameborder="0" height="315" src="https://www.youtube.com/embed/YwYYiGTeuRM?si=R59GBHy2TtoE4jrv" title="YouTube video player" width="560"></iframe></p>
+
+        <p><strong>Khóa học bao gồm:</strong></p>
+
+        <p><span style="color:#1a1a1a"><strong>🎯Chiến lược làm bài và chữa đề chi tiết:</strong></span></p>
+
+        <p><span style="color:#1a1a1a">Khóa học cung cấp video bài giảng hướng dẫn chi tiết cách làm từng dạng câu hỏi trong IELTS Listening và hơn 200h clip chữa chi tiết.</span></p>
+
+        <hr>
+        <p><span style="color:#1a1a1a"><strong>🎧Thực hành luyện nghe bộ từ vựng phổ biến nhất trong phần thi IELTS Listening</strong></span></p>
+
+        <p><span style="color:#1a1a1a">Gần </span><span style="color:#1a1a1a"><strong>15.000 từ và cụm từ</strong></span><span style="color:#1a1a1a"> có </span><span style="color:#1a1a1a"><strong>xác suất 99% xuất hiện</strong></span><span style="color:#1a1a1a"> trong bài thi IELTS Listenin</span><span style="color:#1a1a1a"><strong>g</strong></span><span style="color:#1a1a1a"> được chia thành các chủ đề như: </span><span style="color:#1a1a1a"><em>danh từ, tính từ, động từ, tiền tệ, ngày tháng, số/mã, số nhiều/số ít</em></span><span style="color:#1a1a1a">… giúp bạn mở rộng vốn từ, nắm chắc chính tả cho dạng bài điền từ.</span></p>
+
+        <hr>
+        <p><span style="color:#1a1a1a"><strong>🔊Luyện nghe hàng ngày với </strong></span><a href="https://LearnEnglish.com/posts/261/nghe-chep-chinh-ta-va-cac-tip-nang-cao-trinh-do-listening/" style="text-decoration:none"><span style="color:#1155cc"><strong><u>phương pháp dictation</u></strong></span></a><span style="color:#1a1a1a"><strong> (nghe chép chính tả)</strong></span></p>
+
+        <ul>
+            <li style="list-style-type:disc"><span style="color:#1a1a1a">Nghe âm thanh: Thông qua các bài tập, bạn sẽ phải nghe rất nhiều, đó là chìa khóa để cải thiện kỹ năng nghe IELTS của bạn.</span></li>
+            <li style="list-style-type:disc"><span style="color:#1a1a1a">Nhập những gì bạn nghe thấy: Việc gõ những gì bạn nghe được buộc bạn phải tập trung vào từng chi tiết giúp bạn trở nên tốt hơn trong việc phát âm, đánh vần và viết.</span></li>
+            <li style="list-style-type:disc"><span style="color:#1a1a1a">Kiểm tra và sửa chữa: Việc sửa lỗi rất quan trọng đối với độ chính xác khi nghe và khả năng đọc hiểu của bạn, tốt nhất là bạn nên highlight và lưu lại những lỗi sai mình mắc phải.</span></li>
+        </ul>
+
+        <hr>
+        <p><span style="color:#1a1a1a"><strong>📝Tận dụng transcript để tập tìm keywords và học từ mới</strong></span></p>
+
+        <p><span style="color:#1a1a1a">Transcript được tách câu rõ ràng, kèm công cụ highlight, take note và tạo flashcards giúp bạn tận dụng tối đa transcript của bài nghe để học từ mới, luyện tập tìm keywords hoặc tra lỗi sai sau khi luyện đề xong.</span></p>
+        </td>
+    </tr>
+</tbody>
+</table>
+</div>
+
+<h4 id="2.2.-kỹ-năng-ielts-reading"><span style="font-size:18px"><strong>2.2. Kỹ năng IELTS Reading</strong></span></h4>
+
+<p>Kỹ năng Reading (Đọc) là kỹ năng tiếp theo trong bài thi IELTS, và cũng thường là phần thi được đánh giá là “khó nhằn” bậc nhất. Dành thời gian luyện tập và học từ vựng mỗi ngày để có thể hoàn thành tốt bài thi này nhé.</p>
+
+<p style="text-align:center"><img src="https://lh7-us.googleusercontent.com/bWo2xU4RpNLIeMECGr3J6QvEj6c-cFhgeOZybDM3mGYn9mSSPwxA-9K4JRmPPA8H_z4YnleDDJdcLFGEMoV53kE4q58tUL_5IPnevAFKOqSyBLwqWZ7aysBZbhVEXzxqh-OyyxJ9llzxZ_P8aZrM5ts" style="height:265px; width:265px"></p>
+
+<p><a href="https://LearnEnglish.com/posts/298/cac-dang-bai-ielts-reading-cach-lam-va-tip-lam-bai-hieu-qua/" style="text-decoration:none"><span style="color:#1155cc"><strong><u>Format</u></strong></span></a><strong> phần thi IELTS Reading</strong></p>
+
+<p>Phần thi này sẽ diễn ra trong 60 phút, bao gồm 3 bài đọc khoảng 700 - 800 từ với độ khó tăng dần.</p>
+
+<p>Các bài văn trong IELTS Reading được trích từ nhiều nguồn đa dạng như tài liệu tham khảo, sách giáo khoa, báo chí, tạp chí, tài liệu học thuật và các nguồn trực tuyến, ngoài ra còn rất đa dạng về chủ đề như khoa học, kinh tế, xã hội, văn hóa, lịch sử, nghệ thuật, giáo dục, môi trường, công nghệ, y tế và nhiều lĩnh vực khác để đảm bảo tính khách quan cho kỳ thi.</p>
+
+<p><strong><em>*Lưu ý</em></strong><em>: Bạn sẽ không có thời gian chuyển đáp án sang Answer sheet trong phần thi IELTS Reading.</em></p>
+
+<p><strong>Các dạng bài thường gặp trong phần thi IELTS Reading</strong></p>
+
+<ul>
+<li style="list-style-type:disc"><strong>Multiple Choice </strong>(Chọn đáp án đúng)</li>
+<li style="list-style-type:disc"><strong>True/ False/ Not Given </strong>hoặc <strong>Yes/ No/ Not Given </strong>(Đúng/ Sai/ Không có)</li>
+<li style="list-style-type:disc"><strong>Matching Headings </strong>(Nối tiêu đề)</li>
+<li style="list-style-type:disc"><strong>Matching Information </strong>(Nối thông tin)</li>
+<li style="list-style-type:disc"><strong>Matching Sentence Endings </strong>(Nối thông tin để hoàn thành câu)</li>
+<li style="list-style-type:disc"><strong>Summary Completion </strong>(Hoàn thành đoạn tóm tắt)</li>
+<li style="list-style-type:disc"><strong>Sentence Completion </strong>(Hoàn thành câu)</li>
+<li style="list-style-type:disc"><strong>Note Completion </strong>(Hoàn thành ghi chú)</li>
+<li style="list-style-type:disc"><strong>Table Completion </strong>(Hoàn thành bảng)</li>
+<li style="list-style-type:disc"><strong>Diagram Labelling </strong>(Ghi nhãn cho sơ đồ)</li>
+<li style="list-style-type:disc"><strong>Short Answer Questions </strong>(Trả lời ngắn)</li>
+<li style="list-style-type:disc"><strong>Classification </strong>(Phân loại)</li>
+<li style="list-style-type:disc"><strong>Choosing from a List </strong>(Chọn từ danh sách cho sẵn)</li>
+</ul>
+
+<p><strong><em>Xem thêm: </em></strong><a href="https://LearnEnglish.com/posts/298/cac-dang-bai-ielts-reading-cach-lam-va-tip-lam-bai-hieu-qua/" style="text-decoration:none"><span style="color:#1155cc"><strong><em><u>Các dạng bài IELTS Reading - Cách làm và tip làm bài hiệu quả</u></em></strong></span></a></p>
+
+<p>Đối với phần thi Reading, có 2 kỹ năng tương đối quan trọng bạn có thể thử áp dụng, đó là <a href="https://LearnEnglish.com/posts/263/ky-nang-skimming-va-scanning-bao-boi-cho-moi-de-ielts-reading/" style="text-decoration:none"><span style="color:#1155cc"><strong><u>Skimming và Scanning</u></strong></span></a>:</p>
+
+<ul>
+<li style="list-style-type:disc"><strong>Skimming</strong>: Đây là một kỹ thuật đọc mà thí sinh đọc lướt qua một đoạn văn bản để nắm bắt ý chính để có cái nhìn tổng quan về nội dung. Phương pháp này đặt tập trung vào việc đọc nhanh, chú ý tiêu đề, tiêu đề phụ, câu chủ đề, câu đầu tiên và câu cuối cùng của đoạn văn.</li>
+</ul>
+
+<p style="margin-left:48px">Skimming thường được ứng dụng khi có thời gian hạn chế hoặc khi người đọc muốn hiểu tổng quan về nội dung của một đoạn văn bản trước khi tiến sâu vào đọc chi tiết.</p>
+
+<ul>
+<li style="list-style-type:disc"><strong>Scanning</strong>: Đây là một kỹ thuật đọc mà người đọc sử dụng khi muốn tìm kiếm thông tin hay chi tiết cụ thể trong văn bản thay vì đọc toàn bộ văn bản. Thí sinh sẽ thường tập trung vào các từ khóa, cụm từ hoặc con số liên quan đến thông tin mà họ đang tìm kiếm.</li>
+</ul>
+
+<p style="margin-left:48px">Trong quá trình thực hiện Scanning, người đọc di chuyển mắt nhanh chóng qua văn bản để nhanh chóng định vị và lấy được thông tin cần tìm, thay vì đọc từng từ một.</p>
+
+<p><strong><em>Xem thêm: </em></strong><a href="https://LearnEnglish.com/posts/263/ky-nang-skimming-va-scanning-bao-boi-cho-moi-de-ielts-reading/" style="text-decoration:none"><span style="color:#1155cc"><strong><em><u>Kỹ năng Skimming và Scanning - Bảo bối cho mọi đề IELTS Reading</u></em></strong></span></a></p>
+
+<div>
+<table cellspacing="0" style="border-collapse:collapse; border:none; table-layout:fixed; width:624px">
+<tbody>
+    <tr>
+        <td style="background-color:#e8f5ff; border-bottom:1px solid #e8f5ff; border-left:1px solid #e8f5ff; border-right:1px solid #e8f5ff; border-top:1px solid #e8f5ff; vertical-align:top">
+        <p style="text-align:center"><strong>KHÓA HỌC </strong><span style="background-color:#fff2cc"><strong>IELTS INTENSIVE READING</strong></span><strong> của LearnEnglish</strong></p>
+
+        <p style="text-align:center"><strong>➡️ĐẠT MỤC TIÊU </strong><span style="background-color:#fffedd"><strong>TỐI THIỂU 7+</strong></span><strong> IELTS READING</strong></p>
+
+        <p style="text-align:center"><a href="https://LearnEnglish.com/courses/22/ielts-intensive-vocabulary-reading/?itm_source=seo&amp;itm_medium=article&amp;itm_campaign=blogpost_internal_link&amp;itm_content=927"><img src="https://study4.com/media/uploads/editor/hangbm.LearnEnglish/2024/08/26/LearnEnglish-1.gif" style="height:84px; width:600px"></a></p>
+
+        <p style="text-align:center"><iframe frameborder="0" height="315" src="https://www.youtube.com/embed/JprBzg6V2go?si=GMOn6n5xRqI1fDW8" title="YouTube video player" width="560"></iframe></p>
+
+        <p><strong>Khóa học bao gồm:</strong></p>
+
+        <p><strong>📚Chiến lược làm bài và video chữa đề chi tiết</strong></p>
+
+        <p>Khóa học cung cấp video bài giảng hướng dẫn chi tiết cách làm từng dạng câu hỏi trong IELTS Reading và hơn 200h clip chữa đề chi tiết tất cả các câu hỏi trong nhiều bộ đề.</p>
+
+        <hr>
+        <p><strong>📒Từ vựng IELTS tổng hợp</strong></p>
+
+        <p>Mỗi bài đọc đều có highlight từ mới kèm nghĩa. Ngoài ra khóa học cung cấp bộ flashcards kèm phiên âm, audio, câu ví dụ để dễ dàng ôn tập theo phương pháp spaced-repetition review (lặp lại ngắt quãng).</p>
+
+        <hr>
+        <p><strong>✏️Thực hành từ vựng mỗi ngày</strong></p>
+
+        <p>Bên cạnh việc học từ vựng với bộ flashcards, bạn có thể luyện tập với các bài tập mini-game như trắc nghiệm, tìm cặp, nghe điền từ, chính tả.</p>
+
+        <hr>
+        <p><strong>🔍Xác định keyword trong câu hỏi và tìm vị trí paraphrases</strong></p>
+
+        <p>Mỗi bài đọc đều được tổng hợp tất cả các keywords trong câu hỏi cùng vị trí thông tin được thay thế (paraphrases).</p>
+        </td>
+    </tr>
+</tbody>
+</table>
+</div>
+
+<h4 id="2.3.-kỹ-năng-ielts-writing"><span style="font-size:18px"><strong>2.3. Kỹ năng IELTS Writing&nbsp;</strong></span></h4>
+
+<p>Khác với Listening hay Reading, phần thi IELTS Writing sẽ là phần thi yêu cầu bạn áp dụng khả năng diễn đạt, vốn từ vựng và ngữ pháp của bản thân để trình bày ý kiến của bản thân về một quan điểm/ hiện tượng hay vấn đề xã hội nào đó.</p>
+
+<p style="text-align:center"><img src="https://lh7-us.googleusercontent.com/BKdTrBt996UTTvz5DjVfkW6PzWHSnOLT1DlhvznpYzvkmR_bDg1PXLjb1esgfWw9M6mddX9sCWHckaMSQ89DHGR9lFCtnuhczDfaIIAmCubSCYo0sUJpbVZ6Qqr7MqWnD3GR9_C_J_6nYNAbnk8SWf8" style="height:223px; width:334px"></p>
+
+<p><strong>Format phần thi IELTS Writing</strong></p>
+
+<p>Phần thi IELTS Writing gồm hai bài viết:<strong> </strong><a href="https://LearnEnglish.com/posts/322/cac-dang-bai-ielts-writing-task-1-va-huong-dan-cach-lam-chi-tiet/" style="text-decoration:none"><span style="color:#1155cc"><strong><u>Task 1</u></strong></span></a> và <a href="https://LearnEnglish.com/posts/274/ielts-writing-task-2-dang-bai-thuong-gap-va-cach-lam-bai-chi-tiet/" style="text-decoration:none"><span style="color:#1155cc"><strong><u>Task 2</u></strong></span></a>, với tổng thời gian là 60 phút cho cả hai bài. Phần thi này thường tập trung vào các lĩnh vực học thuật hoặc vấn đề xã hội, chính vì vậy bạn cần diễn đạt cả hai phần với văn phong trang trọng và bắt buộc tuân thủ các tiêu chuẩn viết của bài thi IELTS Academic.</p>
+
+<ul>
+<li style="list-style-type:disc"><strong><em>Task 1:</em></strong><em> yêu cầu tối thiểu 150 từ. Đây là phần thi yêu cầu thí sinh phân tích và so sánh các loại biểu đồ như đồ thị, bảng, sơ đồ hoặc biểu đồ liên quan đến một lĩnh vực cụ thể.</em></li>
+<li style="list-style-type:disc"><strong><em>Task 2: </em></strong><em>yêu cầu tối thiểu 250 từ. Phần này yêu cầu thí sinh viết một bài luận ngắn để trình bày quan điểm cá nhân về một vấn đề hoặc câu hỏi cụ thể, sau đó hỗ trợ quan điểm đó bằng luận cứ, số liệu, ví dụ và thông tin phù hợp dựa trên hiểu biết cá nhân.</em></li>
+</ul>
+
+<p><strong>Các dạng bài thường gặp trong phần thi IELTS Writing</strong></p>
+
+<p><strong>Task 1</strong>:</p>
+
+<ul>
+<li style="list-style-type:disc"><strong>Line graph</strong> (Biểu đồ đường)</li>
+<li style="list-style-type:disc"><strong>Bar chart</strong> (Biểu đồ cột)</li>
+<li style="list-style-type:disc"><strong>Pie chart</strong> (Biểu đồ tròn)</li>
+<li style="list-style-type:disc"><strong>Table</strong> (Bảng)</li>
+<li style="list-style-type:disc"><strong>Process diagram</strong> (Quy trình)</li>
+<li style="list-style-type:disc"><strong>Map</strong> (Bản đồ)</li>
+<li style="list-style-type:disc"><strong>Mixed chart/ Multiple charts</strong> (Biểu đồ kết hợp/ Nhiều biểu đồ)</li>
+</ul>
+
+<p><strong><em>Xem thêm: </em></strong><a href="https://LearnEnglish.com/posts/322/cac-dang-bai-ielts-writing-task-1-va-huong-dan-cach-lam-chi-tiet/" style="text-decoration:none"><span style="color:#1155cc"><strong><em><u>Các dạng bài IELTS Writing Task 1 và hướng dẫn cách làm chi tiết</u></em></strong></span></a></p>
+
+<p><strong>Task 2</strong>:</p>
+
+<ul>
+<li style="list-style-type:disc"><strong>Opinion essays/Agree or Disagree essays</strong> (Bài luận về ý kiến/ quan điểm đồng ý hay không đồng ý)</li>
+<li style="list-style-type:disc"><strong>Discussion essays</strong>&nbsp; (Bài luận về thảo luận)</li>
+<li style="list-style-type:disc"><strong>Advantages and Disadvantages essays</strong> (Bài luận về ưu điểm và nhược điểm)</li>
+<li style="list-style-type:disc"><strong>Cause/ Problem and Solution essays</strong> (Bài luận về vấn đề và đưa ra giải pháp)</li>
+<li style="list-style-type:disc"><strong>Two-part question essays</strong> (Bài luận gồm hai phần câu hỏi)</li>
+</ul>
+
+<p><strong><em>Xem thêm: </em></strong><a href="https://LearnEnglish.com/posts/274/ielts-writing-task-2-dang-bai-thuong-gap-va-cach-lam-bai-chi-tiet/" style="text-decoration:none"><span style="color:#1155cc"><strong><em><u>IELTS Writing Task 2 - Dạng bài thường gặp và cách làm bài chi tiết</u></em></strong></span></a></p>
+
+<div>
+<table cellspacing="0" style="border-collapse:collapse; border:none; table-layout:fixed; width:624px">
+<tbody>
+    <tr>
+        <td style="background-color:#e8f5ff; border-bottom:1px solid #e8f5ff; border-left:1px solid #e8f5ff; border-right:1px solid #e8f5ff; border-top:1px solid #e8f5ff; vertical-align:top">
+        <p style="text-align:center"><strong>NẮM VỮNG </strong><span style="background-color:#fff2cc"><strong>6+ IELTS WRITING</strong></span><strong> CHỈ NGAY SAU MỘT KHÓA!</strong></p>
+
+        <p style="text-align:center"><a href="https://LearnEnglish.com/courses/25/ielts-intensive-writing/?itm_source=seo&amp;itm_medium=article&amp;itm_campaign=blogpost_internal_link&amp;itm_content=927"><img src="https://study4.com/media/uploads/editor/hangbm.LearnEnglish/2024/08/26/LearnEnglish-1.gif" style="height:84px; width:600px"></a></p>
+
+        <p style="text-align:center"><iframe frameborder="0" height="315" src="https://www.youtube.com/embed/UzwCny6d9vo?si=GzaG5vJGCdigNeAJ" title="YouTube video player" width="560"></iframe></p>
+
+        <p><strong>Khóa học bao gồm:</strong></p>
+
+        <p><strong>🧠Bài giảng chi tiết:</strong></p>
+
+        <p>Khóa học bao gồm các video&nbsp;bài giảng chi tiết được xây dựng bởi giáo viên dày dặn kinh nghiệm của LearnEnglish. Bài giảng bao gồm hướng dẫn cách&nbsp;làm bài theo từng dạng của cả 2 task, giải thích chi tiết các tiêu chí và phân tích kỹ các essay.</p>
+
+        <hr>
+        <p><strong>✍️Phân tích chi tiết essay sample:</strong></p>
+
+        <p>Các bài viết được phân tích chi tiết =&gt; Giúp bạn nắm được công thức phát triển ý của đoạn và bài. Các từ mới kèm nghĩa tiếng Việt, các từ và cụm từ liên kết ý, liên kết đoạn được highlight để bạn dễ dàng học tập.</p>
+
+        <hr>
+        <p><strong>📖Luyện tập từ vựng:</strong></p>
+
+        <p>Mỗi bài đều có thêm phần luyện tập điền từ đã học =&gt; Bạn sẽ mở rộng vốn từ vựng hơn rất nhiều</p>
+
+        <hr>
+        <p><strong>📝Luyện tập sử dụng liên kết câu và thực hành chữa lỗi ngữ pháp:</strong></p>
+
+        <p>Đa dạng bài tập ngữ pháp, điền từ, cụm từ liên kết, đại từ =&gt; Hạn chế lỗi sai khi viết bài.</p>
+
+        <hr>
+        <p><strong>📑Thực hành viết lại câu:</strong></p>
+
+        <p>Bài tập viết lại câu giúp nắm được vai trò câu trong một đoạn và cách xây dựng một bài viết hoàn chỉnh.</p>
+
+        <hr>
+        <p><strong>🌐Tính năng chấm WRITING bằng AI:</strong></p>
+
+        <p>Bạn sẽ được AI chấm bài Writing của mình, gồm cả chữa lỗi sai và đưa ra gợi ý chi tiết theo đúng 4 TIÊU CHÍ, để giúp bạn đạt điểm cao hơn.</p>
+
+        <p style="text-align:center"><iframe frameborder="0" height="315" src="https://www.youtube.com/embed/UaSDcm78pOs?si=iwJDWyn2r0pwcXaS" title="YouTube video player" width="560"></iframe></p>
+        </td>
+    </tr>
+</tbody>
+</table>
+</div>
+
+<h4 id="2.4.-kỹ-năng-ielts-speaking"><span style="font-size:18px"><strong>2.4. Kỹ năng IELTS Speaking&nbsp;</strong></span></h4>
+
+<p>“Ác mộng” của nhiều bạn thí sinh chính là phần thi IELTS Speaking. Phần thi này yêu cầu bạn tương tác với giám khảo trực tiếp nhằm kiểm tra khả năng sử dụng ngôn ngữ tiếng Anh trong giao tiếp.</p>
+
+<p>Speaking sẽ thường được sắp xếp thi khác ngày với 3 kỹ năng còn lại, và nếu đăng ký sớm bạn còn có thể được lựa chọn ngày thi Speaking sao cho phù hợp với nhu cầu của bản thân.</p>
+
+<p style="text-align:center"><img src="https://lh7-us.googleusercontent.com/w2RlSqW8jH9CrEVABsgRUpPvayyxAiCu8_5qfgQXpSQHpIQws82uRzltDI0nHmnA9Eib08y_xT-Sn8JD3ylZK-PnG-Y0kAE67TaPv07wPqpthy0cq4lQCZ3McOGEjAL0qMQdQdMt122ST_VDJNlwVCY" style="height:229px; width:280px"></p>
+
+<p><a href="https://LearnEnglish.com/posts/276/cau-truc-bai-thi-ielts-speaking-va-cac-chu-de-pho-bien/" style="text-decoration:none"><span style="color:#1155cc"><strong><u>Format</u></strong></span></a><strong> phần thi IELTS Speaking</strong></p>
+
+<p>Phần thi này thường kéo dài trong 15 - 20 phút, và bạn sẽ cần tương tác với giám khảo 1 - 1 trong một căn phòng riêng biệt. Speaking gồm có 3 phần và bạn sẽ được ghi âm lại trong suốt quá trình thi.</p>
+
+<ul>
+<li style="list-style-type:disc"><strong><em>Part 1</em></strong><em>: Thí sinh sẽ phải trả lời các câu hỏi xoay quanh các chủ đề phổ biến như cuộc sống, gia đình, công việc, học tập và sở thích cá nhân hoặc những chủ đề đơn giản. Đây là phần giám khảo sử dụng để đánh giá khả năng giao tiếp cơ bản của thí sinh.</em></li>
+<li style="list-style-type:disc"><strong><em>Part 2</em></strong><em>: Thí sinh sẽ có một phút để chuẩn bị cho một chủ đề cụ thể và sau đó sẽ có thời gian từ 1 đến 2 phút để nói liên tục về chủ đề đó. Trong khoảng thời gian này, giám khảo không ngắt thí sinh, nhưng có thể đặt câu hỏi bổ sung sau khi thí sinh kết thúc phần nói.</em></li>
+<li style="list-style-type:disc"><strong><em>Part 3</em></strong><em>: Thí sinh sẽ tham gia vào một cuộc thảo luận với giám khảo về những vấn đề mang tính trừu tượng, phức tạp hơn và liên quan đến chủ đề trong Part 2 mà thí sinh đã trả lời trước đó nhằm kiểm tra khả năng tư duy và diễn đạt trôi chảy.</em></li>
+</ul>
+
+<p><strong><em>Xem thêm: </em></strong><a href="https://LearnEnglish.com/posts/276/cau-truc-bai-thi-ielts-speaking-va-cac-chu-de-pho-bien/" style="text-decoration:none"><span style="color:#1155cc"><strong><em><u>Cấu trúc bài thi IELTS Speaking và các chủ đề phổ biến</u></em></strong></span></a></p>
+
+<p><strong>Các dạng bài thường gặp trong phần thi IELTS Speaking</strong></p>
+
+<p><em>Bộ đề forecast IELTS Speaking sẽ được cập nhật theo từng quý thi, bạn có thể tham khảo </em><a href="https://LearnEnglish.com/posts/?term=b%C3%A0i+m%E1%BA%ABu+ielts+speaking" style="text-decoration:none"><span style="color:#1155cc"><strong><em><u>một số bài mẫu</u></em></strong></span></a><em> của LearnEnglish để chuẩn bị trước ý tưởng và luyện nói trước khi tham gia vào kỳ thi IELTS nhé!</em></p>
+
+<div>
+<table cellspacing="0" style="border-collapse:collapse; border:none; table-layout:fixed; width:624px">
+<tbody>
+    <tr>
+        <td style="background-color:#e8f5ff; border-bottom:1px solid #e8f5ff; border-left:1px solid #e8f5ff; border-right:1px solid #e8f5ff; border-top:1px solid #e8f5ff; vertical-align:top">
+        <p style="text-align:center"><strong>🤩IELTS INTENSIVE SPEAKING: LUYỆN PHÁT ÂM &amp; CÂU TRẢ LỜI CHUẨN</strong></p>
+
+        <p style="text-align:center"><strong>➡️ĐẠT </strong><span style="background-color:#fff2cc"><strong>TỐI THIỂU 6+ SPEAKING</strong></span><strong>!</strong></p>
+
+        <p style="text-align:center"><a href="https://LearnEnglish.com/courses/27/ielts-intensive-speaking/?itm_source=seo&amp;itm_medium=article&amp;itm_campaign=blogpost_internal_link&amp;itm_content=927"><img src="https://study4.com/media/uploads/editor/hangbm.LearnEnglish/2024/08/26/LearnEnglish-1.gif" style="height:84px; width:600px"></a></p>
+
+        <p style="text-align:center"><iframe frameborder="0" height="315" src="https://www.youtube.com/embed/n2ZEk2sYHzk?si=wfZo3HRGxvHSaHUE" title="YouTube video player" width="560"></iframe></p>
+
+        <p><strong>Khóa học bao gồm:</strong></p>
+
+        <p><strong>🗣️Học phát âm, trọng âm, ngữ điệu, giọng điệu cơ bản trong tiếng Anh:</strong></p>
+
+        <p>Mỗi bài học đều kèm theo ví dụ audio minh họa dễ dàng luyện tập theo và bài tập luyện tập có chữa phát âm tự động bởi máy.</p>
+
+        <hr>
+        <p><strong>🔊Học cách trả lời các chủ đề với samples:</strong></p>
+
+        <p>Mỗi bài sample đều bao gồm từ mới và các cách diễn đạt hay, kèm theo nghĩa tiếng Việt, được highlight để bạn dễ dàng học tập.</p>
+
+        <hr>
+        <p><strong>📣Luyện tập từ vựng, ngữ pháp:</strong></p>
+
+        <p>Để nắm được cách sử dụng từ mới và tránh gặp những lỗi sai ngữ pháp trong IELTS Speaking, mỗi bài sample đều có thêm phần luyện tập điền từ và ngữ pháp đã học.</p>
+
+        <hr>
+        <p><strong>🎙️Thực hành luyện nói:</strong></p>
+
+        <p>Bạn sẽ tập nói lại từng câu hoặc cả đoạn, có ghi âm để so sánh với audio mẫu và được chữa lỗi bằng máy.</p>
+
+        <hr>
+        <p><strong>🌐Tính năng chấm SPEAKING PART 2 bằng AI:</strong></p>
+
+        <p>Bạn sẽ được AI chấm bài Speaking của mình,gồm cả chữa lỗi sai và đưa ra gợi ý chi tiết theo đúng 4 TIÊU CHÍ, để giúp bạn đạt điểm cao hơn.</p>
+
+        <p style="text-align:center"><iframe frameborder="0" height="315" src="https://www.youtube.com/embed/zMQANdU9Si0?si=UJxnJpQroar5Vlec" title="YouTube video player" width="560"></iframe></p>
+        </td>
+    </tr>
+</tbody>
+</table>
+</div>
+
+<p>&nbsp;</p>
+
+<h3 id="3.-giai-đoạn-3-🚀thẳng-tiến-đến-target-7+-ôn-luyện-theo-lộ-trình-của-LearnEnglish"><span style="font-size:20px"><strong>3. Giai đoạn 3 (🚀thẳng tiến đến target 7+): Ôn luyện theo lộ trình của LearnEnglish</strong></span></h3>
+
+<p>Sau khi nắm vững format từng dạng đề và hiểu kỹ các dạng bài, đây là thời gian bạn nên bắt đầu ôn&nbsp;luyện đề và bổ sung các kiến thức để nắm chắc được band điểm mong muốn.</p>
+
+<p>Trong giai đoạn luyện đề - giai đoạn cuối cùng của lộ trình tự học IELTS 7.0+, mục tiêu chính của bạn sẽ là sự chăm chỉ trong việc luyện đề, ghi chú và sửa lỗi liên tục. Để đạt được band điểm 7.0+, sự chăm chỉ, nhất quán và sự tập trung là yếu tố quan trọng nhất trong quá trình ôn tập tại thời điểm này.&nbsp;</p>
+
+<p>Hãy tăng cường đọc và nghe tiếng Anh (như đọc sách, báo hay xem phim) để khiến cho tiếng Anh trở thành một phần tự nhiên trong cuộc sống hàng ngày. Chỉ khi đó bạn mới có thể tư duy và sử dụng tiếng Anh ở trình độ IELTS 7.0.</p>
+
+<p>Đây là bước quan trọng để chuẩn bị cho phần luyện đề, vậy nên hãy cùng với LearnEnglish xây dựng lộ trình tự ôn luyện để đạt được band điểm IELTS cao nhé!</p>
+
+<p style="text-align:center"><img src="https://lh7-us.googleusercontent.com/fAMc-vmP08Ro7sE6itl2qegNfsxaxeI3mTQ_GlvBLb4ztbkAFRR8080khcwoBSDTav9IEykCb95S_NkpDpvk_n-RN6nex83a4q-8exZ1SV8DwrwYThJ472ulUZkGgK8fhvR4-P3hJB0hTIyEB2yWV-Y" style="height:337px; width:506px"></p>
+
+<p style="text-align:center"><em>Luyện thi IELTS online tại LearnEnglish</em></p>
+
+<h4 id="3.1.-kỹ-năng-ielts-listening"><span style="font-size:18px"><strong>3.1. Kỹ năng IELTS Listening</strong></span></h4>
+
+<p>Đối với kỹ năng Listening, một phương pháp luyện nghe hiệu quả mà LearnEnglish gợi ý cho bạn đó chính là <a href="https://LearnEnglish.com/posts/261/nghe-chep-chinh-ta-va-cac-tip-nang-cao-trinh-do-listening/" style="text-decoration:none"><span style="color:#1155cc"><strong><u>phương pháp Dictation (nghe chép chính tả)</u></strong></span></a> - nghe và chép lại những gì bạn đã nghe.</p>
+
+<p>Dictation là một phương pháp luyện nghe trong đó bạn nghe một đoạn hội thoại hoặc văn bản và sau đó viết lại nội dung bạn nghe được.</p>
+
+<div>
+<table cellspacing="0" style="border-collapse:collapse; border:none; table-layout:fixed; width:624px">
+<tbody>
+    <tr>
+        <td style="background-color:#fffedd; border-bottom:1px solid #fffedd; border-left:1px solid #fffedd; border-right:1px solid #fffedd; border-top:1px solid #fffedd; vertical-align:top">
+        <p style="text-align:center"><span style="color:#0d4fa6"><strong>Lịch học mỗi tuần cho bạn:&nbsp;</strong></span></p>
+
+        <p><strong>🔴Hàng ngày:</strong></p>
+
+        <p>&nbsp;&nbsp;&nbsp;💡Nếu bạn cảm thấy kỹ năng Listening của mình còn yếu ➡️Hãy luyện nghe chép chính tả hàng ngày (khoảng 15 - 30 phút/ ngày).</p>
+
+        <p style="text-align:center"><span style="color:#cc4125"><strong><img src="https://lh7-us.googleusercontent.com/TdcQvFBFPZsL6yhEpiiy3xtjKpzn7KKpBLLaDeenpgMdtaURok3c9nSPEuR7vrorQ5WC7zNN4W5Op7a3dBW6IGuIz-uXqY-eom0-vCAcKjvIcZr6TsOT03xLlFlVd7-PSesY-x0ziokGOVfM8C8tYuU" style="height:249px; width:610px"></strong></span></p>
+
+        <p>&nbsp;&nbsp;&nbsp;💡Còn đối với những bạn cảm thấy tự tin với khả năng Listening của mình, bạn có thể dành thời gian mỗi ngày luyện nghe và làm ít nhất 1 section (bấm giờ 12 phút), chú ý nghe 1 lần, tốc độ 1x như thi thật.</p>
+
+        <p style="text-align:center"><img src="https://lh7-us.googleusercontent.com/h3AVRdnLKGGLDRJbBtQETt7fSV5sIHQrP3Slu_3D0wmDT9PPrgq5BD9ZrT32QqNfgsgnSbAv0fAKDIMUOAjqdYYbwB0-1v7GxOrxS7E-F_G96LqveDRUj8T00trQa1lyilmqIfjKtw8GSflq3Cp7zBc" style="height:296px; width:610px"></p>
+
+        <p>&nbsp;&nbsp;&nbsp;➡️Sau đó, tự chữa lại bài nghe vừa làm mà không đọc giải thích chi tiết.</p>
+
+        <p style="text-align:center"><img src="https://lh7-us.googleusercontent.com/XfKhOW2_xvCI51OArgKvxYyICxCjVDceHIAcmpjKf9Cz1BDPVCLtrDeVBjbiZ0p9eSZqsz-0YmBRC-hqZkG8Qrcoi1NAmhcWlKUo2fU5HZciMF_G9ZKLA2PD_moP2JbGcSZNrIkoMb-QtQpPBUOp0H8" style="height:291px; width:610px"></p>
+
+        <p>&nbsp;&nbsp;&nbsp;➡️Tiếp theo, làm các bài tập Nghe chép chính tả cho bài vừa làm, tốc độ 1.1x hoặc 1.25x.</p>
+
+        <p style="text-align:center"><span style="color:#cc4125"><strong><img src="https://lh7-us.googleusercontent.com/P9GwLC2TNmkJR65v2QcCvicbEcRLaoKF12BGqveZpN9BeLJd-1z0VaxUsF7iBU6OuNHGagNMbra9Sm9ZzDGaejZiivgX-FrKOvB4rYB5eP9cW6TwL97XcbVrNC9NVXHmYNeX4wBK7sBOff5TV2iwStE" style="height:227px; width:610px"></strong></span></p>
+
+        <p>&nbsp;&nbsp;&nbsp;➡️Chuyển sang xem chi tiết giải đáp của bài.</p>
+
+        <p style="text-align:center"><span style="color:#cc4125"><strong><img src="https://lh7-us.googleusercontent.com/0pr9BCoJ3QcMLOolkf2t1B9RleG-KubxJt7gRrVRqJCOXKdPKI91vw2VAUyM3aiQYekh_vELKUj0Cl_gFWyxQLDIEvjTLU4bBihJ4hkX5kj4JgYWXU7qfryo6FzY3Tsf2fNqT28GeiY2HTrLUCegUCc" style="height:240px; width:610px"></strong></span></p>
+
+        <p>&nbsp;&nbsp;&nbsp;➡️Sau đó, xem clip chữa đề / video bài giảng với dạng câu hỏi tương ứng. Khóa học cung cấp một bộ video chữa bài các dạng bài/ đề thi khó của bộ Cambridge.</p>
+
+        <p style="text-align:center"><span style="color:#cc4125"><strong><img src="https://lh7-us.googleusercontent.com/bcH7q1O1wbMVYkFf4-onpqNKMNZYkTXrBAf-quUepwpXPRnVdx-TAd7k04-XlX8TfAkCYZrVLsObHCKHEF27sNIGsEVf4rw6Hv84OSGx2mlY4MiXbS9j_5yllOyzOSQ8d9tl9lmAGu3VCZDxsVHdlUM" style="height:268px; width:610px"></strong></span></p>
+
+        <p><strong>🔴Cuối tuần:</strong></p>
+
+        <p>&nbsp;&nbsp;&nbsp;💡Bạn hãy làm full 1 test Listening, sau đó tự chấm chữa, rồi mới chuyển sang xem đáp án chi tiết để tự đánh giá trình độ của bản thân.</p>
+
+        <p style="text-align:center"><span style="color:#cc4125"><strong><img src="https://lh7-us.googleusercontent.com/ZiM06wsEZFoFmH1YzbDxdOqJc5nVwCijOeYhyMYG2r4YspPPCH6U5KQWEDLV-QjD_YBdIxPAsM7ezBBuJ49FFd7pxk2lZJEVw0S0BUr4Gbz_jmhaxUsUY3zRo-ZN6JNuJPqQrunlYJM-D6x6Qik2Jlo" style="height:252px; width:610px"></strong></span></p>
+        </td>
+    </tr>
+</tbody>
+</table>
+</div>
+
+<p style="text-align:center"><img src="https://lh7-us.googleusercontent.com/6sXDBbMSshdPkPGdM8MnRCegxliOXozKbvrFUngpInPOXB3pCcEEB2P0n9wHFRAxy7xT7FMDVuW4K8slxBpJvEoTJ-igw3K2a4vDacfUavb7tHoTfC2wy_Ln2_0Cnceg1IvslvE8twNn4dFHI-9ITtk" style="height:415px; width:550px"></p>
+
+<p style="text-align:center"><em>LearnEnglish đã chuẩn bị sẵn lịch học IELTS Listening giúp bạn đạt band 7+</em></p>
+
+<h4 id="3.2.-kỹ-năng-ielts-reading"><span style="font-size:18px"><strong>3.2. Kỹ năng IELTS Reading</strong></span></h4>
+
+<p>Tương tự, đối với kỹ năng Reading, xây dựng đúng chiến lược làm bài và học từ vựng thường xuyên sẽ giúp cho bạn đạt được kết quả tốt nhất.</p>
+
+<p>Theo thống kê, bộ đề IELTS Cambridge chứa đủ lượng từ vựng cần thiết để đạt band 9 trong phần thi IELTS Reading và Listening. Vì thế, bạn nên tập trung vào việc học từ mới trong bộ đề này trước tiên, sau đó có thể luyện đề thêm ở các nguồn tài liệu khác (nếu muốn).</p>
+
+<div>
+<table cellspacing="0" style="border-collapse:collapse; border:none; table-layout:fixed; width:624px">
+<tbody>
+    <tr>
+        <td style="background-color:#fffedd; border-bottom:1px solid #fffedd; border-left:1px solid #fffedd; border-right:1px solid #fffedd; border-top:1px solid #fffedd; vertical-align:top">
+        <p style="text-align:center"><span style="color:#0d4fa6"><strong>Lịch học mỗi tuần cho bạn:&nbsp;</strong></span></p>
+
+        <p><strong>🔴Hàng ngày:</strong></p>
+
+        <p>&nbsp;&nbsp;&nbsp;💡Khi ôn luyện kỹ năng Reading, hàng ngày bạn hãy dành ra thời gian để ôn luyện ít nhất 1 passage (bấm giờ khoảng 15 - 20 phút), sau đó tự chữa lại các câu sai (không nhìn giải thích/ đáp án).</p>
+
+        <p style="text-align:center"><span style="color:#cc4125"><strong><img src="https://lh7-us.googleusercontent.com/mWpd4pIRrSAdX1p0JcQ2xlspIzB5Qz_MHk36daueZl5559L3bAswInvYILaIbfuootCJENyVtKAVzkzmV8M1jONw-Zho2a923mvUdzUM-EorXj1ESEqEipQxmxUyzdOHLh9FsF3bGVCh5fOAqxn1nC8" style="height:283px; width:610px"></strong></span></p>
+
+        <p>&nbsp;&nbsp;&nbsp;➡️Sau khi hoàn thành các bước trên, bạn mới nên xem đáp án và giải thích chi tiết và đánh dấu từ vựng cần học. Lặp lại các bước trên cho tới khi độ chính xác đạt 80%.</p>
+
+        <p style="text-align:center"><span style="color:#cc4125"><strong><img src="https://lh7-us.googleusercontent.com/sATxxbZULjZLwIyv8UBbynqIb86vwJwDv-hpuMSGDqHt5jEs0EKjnG8kfgh486A2n8hQRMBSZUmnYZdCcZPMlFhMEYS9EKVVhSlqlJiTvjD2Oei7RozgKmAXSWk-5HD_FCjhhb1vVv5DnI98hCLZKBM" style="height:341px; width:610px"></strong></span></p>
+
+        <p>&nbsp;&nbsp;&nbsp;➡️Tiếp đó, để tối ưu quá trình học IELTS Reading, hãy làm các bài tập từ vựng của LearnEnglish, bao gồm các từ vựng đã được list sẵn theo ngữ cảnh bài đọc bộ Cam 7-17. Bạn sẽ làm và ghi nhớ được cực lâu nhờ <a href="https://LearnEnglish.com/posts/260/phuong-phap-lap-lai-ngat-quang-va-tip-hoc-tu-vung-tieng-anh-nho-lau/" style="text-decoration:none"><span style="color:#1155cc"><strong><u>phương pháp Spaced-repetition (Lặp lại ngắt quãng)</u></strong></span></a>➡️Tập trung review những từ có khả năng sẽ quên cao, bỏ qua những từ đã nhớ.</p>
+
+        <p style="text-align:center"><span style="color:#cc4125"><strong><img src="https://lh7-us.googleusercontent.com/i7nXeDYRgyN0F8bCqzCI8yHOgQZwmL-cWy931SnmnXW9Hl8hBIPOwc0Hs1lXd9WeXjHn1ZJaxcdI_CWs5pBxNSMxGLL19eDc_8kRPkPrfJw3ZqEsHqDimpY2o6qU4kHos3pQVv2QKfQpINAylwbkiLQ" style="height:288px; width:610px"></strong></span></p>
+
+        <p>&nbsp;&nbsp;&nbsp;➡️Xem clip chữa đề / video bài giảng với dạng câu hỏi tương ứng. Khóa học cung cấp một bộ video chữa bài các dạng bài/ đề thi khó của bộ Cambridge.</p>
+
+        <p style="text-align:center"><span style="color:#cc4125"><strong><img src="https://lh7-us.googleusercontent.com/CJciIR-VvzsATqm4zaocYtW-Tk1ARf340V5-yG7EZpix90cb4QNsn3X7XPPEvisXSct-o6u2u6YfjzLg6qm1SUtoynnxJiCkxC2WfgwVoEu44r3cQxtfLS815yJIRynszwkBQVhuVI6RTkCMMJR7GtQ" style="height:276px; width:610px"></strong></span></p>
+
+        <p><strong>🔴Cuối tuần:</strong></p>
+
+        <p>&nbsp;&nbsp;&nbsp;💡Bạn hãy làm full 1 test Reading (bấm giờ 60 phút) sau đó tự chấm chữa, rồi mới chuyển sang xem đáp án chi tiết để tự đánh giá trình độ của bản thân.</p>
+
+        <p style="text-align:center"><span style="color:#cc4125"><strong><img src="https://lh7-us.googleusercontent.com/KeXsXn4sXlrHQWh_-kimKnVunQxypFgyQ9z2-ER5mYKXu9-3tUsOPiWq4p8lz57KARwSJ89-W3wtrOoN4SwTJOTMqiW8L1-TcdXeCjMJXBK9TNTMLrgKDdAitXROJVcdw-mpMonbniOr0GyEd23cQ2I" style="height:253px; width:610px"></strong></span></p>
+        </td>
+    </tr>
+</tbody>
+</table>
+</div>
+
+<p style="text-align:center"><img src="https://lh7-us.googleusercontent.com/5y-zjGhfRjLx2FsxnoOsienpueP0Xgpuc1mHdfBtQBGvG4SsPU8f39YyfCGFWWGv5jg-CmekxPXeXvs7QjlDI0ijHndWd5WxFO3wo2WnM6U_842w9BU76kHP5WEJ92LnOE_JVVdGfSbyhKoHryoi8xY" style="height:374px; width:557px"></p>
+
+<p style="text-align:center"><em>Lịch học IELTS Reading hiệu quả đã được LearnEnglish lập sẵn cho bạn</em></p>
+
+<p><strong>Khi đến giai đoạn này, bạn nên tập trung vào luyện full đề của cả 2 kỹ năng, sau đó dành thời gian chữa bài thật kỹ lưỡng và học từ vựng.</strong></p>
+
+<p><span style="background-color:#fffedd">Một số bộ đề bạn nên tham khảo để luyện thi trong giai đoạn này như là: IELTS Cambridge 7 - 18, IELTS Plus, IELTS Trainer 1 - 2, Actual tests, Simulations…</span></p>
+
+<p>👉<em>Không cần đi đâu xa, LearnEnglish có </em><a href="https://LearnEnglish.com/tests/" style="text-decoration:none"><span style="color:#1155cc"><strong><em><u>kho tàng đề thi khủng hoàn toàn MIỄN PHÍ</u></em></strong></span></a><strong><em> </em></strong><em>và luôn được cập nhật liên tục. Kết quả, đáp án của bài thi tại LearnEnglish được giải thích vô cùng chi tiết và quá trình luyện thi thống kê cẩn thận.</em></p>
+
+<p>👉<em>Bạn có thể tìm và làm để ở thư viện đề thi trên góc phải, hoặc làm ngay trong khóa học tại mục PRACTICE ZONE.</em></p>
+
+<p style="text-align:center"><a href="https://LearnEnglish.com/tests/" style="text-decoration:none"><span style="color:#1155cc"><strong><u><img src="https://lh7-us.googleusercontent.com/VbXwEzwyN4-OalY7eKJ2hW71f3Q6dopdSG-5C8Wz4JUSjrEXVPc0NjhvCy4lcPotWDFDpo3ls3-bg1uLwVmEL5wlU9Q30_ozFNR0aHiISHc1ENGv2igkYU4HUuXFgl2S2KHBOY5LvQsRVvxRMXUOHQg" style="height:84px; width:600px"></u></strong></span></a></p>
+
+<h4 id="3.3.-kỹ-năng-ielts-writing"><span style="font-size:18px"><strong>3.3. Kỹ năng IELTS Writing&nbsp;</strong></span></h4>
+
+<p>Đối với phần thi Writing, học từ vựng, cách triển khai ý tưởng và sử dụng linh hoạt ngữ pháp là vô cùng quan trọng. Lộ trình học IELTS Writing của LearnEnglish:</p>
+
+<div>
+<table cellspacing="0" style="border-collapse:collapse; border:none; table-layout:fixed; width:624px">
+<tbody>
+    <tr>
+        <td style="background-color:#fffedd; border-bottom:1px solid #fffedd; border-left:1px solid #fffedd; border-right:1px solid #fffedd; border-top:1px solid #fffedd; vertical-align:top">
+        <p style="text-align:center"><span style="color:#0d4fa6"><strong>Lịch học mỗi tuần cho bạn:&nbsp;</strong></span></p>
+
+        <p><strong>🔴Hàng ngày:</strong></p>
+
+        <p>&nbsp;&nbsp;&nbsp;💡Hãy đọc các bài sample (mẫu) của cả Task 1 và Task 2 trong khóa học. Đây là những bài mẫu band 8+ đã được LearnEnglish tổng hợp lại.</p>
+
+        <p style="text-align:center"><span style="color:#cc4125"><strong><img src="https://lh7-us.googleusercontent.com/YEmf-QYzq2mzD4k72LEzFdh6GqQZaK1g4QzUt_-t7jHpszgIa4sYnbcnwSgtfcADD1tM22I35TDaH5Hi9VAZJ8lFcjufPTtahtNtNZDi0Zxf5rn8Xdx35t0kuJf53oDFREwrz-CZvnzcioY0wwxCP7M" style="height:421px; width:610px"></strong></span></p>
+
+        <p>&nbsp;&nbsp;&nbsp;➡️Sau đó, làm các bài tập về từ vựng, ngữ pháp cùng với bài viết lại câu. Những bài tập này rất quan trọng, chắc chắn sẽ giúp bạn vừa có vốn từ vựng nâng cao, kiến thức ngữ pháp chuẩn và học được cách sắp xếp, trình bày essay, để tránh mất điểm không đáng có!</p>
+
+        <p style="text-align:center"><span style="color:#cc4125"><strong><img src="https://lh7-us.googleusercontent.com/N4g3FIYdKxxuewIJQUOUcazQzbpupAHxxtw4KyOlx8JEkdz3KBwv6mbPTEx48FjNKaloXOnfh_gGl_AzSNICg5NPDGvyPezZe6_F8hOR3t0agEUKC7Xh1JdJspjHzsZkpEOGt4d8wLrwdcLhzhXPyuE" style="height:408px; width:610px"></strong></span></p>
+
+        <p><strong>🔴Cuối tuần:</strong></p>
+
+        <p>Hãy làm Task 1 (20 phút) và Task 2 (60 phút) giống như trong phần thi IELTS Writing thật.</p>
+
+        <p style="text-align:center"><span style="color:#cc4125"><strong><img src="https://lh7-us.googleusercontent.com/RBfITBtPSfDoWXVeBdptO-Vg9mPbEZ5s6_dUeSE_CCEIkVNGCkGfDCoL0Xuc6AwnYMtRw4pQCozwRS9HyqFvnrBjgcey-HVwCM0jJ3twVxNAH7CuVDG7LdimBcshy0NOa1I8bq9MkPkvUKxq9A6GPx8" style="height:296px; width:610px"></strong></span></p>
+        </td>
+    </tr>
+</tbody>
+</table>
+</div>
+
+<p style="text-align:center"><img src="https://lh7-us.googleusercontent.com/T2mDpLRxHm14e_I9K6ClS14NPkaKCl2AJB6T2ipLO07NCh-blak3NJhFL2slKXNnXQCTFcclp2OvwfzdyMJu8qCkme8U76B-K2Lt9SCSCH0CpvrHQUzEJ335avsMgcz9c8OyTRIUw-ASd0Siwgj5zDk" style="height:280px; width:597px"></p>
+
+<p style="text-align:center"><em>Lịch học khóa IELTS Writing của LearnEnglish</em></p>
+
+<p>Sau khi đã quen thuộc với các dạng đề, tiếp theo bạn nên tìm hiểu đến <a href="https://LearnEnglish.com/posts/632/cac-tieu-chi-cham-ielts-writing-cach-cham-diem-writing-tu-a-z/" style="text-decoration:none"><span style="color:#1155cc"><strong><u>các tiêu chí chấm điểm trong phần thi IELTS Writing</u></strong></span></a> để tự nâng cấp band điểm dần dần (các tiêu chí trong IELTS Band Descriptors được nêu rõ ràng).</p>
+
+<ul>
+<li style="list-style-type:disc"><strong>Task Response/ Task Achievement </strong>(25%): Đánh giá khả năng của thí sinh trong việc trả lời đúng trọng tâm của đề bài và sự tập trung vào câu hỏi chính.</li>
+<li style="list-style-type:disc"><strong>Coherence and Cohesion</strong> (25%): Đánh giá mức độ mạch lạc và tính liên kết giữa các câu trong bài viết.</li>
+<li style="list-style-type:disc"><strong>Lexical Resource</strong> (25%): Đánh giá khả năng sử dụng từ vựng phong phú của thí sinh, bao gồm việc sử dụng từ ngữ thích hợp, đa dạng và không mắc lỗi chính tả.</li>
+<li style="list-style-type:disc"><strong>Grammatical Range and Accuracy</strong> (25%): Đánh giá sự đa dạng và tính chính xác trong cách sử dụng cấu trúc ngữ pháp trong bài viết, cũng như kiểm tra việc không mắc các lỗi căn bản về ngữ pháp.</li>
+</ul>
+
+<p>Luyện tập viết bài (có bấm giờ) và chấm chữa bài theo các tiêu chí trên thường xuyên để đạt được kết quả tốt nhất.</p>
+
+<p><strong><em>Xem thêm: </em></strong><a href="https://LearnEnglish.com/posts/632/cac-tieu-chi-cham-ielts-writing-cach-cham-diem-writing-tu-a-z/" style="text-decoration:none"><span style="color:#1155cc"><strong><em><u>Các tiêu chí chấm IELTS Writing - Cách chấm điểm Writing từ A - Z</u></em></strong></span></a></p>
+
+<h4 id="3.4.-kỹ-năng-ielts-speaking"><span style="font-size:18px"><strong>3.4. Kỹ năng IELTS Speaking&nbsp;</strong></span></h4>
+
+<p>Cuối cùng, với kỹ năng IELTS Speaking, bạn cần ôn luyện cả 3 part.</p>
+
+<div>
+<table cellspacing="0" style="border-collapse:collapse; border:none; table-layout:fixed; width:624px">
+<tbody>
+    <tr>
+        <td style="background-color:#fffedd; border-bottom:1px solid #fffedd; border-left:1px solid #fffedd; border-right:1px solid #fffedd; border-top:1px solid #fffedd; vertical-align:top">
+        <p style="text-align:center"><span style="color:#0d4fa6"><strong>Lịch học mỗi tuần cho bạn:&nbsp;</strong></span></p>
+
+        <p><strong>🔴Hàng ngày:</strong></p>
+
+        <p>&nbsp;&nbsp;&nbsp;💡Luyện tập bằng cách đọc sample cả 3 parts hàng ngày.</p>
+
+        <p style="text-align:center"><span style="color:#cc4125"><strong><img src="https://lh7-us.googleusercontent.com/6wupLA0biHRQ7EibvxFS4VtBdMbXGrF0WLDjCtwvAv8XLVs7EOS6o1Cb_YTC_2-oJuk7k1voJh_diay_ejbygb2VBSpvwhInvs4tIbgyWtJi1DSjX0Md-uptZplzpY7x5mYaqIBoI7HCHCP_YV5dIBg" style="height:509px; width:599px"></strong></span></p>
+
+        <p>&nbsp;&nbsp;&nbsp;➡️Tiếp theo, hãy luyện tập các bài từ vựng, ngữ pháp và luyện nói với <a href="https://LearnEnglish.com/posts/262/shadowing-bi-kip-tang-band-ielts-speaking/" style="text-decoration:none"><span style="color:#1155cc"><strong><u>phương pháp Shadowing (bắt chước)</u></strong></span></a> để luyện phát âm và ngữ điệu.</p>
+
+        <p style="text-align:center"><span style="color:#cc4125"><strong><img src="https://lh7-us.googleusercontent.com/RsirLo5F_M2dMKEUO02QLIdLfdJ8-U6tiiqI-XBVw9LTZlPt9bV2xrdjH7ldtzIf_EBwlBwF6Ztsz0HX8ZKjdEeZMm0I_PdTNSr-sIgWboleKntsHc0TTp_TARylyMLBaaRuSpehpkGZQQi6WoReLb0" style="height:355px; width:594px"></strong></span></p>
+
+        <p>&nbsp;&nbsp;&nbsp;➡️Sau đó, bạn sẽ luyện tập phát âm IPA. Bảng phiên âm IPA tuy là kiến thức cơ bản, nhưng lại vô cùng quan trọng. Để tránh mất điểm không đáng như nhiều thí sinh, đảm bảo phát âm của bạn đúng và chuẩn với bảng phiên âm IPA.</p>
+
+        <p style="text-align:center"><span style="color:#cc4125"><strong><img src="https://lh7-us.googleusercontent.com/R-h1jM03iV64uPGp3klPQi_kfTuK0IvcYfjuNTm1DpVLupcU4jGbC-fFv79N892nB_-X961FE8nPSyiM69q3HDj-cTrfJWoz3FEB8mc5ObiZre68_hd-SM5sHHlCO0uYNlXRRQRebizplmJ4Q9ZGF5I" style="height:292px; width:610px"></strong></span></p>
+
+        <p><strong><img src="https://lh7-us.googleusercontent.com/k2y286_9NUXslT8eQaeD9fdePZVgKdKRzfbLjMUQgZ_n9BX8zmTInkzdJyEMw4IWR-dk50wVUGBXsHyD3TItu9D0GiT6kks2tXoeb2hdJdz79A5qRErDtLAxP4pf7tLM94ysMAS2zd3nAmGLsZbRXck" style="height:292px; width:610px"></strong></p>
+
+        <p><strong>🔴Cuối tuần:</strong></p>
+
+        <p>&nbsp;&nbsp;&nbsp;💡Luyện nói full 1 bài speaking đủ 3 parts, có bấm giờ 10-12 phút giống như thi thật.</p>
+
+        <p style="text-align:center"><span style="color:#cc4125"><strong><img src="https://lh7-us.googleusercontent.com/NbTAP7MzhYiOfuTd8GpXgs8CseDhpUvLf79Lyx49JRW9OId2ylmyEBhqDVs-XfvoNHJZeLQEyMozZtqWoqJ1430mbfCYSsH62f4x0sKwtpYwUlLCBx-rnd36sQXGFC_jigd3Tu654Vp2Z87uoEvMw70" style="height:293px; width:610px"></strong></span></p>
+        </td>
+    </tr>
+</tbody>
+</table>
+</div>
+
+<p style="text-align:center"><img src="https://lh7-us.googleusercontent.com/tef1k8So72UsoOyy8Rqt_K_ljezQZ4PbYgExs7HvQt6Nup8WQ7HQZl7TDA1L-OQE9Rp5EM9mEq6dnjoASG6Te8umyClKssYnIR2ZyY90xLli-XKTwhGtCz2aGZJAGx9LIAX7H9FwFZU9onRmCefni0I" style="height:308px; width:624px"></p>
+
+<p style="text-align:center"><em>Lịch học IELTS Speaking online tại nhà của LearnEnglish</em></p>
+
+<p>Tương tự như IELTS Writing, <a href="https://LearnEnglish.com/posts/633/cac-tieu-chi-cham-ielts-speaking-va-cach-cham-diem-speaking-tu-a-z/" style="text-decoration:none"><span style="color:#1155cc"><strong><u>các tiêu chí chấm điểm</u></strong></span></a> cũng được nêu rất rõ trong IELTS Band Descriptors nhằm giúp bạn tự đánh giá được trình độ của bản thân một cách khách quan nhất.</p>
+
+<ul>
+<li style="list-style-type:disc"><strong>Fluency and Coherence</strong>: Đánh giá khả năng của thí sinh trong việc nói lưu loát và kết nối các ý một cách logic. Cần duy trì độ dài phù hợp cho mỗi phần và trả lời đúng trọng tâm của câu hỏi.</li>
+<li style="list-style-type:disc"><strong>Lexical Resource</strong>: Đánh giá mức độ sử dụng từ vựng đa dạng trong nhiều lĩnh vực khác nhau, cũng như khả năng sắp xếp từ vựng một cách chính xác và phù hợp với ngữ cảnh.</li>
+<li style="list-style-type:disc"><strong>Grammatical Range and Accuracy</strong>: Đánh giá khả năng sử dụng nhiều cấu trúc ngữ pháp khác nhau và đảm bảo tính chính xác của việc sử dụng ngữ pháp.</li>
+<li style="list-style-type:disc"><strong>Pronunciation</strong>: Đánh giá về khả năng phát âm đúng, ngữ điệu, tốc độ nói và cách diễn đạt rõ ràng, dễ hiểu.</li>
+</ul>
+
+<p>Nên tự ghi âm lại khi luyện nói cả 3 parts, sau đó tự nghe và chữa lỗi sai cho mình. Trước khi thi 1 - 2 tháng nên ôn theo forecast speaking để có thể chuẩn bị bài một cách tốt nhất.</p>
+
+<p><strong><em>Xem thêm: </em></strong><a href="https://LearnEnglish.com/posts/633/cac-tieu-chi-cham-ielts-speaking-va-cach-cham-diem-speaking-tu-a-z/" style="text-decoration:none"><span style="color:#1155cc"><strong><em><u>Các tiêu chí chấm IELTS Speaking và Cách chấm điểm Speaking từ A - Z</u></em></strong></span></a></p>
+
+<p>Để biết được band điểm của essay hoặc bài nói, đồng thời được nhận xét những tiêu chí cần cải thiện, hãy tham khảo khóa chấm chữa của LearnEnglish.</p>
+
+<div>
+<table cellspacing="0" style="border-collapse:collapse; border:none; table-layout:fixed; width:624px">
+<tbody>
+    <tr>
+        <td style="background-color:#e8f5ff; border-bottom:1px solid #e8f5ff; border-left:1px solid #e8f5ff; border-right:1px solid #e8f5ff; border-top:1px solid #e8f5ff; vertical-align:top">
+        <p>👉Xem ngay khóa học <a href="https://LearnEnglish.com/courses/23/ielts-writing-speaking-correction/?itm_source=seo&amp;itm_medium=article&amp;itm_campaign=blogpost_internal_link&amp;itm_content=927" style="text-decoration:none"><span style="color:#1155cc"><strong><u>Advanced IELTS Writing &amp; Speaking (Target 6.5+) - Khóa chấm chữa Speaking &amp; Writing</u></strong></span></a> - Chấm bởi các giáo viên bản ngữ có bằng cấp, chứng chỉ dạy học và nhiều năm kinh nghiệm giảng dạy IELTS/TOEFL.</p>
+
+        <p style="text-align:center"><a href="https://LearnEnglish.com/courses/23/ielts-writing-speaking-correction/?itm_source=seo&amp;itm_medium=article&amp;itm_campaign=blogpost_internal_link&amp;itm_content=927" style="text-decoration:none"><span style="color:#1155cc"><u><img src="https://lh7-us.googleusercontent.com/0nfXL7i2Y_I-K7By_21L6gKrp6QCZHhOJtdXxGcaJcNkrM74fhR9dFo3GrF_Ao4w1169Mhx3qKIAZXkjJENqxXghJy2Ls6Bnuv9nOrO7MeLL8FvUAfRNzO-OH4WHh8Z93kHT1UJIpXUQcK_Y9k2jyo4" style="height:221px; width:590px"></u></span></a></p>
+        </td>
+    </tr>
+</tbody>
+</table>
+</div>
+
+<h2 id="iv.-một-số-mẹo-khi-tự-xây-dựng-lộ-trình-ôn-thi-ielts"><strong>IV. Một số mẹo khi tự xây dựng lộ trình ôn thi IELTS</strong></h2>
+
+<p style="text-align:center"><img src="https://lh7-us.googleusercontent.com/kuFtF_RmJ0bOg4TqPAihsa1cycvQ0dmJwkWKJ9P_QIeZPu_MBdEAn0RkSlyOIZhvT_r_x_EV2pJi-VD9zQoTqNmSOb9stXYd9_NKMb5Rf5-lB0uoca0xVN1_k_e4nAbmaby7IwxAKQGnVVX7oY3DgoM" style="height:277px; width:415px"></p>
+
+<p style="text-align:center"><em>Tip xây dựng lộ trình tự học IELTS tại nhà</em></p>
+
+<ul>
+<li style="list-style-type:disc"><strong>Xây dựng kế hoạch học tập</strong>: Để đạt được điểm cao trong kỳ thi IELTS (từ band 6.5 trở lên), việc xây dựng một lộ trình ôn luyện hiệu quả là quan trọng. Đầu tiên, thí sinh cần xác định mục tiêu ôn luyện cụ thể và tạo ra một thời khóa biểu chặt chẽ nhằm đảm bảo tuân thủ kế hoạch học tập. Điều này giúp định rõ các bước cần thực hiện và ngăn tình trạng lười biếng, mất phương hướng khi học.</li>
+</ul>
+
+<p style="margin-left:48px"><span style="color:#0d4fa6"><span style="background-color:#fffedd"><strong><em>Nếu chưa biết xây dựng lịch học hiệu quả, hãy tham khảo lịch học trên của LearnEnglish nhé!</em></strong></span></span></p>
+
+<ul>
+<li style="list-style-type:disc"><strong>Sắp xếp thời gian ôn luyện 4 kỹ năng bằng nhau</strong>: Phân chia thời gian sao cho bạn có thể ôn tập đồng đều cả bốn kỹ năng: Nghe, Đọc, Viết, Nói. Lưu ý rằng điểm bài thi IELTS sẽ là điểm trung bình cộng của cả 4 kỹ năng, vậy nên hãy phân bổ thời gian ôn luyện hợp lý.&nbsp;</li>
+<li style="list-style-type:disc"><strong>Ôn từ vựng và ngữ pháp thường xuyên</strong>: Học và ôn luyện từ vựng và ngữ pháp từ các nguồn đáng tin cậy như sách giáo trình IELTS hoặc tài liệu chính thức từ IDP, British Council để tránh quên từ vựng và trau dồi ngữ pháp.</li>
+<li style="list-style-type:disc"><strong>Chia nhỏ mục tiêu</strong>: Các bạn nên chia mục tiêu ôn luyện thành những phần nhỏ (hoặc có thể chia thành giai đoạn như trên) để dễ dàng quản lý và theo dõi tiến độ học tập. Việc đạt được từng mục tiêu nhỏ không chỉ giúp người học tránh quá tải kiến thức mà còn tạo động lực tích cực trên hành trình ôn luyện.</li>
+<li style="list-style-type:disc"><strong>Luyện nghe hàng ngày</strong>: Nghe nhiều loại tài liệu tiếng Anh khác nhau để làm quen với nhiều kiểu accent. Có thể tham khảo nghe tiếng Anh từ các nguồn như podcast, bản tin, và sách nói.</li>
+<li style="list-style-type:disc"><strong>Luyện đọc hàng ngày</strong>: Luyện đọc từ các nguồn đa dạng khác nhau như bài báo, sách, và văn bản chuyên ngành. Thực hành thường xuyên các phương pháp như <a href="https://LearnEnglish.com/posts/263/ky-nang-skimming-va-scanning-bao-boi-cho-moi-de-ielts-reading/" style="text-decoration:none"><span style="color:#1155cc"><strong><u>Scanning hay Skimming</u></strong></span></a>.</li>
+<li style="list-style-type:disc"><strong>Luyện viết hàng ngày</strong>: Lập dàn ý (bao gồm từ vựng, ngữ pháp và ý tưởng) hàng ngày với các chủ đề thường xuất hiện trong bài thi IELTS. Nên có một giáo viên/ gia sư chấm chữa bài thường xuyên để nâng cao trình độ.&nbsp;</li>
+<li style="list-style-type:disc"><strong>Luyện nói hàng ngày</strong>: Luyện nói hàng ngày với bạn bè, gia đình, hoặc thậm chí trước gương và ghi âm lại. Sau đó, tự chấm điểm và sửa lỗi sai cho bản thân và tiếp tục luyện tập để không mắc lại lỗi đó lần nữa.&nbsp;</li>
+</ul>
+
+<h2 id="v.-những-điểm-cần-lưu-ý-khi-đi-thi-ielts"><strong>V. Những điểm cần lưu ý khi đi thi IELTS</strong></h2>
+
+<p>Đối với các bạn tự luyện và tự ôn tập tại nhà, việc thiếu đi một người giáo viên/ gia sư để nhắc nhở các việc cần làm trước khi đi thi sẽ khiến các bạn đôi khi không ở trạng thái ổn nhất khi thi. Dưới đây, LearnEnglish sẽ chia sẻ về một số lưu ý khi bạn đi thi IELTS nhé.</p>
+
+<ul>
+<li style="list-style-type:disc"><strong>Đăng ký thi IELTS trước 1 - 2 tháng</strong>: Do nhu cầu tham gia thi IELTS ngày càng nhiều, LearnEnglish khuyến khích những bạn có nhu cầu thi IELTS với hình thức Paper-based (trên giấy) nên đăng ký trước 1 - 2 tháng để tránh hết suất thi dẫn đến lỡ việc cá nhân.</li>
+</ul>
+
+<p><strong><em>Xem thêm: </em></strong><a href="https://LearnEnglish.com/posts/565/huong-dan-cach-dang-ky-thi-ielts-tai-idp-va-british-council/" style="text-decoration:none"><span style="color:#1155cc"><strong><em><u>Hướng dẫn cách đăng ký thi IELTS tại IDP và British Council</u></em></strong></span></a></p>
+
+<ul>
+<li style="list-style-type:disc"><strong>Nghỉ ngơi, ngủ đủ giấc</strong>: Đảm bảo bạn có giấc ngủ ngon trước ngày thi. Chắc chắn sự tập trung sẽ được cải thiện đáng kể nếu bạn đã nghỉ ngơi đủ giấc.</li>
+<li style="list-style-type:disc"><strong>Kiểm tra kỹ thông tin ngày thi</strong>: Kiểm tra thông tin về địa điểm thi, thời gian thi và mang theo các giấy tờ cần thiết. Hãy đảm bảo bạn biết rõ đường đi và thời gian mở cửa của nơi dự thi.</li>
+</ul>
+
+<p style="text-align:center"><img src="https://lh7-us.googleusercontent.com/pgSxFQmKdM-t9GAKNn4Yrx43UqKS0fAV-WXqq5L8srF_h_zeYmvtMq0wApXeFKXBwalFvLIkDJebvbJxpIn2Rj5JQ0F00hOaeF9J1Q_l8Wk6LwVzYR-sO59P_RlqrDSE_OSaF7RxPATd07PRn66V-Dg" style="height:336px; width:449px"></p>
+
+<p style="text-align:center"><em>Tự học IELTS tại nhà hiệu quả</em></p>
+
+<ul>
+<li style="list-style-type:disc"><strong>Chuẩn bị giấy tờ tùy thân</strong>: Bạn phải mang giấy tờ tùy thân hợp lệ (thường là chứng minh nhân dân hoặc hộ chiếu) đã dùng để đăng ký thi tới nơi dự thi, nếu không sẽ không có đủ tư cách dự thi.</li>
+<li style="list-style-type:disc"><strong>Ăn uống đủ chất</strong>: Ăn một bữa sáng nhanh và nhẹ, tránh thức ăn nặng để giữ cơ thể đủ năng lượng cho việc tập trung trong suốt bài thi.</li>
+<li style="list-style-type:disc"><strong>Nghỉ ngơi trước ngày thi 1 - 2 ngày</strong>: Tránh học và ghi nhớ kiến thức mới vào buổi tối trước ngày thi. Thay vào đó, nên dành thời gian cho trí não nghỉ ngơi và giữ tâm lý thoải mái.</li>
+<li style="list-style-type:disc"><strong>Không thảo luận về bài thi với thí sinh khác</strong>: Tránh thảo luận với người khác về nội dung của bài thi trước kỳ thi để tránh ảnh hưởng tới tâm lý của bạn.</li>
+<li style="list-style-type:disc"><strong>Đến nơi thi sớm</strong>: Hãy đến địa điểm thi sớm hơn giờ thi khoảng 30 phút để tránh tình trạng vội vã, ngoài ra còn giúp bạn làm quen với môi trường thi.</li>
+</ul>
+
+<h2 id="lời-kết"><strong>Lời kết</strong></h2>
+
+<p>Trên đây, LearnEnglish đã chia sẻ cho bạn Lộ trình tự học IELTS từ 4.0 đến 7.0 và các mẹo cần nhớ để đạt điểm cao trong bài thi IELTS rồi đó!</p>
+
+<p>Nếu bạn có bất kỳ thắc mắc hay câu hỏi nào, hãy bình luận bên dưới để LearnEnglish giải đáp cho bạn nhé!</p>
+                    </div>
+                    
+
+                    
+
+                    
+                </div>
+
+                
+                <div class="post-tags">
+                
+                    <span class="tag">ielts</span>
+                
+                </div>
+                
+                <br>
+
+                <div class="post-comments-wrapper">
+                    <h4 id="bình-luận">Bình luận</h4>
+                    
+
+
+
+<form action="/posts/927/comment/" method="POST" class="mt-2 md-comment-input jqform jqcomment-form" data-reload-html="#obj-comments-927" data-target="#md-comments-box" data-submitting="false">
+    
+<input name="csrfmiddlewaretoken" type="hidden" value="tp51gtvD3qTFEtWz51IjCjMSPFg2EoqRRspOFbPJnEAo2podjrNiT3oG6ik4BbMR">
+
+
+    
+    
+
+    <div class="input-group">
+        <textarea name="content" rows="1" class="form-control custom-control jqcomment-textarea" placeholder="Chia sẻ cảm nghĩ của bạn ..."></textarea>
+        <div class="input-group-append">
+            <button class="input-group-addon btn btn-primary jqcomment-submit">Gửi</button>
+        </div>
+    </div>
+</form>
+
+
+
+                    <br>
+                    <div id="obj-comments-927" class="jqhtml-loader" data-href="/posts/927/comments/"><p><i>Chưa có bình luận nào. Hãy trở thành người đầu tiên bình luận bài này.</i></p></div>
+                </div>
+
+                
+
+                <br>
+                <div>
+                    <div class="h3">Các bài viết cùng chủ đề</div>
+                    
+<div class="">
+<div class="center">
+    
+        
+        <div class="posts-list">
+        
+            
+<div class="postlist-card">
+
+
+<div class="postlist-card-img sm mb-2">
+    <img class="lazyel card-img entered loaded" data-src="https://study4.com/media/examprep/Post/files/2024/12/05/C%C3%A1ch_d%C3%B9ng_25.png" data-ll-status="loaded" src="https://study4.com/media/examprep/Post/files/2024/12/05/C%C3%A1ch_d%C3%B9ng_25.png">
+</div>
+
+<div class="postlist-card-content-wrapper">
+    
+    <span class="d-block post-topic"><a class="font-weight-bold small" href="/topics/ielts-materials/">IELTS MATERIALS</a></span>
+    
+    <div class="postlist-title-wrapper">
+        
+        <div class="postlist-card-img-sm mb-2">
+            <img class="lazyel card-img" data-src="https://study4.com/media/examprep/Post/files/2024/12/05/C%C3%A1ch_d%C3%B9ng_25.png">
+        </div>
+        
+        <div class="postlist-title"><a href="/posts/1566/tong-hop-tu-vung-ielts-chu-de-education-giao-duc/">Tổng hợp từ vựng IELTS chủ đề Education (Giáo dục)</a></div>
+    </div>
+    <div class="postlist-card-content card-body d-flex flex-column p-0">
+        <p>Nằm lòng topic từ vựng Education cho kỳ thi IELTS qua bài viết này nhé!</p>
+    </div>
+    
+    <div class="postlist-meta">
+        02/12/2024 bởi Phuong Anh Do
+        
+    </div>
+    
+</div>
+</div>
+
+        
+            
+<div class="postlist-card">
+
+
+<div class="postlist-card-img sm mb-2">
+    <img class="lazyel card-img entered loaded" data-src="https://study4.com/media/examprep/Post/files/2024/12/05/C%C3%A1ch_d%C3%B9ng_26.png" data-ll-status="loaded" src="https://study4.com/media/examprep/Post/files/2024/12/05/C%C3%A1ch_d%C3%B9ng_26.png">
+</div>
+
+<div class="postlist-card-content-wrapper">
+    
+    <span class="d-block post-topic"><a class="font-weight-bold small" href="/topics/ielts-materials/">IELTS MATERIALS</a></span>
+    
+    <div class="postlist-title-wrapper">
+        
+        <div class="postlist-card-img-sm mb-2">
+            <img class="lazyel card-img" data-src="https://study4.com/media/examprep/Post/files/2024/12/05/C%C3%A1ch_d%C3%B9ng_26.png">
+        </div>
+        
+        <div class="postlist-title"><a href="/posts/1565/tong-hop-tu-vung-ielts-chu-de-crime-toi-pham/">Tổng hợp từ vựng IELTS chủ đề Crime (Tội phạm)</a></div>
+    </div>
+    <div class="postlist-card-content card-body d-flex flex-column p-0">
+        <p>Tham khảo tổng hợp từ vựng IELTS chủ đề Crime đầy đủ nhất để dễ dàng đạt điểm tốt trong kỳ thi IELTS nhé!</p>
+    </div>
+    
+    <div class="postlist-meta">
+        02/12/2024 bởi Phuong Anh Do
+        
+    </div>
+    
+</div>
+</div>
+
+        
+            
+<div class="postlist-card">
+
+
+<div class="postlist-card-img sm mb-2">
+    <img class="lazyel card-img entered loaded" data-src="https://study4.com/media/examprep/Post/files/2024/12/05/C%C3%A1ch_d%C3%B9ng_27.png" data-ll-status="loaded" src="https://study4.com/media/examprep/Post/files/2024/12/05/C%C3%A1ch_d%C3%B9ng_27.png">
+</div>
+
+<div class="postlist-card-content-wrapper">
+    
+    <span class="d-block post-topic"><a class="font-weight-bold small" href="/topics/ielts-materials/">IELTS MATERIALS</a></span>
+    
+    <div class="postlist-title-wrapper">
+        
+        <div class="postlist-card-img-sm mb-2">
+            <img class="lazyel card-img" data-src="https://study4.com/media/examprep/Post/files/2024/12/05/C%C3%A1ch_d%C3%B9ng_27.png">
+        </div>
+        
+        <div class="postlist-title"><a href="/posts/1564/tong-hop-tu-vung-ielts-chu-de-environment-moi-truong/">Tổng hợp từ vựng IELTS chủ đề Environment (Môi trường)</a></div>
+    </div>
+    <div class="postlist-card-content card-body d-flex flex-column p-0">
+        <p>Học và ghi nhớ chủ đề từ vựng Environment nhanh thuộc và nhớ lâu nhờ tổng hợp từ vựng và tip học từ sau đây!</p>
+    </div>
+    
+    <div class="postlist-meta">
+        02/12/2024 bởi Phuong Anh Do
+        
+    </div>
+    
+</div>
+</div>
+
+        
+            
+<div class="postlist-card">
+
+
+<div class="postlist-card-img sm mb-2">
+    <img class="lazyel card-img entered loaded" data-src="https://study4.com/media/examprep/Post/files/2024/12/05/C%C3%A1ch_d%C3%B9ng_28.png" data-ll-status="loaded" src="https://study4.com/media/examprep/Post/files/2024/12/05/C%C3%A1ch_d%C3%B9ng_28.png">
+</div>
+
+<div class="postlist-card-content-wrapper">
+    
+    <span class="d-block post-topic"><a class="font-weight-bold small" href="/topics/ielts-materials/">IELTS MATERIALS</a></span>
+    
+    <div class="postlist-title-wrapper">
+        
+        <div class="postlist-card-img-sm mb-2">
+            <img class="lazyel card-img" data-src="https://study4.com/media/examprep/Post/files/2024/12/05/C%C3%A1ch_d%C3%B9ng_28.png">
+        </div>
+        
+        <div class="postlist-title"><a href="/posts/1563/tong-hop-tu-vung-ielts-chu-de-vietnam/">Tổng hợp từ vựng IELTS chủ đề Vietnam</a></div>
+    </div>
+    <div class="postlist-card-content card-body d-flex flex-column p-0">
+        <p>Củng cố vốn từ vựng về Việt Nam để thật tự tin trình bày ý tưởng trong phòng thi IELTS nhé!</p>
+    </div>
+    
+    <div class="postlist-meta">
+        02/12/2024 bởi Phuong Anh Do
+        
+    </div>
+    
+</div>
+</div>
+
+        
+            
+<div class="postlist-card">
+
+
+<div class="postlist-card-img sm mb-2">
+    <img class="lazyel card-img entered loaded" data-src="https://study4.com/media/examprep/Post/files/2024/12/05/C%C3%A1ch_d%C3%B9ng_29.png" data-ll-status="loaded" src="https://study4.com/media/examprep/Post/files/2024/12/05/C%C3%A1ch_d%C3%B9ng_29.png">
+</div>
+
+<div class="postlist-card-content-wrapper">
+    
+    <span class="d-block post-topic"><a class="font-weight-bold small" href="/topics/ielts-materials/">IELTS MATERIALS</a></span>
+    
+    <div class="postlist-title-wrapper">
+        
+        <div class="postlist-card-img-sm mb-2">
+            <img class="lazyel card-img" data-src="https://study4.com/media/examprep/Post/files/2024/12/05/C%C3%A1ch_d%C3%B9ng_29.png">
+        </div>
+        
+        <div class="postlist-title"><a href="/posts/1562/tong-hop-tu-vung-ielts-chu-de-traveling-du-lich/">Tổng hợp từ vựng IELTS chủ đề Traveling (Du lịch)</a></div>
+    </div>
+    <div class="postlist-card-content card-body d-flex flex-column p-0">
+        <p>Nằm lòng topic từ vựng Traveling cho kỳ thi IELTS qua bài viết này nhé!</p>
+    </div>
+    
+    <div class="postlist-meta">
+        02/12/2024 bởi Phuong Anh Do
+        
+    </div>
+    
+</div>
+</div>
+
+        
+        </div>
+
+        
+
+
+
+    
+</div>
+</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-md-2 order-md-1">
+        
+        <div class="post-topics-list">
+            <p class="font-12 font-600">
+                Chuyên mục
+            </p>
+        
+            <div class="post-topics-listitem my-2">
+                <a class="text-dark" href="/blog/topics/tim-hieu-ve-learn-english/index.html">
+                    <b>TÌM HIỂU VỀ LEARNENGLISH</b>
+                </a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="/blog/topics/tinh-nang-tren-learn-english/index.html">
+                    Tính năng trên LearnEnglish
+                </a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">KHÓA HỌC TRÊN LEARNENGLISH</a>
+            </div>
+        
+            <hr>
+        
+            <div class="post-topics-listitem my-2">
+                <a class="text-dark" href="#" onclick="showNotification()">
+                    <b>Review của học viên LearnEnglish</b>
+                </a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Học viên IELTS</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Học viên TOEIC</a>
+            </div>
+        
+            <hr>
+        
+            <div class="post-topics-listitem my-2">
+                <a class="text-dark" href="#" onclick="showNotification()">
+                    <b>Luyện thi IELTS</b>
+                </a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">IELTS Listening</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">IELTS Reading</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">IELTS Speaking</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">IELTS Writing</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">IELTS Materials</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Thông tin kỳ thi IELTS</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Kinh nghiệm thi IELTS</a>
+            </div>
+        
+            <hr>
+        
+            <div class="post-topics-listitem my-2">
+                <a class="text-dark" href="#" onclick="showNotification()">
+                    <b>Luyện thi TOEIC</b>
+                </a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">TOEIC Listening</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">TOEIC Reading</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">TOEIC Materials</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Thông tin kỳ thi TOEIC</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Kinh nghiệm thi TOEIC</a>
+            </div>
+        
+            <hr>
+        
+            <div class="post-topics-listitem my-2">
+                <a class="text-dark" href="#" onclick="showNotification()">
+                    <b>Tiếng Anh cơ bản</b>
+                </a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Phát âm</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Từ vựng</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Ngữ pháp</a>
+            </div>
+        
+            <hr>
+        
+            <div class="post-topics-listitem my-2">
+                <a class="text-dark" href="#" onclick="showNotification()">
+                    <b>Luyện Thi HSK-HSKK</b>
+                </a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Tiếng Trung cơ bản</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Kiến thức HSK-HSKK</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Thông tin kỳ thi HSK-HSKK</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Kinh nghiệm thi HSK-HSKK</a>
+            </div>
+        
+            <hr>
+        
+            <div class="post-topics-listitem my-2">
+                <a class="text-dark" href="#" onclick="showNotification()">
+                    <b>Tiếng Anh cho người đi làm</b>
+                </a>
+            </div>
+        
+            <hr>
+        
+            <div class="post-topics-listitem my-2">
+                <a class="text-dark" href="#" onclick="showNotification()">
+                    <b>Du học</b>
+                </a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Admission essays</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Kinh nghiệm du học</a>
+            </div>
+        
+            <hr>
+        </div>
+        
+        <script>
+            function showNotification() {
+                alert("Bài viết này sẽ được cập nhật trong tương lai");
+            }
+        </script>
+        
+<hr>
+
+</div>
+
+    </div>
+</div>
+</div>
+
+                
+            </div>
+            
+        </div>
+        
+
+        
+    
+
+    <div class="modal" id="site-modal-lg" tabindex="-1" aria-labelledby="site-modal-lg" aria-hidden="true" data-keyboard="false" data-backdrop="static">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+                <div class="modal-body" id="site-modal-lg-content"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="site-modal-md" tabindex="-1" aria-labelledby="site-modal-md" aria-hidden="true" data-keyboard="false" data-backdrop="static">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+                <div class="modal-body" id="site-modal-md-content"></div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+window.csrf_token = 'tp51gtvD3qTFEtWz51IjCjMSPFg2EoqRRspOFbPJnEAo2podjrNiT3oG6ik4BbMR';
+window.current_user =
+
+{
+    is_authenticated: true,
+    id: 1532546,
+    name: "chauthithuyquynh2019",
+    is_admin: false,
+    is_staff: false,
+    is_superuser: false,
+}
+
+</script>
+    <script type="text/javascript" src="/static/ckeditor/ckeditor-init-override.js?v=1735926894"></script>
+    <script type="text/javascript" src="/static/ckeditor/ckeditor/ckeditor.js"></script>
+    <script type="text/javascript" src="/static/js/webaudiorecorder/WebAudioRecorder.min.js"></script>
+    <script type="text/javascript" src="/static/dist/vendor.ad60eb658fc650d75097.js?v=1735926894"></script>
+    <script type="text/javascript" src="/static/dist/main.651d8fa8cadf332cd75a.js?v=1735926894"></script>
+
+    
+
+<script type="text/javascript">
+$(function() {
+    const isInternalCourseURL = (url) => (new URL(url).origin == location.origin && (url.indexOf('/courses/') > -1 || url.indexOf('/lp/')) > -1);
+    $('.post-content a').each(function(idx,el) {
+        var $link = $(el);
+        var url = $link.attr('href');
+        if (isInternalCourseURL(url)) {
+            var qs = generate_qs({
+                'itm_source': 'seo',
+                'itm_medium': 'article',
+                'itm_campaign': 'blogpost_internal_link',
+                'itm_content': '927'
+            });
+            var new_url = url + '?' + qs;
+            $link.attr('href', new_url);
+        }
+    });
+});
+</script>
+
+    <script type="text/javascript">
+        function isFacebookApp() {
+            var ua = navigator.userAgent || navigator.vendor || window.opera;
+            return (ua.indexOf("FBAN") > -1) || (ua.indexOf("FBAV") > -1);
+        }
+        if (isFacebookApp()) {
+            $('.g-login-block').hide();
+        }
+    </script>
+
+    
+
+    
+    
+    
+
+
+    
+    
+    
+
+
+    
+    <script type="text/javascript">
+        (function(w,d,t,u,n,a,m){w['MauticTrackingObject']=n;
+            w[n]=w[n]||function(){(w[n].q=w[n].q||[]).push(arguments)},a=d.createElement(t),
+            m=d.getElementsByTagName(t)[0];a.async=1;a.src=u;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://mautic.LearnEnglish.com/mtc.js','mt');
+
+        
+            
+            mt('send', 'pageview', {
+                email: "chauthithuyquynh2019@gmail.com",
+                uid: "1532546",
+                username: "chauthithuyquynh2019",
+                is_paid: false,
+                is_trial: true
+            });
+            
+        
+    </script>
+    
+<script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon="{&quot;rayId&quot;:&quot;8fcc21574bf0407f&quot;,&quot;serverTiming&quot;:{&quot;name&quot;:{&quot;cfExtPri&quot;:true,&quot;cfL4&quot;:true,&quot;cfSpeedBrain&quot;:true,&quot;cfCacheStatus&quot;:true}},&quot;version&quot;:&quot;2024.10.5&quot;,&quot;token&quot;:&quot;8d646591bd144e069b89dada41cfc02b&quot;}" crossorigin="anonymous"></script>
+
+
+    <div class="highlight-control">
+        <div>
+            <span class="fas fa-trash highlight-icon highlight-remove" aria-hidden="true"></span>
+            <span class="fas fa-pencil highlight-icon highlight-note" aria-hidden="true"></span>
+            <span class="highlight-icon highlight-color blue"></span>
+            <span class="highlight-icon highlight-color pink"></span>
+            <span class="highlight-icon highlight-color green"></span>
+            <span class="highlight-icon highlight-color yellow"></span>
+            <span class="highlight-icon highlight-color underred"></span>
+            <span class="highlight-icon highlight-color crossed">abc</span>
+            <span class="ml-2 fas fa-plus highlight-icon highlight-flashcard" data-toggle="modal" data-target="#highlight-modal" aria-hidden="true"></span>
+        </div>
+        <div class="highlight-editor">
+            <textarea rows="3"></textarea>
+            <div><span class="far fa-check highlight-icon highlight-save" aria-hidden="true"></span></div>
+        </div>
+    </div>
+    <div class="modal" id="highlight-modal" tabindex="-1" aria-labelledby="highlight-modal" aria-hidden="true" data-keyboard="false" data-backdrop="static">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+                <div class="modal-body" id="highlight-modal-content"></div>
+            </div>
+        </div>
+    </div>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+<!-- Code injected--></body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="footer-wrapper" bis_skin_checked="1">
+        <div class="footer-container" bis_skin_checked="1">
+            <footer>
+
+
+
+                <div class="row" bis_skin_checked="1">
+                    <div class="col-12 col-sm-12 col-md" bis_skin_checked="1">
+                        <a href="/"><img class="mb-2" src="/assets/img/Logo_LearnEnglish.svg" alt="" height="30"></a>
+                        <small class="mb-2">©</small>
+                        <div class="site-socials" style="width: 140px !important;" bis_skin_checked="1">
+                            <a target="_blank" href="https://facebook.com/" bis_skin_checked="1"><span
+                                    class="social-link fab fa-facebook-square"></span></a>
+                            <a target="_blank" href="https://instagram.com/" bis_skin_checked="1"><span
+                                    class="social-link fab fa-instagram"></span></a>
+                            <a target="_blank" href="https://twitter.com/" bis_skin_checked="1"><span
+                                    class="social-link fab fa-twitter"></span></a>
+                            <a target="_blank" href="https://youtube.com/" bis_skin_checked="1"><span
+                                    class="social-link fab fa-youtube"></span></a>
+                            <a target="_blank" href="https://www.tiktok.com" bis_skin_checked="1"><span
+                                    class="social-link fab fa-tiktok"></span></a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md" bis_skin_checked="1">
+                        <div class="footer-title" bis_skin_checked="1">Về LearnEnglish</div>
+                        <ul class="list-unstyled text-small">
+                            <li><a href="/about/" bis_skin_checked="1">Giới thiệu</a></li>
+                            <li><a href="/contact/" bis_skin_checked="1">Liên hệ</a></li>
+                            <li><a href="/privacy/" bis_skin_checked="1">Điều khoản bảo mật</a></li>
+                            <li><a href="/terms/" bis_skin_checked="1">Điều khoản sử dụng</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-6 col-md" bis_skin_checked="1">
+                        <div class="footer-title" bis_skin_checked="1">Tài nguyên</div>
+                        <ul class="list-unstyled text-small">
+
+                            <li><a href="/tests/" bis_skin_checked="1">Thư viện đề thi</a></li>
+                            <li><a href="/posts/" bis_skin_checked="1">Blog</a></li>
+                            <li><a href="/materials/" bis_skin_checked="1">Kho tài liệu</a></li>
+
+
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md" bis_skin_checked="1">
+                        <div class="footer-title" bis_skin_checked="1">Chính sách chung</div>
+                        <ul class="list-unstyled text-small">
+                            <li><a href="/user-guide/" bis_skin_checked="1">Hướng dẫn sử dụng</a></li>
+                            <li><a href="/buying-guide/" bis_skin_checked="1">Hướng dẫn thanh toán</a></li>
+
+                            <li><a href="/buying-terms/" bis_skin_checked="1">Điều khoản và Điều Kiện Giao Dịch</a></li>
+                            <li><a href="/checkout-policy" bis_skin_checked="1">Chính sách kiểm hàng</a></li>
+                            <li><a href="/delivery-policy" bis_skin_checked="1">Chính sách giao, nhận hàng</a></li>
+                            <li><a href="/feedback/" bis_skin_checked="1">Phản hồi, khiếu nại</a></li>
+                            <li><a href="/return-policy" bis_skin_checked="1">Chính sách chuyển đổi, hoàn hủy</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+
+                <div class="footer-copyright text-center" bis_skin_checked="1">
+                    LearnEnglish © Bản quyền của GROUP11.
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

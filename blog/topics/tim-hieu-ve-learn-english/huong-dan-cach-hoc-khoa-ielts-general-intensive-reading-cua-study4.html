@@ -1,0 +1,1241 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn English</title>
+    <link rel="icon" href="/assets/img/Avatar_LearnEnglish.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/f9374b778e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+   
+    <div class="topnav1 topnav-wrapper" bis_skin_checked="1">
+        <div class="topnav-container" bis_skin_checked="1">
+            <nav class="navbar  navbar-expand-lg">
+                <span class="navbar-brand">
+                    <a class="topnav-brand" href="/">
+                        <img class="topnav-logo" src="/assets/img/Logo_LearnEnglish.svg" alt="STUDY4">
+
+                    </a>
+                </span>
+                <button class="navbar-toggler pull-xs-right d-lg-none" type="button" data-toggle="collapse"
+                    data-target="#navbar-collapse">
+                    ☰
+
+                </button>
+                <div class="d-lg-block navbar-collapse justify-content-end collapse" id="navbar-collapse"
+                    bis_skin_checked="1">
+
+                    <ul class="nav">
+
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/courses/" bis_skin_checked="1">Course</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/skills/" bis_skin_checked="1">Skill</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/flashcards/me/" bis_skin_checked="1">Flashcards</a>
+                        </li>
+
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/blog/" bis_skin_checked="1">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/general-english/" bis_skin_checked="1">General english</a>
+                        </li>
+
+
+
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/courses/activate/" bis_skin_checked="1">
+                                Kích hoạt tài khoản
+                            </a>
+                        </li>
+
+                        <li class="nav-item user-topnav dropdown d-none d-lg-block">
+                            <a class="nav-link dropdown-toggle user-topnav-profile" href="/my-account/" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" bis_skin_checked="1">
+                                <span class="account-profile-img">
+
+                                    <img src="/assets/img/user_icon.webp" alt="ChuTanTai23130280">
+
+                                </span>
+
+                            </a>
+
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" bis_skin_checked="1">
+                                <div bis_skin_checked="1">
+                                    <h6 class="dropdown-header" id="thông-báo"> Thông báo </h6>
+                                    <div id="new-notis-dropdown-content" class="jqhtml-loader dropdown-text"
+                                        data-href="/notifications/newest/" bis_skin_checked="1">
+                                        <p class="font-sm"><i>Bạn chưa có thông báo mới.</i></p>
+
+
+                                        <div class="mt-2 link font-sm" bis_skin_checked="1"><a href="/notifications/"
+                                                bis_skin_checked="1">Xem tất cả &gt;&gt;</a></div>
+                                    </div>
+                                </div>
+
+                                <div class="dropdown-divider" bis_skin_checked="1"></div>
+                                <a class="dropdown-item" href="/studyplan/" bis_skin_checked="1">Lịch học của tôi</a>
+                                <a class="dropdown-item" href="/my-account/" bis_skin_checked="1">Trang cá nhân</a>
+                                <a class="dropdown-item" href="/logout/" bis_skin_checked="1">Đăng xuất</a>
+                            </div>
+                        </li>
+                        <li class="nav-item d-lg-none">
+                            <a class="nav-link" href="/notifications/" bis_skin_checked="1">Thông báo </a>
+                        </li>
+                        <li class="nav-item d-lg-none">
+                            <a class="nav-link" href="/studyplan/" bis_skin_checked="1">Lịch học của tôi</a>
+                        </li>
+                        <li class="nav-item d-lg-none">
+                            <a class="nav-link" href="/my-account/" bis_skin_checked="1">Trang cá nhân</a>
+                        </li>
+                        <li class="nav-item d-lg-none">
+                            <a class="nav-link" href="/logout/" bis_skin_checked="1">Đăng xuất</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+<script>
+    // JavaScript để xử lý dropdown
+    document.addEventListener('DOMContentLoaded', function() {
+        const profileBtn = document.querySelector('.user-topnav-profile');
+        const dropdownMenu = document.querySelector('.dropdown-menu');
+    
+        // Toggle dropdown khi click vào profile
+        profileBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            dropdownMenu.classList.toggle('show');
+        });
+    
+        // Đóng dropdown khi click ra ngoài
+        document.addEventListener('click', function(e) {
+            if (!profileBtn.contains(e.target) && !dropdownMenu.contains(e.target)) {
+                dropdownMenu.classList.remove('show');
+            }
+        });
+    });
+</script>
+    <script>
+        // JavaScript để xử lý dropdown
+        document.addEventListener('DOMContentLoaded', function () {
+            const profileBtn = document.querySelector('.user-topnav-profile');
+            const dropdownMenu = document.querySelector('.dropdown-menu');
+
+            // Toggle dropdown khi click vào profile
+            profileBtn.addEventListener('click', function (e) {
+                e.preventDefault();
+                dropdownMenu.classList.toggle('show');
+            });
+
+            // Đóng dropdown khi click ra ngoài
+            document.addEventListener('click', function (e) {
+                if (!profileBtn.contains(e.target) && !dropdownMenu.contains(e.target)) {
+                    dropdownMenu.classList.remove('show');
+                }
+            });
+        });
+    </script>
+
+
+
+
+
+
+
+
+<body class="highlighter-context">
+
+
+    <div class="topnav1 topnav-wrapper" bis_skin_checked="1">
+        
+    </div>
+    <script>
+        // JavaScript để xử lý dropdown
+        document.addEventListener('DOMContentLoaded', function () {
+            const profileBtn = document.querySelector('.user-topnav-profile');
+            const dropdownMenu = document.querySelector('.dropdown-menu');
+
+            // Toggle dropdown khi click vào profile
+            profileBtn.addEventListener('click', function (e) {
+                e.preventDefault();
+                dropdownMenu.classList.toggle('show');
+            });
+
+            // Đóng dropdown khi click ra ngoài
+            document.addEventListener('click', function (e) {
+                if (!profileBtn.contains(e.target) && !dropdownMenu.contains(e.target)) {
+                    dropdownMenu.classList.remove('show');
+                }
+            });
+        });
+    </script>
+
+
+        
+    <div id="fb-root" class=" fb_reset fb_reset"><div style="position: absolute; top: -10000px; width: 0px; height: 0px;"><div></div></div><div style="position: absolute; top: -10000px; width: 0px; height: 0px;"><div></div></div></div>
+    <script async="" defer="" crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&amp;version=v20.0&amp;appId=203430341284880&amp;autoLogAppEvents=1" nonce="1d3MdMH8" type="text/javascript"></script>
+    
+    
+
+    
+    <div class="site-elevator">
+        <div class="elevator-item elevator-open d-md-none">
+            <span class="fal fa-chevron-left" aria-hidden="true"></span>
+        </div>
+        <div class="elevator-item elevator-close d-md-none">
+            <span class="fal fa-chevron-right" aria-hidden="true"></span>
+        </div>
+        <div class="elevator-item">
+            <div class="jqdictionary-show" target="#">
+                <img src="/static/img/dictionary.png">
+                <div class="elevator-text">Từ điển</div>
+            </div>
+        </div>
+        <div class="jqdictionary-wrapper">
+            <span class="jqdictionary-expand fal fa-plus-square" aria-hidden="true"></span>
+            <span class="jqdictionary-close far fa-times" aria-hidden="true"></span>
+            <div class="h6 font-500 font-sm">
+                <a class="link jqdictionary-tab active" data-href="https://m.dict.laban.vn/">Anh-Việt</a> |
+                <a class="link jqdictionary-tab" data-href="https://www.wordreference.com/definition/">WordReference</a> |
+                <a class="link jqdictionary-tab" data-href="https://onelook.com/thesaurus/">Thesaurus</a> |
+                <a class="link jqdictionary-tab" data-href="https://vtudien.com/trung-viet/dictionary/nghia-cua-tu-%E4%BD%A0%E5%A5%BD">Tiếng Trung</a>
+            </div>
+            <div class="jqdictionary-iframe">
+                <iframe loading="lazy" frameborder="0"></iframe>
+            </div>
+        </div>
+
+
+        
+        <div class="elevator-item">
+            <a target="_blank" href="https://m.me/LearnEnglish.support">
+                <img src="/static/img/messenger.png">
+            </a>
+        </div>
+        
+
+        <div class="elevator-item">
+            <a target="_blank" href="https://zalo.me/LearnEnglish">
+                <img src="/static/img/zalo.jpg">
+            </a>
+        </div>
+
+
+        
+        <div class="elevator-item site-scrollTop" onclick="if (!window.__cfRLUnblockHandlers) return false; window.topFunction()" id="site-scrollTop" title="Go to top" style="display: none;">
+            <span class="fal fa-chevron-up" aria-hidden="true"></span>
+        </div>
+    </div>
+    
+
+    
+
+    <div class="site-wrapper">
+
+        
+
+        
+
+
+<div class="topnav1 topnav-wrapper">
+
+</div>
+
+        
+
+        
+        <div class="site-content-wrapper">
+            
+
+            
+
+            
+            
+            
+            
+
+            
+<div class="container pb-0">
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/">Trang chủ</a></li>
+        
+        <li class="breadcrumb-item"><a href="/blog/index.html ">Bài viết</a></li>
+        <li class="breadcrumb-item"><a href="/blog/topics/tim-hieu-ve-learn-english/index.html">Khóa học trên LearnEnglish</a></li>
+        
+        <li class="breadcrumb-item active"><a href="/blog/topics/tim-hieu-ve-learn-english/huong-dan-cach-hoc-khoa-ielts-general-intensive-reading-cua-study4.html">Hướng dẫn cách học khóa IELTS General Intensive Reading của LearnEnglish</a></li>
+    </ol>
+</nav>
+</div>
+
+
+            
+<div class="content-header py-0">
+<div class="container py-0">
+    <div class="image-wrapper">
+        <a href="/courses/level-test/">
+            
+        </a>
+    </div>
+    <br>
+    <h1 class="post-title" id="hướng-dẫn-cách-học-khóa-ielts-general-intensive-reading-của-LearnEnglish">
+        Hướng dẫn cách học khóa IELTS General Intensive Reading của LearnEnglish
+        
+    </h1>
+    
+    <p class="post-description">
+        Tham khảo ngay cách học khóa IELTS Intensive Reading (General Training) sao cho hiệu quả nhất!
+    </p>
+    
+</div>
+</div>
+
+
+            
+            <div class="content-wrapper">
+                
+                
+<div class="container">
+<div class="row">
+    
+    <div class="col-12 col-md-7 order-md-2">
+        <div class="post-wrapper">
+            <div class="media post-author-media py-2 mb-3 border-bottom">
+                <div class="post-author-img">
+                    
+                    <img src="https://res.cloudinary.com/sandodep4/image/upload/w_300/sandodep4_x_179027497304743546577679031874613619737_cajgas" alt="hangbm.LearnEnglish">
+                    
+                </div>
+                <div class="media-body">
+                    <div class="post-author-name"><a target="_blank" href="/u/hangbm.LearnEnglish/">Bùi Hằng</a></div>
+                    <div class="post-meta">20/09/2024</div>
+                </div>
+            </div>
+
+            <div class="post-main-wrapper">
+
+                
+
+                
+
+                <div class="post-main mt-2">
+                    
+                    <div id="post-content" class="post-content md-content js-toc-content" prewrap="">
+                        <p><img alt="Hướng dẫn cách học khóa IELTS General Intensive Reading của LearnEnglish" src="https://study4.com/media/uploads/editor/hangbm.LearnEnglish/2024/09/20/cach-dung-17_hJAyHNg.png" style="height:674px; width:1200px"></p>
+
+<p>Chào các bạn học viên thân mến của LearnEnglish! Hôm nay, chúng ta sẽ cùng nhau khám phá cách học theo lộ trình khoá IELTS Intensive Reading (General Training) sao cho hiệu quả nhất nhé!</p>
+
+<h2 id="i.-giới-thiệu-khóa-học-ielts-intensive-reading-general-training"><strong>I. Giới thiệu khóa học IELTS Intensive Reading (General Training)</strong></h2>
+
+<p>Khóa học IELTS General Intensive Reading của LearnEnglish hướng đến những học viên mong muốn nâng cao kỹ năng đọc và đạt band 7+ trong kỳ thi IELTS General Training. Để giúp học viên tiết kiệm thời gian và học từ một cách hiệu quả, LearnEnglish đã tổng hợp từ vựng từ các bộ đề thành một khóa học duy nhất, bao gồm flashcards, làm nổi bật từ vựng trong bài và các bài tập thực hành.</p>
+
+<p><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXd0rVSsvu1sY6mpTPAF7-u-LhZt1patW29OINi06xnFYrkK2j22m5dELZzUohBv_4SpkTmN7iM_IFOPGvxvUTQdGTulXYejLD0wozWFQTFF5vRlDz-j6Dom_UW-DV4At7wk-sbUQd7_fFX_LAdoi1_Z66A?key=HaZRudFEKKrV5PIcOsOdgg" style="height:321px; width:602px"></p>
+
+<p>Khóa học này đặc biệt dành cho những học viên gặp khó khăn ở band điểm 4 vì khi bạn phải đối mặt với nhiều từ mới, cảm thấy khó khăn khi làm các câu hỏi phức tạp và không biết làm thế nào để cải thiện kỹ năng. Do đó, nội dung của khóa học tập trung vào hai yếu tố chính: từ vựng và chiến lược làm bài. Như vậy, học viên có thể xây dựng vững chắc vốn từ cần thiết và làm quen với các loại câu hỏi khó trong phần đọc của bài thi IELTS.</p>
+
+<p style="text-align:center"><iframe frameborder="0" height="315" src="https://www.youtube.com/embed/iMKDAF14kFI?si=UfjkQFdwgP22UPXO" title="YouTube video player" width="560"></iframe></p>
+
+<h2 id="ii.-làm-quen-với-giao-diện-chính"><strong>II. Làm quen với giao diện chính</strong></h2>
+
+<p>Giao diện của khoá học được chia thành hai phần.</p>
+
+<h3 id="1.-danh-sách-bài-học"><strong>1. Danh sách bài học</strong></h3>
+
+<p>Trên cột bên trái màn hình là danh sách các bài học, bao gồm 3 phần chính:</p>
+
+<p><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXeTGbJVL--gv-RLM7Ab3fYxU4C0MspHesG9Iw0h1D7JQ6WeoqHM3Yvggrrc_VdkSO2GFbgiymqWqeoqjs8WCK8VkjudcjrW2ab4DxS8LAOv_Ex3zVpOZmhQqRwkDDFZJOkpXezZWqpliZHixrUuIaNzxMA?key=HaZRudFEKKrV5PIcOsOdgg" style="height:336px; width:602px"></p>
+
+<p>Phần này là danh sách các bài học, bao gồm phương pháp làm các dạng câu hỏi trong IELTS General Reading, video chữa đề chi tiết và luyện tập từ vựng bộ đề chuẩn format thi thật IELTS.&nbsp;</p>
+
+<h3 id="2.-lộ-trình-khóa-học"><strong>2. Lộ trình khóa học</strong></h3>
+
+<p>Trong khi đó, phần chính ở giữa là “Lịch học của bạn”, cung cấp lịch trình học tập được thiết kế sẵn cho những học viên với trình độ từ band 4 và mục tiêu đạt band 7+ ở kỹ năng đọc. Để sử dụng lịch học có sẵn, bạn chỉ cần nhấp vào "sử dụng lịch học này".</p>
+
+<p><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXe0fKndZpPL8ysiQ47DL8tpj0Rl4R3wxeD9G8Q-l9SKwsHUJ2WZbl0Oifht5gZqKteuWAcSoOTSDwuQZ7_Ue-1V5MiG4eLOKEAu6WXdfDJEiTVXOPX9cg9Uq5cEho7plv6oM34emGfq8VMrd3nhleicRQZ0?key=HaZRudFEKKrV5PIcOsOdgg" style="height:340px; width:602px"></p>
+
+<p>Lịch học sẽ gợi ý cho bạn các bước luyện tập cụ thể cho từng ngày, từng tuần. Học viên có thể sử dụng lịch học có sẵn và đánh dấu các bước đã hoàn thành bằng cách tích vào ô trống tương ứng.&nbsp;</p>
+
+<p><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXdSvru8hHk8ikBJoUeRqYBXkvpc1SW5eOz6a2LoP1L1VyhIJFYWU_1CNgLJaMk8Dy8e0k96BMx51Idh2hJVijL1nsSmt-MZceHlflr6TnS1vPEXfumSHaOZFKTYt8eGf9ZmHYreIh0dDj6cvmS8Lz6PqSrs?key=HaZRudFEKKrV5PIcOsOdgg" style="height:335px; width:602px"></p>
+
+<p>Hơn nữa, bạn cũng có thể điều chỉnh lịch học theo nhu cầu cá nhân bằng cách thêm hoặc bớt các bước ôn tập sao cho phù hợp nhất.&nbsp;</p>
+
+<p><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXeLG209LTLhmO94sC_s-HTfw2UgxMmTPRB2WGELrCmTfTcsM98E3JHR1nc5wakw_qUkGhrguBO5yZp1_fEO4OqYU8zMSgCuB2prLA0El93yrTrEZjCRi0xfjH7hIaRJVjGTn0brVIcAUw4WOFid4B76KFc?key=HaZRudFEKKrV5PIcOsOdgg" style="height:337px; width:602px"></p>
+
+<h2 id="iii.-hướng-dẫn-cách-học-khóa-ielts-intensive-reading-general-training"><strong>III. Hướng dẫn cách học khóa IELTS Intensive Reading (General Training)</strong></h2>
+
+<p>Khi học theo lộ trình khóa IELTS Intensive Reading General được gợi ý, chúng ta cần thực hiện 3 bước chính: Luyện đề, Tự chữa và Học từ vựng và Xem clip chữa đề, video bài giảng.&nbsp;</p>
+
+<h3 id="1.-hướng-dẫn-học-bước-1-luyện-đề"><strong>1. Hướng dẫn học bước 1: Luyện đề</strong></h3>
+
+<p>Bước đầu tiên trong lộ trình học là bước luyện đề. Đầu tiên, bạn truy cập mục “Đề thi online” để chọn đề muốn luyện tập.&nbsp;</p>
+
+<p><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXfcBkHSDvz2H_0Abg30ONRyq8Im52DJ2u4yEwK4R8l-_darKmyQWRj1yIgWD52U7mLREVxJ4FzDsVPpudK1HBO9pUwsfMU0of9O6vOGROP1U9tHF0-h044yEWf5YF_nLLdLG2llgV50snd_5TIiNmj-7ux7?key=HaZRudFEKKrV5PIcOsOdgg" style="height:335px; width:602px"></p>
+
+<p>Mỗi ngày, bạn cần chọn ít nhất một đoạn văn (passage) để làm, tập trung vào một loại câu hỏi cho đến khi đạt tỉ lệ đúng 70-80% rồi mới nên chuyển sang dạng khác. Thứ tự học được LearnEnglish gợi ý đó là: Điền từ (completion) &gt; T/F/NG &gt; MCQ &gt; Matching.&nbsp;</p>
+
+<p><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXcyTldMAKqdf3kitxWmmqd0Mpg1Xat2qSfnNnzB-tzr7AYIXOLPKWWXXIWHR9_wNKslWjIQDjahHGjmvNKQxZCAIZGl8JcVaVOXbBl7O-tD5mBHzlpWRj6gf-2eBzKoiJYRonj9f91gBbC4ebYNA8cdpEw?key=HaZRudFEKKrV5PIcOsOdgg" style="height:297px; width:602px"></p>
+
+<p>Trên nền tảng LearnEnglish, bạn có thể lựa chọn đoạn văn bạn muốn làm và thiết lập thời gian làm bài. Ví dụ, bạn có thể luyện passage 1 của đề thi IELTS General Practice Set 10 reading test 1 trong 15 phút. Đồng thời, bạn cũng có thể xem trước các loại câu hỏi trong đoạn văn để đưa ra lựa chọn luyện tập phù hợp nhất.</p>
+
+<p style="text-align:left"><em>LearnEnglish cung cấp công cụ tra từ điển, highlight và tạo flashcard hoàn toàn trong khuôn khổ website, giúp bạn học tập tiện lợi và dễ dàng hơn rất nhiều. Có thể nói LearnEnglish hiện đang là nền tảng duy nhất hiện nay có thể cung cấp cho học viên trọn bộ các công cụ cần thiết chỉ trong một giao diện, nhờ đó giúp tối ưu hóa thời gian, công sức ôn thi của học viên cực kỳ hiệu quả.</em></p>
+
+<p style="text-align:center"><iframe frameborder="0" height="315" src="https://www.youtube.com/embed/svi_HleOIw8?si=GRzKTJQ998OjKzBp" style="box-sizing: border-box;" title="YouTube video player" width="560"></iframe></p>
+
+<p style="text-align:left">👉<em>Không cần đi đâu xa, LearnEnglish có&nbsp;</em><a href="https://LearnEnglish.com/tests/" style="box-sizing: border-box; color: rgb(53, 80, 154); text-decoration: none; background-color: transparent; cursor: pointer;"><span style="color:#1155cc"><strong><em><u>kho tàng đề thi khủng hoàn toàn MIỄN PHÍ</u></em></strong></span></a><strong><em>&nbsp;</em></strong><em>và luôn được cập nhật liên tục. Kết quả, đáp án của bài thi tại LearnEnglish được giải thích vô cùng chi tiết và quá trình luyện thi thống kê cẩn thận.</em></p>
+
+<p style="text-align:left">👉<em>Bạn có thể tìm và làm để ở thư viện đề thi trên góc phải, hoặc làm ngay trong khóa học tại mục PRACTICE ZONE.</em></p>
+
+<p style="text-align:center"><a href="https://LearnEnglish.com/tests/" style="box-sizing: border-box; color: rgb(33, 50, 97); text-decoration: none; background-color: transparent; cursor: pointer;"><span style="color:#1155cc"><strong><u><img src="https://lh7-us.googleusercontent.com/VbXwEzwyN4-OalY7eKJ2hW71f3Q6dopdSG-5C8Wz4JUSjrEXVPc0NjhvCy4lcPotWDFDpo3ls3-bg1uLwVmEL5wlU9Q30_ozFNR0aHiISHc1ENGv2igkYU4HUuXFgl2S2KHBOY5LvQsRVvxRMXUOHQg" style="border-style:none; box-sizing:border-box; display:block; height:84px; margin:1rem auto; max-width:100%; vertical-align:middle; width:600px"></u></strong></span></a></p>
+
+<h3 id="2.-hướng-dẫn-học-bước-2-tự-chữa"><strong>2. Hướng dẫn học bước 2: Tự chữa</strong></h3>
+
+<p>Sau khi đã hoàn thành phần làm bài, bước quan trọng tiếp theo bạn cần thực hiện đó là Tự chữa lại bài làm của mình. Bạn có thể chọn mục "Làm lại các câu sai" để xem lại những câu mình đã trả lời sai và dành thời gian để đọc kỹ lại đoạn văn để tìm ra đáp án chính xác.&nbsp;</p>
+
+<p><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXfDdRrrid-r251rmRXsEcjfzeYIp0FR0usE56KE9natjkG1_Z7jkOTF2-TdOccqveULynnOqtWyucYiwwFxukszz6TDUN1UXpHveSOwsNkg91sTLuCQr14MVc7rStWu_dgpExnOhkovQx1ky136nMZVsDaz?key=HaZRudFEKKrV5PIcOsOdgg" style="height:323px; width:602px"></p>
+
+<p><strong>Lưu ý</strong>: Trong quá trình làm lại những câu sai, hệ thống sẽ không tính điểm và không tính thời gian làm bài. Chính vì vậy, hãy yên tâm rằng thao tác này sẽ không ảnh hưởng đến điểm trung bình của bạn trong kết quả luyện thi. Để hiểu rõ hơn về các bước luyện đề và tự chữa đề một cách hiệu quả, bạn có thể xem video "Hướng dẫn luyện đề IELTS".</p>
+
+<h3 id="3.-hướng-dẫn-học-bước-3-học-từ-vựng-và-xem-clip-chữa-đề,-video-bài-giảng"><strong>3. Hướng dẫn học bước 3: Học từ vựng và Xem clip chữa đề, video bài giảng</strong></h3>
+
+<p>Bước tiếp theo trong quá trình ôn tập kỹ năng Reading hàng ngày trên LearnEnglish bao gồm hai bước nhỏ: Học từ vựng và Xem video chữa đề, bài giảng.</p>
+
+<h4 id="bước-3.1-xem-clip-chữa-đề,-video-bài-giảng"><strong>Bước 3.1: Xem clip chữa đề, video bài giảng</strong></h4>
+
+<p>Sau khi hoàn thành phần luyện đề, bạn sẽ xem video chữa đề tương ứng để giải đáp mọi thắc mắc khi làm bài. Các thầy cô sẽ giải thích từng câu hỏi trong đề một cách cặn kẽ, giúp bạn hiểu rõ hơn về đáp án cho từng câu hỏi.&nbsp;</p>
+
+<p><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXcKp85SRom7LrFW9yzMdHu8pReJyAdkdkluCyFJyyuYlvbeqHX7Bbb8absZF0LSKGj6evuPDPw1rEfoEUxGYQ07SeMH6Otqadko5FxalFzGbQZmKudzVgdTLXLdJ9MiQWnwS51jeVmr3VTE993I5Y2IuyUf?key=HaZRudFEKKrV5PIcOsOdgg" style="height:339px; width:602px"></p>
+
+<p>Để thực hiện bước này, bạn truy cập mục Video chữa đề chi tiết và chọn video tương ứng với đề mà bạn đã làm.</p>
+
+<p><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXepwXRKGTF-saMo5DI3t8MBzgMajKhcsAIhjgRGkTgGBi-QV0yWQtXkC5maD26Uk4nWxhfjqk_mntdcyi-QY9ZrJApnN403d8Cbt5liSvosY_tjmtUxruh_I-KjUfrqWgnBTksoOBr_lwi6GePq4z_GCKdg?key=HaZRudFEKKrV5PIcOsOdgg" style="height:336px; width:602px"></p>
+
+<p>Ngoài ra, ở mục “Phân tích chi tiết”, bạn còn có thể vừa xem lại kết quả và vừa biết được những dạng câu hỏi trong IELTS General Reading mà bạn thường mắc lỗi sai.&nbsp;</p>
+
+<p>Để khắc phục điều này, học viên nên xem lại cách làm của dạng bài đó trong phần "Phương pháp làm các dạng câu hỏi trong IELTS General Reading".&nbsp;</p>
+
+<p><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXc0XuBY5z_viAsJaVfv4YRf-unfVbAhvKPhqq7_VqdBKNpbss1Y2WIH5qVQT6pfxsPw2ACkYjygV95gA32oI7riu9E7IOTrL_ZfO8N6IoOk6XUc8vcl9xzg-hxz3qUw-d26Ggvd4zWP_tDHsWnBwIiItK4?key=HaZRudFEKKrV5PIcOsOdgg" style="height:299px; width:602px"></p>
+
+<p>Ví dụ, nếu bạn thường gặp khó khăn ở dạng câu hỏi True/False/Not given, bạn có thể chọn xem lại video lý thuyết của phần đó. Mỗi bài học sẽ cung cấp video bài giảng lý thuyết tổng quan về dạng câu hỏi đó, những khó khăn thường gặp, chiến thuật làm bài step-by-step và các mẹo giải quyết chúng.&nbsp;</p>
+
+<p><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXfDBFNECJwQ1VggrOj4rFrxQRwiwwFAfcM2cwkdO0dV7KxRVwlMFzZTEccDi3v14y8s-qgDuubXn8g_pu9ohwPRzGa79hxQEANrWZNpAeprC_MWgBemivklwF0AxqSJYEmXlM9O2mKTIG8QbSm0SG6hqoe2?key=HaZRudFEKKrV5PIcOsOdgg" style="height:337px; width:602px"></p>
+
+<p>Dưới mỗi video, nội dung của video cũng được hiển thị dưới dạng văn bản để học viên dễ dàng theo dõi. Để ghi chú lại những phần nội dung kiến thức mà bạn cần lưu ý hoặc ghi nhớ, bạn nhấn vào biểu tượng quyển vở ở góc bên phải của màn hình, sau đó nhập nội dung mà mình cần ghi chú vào đó.</p>
+
+<p>&nbsp;</p>
+
+<h4 id="bước-3.2-học-từ-vựng"><strong>Bước 3.2: Học từ vựng</strong></h4>
+
+<p>Để nâng cao vốn từ vựng sau khi học bài, bạn có thể chọn phần "Luyện tập từ vựng" theo từng đề cụ thể.&nbsp;</p>
+
+<p><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXf4FNbQCvzphRtrE3yh83FWFSDYOsIuEoZWQhglheqv8XhHT1PSeRPHyAnih1sL0NOj3Vl6EKfSO8mgqAD09WzNeBkKx0btslT7Z0fMmgWl680E1kcANnuCCeKnncz5rKxQPn34qAn1sy_yNbJT3sc9xaI?key=HaZRudFEKKrV5PIcOsOdgg" style="height:337px; width:602px"></p>
+
+<p>Trong mỗi bài đọc, bạn sẽ được cung cấp 6 dạng bài tập khác nhau để học và luyện tập từ vựng, bao gồm: "Luyện tập đọc và học từ", "Từ vựng flashcards" và "Trắc nghiệm từ vựng", "Tìm cặp", "Nghe từ vựng" và "Dịch nghĩa điền từ".</p>
+
+<p><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXf5q4tA3NWr7MUlsTx7-u_j3fRZjXY7jsoMledO_HyXYKBFcqfwWi22reWNutvabSge2TYPplbePldhqiW1KXltGDfkkvNP9kv8tKG41UAmzH601e2k_KICXufKzLozw71s0yLarJdwYD2mpI7v4IiEXik0?key=HaZRudFEKKrV5PIcOsOdgg" style="height:332px; width:602px"></p>
+
+<p>Trong phần "Học từ mới", bạn sẽ màn hình hiển thị toàn bộ bài đọc trong đề. Các từ mới, từ khó, từ quan trọng và từ thường xuất hiện đã được highlight trước để giúp bạn dễ dàng nhận biết. Bên cạnh đó, mỗi từ cũng được cung cấp nghĩa tiếng Việt để bạn có thể học ngay khi đọc bài, giúp bạn hiểu rõ hơn về ý nghĩa của từ trong ngữ cảnh của đoạn văn. Phía dưới mỗi đoạn văn, bạn sẽ thấy phần dịch nghĩa tiếng Việt đầy đủ giúp bạn dễ dàng hiểu ý của toàn bài. Bạn có thể tắt tính năng dịch nghĩa nếu muốn.&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXdUkYgaGE0-DXlHcVKSxYT-VxIiobCf6QtzQ9LmgmRGl_3_4SJUGaQ7LmMzk3oxvZHTcy2ArkQlsoefZF0ehafBhwkVErAKr_8V4nxAKxLmFyKuwhL5MKurEFabWVsk6-OPJhTKOtk_mJtwqKQdwqRqoX-i?key=HaZRudFEKKrV5PIcOsOdgg" style="height:339px; width:602px"></p>
+
+<p>Bên cạnh đó, bạn cũng có thể sử dụng tính năng Highlight nội dung để làm nổi bật những phần bạn quan tâm. Nếu muốn lưu lại những phần đã được highlight để sử dụng trong lần học sau, bạn chỉ cần nhấn vào nút "Lưu highlight".&nbsp;</p>
+
+<p><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXcueZYxUof6PL4e0oiqkJIMbNucPfPX5rMRmQZc_kaAfYQQascMsVU6UCUA2TYUb-FTmKsWBQcZBowjKXum7Q-jkB_mk-VeaI52ogcdSqn0JsrzU0C06KoN6lmuhG6mA_y86QnMghisqoNya64DugMHko4u?key=HaZRudFEKKrV5PIcOsOdgg" style="height:335px; width:602px"></p>
+
+<p>Đặc biệt, bạn còn có thể tạo flashcard từ những từ được highlight bằng cách nhấn vào biểu tượng dấu cộng. Tại đây, bạn có thể ghi chú thông tin chi tiết về từ như tiêu đề, mô tả, nghĩa, ví dụ. Đây là công cụ lý tưởng nếu bạn muốn lưu lại những từ mới chưa được highlight sẵn trong bài để xem lại sau này. Các từ đã lưu sẽ nằm trong mục Flashcards ở góc phải trên cùng của trang.</p>
+
+<p><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXemA-Z7r0v-6wAvQ-VJwtDgSDmuIisJEPnhBVxpa7oHC2KRneM93KeESxVZP9opDB0e-5uFxjDuE5a5EFjrZ3hiJ-O3EWKIshxL2_0Jl0tGSk8kiU2Du672DqNCdgl9kf4IDudEhvdUesROiYcE1g9LY_J_?key=HaZRudFEKKrV5PIcOsOdgg" style="height:332px; width:602px"></p>
+
+<p>Sau khi đã đọc toàn bộ bài và ghi nhớ các từ vựng quan trọng cần chú ý, bạn có thể chọn chế độ luyện tập để bắt đầu thực hành việc điền từ vựng tiếng Anh phù hợp với nghĩa tiếng Việt đã được cho trước.&nbsp;</p>
+
+<p><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXfK0s03azLd_PeCiu3kG26uuEW5QjYQl00KGLDOxmB6BZbp-1HV1J2KTT5F5i7sa7H5DD9MJw0dyPKmx6w6cLtjdG2a-Lq5qYMRaJVu-0NM3ojgkMmFbkapGb90ysOD5M7g2RseeIQ8AnDdZXsK1Ni86-Y?key=HaZRudFEKKrV5PIcOsOdgg" style="height:337px; width:602px"></p>
+
+<p>Bạn có thể nhấn Enter hoặc nút "Kiểm tra" để kiểm tra đáp án của mình. Để xem đáp án chính xác, bạn chỉ cần nhấn vào biểu tượng lá cờ. Ngoài ra, bạn cũng có thể sử dụng các biểu tượng khác trên thanh công cụ này để xem đáp án chính xác hoặc xóa tất cả các đáp án đã điền của toàn bài.</p>
+
+<p><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXdlukRKG-JbFnBK0Vxw3w-svv7n7lUG73yjFdZh_qx2K3-oWkkzRTuP0ArQVb1vlJvv820OyLFtVp36vqW7OXovkvRp9IUfDpkC0dWNgnH2QtIu26eXzVWz1kpfr0dZLukDWT4DtuWKRM44vYgROHi8KYSv?key=HaZRudFEKKrV5PIcOsOdgg" style="height:335px; width:602px"></p>
+
+<p>Sau khi đã tiếp xúc với từ vựng trong ngữ cảnh của bài đọc, bạn có thể sử dụng phương pháp spaced-repetition (lặp lại ngắt quãng) để ghi nhớ thông qua Flashcards. Bạn sẽ tìm thấy danh sách các từ đã được làm nổi bật trong bài đọc, sau đó chọn mục "Luyện tập flashcards".&nbsp;</p>
+
+<p><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXcy9C0IrlGtHO_aqg_UFuc8dxJUWpc5hflVc4CpBUarJjPOLFZd0r88mQEz4p6jCjTujXS7fX41LuJGm0iTNzw2-vcIhzprzPtVJV_XKsmAKeJRehBWPavOLczAJ4naB6rdHAyz8NGHmkNqGhBSRScdjPZJ?key=HaZRudFEKKrV5PIcOsOdgg" style="height:339px; width:602px"></p>
+
+<p>Mỗi flashcard sẽ có 2 mặt: Mặt trước hiển thị từ tiếng Anh kèm theo phát âm và loại từ, mặt sau chứa nghĩa tiếng Anh, nghĩa tiếng Việt, ví dụ và câu chứa từ đó vựng trong văn bản gốc.&nbsp;</p>
+
+<p><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXdRbbYDx134sFAx4XUtiu4AYJ1IQzxCw81GDQWPaBT0FPh_903pXkwHJdnwPMam8o7NHORPu2sSEbuuzSIvbgv9xRiBetgUcnGuxiZfY-tElv8M-ft-Jwaf7wo_Ye-S-n5_t0sZdAhC7WUzoiyjoZawsF5P?key=HaZRudFEKKrV5PIcOsOdgg" style="height:336px; width:602px"></p>
+
+<p>Trong quá trình luyện tập, bạn có thể đánh giá mức độ khó của từ vựng đó, từ đó hệ thống sẽ tự động lặp lại các từ khó hơn trong quá trình ôn luyện. Việc lặp lại với tần suất cao giúp bạn dễ dàng ghi nhớ từ vựng hơn. Đối với những từ bạn đã biết, bạn có thể chọn "đã biết, loại khỏi danh sách ôn tập" để tiết kiệm thời gian.&nbsp;</p>
+
+<p><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXcRHv8ad8HBlWmmOk6MzTCV-wBaP-i_NdJTqg3wXW-em979ZIE45x-Ext3n3M8qnScIwW2FzhARO5DwvCzO-LDX-dPlXsnnhyQZmoYXOFP5rrLasU13tI6EbhKjBbjLJWp_ZUynh1vGBHi7x_Z3cwbYZYCy?key=HaZRudFEKKrV5PIcOsOdgg" style="height:324px; width:602px"></p>
+
+<p>Tiếp theo là 4 bài luyện tập từ vựng khác nhau như Trắc nghiệm từ vựng, Tìm cặp, Nghe từ vựng và Dịch nghĩa/ Điền từ, giúp bạn ôn lại kỹ hơn các từ đã học trước đó.</p>
+
+<div style="-webkit-text-stroke-width:0px; background-color:#ffffff; box-sizing:border-box; color:#1a1a1a; font-family:Roboto,Arial,sans-serif; font-size:16px; font-style:normal; font-variant-caps:normal; font-variant-ligatures:normal; font-weight:400; letter-spacing:normal; orphans:2; text-align:left; text-decoration-color:initial; text-decoration-style:initial; text-decoration-thickness:initial; text-indent:0px; text-transform:none; white-space:normal; widows:2; word-spacing:0px">
+<table cellspacing="0" style="border-collapse:collapse; border:none; box-sizing:border-box; color:#1a1a1a; display:block; font-size:inherit; margin:0px auto 1rem; max-width:100%; overflow-x:auto; width:598px">
+<tbody>
+    <tr>
+        <td style="background-color:#e8f5ff; border-color:#e8f5ff; border-style:solid; border-width:1px; vertical-align:top; width:598px">
+        <p style="text-align:center"><span style="color:#1a1a1a"><strong>KHÓA HỌC&nbsp;</strong></span><span style="color:#1a1a1a"><span style="background-color:#ffffcc"><strong>IELTS GENERAL INTENSIVE READING</strong></span></span><span style="color:#1a1a1a"><strong>&nbsp;của LearnEnglish</strong></span></p>
+
+        <p style="text-align:center"><span style="color:#1a1a1a"><strong>➡️NHẮM ĐẾN&nbsp;</strong></span><span style="color:#1a1a1a"><span style="background-color:#ffffcc"><strong>MỤC TIÊU 7+ IELTS READING GENERAL TRAINING</strong></span></span></p>
+
+        <p style="text-align:center"><a href="https://LearnEnglish.com/courses/29/ielts-general-intensive-reading/?itm_source=seo&amp;itm_medium=article&amp;itm_campaign=blogpost_internal_link&amp;itm_content=1246" style="box-sizing: border-box; color: rgb(53, 80, 154); text-decoration: none; background-color: transparent; cursor: pointer;"><span style="color:#1a1a1a"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXeTQEI-GqMlU9CHcfhj6wzYsECN5Z0GFaZS2n_KG3_Ym7u5MhoRtoojZ7nZmTmrn9hniGgU3sCTc1oxoC-toMMB8UfeSzceAYXyVQmtHJltYoHErbUIEe5kscDu6gQBeHfxzZUxmQb-OSvvI3z0idpd8UBJ?key=WaZG0MW4e66nyD29AQgjTA" style="border-style:none; box-sizing:border-box; display:block; height:84px; margin:1rem auto; max-width:100%; vertical-align:middle; width:600px"></span></a></p>
+
+        <p style="text-align:center"><iframe frameborder="0" height="315" src="https://www.youtube.com/embed/fDqAcQxR42w?si=3Z-cyY00fIbatYl6" style="box-sizing: border-box;" title="YouTube video player" width="560"></iframe></p>
+
+        <p><span style="color:#1a1a1a"><strong>Khóa học bao gồm:</strong></span></p>
+
+        <p><span style="color:#1a1a1a"><strong>📚Chiến lược làm bài và video chữa đề chi tiết</strong></span></p>
+
+        <p><span style="color:#1a1a1a">Khóa học cung cấp video bài giảng hướng dẫn chi tiết cách làm từng dạng câu hỏi trong IELTS Reading và hơn 150h clip chữa đề chi tiết tất cả các câu hỏi trong nhiều bộ đề.</span></p>
+
+        <hr>
+        <p><span style="color:#1a1a1a"><strong>📒Từ vựng IELTS General Training tổng hợp</strong></span></p>
+
+        <p><span style="color:#1a1a1a">Mỗi bài đọc đều có highlight từ mới kèm nghĩa. Ngoài ra khóa học cung cấp bộ flashcards kèm phiên âm, audio, câu ví dụ để dễ dàng ôn tập theo phương pháp spaced-repetition review (lặp lại ngắt quãng).</span></p>
+
+        <hr>
+        <p><span style="color:#1a1a1a"><strong>✏️Thực hành từ vựng mỗi ngày</strong></span></p>
+
+        <p><span style="color:#1a1a1a">Bên cạnh việc học từ vựng với bộ flashcards, bạn có thể luyện tập với các bài tập mini-game như trắc nghiệm, tìm cặp, nghe điền từ, chính tả…</span></p>
+        </td>
+    </tr>
+</tbody>
+</table>
+</div>
+
+<h2 id="lời-kết"><strong>Lời kết</strong></h2>
+
+<p>Vậy là bạn đã hoàn thành các bước luyện tập hiệu quả để đạt mục tiêu 7+ Reading IELTS General Training theo lộ trình khóa học IELTS Intensive Reading của LearnEnglish rồi đó. Hãy bắt tay vào ôn luyện theo khóa học của LearnEnglish từ ngay hôm nay để chinh phục band điểm IELTS mà bạn mơ ước nhé!</p>
+                    </div>
+                    
+
+                    
+
+                    
+                </div>
+
+                
+                <div class="post-tags">
+                
+                </div>
+                
+                <br>
+
+                <div class="post-comments-wrapper">
+                    <h4 id="bình-luận">Bình luận</h4>
+                    
+
+
+
+<form action="/blog/topics/tim-hieu-ve-learn-english/comment/" method="POST" class="mt-2 md-comment-input jqform jqcomment-form" data-reload-html="#obj-comments-1246" data-target="#md-comments-box" data-submitting="false">
+    
+<input name="csrfmiddlewaretoken" type="hidden" value="QlqphRgWmTiQMJyEwoW1N8GqMg9DSdAeeoKcGzA2G7ZzaF0iKO104Sie3TdFP0We">
+
+
+    
+    
+
+    <div class="input-group">
+        <textarea name="content" rows="1" class="form-control custom-control jqcomment-textarea" placeholder="Chia sẻ cảm nghĩ của bạn ..."></textarea>
+        <div class="input-group-append">
+            <button class="input-group-addon btn btn-primary jqcomment-submit">Gửi</button>
+        </div>
+    </div>
+</form>
+
+
+
+                    <br>
+                    <div id="obj-comments-1246" class="jqhtml-loader" data-href="/blog/topics/tim-hieu-ve-learn-english/comments/"><p><i>Chưa có bình luận nào. Hãy trở thành người đầu tiên bình luận bài này.</i></p></div>
+                </div>
+
+                
+
+                <br>
+                <div>
+                    <div class="h3">Các bài viết cùng chủ đề</div>
+                    
+<div class="">
+<div class="center">
+    
+        
+        <div class="posts-list">
+        
+            
+<div class="postlist-card">
+
+
+<div class="postlist-card-img sm mb-2">
+    <img class="lazyel card-img entered loaded" data-src="https://study4.com/media/examprep/Post/files/2024/09/20/C%C3%A1ch_d%C3%B9ng_22_-_Copy.png" data-ll-status="loaded" src="https://study4.com/media/examprep/Post/files/2024/09/20/C%C3%A1ch_d%C3%B9ng_22_-_Copy.png">
+</div>
+
+<div class="postlist-card-content-wrapper">
+    
+    <span class="d-block post-topic"><a class="font-weight-bold small" href="/topics/khoa-hoc-tren-LearnEnglish/">KHÓA HỌC TRÊN LearnEnglish</a></span>
+    
+    <div class="postlist-title-wrapper">
+        
+        <div class="postlist-card-img-sm mb-2">
+            <img class="lazyel card-img" data-src="https://study4.com/media/examprep/Post/files/2024/09/20/C%C3%A1ch_d%C3%B9ng_22_-_Copy.png">
+        </div>
+        
+        <div class="postlist-title"><a href="/blog/topics/tim-hieu-ve-learn-english/huong-dan-cach-hoc-khoa-complete-toeic-cua-study4-hieu-qua.html">Hướng dẫn cách học khóa Complete TOEIC của LearnEnglish hiệu quả</a></div>
+    </div>
+    <div class="postlist-card-content card-body d-flex flex-column p-0">
+        <p>Bài viết này sẽ hướng dẫn các học viên TOEIC cách sử dụng và học khóa Complete TOEIC của LearnEnglish.</p>
+    </div>
+    
+    <div class="postlist-meta">
+        20/09/2024 bởi Bùi Hằng
+        
+    </div>
+    
+</div>
+</div>
+
+        
+            
+<div class="postlist-card">
+
+
+<div class="postlist-card-img sm mb-2">
+    <img class="lazyel card-img entered loaded" data-src="https://study4.com/media/examprep/Post/files/2024/09/20/C%C3%A1ch_d%C3%B9ng_21.png" data-ll-status="loaded" src="https://study4.com/media/examprep/Post/files/2024/09/20/C%C3%A1ch_d%C3%B9ng_21.png">
+</div>
+
+<div class="postlist-card-content-wrapper">
+    
+    <span class="d-block post-topic"><a class="font-weight-bold small" href="/topics/khoa-hoc-tren-LearnEnglish/">KHÓA HỌC TRÊN LearnEnglish</a></span>
+    
+    <div class="postlist-title-wrapper">
+        
+        <div class="postlist-card-img-sm mb-2">
+            <img class="lazyel card-img" data-src="https://study4.com/media/examprep/Post/files/2024/09/20/C%C3%A1ch_d%C3%B9ng_21.png">
+        </div>
+        
+        <div class="postlist-title"><a href="/posts/1250/huong-dan-hoc-thu-khoa-hoc-complete-toeic-cua-LearnEnglish/">Hướng dẫn học thử khóa học Complete TOEIC của LearnEnglish</a></div>
+    </div>
+    <div class="postlist-card-content card-body d-flex flex-column p-0">
+        <p>Bài viết này sẽ giúp hướng dẫn các bạn cách học thử khóa Complete TOEIC của LearnEnglish.</p>
+    </div>
+    
+    <div class="postlist-meta">
+        20/09/2024 bởi Bùi Hằng
+        
+    </div>
+    
+</div>
+</div>
+
+        
+            
+<div class="postlist-card">
+
+
+<div class="postlist-card-img sm mb-2">
+    <img class="lazyel card-img entered loaded" data-src="https://study4.com/media/examprep/Post/files/2024/09/20/C%C3%A1ch_d%C3%B9ng_20.png" data-ll-status="loaded" src="https://study4.com/media/examprep/Post/files/2024/09/20/C%C3%A1ch_d%C3%B9ng_20.png">
+</div>
+
+<div class="postlist-card-content-wrapper">
+    
+    <span class="d-block post-topic"><a class="font-weight-bold small" href="/topics/khoa-hoc-tren-LearnEnglish/">KHÓA HỌC TRÊN LearnEnglish</a></span>
+    
+    <div class="postlist-title-wrapper">
+        
+        <div class="postlist-card-img-sm mb-2">
+            <img class="lazyel card-img" data-src="https://study4.com/media/examprep/Post/files/2024/09/20/C%C3%A1ch_d%C3%B9ng_20.png">
+        </div>
+        
+        <div class="postlist-title"><a href="/posts/1249/huong-dan-hoc-thu-khoa-ielts-general-intensive-writing-cua-LearnEnglish/">Hướng dẫn học thử khóa IELTS General Intensive Writing của LearnEnglish</a></div>
+    </div>
+    <div class="postlist-card-content card-body d-flex flex-column p-0">
+        <p>Bài viết sau đây sẽ hướng dẫn cách học thử khóa IELTS General Intensive Writing của LearnEnglish giúp bạn đạt mục tiêu 6.5+ cho phần Viết.</p>
+    </div>
+    
+    <div class="postlist-meta">
+        20/09/2024 bởi Bùi Hằng
+        
+    </div>
+    
+</div>
+</div>
+
+        
+            
+<div class="postlist-card">
+
+
+<div class="postlist-card-img sm mb-2">
+    <img class="lazyel card-img entered loaded" data-src="https://study4.com/media/examprep/Post/files/2024/09/20/C%C3%A1ch_d%C3%B9ng_19.png" data-ll-status="loaded" src="https://study4.com/media/examprep/Post/files/2024/09/20/C%C3%A1ch_d%C3%B9ng_19.png">
+</div>
+
+<div class="postlist-card-content-wrapper">
+    
+    <span class="d-block post-topic"><a class="font-weight-bold small" href="/topics/khoa-hoc-tren-LearnEnglish/">KHÓA HỌC TRÊN LearnEnglish</a></span>
+    
+    <div class="postlist-title-wrapper">
+        
+        <div class="postlist-card-img-sm mb-2">
+            <img class="lazyel card-img" data-src="https://study4.com/media/examprep/Post/files/2024/09/20/C%C3%A1ch_d%C3%B9ng_19.png">
+        </div>
+        
+        <div class="postlist-title"><a href="/posts/1248/huong-dan-cach-hoc-khoa-ielts-general-intensive-writing-cua-LearnEnglish/">Hướng dẫn cách học khóa IELTS General Intensive Writing của LearnEnglish</a></div>
+    </div>
+    <div class="postlist-card-content card-body d-flex flex-column p-0">
+        <p>Bài viết dưới đây sẽ hướng dẫn chi tiết tất tần tật cách học khóa IELTS Intensive Writing (General) của LearnEnglish nhé!</p>
+    </div>
+    
+    <div class="postlist-meta">
+        20/09/2024 bởi Bùi Hằng
+        
+    </div>
+    
+</div>
+</div>
+
+        
+            
+<div class="postlist-card">
+
+
+<div class="postlist-card-img sm mb-2">
+    <img class="lazyel card-img entered loaded" data-src="https://study4.com/media/examprep/Post/files/2024/09/20/C%C3%A1ch_d%C3%B9ng_18.png" data-ll-status="loaded" src="https://study4.com/media/examprep/Post/files/2024/09/20/C%C3%A1ch_d%C3%B9ng_18.png">
+</div>
+
+<div class="postlist-card-content-wrapper">
+    
+    <span class="d-block post-topic"><a class="font-weight-bold small" href="/topics/khoa-hoc-tren-LearnEnglish/">KHÓA HỌC TRÊN LearnEnglish</a></span>
+    
+    <div class="postlist-title-wrapper">
+        
+        <div class="postlist-card-img-sm mb-2">
+            <img class="lazyel card-img" data-src="https://study4.com/media/examprep/Post/files/2024/09/20/C%C3%A1ch_d%C3%B9ng_18.png">
+        </div>
+        
+        <div class="postlist-title"><a href="/posts/1247/huong-dan-hoc-thu-khoa-ielts-general-intensive-reading-cua-LearnEnglish/">Hướng dẫn học thử khóa IELTS General Intensive Reading của LearnEnglish</a></div>
+    </div>
+    <div class="postlist-card-content card-body d-flex flex-column p-0">
+        <p>Bài viết này sẽ chỉ dẫn các bạn cách học thử khóa IELTS General Intensive Reading của LearnEnglish.</p>
+    </div>
+    
+    <div class="postlist-meta">
+        20/09/2024 bởi Bùi Hằng
+        
+    </div>
+    
+</div>
+</div>
+
+        
+        </div>
+
+        
+
+
+
+    
+</div>
+</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-md-2 order-md-1">
+        
+        <div class="post-topics-list">
+            <p class="font-12 font-600">
+                Chuyên mục
+            </p>
+        
+            <div class="post-topics-listitem my-2">
+                <a class="text-dark" href="/blog/topics/tim-hieu-ve-learn-english/index.html">
+                    <b>TÌM HIỂU VỀ LEARNENGLISH</b>
+                </a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="/blog/topics/tinh-nang-tren-learn-english/index.html">
+                    Tính năng trên LearnEnglish
+                </a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">KHÓA HỌC TRÊN LEARNENGLISH</a>
+            </div>
+        
+            <hr>
+        
+            <div class="post-topics-listitem my-2">
+                <a class="text-dark" href="#" onclick="showNotification()">
+                    <b>Review của học viên LearnEnglish</b>
+                </a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Học viên IELTS</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Học viên TOEIC</a>
+            </div>
+        
+            <hr>
+        
+            <div class="post-topics-listitem my-2">
+                <a class="text-dark" href="#" onclick="showNotification()">
+                    <b>Luyện thi IELTS</b>
+                </a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">IELTS Listening</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">IELTS Reading</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">IELTS Speaking</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">IELTS Writing</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">IELTS Materials</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Thông tin kỳ thi IELTS</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Kinh nghiệm thi IELTS</a>
+            </div>
+        
+            <hr>
+        
+            <div class="post-topics-listitem my-2">
+                <a class="text-dark" href="#" onclick="showNotification()">
+                    <b>Luyện thi TOEIC</b>
+                </a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">TOEIC Listening</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">TOEIC Reading</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">TOEIC Materials</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Thông tin kỳ thi TOEIC</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Kinh nghiệm thi TOEIC</a>
+            </div>
+        
+            <hr>
+        
+            <div class="post-topics-listitem my-2">
+                <a class="text-dark" href="#" onclick="showNotification()">
+                    <b>Tiếng Anh cơ bản</b>
+                </a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Phát âm</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Từ vựng</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Ngữ pháp</a>
+            </div>
+        
+            <hr>
+        
+            <div class="post-topics-listitem my-2">
+                <a class="text-dark" href="#" onclick="showNotification()">
+                    <b>Luyện Thi HSK-HSKK</b>
+                </a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Tiếng Trung cơ bản</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Kiến thức HSK-HSKK</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Thông tin kỳ thi HSK-HSKK</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Kinh nghiệm thi HSK-HSKK</a>
+            </div>
+        
+            <hr>
+        
+            <div class="post-topics-listitem my-2">
+                <a class="text-dark" href="#" onclick="showNotification()">
+                    <b>Tiếng Anh cho người đi làm</b>
+                </a>
+            </div>
+        
+            <hr>
+        
+            <div class="post-topics-listitem my-2">
+                <a class="text-dark" href="#" onclick="showNotification()">
+                    <b>Du học</b>
+                </a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Admission essays</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Kinh nghiệm du học</a>
+            </div>
+        
+            <hr>
+        </div>
+        
+        <script>
+            function showNotification() {
+                alert("Bài viết này sẽ được cập nhật trong tương lai");
+            }
+        </script>
+        
+<hr>
+
+</div>
+
+    </div>
+</div>
+</div>
+
+                
+            </div>
+            
+        </div>
+        
+
+        
+    
+
+    <div class="modal" id="site-modal-lg" tabindex="-1" aria-labelledby="site-modal-lg" aria-hidden="true" data-keyboard="false" data-backdrop="static">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+                <div class="modal-body" id="site-modal-lg-content"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="site-modal-md" tabindex="-1" aria-labelledby="site-modal-md" aria-hidden="true" data-keyboard="false" data-backdrop="static">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+                <div class="modal-body" id="site-modal-md-content"></div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+window.csrf_token = 'QlqphRgWmTiQMJyEwoW1N8GqMg9DSdAeeoKcGzA2G7ZzaF0iKO104Sie3TdFP0We';
+window.current_user =
+
+{
+    is_authenticated: true,
+    id: 1532546,
+    name: "chauthithuyquynh2019",
+    is_admin: false,
+    is_staff: false,
+    is_superuser: false,
+}
+
+</script>
+    <script type="text/javascript" src="/static/ckeditor/ckeditor-init-override.js?v=1735926894"></script>
+    <script type="text/javascript" src="/static/ckeditor/ckeditor/ckeditor.js"></script>
+    <script type="text/javascript" src="/static/js/webaudiorecorder/WebAudioRecorder.min.js"></script>
+    <script type="text/javascript" src="/static/dist/vendor.ad60eb658fc650d75097.js?v=1735926894"></script>
+    <script type="text/javascript" src="/static/dist/main.651d8fa8cadf332cd75a.js?v=1735926894"></script>
+
+    
+
+<script type="text/javascript">
+$(function() {
+    const isInternalCourseURL = (url) => (new URL(url).origin == location.origin && (url.indexOf('/courses/') > -1 || url.indexOf('/lp/')) > -1);
+    $('.post-content a').each(function(idx,el) {
+        var $link = $(el);
+        var url = $link.attr('href');
+        if (isInternalCourseURL(url)) {
+            var qs = generate_qs({
+                'itm_source': 'seo',
+                'itm_medium': 'article',
+                'itm_campaign': 'blogpost_internal_link',
+                'itm_content': '1246'
+            });
+            var new_url = url + '?' + qs;
+            $link.attr('href', new_url);
+        }
+    });
+});
+</script>
+
+    <script type="text/javascript">
+        function isFacebookApp() {
+            var ua = navigator.userAgent || navigator.vendor || window.opera;
+            return (ua.indexOf("FBAN") > -1) || (ua.indexOf("FBAV") > -1);
+        }
+        if (isFacebookApp()) {
+            $('.g-login-block').hide();
+        }
+    </script>
+
+    
+
+    
+    
+    
+
+
+    
+    
+    
+
+
+    
+    <script type="text/javascript">
+        (function(w,d,t,u,n,a,m){w['MauticTrackingObject']=n;
+            w[n]=w[n]||function(){(w[n].q=w[n].q||[]).push(arguments)},a=d.createElement(t),
+            m=d.getElementsByTagName(t)[0];a.async=1;a.src=u;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://mautic.LearnEnglish.com/mtc.js','mt');
+
+        
+            
+            mt('send', 'pageview', {
+                email: "chauthithuyquynh2019@gmail.com",
+                uid: "1532546",
+                username: "chauthithuyquynh2019",
+                is_paid: false,
+                is_trial: true
+            });
+            
+        
+    </script>
+    
+<script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon="{&quot;rayId&quot;:&quot;8fd2b6c0489a44b5&quot;,&quot;serverTiming&quot;:{&quot;name&quot;:{&quot;cfExtPri&quot;:true,&quot;cfL4&quot;:true,&quot;cfSpeedBrain&quot;:true,&quot;cfCacheStatus&quot;:true}},&quot;version&quot;:&quot;2024.10.5&quot;,&quot;token&quot;:&quot;8d646591bd144e069b89dada41cfc02b&quot;}" crossorigin="anonymous"></script>
+
+
+    <div class="highlight-control">
+        <div>
+            <span class="fas fa-trash highlight-icon highlight-remove" aria-hidden="true"></span>
+            <span class="fas fa-pencil highlight-icon highlight-note" aria-hidden="true"></span>
+            <span class="highlight-icon highlight-color blue"></span>
+            <span class="highlight-icon highlight-color pink"></span>
+            <span class="highlight-icon highlight-color green"></span>
+            <span class="highlight-icon highlight-color yellow"></span>
+            <span class="highlight-icon highlight-color underred"></span>
+            <span class="highlight-icon highlight-color crossed">abc</span>
+            <span class="ml-2 fas fa-plus highlight-icon highlight-flashcard" data-toggle="modal" data-target="#highlight-modal" aria-hidden="true"></span>
+        </div>
+        <div class="highlight-editor">
+            <textarea rows="3"></textarea>
+            <div><span class="far fa-check highlight-icon highlight-save" aria-hidden="true"></span></div>
+        </div>
+    </div>
+    <div class="modal" id="highlight-modal" tabindex="-1" aria-labelledby="highlight-modal" aria-hidden="true" data-keyboard="false" data-backdrop="static">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+                <div class="modal-body" id="highlight-modal-content"></div>
+            </div>
+        </div>
+    </div>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+<!-- Code injected--></body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="footer-wrapper" bis_skin_checked="1">
+        <div class="footer-container" bis_skin_checked="1">
+            <footer>
+
+
+
+                <div class="row" bis_skin_checked="1">
+                    <div class="col-12 col-sm-12 col-md" bis_skin_checked="1">
+                        <a href="/"><img class="mb-2" src="/assets/img/Logo_LearnEnglish.svg" alt="" height="30"></a>
+                        <small class="mb-2">©</small>
+                        <div class="site-socials" style="width: 140px !important;" bis_skin_checked="1">
+                            <a target="_blank" href="https://facebook.com/" bis_skin_checked="1"><span
+                                    class="social-link fab fa-facebook-square"></span></a>
+                            <a target="_blank" href="https://instagram.com/" bis_skin_checked="1"><span
+                                    class="social-link fab fa-instagram"></span></a>
+                            <a target="_blank" href="https://twitter.com/" bis_skin_checked="1"><span
+                                    class="social-link fab fa-twitter"></span></a>
+                            <a target="_blank" href="https://youtube.com/" bis_skin_checked="1"><span
+                                    class="social-link fab fa-youtube"></span></a>
+                            <a target="_blank" href="https://www.tiktok.com" bis_skin_checked="1"><span
+                                    class="social-link fab fa-tiktok"></span></a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md" bis_skin_checked="1">
+                        <div class="footer-title" bis_skin_checked="1">Về LearnEnglish</div>
+                        <ul class="list-unstyled text-small">
+                            <li><a href="/about/" bis_skin_checked="1">Giới thiệu</a></li>
+                            <li><a href="/contact/" bis_skin_checked="1">Liên hệ</a></li>
+                            <li><a href="/privacy/" bis_skin_checked="1">Điều khoản bảo mật</a></li>
+                            <li><a href="/terms/" bis_skin_checked="1">Điều khoản sử dụng</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-6 col-md" bis_skin_checked="1">
+                        <div class="footer-title" bis_skin_checked="1">Tài nguyên</div>
+                        <ul class="list-unstyled text-small">
+
+                            <li><a href="/tests/" bis_skin_checked="1">Thư viện đề thi</a></li>
+                            <li><a href="/posts/" bis_skin_checked="1">Blog</a></li>
+                            <li><a href="/materials/" bis_skin_checked="1">Kho tài liệu</a></li>
+
+
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md" bis_skin_checked="1">
+                        <div class="footer-title" bis_skin_checked="1">Chính sách chung</div>
+                        <ul class="list-unstyled text-small">
+                            <li><a href="/user-guide/" bis_skin_checked="1">Hướng dẫn sử dụng</a></li>
+                            <li><a href="/buying-guide/" bis_skin_checked="1">Hướng dẫn thanh toán</a></li>
+
+                            <li><a href="/buying-terms/" bis_skin_checked="1">Điều khoản và Điều Kiện Giao Dịch</a></li>
+                            <li><a href="/checkout-policy" bis_skin_checked="1">Chính sách kiểm hàng</a></li>
+                            <li><a href="/delivery-policy" bis_skin_checked="1">Chính sách giao, nhận hàng</a></li>
+                            <li><a href="/feedback/" bis_skin_checked="1">Phản hồi, khiếu nại</a></li>
+                            <li><a href="/return-policy" bis_skin_checked="1">Chính sách chuyển đổi, hoàn hủy</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+
+                <div class="footer-copyright text-center" bis_skin_checked="1">
+                    LearnEnglish © Bản quyền của GROUP11.
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

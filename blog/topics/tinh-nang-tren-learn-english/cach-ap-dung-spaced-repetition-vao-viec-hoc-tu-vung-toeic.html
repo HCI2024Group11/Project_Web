@@ -1,0 +1,1211 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn English</title>
+    <link rel="icon" href="/assets/img/Avatar_LearnEnglish.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/f9374b778e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+    
+    <div class="topnav1 topnav-wrapper" bis_skin_checked="1">
+        <div class="topnav-container" bis_skin_checked="1">
+            <nav class="navbar  navbar-expand-lg">
+                <span class="navbar-brand">
+                    <a class="topnav-brand" href="/">
+                        <img class="topnav-logo" src="/assets/img/Logo_LearnEnglish.svg" alt="STUDY4">
+
+                    </a>
+                </span>
+                <button class="navbar-toggler pull-xs-right d-lg-none" type="button" data-toggle="collapse"
+                    data-target="#navbar-collapse">
+                    ☰
+
+                </button>
+                <div class="d-lg-block navbar-collapse justify-content-end collapse" id="navbar-collapse"
+                    bis_skin_checked="1">
+
+                    <ul class="nav">
+
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/courses/" bis_skin_checked="1">Course</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/skills/" bis_skin_checked="1">Skill</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/flashcards/me/" bis_skin_checked="1">Flashcards</a>
+                        </li>
+
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/blog/" bis_skin_checked="1">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/general-english/" bis_skin_checked="1">General english</a>
+                        </li>
+
+
+
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/courses/activate/" bis_skin_checked="1">
+                                Kích hoạt tài khoản
+                            </a>
+                        </li>
+
+                        <li class="nav-item user-topnav dropdown d-none d-lg-block">
+                            <a class="nav-link dropdown-toggle user-topnav-profile" href="/my-account/" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" bis_skin_checked="1">
+                                <span class="account-profile-img">
+
+                                    <img src="/assets/img/user_icon.webp" alt="ChuTanTai23130280">
+
+                                </span>
+
+                            </a>
+
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" bis_skin_checked="1">
+                                <div bis_skin_checked="1">
+                                    <h6 class="dropdown-header" id="thông-báo"> Thông báo </h6>
+                                    <div id="new-notis-dropdown-content" class="jqhtml-loader dropdown-text"
+                                        data-href="/notifications/newest/" bis_skin_checked="1">
+                                        <p class="font-sm"><i>Bạn chưa có thông báo mới.</i></p>
+
+
+                                        <div class="mt-2 link font-sm" bis_skin_checked="1"><a href="/notifications/"
+                                                bis_skin_checked="1">Xem tất cả &gt;&gt;</a></div>
+                                    </div>
+                                </div>
+
+                                <div class="dropdown-divider" bis_skin_checked="1"></div>
+                                <a class="dropdown-item" href="/studyplan/" bis_skin_checked="1">Lịch học của tôi</a>
+                                <a class="dropdown-item" href="/my-account/" bis_skin_checked="1">Trang cá nhân</a>
+                                <a class="dropdown-item" href="/logout/" bis_skin_checked="1">Đăng xuất</a>
+                            </div>
+                        </li>
+                        <li class="nav-item d-lg-none">
+                            <a class="nav-link" href="/notifications/" bis_skin_checked="1">Thông báo </a>
+                        </li>
+                        <li class="nav-item d-lg-none">
+                            <a class="nav-link" href="/studyplan/" bis_skin_checked="1">Lịch học của tôi</a>
+                        </li>
+                        <li class="nav-item d-lg-none">
+                            <a class="nav-link" href="/my-account/" bis_skin_checked="1">Trang cá nhân</a>
+                        </li>
+                        <li class="nav-item d-lg-none">
+                            <a class="nav-link" href="/logout/" bis_skin_checked="1">Đăng xuất</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+<script>
+    // JavaScript để xử lý dropdown
+    document.addEventListener('DOMContentLoaded', function() {
+        const profileBtn = document.querySelector('.user-topnav-profile');
+        const dropdownMenu = document.querySelector('.dropdown-menu');
+    
+        // Toggle dropdown khi click vào profile
+        profileBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            dropdownMenu.classList.toggle('show');
+        });
+    
+        // Đóng dropdown khi click ra ngoài
+        document.addEventListener('click', function(e) {
+            if (!profileBtn.contains(e.target) && !dropdownMenu.contains(e.target)) {
+                dropdownMenu.classList.remove('show');
+            }
+        });
+    });
+</script>
+    <script>
+        // JavaScript để xử lý dropdown
+        document.addEventListener('DOMContentLoaded', function () {
+            const profileBtn = document.querySelector('.user-topnav-profile');
+            const dropdownMenu = document.querySelector('.dropdown-menu');
+
+            // Toggle dropdown khi click vào profile
+            profileBtn.addEventListener('click', function (e) {
+                e.preventDefault();
+                dropdownMenu.classList.toggle('show');
+            });
+
+            // Đóng dropdown khi click ra ngoài
+            document.addEventListener('click', function (e) {
+                if (!profileBtn.contains(e.target) && !dropdownMenu.contains(e.target)) {
+                    dropdownMenu.classList.remove('show');
+                }
+            });
+        });
+    </script>
+
+
+
+
+
+
+<body class="highlighter-context">
+
+
+    <div class="topnav1 topnav-wrapper" bis_skin_checked="1">
+        
+    </div>
+    <script>
+        // JavaScript để xử lý dropdown
+        document.addEventListener('DOMContentLoaded', function () {
+            const profileBtn = document.querySelector('.user-topnav-profile');
+            const dropdownMenu = document.querySelector('.dropdown-menu');
+
+            // Toggle dropdown khi click vào profile
+            profileBtn.addEventListener('click', function (e) {
+                e.preventDefault();
+                dropdownMenu.classList.toggle('show');
+            });
+
+            // Đóng dropdown khi click ra ngoài
+            document.addEventListener('click', function (e) {
+                if (!profileBtn.contains(e.target) && !dropdownMenu.contains(e.target)) {
+                    dropdownMenu.classList.remove('show');
+                }
+            });
+        });
+    </script>
+
+
+        
+    <div id="fb-root" class=" fb_reset fb_reset"><div style="position: absolute; top: -10000px; width: 0px; height: 0px;"><div></div></div><div style="position: absolute; top: -10000px; width: 0px; height: 0px;"><div></div></div></div>
+    <script async="" defer="" crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&amp;version=v20.0&amp;appId=203430341284880&amp;autoLogAppEvents=1" nonce="1d3MdMH8" type="text/javascript"></script>
+    
+    
+
+    
+    <div class="site-elevator">
+        <div class="elevator-item elevator-open d-md-none">
+            <span class="fal fa-chevron-left" aria-hidden="true"></span>
+        </div>
+        <div class="elevator-item elevator-close d-md-none">
+            <span class="fal fa-chevron-right" aria-hidden="true"></span>
+        </div>
+        <div class="elevator-item">
+            <div class="jqdictionary-show" target="#">
+                <img src="/static/img/dictionary.png">
+                <div class="elevator-text">Từ điển</div>
+            </div>
+        </div>
+        <div class="jqdictionary-wrapper">
+            <span class="jqdictionary-expand fal fa-plus-square" aria-hidden="true"></span>
+            <span class="jqdictionary-close far fa-times" aria-hidden="true"></span>
+            <div class="h6 font-500 font-sm">
+                <a class="link jqdictionary-tab active" data-href="https://m.dict.laban.vn/">Anh-Việt</a> |
+                <a class="link jqdictionary-tab" data-href="https://www.wordreference.com/definition/">WordReference</a> |
+                <a class="link jqdictionary-tab" data-href="https://onelook.com/thesaurus/">Thesaurus</a> |
+                <a class="link jqdictionary-tab" data-href="https://vtudien.com/trung-viet/dictionary/nghia-cua-tu-%E4%BD%A0%E5%A5%BD">Tiếng Trung</a>
+            </div>
+            <div class="jqdictionary-iframe">
+                <iframe loading="lazy" frameborder="0"></iframe>
+            </div>
+        </div>
+
+
+        
+        <div class="elevator-item">
+            <a target="_blank" href="https://m.me/study4.support">
+                <img src="/static/img/messenger.png">
+            </a>
+        </div>
+        
+
+        <div class="elevator-item">
+            <a target="_blank" href="https://zalo.me/study4">
+                <img src="/static/img/zalo.jpg">
+            </a>
+        </div>
+
+
+        
+        <div class="elevator-item site-scrollTop" onclick="if (!window.__cfRLUnblockHandlers) return false; window.topFunction()" id="site-scrollTop" title="Go to top" style="display: none;">
+            <span class="fal fa-chevron-up" aria-hidden="true"></span>
+        </div>
+    </div>
+    
+
+    
+
+    <div class="site-wrapper">
+
+        
+
+        
+
+
+<div class="topnav1 topnav-wrapper">
+
+</div>
+
+        
+
+        
+        <div class="site-content-wrapper">
+            
+
+            
+
+            
+            
+            
+            
+
+            
+<div class="container pb-0">
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/">Trang chủ</a></li>
+        
+        <li class="breadcrumb-item"><a href="/blog/index.html
+            ">Bài viết</a></li>
+        <li class="breadcrumb-item"><a href="/blog/topics/tinh-nang-tren-learn-english/">TÍNH NĂNG TRÊN LearnEnglish</a></li>
+        
+        <li class="breadcrumb-item active"><a href="/blog/topics/tinh-nang-tren-learn-english/cach-ap-dung-spaced-repetition-vao-viec-hoc-tu-vung-toeic.html">Cách áp dụng Spaced-Repetition vào việc học từ vựng TOEIC</a></li>
+    </ol>
+</nav>
+</div>
+
+
+            
+<div class="content-header py-0">
+<div class="container py-0">
+    <div class="image-wrapper">
+        <a href="/courses/level-test/">
+            
+        </a>
+    </div>
+    <br>
+    <h1 class="post-title" id="cách-áp-dụng-spaced-repetition-vào-việc-học-từ-vựng-toeic">
+        Cách áp dụng Spaced-Repetition vào việc học từ vựng TOEIC
+        
+    </h1>
+    
+    <p class="post-description">
+        Ứng dụng ngay phương pháp Spaced-Repetition (lặp lại ngắt quãng) nổi tiếng vào việc học từ vựng TOEIC của bạn dễ dàng chỉ trong 5 phút!
+    </p>
+    
+</div>
+</div>
+
+
+            
+            <div class="content-wrapper">
+                
+                
+<div class="container">
+<div class="row">
+    
+    <div class="col-12 col-md-7 order-md-2">
+        <div class="post-wrapper">
+            <div class="media post-author-media py-2 mb-3 border-bottom">
+                <div class="post-author-img">
+                    
+                    <img src="https://res.cloudinary.com/sandodep4/image/upload/w_300/sandodep4_x_179027497304743546577679031874613619737_cajgas" alt="hangbm.study4">
+                    
+                </div>
+                <div class="media-body">
+                    <div class="post-author-name"><a target="_blank" href="/u/hangbm.study4/">Bùi Hằng</a></div>
+                    <div class="post-meta">23/05/2024</div>
+                </div>
+            </div>
+
+            <div class="post-main-wrapper">
+
+                
+
+                
+
+                <div class="post-main mt-2">
+                    
+                    <div id="post-content" class="post-content md-content js-toc-content" prewrap="">
+                        <p><img alt="Cách áp dụng Spaced-Repetition vào TOEIC" src="https://study4.com/media/uploads/editor/hangbm.study4/2024/06/18/cach-dung.png" style="height:674px; width:1200px"></p>
+
+<p><em>Phương pháp Spaced-repetition “nổi rần rần” trong thời gian gần đây đã được chứng minh là một công cụ vô cùng hiệu quả để cải thiện khả năng nhớ từ vựng. Trong bài viết này,LearnEnglish sẽ hướng dẫn từ A đến Z </em><strong><em>cách áp dụng Spaced-Repetition vào việc học từ vựng TOEIC</em></strong><em>, giúp bạn tiến gần hơn đến mục tiêu đạt điểm cao trong kỳ thi quan trọng này.</em></p>
+
+<h2 id="i.-spaced-repetition-là-gì?"><strong>I. Spaced-Repetition là gì?</strong></h2>
+
+<p>Spaced-Repetition (Lặp lại ngắt quãng) là một cách học thông qua việc <strong>nhớ lại một cách chủ động</strong> trải rộng qua nhiều buổi học. Nói một cách đơn giản, bộ não của bạn phát huy khả năng học tập tốt nhất khi nó buộc phải nhớ câu trả lời đúng. Bạn có thể đã thực hành khả năng ghi nhớ chủ động này khi học bằng thẻ flashcard, trả lời các câu hỏi khi đóng sách lại, hoặc thậm chí khi bạn đang ngồi nhìn vào khoảng không và nghĩ “Mình vừa học từ gì ấy nhỉ?”.&nbsp;</p>
+
+<p style="text-align:center"><img alt="Spaced repetition: Video, Anatomy &amp; Definition | Osmosis" src="https://www.osmosis.org/_next/image?url=https%3A%2F%2Fosmose-it.s3.amazonaws.com%2F--WD2D2kRNeq4CHothPq2OhfSCqmkmn5%2F_.jpg&amp;w=3840&amp;q=75" style="height:281px; width:500px"></p>
+
+<p style="text-align:center"><em>Spaced-Repetition là là một cách học thông qua việc nhớ lại một cách chủ động trải rộng qua nhiều buổi học</em></p>
+
+<p>Việc nhớ chủ động khác với ôn tập thụ động. Các hoạt động ôn tập thụ động bao gồm đánh dấu các kiến thức trong sách giáo khoa, xem lại các video bài giảng hoặc đọc lướt một câu hỏi trắc nghiệm và nhận ra câu trả lời. Trong những trường hợp này, bộ não của bạn không cần phải làm gì nhiều để tiếp nhận các kiến thức. Vì thế, phương pháp học này không giúp bạn ghi nhớ kiến thức một cách hiệu quả.&nbsp;</p>
+
+<p>“Spaced" trong Spaced-Repetition chỉ những khoảng thời gian nghỉ giữa các phiên học. Bạn có thể ôn lại kiến thức ngay sau giờ học và ghi nhớ thông tin trong một vài giờ sau, vài ngày sau, hoặc vài tuần sau. Thực hành ghi nhớ kiến thức sau một khoảng thời gian dài sau khi tiếp nhận nó là một việc làm vô cùng quan trọng, bởi việc làm này sẽ giúp bạn chống lại “đường cong lãng quên” của bộ não. Nói cách khác, bằng phương pháp Spaced-Repetition, bạn có thể nhớ kiến thức rất lâu và chắc.&nbsp;</p>
+
+<h2 id="ii.&nbsp;-lợi-ích-của-phương-pháp-spaced-repetition"><strong>II.&nbsp; Lợi ích của phương pháp Spaced-Repetition&nbsp;</strong></h2>
+
+<p>Việc áp dụng phương pháp Spaced-Repetition đem lại rất nhiều lợi ích trong việc nhớ kiến thức, đặc biệt là từ vựng. Sau đây là một vài lợi ích nổi bật của phương pháp Spaced-Repetition:</p>
+
+<ul>
+<li style="list-style-type:disc"><strong>Tối ưu hóa việc ghi nhớ: </strong>Thay vì tập trung học một lượng lớn từ cùng một lúc, Spaced-Repetition phân chia từ vựng thành các chủ đề nhỏ và lặp lại chúng theo một khoảng thời gian được xác định khoa học.</li>
+<li style="list-style-type:disc"><strong>Tiết kiệm thời gian: </strong>Kỹ thuật này giúp bạn tiết kiệm thời gian so với việc lặp lại liên tục một danh sách từ vựng mà không có kế hoạch. Việc học được phân chia theo thời gian giúp tăng hiệu suất và hiệu quả hơn.</li>
+<li style="list-style-type:disc"><strong>Tăng cường lâu dài:</strong> Nhờ việc lặp lại từ vựng theo cách có kế hoạch và khoa học, Spaced-Repetition giúp củng cố kiến thức trong bộ nhớ dài hạn của bạn, giúp bạn nhớ từ vựng lâu hơn kể cả khi không thường xuyên sử dụng.&nbsp;</li>
+<li style="list-style-type:disc"><strong>Giảm stress</strong>: Việc biết rằng từ vựng sẽ được lặp lại theo một kế hoạch đã được xác định trước giúp giảm bớt áp lực và lo lắng trong quá trình học, giúp tăng khả năng tập trung và tiếp thu kiến thức.</li>
+<li style="list-style-type:disc"><strong>Tăng cường tự tin: </strong>Khi bạn nhớ từ vựng hiệu quả, bạn sẽ cảm thấy tự tin hơn khi tiếp cận các bài thi như TOEIC, vì bạn biết rằng bạn đã chuẩn bị tốt và có kiến thức cần thiết để thành công.</li>
+</ul>
+
+<p style="text-align:center"><img src="https://lh7-us.googleusercontent.com/MIGl8WO1jexnYsMJijQnXfnloydlFChQDIl3FqCIfnya8KtDt3qtDmLDlKzJXaQt4xNRJx8jWX3RoedLWbhJvLYrF1G20SZmYwYpgovJHpiFEbLp5kpUIPBd89nDcvbRSROefuZ4a2yrWxHzkoFm2qw" style="height:370px; width:400px"></p>
+
+<p style="text-align:center"><em>Việc áp dụng phương pháp Spaced-Repetition đem lại rất nhiều lợi ích trong việc nhớ kiến thức tiếng Anh</em></p>
+
+<p style="text-align:center"><span style="background-color:#ffffff; color:#1155cc; font-family:Roboto,Arial,sans-serif; font-size:16px"><u><a href="https://study4.com/posts/928/lo-trinh-hoc-toeic-2-ky-nang-tai-nha-dat-450-650-cho-nguoi-moi-bat-dau/" style="box-sizing: border-box; color: rgb(33, 50, 97); text-decoration: none; background-color: rgb(255, 255, 255); cursor: pointer; font-family: Roboto, Arial, sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal;"><img src="https://lh7-us.googleusercontent.com/gqHadWoDSiqWctuT54Ewk-csbhtjSQPV8gC-huKB1SzX6DulskWftNFB-sHvj9MV5K7RERQZ3uA-LJOS2bD-qbyJ8acNHw4a-sbUIga5bj8mMk1ZK24OMJGKgFX6XYw977Rb_3gX7jEQRQgARma8GOU" style="border-style:none; box-sizing:border-box; display:block; height:87px; margin:1rem auto; max-width:100%; vertical-align:middle; width:624px"></a></u></span></p>
+
+<h2 id="iii.-cách-áp-dụng-spaced-repetition-vào-việc-học-từ-vựng-toeic"><strong>III. Cách áp dụng Spaced-Repetition vào việc học từ vựng TOEIC</strong></h2>
+
+<p>Một trong những hình thức học từ vựng bằng phương pháp Spaced-Repetition phổ biến nhất là flashcard. Sau đây là 2 cách xây dựng flashcard mà bạn có thể lựa chọn cho việc học từ vựng TOEIC của mình:</p>
+
+<h3 id="1.-tạo-flashcard-thủ-công"><span style="font-size:20px"><span style="color:#434343"><strong>1. Tạo flashcard thủ công</strong></span></span></h3>
+
+<p>Flashcard giấy là một cách truyền thống để học từ vựng vẫn được nhiều học viên ưa chuộng cho đến hiện tại. Sau đây là cách làm flashcard giấy giúp bạn học từ vựng TOEIC hiệu quả:</p>
+
+<p><img src="https://lh7-us.googleusercontent.com/-mT88Pttv-HR9QP5p6CdT1TzorqMmzIrA6BuFEV3683HfeEf2kfmzWyW8yND26V1e-_FiQEtVAtJueuIZvIEEAsHAO3mIvdctpUviqyXQtZQbDiMjwyNaqdiy-frD4fHeBjxqpZp4L_XIz0EoH80dXE" style="height:309px; width:412px"></p>
+
+<p style="text-align:center"><em>Flashcard giấy được rất nhiều học sinh ưa chuộng bởi có tính tương tác và trang trí cao cùng với giá thành rẻ</em></p>
+
+<ul>
+<li style="list-style-type:disc"><strong>Chuẩn bị tài liệu và vật liệu cần thiết:</strong> Chuẩn bị tài liệu từ vựng TOEIC theo chủ đề mà bạn muốn học. Bạn cũng sẽ cần một số thẻ giấy hoặc thẻ bài, bút và bất kỳ dụng cụ nào khác để trang trí (nếu muốn).</li>
+<li style="list-style-type:disc"><strong>Chọn kích thước và cắt thẻ giấy: </strong>Quyết định kích thước của flashcard của bạn và sau đó cắt các thẻ giấy thành kích thước đó. Phổ biến nhất là kích thước khoảng 3x5 inch hoặc 4x6 inch. Bạn cũng có thể tiết kiệm thời gian bằng cách mua các bộ flashcard trắng được làm sẵn ở các nhà sách.&nbsp;</li>
+<li style="list-style-type:disc"><strong>Viết từ vựng và câu ví dụ: </strong>Viết từ vựng ở mặt trước của từng tấm card và câu ví dụ hoặc nghĩa của từ vựng ở mặt sau của card. Hãy chắc chắn rằng bạn viết chữ rõ ràng và dễ đọc nhé.</li>
+<li style="list-style-type:disc"><strong>Thiết kế và trang trí (tùy chọn):</strong> Bạn cũng có thể trang trí bộ flashcard của mình để làm cho chúng thú vị hơn và dễ nhớ hơn. Bạn có thể sử dụng màu sắc, hình ảnh hoặc biểu tượng để tạo ra flashcard cá nhân hóa.</li>
+<li style="list-style-type:disc"><strong>Kiểm tra và ôn lại:</strong> Khi bạn đã hoàn thành các flashcard, hãy sử dụng chúng để kiểm tra và ôn lại từ vựng. Sau khi học xong từ vựng, hãy lật 1 mặt của flashcard lại và đoán nghĩa/từ vựng đó. Ví dụ, bạn có thể lật mặt có toàn bộ tiếng Anh và đoán nghĩa tiếng Việt, hoặc lật mặt có toàn bộ tiếng Việt và đưa ra từ tiếng Anh mang nghĩa đó. Hãy chắc chắn rằng bạn đặt thẻ giấy theo trình tự ngẫu nhiên để không nhớ từ vựng theo thứ tự cố định.</li>
+<li style="list-style-type:disc"><strong>Sử dụng thường xuyên: </strong>Sử dụng flashcard giấy của bạn mỗi ngày để ôn lại từ vựng TOEIC. Bạn cũng có thể mang theo chúng và ôn lại mọi lúc, mọi nơi.</li>
+</ul>
+
+<p>Bằng cách này, bạn có thể tạo ra các flashcard giấy cá nhân hóa và sử dụng chúng một cách hiệu quả để học từ vựng TOEIC.</p>
+
+<p><img src="https://lh7-us.googleusercontent.com/FnV_kx6yJxGq-HckbdjHAWnR4Os2tqJVzekaCn-diAvcE2NPuC42DDGxDgEJmtGJ70dIpY3Xnklw4zn0fRfA4bQ5kR7g3kGzSW-4G4uWhBSQ9QxqP2Mu2G8InFfJ0jC4ucyucgjNMixgSZub0kAeYUc" style="height:276px; width:486px"></p>
+
+<p style="text-align:center"><em>Flashcard giấy là một cách truyền thống để học từ vựng vẫn được nhiều học viên ưa chuộng cho đến hiện tại</em></p>
+
+<p><strong>Tuy nhiên, flashcard giấy cũng có một số bất lợi, kể đến như:</strong></p>
+
+<ul>
+<li style="list-style-type:disc">Hạn chế về số lượng từ vựng: Flashcard giấy có giới hạn về không gian, do đó bạn có thể không thể chứa được một lượng lớn từ vựng cần ôn tập cho kỳ thi TOEIC.</li>
+<li style="list-style-type:disc">Khó khăn trong việc quản lý: Khi số lượng flashcard tăng lên, việc quản lý chúng trở nên khó khăn hơn. Bạn có thể phải sắp xếp chúng theo thứ tự chủ đề hoặc theo bảng chữ cái để dễ dàng tìm kiếm.</li>
+<li style="list-style-type:disc">Không cung cấp phản hồi tức thì: Flashcard giấy không cung cấp phản hồi tức thì như các ứng dụng flashcard trực tuyến có thể cung cấp. Do đó, bạn không biết ngay lập tức liệu câu trả lời của mình có đúng hay không.</li>
+<li style="list-style-type:disc">Khả năng cập nhật hạn chế: Nếu bạn cần cập nhật hoặc thêm từ vựng mới, việc thay đổi trên flashcard giấy có thể gây khó khăn và tốn thời gian.</li>
+<li style="list-style-type:disc">Khả năng sử dụng linh hoạt: Flashcard giấy không cung cấp tính linh hoạt như các ứng dụng trực tuyến, bạn không thể dễ dàng thay đổi từ vựng, chỉnh sửa hoặc tạo ra các bài tập mới.</li>
+</ul>
+
+<p>Tóm lại, trong quá trình ôn thi TOEIC, mặc dù flashcard giấy có thể hữu ích trong việc ghi nhớ từ vựng, nhưng cũng cần phải xem xét các hạn chế của chúng và có thể kết hợp sử dụng với các ứng dụng hoặc công nghệ trực tuyến khác để đạt được hiệu quả tốt nhất.</p>
+
+<h3 id="2.-sử-dụng-các-công-cụ-flashcard-online"><span style="font-size:20px"><span style="color:#434343"><strong>2. Sử dụng các công cụ flashcard online</strong></span></span></h3>
+
+<p>Nếu bạn ưa thích sự tiện lợi và không muốn phải làm flashcard thủ công, bạn hoàn toàn có thể sử dụng các công cụ flashcard online.</p>
+
+<p>Hiện nay số lượng công cụ flashcard online rất đa dạng và dễ sử dụng, giúp bạn dễ dàng học từ vựng theo <a href="https://study4.com/posts/260/phuong-phap-lap-lai-ngat-quang-va-tip-hoc-tu-vung-tieng-anh-nho-lau/" style="text-decoration:none"><span style="color:#1155cc"><strong><u>phương pháp Spaced-Repetition</u></strong></span></a>.</p>
+
+<p>Nếu bạn đang băn khoăn nên sử dụng công cụ flashcard ở đâu, tham khảo ngay công cụ của STUDY ngay dưới đây nhé!</p>
+
+<p><em><strong><span style="background-color:#ffffcc">Tham khảo&nbsp;</span><a href="https://study4.com/posts/260/phuong-phap-lap-lai-ngat-quang-va-tip-hoc-tu-vung-tieng-anh-nho-lau/#ii.-c%C3%A1ch-v%E1%BA%ADn-d%E1%BB%A5ng-ph%C6%B0%C6%A1ng-ph%C3%A1p-l%E1%BA%B7p-l%E1%BA%A1i-ng%E1%BA%AFt-qu%C3%A3ng-trong-h%E1%BB%8Dc-t%E1%BB%AB-v%E1%BB%B1ng-ti%E1%BA%BFng-anh"><span style="background-color:#ffffcc">Cách vận dụng phương pháp lặp lại ngắt quãng trong học từ vựng tiếng Anh</span></a></strong></em></p>
+
+<h2 id="iv.-thực-hành-spaced-repetition-trong-khóa-học-toeic-của-study4"><strong>IV. Thực hành Spaced-Repetition trong khóa học TOEIC củaLearnEnglish</strong></h2>
+
+<p>Công cụ flashcard củaLearnEnglish rất được ưa chuộng bởi các học viên TOEIC. Khóa học củaLearnEnglish đã tổng hợp 1200 từ vựng TOEIC có khả năng 99% sẽ xuất hiện trong bài thi thật và 17 chủ đề ngữ pháp quan trọng nhất!</p>
+
+<p style="text-align:center"><span style="color:#cc4125"><strong><img src="https://lh7-us.googleusercontent.com/zR7NsbZquwkOsPJ6p6cCkxPidmiVeiKVNgbhGZgGRI87fIyQF-DolW9n0Dmlrx9ckTf0aWfFrNL9iX4ZAlQWdHhRNwfZyK7EaSPIKVVSSBp1XlIgH-EhlUO-cIyWcNiPDPUxr5X3kaCflRhl5gtfwys" style="height:276px; width:624px"></strong></span></p>
+
+<p>Với giao diện dễ dùng, dễ lưu trữ, bạn có thể ôn luyện từ vựng, hoặc thậm chí tự tạo danh sách từ vựng theo chủ đề để dễ dàng học tập, ôn luyện và ghi nhớ.</p>
+
+<p style="text-align:center"><iframe frameborder="0" height="315" src="https://www.youtube.com/embed/IcAOwW4sIyg?si=ObQ3FpZy7_gv6sif" title="YouTube video player" width="560"></iframe></p>
+
+<p>Với bộ flashcards chứa 1200 từ vựng cùng với đa dạng bài tập và tài liệu lý thuyết về ngữ pháp đi kèm, bạn sẽ có cơ hội tăng cường kiến thức cơ bản về Tiếng Anh một cách toàn diện.</p>
+
+<p>Những tài liệu này không chỉ giúp bạn mở rộng vốn từ vựng mà còn cung cấp cơ hội thực hành và nắm vững ngữ pháp, từ đó giúp bạn tự tin hơn trong việc sử dụng Tiếng Anh trong các tình huống thực tế.</p>
+
+<p style="text-align:center"><span style="color:#cc4125"><strong><img src="https://lh7-us.googleusercontent.com/Z4HaTE_vvMr4cOxhfzes3fxGW1779Vel4rFCYVQFp1BgyLq_sCncOSezHcUuPCqvB6paS3T2Ci0KkODNOAEdrcxhPK_BS_3ULmZ97Cp7cTUgteIOLXEZh5rlomi8-owDuIhoaVuIrbjCZltTct1hA2Y" style="height:331px; width:624px"></strong></span></p>
+
+<p>Đặc biệt hơn, các từ này đều có khả năng 99% sẽ xuất hiện trong bài thi TOEIC.</p>
+
+<p>Mỗi flashcard không chỉ đơn thuần là một từ vựng mà còn kèm theo một loạt các thông tin bổ sung, bao gồm ảnh minh họa, nghĩa tiếng Việt và tiếng Anh, phát âm, phiên âm và các ví dụ minh họa sử dụng từ trong ngữ cảnh thực tế.</p>
+
+<p style="text-align:center"><span style="color:#cc4125"><strong><img src="https://lh7-us.googleusercontent.com/VPuaA40RWJ-0Rtgpo5Yi88mb5d3i8W6KIrWfruHiqNkkUxsqDWwZ7o8h-DJ-vB7C5xHRBa8Mp_lPnDcJu3MVkH-LfO4Gyt3DYYCEt9273IiRU-KOdVHnSTKIS-l8Oca09TCpMmJ7Zr_49GgRCxY8SXI" style="height:272px; width:624px"></strong></span></p>
+
+<p>Bằng việc cung cấp một phương pháp học đa dạng và tương tác, khóa học này cho phép bạn không chỉ học từ vựng một cách hiệu quả mà còn có cơ hội thực hành và củng cố kiến thức thông qua các bài tập mini-games và các list từ bổ sung.</p>
+
+<p>Điều này giúp bạn phát triển kỹ năng ngôn ngữ một cách toàn diện và tự tin hơn trong kỳ thi TOEIC sắp tới.</p>
+
+<div style="-webkit-text-stroke-width:0px; background-color:#ffffff; box-sizing:border-box; color:#1a1a1a; font-family:Roboto,Arial,sans-serif; font-size:16px; font-style:normal; font-variant-caps:normal; font-variant-ligatures:normal; font-weight:400; letter-spacing:normal; orphans:2; text-align:left; text-decoration-color:initial; text-decoration-style:initial; text-decoration-thickness:initial; text-indent:0px; text-transform:none; white-space:normal; widows:2; word-spacing:0px">
+<table cellspacing="0" style="border-collapse:collapse; border:none; box-sizing:border-box; color:#1a1a1a; display:block; font-size:inherit; margin:0px auto 1rem; max-width:100%; overflow-x:auto; table-layout:fixed; width:624px">
+<tbody>
+    <tr>
+        <td style="background-color:#f0ffff; border-color:#f0ffff; border-style:solid; border-width:1px; vertical-align:top">
+        <p><span style="color:#1a1a1a"><strong>Khóa học&nbsp;</strong></span><a href="https://study4.com/posts/931/gioi-thieu-ve-khoa-hoc-complete-toeic-study4-target-450-650-cho-nguoi-moi-bat-dau/" style="box-sizing: border-box; color: rgb(53, 80, 154); text-decoration: none; background-color: transparent; cursor: pointer;"><span style="color:#1155cc"><strong><u>Complete TOEIC</u></strong></span></a><span style="color:#1a1a1a"><strong>&nbsp;sẽ giúp bạn nắm được đầy đủ Chiến lược làm bài - Từ vựng <a href="https://study4.com/posts/260/phuong-phap-lap-lai-ngat-quang-va-tip-hoc-tu-vung-tieng-anh-nho-lau/">(Spaced-Repetition)</a> - Ngữ pháp và luyện nghe theo&nbsp;</strong></span><a href="https://study4.com/posts/261/nghe-chep-chinh-ta-va-cac-tip-nang-cao-trinh-do-listening/" style="box-sizing: border-box; color: rgb(53, 80, 154); text-decoration: none; background-color: transparent; cursor: pointer;"><span style="color:#1155cc"><strong><u>phương pháp Dictation</u></strong></span></a><span style="color:#1a1a1a"><strong>.</strong></span></p>
+
+        <p style="text-align:center"><iframe frameborder="0" height="315" src="https://www.youtube.com/embed/VPL358kfdQ4?si=t1MxBLrbSlV6dJfP" style="box-sizing: border-box;" title="YouTube video player" width="560"></iframe></p>
+
+        <p style="text-align:center"><a href="https://study4.com/courses/28/complete-toeic/?itm_source=seo&amp;itm_medium=article&amp;itm_campaign=blogpost_internal_link&amp;itm_content=938" style="box-sizing: border-box; color: rgb(53, 80, 154); text-decoration: none; background-color: transparent; cursor: pointer;"><span style="color:#1155cc"><u><img src="https://lh7-us.googleusercontent.com/ZVWS_00U_OY2j2wuvu387z13LGsxkIOxbAcVudq5Y7_mdt1QxNM-ipGM-sU3V4lvcgn3jNPP7Ko7WJtAJT-8nzRZn46TqPcd9NDyfDIDn2-PQPVli8tHZYskNYxUps_TUKSknxrUj7Ucnmjj2nYcS8w" style="border-style:none; box-sizing:border-box; display:block; height:84px; margin:1rem auto; max-width:100%; vertical-align:middle; width:600px"></u></span></a></p>
+
+        <p><span style="color:#1a1a1a"><em>Khi kết thúc khóa học, bạn sẽ được:</em></span></p>
+
+        <p><span style="color:#1a1a1a"><em>1️⃣ Có nền tảng ngữ pháp vững chắc và xây dựng vốn từ vựng 99% sẽ xuất hiện trong bài thi TOEIC;</em></span></p>
+
+        <p><span style="color:#1a1a1a"><em>2️⃣ Cải thiện kỹ năng nghe, khắc phục các vấn đề khi nghe như miss thông tin, âm nối, tốc độ nói nhanh;</em></span></p>
+
+        <p><span style="color:#1a1a1a"><em>3️⃣ Nắm vững cách làm tất cả các dạng câu hỏi trong bài thi TOEIC Listening và Reading.</em></span></p>
+
+        <p style="text-align:center"><span style="color:#1a1a1a"><strong>CÓ GÌ TẠI KHÓA HỌC CỦALearnEnglish?</strong></span></p>
+
+        <p><span style="color:#1a1a1a"><strong>📖Học từ vựng TOEIC:&nbsp;</strong></span><span style="color:#1a1a1a">Khóa học cung cấp 1200 từ vựng 99% sẽ xuất hiện trong bài thi TOEIC. Mỗi flashcard gồm ảnh, nghĩa tiếng Việt - tiếng Anh, phát âm, phiên âm và ví dụ. Bạn có thể luyện tập thêm các list từ với đa dạng các bài tập mini-games.</span></p>
+
+        <hr>
+        <p><span style="color:#1a1a1a"><strong>📝Nắm chắc ngữ pháp TOEIC:</strong></span><span style="color:#1a1a1a">&nbsp;Khóa học cung cấp 17 chủ đề ngữ pháp quan trọng kèm theo bài tập trắc nghiệm có giải thích chi tiết để bạn thực hành.</span></p>
+
+        <hr>
+        <p><span style="color:#1a1a1a"><strong>🧠Chiến lược và phương pháp làm bài:&nbsp;</strong></span><span style="color:#1a1a1a">Khóa học cung cấp video bài giảng hướng dẫn chi tiết cách làm từng dạng câu hỏi trong TOEIC Reading và Listening kèm theo hơn 1000 câu hỏi trắc nghiệm có giải thích chi tiết.</span></p>
+
+        <hr>
+        <p><span style="color:#1a1a1a"><strong>🎧Thực hành nghe chép chính tả TOEIC:&nbsp;</strong></span><span style="color:#1a1a1a">Bạn có thể luyện tập nghe điền từ hoặc chép lại cả câu. Để đạt hiệu quả tốt nhất, mỗi ngày bạn nên luyện tập ít nhất 20 phút với phương pháp này. Tốc độ nghe có thể được điều chỉnh nhanh hay chậm tùy theo khả năng của bạn.</span></p>
+        </td>
+    </tr>
+</tbody>
+</table>
+</div>
+
+<h2 id="lời-kết"><strong>Lời kết&nbsp;</strong></h2>
+
+<p>Như vậy,LearnEnglish đã hướng dẫn bạn chi tiết cách áp dụng phương pháp Spaced-Repetition trong học từ vựng TOEIC bằng cả phương pháp thủ công lẫn online. Hy vọng rằng bạn có thể học tập và trau dồi thật nhiều từ vựng với phương pháp học này.</p>
+
+<p style="text-align:justify">Nếu bạn có bất kỳ thắc mắc nào về cách cách áp dụng Spaced-Repetition vào việc học từ vựng IELTS, vui lòng bình luận ở phía dưới bài viết hoặc liên hệ tới các cổng thông tin củaLearnEnglish để được hỗ trợ kịp thời nhé!</p>
+                    </div>
+                    
+
+                    
+
+                    
+                </div>
+
+                
+                <div class="post-tags">
+                
+                    <span class="tag">toeic</span>
+                
+                </div>
+                
+                <br>
+
+                <div class="post-comments-wrapper">
+                    <h4 id="bình-luận">Bình luận</h4>
+                    
+
+
+
+<form action="/posts/938/comment/" method="POST" class="mt-2 md-comment-input jqform jqcomment-form" data-reload-html="#obj-comments-938" data-target="#md-comments-box" data-submitting="false">
+    
+<input name="csrfmiddlewaretoken" type="hidden" value="SVWmt0jyYufVMKxfwwE0wC0DbDyCBuyPgYg9SIDEiIWEaGZTKWJZNmCrsgCEyhUP">
+
+
+    
+    
+
+    <div class="input-group">
+        <textarea name="content" rows="1" class="form-control custom-control jqcomment-textarea" placeholder="Chia sẻ cảm nghĩ của bạn ..."></textarea>
+        <div class="input-group-append">
+            <button class="input-group-addon btn btn-primary jqcomment-submit">Gửi</button>
+        </div>
+    </div>
+</form>
+
+
+
+                    <br>
+                    <div id="obj-comments-938" class="jqhtml-loader" data-href="/posts/938/comments/"><p><i>Chưa có bình luận nào. Hãy trở thành người đầu tiên bình luận bài này.</i></p></div>
+                </div>
+
+                
+
+                <br>
+                <div>
+                    <div class="h3">Các bài viết cùng chủ đề</div>
+                    
+<div class="">
+<div class="center">
+    
+        
+        <div class="posts-list">
+        
+            
+<div class="postlist-card">
+
+
+<div class="postlist-card-img sm mb-2">
+    <img class="lazyel card-img entered loaded" data-src="https://study4.com/media/examprep/Post/files/2024/11/19/vocabulary_7.png" data-ll-status="loaded" src="https://study4.com/media/examprep/Post/files/2024/11/19/vocabulary_7.png">
+</div>
+
+<div class="postlist-card-content-wrapper">
+    
+    <span class="d-block post-topic"><a class="font-weight-bold small" href="/topics/tu-vung/">TỪ VỰNG</a></span>
+    
+    <div class="postlist-title-wrapper">
+        
+        <div class="postlist-card-img-sm mb-2">
+            <img class="lazyel card-img" data-src="https://study4.com/media/examprep/Post/files/2024/11/19/vocabulary_7.png">
+        </div>
+        
+        <div class="postlist-title"><a href="/posts/1470/tong-hop-tu-vung-tieng-anh-chu-de-love-tinh-yeu/">Tổng hợp từ vựng tiếng Anh chủ đề Love (Tình yêu)</a></div>
+    </div>
+    <div class="postlist-card-content card-body d-flex flex-column p-0">
+        <p>Trong bài viết sau,LearnEnglish sẽ chia sẻ cho bạn các tips học từ vựng nói chung và một số từ vựng phổ biến thuộc chủ đề Love.</p>
+    </div>
+    
+    <div class="postlist-meta">
+        19/11/2024 bởi Bùi Hằng
+        
+    </div>
+    
+</div>
+</div>
+
+        
+            
+<div class="postlist-card">
+
+
+<div class="postlist-card-img sm mb-2">
+    <img class="lazyel card-img entered loaded" data-src="https://study4.com/media/examprep/Post/files/2024/11/19/vocabulary_6.png" data-ll-status="loaded" src="https://study4.com/media/examprep/Post/files/2024/11/19/vocabulary_6.png">
+</div>
+
+<div class="postlist-card-content-wrapper">
+    
+    <span class="d-block post-topic"><a class="font-weight-bold small" href="/topics/tu-vung/">TỪ VỰNG</a></span>
+    
+    <div class="postlist-title-wrapper">
+        
+        <div class="postlist-card-img-sm mb-2">
+            <img class="lazyel card-img" data-src="https://study4.com/media/examprep/Post/files/2024/11/19/vocabulary_6.png">
+        </div>
+        
+        <div class="postlist-title"><a href="/posts/1469/tong-hop-tu-vung-tieng-anh-chu-de-restaurant-nha-hang/">Tổng hợp từ vựng tiếng Anh chủ đề Restaurant (Nhà hàng)</a></div>
+    </div>
+    <div class="postlist-card-content card-body d-flex flex-column p-0">
+        <p>Trong bài viết sau,LearnEnglish sẽ chia sẻ cho bạn các tips học từ vựng nói chung và một số từ vựng phổ biến thuộc chủ đề Restaurant.</p>
+    </div>
+    
+    <div class="postlist-meta">
+        19/11/2024 bởi Bùi Hằng
+        
+    </div>
+    
+</div>
+</div>
+
+        
+            
+<div class="postlist-card">
+
+
+<div class="postlist-card-img sm mb-2">
+    <img class="lazyel card-img entered loaded" data-src="https://study4.com/media/examprep/Post/files/2024/11/19/vocabulary_5.png" data-ll-status="loaded" src="https://study4.com/media/examprep/Post/files/2024/11/19/vocabulary_5.png">
+</div>
+
+<div class="postlist-card-content-wrapper">
+    
+    <span class="d-block post-topic"><a class="font-weight-bold small" href="/topics/tu-vung/">TỪ VỰNG</a></span>
+    
+    <div class="postlist-title-wrapper">
+        
+        <div class="postlist-card-img-sm mb-2">
+            <img class="lazyel card-img" data-src="https://study4.com/media/examprep/Post/files/2024/11/19/vocabulary_5.png">
+        </div>
+        
+        <div class="postlist-title"><a href="/posts/1468/tong-hop-tu-vung-tieng-anh-chu-de-human-resources-quan-tri-nhan-luc/">Tổng hợp từ vựng tiếng Anh chủ đề Human Resources (Quản trị nhân lực)</a></div>
+    </div>
+    <div class="postlist-card-content card-body d-flex flex-column p-0">
+        <p>Trong bài viết sau,LearnEnglish sẽ chia sẻ cho bạn các tips học từ vựng nói chung và một số từ vựng phổ biến thuộc chủ đề Human Resources (Quản trị nhân lực).</p>
+    </div>
+    
+    <div class="postlist-meta">
+        19/11/2024 bởi Bùi Hằng
+        
+    </div>
+    
+</div>
+</div>
+
+        
+            
+<div class="postlist-card">
+
+
+<div class="postlist-card-img sm mb-2">
+    <img class="lazyel card-img entered loaded" data-src="https://study4.com/media/examprep/Post/files/2024/11/19/vocabulary_4.png" data-ll-status="loaded" src="https://study4.com/media/examprep/Post/files/2024/11/19/vocabulary_4.png">
+</div>
+
+<div class="postlist-card-content-wrapper">
+    
+    <span class="d-block post-topic"><a class="font-weight-bold small" href="/topics/tu-vung/">TỪ VỰNG</a></span>
+    
+    <div class="postlist-title-wrapper">
+        
+        <div class="postlist-card-img-sm mb-2">
+            <img class="lazyel card-img" data-src="https://study4.com/media/examprep/Post/files/2024/11/19/vocabulary_4.png">
+        </div>
+        
+        <div class="postlist-title"><a href="/posts/1467/tong-hop-tu-vung-tieng-anh-chu-de-mathematics-toan-hoc/">Tổng hợp từ vựng tiếng Anh chủ đề Mathematics (Toán học)</a></div>
+    </div>
+    <div class="postlist-card-content card-body d-flex flex-column p-0">
+        <p>Trong bài viết sau,LearnEnglish sẽ chia sẻ cho bạn các tips học từ vựng nói chung và một số từ vựng phổ biến thuộc chủ đề Mathematics (Toán học).</p>
+    </div>
+    
+    <div class="postlist-meta">
+        19/11/2024 bởi Bùi Hằng
+        
+    </div>
+    
+</div>
+</div>
+
+        
+            
+<div class="postlist-card">
+
+
+<div class="postlist-card-img sm mb-2">
+    <img class="lazyel card-img entered loaded" data-src="https://study4.com/media/examprep/Post/files/2024/11/19/vocabulary_3.png" data-ll-status="loaded" src="https://study4.com/media/examprep/Post/files/2024/11/19/vocabulary_3.png">
+</div>
+
+<div class="postlist-card-content-wrapper">
+    
+    <span class="d-block post-topic"><a class="font-weight-bold small" href="/topics/tu-vung/">TỪ VỰNG</a></span>
+    
+    <div class="postlist-title-wrapper">
+        
+        <div class="postlist-card-img-sm mb-2">
+            <img class="lazyel card-img" data-src="https://study4.com/media/examprep/Post/files/2024/11/19/vocabulary_3.png">
+        </div>
+        
+        <div class="postlist-title"><a href="/posts/1466/tong-hop-tu-vung-tieng-anh-chu-de-tet-lunar-new-year/">Tổng hợp từ vựng tiếng Anh chủ đề Tết (Lunar New Year)</a></div>
+    </div>
+    <div class="postlist-card-content card-body d-flex flex-column p-0">
+        <p>Trong bài viết sau,LearnEnglish sẽ chia sẻ cho bạn các tips học từ vựng nói chung và một số từ vựng phổ biến thuộc chủ đề Lunar New Year.</p>
+    </div>
+    
+    <div class="postlist-meta">
+        19/11/2024 bởi Bùi Hằng
+        
+    </div>
+    
+</div>
+</div>
+
+        
+        </div>
+
+        
+
+
+
+    
+</div>
+</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-md-2 order-md-1">
+        
+        <div class="post-topics-list">
+            <p class="font-12 font-600">
+                Chuyên mục
+            </p>
+        
+            <div class="post-topics-listitem my-2">
+                <a class="text-dark" href="/blog/topics/tim-hieu-ve-learn-english/index.html">
+                    <b>TÌM HIỂU VỀ LEARNENGLISH</b>
+                </a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="/blog/topics/tinh-nang-tren-learn-english/">
+                    Tính năng trên LearnEnglish
+                </a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">KHÓA HỌC TRÊN LEARNENGLISH</a>
+            </div>
+        
+            <hr>
+        
+            <div class="post-topics-listitem my-2">
+                <a class="text-dark" href="#" onclick="showNotification()">
+                    <b>Review của học viên LearnEnglish</b>
+                </a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Học viên IELTS</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Học viên TOEIC</a>
+            </div>
+        
+            <hr>
+        
+            <div class="post-topics-listitem my-2">
+                <a class="text-dark" href="#" onclick="showNotification()">
+                    <b>Luyện thi IELTS</b>
+                </a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">IELTS Listening</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">IELTS Reading</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">IELTS Speaking</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">IELTS Writing</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">IELTS Materials</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Thông tin kỳ thi IELTS</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Kinh nghiệm thi IELTS</a>
+            </div>
+        
+            <hr>
+        
+            <div class="post-topics-listitem my-2">
+                <a class="text-dark" href="#" onclick="showNotification()">
+                    <b>Luyện thi TOEIC</b>
+                </a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">TOEIC Listening</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">TOEIC Reading</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">TOEIC Materials</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Thông tin kỳ thi TOEIC</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Kinh nghiệm thi TOEIC</a>
+            </div>
+        
+            <hr>
+        
+            <div class="post-topics-listitem my-2">
+                <a class="text-dark" href="#" onclick="showNotification()">
+                    <b>Tiếng Anh cơ bản</b>
+                </a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Phát âm</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Từ vựng</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Ngữ pháp</a>
+            </div>
+        
+            <hr>
+        
+            <div class="post-topics-listitem my-2">
+                <a class="text-dark" href="#" onclick="showNotification()">
+                    <b>Luyện Thi HSK-HSKK</b>
+                </a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Tiếng Trung cơ bản</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Kiến thức HSK-HSKK</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Thông tin kỳ thi HSK-HSKK</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Kinh nghiệm thi HSK-HSKK</a>
+            </div>
+        
+            <hr>
+        
+            <div class="post-topics-listitem my-2">
+                <a class="text-dark" href="#" onclick="showNotification()">
+                    <b>Tiếng Anh cho người đi làm</b>
+                </a>
+            </div>
+        
+            <hr>
+        
+            <div class="post-topics-listitem my-2">
+                <a class="text-dark" href="#" onclick="showNotification()">
+                    <b>Du học</b>
+                </a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Admission essays</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Kinh nghiệm du học</a>
+            </div>
+        
+            <hr>
+        </div>
+        
+        <script>
+            function showNotification() {
+                alert("Bài viết này sẽ được cập nhật trong tương lai");
+            }
+        </script>
+        
+
+<hr>
+
+</div>
+
+    </div>
+</div>
+</div>
+
+                
+            </div>
+            
+        </div>
+        
+
+        
+    
+
+    <div class="modal" id="site-modal-lg" tabindex="-1" aria-labelledby="site-modal-lg" aria-hidden="true" data-keyboard="false" data-backdrop="static">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+                <div class="modal-body" id="site-modal-lg-content"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="site-modal-md" tabindex="-1" aria-labelledby="site-modal-md" aria-hidden="true" data-keyboard="false" data-backdrop="static">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+                <div class="modal-body" id="site-modal-md-content"></div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+window.csrf_token = 'SVWmt0jyYufVMKxfwwE0wC0DbDyCBuyPgYg9SIDEiIWEaGZTKWJZNmCrsgCEyhUP';
+window.current_user =
+
+{
+    is_authenticated: true,
+    id: 1532546,
+    name: "chauthithuyquynh2019",
+    is_admin: false,
+    is_staff: false,
+    is_superuser: false,
+}
+
+</script>
+    <script type="text/javascript" src="/static/ckeditor/ckeditor-init-override.js?v=1735926894"></script>
+    <script type="text/javascript" src="/static/ckeditor/ckeditor/ckeditor.js"></script>
+    <script type="text/javascript" src="/static/js/webaudiorecorder/WebAudioRecorder.min.js"></script>
+    <script type="text/javascript" src="/static/dist/vendor.ad60eb658fc650d75097.js?v=1735926894"></script>
+    <script type="text/javascript" src="/static/dist/main.651d8fa8cadf332cd75a.js?v=1735926894"></script>
+
+    
+
+<script type="text/javascript">
+$(function() {
+    const isInternalCourseURL = (url) => (new URL(url).origin == location.origin && (url.indexOf('/courses/') > -1 || url.indexOf('/lp/')) > -1);
+    $('.post-content a').each(function(idx,el) {
+        var $link = $(el);
+        var url = $link.attr('href');
+        if (isInternalCourseURL(url)) {
+            var qs = generate_qs({
+                'itm_source': 'seo',
+                'itm_medium': 'article',
+                'itm_campaign': 'blogpost_internal_link',
+                'itm_content': '938'
+            });
+            var new_url = url + '?' + qs;
+            $link.attr('href', new_url);
+        }
+    });
+});
+</script>
+
+    <script type="text/javascript">
+        function isFacebookApp() {
+            var ua = navigator.userAgent || navigator.vendor || window.opera;
+            return (ua.indexOf("FBAN") > -1) || (ua.indexOf("FBAV") > -1);
+        }
+        if (isFacebookApp()) {
+            $('.g-login-block').hide();
+        }
+    </script>
+
+    
+
+    
+    
+    
+
+
+    
+    
+    
+
+
+    
+    <script type="text/javascript">
+        (function(w,d,t,u,n,a,m){w['MauticTrackingObject']=n;
+            w[n]=w[n]||function(){(w[n].q=w[n].q||[]).push(arguments)},a=d.createElement(t),
+            m=d.getElementsByTagName(t)[0];a.async=1;a.src=u;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://mautic.study4.com/mtc.js','mt');
+
+        
+            
+            mt('send', 'pageview', {
+                email: "chauthithuyquynh2019@gmail.com",
+                uid: "1532546",
+                username: "chauthithuyquynh2019",
+                is_paid: false,
+                is_trial: true
+            });
+            
+        
+    </script>
+    
+<script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon="{&quot;rayId&quot;:&quot;8fd39565ceb29cf6&quot;,&quot;serverTiming&quot;:{&quot;name&quot;:{&quot;cfExtPri&quot;:true,&quot;cfL4&quot;:true,&quot;cfSpeedBrain&quot;:true,&quot;cfCacheStatus&quot;:true}},&quot;version&quot;:&quot;2024.10.5&quot;,&quot;token&quot;:&quot;8d646591bd144e069b89dada41cfc02b&quot;}" crossorigin="anonymous"></script>
+
+
+    <div class="highlight-control" style="display: none; top: -35px;">
+        <div>
+            <span class="fas fa-trash highlight-icon highlight-remove" aria-hidden="true"></span>
+            <span class="fas fa-pencil highlight-icon highlight-note" aria-hidden="true"></span>
+            <span class="highlight-icon highlight-color blue"></span>
+            <span class="highlight-icon highlight-color pink"></span>
+            <span class="highlight-icon highlight-color green"></span>
+            <span class="highlight-icon highlight-color yellow"></span>
+            <span class="highlight-icon highlight-color underred"></span>
+            <span class="highlight-icon highlight-color crossed">abc</span>
+            <span class="ml-2 fas fa-plus highlight-icon highlight-flashcard" data-toggle="modal" data-target="#highlight-modal" aria-hidden="true"></span>
+        </div>
+        <div class="highlight-editor" style="display: none;">
+            <textarea rows="3"></textarea>
+            <div><span class="far fa-check highlight-icon highlight-save" aria-hidden="true"></span></div>
+        </div>
+    </div>
+    <div class="modal" id="highlight-modal" tabindex="-1" aria-labelledby="highlight-modal" aria-hidden="true" data-keyboard="false" data-backdrop="static">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+                <div class="modal-body" id="highlight-modal-content"></div>
+            </div>
+        </div>
+    </div>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+<!-- Code injected--></body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="footer-wrapper" bis_skin_checked="1">
+        <div class="footer-container" bis_skin_checked="1">
+            <footer>
+
+
+
+                <div class="row" bis_skin_checked="1">
+                    <div class="col-12 col-sm-12 col-md" bis_skin_checked="1">
+                        <a href="/"><img class="mb-2" src="/assets/img/Logo_LearnEnglish.svg" alt="" height="30"></a>
+                        <small class="mb-2">©</small>
+                        <div class="site-socials" style="width: 140px !important;" bis_skin_checked="1">
+                            <a target="_blank" href="https://facebook.com/" bis_skin_checked="1"><span
+                                    class="social-link fab fa-facebook-square"></span></a>
+                            <a target="_blank" href="https://instagram.com/" bis_skin_checked="1"><span
+                                    class="social-link fab fa-instagram"></span></a>
+                            <a target="_blank" href="https://twitter.com/" bis_skin_checked="1"><span
+                                    class="social-link fab fa-twitter"></span></a>
+                            <a target="_blank" href="https://youtube.com/" bis_skin_checked="1"><span
+                                    class="social-link fab fa-youtube"></span></a>
+                            <a target="_blank" href="https://www.tiktok.com" bis_skin_checked="1"><span
+                                    class="social-link fab fa-tiktok"></span></a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md" bis_skin_checked="1">
+                        <div class="footer-title" bis_skin_checked="1">Về LearnEnglish</div>
+                        <ul class="list-unstyled text-small">
+                            <li><a href="/about/" bis_skin_checked="1">Giới thiệu</a></li>
+                            <li><a href="/contact/" bis_skin_checked="1">Liên hệ</a></li>
+                            <li><a href="/privacy/" bis_skin_checked="1">Điều khoản bảo mật</a></li>
+                            <li><a href="/terms/" bis_skin_checked="1">Điều khoản sử dụng</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-6 col-md" bis_skin_checked="1">
+                        <div class="footer-title" bis_skin_checked="1">Tài nguyên</div>
+                        <ul class="list-unstyled text-small">
+
+                            <li><a href="/tests/" bis_skin_checked="1">Thư viện đề thi</a></li>
+                            <li><a href="/posts/" bis_skin_checked="1">Blog</a></li>
+                            <li><a href="/materials/" bis_skin_checked="1">Kho tài liệu</a></li>
+
+
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md" bis_skin_checked="1">
+                        <div class="footer-title" bis_skin_checked="1">Chính sách chung</div>
+                        <ul class="list-unstyled text-small">
+                            <li><a href="/user-guide/" bis_skin_checked="1">Hướng dẫn sử dụng</a></li>
+                            <li><a href="/buying-guide/" bis_skin_checked="1">Hướng dẫn thanh toán</a></li>
+
+                            <li><a href="/buying-terms/" bis_skin_checked="1">Điều khoản và Điều Kiện Giao Dịch</a></li>
+                            <li><a href="/checkout-policy" bis_skin_checked="1">Chính sách kiểm hàng</a></li>
+                            <li><a href="/delivery-policy" bis_skin_checked="1">Chính sách giao, nhận hàng</a></li>
+                            <li><a href="/feedback/" bis_skin_checked="1">Phản hồi, khiếu nại</a></li>
+                            <li><a href="/return-policy" bis_skin_checked="1">Chính sách chuyển đổi, hoàn hủy</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+
+                <div class="footer-copyright text-center" bis_skin_checked="1">
+                    LearnEnglish © Bản quyền của GROUP11.
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

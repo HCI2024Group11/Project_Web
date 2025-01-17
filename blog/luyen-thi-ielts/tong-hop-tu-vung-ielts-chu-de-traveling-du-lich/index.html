@@ -1,0 +1,2421 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn English</title>
+    <link rel="icon" href="/assets/img/Avatar_LearnEnglish.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/f9374b778e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+    
+    <div class="topnav1 topnav-wrapper" bis_skin_checked="1">
+        <div class="topnav-container" bis_skin_checked="1">
+            <nav class="navbar  navbar-expand-lg">
+                <span class="navbar-brand">
+                    <a class="topnav-brand" href="/">
+                        <img class="topnav-logo" src="/assets/img/Logo_LearnEnglish.svg" alt="STUDY4">
+
+                    </a>
+                </span>
+                <button class="navbar-toggler pull-xs-right d-lg-none" type="button" data-toggle="collapse"
+                    data-target="#navbar-collapse">
+                    ☰
+
+                </button>
+                <div class="d-lg-block navbar-collapse justify-content-end collapse" id="navbar-collapse"
+                    bis_skin_checked="1">
+
+                    <ul class="nav">
+
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/courses/" bis_skin_checked="1">Course</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/skills/" bis_skin_checked="1">Skill</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/flashcards/me/" bis_skin_checked="1">Flashcards</a>
+                        </li>
+
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/blog/" bis_skin_checked="1">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/general-english/" bis_skin_checked="1">General english</a>
+                        </li>
+
+
+
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/courses/activate/" bis_skin_checked="1">
+                                Kích hoạt tài khoản
+                            </a>
+                        </li>
+
+                        <li class="nav-item user-topnav dropdown d-none d-lg-block">
+                            <a class="nav-link dropdown-toggle user-topnav-profile" href="/my-account/" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" bis_skin_checked="1">
+                                <span class="account-profile-img">
+
+                                    <img src="/assets/img/user_icon.webp" alt="ChuTanTai23130280">
+
+                                </span>
+
+                            </a>
+
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" bis_skin_checked="1">
+                                <div bis_skin_checked="1">
+                                    <h6 class="dropdown-header" id="thông-báo"> Thông báo </h6>
+                                    <div id="new-notis-dropdown-content" class="jqhtml-loader dropdown-text"
+                                        data-href="/notifications/newest/" bis_skin_checked="1">
+                                        <p class="font-sm"><i>Bạn chưa có thông báo mới.</i></p>
+
+
+                                        <div class="mt-2 link font-sm" bis_skin_checked="1"><a href="/notifications/"
+                                                bis_skin_checked="1">Xem tất cả &gt;&gt;</a></div>
+                                    </div>
+                                </div>
+
+                                <div class="dropdown-divider" bis_skin_checked="1"></div>
+                                <a class="dropdown-item" href="/studyplan/" bis_skin_checked="1">Lịch học của tôi</a>
+                                <a class="dropdown-item" href="/my-account/" bis_skin_checked="1">Trang cá nhân</a>
+                                <a class="dropdown-item" href="/logout/" bis_skin_checked="1">Đăng xuất</a>
+                            </div>
+                        </li>
+                        <li class="nav-item d-lg-none">
+                            <a class="nav-link" href="/notifications/" bis_skin_checked="1">Thông báo </a>
+                        </li>
+                        <li class="nav-item d-lg-none">
+                            <a class="nav-link" href="/studyplan/" bis_skin_checked="1">Lịch học của tôi</a>
+                        </li>
+                        <li class="nav-item d-lg-none">
+                            <a class="nav-link" href="/my-account/" bis_skin_checked="1">Trang cá nhân</a>
+                        </li>
+                        <li class="nav-item d-lg-none">
+                            <a class="nav-link" href="/logout/" bis_skin_checked="1">Đăng xuất</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+<script>
+    // JavaScript để xử lý dropdown
+    document.addEventListener('DOMContentLoaded', function() {
+        const profileBtn = document.querySelector('.user-topnav-profile');
+        const dropdownMenu = document.querySelector('.dropdown-menu');
+    
+        // Toggle dropdown khi click vào profile
+        profileBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            dropdownMenu.classList.toggle('show');
+        });
+    
+        // Đóng dropdown khi click ra ngoài
+        document.addEventListener('click', function(e) {
+            if (!profileBtn.contains(e.target) && !dropdownMenu.contains(e.target)) {
+                dropdownMenu.classList.remove('show');
+            }
+        });
+    });
+</script>
+    <script>
+        // JavaScript để xử lý dropdown
+        document.addEventListener('DOMContentLoaded', function () {
+            const profileBtn = document.querySelector('.user-topnav-profile');
+            const dropdownMenu = document.querySelector('.dropdown-menu');
+
+            // Toggle dropdown khi click vào profile
+            profileBtn.addEventListener('click', function (e) {
+                e.preventDefault();
+                dropdownMenu.classList.toggle('show');
+            });
+
+            // Đóng dropdown khi click ra ngoài
+            document.addEventListener('click', function (e) {
+                if (!profileBtn.contains(e.target) && !dropdownMenu.contains(e.target)) {
+                    dropdownMenu.classList.remove('show');
+                }
+            });
+        });
+    </script>
+
+
+
+
+
+
+
+
+
+<body class="highlighter-context">
+
+
+    <div class="topnav1 topnav-wrapper" bis_skin_checked="1">
+        
+    </div>
+    <script>
+        // JavaScript để xử lý dropdown
+        document.addEventListener('DOMContentLoaded', function () {
+            const profileBtn = document.querySelector('.user-topnav-profile');
+            const dropdownMenu = document.querySelector('.dropdown-menu');
+
+            // Toggle dropdown khi click vào profile
+            profileBtn.addEventListener('click', function (e) {
+                e.preventDefault();
+                dropdownMenu.classList.toggle('show');
+            });
+
+            // Đóng dropdown khi click ra ngoài
+            document.addEventListener('click', function (e) {
+                if (!profileBtn.contains(e.target) && !dropdownMenu.contains(e.target)) {
+                    dropdownMenu.classList.remove('show');
+                }
+            });
+        });
+    </script>
+
+
+
+
+
+        
+    <div id="fb-root" class=" fb_reset fb_reset"><div style="position: absolute; top: -10000px; width: 0px; height: 0px;"><div></div></div><div style="position: absolute; top: -10000px; width: 0px; height: 0px;"><div></div></div></div>
+    <script async="" defer="" crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&amp;version=v20.0&amp;appId=203430341284880&amp;autoLogAppEvents=1" nonce="1d3MdMH8" type="text/javascript"></script>
+    
+    
+
+    
+    <div class="site-elevator">
+        <div class="elevator-item elevator-open d-md-none">
+            <span class="fal fa-chevron-left" aria-hidden="true"></span>
+        </div>
+        <div class="elevator-item elevator-close d-md-none">
+            <span class="fal fa-chevron-right" aria-hidden="true"></span>
+        </div>
+        <div class="elevator-item">
+            <div class="jqdictionary-show" target="#">
+                <img src="/static/img/dictionary.png">
+                <div class="elevator-text">Từ điển</div>
+            </div>
+        </div>
+        <div class="jqdictionary-wrapper">
+            <span class="jqdictionary-expand fal fa-plus-square" aria-hidden="true"></span>
+            <span class="jqdictionary-close far fa-times" aria-hidden="true"></span>
+            <div class="h6 font-500 font-sm">
+                <a class="link jqdictionary-tab active" data-href="https://m.dict.laban.vn/">Anh-Việt</a> |
+                <a class="link jqdictionary-tab" data-href="https://www.wordreference.com/definition/">WordReference</a> |
+                <a class="link jqdictionary-tab" data-href="https://onelook.com/thesaurus/">Thesaurus</a> |
+                <a class="link jqdictionary-tab" data-href="https://vtudien.com/trung-viet/dictionary/nghia-cua-tu-%E4%BD%A0%E5%A5%BD">Tiếng Trung</a>
+            </div>
+            <div class="jqdictionary-iframe">
+                <iframe loading="lazy" frameborder="0"></iframe>
+            </div>
+        </div>
+
+
+        
+        <div class="elevator-item">
+            <a target="_blank" href="https://m.me/LearnEnglish.support">
+                <img src="/static/img/messenger.png">
+            </a>
+        </div>
+        
+
+        <div class="elevator-item">
+            <a target="_blank" href="https://zalo.me/LearnEnglish">
+                <img src="/static/img/zalo.jpg">
+            </a>
+        </div>
+
+
+        
+        <div class="elevator-item site-scrollTop" onclick="if (!window.__cfRLUnblockHandlers) return false; window.topFunction()" id="site-scrollTop" title="Go to top" style="display: none;">
+            <span class="fal fa-chevron-up" aria-hidden="true"></span>
+        </div>
+    </div>
+    
+
+    
+
+    <div class="site-wrapper">
+
+        
+
+        
+
+
+<div class="topnav1 topnav-wrapper">
+
+</div>
+
+        
+
+        
+        <div class="site-content-wrapper">
+            
+
+            
+
+            
+            
+            
+            
+
+            
+<div class="container pb-0">
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/">Trang chủ</a></li>
+        
+        <li class="breadcrumb-item"><a href="/blog/index.html">Bài viết</a></li>
+        <li class="breadcrumb-item"><a href="/blog/luyen-thi-ielts/index.html">IELTS Materials</a></li>
+        
+        <li class="breadcrumb-item active"><a href="/blog/luyen-thi-ielts/tong-hop-tu-vung-ielts-chu-de-traveling-du-lich/index.html">Tổng hợp từ vựng IELTS chủ đề Traveling (Du lịch)</a></li>
+    </ol>
+</nav>
+</div>
+
+
+            
+<div class="content-header py-0">
+<div class="container py-0">
+    <div class="image-wrapper">
+        <a href="/courses/level-test/">
+            
+        </a>
+    </div>
+    <br>
+    <h1 class="post-title" id="tổng-hợp-từ-vựng-ielts-chủ-đề-traveling-du-lịch">
+        Tổng hợp từ vựng IELTS chủ đề Traveling (Du lịch)
+        
+    </h1>
+    
+    <p class="post-description">
+        Nằm lòng topic từ vựng Traveling cho kỳ thi IELTS qua bài viết này nhé!
+    </p>
+    
+</div>
+</div>
+
+
+            
+            <div class="content-wrapper">
+                
+                
+<div class="container">
+<div class="row">
+    <div class="col-12 col-md-3 order-md-3">
+        <div class="post-toc-wrapper">
+            <div class="post-toc-title font-11 font-600">Table of contents</div>
+            <div class="js-toc"><ol class="toc-list "><li class="toc-list-item is-active-li"><a href="#i.-sự-quan-trọng-của-từ-vựng-với-kỳ-thi-ielts" class="toc-link node-name--H2  is-active-link">I. Sự quan trọng của từ vựng với kỳ thi IELTS</a></li><li class="toc-list-item"><a href="#ii.-tổng-hợp-từ-vựng-ielts-chủ-đề-traveling" class="toc-link node-name--H2 ">II. Tổng hợp từ vựng IELTS chủ đề Traveling</a></li><li class="toc-list-item"><a href="#iii.-tip-học-từ-vựng-ielts-nhớ-lâu-chủ-đề-traveling" class="toc-link node-name--H2 ">III. Tip học từ vựng IELTS nhớ lâu: Chủ đề Traveling</a></li><li class="toc-list-item"><a href="#lời-kết" class="toc-link node-name--H2 ">Lời kết</a></li></ol></div>
+        </div>
+        <br>
+
+        
+
+
+<div class="h4">Tìm hiểu thêm</div>
+<div class="site-links">
+
+<a class="site-link" href="https://LearnEnglish.com/l/UUUGo-oOaEI/">🎧 KHÓA HỌC IELTS INTENSIVE LISTENING</a>
+
+<a class="site-link" href="https://LearnEnglish.com/l/MwC86SbHDWk/">📖 KHÓA HỌC IELTS INTENSIVE READING (ACADEMIC)</a>
+
+<a class="site-link" href="https://LearnEnglish.com/l/uuvrH_Ic4yw/">📢 KHÓA HỌC IELTS INTENSIVE SPEAKING</a>
+
+<a class="site-link" href="https://LearnEnglish.com/l/HBhnwajftic/">📝 KHÓA HỌC IELTS INTENSIVE WRITING (ACADEMIC)</a>
+
+<a class="site-link" href="https://LearnEnglish.com/l/MvNPpMGAe2s/">📖 KHÓA HỌC IELTS GENERAL READING</a>
+
+<a class="site-link" href="https://LearnEnglish.com/l/Q5o89C9aOUc/">📝 KHÓA HỌC IELTS GENERAL WRITING</a>
+
+<a class="site-link" href="https://LearnEnglish.com/l/TE5OM6J3mcg/">📒 KHÓA HỌC IELTS FUNDAMENTALS (cơ bản)</a>
+
+<a class="site-link" href="https://LearnEnglish.com/l/s4WacmdglSk/">💻 KHÓA HỌC COMPLETE TOEIC</a>
+
+<a class="site-link" href="https://LearnEnglish.com/posts/259/cau-truc-de-thi-ielts-chi-tiet-va-chuan-nhat-2023/">📌 Cấu trúc đề thi IELTS</a>
+
+<a class="site-link" href="https://LearnEnglish.com/posts/291/cau-truc-de-thi-toeic-chuan-va-chi-tiet-nam-2023/">📌 Cấu trúc đề thi TOEIC</a>
+
+<a class="site-link" href="https://LearnEnglish.com/posts/258/thang-diem-ielts-va-cach-tinh-diem-ielts-overall-chuan-2023/">📌 Thang điểm IELTS và cách tính điểm IELTS Overall</a>
+
+<a class="site-link" href="https://LearnEnglish.com/posts/361/thang-diem-toeic-va-cach-tinh-diem-bai-thi-toeic/">📌 Thang điểm TOEIC và cách tính điểm TOEIC</a>
+
+</div>
+<br>
+
+
+
+        
+
+        <br>
+        
+
+
+
+
+<div class="sidebar-post-wrapper">
+<div class="center">
+    
+        
+        <div class="h4">
+            Review của học viên LearnEnglish
+            
+            <a class="ml-1 font-09 font-italic" href="/topics/review-cua-hoc-vien-LearnEnglish/">
+                Xem thêm
+                <span class="fal fa-arrow-right" aria-hidden="true"></span>
+            </a>
+            
+        </div>
+        
+        
+
+        
+
+
+
+    
+</div>
+</div>
+<br>
+
+
+
+
+        
+
+
+
+
+
+<h4 id="tham-gia-nhóm-facebook">Tham gia nhóm facebook</h4>
+
+<div class="image-wrapper fb-group mb-3">
+<a target="_blank" href="https://www.facebook.com/groups/1603927746835185"><img class="sidebar-banner" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXcb-nyj7JgdpDjze01TDO3e0wTOGOH20kLCmwTyWLGoulTXiomKbiTH_KI8wjscRzMg3igTeFnqr4OyAwvIk2yi2NrAKF89sooqNM0LoQYk2vj0jrIlACEK8g_Fynh-HWxfsnZYDE763X35JdesvBXmycM7?key=ezwyDTrTlQ8fa4GAczby1g"></a>
+</div>
+
+<div class="image-wrapper fb-group mb-3">
+<a target="_blank" href="https://www.facebook.com/groups/517057750992723"><img class="sidebar-banner" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXe6BuinESoVBd4lsp7D2Ng9_TjTMDDijwiTkdji1Y-L04RrggnZoOS8gdSZqD4OqQY3zsBtG_6N0RjvGQRL_85w3nGPp8UsC1QS572qY_Vf0cC8S-eK51DeDWFDSAw4CIZjlQlNrNxp4Vv7sSUVetoyScxn?key=ezwyDTrTlQ8fa4GAczby1g"></a>
+</div>
+
+<br>
+
+
+
+    </div>
+    <div class="col-12 col-md-7 order-md-2">
+        <div class="post-wrapper">
+            <div class="media post-author-media py-2 mb-3 border-bottom">
+                <div class="post-author-img">
+                    
+                    <img src="https://res.cloudinary.com/sandodep3/image/upload/w_300/sandodep3_x_96255548703714412352793642007929690225_gi9mvk" alt="anhdp.LearnEnglish">
+                    
+                </div>
+                <div class="media-body">
+                    <div class="post-author-name"><a target="_blank" href="/u/anhdp.LearnEnglish/">Phuong Anh Do</a></div>
+                    <div class="post-meta">02/12/2024</div>
+                </div>
+            </div>
+
+            <div class="post-main-wrapper">
+
+                
+
+                
+                <br>
+                <div class="contentblock gray-bg">
+                    <div class="h5 font-italic">Các bài viết liên quan</div>
+                    
+<ul class="post-links">
+
+
+
+<li class="post-link"><a href=" https://LearnEnglish.com/posts/1561/tong-hop-tu-vung-ielts-chu-de-hometown/">Tổng hợp từ vựng IELTS chủ đề Hometown</a></li>
+
+
+
+
+<li class="post-link"><a href=" https://LearnEnglish.com/posts/1559/tong-hop-tu-vung-ielts-chu-de-social-media/">Tổng hợp từ vựng IELTS chủ đề Social Media</a></li>
+
+
+</ul>
+
+                </div>
+                <br><br>
+                
+
+                <div class="post-main mt-2">
+                    
+                    <div id="post-content" class="post-content md-content js-toc-content" prewrap="">
+                        <p><img alt=" từ vựng IELTS chủ đề Traveling (Du lịch)" src="https://study4.com/media/uploads/editor/hangbm.LearnEnglish/2024/12/05/cach-dung-29.png" style="height:674px; width:1200px"></p>
+
+<p>Chủ đề Traveling là một trong những chủ đề quen thuộc và thú vị trong kỳ thi IELTS, đặc biệt ở phần Speaking và Writing. Việc sở hữu vốn từ vựng phong phú về chủ đề này không chỉ giúp bạn diễn đạt ý tưởng tự nhiên mà còn tạo điểm nhấn cho bài thi của mình. Trong bài viết này, LearnEnglish sẽ tổng hợp những từ vựng IELTS quan trọng liên quan đến Traveling và chia sẻ các mẹo học từ vựng hiệu quả, giúp bạn dễ dàng ghi nhớ và áp dụng từ vựng vào bài thi một cách linh hoạt và ấn tượng, cùng tham khảo nhé.</p>
+
+<h2 id="i.-sự-quan-trọng-của-từ-vựng-với-kỳ-thi-ielts"><span style="font-size:22px"><strong>I. Sự quan trọng của từ vựng với kỳ thi IELTS</strong></span></h2>
+
+<p><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXf8Fq088bg1PI4KWtqw19GNlwPL95rxREW8Ois4a84YS3KyrcA9IT8pEPshLOd2lK__5lbQgHI6KdyIcwQVIsVZkizNj-ZiiUNXq1i-Dnxa2hkrlN0ftGse4OeZ0HWOsW6bPn8m?key=_-Pk2qxzHUId6jxRocB1CWqF" style="height:301px; width:602px"></p>
+
+<p style="text-align:center"><em>Sự quan trọng của từ vựng với kỳ thi IELTS</em></p>
+
+<p><span style="font-size:20px"><strong>1. Vai trò của từ vựng Traveling trong kỹ năng Speaking</strong></span></p>
+
+<p>Trong phần Speaking, đặc biệt là Part 2 và Part 3, khả năng sử dụng từ vựng phong phú giúp thí sinh diễn đạt ý tưởng mạch lạc và tránh lặp từ. Chủ đề Traveling thường xuất hiện với các câu hỏi như:</p>
+
+<ul>
+<li style="list-style-type:disc">Do you like traveling?</li>
+<li style="list-style-type:disc">Describe a memorable trip you have taken.</li>
+<li style="list-style-type:disc">What are the benefits of traveling for young people?</li>
+</ul>
+
+<p>Để trả lời tốt và đạt điểm cao tại các câu hỏi này, thí sinh cần sử dụng các từ vựng mô tả cảm xúc, địa điểm và trải nghiệm một cách tự nhiên. Ví dụ, thay vì nói đơn giản: <em>I enjoy traveling because it’s fun,</em></p>
+
+<p>→ Thí sinh có thể diễn đạt chi tiết hơn: <em>Traveling fascinates me because it allows me to immerse myself in different cultures and explore breathtaking landscapes.</em></p>
+
+<p>Việc sử dụng các từ như immerse, breathtaking, hay explore không chỉ thể hiện vốn từ đa dạng mà còn giúp nâng cao điểm Lexical Resource, từ đó nâng band điểm Speaking hiệu quả.</p>
+
+<p><span style="font-size:20px"><strong>2. Vai trò của từ vựng Traveling trong kỹ năng Writing&nbsp;</strong></span></p>
+
+<p>Ở phần Writing Task 2, chủ đề Traveling thường xuất hiện dưới dạng các bài nghị luận về lợi ích hoặc tác động của du lịch đối với xã hội. Để đạt điểm cao, bài viết cần có từ vựng học thuật liên quan đến chủ đề.</p>
+
+<p>Ví dụ, với đề bài: <em>Some people believe that international travel has negative impacts on the environment. Do you agree or disagree?</em></p>
+
+<p>Một bài viết hiệu quả cần sử dụng các cụm từ như:</p>
+
+<ul>
+<li style="list-style-type:disc">Lợi ích: cultural exchange, broadening one’s horizons, educational opportunities.</li>
+<li style="list-style-type:disc">Hạn chế: environmental degradation, carbon footprint, over-tourism.</li>
+</ul>
+
+<p>→ Câu mẫu: <em>While international travel offers invaluable cultural exchange, it undeniably contributes to environmental degradation through increased carbon emissions.</em></p>
+
+<p>Sự chính xác và phong phú trong việc lựa chọn từ vựng đặc trưng thuộc chủ đề sẽ giúp bài viết thể hiện tư duy chặt chẽ và đạt điểm cao ở tiêu chí từ vựng.</p>
+
+<p><span style="font-size:20px"><strong>3. Vai trò của từ vựng Traveling trong kỹ năng Listening và Reading</strong></span></p>
+
+<p>Trong kỹ năng Reading, các bài đọc về du lịch thường chứa từ vựng liên quan đến địa danh, phương thức du lịch hoặc vấn đề toàn cầu như sustainable tourism (du lịch bền vững). Việc hiểu đúng từ vựng trong ngữ cảnh là yếu tố then chốt để trả lời chính xác các câu hỏi.</p>
+
+<p>Tương tự, kỹ năng Listening cũng yêu cầu thí sinh nắm bắt các từ thông dụng liên quan đến Traveling như departure time, guided tour, budget traveler. Nếu không có vốn từ đủ rộng, thí sinh dễ bị lúng túng trước các đoạn nghe chứa nhiều thuật ngữ.</p>
+
+<p><em style="-webkit-text-stroke-width:0px; background-color:#ffffff; box-sizing:border-box; color:#213261; cursor:pointer; font-family:Roboto,Arial,sans-serif; font-size:16px; font-style:normal; font-variant-caps:normal; font-variant-ligatures:normal; font-weight:400; letter-spacing:normal; orphans:2; text-align:center; text-decoration:none; text-indent:0px; text-transform:none; white-space:normal; widows:2; word-spacing:0px"><u><span style="color:#213261"><span style="background-color:#ffffff"><a href="https://LearnEnglish.com/posts/927/lo-trinh-tu-hoc-ielts-online-tu-so-0-den-7-cua-LearnEnglish/" style="box-sizing: border-box; color: rgb(33, 50, 97); text-decoration: none; background-color: rgb(255, 255, 255); cursor: pointer; font-family: Roboto, Arial, sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal;"><img src="https://lh7-us.googleusercontent.com/docsz/AD_4nXdgfL_S0HMsL2D0bgO42i1nv96X3OaHDlfGJL_P5WH_QgkEr4l4Jw5gepr31ZtxuXke0K26owEHL0a2nagsE3WwllmnuNjCuzSRvbTUZk0NJG7x11ayp2G5u6Kv7IcV7xqrBhqCRUc3ict-W1rQ6XJBVz4j?key=EPo-2R-TSccNg08Xhi5HPw" style="border-style:none; box-sizing:border-box; display:block; height:84px; margin:1rem auto; max-width:100%; vertical-align:middle; width:600px"></a></span></span></u></em></p>
+
+<div>
+<table cellspacing="0" style="border-collapse:collapse; border:none; table-layout:fixed; width:624px">
+<tbody>
+    <tr>
+        <td style="background-color:#fffce4; border-bottom:1px solid #fffce4; border-left:1px solid #fffce4; border-right:1px solid #fffce4; border-top:1px solid #fffce4; vertical-align:top">
+        <p><strong><em>Tham khảo </em></strong><a href="https://LearnEnglish.com/courses/series/4/combo-advanced-ielts-intensive/?itm_source=seo&amp;itm_medium=article&amp;itm_campaign=blogpost_internal_link&amp;itm_content=1562" style="text-decoration:none"><span style="color:#1155cc"><strong><em><u>Combo Advanced IELTS Intensive kèm chấm chữa giáo viên bản ngữ [Tặng khoá TED Talks]</u></em></strong></span></a></p>
+
+        <p>1️⃣ <em>Xây dựng vốn từ vựng học thuật 99% sẽ xuất hiện trong 2 phần thi Listening và Reading</em></p>
+
+        <p>2️⃣ <em>Làm chủ tốc độ và các ngữ điệu khác nhau trong phần thi IELTS Listening</em></p>
+
+        <p>3️⃣ <em>Nắm chắc chiến thuật và phương pháp làm các dạng câu hỏi trong IELTS Listening và Reading</em></p>
+
+        <p>4️⃣ <em>Xây dựng ý tưởng viết luận, kỹ năng viết câu, bố cục các đoạn, liên kết ý và vốn từ vựng phong phú cho các chủ đề trong IELTS Writing</em></p>
+
+        <p>5️⃣ <em>Luyện tập phát âm, từ vựng, ngữ pháp và thực hành luyện nói các chủ đề thường gặp và forecast trong IELTS Speaking</em></p>
+
+        <p>6️⃣ <em>Được chấm chữa chi tiết (gồm điểm và nhận xét thành phần trong rubic) xác định được điểm yếu và cách khắc phục trong IELTS Speaking và Writing</em></p>
+        </td>
+    </tr>
+</tbody>
+</table>
+</div>
+
+<h2 id="ii.-tổng-hợp-từ-vựng-ielts-chủ-đề-traveling"><span style="font-size:22px"><strong>II. Tổng hợp từ vựng IELTS chủ đề Traveling</strong></span></h2>
+
+<p><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXfRy2GIxJbv5mKLGme8usqExsahVZevejA3ad4duDHRgy0g2WjZZAID2ByRbkQgjcEpdnEcw_DZOMdyCZ_LnGAevfm8_cGXz6e4hpEOpn6-JoB6oe2Mqhp7xzwONIPRcldKZ4vYMA?key=_-Pk2qxzHUId6jxRocB1CWqF" style="height:339px; width:602px"></p>
+
+<p style="text-align:center"><em>Tổng hợp từ vựng IELTS chủ đề Traveling: Types of Travel</em></p>
+
+<p><span style="font-size:20px"><strong>1. Tổng hợp từ vựng IELTS chủ đề Traveling: Types of Travel (Các hình thức du lịch)</strong></span></p>
+
+<div>
+<table cellspacing="0" style="border-collapse:collapse; border:none; width:600px">
+<tbody>
+    <tr>
+        <td style="background-color:#d9ead3; border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p style="text-align:center"><strong>Từ vựng</strong></p>
+        </td>
+        <td style="background-color:#d9ead3; border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p style="text-align:center"><strong>Phiên âm IPA</strong></p>
+        </td>
+        <td style="background-color:#d9ead3; border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p style="text-align:center"><strong>Nghĩa tiếng Anh</strong></p>
+        </td>
+        <td style="background-color:#d9ead3; border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p style="text-align:center"><strong>Nghĩa tiếng Việt</strong></p>
+        </td>
+        <td style="background-color:#d9ead3; border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p style="text-align:center"><strong>Ví dụ</strong></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#6aa84f"><strong>Adventure travel</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/ədˈven.tʃər ˈtræv.əl/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Travel involving daring activities</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Du lịch mạo hiểm</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>Adventure travel attracts thrill-seekers who enjoy extreme sports like rock climbing.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#6aa84f"><strong>Ecotourism</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/ˈiː.kəʊˌtʊə.rɪ.zəm/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Environmentally friendly travel</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Du lịch sinh thái</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>Ecotourism focuses on conserving natural habitats while educating tourists about local wildlife.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#6aa84f"><strong>Backpacking</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/ˈbækˌpæk.ɪŋ/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Budget travel with a backpack</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Du lịch bụi</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>Backpacking allows young travelers to explore multiple countries affordably.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#6aa84f"><strong>Luxury travel</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/ˈlʌk.ʃər.i ˈtræv.əl/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>High-end travel experiences</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Du lịch cao cấp</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>Luxury travel often includes five-star hotels and private tours.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#6aa84f"><strong>Cultural tourism</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/ˈkʌl.tʃər.əl ˈtʊə.rɪ.zəm/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Travel to explore cultures</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Du lịch văn hóa</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>Cultural tourism is popular in countries rich in history and heritage.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#6aa84f"><strong>Business travel</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/ˈbɪz.nəs ˈtræv.əl/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Travel for work-related purposes</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Đi công tác</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>Business travel has increased significantly with globalization.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#6aa84f"><strong>Staycation</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/steɪˈkeɪ.ʃən/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Vacation spent at home</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Nghỉ dưỡng tại nhà</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>A staycation is ideal for those who want to relax without spending much.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#6aa84f"><strong>Road trip</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/ˈroʊd ˌtrɪp/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>A long-distance journey by car</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Du lịch bằng xe hơi</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>We took a road trip along the coast to visit hidden beaches.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#6aa84f"><strong>Cruise travel</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/kruːz ˈtræv.əl/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Traveling on a ship for leisure</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Du lịch bằng du thuyền</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>Cruise travel offers a luxurious way to visit multiple destinations.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#6aa84f"><strong>Safari</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/səˈfɑː.ri/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Wildlife exploration in natural parks</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Du lịch để khám phá động vật hoang dã</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>Going on a safari in Africa is a once-in-a-lifetime experience.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#6aa84f"><strong>Pilgrimage</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/ˈpɪl.ɡrɪ.mɪdʒ/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Religious or spiritual journey</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Hành hương</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>Many people embark on a pilgrimage to Mecca every year.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#6aa84f"><strong>Solo travel</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/ˈsəʊ.ləʊ ˈtræv.əl/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Traveling alone</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Du lịch một mình</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>Solo travel can be liberating and offers complete independence.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#6aa84f"><strong>Group travel</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/ɡruːp ˈtræv.əl/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Traveling in a group</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Du lịch theo nhóm</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>Group travel is a great way to share experiences with friends.</em></p>
+        </td>
+    </tr>
+</tbody>
+</table>
+</div>
+
+<p><span style="font-size:20px"><strong>2. Tổng hợp từ vựng IELTS chủ đề Traveling: Destinations and Locations (Địa điểm và điểm đến)</strong></span></p>
+
+<p><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXcHZRDZphBFyeJoDaXOmAEQmwsFnfaWJiHJPxn4LymQEvpvU0Uhi_06IO1FELBMXFaduRDfL0mh--veyF2ahRamsD54LjQImnoKuEc2PTMXVt5Vh4dY03F0YT_qtyygp_edcUaDmQ?key=_-Pk2qxzHUId6jxRocB1CWqF" style="height:337px; width:602px"></p>
+
+<p style="text-align:center"><em>Tổng hợp từ vựng IELTS chủ đề Traveling: Destinations and Locations</em></p>
+
+<div>
+<table cellspacing="0" style="border-collapse:collapse; border:none; width:600px">
+<tbody>
+    <tr>
+        <td style="background-color:#d9ead3; border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p style="text-align:center"><strong>Từ vựng</strong></p>
+        </td>
+        <td style="background-color:#d9ead3; border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p style="text-align:center"><strong>Phiên âm IPA</strong></p>
+        </td>
+        <td style="background-color:#d9ead3; border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p style="text-align:center"><strong>Nghĩa tiếng Anh</strong></p>
+        </td>
+        <td style="background-color:#d9ead3; border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p style="text-align:center"><strong>Nghĩa tiếng Việt</strong></p>
+        </td>
+        <td style="background-color:#d9ead3; border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p style="text-align:center"><strong>Ví dụ</strong></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#6aa84f"><strong>Tourist attraction</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/ˈtʊə.rɪst əˈtræk.ʃən/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>A place of interest for tourists</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Điểm thu hút khách du lịch</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>The Eiffel Tower is one of the most famous tourist attractions in the world.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#6aa84f"><strong>Landmark</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/ˈlænd.mɑːk/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>A recognizable feature of a place</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Cột mốc, danh lam thắng cảnh</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>The Sydney Opera House is an iconic landmark in Australia.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#6aa84f"><strong>Natural wonder</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/ˈnætʃ.ər.əl ˈwʌn.dər/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>A remarkable natural feature</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Kỳ quan thiên nhiên</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>The Grand Canyon is considered a natural wonder of the world.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#6aa84f"><strong>Heritage site</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/ˈher.ɪ.tɪdʒ saɪt/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>A location of cultural or historical significance</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Di sản văn hóa</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>Angkor Wat is a UNESCO World Heritage Site in Cambodia.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#6aa84f"><strong>Hidden gem</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/ˈhɪd.ən dʒem/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>A less-known but valuable place</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Một nơi đẹp nhưng ít người biết tới</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>This small village is a hidden gem, far from the tourist crowds.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#6aa84f"><strong>Countryside</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/ˈkʌn.tri.saɪd/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Rural areas outside cities</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Vùng nông thôn</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>I love the peaceful atmosphere of the countryside.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#6aa84f"><strong>Urban city</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/ˈɜː.bən ˈsɪt.i/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>A large and developed city</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Thành phố lớn</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>Tokyo is an urban city known for its advanced technology and vibrant culture.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#6aa84f"><strong>Coastal area</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/ˈkəʊ.stəl ˈeə.ri.ə/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>A region near the sea</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Khu vực ven biển</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>The Amalfi Coast is one of the most beautiful coastal areas in Italy.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#6aa84f"><strong>Mountain range</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/ˈmaʊn.tɪn reɪndʒ/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>A series of mountains connected together</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Dãy núi</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>The Himalayas are the highest mountain range in the world.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#6aa84f"><strong>Island paradise</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/ˈaɪ.lənd ˈpær.ə.daɪs/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>A tropical island with beautiful scenery</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Hòn đảo thiên đường</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>The Maldives is often described as an island paradise.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#6aa84f"><strong>National park</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/ˈnæʃ.ən.əl pɑːk/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>A protected area for natural preservation</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Công viên quốc gia</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>Yellowstone is the first national park established in the United States.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#6aa84f"><strong>Metropolitan area</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/ˌmet.rəˈpɒl.ɪ.tən ˈeə.ri.ə/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>A large city and its surrounding urban regions</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Khu vực đô thị lớn</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>The metropolitan area of New York includes several neighboring cities.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#6aa84f"><strong>Desert</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/ˈdez.ət/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>A dry, barren area of land</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Sa mạc</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>The Sahara Desert is the largest hot desert in the world.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#6aa84f"><strong>Glacier</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/ˈɡlæs.i.ər/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>A slowly moving mass of ice</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Sông băng</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>The Perito Moreno Glacier in Argentina is a stunning natural sight.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#6aa84f"><strong>Lagoon</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/ləˈɡuːn/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>A shallow body of water separated from the sea</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Đầm&nbsp;</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>The Blue Lagoon in Iceland is a popular destination for travelers seeking relaxation.</em></p>
+        </td>
+    </tr>
+</tbody>
+</table>
+</div>
+
+<p><span style="font-size:20px"><strong>3. Tổng hợp từ vựng IELTS chủ đề Traveling: Travel Experiences (Cảm xúc và trải nghiệm)</strong></span></p>
+
+<p><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXecEWL4vNLOx2HU7CJfbboLOFKtzYOpkrlLz0u_wYO_ZzKFEDFRJkORbn17f_5JxppMEiy0P6uiUoR5GCfnzfhW8V9E8LZJN43BR_6KXEHo151gKx0aVos9t6kVz_n4YaGCEHFyvg?key=_-Pk2qxzHUId6jxRocB1CWqF" style="height:401px; width:602px"></p>
+
+<p style="text-align:center"><em>Tổng hợp từ vựng IELTS chủ đề Traveling: Travel Experiences</em></p>
+
+<div>
+<table cellspacing="0" style="border-collapse:collapse; border:none; width:600px">
+<tbody>
+    <tr>
+        <td style="background-color:#d9ead3; border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p style="text-align:center"><strong>Từ vựng</strong></p>
+        </td>
+        <td style="background-color:#d9ead3; border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p style="text-align:center"><strong>Phiên âm IPA</strong></p>
+        </td>
+        <td style="background-color:#d9ead3; border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p style="text-align:center"><strong>Nghĩa tiếng Anh</strong></p>
+        </td>
+        <td style="background-color:#d9ead3; border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p style="text-align:center"><strong>Nghĩa tiếng Việt</strong></p>
+        </td>
+        <td style="background-color:#d9ead3; border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p style="text-align:center"><strong>Ví dụ</strong></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#6aa84f"><strong>Unwind</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/ʌnˈwaɪnd/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Relax and reduce stress</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Thư giãn</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>Traveling to the countryside is a perfect way to unwind after a busy week.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#6aa84f"><strong>Explore</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/ɪkˈsplɔːr/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Discover new places or things</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Khám phá</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>I love to explore hidden gems whenever I visit a new city.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#6aa84f"><strong>Immerse&nbsp;</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/ɪˈmɜːs/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Fully engage in an activity or environment</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Đắm mình vào</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>Traveling allows you to immerse yourself in different cultures.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#6aa84f"><strong>Broaden horizons</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/ˈbrɔː.dən həˈraɪ.zənz/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Expand knowledge and experiences</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Mở rộng tầm nhìn</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>Traveling abroad is a great way to broaden your horizons and learn about other lifestyles.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#6aa84f"><strong>Get away from it all</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/ɡet əˈweɪ frəm ɪt ɔːl/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Escape daily routine and stress</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Thoát khỏi nhịp sống hằng ngày</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>A weekend trip to the beach helps me get away from it all.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#6aa84f"><strong>Memorable</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/ˈmem.ə.rə.bəl/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Worth remembering</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Đáng nhớ</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>The trip to Japan was one of the most memorable experiences of my life.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#6aa84f"><strong>Once-in-a-lifetime experience</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/wʌns ɪn ə ˈlaɪf.taɪm ɪkˈspɪə.ri.əns/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>A unique and rare experience</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Trải nghiệm có một không hai</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>Seeing the Northern Lights was a once-in-a-lifetime experience.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#6aa84f"><strong>Nostalgia</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/nɒs’tæl.dʒə/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>A sentimental longing for the past</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Nỗi nhớ, hoài niệm</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>Looking at my travel photos always fills me with nostalgia.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#6aa84f"><strong>Thrilling</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/ˈθrɪl.ɪŋ/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Exciting and exhilarating</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Hấp dẫn, hồi hộp</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>The safari was a thrilling adventure that I will never forget.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#6aa84f"><strong>Enlightening</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/ɪnˈlaɪ.tən.ɪŋ/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Providing new insights or understanding</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Khai sáng, làm sáng tỏ</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>Traveling to historical sites can be an enlightening experience.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#6aa84f"><strong>Overwhelmed</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/ˌəʊ.vəˈwelmd/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Feeling strong emotions (positive or negative)</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Choáng ngợp</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>I was overwhelmed by the beauty of the ancient ruins.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#6aa84f"><strong>Fascinated</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/ˈfæs.ə.neɪ.tɪd/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Greatly interested or amazed</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Bị mê hoặc, cuốn hút</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>I was fascinated by the colorful markets in Marrakech.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#6aa84f"><strong>Grateful</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/ˈɡreɪt.fəl/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Feeling thankful</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Biết ơn</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>Traveling makes me grateful for the opportunities I’ve had to explore the world.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#6aa84f"><strong>Homesick</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/ˈhəʊm.sɪk/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Missing home while away</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Nhớ nhà</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>After a month of traveling, I started to feel homesick.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#6aa84f"><strong>Fulfilled</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/fʊlˈfɪld/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Feeling satisfied and complete</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Cảm thấy mãn nguyện</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>Helping the local community during my trip made me feel truly fulfilled.</em></p>
+        </td>
+    </tr>
+</tbody>
+</table>
+</div>
+
+<p><span style="font-size:20px"><strong>4. Tổng hợp từ vựng IELTS chủ đề Traveling: Sustainable and Responsible Travel (Du lịch bền vững và trách nhiệm)</strong></span></p>
+
+<p><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXe4L65xb8tRlQyg1p95jSS1azvdscOvznxM_H9ZrXEUaUwdBSpkaEBiNSkOq1aHsoIGlQlPLss39MEK_SZgKwWM5Nf4F2U45xfCwNkMLw2Cc9FKkA0kHqpWDPTgphpYZniu3MDT?key=_-Pk2qxzHUId6jxRocB1CWqF" style="height:376px; width:602px"></p>
+
+<p style="text-align:center"><em>Tổng hợp từ vựng IELTS chủ đề Traveling: Sustainable and Responsible Travel</em></p>
+
+<div>
+<table cellspacing="0" style="border-collapse:collapse; border:none; width:600px">
+<tbody>
+    <tr>
+        <td style="background-color:#d9ead3; border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p style="text-align:center"><strong>Từ vựng</strong></p>
+        </td>
+        <td style="background-color:#d9ead3; border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p style="text-align:center"><strong>Phiên âm IPA</strong></p>
+        </td>
+        <td style="background-color:#d9ead3; border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p style="text-align:center"><strong>Nghĩa tiếng Anh</strong></p>
+        </td>
+        <td style="background-color:#d9ead3; border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p style="text-align:center"><strong>Nghĩa tiếng Việt</strong></p>
+        </td>
+        <td style="background-color:#d9ead3; border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p style="text-align:center"><strong>Ví dụ</strong></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#6aa84f"><strong>Sustainable tourism</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/səˈsteɪ.nə.bəl ˈtʊə.rɪ.zəm/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Tourism that minimizes environmental impact</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Du lịch bền vững</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>Sustainable tourism focuses on preserving local cultures and ecosystems.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#6aa84f"><strong>Eco-friendly</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/ˌiː.kəʊˈfrend.li/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Not harmful to the environment</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Thân thiện với môi trường</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>The hotel uses eco-friendly practices like solar panels and recycled water.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#6aa84f"><strong>Carbon footprint</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/ˈkɑː.bən ˈfʊt.prɪnt/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>The amount of CO₂ emissions from activities</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Dấu chân carbon</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>Flying frequently increases your carbon footprint significantly.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#6aa84f"><strong>Ethical travel</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/ˈeθ.ɪ.kəl ˈtræv.əl/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Travel that respects people and nature</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Du lịch có đạo đức</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>Ethical travel ensures that the local community benefits from tourism.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#6aa84f"><strong>Green tourism</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/ɡriːn ˈtʊə.rɪ.zəm/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Tourism promoting environmental awareness</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Du lịch xanh</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>Green tourism includes activities like hiking and bird-watching.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#6aa84f"><strong>Over-tourism</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/ˈəʊ.vəˌtʊə.rɪ.zəm/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Excessive tourism causing harm to a destination</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Du lịch quá mức</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>Over-tourism can lead to damage of historical sites and overcrowding.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#6aa84f"><strong>Local community</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/ˈləʊ.kəl kəˈmjuː.nə.ti/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Residents of the area being visited</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Cộng đồng địa phương</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>Supporting the local community is a key aspect of responsible travel.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#6aa84f"><strong>Conservation</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/ˌkɒn.səˈveɪ.ʃən/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Protection of natural and cultural resources</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Bảo tồn</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>Conservation projects help protect endangered wildlife in tourist areas.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#6aa84f"><strong>Low-impact travel</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/ləʊˈɪm.pækt ˈtræv.əl/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Travel causing minimal environmental damage</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Du lịch tác động thấp</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>Cycling and walking are examples of low-impact travel.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#6aa84f"><strong>Volunteer tourism</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/ˌvɒl.ənˈtɪə ˈtʊə.rɪ.zəm/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Traveling to contribute to charitable work</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Du lịch tình nguyện</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>Volunteer tourism is popular among young people looking to make a difference.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#6aa84f"><strong>Biodiversity</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/ˌbaɪ.əʊ.daɪˈvɜː.sə.ti/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Variety of plant and animal life in an area</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Đa dạng sinh học</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>Tourists are encouraged to protect the biodiversity of the rainforest.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#6aa84f"><strong>Renewable energy</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/rɪˈnjuː.ə.bəl ˈen.ə.dʒi/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Energy from sustainable sources like solar or wind</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Năng lượng tái tạo</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>Many eco-resorts rely entirely on renewable energy for power.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#6aa84f"><strong>Responsible tourism</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/rɪˈspɒn.sə.bəl ˈtʊə.rɪ.zəm/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Tourism that considers social and environmental impacts</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Du lịch có trách nhiệm</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>Responsible tourism emphasizes respect for local traditions and practices.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#6aa84f"><strong>Waste management</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/weɪst ˈmæn.ɪdʒ.mənt/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Processes for reducing and recycling waste</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Quản lý rác thải</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>Proper waste management is crucial for keeping tourist destinations clean.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#6aa84f"><strong>Sustainable development</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/səˈsteɪ.nə.bəl dɪˈvel.əp.mənt/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Growth that meets present needs without harming future generations</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Phát triển bền vững</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>Sustainable development ensures long-term benefits for both locals and tourists.</em></p>
+        </td>
+    </tr>
+</tbody>
+</table>
+</div>
+
+<h2 id="iii.-tip-học-từ-vựng-ielts-nhớ-lâu-chủ-đề-traveling"><span style="font-size:22px"><strong>III. Tip học từ vựng IELTS nhớ lâu: Chủ đề Traveling</strong></span></h2>
+
+<p><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXcmMCtDxrforQh1d4M5nOWcbs4qkURpqqlNI45wrUm6348SL5k2BY0tMSPRslWrlEh_5SMlJVSsqaU3kPnmmEhROZu947kfMpmeU8tyOcVWtHpQL9CuKkJJQb4XPuqOz929OAbJiw?key=_-Pk2qxzHUId6jxRocB1CWqF" style="height:401px; width:602px"></p>
+
+<p style="text-align:center"><em>&nbsp;Tip học từ vựng IELTS nhớ lâu: Chủ đề Traveling</em></p>
+
+<p><span style="font-size:20px"><strong>1. Phân loại từ vựng theo chủ đề con</strong></span></p>
+
+<p>Chủ đề Traveling có thể chia nhỏ thành nhiều nhánh, chẳng hạn:</p>
+
+<ul>
+<li style="list-style-type:disc">Types of Travel: backpacking, cruise, road trip</li>
+<li style="list-style-type:disc">Destinations and Locations: national park, coastal area, landmark</li>
+<li style="list-style-type:disc">Travel Experiences: unwind, explore, memorable</li>
+<li style="list-style-type:disc">Sustainable Travel: eco-friendly, responsible tourism</li>
+</ul>
+
+<p>Phương pháp: Sử dụng sơ đồ tư duy để kết nối các từ vựng có liên quan. Ví dụ, bạn có thể viết "Traveling" ở giữa và nối các nhánh như "Ecotourism" hoặc "Cultural tourism" với những từ cụ thể. Việc phân chia từ vựng thành các nhánh chủ đề nhỏ sẽ giúp bạn học có hệ thống, tránh cảm giác bị quá tải.</p>
+
+<p><span style="font-size:20px"><strong>2. Ôn tập định kỳ bằng phương pháp lặp lại ngắt quãng (Spaced repetition)</strong></span></p>
+
+<p>Ôn tập định kỳ bằng phương pháp lặp lại ngắt quãng (Spaced Repetition) là một trong những cách hiệu quả nhất để ghi nhớ từ vựng IELTS lâu dài. Phương pháp này dựa trên nguyên tắc ôn tập các từ vựng tại những khoảng thời gian tăng dần, giúp củng cố trí nhớ trước khi thông tin bị quên đi. Ban đầu, bạn học từ vựng mới và ôn tập lại sau một vài giờ, sau đó là sau một ngày, một tuần và tiếp tục kéo dài khoảng thời gian giữa các lần ôn tập.</p>
+
+<p><em><strong>Xem thêm:&nbsp;<a href="https://LearnEnglish.com/posts/260/phuong-phap-lap-lai-ngat-quang-va-tip-hoc-tu-vung-tieng-anh-nho-lau/">Phương pháp lặp lại ngắt quãng và tip học từ vựng tiếng Anh nhớ lâu</a></strong></em></p>
+
+<p>Phương pháp lặp lại ngắt quãng không chỉ giúp bạn tối ưu hóa thời gian học mà còn đảm bảo rằng các từ vựng quan trọng được ghi nhớ sâu trong trí nhớ dài hạn, hỗ trợ tốt cho cả kỹ năng Speaking và Writing trong kỳ thi IELTS.</p>
+
+<p><span style="font-size:20px"><strong>3. Học từ vựng qua câu ví dụ</strong></span></p>
+
+<p>Cuối cùng, thay vì chỉ học định nghĩa, hãy đặt câu sử dụng từ để nhớ cách dùng trong ngữ cảnh. Thay vì chỉ học nghĩa của từ một cách đơn lẻ, việc đặt từ vựng vào câu giúp bạn hiểu cách sử dụng từ trong cấu trúc ngữ pháp, đồng thời nhớ sâu hơn nhờ sự liên kết ý nghĩa.&nbsp;</p>
+
+<p>Ví dụ, với từ "adventurous", bạn có thể đặt câu:<em> "She prefers adventurous holidays, such as trekking in the mountains or scuba diving.</em>" Câu ví dụ này không chỉ giải thích ý nghĩa "thích phiêu lưu" mà còn thể hiện cách dùng từ trong thực tế.&nbsp;</p>
+
+<p><em><u><span style="color:#213261"><span style="background-color:#ffffff"><a href="https://LearnEnglish.com/posts/927/lo-trinh-tu-hoc-ielts-online-tu-so-0-den-7-cua-LearnEnglish/" style="box-sizing: border-box; color: rgb(33, 50, 97); text-decoration: none; background-color: rgb(255, 255, 255); cursor: pointer; font-family: Roboto, Arial, sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal;"><img src="https://lh7-us.googleusercontent.com/docsz/AD_4nXdgfL_S0HMsL2D0bgO42i1nv96X3OaHDlfGJL_P5WH_QgkEr4l4Jw5gepr31ZtxuXke0K26owEHL0a2nagsE3WwllmnuNjCuzSRvbTUZk0NJG7x11ayp2G5u6Kv7IcV7xqrBhqCRUc3ict-W1rQ6XJBVz4j?key=EPo-2R-TSccNg08Xhi5HPw" style="border-style:none; box-sizing:border-box; display:block; height:84px; margin:1rem auto; max-width:100%; vertical-align:middle; width:600px"></a></span></span></u></em></p>
+
+<h2 id="lời-kết"><span style="font-size:22px"><strong>Lời kết</strong></span></h2>
+
+<p>Trên đây LearnEnglish đã chia sẻ cho bạn về tổng hợp từ vựng IELTS chủ đề Traveling cùng tip học từ vựng IELTS nhớ lâu rồi đó!</p>
+
+<p>Nếu bạn có bất kỳ thắc mắc hay câu hỏi nào, hãy bình luận bên dưới để LearnEnglish giải đáp cho bạn nhé!</p>
+                    </div>
+                    
+
+                    
+
+                    
+                </div>
+
+                
+                <div class="post-tags">
+                
+                    <span class="tag">ielts</span>
+                
+                </div>
+                
+                <br>
+
+                <div class="post-comments-wrapper">
+                    <h4 id="bình-luận">Bình luận</h4>
+                    
+
+
+
+<form action="/posts/1562/comment/" method="POST" class="mt-2 md-comment-input jqform jqcomment-form" data-reload-html="#obj-comments-1562" data-target="#md-comments-box" data-submitting="false">
+    
+<input name="csrfmiddlewaretoken" type="hidden" value="aFoHQi5VJoaDyeDOP1Wy38lYVv0femaCyIIuf0p13CRmWa5s3r1xkSXMc84hb9wC">
+
+
+    
+    
+
+    <div class="input-group">
+        <textarea name="content" rows="1" class="form-control custom-control jqcomment-textarea" placeholder="Chia sẻ cảm nghĩ của bạn ..."></textarea>
+        <div class="input-group-append">
+            <button class="input-group-addon btn btn-primary jqcomment-submit">Gửi</button>
+        </div>
+    </div>
+</form>
+
+
+
+                    <br>
+                    <div id="obj-comments-1562" class="jqhtml-loader" data-href="/posts/1562/comments/"><p><i>Chưa có bình luận nào. Hãy trở thành người đầu tiên bình luận bài này.</i></p></div>
+                </div>
+
+                
+                <br>
+                <div class="">
+                    <div class="h3">Có thể bạn sẽ quan tâm</div>
+                    
+<ul class="post-links">
+
+
+
+<li class="post-link"><a href=" https://LearnEnglish.com/posts/1560/tong-hop-tu-vung-ielts-chu-de-food/">Tổng hợp từ vựng IELTS chủ đề Food</a></li>
+
+
+
+
+<li class="post-link"><a href=" https://LearnEnglish.com/posts/1558/tong-hop-tu-vung-ielts-writing-task-2-theo-chu-de-day-du-nhat/">Tổng hợp từ vựng IELTS Writing Task 2 theo chủ đề đầy đủ nhất</a></li>
+
+
+</ul>
+
+                </div>
+                
+
+                <br>
+                <div>
+                    <div class="h3">Các bài viết cùng chủ đề</div>
+                    
+<div class="">
+<div class="center">
+    
+        
+        <div class="posts-list">
+        
+            
+<div class="postlist-card">
+
+
+<div class="postlist-card-img sm mb-2">
+    <img class="lazyel card-img entered loaded" data-src="https://study4.com/media/examprep/Post/files/2024/12/05/C%C3%A1ch_d%C3%B9ng_25.png" data-ll-status="loaded" src="https://study4.com/media/examprep/Post/files/2024/12/05/C%C3%A1ch_d%C3%B9ng_25.png">
+</div>
+
+<div class="postlist-card-content-wrapper">
+    
+    <span class="d-block post-topic"><a class="font-weight-bold small" href="/blog/luyen-thi-ielts/index.html">IELTS MATERIALS</a></span>
+    
+    <div class="postlist-title-wrapper">
+        
+        <div class="postlist-card-img-sm mb-2">
+            <img class="lazyel card-img" data-src="https://study4.com/media/examprep/Post/files/2024/12/05/C%C3%A1ch_d%C3%B9ng_25.png">
+        </div>
+        
+        <div class="postlist-title"><a href="/posts/1566/tong-hop-tu-vung-ielts-chu-de-education-giao-duc/">Tổng hợp từ vựng IELTS chủ đề Education (Giáo dục)</a></div>
+    </div>
+    <div class="postlist-card-content card-body d-flex flex-column p-0">
+        <p>Nằm lòng topic từ vựng Education cho kỳ thi IELTS qua bài viết này nhé!</p>
+    </div>
+    
+    <div class="postlist-meta">
+        02/12/2024 bởi Phuong Anh Do
+        
+    </div>
+    
+</div>
+</div>
+
+        
+            
+<div class="postlist-card">
+
+
+<div class="postlist-card-img sm mb-2">
+    <img class="lazyel card-img entered loaded" data-src="https://study4.com/media/examprep/Post/files/2024/12/05/C%C3%A1ch_d%C3%B9ng_26.png" data-ll-status="loaded" src="https://study4.com/media/examprep/Post/files/2024/12/05/C%C3%A1ch_d%C3%B9ng_26.png">
+</div>
+
+<div class="postlist-card-content-wrapper">
+    
+    <span class="d-block post-topic"><a class="font-weight-bold small" href="/blog/luyen-thi-ielts/index.html">IELTS MATERIALS</a></span>
+    
+    <div class="postlist-title-wrapper">
+        
+        <div class="postlist-card-img-sm mb-2">
+            <img class="lazyel card-img" data-src="https://study4.com/media/examprep/Post/files/2024/12/05/C%C3%A1ch_d%C3%B9ng_26.png">
+        </div>
+        
+        <div class="postlist-title"><a href="/posts/1565/tong-hop-tu-vung-ielts-chu-de-crime-toi-pham/">Tổng hợp từ vựng IELTS chủ đề Crime (Tội phạm)</a></div>
+    </div>
+    <div class="postlist-card-content card-body d-flex flex-column p-0">
+        <p>Tham khảo tổng hợp từ vựng IELTS chủ đề Crime đầy đủ nhất để dễ dàng đạt điểm tốt trong kỳ thi IELTS nhé!</p>
+    </div>
+    
+    <div class="postlist-meta">
+        02/12/2024 bởi Phuong Anh Do
+        
+    </div>
+    
+</div>
+</div>
+
+        
+            
+<div class="postlist-card">
+
+
+<div class="postlist-card-img sm mb-2">
+    <img class="lazyel card-img entered loaded" data-src="https://study4.com/media/examprep/Post/files/2024/12/05/C%C3%A1ch_d%C3%B9ng_27.png" data-ll-status="loaded" src="https://study4.com/media/examprep/Post/files/2024/12/05/C%C3%A1ch_d%C3%B9ng_27.png">
+</div>
+
+<div class="postlist-card-content-wrapper">
+    
+    <span class="d-block post-topic"><a class="font-weight-bold small" href="/blog/luyen-thi-ielts/index.html">IELTS MATERIALS</a></span>
+    
+    <div class="postlist-title-wrapper">
+        
+        <div class="postlist-card-img-sm mb-2">
+            <img class="lazyel card-img" data-src="https://study4.com/media/examprep/Post/files/2024/12/05/C%C3%A1ch_d%C3%B9ng_27.png">
+        </div>
+        
+        <div class="postlist-title"><a href="/posts/1564/tong-hop-tu-vung-ielts-chu-de-environment-moi-truong/">Tổng hợp từ vựng IELTS chủ đề Environment (Môi trường)</a></div>
+    </div>
+    <div class="postlist-card-content card-body d-flex flex-column p-0">
+        <p>Học và ghi nhớ chủ đề từ vựng Environment nhanh thuộc và nhớ lâu nhờ tổng hợp từ vựng và tip học từ sau đây!</p>
+    </div>
+    
+    <div class="postlist-meta">
+        02/12/2024 bởi Phuong Anh Do
+        
+    </div>
+    
+</div>
+</div>
+
+        
+            
+<div class="postlist-card">
+
+
+<div class="postlist-card-img sm mb-2">
+    <img class="lazyel card-img entered loaded" data-src="https://study4.com/media/examprep/Post/files/2024/12/05/C%C3%A1ch_d%C3%B9ng_28.png" data-ll-status="loaded" src="https://study4.com/media/examprep/Post/files/2024/12/05/C%C3%A1ch_d%C3%B9ng_28.png">
+</div>
+
+<div class="postlist-card-content-wrapper">
+    
+    <span class="d-block post-topic"><a class="font-weight-bold small" href="/blog/luyen-thi-ielts/index.html">IELTS MATERIALS</a></span>
+    
+    <div class="postlist-title-wrapper">
+        
+        <div class="postlist-card-img-sm mb-2">
+            <img class="lazyel card-img" data-src="https://study4.com/media/examprep/Post/files/2024/12/05/C%C3%A1ch_d%C3%B9ng_28.png">
+        </div>
+        
+        <div class="postlist-title"><a href="/posts/1563/tong-hop-tu-vung-ielts-chu-de-vietnam/">Tổng hợp từ vựng IELTS chủ đề Vietnam</a></div>
+    </div>
+    <div class="postlist-card-content card-body d-flex flex-column p-0">
+        <p>Củng cố vốn từ vựng về Việt Nam để thật tự tin trình bày ý tưởng trong phòng thi IELTS nhé!</p>
+    </div>
+    
+    <div class="postlist-meta">
+        02/12/2024 bởi Phuong Anh Do
+        
+    </div>
+    
+</div>
+</div>
+
+        
+            
+<div class="postlist-card">
+
+
+<div class="postlist-card-img sm mb-2">
+    <img class="lazyel card-img entered loaded" data-src="https://study4.com/media/examprep/Post/files/2024/12/05/C%C3%A1ch_d%C3%B9ng_29.png" data-ll-status="loaded" src="https://study4.com/media/examprep/Post/files/2024/12/05/C%C3%A1ch_d%C3%B9ng_29.png">
+</div>
+
+<div class="postlist-card-content-wrapper">
+    
+    <span class="d-block post-topic"><a class="font-weight-bold small" href="/blog/luyen-thi-ielts/index.html">IELTS MATERIALS</a></span>
+    
+    <div class="postlist-title-wrapper">
+        
+        <div class="postlist-card-img-sm mb-2">
+            <img class="lazyel card-img" data-src="https://study4.com/media/examprep/Post/files/2024/12/05/C%C3%A1ch_d%C3%B9ng_29.png">
+        </div>
+        
+        <div class="postlist-title"><a href="/posts/1562/tong-hop-tu-vung-ielts-chu-de-traveling-du-lich/">Tổng hợp từ vựng IELTS chủ đề Traveling (Du lịch)</a></div>
+    </div>
+    <div class="postlist-card-content card-body d-flex flex-column p-0">
+        <p>Nằm lòng topic từ vựng Traveling cho kỳ thi IELTS qua bài viết này nhé!</p>
+    </div>
+    
+    <div class="postlist-meta">
+        02/12/2024 bởi Phuong Anh Do
+        
+    </div>
+    
+</div>
+</div>
+
+        
+        </div>
+
+        
+
+
+
+    
+</div>
+</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-md-2 order-md-1">
+        
+        <div class="post-topics-list">
+            <p class="font-12 font-600">
+                Chuyên mục
+            </p>
+        
+            <div class="post-topics-listitem my-2">
+                <a class="text-dark" href="/blog/topics/tim-hieu-ve-learn-english/index.html">
+                    <b>TÌM HIỂU VỀ LEARNENGLISH</b>
+                </a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="/blog/topics/tinh-nang-tren-learn-english/index.html">
+                    Tính năng trên LearnEnglish
+                </a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">KHÓA HỌC TRÊN LEARNENGLISH</a>
+            </div>
+        
+            <hr>
+        
+            <div class="post-topics-listitem my-2">
+                <a class="text-dark" href="#" onclick="showNotification()">
+                    <b>Review của học viên LearnEnglish</b>
+                </a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Học viên IELTS</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Học viên TOEIC</a>
+            </div>
+        
+            <hr>
+        
+            <div class="post-topics-listitem my-2">
+                <a class="text-dark" href="#" onclick="showNotification()">
+                    <b>Luyện thi IELTS</b>
+                </a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">IELTS Listening</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">IELTS Reading</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">IELTS Speaking</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">IELTS Writing</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">IELTS Materials</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Thông tin kỳ thi IELTS</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Kinh nghiệm thi IELTS</a>
+            </div>
+        
+            <hr>
+        
+            <div class="post-topics-listitem my-2">
+                <a class="text-dark" href="#" onclick="showNotification()">
+                    <b>Luyện thi TOEIC</b>
+                </a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">TOEIC Listening</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">TOEIC Reading</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">TOEIC Materials</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Thông tin kỳ thi TOEIC</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Kinh nghiệm thi TOEIC</a>
+            </div>
+        
+            <hr>
+        
+            <div class="post-topics-listitem my-2">
+                <a class="text-dark" href="#" onclick="showNotification()">
+                    <b>Tiếng Anh cơ bản</b>
+                </a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Phát âm</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Từ vựng</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Ngữ pháp</a>
+            </div>
+        
+            <hr>
+        
+            <div class="post-topics-listitem my-2">
+                <a class="text-dark" href="#" onclick="showNotification()">
+                    <b>Luyện Thi HSK-HSKK</b>
+                </a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Tiếng Trung cơ bản</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Kiến thức HSK-HSKK</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Thông tin kỳ thi HSK-HSKK</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Kinh nghiệm thi HSK-HSKK</a>
+            </div>
+        
+            <hr>
+        
+            <div class="post-topics-listitem my-2">
+                <a class="text-dark" href="#" onclick="showNotification()">
+                    <b>Tiếng Anh cho người đi làm</b>
+                </a>
+            </div>
+        
+            <hr>
+        
+            <div class="post-topics-listitem my-2">
+                <a class="text-dark" href="#" onclick="showNotification()">
+                    <b>Du học</b>
+                </a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Admission essays</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Kinh nghiệm du học</a>
+            </div>
+        
+            <hr>
+        </div>
+        
+        <script>
+            function showNotification() {
+                alert("Bài viết này sẽ được cập nhật trong tương lai");
+            }
+        </script>
+        
+
+<hr>
+
+</div>
+
+    </div>
+</div>
+</div>
+
+                
+            </div>
+            
+        </div>
+        
+
+        
+    
+
+    <div class="modal" id="site-modal-lg" tabindex="-1" aria-labelledby="site-modal-lg" aria-hidden="true" data-keyboard="false" data-backdrop="static">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+                <div class="modal-body" id="site-modal-lg-content"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="site-modal-md" tabindex="-1" aria-labelledby="site-modal-md" aria-hidden="true" data-keyboard="false" data-backdrop="static">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+                <div class="modal-body" id="site-modal-md-content"></div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+window.csrf_token = 'aFoHQi5VJoaDyeDOP1Wy38lYVv0femaCyIIuf0p13CRmWa5s3r1xkSXMc84hb9wC';
+window.current_user =
+
+{
+    is_authenticated: true,
+    id: 1532546,
+    name: "chauthithuyquynh2019",
+    is_admin: false,
+    is_staff: false,
+    is_superuser: false,
+}
+
+</script>
+    <script type="text/javascript" src="/static/ckeditor/ckeditor-init-override.js?v=1735926895"></script>
+    <script type="text/javascript" src="/static/ckeditor/ckeditor/ckeditor.js"></script>
+    <script type="text/javascript" src="/static/js/webaudiorecorder/WebAudioRecorder.min.js"></script>
+    <script type="text/javascript" src="/static/dist/vendor.ad60eb658fc650d75097.js?v=1735926895"></script>
+    <script type="text/javascript" src="/static/dist/main.651d8fa8cadf332cd75a.js?v=1735926895"></script>
+
+    
+
+<script type="text/javascript">
+$(function() {
+    const isInternalCourseURL = (url) => (new URL(url).origin == location.origin && (url.indexOf('/courses/') > -1 || url.indexOf('/lp/')) > -1);
+    $('.post-content a').each(function(idx,el) {
+        var $link = $(el);
+        var url = $link.attr('href');
+        if (isInternalCourseURL(url)) {
+            var qs = generate_qs({
+                'itm_source': 'seo',
+                'itm_medium': 'article',
+                'itm_campaign': 'blogpost_internal_link',
+                'itm_content': '1562'
+            });
+            var new_url = url + '?' + qs;
+            $link.attr('href', new_url);
+        }
+    });
+});
+</script>
+
+    <script type="text/javascript">
+        function isFacebookApp() {
+            var ua = navigator.userAgent || navigator.vendor || window.opera;
+            return (ua.indexOf("FBAN") > -1) || (ua.indexOf("FBAV") > -1);
+        }
+        if (isFacebookApp()) {
+            $('.g-login-block').hide();
+        }
+    </script>
+
+    
+
+    
+    
+    
+
+
+    
+    
+    
+
+
+    
+    <script type="text/javascript">
+        (function(w,d,t,u,n,a,m){w['MauticTrackingObject']=n;
+            w[n]=w[n]||function(){(w[n].q=w[n].q||[]).push(arguments)},a=d.createElement(t),
+            m=d.getElementsByTagName(t)[0];a.async=1;a.src=u;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://mautic.LearnEnglish.com/mtc.js','mt');
+
+        
+            
+            mt('send', 'pageview', {
+                email: "chauthithuyquynh2019@gmail.com",
+                uid: "1532546",
+                username: "chauthithuyquynh2019",
+                is_paid: false,
+                is_trial: true
+            });
+            
+        
+    </script>
+    
+<script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon="{&quot;rayId&quot;:&quot;8fcd63d30e6f48f4&quot;,&quot;serverTiming&quot;:{&quot;name&quot;:{&quot;cfExtPri&quot;:true,&quot;cfL4&quot;:true,&quot;cfSpeedBrain&quot;:true,&quot;cfCacheStatus&quot;:true}},&quot;version&quot;:&quot;2024.10.5&quot;,&quot;token&quot;:&quot;8d646591bd144e069b89dada41cfc02b&quot;}" crossorigin="anonymous"></script>
+
+
+    <div class="highlight-control" style="display: none; top: -35px;">
+        <div>
+            <span class="fas fa-trash highlight-icon highlight-remove" aria-hidden="true"></span>
+            <span class="fas fa-pencil highlight-icon highlight-note" aria-hidden="true"></span>
+            <span class="highlight-icon highlight-color blue"></span>
+            <span class="highlight-icon highlight-color pink"></span>
+            <span class="highlight-icon highlight-color green"></span>
+            <span class="highlight-icon highlight-color yellow"></span>
+            <span class="highlight-icon highlight-color underred"></span>
+            <span class="highlight-icon highlight-color crossed">abc</span>
+            <span class="ml-2 fas fa-plus highlight-icon highlight-flashcard" data-toggle="modal" data-target="#highlight-modal" aria-hidden="true"></span>
+        </div>
+        <div class="highlight-editor" style="display: none;">
+            <textarea rows="3"></textarea>
+            <div><span class="far fa-check highlight-icon highlight-save" aria-hidden="true"></span></div>
+        </div>
+    </div>
+    <div class="modal" id="highlight-modal" tabindex="-1" aria-labelledby="highlight-modal" aria-hidden="true" data-keyboard="false" data-backdrop="static">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+                <div class="modal-body" id="highlight-modal-content"></div>
+            </div>
+        </div>
+    </div>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+<!-- Code injected--></body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="footer-wrapper" bis_skin_checked="1">
+        <div class="footer-container" bis_skin_checked="1">
+            <footer>
+
+
+
+                <div class="row" bis_skin_checked="1">
+                    <div class="col-12 col-sm-12 col-md" bis_skin_checked="1">
+                        <a href="/"><img class="mb-2" src="/assets/img/Logo_LearnEnglish.svg" alt="" height="30"></a>
+                        <small class="mb-2">©</small>
+                        <div class="site-socials" style="width: 140px !important;" bis_skin_checked="1">
+                            <a target="_blank" href="https://facebook.com/" bis_skin_checked="1"><span
+                                    class="social-link fab fa-facebook-square"></span></a>
+                            <a target="_blank" href="https://instagram.com/" bis_skin_checked="1"><span
+                                    class="social-link fab fa-instagram"></span></a>
+                            <a target="_blank" href="https://twitter.com/" bis_skin_checked="1"><span
+                                    class="social-link fab fa-twitter"></span></a>
+                            <a target="_blank" href="https://youtube.com/" bis_skin_checked="1"><span
+                                    class="social-link fab fa-youtube"></span></a>
+                            <a target="_blank" href="https://www.tiktok.com" bis_skin_checked="1"><span
+                                    class="social-link fab fa-tiktok"></span></a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md" bis_skin_checked="1">
+                        <div class="footer-title" bis_skin_checked="1">Về LearnEnglish</div>
+                        <ul class="list-unstyled text-small">
+                            <li><a href="/about/" bis_skin_checked="1">Giới thiệu</a></li>
+                            <li><a href="/contact/" bis_skin_checked="1">Liên hệ</a></li>
+                            <li><a href="/privacy/" bis_skin_checked="1">Điều khoản bảo mật</a></li>
+                            <li><a href="/terms/" bis_skin_checked="1">Điều khoản sử dụng</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-6 col-md" bis_skin_checked="1">
+                        <div class="footer-title" bis_skin_checked="1">Tài nguyên</div>
+                        <ul class="list-unstyled text-small">
+
+                            <li><a href="/tests/" bis_skin_checked="1">Thư viện đề thi</a></li>
+                            <li><a href="/posts/" bis_skin_checked="1">Blog</a></li>
+                            <li><a href="/materials/" bis_skin_checked="1">Kho tài liệu</a></li>
+
+
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md" bis_skin_checked="1">
+                        <div class="footer-title" bis_skin_checked="1">Chính sách chung</div>
+                        <ul class="list-unstyled text-small">
+                            <li><a href="/user-guide/" bis_skin_checked="1">Hướng dẫn sử dụng</a></li>
+                            <li><a href="/buying-guide/" bis_skin_checked="1">Hướng dẫn thanh toán</a></li>
+
+                            <li><a href="/buying-terms/" bis_skin_checked="1">Điều khoản và Điều Kiện Giao Dịch</a></li>
+                            <li><a href="/checkout-policy" bis_skin_checked="1">Chính sách kiểm hàng</a></li>
+                            <li><a href="/delivery-policy" bis_skin_checked="1">Chính sách giao, nhận hàng</a></li>
+                            <li><a href="/feedback/" bis_skin_checked="1">Phản hồi, khiếu nại</a></li>
+                            <li><a href="/return-policy" bis_skin_checked="1">Chính sách chuyển đổi, hoàn hủy</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+
+                <div class="footer-copyright text-center" bis_skin_checked="1">
+                    LearnEnglish © Bản quyền của GROUP11.
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

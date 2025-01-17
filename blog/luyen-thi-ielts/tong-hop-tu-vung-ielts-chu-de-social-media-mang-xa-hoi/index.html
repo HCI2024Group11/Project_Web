@@ -1,0 +1,2548 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn English</title>
+    <link rel="icon" href="/assets/img/Avatar_LearnEnglish.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/f9374b778e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+    
+    <div class="topnav1 topnav-wrapper" bis_skin_checked="1">
+        <div class="topnav-container" bis_skin_checked="1">
+            <nav class="navbar  navbar-expand-lg">
+                <span class="navbar-brand">
+                    <a class="topnav-brand" href="/">
+                        <img class="topnav-logo" src="/assets/img/Logo_LearnEnglish.svg" alt="STUDY4">
+
+                    </a>
+                </span>
+                <button class="navbar-toggler pull-xs-right d-lg-none" type="button" data-toggle="collapse"
+                    data-target="#navbar-collapse">
+                    ☰
+
+                </button>
+                <div class="d-lg-block navbar-collapse justify-content-end collapse" id="navbar-collapse"
+                    bis_skin_checked="1">
+
+                    <ul class="nav">
+
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/courses/" bis_skin_checked="1">Course</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/skills/" bis_skin_checked="1">Skill</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/flashcards/me/" bis_skin_checked="1">Flashcards</a>
+                        </li>
+
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/blog/" bis_skin_checked="1">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/general-english/" bis_skin_checked="1">General english</a>
+                        </li>
+
+
+
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/courses/activate/" bis_skin_checked="1">
+                                Kích hoạt tài khoản
+                            </a>
+                        </li>
+
+                        <li class="nav-item user-topnav dropdown d-none d-lg-block">
+                            <a class="nav-link dropdown-toggle user-topnav-profile" href="/my-account/" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" bis_skin_checked="1">
+                                <span class="account-profile-img">
+
+                                    <img src="/assets/img/user_icon.webp" alt="ChuTanTai23130280">
+
+                                </span>
+
+                            </a>
+
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" bis_skin_checked="1">
+                                <div bis_skin_checked="1">
+                                    <h6 class="dropdown-header" id="thông-báo"> Thông báo </h6>
+                                    <div id="new-notis-dropdown-content" class="jqhtml-loader dropdown-text"
+                                        data-href="/notifications/newest/" bis_skin_checked="1">
+                                        <p class="font-sm"><i>Bạn chưa có thông báo mới.</i></p>
+
+
+                                        <div class="mt-2 link font-sm" bis_skin_checked="1"><a href="/notifications/"
+                                                bis_skin_checked="1">Xem tất cả &gt;&gt;</a></div>
+                                    </div>
+                                </div>
+
+                                <div class="dropdown-divider" bis_skin_checked="1"></div>
+                                <a class="dropdown-item" href="/studyplan/" bis_skin_checked="1">Lịch học của tôi</a>
+                                <a class="dropdown-item" href="/my-account/" bis_skin_checked="1">Trang cá nhân</a>
+                                <a class="dropdown-item" href="/logout/" bis_skin_checked="1">Đăng xuất</a>
+                            </div>
+                        </li>
+                        <li class="nav-item d-lg-none">
+                            <a class="nav-link" href="/notifications/" bis_skin_checked="1">Thông báo </a>
+                        </li>
+                        <li class="nav-item d-lg-none">
+                            <a class="nav-link" href="/studyplan/" bis_skin_checked="1">Lịch học của tôi</a>
+                        </li>
+                        <li class="nav-item d-lg-none">
+                            <a class="nav-link" href="/my-account/" bis_skin_checked="1">Trang cá nhân</a>
+                        </li>
+                        <li class="nav-item d-lg-none">
+                            <a class="nav-link" href="/logout/" bis_skin_checked="1">Đăng xuất</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+<script>
+    // JavaScript để xử lý dropdown
+    document.addEventListener('DOMContentLoaded', function() {
+        const profileBtn = document.querySelector('.user-topnav-profile');
+        const dropdownMenu = document.querySelector('.dropdown-menu');
+    
+        // Toggle dropdown khi click vào profile
+        profileBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            dropdownMenu.classList.toggle('show');
+        });
+    
+        // Đóng dropdown khi click ra ngoài
+        document.addEventListener('click', function(e) {
+            if (!profileBtn.contains(e.target) && !dropdownMenu.contains(e.target)) {
+                dropdownMenu.classList.remove('show');
+            }
+        });
+    });
+</script>
+    <script>
+        // JavaScript để xử lý dropdown
+        document.addEventListener('DOMContentLoaded', function () {
+            const profileBtn = document.querySelector('.user-topnav-profile');
+            const dropdownMenu = document.querySelector('.dropdown-menu');
+
+            // Toggle dropdown khi click vào profile
+            profileBtn.addEventListener('click', function (e) {
+                e.preventDefault();
+                dropdownMenu.classList.toggle('show');
+            });
+
+            // Đóng dropdown khi click ra ngoài
+            document.addEventListener('click', function (e) {
+                if (!profileBtn.contains(e.target) && !dropdownMenu.contains(e.target)) {
+                    dropdownMenu.classList.remove('show');
+                }
+            });
+        });
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+<body class="highlighter-context">
+
+
+    <div class="topnav1 topnav-wrapper" bis_skin_checked="1">
+        
+    </div>
+    <script>
+        // JavaScript để xử lý dropdown
+        document.addEventListener('DOMContentLoaded', function () {
+            const profileBtn = document.querySelector('.user-topnav-profile');
+            const dropdownMenu = document.querySelector('.dropdown-menu');
+
+            // Toggle dropdown khi click vào profile
+            profileBtn.addEventListener('click', function (e) {
+                e.preventDefault();
+                dropdownMenu.classList.toggle('show');
+            });
+
+            // Đóng dropdown khi click ra ngoài
+            document.addEventListener('click', function (e) {
+                if (!profileBtn.contains(e.target) && !dropdownMenu.contains(e.target)) {
+                    dropdownMenu.classList.remove('show');
+                }
+            });
+        });
+    </script>
+
+
+        
+    <div id="fb-root" class=" fb_reset fb_reset"><div style="position: absolute; top: -10000px; width: 0px; height: 0px;"><div></div></div><div style="position: absolute; top: -10000px; width: 0px; height: 0px;"><div></div></div></div>
+    <script async="" defer="" crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&amp;version=v20.0&amp;appId=203430341284880&amp;autoLogAppEvents=1" nonce="1d3MdMH8" type="text/javascript"></script>
+    
+    
+
+    
+    <div class="site-elevator">
+        <div class="elevator-item elevator-open d-md-none">
+            <span class="fal fa-chevron-left" aria-hidden="true"></span>
+        </div>
+        <div class="elevator-item elevator-close d-md-none">
+            <span class="fal fa-chevron-right" aria-hidden="true"></span>
+        </div>
+        <div class="elevator-item">
+            <div class="jqdictionary-show" target="#">
+                <img src="/static/img/dictionary.png">
+                <div class="elevator-text">Từ điển</div>
+            </div>
+        </div>
+        <div class="jqdictionary-wrapper">
+            <span class="jqdictionary-expand fal fa-plus-square" aria-hidden="true"></span>
+            <span class="jqdictionary-close far fa-times" aria-hidden="true"></span>
+            <div class="h6 font-500 font-sm">
+                <a class="link jqdictionary-tab active" data-href="https://m.dict.laban.vn/">Anh-Việt</a> |
+                <a class="link jqdictionary-tab" data-href="https://www.wordreference.com/definition/">WordReference</a> |
+                <a class="link jqdictionary-tab" data-href="https://onelook.com/thesaurus/">Thesaurus</a> |
+                <a class="link jqdictionary-tab" data-href="https://vtudien.com/trung-viet/dictionary/nghia-cua-tu-%E4%BD%A0%E5%A5%BD">Tiếng Trung</a>
+            </div>
+            <div class="jqdictionary-iframe">
+                <iframe loading="lazy" frameborder="0"></iframe>
+            </div>
+        </div>
+
+
+        
+        <div class="elevator-item">
+            <a target="_blank" href="https://m.me/LearnEnglish.support">
+                <img src="/static/img/messenger.png">
+            </a>
+        </div>
+        
+
+        <div class="elevator-item">
+            <a target="_blank" href="https://zalo.me/LearnEnglish">
+                <img src="/static/img/zalo.jpg">
+            </a>
+        </div>
+
+
+        
+        <div class="elevator-item site-scrollTop" onclick="if (!window.__cfRLUnblockHandlers) return false; window.topFunction()" id="site-scrollTop" title="Go to top" style="display: flex;">
+            <span class="fal fa-chevron-up" aria-hidden="true"></span>
+        </div>
+    </div>
+    
+
+    
+
+    <div class="site-wrapper">
+
+        
+
+        
+
+
+<div class="topnav1 topnav-wrapper">
+<div class="topnav-container">
+    
+</div>
+</div>
+
+        
+
+        
+        <div class="site-content-wrapper">
+            
+
+            
+
+            
+            
+            
+            
+
+            
+<div class="container pb-0">
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/">Trang chủ</a></li>
+        
+        <li class="breadcrumb-item"><a href="/blog/index.html">Bài viết</a></li>
+        <li class="breadcrumb-item"><a href="/blog/luyen-thi-ielts/index.html">IELTS Materials</a></li>
+        
+        <li class="breadcrumb-item active"><a href="/blog/luyen-thi-ielts/tong-hop-tu-vung-ielts-chu-de-social-media-mang-xa-hoi/index.html">Tổng hợp từ vựng IELTS chủ đề Social Media (Mạng xã hội)</a></li>
+    </ol>
+</nav>
+</div>
+
+
+            
+<div class="content-header py-0">
+<div class="container py-0">
+    <div class="image-wrapper">
+        <a href="/courses/level-test/">
+            
+        </a>
+    </div>
+    <br>
+    <h1 class="post-title" id="tổng-hợp-từ-vựng-ielts-chủ-đề-social-media-mạng-xã-hội">
+        Tổng hợp từ vựng IELTS chủ đề Social Media (Mạng xã hội)
+        
+    </h1>
+    
+    <p class="post-description">
+        Nằm lòng các từ vựng thuộc topic Social Media nhanh nhất qua bài viết sau đây!
+    </p>
+    
+</div>
+</div>
+
+
+            
+            <div class="content-wrapper">
+                
+                
+<div class="container">
+<div class="row">
+    
+    <div class="col-12 col-md-7 order-md-2">
+        <div class="post-wrapper">
+            <div class="media post-author-media py-2 mb-3 border-bottom">
+                <div class="post-author-img">
+                    
+                    <img src="https://res.cloudinary.com/sandodep3/image/upload/w_300/sandodep3_x_96255548703714412352793642007929690225_gi9mvk" alt="anhdp.LearnEnglish">
+                    
+                </div>
+                <div class="media-body">
+                    <div class="post-author-name"><a target="_blank" href="/u/anhdp.LearnEnglish/">Phuong Anh Do</a></div>
+                    <div class="post-meta">02/12/2024</div>
+                </div>
+            </div>
+
+            <div class="post-main-wrapper">
+
+                
+
+                
+                <br>
+                <div class="contentblock gray-bg">
+                    <div class="h5 font-italic">Các bài viết liên quan</div>
+                    
+<ul class="post-links">
+
+
+
+<li class="post-link"><a href=" https://LearnEnglish.com/posts/1238/gioi-thieu-bo-complete-ielts-noi-dung-doi-tuong-va-cach-hoc-hieu-qua/">Giới thiệu bộ Complete IELTS: Nội dung đối tượng và cách học hiệu quả</a></li>
+
+
+
+
+<li class="post-link"><a href=" https://LearnEnglish.com/posts/1237/gioi-thieu-va-huong-dan-hoc-sach-basic-ielts-listening/">Giới thiệu và hướng dẫn học sách Basic IELTS Listening</a></li>
+
+
+</ul>
+
+                </div>
+                <br><br>
+                
+
+                <div class="post-main mt-2">
+                    
+                    <div id="post-content" class="post-content md-content js-toc-content" prewrap="">
+                        <p><img alt=" từ vựng IELTS chủ đề Social Media (Mạng xã hội)" src="https://study4.com/media/uploads/editor/hangbm.LearnEnglish/2024/12/05/cach-dung-32.png" style="height:674px; width:1200px"></p>
+
+<p>Chủ đề Social Media ngày càng trở nên phổ biến hơn trong kỳ thi IELTS khi các câu hỏi liên quan đến mạng xã hội thường đề cập đến vai trò, tác động và những thách thức mà nó mang lại - phù hợp với xu thế hiện nay. Việc sở hữu một vốn từ vựng phong phú về chủ đề này sẽ giúp bạn thể hiện ý tưởng một cách mạch lạc và thuyết phục hơn, từ đó nâng cao band điểm IELTS của mình. Trong bài viết này, LearnEnglish sẽ tổng hợp các từ vựng IELTS quan trọng thuộc chủ đề Social Media cùng với những mẹo học từ hiệu quả, giúp bạn ghi nhớ nhanh chóng và áp dụng linh hoạt trong bài thi của mình nhé.&nbsp;</p>
+
+<h2 id="i.-sự-quan-trọng-của-từ-vựng-với-kỳ-thi-ielts---chủ-đề-social-media"><span style="font-size:22px"><strong>I. Sự quan trọng của từ vựng với kỳ thi IELTS - chủ đề Social Media</strong></span></h2>
+
+<p><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXfBu-R8Dox3SOJoSzNA3Yv_ZOE5nParAP8cLIecnuglTWK46ptQ9xulFSbsV_KO2nuX1jlmgXF9HnG--LkKdAzW5-dRwcfVq5PGtjUP_ds1m0UfgxCSEOM2cF76gwaFQVXxt0ev_A?key=t8nypMG0ShSl3fynM6TLfdTA" style="height:337px; width:602px"></p>
+
+<p style="text-align:center"><em>Sự quan trọng của từ vựng với kỳ thi IELTS</em></p>
+
+<p><span style="font-size:20px"><strong>1. Listening</strong></span></p>
+
+<p>Trong phần thi Listening, các bài nói thường chứa các thuật ngữ liên quan đến Social Media, ví dụ như privacy settings (cài đặt quyền riêng tư), online engagement (sự tương tác trực tuyến), hoặc content creators (người sáng tạo nội dung). Nếu không hiểu nghĩa các từ này, thí sinh có thể bỏ lỡ những câu trả lời quan trọng.</p>
+
+<p><span style="font-size:20px"><strong>2. Reading</strong></span></p>
+
+<p>Đặc điểm của phần thi Reading là yêu cầu thí sinh đọc và hiểu các bài văn mang tính học thuật. Ví dụ, một bài đọc về Social Media có thể sử dụng các từ như algorithm (thuật toán), user-generated content (nội dung do người dùng tạo ra), hoặc digital footprint (dấu chân số). Việc hiểu rõ ý nghĩa của các từ này giúp thí sinh trả lời đúng câu hỏi, đặc biệt là các dạng yêu cầu chọn từ khóa trong văn bản.</p>
+
+<p><span style="font-size:20px"><strong>3. Writing</strong></span></p>
+
+<p>Đối với phần thi viết, phần Writing Task 2 thường xuất hiện các câu hỏi liên quan đến tác động của Social Media đối với cá nhân và xã hội, như: <em>"To what extent do you agree or disagree with the idea that social media has a negative impact on communication skills?"</em></p>
+
+<p>Để trả lời hiệu quả, thí sinh cần sử dụng từ vựng đa dạng, chẳng hạn như virtual interaction (tương tác ảo), cyberbullying (bắt nạt trên mạng), hoặc information overload (quá tải thông tin). Những từ này không chỉ giúp bài viết đạt điểm cao hơn về tiêu chí từ vựng (Lexical Resource) mà còn làm lập luận rõ ràng và thuyết phục hơn.</p>
+
+<p><span style="font-size:20px"><strong>4. Speaking</strong></span></p>
+
+<p>Cuối cùng, đối với phần thi Speaking, các chủ đề như Social Media thường xuất hiện trong Part 1 hoặc Part 3. Ví dụ, giám khảo có thể hỏi: <em>"How has social media changed the way people communicate?"</em></p>
+
+<p>Để trả lời, thí sinh nên sử dụng từ như real-time communication (giao tiếp tức thời), social media influencers (người có ảnh hưởng trên mạng xã hội), hoặc viral content (nội dung lan truyền). Việc sử dụng các cụm từ cụ thể giúp bài nói tự nhiên và chuyên nghiệp hơn.</p>
+
+<p><em style="-webkit-text-stroke-width:0px; background-color:#ffffff; box-sizing:border-box; color:#213261; cursor:pointer; font-family:Roboto,Arial,sans-serif; font-size:16px; font-style:normal; font-variant-caps:normal; font-variant-ligatures:normal; font-weight:400; letter-spacing:normal; orphans:2; text-align:center; text-decoration:none; text-indent:0px; text-transform:none; white-space:normal; widows:2; word-spacing:0px"><u><span style="color:#213261"><span style="background-color:#ffffff"><a href="https://LearnEnglish.com/posts/927/lo-trinh-tu-hoc-ielts-online-tu-so-0-den-7-cua-LearnEnglish/" style="box-sizing: border-box; color: rgb(33, 50, 97); text-decoration: none; background-color: rgb(255, 255, 255); cursor: pointer; font-family: Roboto, Arial, sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal;"><img src="https://lh7-us.googleusercontent.com/docsz/AD_4nXdgfL_S0HMsL2D0bgO42i1nv96X3OaHDlfGJL_P5WH_QgkEr4l4Jw5gepr31ZtxuXke0K26owEHL0a2nagsE3WwllmnuNjCuzSRvbTUZk0NJG7x11ayp2G5u6Kv7IcV7xqrBhqCRUc3ict-W1rQ6XJBVz4j?key=EPo-2R-TSccNg08Xhi5HPw" style="border-style:none; box-sizing:border-box; display:block; height:84px; margin:1rem auto; max-width:100%; vertical-align:middle; width:600px"></a></span></span></u></em></p>
+
+<div>
+<table cellspacing="0" style="border-collapse:collapse; border:none; table-layout:fixed; width:624px">
+<tbody>
+    <tr>
+        <td style="background-color:#fffce4; border-bottom:1px solid #fffce4; border-left:1px solid #fffce4; border-right:1px solid #fffce4; border-top:1px solid #fffce4; vertical-align:top">
+        <p><strong><em>Tham khảo </em></strong><a href="https://LearnEnglish.com/courses/series/4/combo-advanced-ielts-intensive/?itm_source=seo&amp;itm_medium=article&amp;itm_campaign=blogpost_internal_link&amp;itm_content=1559" style="text-decoration:none"><span style="color:#1155cc"><strong><em><u>Combo Advanced IELTS Intensive kèm chấm chữa giáo viên bản ngữ [Tặng khoá TED Talks]</u></em></strong></span></a></p>
+
+        <p>1️⃣ <em>Xây dựng vốn từ vựng học thuật 99% sẽ xuất hiện trong 2 phần thi Listening và Reading</em></p>
+
+        <p>2️⃣ <em>Làm chủ tốc độ và các ngữ điệu khác nhau trong phần thi IELTS Listening</em></p>
+
+        <p>3️⃣ <em>Nắm chắc chiến thuật và phương pháp làm các dạng câu hỏi trong IELTS Listening và Reading</em></p>
+
+        <p>4️⃣ <em>Xây dựng ý tưởng viết luận, kỹ năng viết câu, bố cục các đoạn, liên kết ý và vốn từ vựng phong phú cho các chủ đề trong IELTS Writing</em></p>
+
+        <p>5️⃣ <em>Luyện tập phát âm, từ vựng, ngữ pháp và thực hành luyện nói các chủ đề thường gặp và forecast trong IELTS Speaking</em></p>
+
+        <p>6️⃣ <em>Được chấm chữa chi tiết (gồm điểm và nhận xét thành phần trong rubic) xác định được điểm yếu và cách khắc phục trong IELTS Speaking và Writing</em></p>
+        </td>
+    </tr>
+</tbody>
+</table>
+</div>
+
+<h2 id="ii.-tổng-hợp-từ-vựng-ielts-chủ-đề-social-media"><span style="font-size:22px"><strong>II. Tổng hợp từ vựng IELTS chủ đề Social Media</strong></span></h2>
+
+<p><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXfkWxl4hh8Sp2JlPTLMjQDWEOUwbauOzbUTr92w4GN9PhSCe9X4tc7C1F8CvunaMwFAHve8BcXi8NHvO2kUFSsQX3aOHbaTI_PDOvDP4fc5Vg3MsQBNAzGiCXpVQv0-Ed81-D_HvA?key=t8nypMG0ShSl3fynM6TLfdTA" style="height:451px; width:602px"></p>
+
+<p style="text-align:center"><em>Tổng hợp từ vựng IELTS chủ đề Social Media</em></p>
+
+<p><span style="font-size:20px"><strong>1. Tổng hợp từ vựng IELTS chủ đề Social Media: Technology and Platforms (Công nghệ và nền tảng)</strong></span></p>
+
+<div>
+<table cellspacing="0" style="border-collapse:collapse; border:none; width:600px">
+<tbody>
+    <tr>
+        <td style="background-color:#cfe2f3; border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p style="text-align:center"><strong>Từ vựng</strong></p>
+        </td>
+        <td style="background-color:#cfe2f3; border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p style="text-align:center"><strong>Phiên âm IPA</strong></p>
+        </td>
+        <td style="background-color:#cfe2f3; border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p style="text-align:center"><strong>Nghĩa tiếng Anh</strong></p>
+        </td>
+        <td style="background-color:#cfe2f3; border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p style="text-align:center"><strong>Nghĩa tiếng Việt</strong></p>
+        </td>
+        <td style="background-color:#cfe2f3; border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p style="text-align:center"><strong>Ví dụ</strong></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#0b5394"><strong>Social media platform</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/ˈsəʊʃəl ˈmiːdɪə ˈplætfɔːm/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>A website or application used for social interaction.</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Nền tảng mạng xã hội</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>Popular social media platforms like Instagram and Facebook have millions of users worldwide.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#0b5394"><strong>Algorithm</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/ˈælɡərɪðəm/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>A process or set of rules to be followed in problem-solving or calculations.</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Thuật toán</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>The algorithm used by Facebook determines which posts you see in your news feed.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#0b5394"><strong>User interface (UI)</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/ˈjuːzər ˈɪntəfeɪs/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>The visual part of a software or online platform that allows users to interact with it.</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Giao diện người dùng</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>A simple and intuitive user interface is key to a successful social media platform.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#0b5394"><strong>Content management system (CMS)</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/ˈkɒntent ˈmænɪdʒmənt ˈsɪstəm/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>A system used to create, manage, and modify digital content.</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Hệ thống quản lý nội dung</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>Many websites use a CMS to handle and update their social media content efficiently.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#0b5394"><strong>Cloud storage</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/klaʊd ˈstɔːrɪdʒ/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>A service that stores data on the internet rather than on a local computer.</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Lưu trữ đám mây</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>Many social media platforms store user data in cloud storage to ensure it’s accessible from anywhere.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#0b5394"><strong>Hashtag</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/ˈhæʃtæɡ/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>A word or phrase preceded by the symbol "#" used to identify topics in social media.</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Thẻ bắt đầu bằng dấu "#"</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>The hashtag #BlackLivesMatter became a worldwide movement on social media.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#0b5394"><strong>Streaming</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/ˈstriːmɪŋ/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>The process of transmitting data (especially video or audio) over the internet in real-time.</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Phát trực tiếp</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>Streaming services like YouTube allow users to watch videos instantly without downloading them.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#0b5394"><strong>Influencer</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/ˈɪnfluənsər/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>A person who has the power to affect the purchasing decisions of others due to their authority, knowledge, or position in social media.</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Người có ảnh hưởng trên mạng xã hội</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>Social media influencers often promote brands by showcasing products in their posts.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#0b5394"><strong>User-generated content (UGC)</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/ˈjuːzər ˈdʒenəreɪtɪd ˈkɒntent/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Content that is created and shared by users rather than brands or organizations.</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Nội dung do người dùng tạo</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>User-generated content is crucial for creating an engaging online community on social media platforms.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#0b5394"><strong>Virtual reality (VR)</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/ˈvɜːtʃʊəl rɪˈæləti/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>A computer-generated environment that can simulate physical presence in the real world or in an imaginary world.</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Thực tế ảo</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>Virtual reality is expected to play a large role in the future of social media interaction.</em></p>
+        </td>
+    </tr>
+</tbody>
+</table>
+</div>
+
+<p><span style="font-size:20px"><strong>2. Tổng hợp từ vựng IELTS chủ đề Social Media: Online Interaction (Tương tác trực tuyến)</strong></span></p>
+
+<p><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXd29SsCbVpBK0tVqot_ouCNUtuOBrU1y7Z2yqo889gGQctF7y7lDnKo2C6IOLhT8vWcnhDYoPxWrHX62C-JsldIypozAMJ-FbQl_Pp88ogK1zcXRf33nA05S9gLikvIXjog5fn3rQ?key=t8nypMG0ShSl3fynM6TLfdTA" style="height:317px; width:602px"></p>
+
+<p style="text-align:center"><em>Tổng hợp từ vựng IELTS chủ đề Social Media: Online Interaction</em></p>
+
+<div>
+<table cellspacing="0" style="border-collapse:collapse; border:none; width:600px">
+<tbody>
+    <tr>
+        <td style="background-color:#cfe2f3; border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p style="text-align:center"><strong>Từ vựng</strong></p>
+        </td>
+        <td style="background-color:#cfe2f3; border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p style="text-align:center"><strong>Phiên âm IPA</strong></p>
+        </td>
+        <td style="background-color:#cfe2f3; border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p style="text-align:center"><strong>Nghĩa tiếng Anh</strong></p>
+        </td>
+        <td style="background-color:#cfe2f3; border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p style="text-align:center"><strong>Nghĩa tiếng Việt</strong></p>
+        </td>
+        <td style="background-color:#cfe2f3; border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p style="text-align:center"><strong>Ví dụ</strong></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#0b5394"><strong>Engagement</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/ɪnˈɡeɪdʒmənt/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Interaction with content through likes, comments, or shares.</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Sự tương tác (thích, bình luận, chia sẻ)</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>High engagement on social media posts can increase their visibility and reach.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#0b5394"><strong>Follower</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/ˈfɒləʊə(r)/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>A person who subscribes to receive updates or follow a person or organization on social media.</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Người theo dõi</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>Celebrities often have millions of followers on their social media accounts.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#0b5394"><strong>Like</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/laɪk/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>To express approval or enjoyment of a post on social media by clicking a button.</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Thích (trên mạng xã hội)</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>The post received over a thousand likes in just a few hours.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#0b5394"><strong>Share</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/ʃeə(r)/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>To distribute content (such as a post, photo, or video) on social media.</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Chia sẻ (nội dung trên mạng xã hội)</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>She shared a funny video on her Facebook page that went viral.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#0b5394"><strong>Comment</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/ˈkɒment/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>To post a response or opinion on someone's content on social media.</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Bình luận</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>I left a comment on the photo to express how much I liked it.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#0b5394"><strong>Direct messaging (DM)</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/daɪˈrekt ˈmesɪdʒɪŋ/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Sending private messages between users on social media platforms.</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Nhắn tin trực tiếp</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>I sent him a DM to ask about his upcoming event.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#0b5394"><strong>Post</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/pəʊst/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>A message, image, video, or update shared on a social media platform.</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Bài đăng</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>She posted a photo from her trip to Paris on Instagram.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#0b5394"><strong>Tag</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/tæɡ/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>To label someone in a post or photo, usually by using their username.</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Đánh dấu (người dùng trong bài đăng)</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>I tagged my friend in the picture so she could see it.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#0b5394"><strong>Mention</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/ˈmenʃən/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>To refer to someone or something in a post or comment on social media.</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Đề cập</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>She mentioned her favorite restaurant in her latest tweet.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#0b5394"><strong>Virtual community</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/ˈvɜːtʃʊəl kəˈmjuːnəti/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>A group of people interacting online with shared interests or goals.</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Cộng đồng ảo</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>Many people find support and advice through virtual communities on social media.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#0b5394"><strong>Reaction</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/rɪˈækʃən/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>A response or feeling expressed towards content on social media.</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Phản ứng</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>Her reaction to the news was posted immediately after hearing it.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#0b5394"><strong>Poll</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/pəʊl/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>A survey or vote conducted on social media platforms to gather opinions.</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Cuộc thăm dò</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>The poll on Twitter asked users to vote on their favorite social media platform.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#0b5394"><strong>Trending</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/ˈtrendɪŋ/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>A topic, hashtag, or content that is currently popular or widely discussed.</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Đang hot, đang thịnh hành</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>The hashtag #ClimateAction is trending on Twitter due to the recent environmental protests.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#0b5394"><strong>Live stream</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/laɪv striːm/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>A real-time broadcast of video or audio via the internet, usually through a social media platform.</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Phát trực tiếp (video, âm thanh)</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>Many celebrities use live streaming to interact directly with their fans.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#0b5394"><strong>Repost</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/ˈriːpəʊst/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>To share someone else’s post or content again on social media.</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Chia sẻ lại bài đăng</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>She reposted the article to her followers so they could read it.</em></p>
+        </td>
+    </tr>
+</tbody>
+</table>
+</div>
+
+<p><span style="font-size:20px"><strong>3. Tổng hợp từ vựng IELTS chủ đề Social Media: Content and Creation (Nội dung và sáng tạo)</strong></span></p>
+
+<p><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXdHlCQwcURvb6WsKvS4jUJrqzBXG6aJf-1LHpKtUKSSTRGstsCtfX2SzNuDjIDE6M9tGhmLlezp5_6zPxKp5fmYaNTZJTdEh90ncwbQXiLRkA1DCRqz6F2aUqxgJgGVkyrOeF0lfA?key=t8nypMG0ShSl3fynM6TLfdTA" style="height:316px; width:602px"></p>
+
+<p style="text-align:center"><em>Tổng hợp từ vựng IELTS chủ đề Social Media: Content and Creation</em></p>
+
+<div>
+<table cellspacing="0" style="border-collapse:collapse; border:none; width:600px">
+<tbody>
+    <tr>
+        <td style="background-color:#cfe2f3; border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p style="text-align:center"><strong>Từ vựng</strong></p>
+        </td>
+        <td style="background-color:#cfe2f3; border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p style="text-align:center"><strong>Phiên âm IPA</strong></p>
+        </td>
+        <td style="background-color:#cfe2f3; border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p style="text-align:center"><strong>Nghĩa tiếng Anh</strong></p>
+        </td>
+        <td style="background-color:#cfe2f3; border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p style="text-align:center"><strong>Nghĩa tiếng Việt</strong></p>
+        </td>
+        <td style="background-color:#cfe2f3; border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p style="text-align:center"><strong>Ví dụ</strong></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#0b5394"><strong>Content</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/ˈkɒntent/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Information or material presented on a platform, such as text, images, or videos.</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Nội dung</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>The quality of content on social media is essential for attracting followers.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#0b5394"><strong>Creation</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/krɪˈeɪʃən/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>The process of making or producing something new, especially in art or media.</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Sự sáng tạo</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>Content creation has become an essential skill for social media influencers.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#0b5394"><strong>Originality</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/ɔːˈrɪdʒɪˈnæləti/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>The quality of being original, creative, and new.</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Tính sáng tạo, tính độc đáo</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>Originality is highly valued in content creation, especially for brand identity.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#0b5394"><strong>Innovation</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/ˌɪnəˈveɪʃən/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>The introduction of new ideas, methods, or products.</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Sự đổi mới</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>Innovation in content creation is key to staying relevant in the fast-paced digital world.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#0b5394"><strong>Visuals</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/ˈvɪʒʊəlz/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Images, graphics, or other visual elements used to enhance content.</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Hình ảnh, đồ họa</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>The visuals in a social media post can make a huge difference in capturing attention.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#0b5394"><strong>Video editing</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/ˈvɪdiəʊ ˈedɪtɪŋ/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>The process of manipulating video footage to create a final product.</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Biên tập video</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>Video editing is a critical skill for creating high-quality content for YouTube.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#0b5394"><strong>Creative process</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/kriːˈeɪtɪv ˈprəʊses/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>The sequence of steps followed to create something new.</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Quá trình sáng tạo</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>The creative process involves brainstorming ideas, planning, and executing them.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#0b5394"><strong>Brainstorming</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/ˈbreɪnstɔːmɪŋ/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>The act of generating a large number of ideas quickly, often as a group.</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Lên ý tưởng</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>Brainstorming with a team can lead to some of the most innovative content ideas.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#0b5394"><strong>Scriptwriting</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/ˈskrɪptˌraɪtɪŋ/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>The process of writing scripts for videos, movies, or other media.</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Viết kịch bản</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>Scriptwriting is an essential skill for creating engaging video content.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#0b5394"><strong>Storytelling</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/ˈstɔːrɪˌtelɪŋ/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>The art of telling a story in an engaging and memorable way.</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Kể chuyện</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>Effective storytelling can capture the audience’s attention and leave a lasting impact.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#0b5394"><strong>Editing</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/ˈedɪtɪŋ/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>The process of revising and correcting content to improve its clarity, coherence, and impact.</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Biên tập</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>Editing is essential to ensure that the content is polished and ready for publication.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#0b5394"><strong>Curate</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/kjʊˈreɪt/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>To select, organize, and present content in a meaningful and thoughtful way.</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Chọn lọc, tổ chức nội dung</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>Social media managers often curate content to match their audience’s preferences.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#0b5394"><strong>Viral</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/ˈvaɪrəl/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Content that spreads quickly and widely on social media.</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Lan truyền nhanh</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>The video went viral overnight and garnered millions of views.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#0b5394"><strong>Audience</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/ˈɔːdiəns/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>The group of people who view or consume content.</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Khán giả</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>It is important to understand your audience when creating content for social media.</em></p>
+        </td>
+    </tr>
+</tbody>
+</table>
+</div>
+
+<p><span style="font-size:20px"><strong>4. Tổng hợp từ vựng IELTS chủ đề Social Media: Social Issues (Các vấn đề xã hội)</strong></span></p>
+
+<p><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXfdRTy12YxKze1kFwRtLsam1pAdW6zNoMyjgIKQRG3y9NAI3ZyhXP9OKLKK_LbNpjga5XBPVmd9gCSm5D7QG2I4_qnCK9AiJ_klJEKjYGmsB3vuM4E6XADQ_8MEq9osNMVvpWiXNQ?key=t8nypMG0ShSl3fynM6TLfdTA" style="height:339px; width:602px"></p>
+
+<p style="text-align:center"><em>Tổng hợp từ vựng IELTS chủ đề Social Media: Social Issues</em></p>
+
+<div>
+<table cellspacing="0" style="border-collapse:collapse; border:none; width:600px">
+<tbody>
+    <tr>
+        <td style="background-color:#cfe2f3; border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p style="text-align:center"><strong>Từ vựng</strong></p>
+        </td>
+        <td style="background-color:#cfe2f3; border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p style="text-align:center"><strong>Phiên âm IPA</strong></p>
+        </td>
+        <td style="background-color:#cfe2f3; border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p style="text-align:center"><strong>Nghĩa tiếng Anh</strong></p>
+        </td>
+        <td style="background-color:#cfe2f3; border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p style="text-align:center"><strong>Nghĩa tiếng Việt</strong></p>
+        </td>
+        <td style="background-color:#cfe2f3; border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p style="text-align:center"><strong>Ví dụ</strong></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#0b5394"><strong>Cyberbullying</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/ˈsaɪbəbʊliɪŋ/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>The use of electronic communication to harass someone.</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Bắt nạt qua mạng</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>Cyberbullying can lead to serious psychological issues among teenagers.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#0b5394"><strong>Misinformation</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/ˌmɪsɪnfəˈmeɪʃən/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>False or inaccurate information spread online.</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Thông tin sai lệch</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>Misinformation about health issues can have severe consequences during a pandemic.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#0b5394"><strong>Privacy breach</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/ˈpraɪvəsi briːtʃ/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Unauthorized access to or disclosure of private information.</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Sự vi phạm quyền riêng tư</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>Many users are concerned about privacy breaches on social media platforms.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#0b5394"><strong>Fake news</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/feɪk njuːz/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>False stories created to mislead or deceive.</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Tin giả</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>Social media platforms are taking measures to combat the spread of fake news.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#0b5394"><strong>Cancel culture</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/ˈkænsəl ˈkʌltʃə/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Boycotting or shaming individuals or groups for perceived offenses.</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Văn hóa tẩy chay</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>Cancel culture has sparked debates about free speech and accountability on social media.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#0b5394"><strong>Echo chamber</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/ˈekəʊ ˈtʃeɪmbər/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>An environment where people are exposed only to opinions similar to their own.</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Phòng cộng hưởng</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>Social media algorithms often create echo chambers, limiting diverse perspectives.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#0b5394"><strong>Troll</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/trəʊl/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Someone who deliberately posts provocative or offensive comments online.</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Kẻ gây rối trên mạng</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>The forum was filled with trolls trying to disrupt meaningful discussions.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#0b5394"><strong>Online addiction</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/ˈɒnlaɪn əˈdɪkʃən/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Excessive or compulsive use of the internet or social media.</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Nghiện trực tuyến</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>Online addiction can negatively affect both mental health and productivity.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#0b5394"><strong>Filter bubble</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/ˈfɪltər ˈbʌbəl/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>A situation where algorithms limit content to align with a user’s preferences.</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Bong bóng lọc nội dung</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>Filter bubbles can prevent people from accessing a wide range of information.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#0b5394"><strong>Hate speech</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/heɪt spiːtʃ/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Speech that promotes hatred or violence against a particular group.</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Ngôn từ thù địch</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>Social media companies are under pressure to remove hate speech from their platforms.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#0b5394"><strong>Data mining</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/ˈdeɪtə ˈmaɪnɪŋ/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>The process of analyzing large datasets to extract patterns, often used in marketing.</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Khai thác dữ liệu</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>Data mining raises concerns about user privacy and data security on social media.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#0b5394"><strong>Anonymity</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/ˌæn.ɒnˈɪm.ə.ti/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>The condition of being anonymous or unidentifiable.</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Tính ẩn danh</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>Anonymity on social media can encourage both free expression and harmful behavior.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#0b5394"><strong>Disinformation</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/ˌdɪsɪnfəˈmeɪʃən/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>False information deliberately spread to mislead people.</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Sự cố tình đưa thông tin sai lệch</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>Governments are working to combat disinformation campaigns on social media.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#0b5394"><strong>Mental health issues</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/ˈmentəl helθ ˈɪʃuːz/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Psychological challenges that may arise from excessive social media use.</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Vấn đề sức khỏe tâm lý</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>Excessive use of social media has been linked to mental health issues like anxiety and depression.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#0b5394"><strong>Online harassment</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/ˈɒnlaɪn ˈhærəsmənt/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Repeated, unwanted behavior directed at someone online.</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Quấy rối trực tuyến</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>Online harassment can deter people from expressing themselves freely on social media.</em></p>
+        </td>
+    </tr>
+</tbody>
+</table>
+</div>
+
+<p><span style="font-size:20px"><strong>5. Tổng hợp từ vựng IELTS chủ đề Social Media: Development and Future Trends (Phát triển và xu hướng tương lai)</strong></span></p>
+
+<p><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXeo7Nwo68dht6NOG4enjYHfbIpC4yqr8N6ajU82VvAEBUnAEHI7o1TOf3dAvOmw6T1RtHLufHAMgRt6wyPXarbaRyWF6mKWMe-Jxr15bxjM5ex3xJoyLipvrmdgQQULaY92jDXPuw?key=t8nypMG0ShSl3fynM6TLfdTA" style="height:263px; width:602px"></p>
+
+<p style="text-align:center"><em>Tổng hợp từ vựng IELTS chủ đề Social Media: Development and Future Trends</em></p>
+
+<div>
+<table cellspacing="0" style="border-collapse:collapse; border:none; width:600px">
+<tbody>
+    <tr>
+        <td style="background-color:#cfe2f3; border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p style="text-align:center"><strong>Từ vựng</strong></p>
+        </td>
+        <td style="background-color:#cfe2f3; border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p style="text-align:center"><strong>Phiên âm IPA</strong></p>
+        </td>
+        <td style="background-color:#cfe2f3; border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p style="text-align:center"><strong>Nghĩa tiếng Anh</strong></p>
+        </td>
+        <td style="background-color:#cfe2f3; border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p style="text-align:center"><strong>Nghĩa tiếng Việt</strong></p>
+        </td>
+        <td style="background-color:#cfe2f3; border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p style="text-align:center"><strong>Ví dụ</strong></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#0b5394"><strong>Augmented reality</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/ɔːɡˈmentɪd riˈæləti/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Technology that overlays digital information onto the real world.</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Thực tế tăng cường</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>Augmented reality is expected to revolutionize how users interact with social media platforms.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#0b5394"><strong>Virtual reality</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/ˈvɜːtjʊəl riˈæləti/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>A simulated experience created through immersive technology.</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Thực tế ảo</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>Virtual reality could provide more engaging social media experiences in the future.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#0b5394"><strong>Metaverse</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/ˈmetəvɜːs/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>A collective virtual shared space where users interact through avatars.</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Vũ trụ ảo</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>The concept of the metaverse is shaping the future of social media interactions.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#0b5394"><strong>Artificial intelligence (AI)</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/ˌɑːtɪˈfɪʃəl ɪnˈtelɪdʒəns/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>The simulation of human intelligence in machines.</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Trí tuệ nhân tạo</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>Artificial intelligence is being used to personalize social media feeds.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#0b5394"><strong>Blockchain</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/ˈblɒkˌtʃeɪn/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>A secure, decentralized technology used for data management and transactions.</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Công nghệ chuỗi khối</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>Blockchain could enhance transparency and security in social media advertising.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#0b5394"><strong>Algorithm</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/ˈælgərɪðəm/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>A set of rules for solving a problem, often used in content curation.</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Thuật toán</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>Social media algorithms influence what content users see on their feeds.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#0b5394"><strong>Micro-influencer</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/ˈmaɪkrəʊ ˈɪnfluənsər/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>A social media influencer with a smaller but highly engaged audience.</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Người ảnh hưởng nhỏ</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>Brands are increasingly collaborating with micro-influencers for targeted marketing.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#0b5394"><strong>Trend forecasting</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/trend ˈfɔːkɑːstɪŋ/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>The practice of predicting future trends based on data and insights.</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Dự báo xu hướng</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>Trend forecasting helps social media platforms adapt to user preferences.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#0b5394"><strong>Digital detox</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/ˈdɪdʒɪtəl ˈdiːtɒks/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>A period during which a person refrains from using digital devices.</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Cai nghiện công nghệ</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>A digital detox is becoming popular as people seek balance in their online and offline lives.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#0b5394"><strong>Livestreaming</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/ˈlaɪvˌstriːmɪŋ/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Broadcasting video content in real-time over the internet.</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Phát sóng trực tiếp</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>Livestreaming is a growing trend in e-commerce and social media engagement.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#0b5394"><strong>Personalization</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/ˌpɜːsənəlaɪˈzeɪʃən/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Customizing content to suit individual user preferences.</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Cá nhân hóa</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>Personalization in social media feeds improves user experience but raises privacy concerns.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#0b5394"><strong>Sustainability</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/səˌsteɪnəˈbɪləti/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>The practice of meeting current needs without compromising future resources.</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Tính bền vững</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>Sustainability is a growing focus in the development of digital platforms.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#0b5394"><strong>Voice search</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/vɔɪs sɜːʧ/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Searching for information using voice commands.</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Tìm kiếm bằng giọng nói</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>Voice search integration is becoming increasingly common on social media apps.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#0b5394"><strong>Data ethics</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/ˈdeɪtə ˈeθɪks/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Moral principles governing the collection and use of data.</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Đạo đức dữ liệu</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>Data ethics are essential as social media platforms handle vast amounts of user information.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#0b5394"><strong>Social commerce</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/ˈsəʊʃəl ˈkɒmɜːs/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>The integration of shopping features into social media platforms.</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Thương mại xã hội</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>Social commerce is expected to drive significant growth in online retail.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#0b5394"><strong>Ephemeral content</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/ɪˈfemərəl ˈkɒntent/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Content that is available for a short time, such as stories.</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Nội dung tạm thời</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>Ephemeral content creates a sense of urgency, encouraging users to engage quickly.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:125px">
+        <p><span style="color:#0b5394"><strong>User-generated content</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:115px">
+        <p>/ˈjuːzə ˌdʒenəreɪtɪd ˈkɒntent/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Content created by users rather than the platform itself.</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p>Nội dung do người dùng tạo ra</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle; width:120px">
+        <p><em>User-generated content is a key trend shaping the future of social media marketing.</em></p>
+        </td>
+    </tr>
+</tbody>
+</table>
+</div>
+
+<h2 id="iii.-tip-học-từ-vựng-ielts-nhớ-lâu-chủ-đề-social-media"><span style="font-size:22px"><strong>III. Tip học từ vựng IELTS nhớ lâu: Chủ đề Social Media</strong></span></h2>
+
+<p><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXfkR4u3QykeXkO6QksGUtuqQC33RmVfuLyuOTVxjLg-9yy_jZ6CZ99ROBuSjzhZ1c-5dMurJyH12loh0Q0j13aB3Zlutpkt8IH32CCPZ7eyqdqNhuHiymLYWOHAWVn7MbLd6mq0XQ?key=t8nypMG0ShSl3fynM6TLfdTA" style="height:340px; width:602px"></p>
+
+<p style="text-align:center"><em>Tip học từ vựng IELTS nhớ lâu: Chủ đề Social Media</em></p>
+
+<p><span style="font-size:20px"><strong>1. Học từ vựng với phương pháp Spaced Repetition</strong></span></p>
+
+<p>Phương pháp spaced repetition (lặp lại ngắt quãng) là một kỹ thuật học tập dựa trên khoa học, giúp bạn ghi nhớ từ vựng lâu dài bằng cách ôn tập lại chúng trong các khoảng thời gian được tính toán cẩn thận. Hệ thống này sẽ nhắc lại từ vựng mới với tần suất giảm dần khi bạn đã ghi nhớ, đảm bảo rằng chúng được lưu trữ trong trí nhớ dài hạn.</p>
+
+<p><em><strong>Xem thêm:&nbsp;<a href="https://LearnEnglish.com/posts/260/phuong-phap-lap-lai-ngat-quang-va-tip-hoc-tu-vung-tieng-anh-nho-lau/">Phương pháp lặp lại ngắt quãng và tip học từ vựng tiếng Anh nhớ lâu</a></strong></em></p>
+
+<p><span style="font-size:20px"><strong>2. Học qua bài viết và podcast liên quan</strong></span></p>
+
+<p>Đọc báo, blog, hoặc nghe podcast về các xu hướng mạng xã hội sẽ giúp bạn làm quen với cách sử dụng từ trong ngữ cảnh thực tế. Ví dụ, đọc bài viết về sự phát triển của metaverse có thể cung cấp từ vựng hữu ích như virtual reality, augmented reality.</p>
+
+<p><span style="font-size:20px"><strong>3. Luyện tập qua đề thi thực tế</strong></span></p>
+
+<p>Hãy sử dụng từ vựng đã học để trả lời các câu hỏi IELTS liên quan đến Social Media. Điều này không chỉ giúp bạn ghi nhớ từ mà còn cải thiện kỹ năng phân tích và lập luận.</p>
+
+<p>Ví dụ đề bài Writing Task 2:<em> “Social media platforms have a significant impact on individuals and society. Discuss both views and give your opinion.”</em></p>
+
+<p>Hãy đảm bảo bạn sử dụng từ vựng như echo chamber, cyberbullying, hoặc misinformation để bài viết trở nên ấn tượng hơn.</p>
+
+<p><em><u><span style="color:#213261"><span style="background-color:#ffffff"><a href="https://LearnEnglish.com/posts/927/lo-trinh-tu-hoc-ielts-online-tu-so-0-den-7-cua-LearnEnglish/" style="box-sizing: border-box; color: rgb(33, 50, 97); text-decoration: none; background-color: rgb(255, 255, 255); cursor: pointer; font-family: Roboto, Arial, sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal;"><img src="https://lh7-us.googleusercontent.com/docsz/AD_4nXdgfL_S0HMsL2D0bgO42i1nv96X3OaHDlfGJL_P5WH_QgkEr4l4Jw5gepr31ZtxuXke0K26owEHL0a2nagsE3WwllmnuNjCuzSRvbTUZk0NJG7x11ayp2G5u6Kv7IcV7xqrBhqCRUc3ict-W1rQ6XJBVz4j?key=EPo-2R-TSccNg08Xhi5HPw" style="border-style:none; box-sizing:border-box; display:block; height:84px; margin:1rem auto; max-width:100%; vertical-align:middle; width:600px"></a></span></span></u></em></p>
+
+<h2 id="lời-kết"><span style="font-size:22px"><strong>Lời kết</strong></span></h2>
+
+<p>Trên đây LearnEnglish đã chia sẻ cho bạn về tổng hợp từ vựng IELTS chủ đề Social Media cùng tip học từ vựng IELTS nhớ lâu rồi đó!</p>
+
+<p>Nếu bạn có bất kỳ thắc mắc hay câu hỏi nào, hãy bình luận bên dưới để LearnEnglish giải đáp cho bạn nhé!</p>
+                    </div>
+                    
+
+                    
+
+                    
+                </div>
+
+                
+                <div class="post-tags">
+                
+                    <span class="tag">ielts</span>
+                
+                </div>
+                
+                <br>
+
+                <div class="post-comments-wrapper">
+                    <h4 id="bình-luận">Bình luận</h4>
+                    
+
+
+
+<form action="/posts/1559/comment/" method="POST" class="mt-2 md-comment-input jqform jqcomment-form" data-reload-html="#obj-comments-1559" data-target="#md-comments-box" data-submitting="false">
+    
+<input name="csrfmiddlewaretoken" type="hidden" value="gH4mogtelQCNPfGyTu2QPTzv0F9MmalJEKo9NYNkF4jwdb8c7U7P6DbjhidOjXHJ">
+
+
+    
+    
+
+    <div class="input-group">
+        <textarea name="content" rows="1" class="form-control custom-control jqcomment-textarea" placeholder="Chia sẻ cảm nghĩ của bạn ..."></textarea>
+        <div class="input-group-append">
+            <button class="input-group-addon btn btn-primary jqcomment-submit">Gửi</button>
+        </div>
+    </div>
+</form>
+
+
+
+                    <br>
+                    <div id="obj-comments-1559" class="jqhtml-loader" data-href="/posts/1559/comments/"><p><i>Chưa có bình luận nào. Hãy trở thành người đầu tiên bình luận bài này.</i></p></div>
+                </div>
+
+                
+                <br>
+                <div class="">
+                    <div class="h3">Có thể bạn sẽ quan tâm</div>
+                    
+<ul class="post-links">
+
+
+
+<li class="post-link"><a href=" https://LearnEnglish.com/posts/1389/cambridge-ielts-la-gi-nhung-dieu-can-biet-ve-bo-de-cambridge/">Cambridge IELTS là gì? Những điều cần biết về bộ đề Cambridge</a></li>
+
+
+
+
+<li class="post-link"><a href=" https://LearnEnglish.com/posts/1558/tong-hop-tu-vung-ielts-writing-task-2-theo-chu-de-day-du-nhat/">Tổng hợp từ vựng IELTS Writing Task 2 theo chủ đề đầy đủ nhất</a></li>
+
+
+</ul>
+
+                </div>
+                
+
+                <br>
+                <div>
+                    <div class="h3">Các bài viết cùng chủ đề</div>
+                    
+<div class="">
+<div class="center">
+    
+        
+        <div class="posts-list">
+        
+            
+<div class="postlist-card">
+
+
+<div class="postlist-card-img sm mb-2">
+    <img class="lazyel card-img entered loaded" data-src="https://study4.com/media/examprep/Post/files/2024/12/05/C%C3%A1ch_d%C3%B9ng_25.png" data-ll-status="loaded" src="https://study4.com/media/examprep/Post/files/2024/12/05/C%C3%A1ch_d%C3%B9ng_25.png">
+</div>
+
+<div class="postlist-card-content-wrapper">
+    
+    <span class="d-block post-topic"><a class="font-weight-bold small" href="/blog/luyen-thi-ielts/index.html">IELTS MATERIALS</a></span>
+    
+    <div class="postlist-title-wrapper">
+        
+        <div class="postlist-card-img-sm mb-2">
+            <img class="lazyel card-img" data-src="https://study4.com/media/examprep/Post/files/2024/12/05/C%C3%A1ch_d%C3%B9ng_25.png">
+        </div>
+        
+        <div class="postlist-title"><a href="/posts/1566/tong-hop-tu-vung-ielts-chu-de-education-giao-duc/">Tổng hợp từ vựng IELTS chủ đề Education (Giáo dục)</a></div>
+    </div>
+    <div class="postlist-card-content card-body d-flex flex-column p-0">
+        <p>Nằm lòng topic từ vựng Education cho kỳ thi IELTS qua bài viết này nhé!</p>
+    </div>
+    
+    <div class="postlist-meta">
+        02/12/2024 bởi Phuong Anh Do
+        
+    </div>
+    
+</div>
+</div>
+
+        
+            
+<div class="postlist-card">
+
+
+<div class="postlist-card-img sm mb-2">
+    <img class="lazyel card-img entered loaded" data-src="https://study4.com/media/examprep/Post/files/2024/12/05/C%C3%A1ch_d%C3%B9ng_26.png" data-ll-status="loaded" src="https://study4.com/media/examprep/Post/files/2024/12/05/C%C3%A1ch_d%C3%B9ng_26.png">
+</div>
+
+<div class="postlist-card-content-wrapper">
+    
+    <span class="d-block post-topic"><a class="font-weight-bold small" href="/blog/luyen-thi-ielts/index.html">IELTS MATERIALS</a></span>
+    
+    <div class="postlist-title-wrapper">
+        
+        <div class="postlist-card-img-sm mb-2">
+            <img class="lazyel card-img" data-src="https://study4.com/media/examprep/Post/files/2024/12/05/C%C3%A1ch_d%C3%B9ng_26.png">
+        </div>
+        
+        <div class="postlist-title"><a href="/posts/1565/tong-hop-tu-vung-ielts-chu-de-crime-toi-pham/">Tổng hợp từ vựng IELTS chủ đề Crime (Tội phạm)</a></div>
+    </div>
+    <div class="postlist-card-content card-body d-flex flex-column p-0">
+        <p>Tham khảo tổng hợp từ vựng IELTS chủ đề Crime đầy đủ nhất để dễ dàng đạt điểm tốt trong kỳ thi IELTS nhé!</p>
+    </div>
+    
+    <div class="postlist-meta">
+        02/12/2024 bởi Phuong Anh Do
+        
+    </div>
+    
+</div>
+</div>
+
+        
+            
+<div class="postlist-card">
+
+
+<div class="postlist-card-img sm mb-2">
+    <img class="lazyel card-img entered loaded" data-src="https://study4.com/media/examprep/Post/files/2024/12/05/C%C3%A1ch_d%C3%B9ng_27.png" data-ll-status="loaded" src="https://study4.com/media/examprep/Post/files/2024/12/05/C%C3%A1ch_d%C3%B9ng_27.png">
+</div>
+
+<div class="postlist-card-content-wrapper">
+    
+    <span class="d-block post-topic"><a class="font-weight-bold small" href="/blog/luyen-thi-ielts/index.html">IELTS MATERIALS</a></span>
+    
+    <div class="postlist-title-wrapper">
+        
+        <div class="postlist-card-img-sm mb-2">
+            <img class="lazyel card-img" data-src="https://study4.com/media/examprep/Post/files/2024/12/05/C%C3%A1ch_d%C3%B9ng_27.png">
+        </div>
+        
+        <div class="postlist-title"><a href="/posts/1564/tong-hop-tu-vung-ielts-chu-de-environment-moi-truong/">Tổng hợp từ vựng IELTS chủ đề Environment (Môi trường)</a></div>
+    </div>
+    <div class="postlist-card-content card-body d-flex flex-column p-0">
+        <p>Học và ghi nhớ chủ đề từ vựng Environment nhanh thuộc và nhớ lâu nhờ tổng hợp từ vựng và tip học từ sau đây!</p>
+    </div>
+    
+    <div class="postlist-meta">
+        02/12/2024 bởi Phuong Anh Do
+        
+    </div>
+    
+</div>
+</div>
+
+        
+            
+<div class="postlist-card">
+
+
+<div class="postlist-card-img sm mb-2">
+    <img class="lazyel card-img entered loaded" data-src="https://study4.com/media/examprep/Post/files/2024/12/05/C%C3%A1ch_d%C3%B9ng_28.png" data-ll-status="loaded" src="https://study4.com/media/examprep/Post/files/2024/12/05/C%C3%A1ch_d%C3%B9ng_28.png">
+</div>
+
+<div class="postlist-card-content-wrapper">
+    
+    <span class="d-block post-topic"><a class="font-weight-bold small" href="/blog/luyen-thi-ielts/index.html">IELTS MATERIALS</a></span>
+    
+    <div class="postlist-title-wrapper">
+        
+        <div class="postlist-card-img-sm mb-2">
+            <img class="lazyel card-img" data-src="https://study4.com/media/examprep/Post/files/2024/12/05/C%C3%A1ch_d%C3%B9ng_28.png">
+        </div>
+        
+        <div class="postlist-title"><a href="/posts/1563/tong-hop-tu-vung-ielts-chu-de-vietnam/">Tổng hợp từ vựng IELTS chủ đề Vietnam</a></div>
+    </div>
+    <div class="postlist-card-content card-body d-flex flex-column p-0">
+        <p>Củng cố vốn từ vựng về Việt Nam để thật tự tin trình bày ý tưởng trong phòng thi IELTS nhé!</p>
+    </div>
+    
+    <div class="postlist-meta">
+        02/12/2024 bởi Phuong Anh Do
+        
+    </div>
+    
+</div>
+</div>
+
+        
+            
+<div class="postlist-card">
+
+
+<div class="postlist-card-img sm mb-2">
+    <img class="lazyel card-img entered loaded" data-src="https://study4.com/media/examprep/Post/files/2024/12/05/C%C3%A1ch_d%C3%B9ng_29.png" data-ll-status="loaded" src="https://study4.com/media/examprep/Post/files/2024/12/05/C%C3%A1ch_d%C3%B9ng_29.png">
+</div>
+
+<div class="postlist-card-content-wrapper">
+    
+    <span class="d-block post-topic"><a class="font-weight-bold small" href="/blog/luyen-thi-ielts/index.html">IELTS MATERIALS</a></span>
+    
+    <div class="postlist-title-wrapper">
+        
+        <div class="postlist-card-img-sm mb-2">
+            <img class="lazyel card-img" data-src="https://study4.com/media/examprep/Post/files/2024/12/05/C%C3%A1ch_d%C3%B9ng_29.png">
+        </div>
+        
+        <div class="postlist-title"><a href="/posts/1562/tong-hop-tu-vung-ielts-chu-de-traveling-du-lich/">Tổng hợp từ vựng IELTS chủ đề Traveling (Du lịch)</a></div>
+    </div>
+    <div class="postlist-card-content card-body d-flex flex-column p-0">
+        <p>Nằm lòng topic từ vựng Traveling cho kỳ thi IELTS qua bài viết này nhé!</p>
+    </div>
+    
+    <div class="postlist-meta">
+        02/12/2024 bởi Phuong Anh Do
+        
+    </div>
+    
+</div>
+</div>
+
+        
+        </div>
+
+        
+
+
+
+    
+</div>
+</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-md-2 order-md-1">
+        
+        <div class="post-topics-list">
+            <p class="font-12 font-600">
+                Chuyên mục
+            </p>
+        
+            <div class="post-topics-listitem my-2">
+                <a class="text-dark" href="/blog/topics/tim-hieu-ve-learn-english/index.html">
+                    <b>TÌM HIỂU VỀ LEARNENGLISH</b>
+                </a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="/blog/topics/tinh-nang-tren-learn-english/index.html">
+                    Tính năng trên LearnEnglish
+                </a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">KHÓA HỌC TRÊN LEARNENGLISH</a>
+            </div>
+        
+            <hr>
+        
+            <div class="post-topics-listitem my-2">
+                <a class="text-dark" href="#" onclick="showNotification()">
+                    <b>Review của học viên LearnEnglish</b>
+                </a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Học viên IELTS</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Học viên TOEIC</a>
+            </div>
+        
+            <hr>
+        
+            <div class="post-topics-listitem my-2">
+                <a class="text-dark" href="#" onclick="showNotification()">
+                    <b>Luyện thi IELTS</b>
+                </a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">IELTS Listening</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">IELTS Reading</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">IELTS Speaking</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">IELTS Writing</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">IELTS Materials</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Thông tin kỳ thi IELTS</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Kinh nghiệm thi IELTS</a>
+            </div>
+        
+            <hr>
+        
+            <div class="post-topics-listitem my-2">
+                <a class="text-dark" href="#" onclick="showNotification()">
+                    <b>Luyện thi TOEIC</b>
+                </a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">TOEIC Listening</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">TOEIC Reading</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">TOEIC Materials</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Thông tin kỳ thi TOEIC</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Kinh nghiệm thi TOEIC</a>
+            </div>
+        
+            <hr>
+        
+            <div class="post-topics-listitem my-2">
+                <a class="text-dark" href="#" onclick="showNotification()">
+                    <b>Tiếng Anh cơ bản</b>
+                </a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Phát âm</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Từ vựng</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Ngữ pháp</a>
+            </div>
+        
+            <hr>
+        
+            <div class="post-topics-listitem my-2">
+                <a class="text-dark" href="#" onclick="showNotification()">
+                    <b>Luyện Thi HSK-HSKK</b>
+                </a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Tiếng Trung cơ bản</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Kiến thức HSK-HSKK</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Thông tin kỳ thi HSK-HSKK</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Kinh nghiệm thi HSK-HSKK</a>
+            </div>
+        
+            <hr>
+        
+            <div class="post-topics-listitem my-2">
+                <a class="text-dark" href="#" onclick="showNotification()">
+                    <b>Tiếng Anh cho người đi làm</b>
+                </a>
+            </div>
+        
+            <hr>
+        
+            <div class="post-topics-listitem my-2">
+                <a class="text-dark" href="#" onclick="showNotification()">
+                    <b>Du học</b>
+                </a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Admission essays</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Kinh nghiệm du học</a>
+            </div>
+        
+            <hr>
+        </div>
+        
+        <script>
+            function showNotification() {
+                alert("Bài viết này sẽ được cập nhật trong tương lai");
+            }
+        </script>
+        
+
+<hr>
+
+</div>
+
+    </div>
+</div>
+</div>
+
+                
+            </div>
+            
+        </div>
+        
+
+        
+    
+
+    <div class="modal" id="site-modal-lg" tabindex="-1" aria-labelledby="site-modal-lg" aria-hidden="true" data-keyboard="false" data-backdrop="static">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+                <div class="modal-body" id="site-modal-lg-content"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="site-modal-md" tabindex="-1" aria-labelledby="site-modal-md" aria-hidden="true" data-keyboard="false" data-backdrop="static">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+                <div class="modal-body" id="site-modal-md-content"></div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+window.csrf_token = 'gH4mogtelQCNPfGyTu2QPTzv0F9MmalJEKo9NYNkF4jwdb8c7U7P6DbjhidOjXHJ';
+window.current_user =
+
+{
+    is_authenticated: true,
+    id: 1532546,
+    name: "chauthithuyquynh2019",
+    is_admin: false,
+    is_staff: false,
+    is_superuser: false,
+}
+
+</script>
+    <script type="text/javascript" src="/static/ckeditor/ckeditor-init-override.js?v=1735926894"></script>
+    <script type="text/javascript" src="/static/ckeditor/ckeditor/ckeditor.js"></script>
+    <script type="text/javascript" src="/static/js/webaudiorecorder/WebAudioRecorder.min.js"></script>
+    <script type="text/javascript" src="/static/dist/vendor.ad60eb658fc650d75097.js?v=1735926894"></script>
+    <script type="text/javascript" src="/static/dist/main.651d8fa8cadf332cd75a.js?v=1735926894"></script>
+
+    
+
+<script type="text/javascript">
+$(function() {
+    const isInternalCourseURL = (url) => (new URL(url).origin == location.origin && (url.indexOf('/courses/') > -1 || url.indexOf('/lp/')) > -1);
+    $('.post-content a').each(function(idx,el) {
+        var $link = $(el);
+        var url = $link.attr('href');
+        if (isInternalCourseURL(url)) {
+            var qs = generate_qs({
+                'itm_source': 'seo',
+                'itm_medium': 'article',
+                'itm_campaign': 'blogpost_internal_link',
+                'itm_content': '1559'
+            });
+            var new_url = url + '?' + qs;
+            $link.attr('href', new_url);
+        }
+    });
+});
+</script>
+
+    <script type="text/javascript">
+        function isFacebookApp() {
+            var ua = navigator.userAgent || navigator.vendor || window.opera;
+            return (ua.indexOf("FBAN") > -1) || (ua.indexOf("FBAV") > -1);
+        }
+        if (isFacebookApp()) {
+            $('.g-login-block').hide();
+        }
+    </script>
+
+    
+
+    
+    
+    
+
+
+    
+    
+    
+
+
+    
+    <script type="text/javascript">
+        (function(w,d,t,u,n,a,m){w['MauticTrackingObject']=n;
+            w[n]=w[n]||function(){(w[n].q=w[n].q||[]).push(arguments)},a=d.createElement(t),
+            m=d.getElementsByTagName(t)[0];a.async=1;a.src=u;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://mautic.LearnEnglish.com/mtc.js','mt');
+
+        
+            
+            mt('send', 'pageview', {
+                email: "chauthithuyquynh2019@gmail.com",
+                uid: "1532546",
+                username: "chauthithuyquynh2019",
+                is_paid: false,
+                is_trial: true
+            });
+            
+        
+    </script>
+    
+<script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon="{&quot;rayId&quot;:&quot;8fcd8196ff61fd17&quot;,&quot;serverTiming&quot;:{&quot;name&quot;:{&quot;cfExtPri&quot;:true,&quot;cfL4&quot;:true,&quot;cfSpeedBrain&quot;:true,&quot;cfCacheStatus&quot;:true}},&quot;version&quot;:&quot;2024.10.5&quot;,&quot;token&quot;:&quot;8d646591bd144e069b89dada41cfc02b&quot;}" crossorigin="anonymous"></script>
+
+
+    <div class="highlight-control" style="display: none; top: -35px;">
+        <div>
+            <span class="fas fa-trash highlight-icon highlight-remove" aria-hidden="true"></span>
+            <span class="fas fa-pencil highlight-icon highlight-note" aria-hidden="true"></span>
+            <span class="highlight-icon highlight-color blue"></span>
+            <span class="highlight-icon highlight-color pink"></span>
+            <span class="highlight-icon highlight-color green"></span>
+            <span class="highlight-icon highlight-color yellow"></span>
+            <span class="highlight-icon highlight-color underred"></span>
+            <span class="highlight-icon highlight-color crossed">abc</span>
+            <span class="ml-2 fas fa-plus highlight-icon highlight-flashcard" data-toggle="modal" data-target="#highlight-modal" aria-hidden="true"></span>
+        </div>
+        <div class="highlight-editor" style="display: none;">
+            <textarea rows="3"></textarea>
+            <div><span class="far fa-check highlight-icon highlight-save" aria-hidden="true"></span></div>
+        </div>
+    </div>
+    <div class="modal" id="highlight-modal" tabindex="-1" aria-labelledby="highlight-modal" aria-hidden="true" data-keyboard="false" data-backdrop="static">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+                <div class="modal-body" id="highlight-modal-content"></div>
+            </div>
+        </div>
+    </div>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+<!-- Code injected--></body>
+
+
+
+
+
+
+
+
+
+
+
+    <div class="footer-wrapper" bis_skin_checked="1">
+        <div class="footer-container" bis_skin_checked="1">
+            <footer>
+
+
+
+                <div class="row" bis_skin_checked="1">
+                    <div class="col-12 col-sm-12 col-md" bis_skin_checked="1">
+                        <a href="/"><img class="mb-2" src="/assets/img/Logo_LearnEnglish.svg" alt="" height="30"></a>
+                        <small class="mb-2">©</small>
+                        <div class="site-socials" style="width: 140px !important;" bis_skin_checked="1">
+                            <a target="_blank" href="https://facebook.com/" bis_skin_checked="1"><span
+                                    class="social-link fab fa-facebook-square"></span></a>
+                            <a target="_blank" href="https://instagram.com/" bis_skin_checked="1"><span
+                                    class="social-link fab fa-instagram"></span></a>
+                            <a target="_blank" href="https://twitter.com/" bis_skin_checked="1"><span
+                                    class="social-link fab fa-twitter"></span></a>
+                            <a target="_blank" href="https://youtube.com/" bis_skin_checked="1"><span
+                                    class="social-link fab fa-youtube"></span></a>
+                            <a target="_blank" href="https://www.tiktok.com" bis_skin_checked="1"><span
+                                    class="social-link fab fa-tiktok"></span></a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md" bis_skin_checked="1">
+                        <div class="footer-title" bis_skin_checked="1">Về LearnEnglish</div>
+                        <ul class="list-unstyled text-small">
+                            <li><a href="/about/" bis_skin_checked="1">Giới thiệu</a></li>
+                            <li><a href="/contact/" bis_skin_checked="1">Liên hệ</a></li>
+                            <li><a href="/privacy/" bis_skin_checked="1">Điều khoản bảo mật</a></li>
+                            <li><a href="/terms/" bis_skin_checked="1">Điều khoản sử dụng</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-6 col-md" bis_skin_checked="1">
+                        <div class="footer-title" bis_skin_checked="1">Tài nguyên</div>
+                        <ul class="list-unstyled text-small">
+
+                            <li><a href="/tests/" bis_skin_checked="1">Thư viện đề thi</a></li>
+                            <li><a href="/posts/" bis_skin_checked="1">Blog</a></li>
+                            <li><a href="/materials/" bis_skin_checked="1">Kho tài liệu</a></li>
+
+
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md" bis_skin_checked="1">
+                        <div class="footer-title" bis_skin_checked="1">Chính sách chung</div>
+                        <ul class="list-unstyled text-small">
+                            <li><a href="/user-guide/" bis_skin_checked="1">Hướng dẫn sử dụng</a></li>
+                            <li><a href="/buying-guide/" bis_skin_checked="1">Hướng dẫn thanh toán</a></li>
+
+                            <li><a href="/buying-terms/" bis_skin_checked="1">Điều khoản và Điều Kiện Giao Dịch</a></li>
+                            <li><a href="/checkout-policy" bis_skin_checked="1">Chính sách kiểm hàng</a></li>
+                            <li><a href="/delivery-policy" bis_skin_checked="1">Chính sách giao, nhận hàng</a></li>
+                            <li><a href="/feedback/" bis_skin_checked="1">Phản hồi, khiếu nại</a></li>
+                            <li><a href="/return-policy" bis_skin_checked="1">Chính sách chuyển đổi, hoàn hủy</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+
+                <div class="footer-copyright text-center" bis_skin_checked="1">
+                    LearnEnglish © Bản quyền của GROUP11.
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,2787 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn English</title>
+    <link rel="icon" href="/assets/img/Avatar_LearnEnglish.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/f9374b778e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+    
+    <div class="topnav1 topnav-wrapper" bis_skin_checked="1">
+        <div class="topnav-container" bis_skin_checked="1">
+            <nav class="navbar  navbar-expand-lg">
+                <span class="navbar-brand">
+                    <a class="topnav-brand" href="/">
+                        <img class="topnav-logo" src="/assets/img/Logo_LearnEnglish.svg" alt="STUDY4">
+
+                    </a>
+                </span>
+                <button class="navbar-toggler pull-xs-right d-lg-none" type="button" data-toggle="collapse"
+                    data-target="#navbar-collapse">
+                    ☰
+
+                </button>
+                <div class="d-lg-block navbar-collapse justify-content-end collapse" id="navbar-collapse"
+                    bis_skin_checked="1">
+
+                    <ul class="nav">
+
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/courses/" bis_skin_checked="1">Course</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/skills/" bis_skin_checked="1">Skill</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/flashcards/me/" bis_skin_checked="1">Flashcards</a>
+                        </li>
+
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/blog/" bis_skin_checked="1">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/general-english/" bis_skin_checked="1">General english</a>
+                        </li>
+
+
+
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/courses/activate/" bis_skin_checked="1">
+                                Kích hoạt tài khoản
+                            </a>
+                        </li>
+
+                        <li class="nav-item user-topnav dropdown d-none d-lg-block">
+                            <a class="nav-link dropdown-toggle user-topnav-profile" href="/my-account/" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" bis_skin_checked="1">
+                                <span class="account-profile-img">
+
+                                    <img src="/assets/img/user_icon.webp" alt="ChuTanTai23130280">
+
+                                </span>
+
+                            </a>
+
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" bis_skin_checked="1">
+                                <div bis_skin_checked="1">
+                                    <h6 class="dropdown-header" id="thông-báo"> Thông báo </h6>
+                                    <div id="new-notis-dropdown-content" class="jqhtml-loader dropdown-text"
+                                        data-href="/notifications/newest/" bis_skin_checked="1">
+                                        <p class="font-sm"><i>Bạn chưa có thông báo mới.</i></p>
+
+
+                                        <div class="mt-2 link font-sm" bis_skin_checked="1"><a href="/notifications/"
+                                                bis_skin_checked="1">Xem tất cả &gt;&gt;</a></div>
+                                    </div>
+                                </div>
+
+                                <div class="dropdown-divider" bis_skin_checked="1"></div>
+                                <a class="dropdown-item" href="/studyplan/" bis_skin_checked="1">Lịch học của tôi</a>
+                                <a class="dropdown-item" href="/my-account/" bis_skin_checked="1">Trang cá nhân</a>
+                                <a class="dropdown-item" href="/logout/" bis_skin_checked="1">Đăng xuất</a>
+                            </div>
+                        </li>
+                        <li class="nav-item d-lg-none">
+                            <a class="nav-link" href="/notifications/" bis_skin_checked="1">Thông báo </a>
+                        </li>
+                        <li class="nav-item d-lg-none">
+                            <a class="nav-link" href="/studyplan/" bis_skin_checked="1">Lịch học của tôi</a>
+                        </li>
+                        <li class="nav-item d-lg-none">
+                            <a class="nav-link" href="/my-account/" bis_skin_checked="1">Trang cá nhân</a>
+                        </li>
+                        <li class="nav-item d-lg-none">
+                            <a class="nav-link" href="/logout/" bis_skin_checked="1">Đăng xuất</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+<script>
+    // JavaScript để xử lý dropdown
+    document.addEventListener('DOMContentLoaded', function() {
+        const profileBtn = document.querySelector('.user-topnav-profile');
+        const dropdownMenu = document.querySelector('.dropdown-menu');
+    
+        // Toggle dropdown khi click vào profile
+        profileBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            dropdownMenu.classList.toggle('show');
+        });
+    
+        // Đóng dropdown khi click ra ngoài
+        document.addEventListener('click', function(e) {
+            if (!profileBtn.contains(e.target) && !dropdownMenu.contains(e.target)) {
+                dropdownMenu.classList.remove('show');
+            }
+        });
+    });
+</script>
+    <script>
+        // JavaScript để xử lý dropdown
+        document.addEventListener('DOMContentLoaded', function () {
+            const profileBtn = document.querySelector('.user-topnav-profile');
+            const dropdownMenu = document.querySelector('.dropdown-menu');
+
+            // Toggle dropdown khi click vào profile
+            profileBtn.addEventListener('click', function (e) {
+                e.preventDefault();
+                dropdownMenu.classList.toggle('show');
+            });
+
+            // Đóng dropdown khi click ra ngoài
+            document.addEventListener('click', function (e) {
+                if (!profileBtn.contains(e.target) && !dropdownMenu.contains(e.target)) {
+                    dropdownMenu.classList.remove('show');
+                }
+            });
+        });
+    </script>
+
+
+
+
+
+
+<body class="highlighter-context">
+
+
+    
+    <script>
+        // JavaScript để xử lý dropdown
+        document.addEventListener('DOMContentLoaded', function () {
+            const profileBtn = document.querySelector('.user-topnav-profile');
+            const dropdownMenu = document.querySelector('.dropdown-menu');
+
+            // Toggle dropdown khi click vào profile
+            profileBtn.addEventListener('click', function (e) {
+                e.preventDefault();
+                dropdownMenu.classList.toggle('show');
+            });
+
+            // Đóng dropdown khi click ra ngoài
+            document.addEventListener('click', function (e) {
+                if (!profileBtn.contains(e.target) && !dropdownMenu.contains(e.target)) {
+                    dropdownMenu.classList.remove('show');
+                }
+            });
+        });
+    </script>
+
+
+        
+    <div id="fb-root" class=" fb_reset fb_reset"><div style="position: absolute; top: -10000px; width: 0px; height: 0px;"><div></div></div><div style="position: absolute; top: -10000px; width: 0px; height: 0px;"><div></div></div></div>
+    <script async="" defer="" crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&amp;version=v20.0&amp;appId=203430341284880&amp;autoLogAppEvents=1" nonce="1d3MdMH8" type="text/javascript"></script>
+    
+    
+
+    
+    <div class="site-elevator">
+        <div class="elevator-item elevator-open d-md-none">
+            <span class="fal fa-chevron-left" aria-hidden="true"></span>
+        </div>
+        <div class="elevator-item elevator-close d-md-none">
+            <span class="fal fa-chevron-right" aria-hidden="true"></span>
+        </div>
+        <div class="elevator-item">
+            <div class="jqdictionary-show" target="#">
+                <img src="/static/img/dictionary.png">
+                <div class="elevator-text">Từ điển</div>
+            </div>
+        </div>
+        <div class="jqdictionary-wrapper">
+            <span class="jqdictionary-expand fal fa-plus-square" aria-hidden="true"></span>
+            <span class="jqdictionary-close far fa-times" aria-hidden="true"></span>
+            <div class="h6 font-500 font-sm">
+                <a class="link jqdictionary-tab active" data-href="https://m.dict.laban.vn/">Anh-Việt</a> |
+                <a class="link jqdictionary-tab" data-href="https://www.wordreference.com/definition/">WordReference</a> |
+                <a class="link jqdictionary-tab" data-href="https://onelook.com/thesaurus/">Thesaurus</a> |
+                <a class="link jqdictionary-tab" data-href="https://vtudien.com/trung-viet/dictionary/nghia-cua-tu-%E4%BD%A0%E5%A5%BD">Tiếng Trung</a>
+            </div>
+            <div class="jqdictionary-iframe">
+                <iframe loading="lazy" frameborder="0"></iframe>
+            </div>
+        </div>
+
+
+        
+        <div class="elevator-item">
+            <a target="_blank" href="https://m.me/LearnEnglish.support">
+                <img src="/static/img/messenger.png">
+            </a>
+        </div>
+        
+
+        <div class="elevator-item">
+            <a target="_blank" href="https://zalo.me/LearnEnglish">
+                <img src="/static/img/zalo.jpg">
+            </a>
+        </div>
+
+
+        
+        <div class="elevator-item site-scrollTop" onclick="if (!window.__cfRLUnblockHandlers) return false; window.topFunction()" id="site-scrollTop" title="Go to top" style="display: none;">
+            <span class="fal fa-chevron-up" aria-hidden="true"></span>
+        </div>
+    </div>
+    
+
+    
+
+    <div class="site-wrapper">
+
+        
+
+        
+
+
+<div class="topnav1 topnav-wrapper">
+<div class="topnav-container">
+    
+</div>
+</div>
+
+        
+
+        
+        <div class="site-content-wrapper">
+            
+
+            
+
+            
+            
+            
+            
+
+            
+<div class="container pb-0">
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/">Trang chủ</a></li>
+        
+        <li class="breadcrumb-item"><a href="/blog/index.html">Bài viết</a></li>
+        <li class="breadcrumb-item"><a href="/blog/luyen-thi-ielts/index.html">IELTS Materials</a></li>
+        
+        <li class="breadcrumb-item active"><a href="/blog/luyen-thi-ielts/tong-hop-tu-vung-ielts-chu-de-crime-toi-pham/index.html">Tổng hợp từ vựng IELTS chủ đề Crime (Tội phạm)</a></li>
+    </ol>
+</nav>
+</div>
+
+
+            
+<div class="content-header py-0">
+<div class="container py-0">
+    <div class="image-wrapper">
+        <a href="/courses/level-test/">
+            
+        </a>
+    </div>
+    <br>
+    <h1 class="post-title" id="tổng-hợp-từ-vựng-ielts-chủ-đề-crime-tội-phạm">
+        Tổng hợp từ vựng IELTS chủ đề Crime (Tội phạm)
+        
+    </h1>
+    
+    <p class="post-description">
+        Tham khảo tổng hợp từ vựng IELTS chủ đề Crime đầy đủ nhất để dễ dàng đạt điểm tốt trong kỳ thi IELTS nhé!
+    </p>
+    
+</div>
+</div>
+
+
+            
+            <div class="content-wrapper">
+                
+                
+<div class="container">
+<div class="row">
+    
+    <div class="col-12 col-md-7 order-md-2">
+        <div class="post-wrapper">
+            <div class="media post-author-media py-2 mb-3 border-bottom">
+                <div class="post-author-img">
+                    
+                    <img src="https://res.cloudinary.com/sandodep3/image/upload/w_300/sandodep3_x_96255548703714412352793642007929690225_gi9mvk" alt="anhdp.LearnEnglish">
+                    
+                </div>
+                <div class="media-body">
+                    <div class="post-author-name"><a target="_blank" href="/u/anhdp.LearnEnglish/">Phuong Anh Do</a></div>
+                    <div class="post-meta">02/12/2024</div>
+                </div>
+            </div>
+
+            <div class="post-main-wrapper">
+
+                
+
+                
+                <br>
+                <div class="contentblock gray-bg">
+                    <div class="h5 font-italic">Các bài viết liên quan</div>
+                    
+<ul class="post-links">
+
+
+
+<li class="post-link"><a href=" https://LearnEnglish.com/posts/1564/tong-hop-tu-vung-ielts-chu-de-environment/">Tổng hợp từ vựng IELTS chủ đề Environment</a></li>
+
+
+
+
+<li class="post-link"><a href=" https://LearnEnglish.com/posts/1562/tong-hop-tu-vung-ielts-chu-de-traveling/">Tổng hợp từ vựng IELTS chủ đề Traveling</a></li>
+
+
+</ul>
+
+                </div>
+                <br><br>
+                
+
+                <div class="post-main mt-2">
+                    
+                    <div id="post-content" class="post-content md-content js-toc-content" prewrap="">
+                        <p><img alt=" từ vựng IELTS chủ đề Crime (Tội phạm)" src="https://study4.com/media/uploads/editor/hangbm.LearnEnglish/2024/12/05/cach-dung-26.png" style="height:674px; width:1200px"></p>
+
+<p>Từ vựng chủ đề Crime là một phần không thể thiếu trong kỳ thi IELTS, vì vậy nên việc hiểu và sử dụng linh hoạt từ vựng về tội phạm sẽ giúp bạn truyền đạt ý tưởng rõ ràng và tạo ấn tượng tốt hơn trong bài thi. Bài viết này của LearnEnglish sẽ cung cấp danh sách từ vựng IELTS cần thiết về chủ đề Crime, kèm theo các mẹo học từ vựng hiệu quả nhằm giúp bạn dễ dàng ghi nhớ và áp dụng từ vựng vào bài thi cùng nâng cao khả năng diễn đạt một cách tự tin và thuyết phục nhé.&nbsp;</p>
+
+<h2 id="i.-sự-quan-trọng-của-từ-vựng-với-kỳ-thi-ielts"><span style="font-size:22px"><strong>I. Sự quan trọng của từ vựng với kỳ thi IELTS</strong></span></h2>
+
+<p><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXd9ojT07i7rU1iQ7yQIfGiNpkH-SQsSbT6VKPjGInwYMBnsQgYGevzICfPmW4FNYXA6hG8277C9f9qQikrnC97DkOMV6sBsZGzEKXFeT_64ngM9G5Im2xRWGSyNcxqjlhIycLlsJw?key=p1VNKZCbBb0i0fTBU9fuc7dk" style="height:401px; width:602px"></p>
+
+<p style="text-align:center"><em>Sự quan trọng của từ vựng với kỳ thi IELTS</em></p>
+
+<p><span style="font-size:20px"><strong>1. Vai trò của từ vựng trong từng kỹ năng</strong></span></p>
+
+<p>IELTS đánh giá thí sinh qua bốn kỹ năng: Nghe, Đọc, Nói và Viết. Mỗi kỹ năng đều đòi hỏi một mức độ hiểu biết về từ vựng khác nhau:</p>
+
+<ul>
+<li style="list-style-type:disc"><strong>Kỹ năng Nghe và Đọc</strong>: Vốn từ phong phú giúp thí sinh hiểu rõ nội dung bài nghe và bài đọc một cách nhanh chóng. Chẳng hạn, trong phần Listening, các từ đồng nghĩa, thành ngữ hoặc các cách diễn đạt khác nhau được sử dụng để đánh lạc hướng người nghe. Nếu không quen thuộc với các từ vựng này, thí sinh sẽ khó nhận biết được thông tin đúng.</li>
+<li style="list-style-type:disc"><strong>Kỹ năng Nói và Viết</strong>: Một phần quan trọng trong tiêu chí chấm điểm là tính linh hoạt và chính xác của từ vựng. Khi thí sinh có thể sử dụng từ vựng phong phú và đa dạng, bài nói và bài viết sẽ trở nên sinh động, mạch lạc hơn, đồng thời thể hiện được sự am hiểu sâu sắc về ngôn ngữ.&nbsp;</li>
+</ul>
+
+<p><span style="font-size:20px"><strong>2. Sự quan trọng của từ vựng chuyên ngành và từ đồng nghĩa</strong></span></p>
+
+<p>Trong kỳ thi IELTS, đặc biệt là các chủ đề học thuật như "Environment," "Crime," hay "Education," từ vựng chuyên ngành thể hiện sự hiểu biết sâu rộng của thí sinh về chủ đề. Thí sinh sử dụng được các từ này một cách chính xác sẽ tạo ra ấn tượng tốt, thể hiện rằng họ có khả năng hiểu và phân tích vấn đề một cách chi tiết.</p>
+
+<p>Thêm vào đó, từ đồng nghĩa giúp tránh lặp từ, làm cho câu văn và bài nói trở nên mạch lạc, tinh tế hơn. Ví dụ, khi nói về tội phạm trong bài thi Nói, thay vì liên tục sử dụng từ "crime," thí sinh có thể dùng các từ khác như "offense" hoặc "delinquency" để thể hiện tính đa dạng.</p>
+
+<p><span style="font-size:20px"><strong>3. Cải thiện sự chính xác và rõ ràng trong giao tiếp</strong></span></p>
+
+<p>Khi có vốn từ vựng phong phú và chính xác, thí sinh sẽ diễn đạt ý tưởng rõ ràng hơn. Sự chính xác này đặc biệt quan trọng vì những lỗi về từ vựng có thể gây hiểu nhầm ý nghĩa, làm giảm hiệu quả giao tiếp và dẫn đến việc mất điểm. Ví dụ, nếu muốn nói về "consequences" (hậu quả) của một vấn đề, nhưng lại sử dụng nhầm thành "advantages" (lợi ích), ý nghĩa của câu sẽ hoàn toàn sai lệch.</p>
+
+<p><em style="-webkit-text-stroke-width:0px; background-color:#ffffff; box-sizing:border-box; color:#213261; cursor:pointer; font-family:Roboto,Arial,sans-serif; font-size:16px; font-style:normal; font-variant-caps:normal; font-variant-ligatures:normal; font-weight:400; letter-spacing:normal; orphans:2; text-align:center; text-decoration:none; text-indent:0px; text-transform:none; white-space:normal; widows:2; word-spacing:0px"><u><span style="color:#213261"><span style="background-color:#ffffff"><a href="https://LearnEnglish.com/posts/927/lo-trinh-tu-hoc-ielts-online-tu-so-0-den-7-cua-LearnEnglish/" style="box-sizing: border-box; color: rgb(33, 50, 97); text-decoration: none; background-color: rgb(255, 255, 255); cursor: pointer; font-family: Roboto, Arial, sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal;"><img src="https://lh7-us.googleusercontent.com/docsz/AD_4nXdgfL_S0HMsL2D0bgO42i1nv96X3OaHDlfGJL_P5WH_QgkEr4l4Jw5gepr31ZtxuXke0K26owEHL0a2nagsE3WwllmnuNjCuzSRvbTUZk0NJG7x11ayp2G5u6Kv7IcV7xqrBhqCRUc3ict-W1rQ6XJBVz4j?key=EPo-2R-TSccNg08Xhi5HPw" style="border-style:none; box-sizing:border-box; display:block; height:84px; margin:1rem auto; max-width:100%; vertical-align:middle; width:600px"></a></span></span></u></em></p>
+
+<div>
+<table cellspacing="0" style="border-collapse:collapse; border:none; table-layout:fixed; width:624px">
+<tbody>
+    <tr>
+        <td style="background-color:#fffce4; border-bottom:1px solid #fffce4; border-left:1px solid #fffce4; border-right:1px solid #fffce4; border-top:1px solid #fffce4; vertical-align:top">
+        <p><strong><em>Tham khảo </em></strong><a href="https://LearnEnglish.com/courses/series/4/combo-advanced-ielts-intensive/?itm_source=seo&amp;itm_medium=article&amp;itm_campaign=blogpost_internal_link&amp;itm_content=1565" style="text-decoration:none"><span style="color:#1155cc"><strong><em><u>Combo Advanced IELTS Intensive kèm chấm chữa giáo viên bản ngữ [Tặng khoá TED Talks]</u></em></strong></span></a></p>
+
+        <p>1️⃣ <em>Xây dựng vốn từ vựng học thuật 99% sẽ xuất hiện trong 2 phần thi Listening và Reading</em></p>
+
+        <p>2️⃣ <em>Làm chủ tốc độ và các ngữ điệu khác nhau trong phần thi IELTS Listening</em></p>
+
+        <p>3️⃣ <em>Nắm chắc chiến thuật và phương pháp làm các dạng câu hỏi trong IELTS Listening và Reading</em></p>
+
+        <p>4️⃣ <em>Xây dựng ý tưởng viết luận, kỹ năng viết câu, bố cục các đoạn, liên kết ý và vốn từ vựng phong phú cho các chủ đề trong IELTS Writing</em></p>
+
+        <p>5️⃣ <em>Luyện tập phát âm, từ vựng, ngữ pháp và thực hành luyện nói các chủ đề thường gặp và forecast trong IELTS Speaking</em></p>
+
+        <p>6️⃣ <em>Được chấm chữa chi tiết (gồm điểm và nhận xét thành phần trong rubic) xác định được điểm yếu và cách khắc phục trong IELTS Speaking và Writing.</em></p>
+        </td>
+    </tr>
+</tbody>
+</table>
+</div>
+
+<h2 id="ii.-tổng-hợp-từ-vựng-ielts-chủ-đề-crime"><span style="font-size:22px"><strong>II. Tổng hợp từ vựng IELTS chủ đề Crime</strong></span></h2>
+
+<p><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXdVPpJvRCImY1JttgAPz-r4hjJ7V7yhYMCqoso7tExYQU6ASp52FhnfuGRF2SgJ7OOMgxqg44YJPV7-237oxSNrMeG5-245fcsx07yZ0aBAKuyR1_O_2qtzJTyEEoCVf7GlvPKVIQ?key=p1VNKZCbBb0i0fTBU9fuc7dk" style="height:401px; width:602px"></p>
+
+<p style="text-align:center"><em>Tổng hợp từ vựng IELTS chủ đề Crime</em></p>
+
+<p><span style="font-size:20px"><strong>1. Tổng hợp từ vựng IELTS chủ đề Crime: Types of Crime (Các loại tội phạm)</strong></span></p>
+
+<div>
+<table cellspacing="0" style="border-collapse:collapse; border:none; table-layout:fixed; width:602px">
+<tbody>
+    <tr>
+        <td style="background-color:#fce5cd; border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p style="text-align:center"><strong>Từ vựng</strong></p>
+        </td>
+        <td style="background-color:#fce5cd; border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p style="text-align:center"><strong>Phiên âm IPA</strong></p>
+        </td>
+        <td style="background-color:#fce5cd; border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p style="text-align:center"><strong>Nghĩa tiếng Anh</strong></p>
+        </td>
+        <td style="background-color:#fce5cd; border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p style="text-align:center"><strong>Nghĩa tiếng Việt</strong></p>
+        </td>
+        <td style="background-color:#fce5cd; border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p style="text-align:center"><strong>Ví dụ</strong></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><span style="color:#b45f06"><strong>Theft</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>/θeft/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>The act of stealing</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Trộm cắp</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><em>Theft is a growing problem in urban areas.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><span style="color:#b45f06"><strong>Burglary</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>/ˈbɜːɡləri/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Illegal entry to commit a crime</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Tội đột nhập</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><em>The burglary was reported to the police last night.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><span style="color:#b45f06"><strong>Robbery</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>/ˈrɒbəri/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Taking property by force or threat</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Tội cướp tài sản</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><em>The bank was closed after a robbery occurred there.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><span style="color:#b45f06"><strong>Pickpocketing</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>/ˈpɪkˌpɒkɪtɪŋ/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Stealing from someone's pocket</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Tội móc túi</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><em>Pickpocketing is common in crowded tourist areas.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><span style="color:#b45f06"><strong>Fraud</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>/frɔːd/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Deception for financial gain</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Lừa đảo</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><em>He was charged with fraud after deceiving several clients.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><span style="color:#b45f06"><strong>Identity theft</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>/aɪˈdentəti θeft/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Using someone’s identity illegally</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Trộm danh tính</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><em>Identity theft is on the rise in the digital age.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><span style="color:#b45f06"><strong>Tax evasion</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>/ˈtæks ɪˌveɪʒən/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Illegally avoiding tax payments</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Trốn thuế</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><em>Tax evasion is punishable by heavy fines.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><span style="color:#b45f06"><strong>Cybercrime</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>/ˈsaɪbəkraɪm/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Crimes using computers or the internet</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Tội phạm mạng</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><em>Cybercrime has become a major concern for companies.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><span style="color:#b45f06"><strong>Drug trafficking</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>/drʌɡ ˈtræfɪkɪŋ/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>The trade of illegal drugs</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Buôn bán ma túy</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><em>Drug trafficking is a serious crime with harsh penalties.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><span style="color:#b45f06"><strong>Assault</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>/əˈsɒlt/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Physical attack on someone</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Hành hung</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><em>He was arrested for assault after the altercation.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><span style="color:#b45f06"><strong>Murder</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>/ˈmɜ:dər/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>The unlawful killing of someone</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Tội giết người</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><em>Murder rates have dropped due to increased security.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><span style="color:#b45f06"><strong>Homicide</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>/ˈhɒmɪsaɪd/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Killing of one person by another</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Tội sát nhân</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><em>The police are investigating the recent homicide case.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><span style="color:#b45f06"><strong>Smuggling</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>/ˈsmʌɡlɪŋ/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Importing/exporting illegally</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Buôn lậu</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><em>Smuggling is common at borders with limited checks.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><span style="color:#b45f06"><strong>Vandalism</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>/ˈvændəlɪzəm/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Deliberate damage to property</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Phá hoại tài sản</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><em>The school suffered from vandalism last weekend.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><span style="color:#b45f06"><strong>Arson</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>/ˈɑːrsən/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Deliberate setting of fire</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Tội phóng hỏa</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><em>Arson is suspected in the warehouse fire.</em></p>
+        </td>
+    </tr>
+</tbody>
+</table>
+</div>
+
+<p><span style="font-size:20px"><strong>2. Tổng hợp từ vựng IELTS chủ đề Crime: Criminals (Những người phạm tội)</strong></span></p>
+
+<p><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXcV6hXj1ZqEr-RSX6oJqW7qonKIE9IDGVmFbQjzRuu-KMoBhCON5najiuAFNI0rFb2_gla1ZymGM6i9sVkxZcl2UW2saRGrgRn6sQJ2pi4L_wzAe5jMMr-FrtrkLzJt5n7HKkn08w?key=p1VNKZCbBb0i0fTBU9fuc7dk" style="height:604px; width:602px"></p>
+
+<p style="text-align:center"><em>Tổng hợp từ vựng IELTS chủ đề Crime: Criminals (Những người phạm tội)</em></p>
+
+<div>
+<table cellspacing="0" style="border-collapse:collapse; border:none; table-layout:fixed; width:602px">
+<tbody>
+    <tr>
+        <td style="background-color:#fce5cd; border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p style="text-align:center"><strong>Từ vựng</strong></p>
+        </td>
+        <td style="background-color:#fce5cd; border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p style="text-align:center"><strong>Phiên âm IPA</strong></p>
+        </td>
+        <td style="background-color:#fce5cd; border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p style="text-align:center"><strong>Nghĩa tiếng Anh</strong></p>
+        </td>
+        <td style="background-color:#fce5cd; border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p style="text-align:center"><strong>Nghĩa tiếng Việt</strong></p>
+        </td>
+        <td style="background-color:#fce5cd; border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p style="text-align:center"><strong>Ví dụ</strong></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><span style="color:#b45f06"><strong>Thief</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>/θiːf/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>A person who steals</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Kẻ trộm</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><em>The thief was caught trying to escape with the stolen goods.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><span style="color:#b45f06"><strong>Burglar</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>/ˈbɜːɡlər/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Someone who breaks in to steal</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Tên đột nhập</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><em>The burglar entered through a back window.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><span style="color:#b45f06"><strong>Robber</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>/ˈrɒbər/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Someone who steals using force</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Tên cướp</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><em>The robber threatened the cashier with a weapon.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><span style="color:#b45f06"><strong>Pickpocket</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>/ˈpɪkˌpɒkɪt/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Someone who steals from pockets</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Tên móc túi</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><em>A pickpocket stole her wallet in the crowded train station.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><span style="color:#b45f06"><strong>Fraudster</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>/ˈfrɔːdstər/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Someone who commits fraud</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Kẻ lừa đảo</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><em>The fraudster was arrested for scamming several victims.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><span style="color:#b45f06"><strong>Drug dealer</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>/drʌɡ ˈdiːlər/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Someone who sells illegal drugs</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Kẻ buôn bán ma túy</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><em>The police arrested a drug dealer in the neighborhood.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><span style="color:#b45f06"><strong>Murderer</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>/ˈmɜːdərər/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>A person who commits murder</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Kẻ giết người</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><em>The murderer was sentenced to life imprisonment.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><span style="color:#b45f06"><strong>Arsonist</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>/ˈɑːrsənəst/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Someone who sets fires deliberately</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Kẻ phóng hỏa</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><em>The arsonist set fire to the abandoned building.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><span style="color:#b45f06"><strong>Smuggler</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>/ˈsmʌɡlər/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>A person who illegally transports goods</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Kẻ buôn lậu</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><em>The smuggler was caught at the border with illegal goods.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><span style="color:#b45f06"><strong>Vandal</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>/ˈvændəl/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Someone who damages property</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Kẻ phá hoại</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><em>Vandals spray-painted the walls of the school at night.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><span style="color:#b45f06"><strong>Kidnapper</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>/ˈkɪdnæpər/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Someone who takes people for ransom</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Kẻ bắt cóc</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><em>The kidnapper demanded a large ransom for the child’s release.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><span style="color:#b45f06"><strong>Terrorist</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>/ˈterərəst/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Someone who uses violence for political aims</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Kẻ khủng bố</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><em>The terrorist was apprehended before carrying out his plan.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><span style="color:#b45f06"><strong>Shoplifter</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>/ˈʃɒplɪftər/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Someone who steals from a store</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Kẻ trộm vặt trong cửa hàng</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><em>The shoplifter was caught on the store's security camera.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><span style="color:#b45f06"><strong>Blackmailer</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>/ˈblækˌmeɪlər/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>A person who demands money by threatening</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Kẻ tống tiền</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><em>The blackmailer threatened to release private information.</em></p>
+        </td>
+    </tr>
+</tbody>
+</table>
+</div>
+
+<p><span style="font-size:20px"><strong>3. Tổng hợp từ vựng IELTS chủ đề Crime: Law and Punishment (Luật pháp và hình phạt)</strong></span></p>
+
+<p><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXe1_g6CdyiH2XeMnpOR3GSbJ2agy4WcuTmLKdITsiwJB1uWkD1bi512xaRi3LQUB1PlA-d23B2XQEfCExn-2B-B-p2jXtNrBdxaAqWJTzLNHfMS1XPzVXIkZaCp72tAJlontWtDNQ?key=p1VNKZCbBb0i0fTBU9fuc7dk" style="height:601px; width:602px"></p>
+
+<p style="text-align:center"><em>Tổng hợp từ vựng IELTS chủ đề Crime: Law and Punishment (Luật pháp và hình phạt)</em></p>
+
+<div>
+<table cellspacing="0" style="border-collapse:collapse; border:none; table-layout:fixed; width:602px">
+<tbody>
+    <tr>
+        <td style="background-color:#fce5cd; border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p style="text-align:center"><strong>Từ vựng</strong></p>
+        </td>
+        <td style="background-color:#fce5cd; border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p style="text-align:center"><strong>Phiên âm IPA</strong></p>
+        </td>
+        <td style="background-color:#fce5cd; border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p style="text-align:center"><strong>Nghĩa tiếng Anh</strong></p>
+        </td>
+        <td style="background-color:#fce5cd; border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p style="text-align:center"><strong>Nghĩa tiếng Việt</strong></p>
+        </td>
+        <td style="background-color:#fce5cd; border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p style="text-align:center"><strong>Ví dụ</strong></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><span style="color:#b45f06"><strong>Fine</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>/faɪn/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>A sum of money required as punishment</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Tiền phạt</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><em>The judge imposed a fine on the company for polluting the river.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><span style="color:#b45f06"><strong>Imprisonment</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>/ɪmˈprɪzənmənt/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Being confined in prison as punishment</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Án tù</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><em>He was sentenced to five years of imprisonment for robbery.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><span style="color:#b45f06"><strong>Jail time</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>/dʒeɪl taɪm/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>The time spent in jail as punishment</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Thời gian ngồi tù</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><em>He had to serve jail time for his involvement in the crime.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><span style="color:#b45f06"><strong>Life sentence</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>/laɪf ˈsentəns/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>A sentence in which the person is imprisoned for life</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Án tù chung thân</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><em>The murderer received a life sentence without parole.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><span style="color:#b45f06"><strong>Death penalty</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>/deθ ˈpenəlti/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>A legal punishment where the person is executed</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Án tử hình</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><em>Some countries still have the death penalty for serious crimes.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><span style="color:#b45f06"><strong>Probation</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>/prəˈbeɪʃən/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>A period of supervision after a sentence</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Cải tạo không giam giữ, án treo</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><em>The judge gave him probation instead of imprisonment.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><span style="color:#b45f06"><strong>Community service</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>/kəˈmjuːnəti ˈsɜːvɪs/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>A punishment requiring the offender to work for the community</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Lao động công ích</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><em>He was sentenced to 200 hours of community service.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><span style="color:#b45f06"><strong>Sentence</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>/ˈsentəns/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>The punishment given to someone convicted of a crime</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Bản án</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><em>The court will announce the sentence next week.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><span style="color:#b45f06"><strong>Conviction</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>/kənˈvɪkʃən/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>The state of being found guilty of a crime</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Sự kết tội</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><em>The conviction was based on strong evidence presented at trial.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><span style="color:#b45f06"><strong>Appeal</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>/əˈpiːl/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>A request to a higher court to change a decision</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Kháng cáo</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><em>The defendant filed an appeal after being convicted.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><span style="color:#b45f06"><strong>Acquittal</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>/əˈkwɪtəl/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>A judgment that a person is not guilty</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Bản án trắng án</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><em>The jury returned a verdict of acquittal in the case.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><span style="color:#b45f06"><strong>Parole</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>/pəˈroʊl/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>The release of a prisoner before the end of their sentence under conditions</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Tha tù trước thời hạn</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><em>He was granted parole after serving 10 years in prison.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><span style="color:#b45f06"><strong>Detention</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>/dɪˈtenʃən/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>The act of keeping someone in custody</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Sự giam giữ</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><em>The police held the suspect in detention for 48 hours.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><span style="color:#b45f06"><strong>Rehabilitation</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>/ˌrihəˌbɪləˈteɪʃən/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>The process of helping a criminal to reintegrate into society</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Tái hòa nhập</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><em>The prison offers rehabilitation programs for young offenders.</em></p>
+        </td>
+    </tr>
+</tbody>
+</table>
+</div>
+
+<p><span style="font-size:20px"><strong>4. Tổng hợp từ vựng IELTS chủ đề Crime: Legal Process (Quá trình pháp lý)</strong></span></p>
+
+<p><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXcCe09umalRUAwuMbNDlLljxxefcWsOkb8ZIr0VoGhRfgCEW0c4iWgCuXjpkLRSSno_Vb5i58t1fwCyxDLXaJG5bEtmbG9BAvaf-Ozfh8Dh3iYn1MgHbCezfdhFkZddV32qbHERug?key=p1VNKZCbBb0i0fTBU9fuc7dk" style="height:429px; width:602px"></p>
+
+<p style="text-align:center"><em>Tổng hợp từ vựng IELTS chủ đề Crime: Legal Process (Quá trình pháp lý)</em></p>
+
+<div>
+<table cellspacing="0" style="border-collapse:collapse; border:none; table-layout:fixed; width:602px">
+<tbody>
+    <tr>
+        <td style="background-color:#fce5cd; border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p style="text-align:center"><strong>Từ vựng</strong></p>
+        </td>
+        <td style="background-color:#fce5cd; border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p style="text-align:center"><strong>Phiên âm IPA</strong></p>
+        </td>
+        <td style="background-color:#fce5cd; border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p style="text-align:center"><strong>Nghĩa tiếng Anh</strong></p>
+        </td>
+        <td style="background-color:#fce5cd; border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p style="text-align:center"><strong>Nghĩa tiếng Việt</strong></p>
+        </td>
+        <td style="background-color:#fce5cd; border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p style="text-align:center"><strong>Ví dụ</strong></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><span style="color:#b45f06"><strong>Investigation</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>/ɪnˌvestɪˈɡeɪʃən/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>A process of examining a crime to gather facts</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Cuộc điều tra</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><em>The police started an investigation after the robbery occurred.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><span style="color:#b45f06"><strong>Arrest</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>/əˈrest/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>To take someone into custody for a crime</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Bắt giữ</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><em>He was arrested for assault and taken to the police station.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><span style="color:#b45f06"><strong>Trial</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>/ˈtraɪəl/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>A formal examination of evidence in court</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Phiên tòa</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><em>The trial will determine whether the defendant is guilty or not.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><span style="color:#b45f06"><strong>Prosecution</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>/ˌprɒsɪˈkjuːʃən/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>The legal process of charging someone with a crime</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Sự truy tố</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><em>The prosecution presented its case against the defendant.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><span style="color:#b45f06"><strong>Defense</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>/dɪˈfens/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>The argument or strategy to protect someone in court</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Phòng vệ</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><em>The defense lawyer argued that there was insufficient evidence.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><span style="color:#b45f06"><strong>Verdict</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>/ˈvɜːdɪkt/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>The decision of a jury or judge in a trial</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Bản án</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><em>The jury delivered a guilty verdict after deliberating for hours.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><span style="color:#b45f06"><strong>Lawyer</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>/ˈlɔɪ.ər/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>A person who represents clients in legal matters</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Luật sư</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><em>The lawyer advised his client to remain silent during questioning.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><span style="color:#b45f06"><strong>Judge</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>/dʒʌdʒ/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>An official who presides over court proceedings</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Thẩm phán</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><em>The judge will announce the sentencing after reviewing the case.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><span style="color:#b45f06"><strong>Witness</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>/ˈwɪtnəs/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>A person who gives testimony in a trial</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Nhân chứng</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><em>The witness testified that he saw the suspect at the scene.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><span style="color:#b45f06"><strong>Evidence</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>/ˈevɪdəns/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Information used to support or disprove an accusation</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Bằng chứng</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><em>The evidence was insufficient to convict the accused person.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><span style="color:#b45f06"><strong>Bail</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>/beɪl/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>The temporary release of an accused person awaiting trial</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Tiền bảo lãnh</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><em>He was granted bail after his arrest and released until the trial.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><span style="color:#b45f06"><strong>Indictment</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>/ɪnˈdaɪtmənt/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>A formal charge or accusation of a crime</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Cáo trạng</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><em>The grand jury returned an indictment against the suspect.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><span style="color:#b45f06"><strong>Subpoena</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>/səˈpiːnə/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>A legal document ordering someone to appear in court</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Lệnh triệu tập</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><em>The lawyer issued a subpoena for the witness to testify in court.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><span style="color:#b45f06"><strong>Plea</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>/pliː/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>A formal statement of guilt or innocence in court</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Lời khai</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><em>The defendant entered a plea of not guilty to all charges.</em></p>
+        </td>
+    </tr>
+</tbody>
+</table>
+</div>
+
+<p><span style="font-size:20px"><strong>5. Tổng hợp từ vựng IELTS chủ đề Crime: Effects of Crime (Ảnh hưởng của tội phạm)</strong></span></p>
+
+<p><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXcrJ3--K31iiUkf5yoPDQw0av-x5MLTbqmC5NTDTisXrnxtjjtqSa1Xneb6K4JwZLMG-COSmGuln6MsDbYw_-SnkKXpkCi-WWDh7Tu2df597hgP8-ctOEOQ4ELQ3rjYofJDgfAI?key=p1VNKZCbBb0i0fTBU9fuc7dk" style="height:400px; width:602px"></p>
+
+<p style="text-align:center"><em>Tổng hợp từ vựng IELTS chủ đề Crime: Effects of Crime (Ảnh hưởng của tội phạm)</em></p>
+
+<div>
+<table cellspacing="0" style="border-collapse:collapse; border:none; table-layout:fixed; width:602px">
+<tbody>
+    <tr>
+        <td style="background-color:#fce5cd; border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p style="text-align:center"><strong>Từ vựng</strong></p>
+        </td>
+        <td style="background-color:#fce5cd; border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p style="text-align:center"><strong>Phiên âm IPA</strong></p>
+        </td>
+        <td style="background-color:#fce5cd; border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p style="text-align:center"><strong>Nghĩa tiếng Anh</strong></p>
+        </td>
+        <td style="background-color:#fce5cd; border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p style="text-align:center"><strong>Nghĩa tiếng Việt</strong></p>
+        </td>
+        <td style="background-color:#fce5cd; border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p style="text-align:center"><strong>Ví dụ</strong></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><span style="color:#b45f06"><strong>Victim</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>/ˈvɪktɪm/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>A person harmed or injured as a result of a crime</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Nạn nhân</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><em>The victim of the robbery immediately contacted the police.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><span style="color:#b45f06"><strong>Trauma</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>/ˈtrɔːmə/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Emotional shock or injury caused by crime</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Chấn thương</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><em>The trauma from the attack left the victim emotionally disturbed.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><span style="color:#b45f06"><strong>Fear</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>/fɪə(r)/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>A feeling of anxiety or dread due to crime</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Nỗi sợ</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><em>Many residents live in constant fear due to the rise in crime.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><span style="color:#b45f06"><strong>Insecurity</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>/ˌɪnsɪˈkjʊərəti/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>A feeling of uncertainty or lack of safety</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Sự bất an</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><em>Increased crime has caused a sense of insecurity in the community.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><span style="color:#b45f06"><strong>Loss of property</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>/lɒs ʌv ˈprɒpəti/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>When personal belongings are stolen or damaged</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Mất tài sản</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><em>The burglary resulted in the loss of valuable property.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><span style="color:#b45f06"><strong>Economic impact</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>/ˌiːkəˈnɒmɪk ˈɪmpækt/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>The financial consequences of crime</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Tác động kinh tế</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><em>Crime can have a severe economic impact on local businesses.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><span style="color:#b45f06"><strong>Social breakdown</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>/ˈsəʊʃəl ˈbreɪkdaʊn/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>The deterioration of social structures or cohesion due to crime</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Sự sụp đổ cấu trúc xã hội</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><em>High crime rates often contribute to a social breakdown in communities.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><span style="color:#b45f06"><strong>Psychological harm</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>/ˌsaɪkəˈlɒdʒɪkəl hɑːm/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Mental or emotional damage caused by crime</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Thiệt hại tâm lý</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><em>Psychological harm from violent crime can be long-lasting.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><span style="color:#b45f06"><strong>Reoffend</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>/ˌriːəˈfend/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>The act of committing crimes again after being punished</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Tái phạm</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><em>Most prisoners reoffend following release from prison.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><span style="color:#b45f06"><strong>Stigma</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>/ˈstɪɡmə/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>A negative social label attached to individuals involved in crime</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Sự kỳ thị</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><em>Ex-convicts often face stigma, making it difficult to reintegrate into society.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><span style="color:#b45f06"><strong>Social unrest</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>/ˈsəʊʃəl ˈʌnrest/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>A state of disorder or protest due to crime-related issues</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Bất ổn xã hội</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><em>Crime rates have led to widespread social unrest in some urban areas.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><span style="color:#b45f06"><strong>Isolation</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>/ˌaɪsəˈleɪʃən/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>The state of being separated or excluded, often caused by crime</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Sự cô lập</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><em>Victims of crime often experience isolation due to emotional trauma.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><span style="color:#b45f06"><strong>Fear of crime</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>/fɪə(r) ʌv kraɪm/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>A psychological condition where people feel unsafe due to crime</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Nỗi sợ tội phạm</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><em>The fear of crime is heightened in areas with frequent incidents.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><span style="color:#b45f06"><strong>Damage to reputation</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>/ˈdæmɪdʒ tə ˌrepjəˈteɪʃən/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>The harm done to a person's or an organization's public image due to crime</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Thiệt hại danh tiếng</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><em>The company suffered damage to its reputation after the scandal.</em></p>
+        </td>
+    </tr>
+</tbody>
+</table>
+</div>
+
+<p><span style="font-size:20px"><strong>6. Tổng hợp từ vựng IELTS chủ đề Crime: Crime Prevention (Phòng chống tội phạm)</strong></span></p>
+
+<p><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXeCpoXoYc3ubvT0nAn1Nc5yK3KpuvD1NGDwkHItc911wtFclFJUWiA5fALB6hJmoJxRc6vQmZ7eshPYYnqtkS5ubWBpH_4Kepcip2lArW5h2nDKE2lIsQd7174AO2JT4mes6m-8Fg?key=p1VNKZCbBb0i0fTBU9fuc7dk" style="height:376px; width:602px"></p>
+
+<p style="text-align:center"><em>Tổng hợp từ vựng IELTS chủ đề Crime: Crime Prevention (Phòng chống tội phạm)</em></p>
+
+<div>
+<table cellspacing="0" style="border-collapse:collapse; border:none; table-layout:fixed; width:602px">
+<tbody>
+    <tr>
+        <td style="background-color:#fce5cd; border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p style="text-align:center"><strong>Từ vựng</strong></p>
+        </td>
+        <td style="background-color:#fce5cd; border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p style="text-align:center"><strong>Phiên âm IPA</strong></p>
+        </td>
+        <td style="background-color:#fce5cd; border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p style="text-align:center"><strong>Nghĩa tiếng Anh</strong></p>
+        </td>
+        <td style="background-color:#fce5cd; border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p style="text-align:center"><strong>Nghĩa tiếng Việt</strong></p>
+        </td>
+        <td style="background-color:#fce5cd; border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p style="text-align:center"><strong>Ví dụ</strong></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><span style="color:#b45f06"><strong>Surveillance</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>/səˈveɪləns/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>The monitoring of behavior or activities to prevent crime</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Giám sát</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><em>Increased surveillance in public areas has helped reduce crime rates.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><span style="color:#b45f06"><strong>Deterrent</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>/dɪˈterənt/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>A factor that discourages people from committing a crime</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Sự ngăn chặn</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><em>Strict penalties act as a deterrent to potential criminals.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><span style="color:#b45f06"><strong>Neighborhood watch</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>/ˈneɪbəhʊd wɒtʃ/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>A community-based program where residents work together to prevent crime</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Nhóm giám sát khu phố</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><em>The neighborhood watch program has been effective in reducing burglaries.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><span style="color:#b45f06"><strong>Policing</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>/ˈpəlɪ:sɪŋ/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>The activity of maintaining law and order by police officers</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Hoạt động cảnh sát</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><em>Effective policing strategies can reduce crime in urban areas.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><span style="color:#b45f06"><strong>Law enforcement</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>/lɔː ɪnˈfɔːsmənt/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>The system of government agencies and officers that enforce laws</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Cơ quan thực thi pháp luật</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><em>Law enforcement agencies are working together to combat organized crime.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><span style="color:#b45f06"><strong>Prevention programs</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>/prɪˈvenʃən ˈprəʊɡræmz/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Programs designed to reduce crime by addressing its causes</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Chương trình phòng ngừa tội phạm</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><em>Crime prevention programs target at-risk youth in order to reduce juvenile delinquency.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><span style="color:#b45f06"><strong>Crime reporting</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>/kraɪm rɪˈpɔːtɪŋ/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>The act of informing authorities about a crime that has occurred</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Báo cáo tội phạm</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><em>Crime reporting is crucial for the police to respond quickly to incidents.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><span style="color:#b45f06"><strong>Crime reduction</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>/kraɪm rɪˈdʌkʃən/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Efforts made to decrease the number of crimes committed</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Giảm thiểu tội phạm</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><em>Community initiatives have contributed significantly to crime reduction.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><span style="color:#b45f06"><strong>Early intervention</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>/ˈɜːli ˌɪntəˈvenʃən/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Taking action before a situation becomes worse, especially in preventing crime</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Can thiệp sớm</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><em>Early intervention programs for troubled youth can prevent them from engaging in crime.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><span style="color:#b45f06"><strong>Public awareness</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>/ˈpʌblɪk əˈweə.nəs/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>The knowledge and understanding of crime prevention among the general public</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Nhận thức cộng đồng</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><em>Public awareness campaigns can educate citizens on how to protect themselves from crime.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><span style="color:#b45f06"><strong>Security measures</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>/sɪˈkjʊərəti ˈmeʒərz/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Actions taken to protect people and property from crime</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Biện pháp an ninh</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><em>Installing security cameras and alarm systems are common security measures.</em></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><span style="color:#b45f06"><strong>Rehabilitation center</strong></span></p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>/ˌrihəbɪləˈteɪʃən ˈsentər/</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>A facility where offenders receive treatment and guidance to reintegrate into society</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p>Trung tâm tái hòa nhập</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:middle">
+        <p><em>Offenders are sent to rehabilitation centers to address the root causes of their criminal behavior.</em></p>
+        </td>
+    </tr>
+</tbody>
+</table>
+</div>
+
+<h2 id="iii.-tip-học-từ-vựng-ielts-nhớ-lâu-chủ-đề-crime"><span style="font-size:22px"><strong>III. Tip học từ vựng IELTS nhớ lâu: Chủ đề Crime</strong></span></h2>
+
+<p><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXdp-ipRFoKkHqjZcyyfn2zhQV2S2elEQnmiOrLKINcA7alwkuFfFnY9msyZGokz-PqXHMNays-biefmX5_fi8Jd22JNiccuu3KCT0NEI7bOP0msNFgLO3LbWXkpCAcU8VRRd7eq?key=p1VNKZCbBb0i0fTBU9fuc7dk" style="height:333px; width:602px"></p>
+
+<p style="text-align:center"><em>Tip học từ vựng IELTS nhớ lâu: Chủ đề Crime</em></p>
+
+<p><span style="font-size:20px"><strong>1. Tạo mối liên hệ giữa từ vựng và hình ảnh</strong></span></p>
+
+<p>Một trong những phương pháp hiệu quả nhất để ghi nhớ từ vựng là tạo ra liên kết hình ảnh. Khi học các từ thuộc chủ đề Crime, bạn có thể tưởng tượng các tình huống thực tế. Ví dụ, khi học từ "burglary" (kẻ trộm), hãy tưởng tượng một vụ đột nhập vào nhà. Hình ảnh của một kẻ trộm đang lén lút vào nhà có thể giúp bạn nhớ lâu từ vựng này. Ngoài ra, việc liên kết từ vựng với hình ảnh cũng giúp kích thích trí nhớ và làm cho từ ngữ trở nên dễ nhớ hơn.</p>
+
+<p><span style="font-size:20px"><strong>2. Sử dụng từ vựng trong các câu cụ thể</strong></span></p>
+
+<p>Việc học từ vựng không chỉ đơn giản là ghi nhớ định nghĩa mà còn phải biết cách sử dụng chúng trong câu. Một cách hiệu quả để làm điều này là bạn hãy tạo ra các câu ví dụ với từ vựng mới. Ví dụ, khi học từ "victim" (nạn nhân), bạn có thể viết câu:</p>
+
+<p>"<em>The victim of the crime was immediately taken to the hospital.</em>"</p>
+
+<p>Khi bạn sử dụng từ vựng trong các ngữ cảnh cụ thể, bạn sẽ dễ dàng hiểu và nhớ chúng lâu hơn.</p>
+
+<p><span style="font-size:20px"><strong>3. Áp dụng phương pháp "Spaced Repetition"&nbsp;</strong></span></p>
+
+<p>Phương pháp lặp lại ngắt quãng yêu cầu bạn ôn lại từ vựng ở các khoảng thời gian tăng dần (1 ngày, 3 ngày, 7 ngày, 14 ngày…). Phương pháp học này sẽ giúp từ vựng được lặp lại và củng cố trong bộ nhớ dài hạn, giúp bạn không quên từ vựng đã học và liên tục nhớ thêm từ vựng mới.&nbsp;</p>
+
+<p><em><strong>Xem thêm:&nbsp;<a href="https://LearnEnglish.com/posts/260/phuong-phap-lap-lai-ngat-quang-va-tip-hoc-tu-vung-tieng-anh-nho-lau/">Phương pháp lặp lại ngắt quãng và tip học từ vựng tiếng Anh nhớ lâu</a></strong></em></p>
+
+<p><strong>Ví dụ</strong>: Hãy học từ vựng như sau</p>
+
+<ul>
+<li style="list-style-type:disc">Ngày 1: Học từ "deterrent"</li>
+<li style="list-style-type:disc">Ngày 2: Ôn lại và học thêm từ "crime prevention"</li>
+<li style="list-style-type:disc">Ngày 3: Ôn lại "deterrent" và "crime prevention" cùng từ mới</li>
+</ul>
+
+<p><em><u><span style="color:#213261"><span style="background-color:#ffffff"><a href="https://LearnEnglish.com/posts/927/lo-trinh-tu-hoc-ielts-online-tu-so-0-den-7-cua-LearnEnglish/" style="box-sizing: border-box; color: rgb(33, 50, 97); text-decoration: none; background-color: rgb(255, 255, 255); cursor: pointer; font-family: Roboto, Arial, sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal;"><img src="https://lh7-us.googleusercontent.com/docsz/AD_4nXdgfL_S0HMsL2D0bgO42i1nv96X3OaHDlfGJL_P5WH_QgkEr4l4Jw5gepr31ZtxuXke0K26owEHL0a2nagsE3WwllmnuNjCuzSRvbTUZk0NJG7x11ayp2G5u6Kv7IcV7xqrBhqCRUc3ict-W1rQ6XJBVz4j?key=EPo-2R-TSccNg08Xhi5HPw" style="border-style:none; box-sizing:border-box; display:block; height:84px; margin:1rem auto; max-width:100%; vertical-align:middle; width:600px"></a></span></span></u></em></p>
+
+<h2 id="lời-kết"><span style="font-size:22px"><strong>Lời kết</strong></span></h2>
+
+<p>Trên đây LearnEnglish đã chia sẻ cho bạn về tổng hợp từ vựng IELTS chủ đề Crime cùng tip học từ vựng IELTS nhớ lâu rồi đó!</p>
+
+<p>Nếu bạn có bất kỳ thắc mắc hay câu hỏi nào, hãy bình luận bên dưới để LearnEnglish giải đáp cho bạn nhé!</p>
+                    </div>
+                    
+
+                    
+
+                    
+                </div>
+
+                
+                <div class="post-tags">
+                
+                    <span class="tag">ielts</span>
+                
+                </div>
+                
+                <br>
+
+                <div class="post-comments-wrapper">
+                    <h4 id="bình-luận">Bình luận</h4>
+                    
+
+
+
+<form action="/posts/1565/comment/" method="POST" class="mt-2 md-comment-input jqform jqcomment-form" data-reload-html="#obj-comments-1565" data-target="#md-comments-box" data-submitting="false">
+    
+<input name="csrfmiddlewaretoken" type="hidden" value="s345NYxEBTc6HGgIz7rq4oP5Ci8hg2hkQ6oScGRKV7TP5CImNxwpl8rTTVcjdPDk">
+
+
+    
+    
+
+    <div class="input-group">
+        <textarea name="content" rows="1" class="form-control custom-control jqcomment-textarea" placeholder="Chia sẻ cảm nghĩ của bạn ..."></textarea>
+        <div class="input-group-append">
+            <button class="input-group-addon btn btn-primary jqcomment-submit">Gửi</button>
+        </div>
+    </div>
+</form>
+
+
+
+                    <br>
+                    <div id="obj-comments-1565" class="jqhtml-loader" data-href="/posts/1565/comments/"><p><i>Chưa có bình luận nào. Hãy trở thành người đầu tiên bình luận bài này.</i></p></div>
+                </div>
+
+                
+                <br>
+                <div class="">
+                    <div class="h3">Có thể bạn sẽ quan tâm</div>
+                    
+<ul class="post-links">
+
+
+
+<li class="post-link"><a href=" https://LearnEnglish.com/posts/1563/tong-hop-tu-vung-ielts-chu-de-vietnam/">Tổng hợp từ vựng IELTS chủ đề Vietnam</a></li>
+
+
+
+
+<li class="post-link"><a href=" https://LearnEnglish.com/posts/1558/tong-hop-tu-vung-ielts-writing-task-2-theo-chu-de-day-du-nhat/">Tổng hợp từ vựng IELTS Writing Task 2 theo chủ đề đầy đủ nhất</a></li>
+
+
+</ul>
+
+                </div>
+                
+
+                <br>
+                <div>
+                    <div class="h3">Các bài viết cùng chủ đề</div>
+                    
+<div class="">
+<div class="center">
+    
+        
+        <div class="posts-list">
+        
+            
+<div class="postlist-card">
+
+
+<div class="postlist-card-img sm mb-2">
+    <img class="lazyel card-img entered loaded" data-src="https://study4.com/media/examprep/Post/files/2024/12/05/C%C3%A1ch_d%C3%B9ng_25.png" data-ll-status="loaded" src="https://study4.com/media/examprep/Post/files/2024/12/05/C%C3%A1ch_d%C3%B9ng_25.png">
+</div>
+
+<div class="postlist-card-content-wrapper">
+    
+    <span class="d-block post-topic"><a class="font-weight-bold small" href="/topics/ielts-materials/">IELTS MATERIALS</a></span>
+    
+    <div class="postlist-title-wrapper">
+        
+        <div class="postlist-card-img-sm mb-2">
+            <img class="lazyel card-img" data-src="https://study4.com/media/examprep/Post/files/2024/12/05/C%C3%A1ch_d%C3%B9ng_25.png">
+        </div>
+        
+        <div class="postlist-title"><a href="/posts/1566/tong-hop-tu-vung-ielts-chu-de-education-giao-duc/">Tổng hợp từ vựng IELTS chủ đề Education (Giáo dục)</a></div>
+    </div>
+    <div class="postlist-card-content card-body d-flex flex-column p-0">
+        <p>Nằm lòng topic từ vựng Education cho kỳ thi IELTS qua bài viết này nhé!</p>
+    </div>
+    
+    <div class="postlist-meta">
+        02/12/2024 bởi Phuong Anh Do
+        
+    </div>
+    
+</div>
+</div>
+
+        
+            
+<div class="postlist-card">
+
+
+<div class="postlist-card-img sm mb-2">
+    <img class="lazyel card-img entered loaded" data-src="https://study4.com/media/examprep/Post/files/2024/12/05/C%C3%A1ch_d%C3%B9ng_26.png" data-ll-status="loaded" src="https://study4.com/media/examprep/Post/files/2024/12/05/C%C3%A1ch_d%C3%B9ng_26.png">
+</div>
+
+<div class="postlist-card-content-wrapper">
+    
+    <span class="d-block post-topic"><a class="font-weight-bold small" href="/topics/ielts-materials/">IELTS MATERIALS</a></span>
+    
+    <div class="postlist-title-wrapper">
+        
+        <div class="postlist-card-img-sm mb-2">
+            <img class="lazyel card-img" data-src="https://study4.com/media/examprep/Post/files/2024/12/05/C%C3%A1ch_d%C3%B9ng_26.png">
+        </div>
+        
+        <div class="postlist-title"><a href="/posts/1565/tong-hop-tu-vung-ielts-chu-de-crime-toi-pham/">Tổng hợp từ vựng IELTS chủ đề Crime (Tội phạm)</a></div>
+    </div>
+    <div class="postlist-card-content card-body d-flex flex-column p-0">
+        <p>Tham khảo tổng hợp từ vựng IELTS chủ đề Crime đầy đủ nhất để dễ dàng đạt điểm tốt trong kỳ thi IELTS nhé!</p>
+    </div>
+    
+    <div class="postlist-meta">
+        02/12/2024 bởi Phuong Anh Do
+        
+    </div>
+    
+</div>
+</div>
+
+        
+            
+<div class="postlist-card">
+
+
+<div class="postlist-card-img sm mb-2">
+    <img class="lazyel card-img entered loaded" data-src="https://study4.com/media/examprep/Post/files/2024/12/05/C%C3%A1ch_d%C3%B9ng_27.png" data-ll-status="loaded" src="https://study4.com/media/examprep/Post/files/2024/12/05/C%C3%A1ch_d%C3%B9ng_27.png">
+</div>
+
+<div class="postlist-card-content-wrapper">
+    
+    <span class="d-block post-topic"><a class="font-weight-bold small" href="/topics/ielts-materials/">IELTS MATERIALS</a></span>
+    
+    <div class="postlist-title-wrapper">
+        
+        <div class="postlist-card-img-sm mb-2">
+            <img class="lazyel card-img" data-src="https://study4.com/media/examprep/Post/files/2024/12/05/C%C3%A1ch_d%C3%B9ng_27.png">
+        </div>
+        
+        <div class="postlist-title"><a href="/posts/1564/tong-hop-tu-vung-ielts-chu-de-environment-moi-truong/">Tổng hợp từ vựng IELTS chủ đề Environment (Môi trường)</a></div>
+    </div>
+    <div class="postlist-card-content card-body d-flex flex-column p-0">
+        <p>Học và ghi nhớ chủ đề từ vựng Environment nhanh thuộc và nhớ lâu nhờ tổng hợp từ vựng và tip học từ sau đây!</p>
+    </div>
+    
+    <div class="postlist-meta">
+        02/12/2024 bởi Phuong Anh Do
+        
+    </div>
+    
+</div>
+</div>
+
+        
+            
+<div class="postlist-card">
+
+
+<div class="postlist-card-img sm mb-2">
+    <img class="lazyel card-img entered loaded" data-src="https://study4.com/media/examprep/Post/files/2024/12/05/C%C3%A1ch_d%C3%B9ng_28.png" data-ll-status="loaded" src="https://study4.com/media/examprep/Post/files/2024/12/05/C%C3%A1ch_d%C3%B9ng_28.png">
+</div>
+
+<div class="postlist-card-content-wrapper">
+    
+    <span class="d-block post-topic"><a class="font-weight-bold small" href="/topics/ielts-materials/">IELTS MATERIALS</a></span>
+    
+    <div class="postlist-title-wrapper">
+        
+        <div class="postlist-card-img-sm mb-2">
+            <img class="lazyel card-img" data-src="https://study4.com/media/examprep/Post/files/2024/12/05/C%C3%A1ch_d%C3%B9ng_28.png">
+        </div>
+        
+        <div class="postlist-title"><a href="/posts/1563/tong-hop-tu-vung-ielts-chu-de-vietnam/">Tổng hợp từ vựng IELTS chủ đề Vietnam</a></div>
+    </div>
+    <div class="postlist-card-content card-body d-flex flex-column p-0">
+        <p>Củng cố vốn từ vựng về Việt Nam để thật tự tin trình bày ý tưởng trong phòng thi IELTS nhé!</p>
+    </div>
+    
+    <div class="postlist-meta">
+        02/12/2024 bởi Phuong Anh Do
+        
+    </div>
+    
+</div>
+</div>
+
+        
+            
+<div class="postlist-card">
+
+
+<div class="postlist-card-img sm mb-2">
+    <img class="lazyel card-img entered loaded" data-src="https://study4.com/media/examprep/Post/files/2024/12/05/C%C3%A1ch_d%C3%B9ng_29.png" data-ll-status="loaded" src="https://study4.com/media/examprep/Post/files/2024/12/05/C%C3%A1ch_d%C3%B9ng_29.png">
+</div>
+
+<div class="postlist-card-content-wrapper">
+    
+    <span class="d-block post-topic"><a class="font-weight-bold small" href="/topics/ielts-materials/">IELTS MATERIALS</a></span>
+    
+    <div class="postlist-title-wrapper">
+        
+        <div class="postlist-card-img-sm mb-2">
+            <img class="lazyel card-img" data-src="https://study4.com/media/examprep/Post/files/2024/12/05/C%C3%A1ch_d%C3%B9ng_29.png">
+        </div>
+        
+        <div class="postlist-title"><a href="/posts/1562/tong-hop-tu-vung-ielts-chu-de-traveling-du-lich/">Tổng hợp từ vựng IELTS chủ đề Traveling (Du lịch)</a></div>
+    </div>
+    <div class="postlist-card-content card-body d-flex flex-column p-0">
+        <p>Nằm lòng topic từ vựng Traveling cho kỳ thi IELTS qua bài viết này nhé!</p>
+    </div>
+    
+    <div class="postlist-meta">
+        02/12/2024 bởi Phuong Anh Do
+        
+    </div>
+    
+</div>
+</div>
+
+        
+        </div>
+
+        
+
+
+
+    
+</div>
+</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-md-2 order-md-1">
+        
+        <div class="post-topics-list">
+            <p class="font-12 font-600">
+                Chuyên mục
+            </p>
+        
+            <div class="post-topics-listitem my-2">
+                <a class="text-dark" href="/blog/topics/tim-hieu-ve-learn-english/index.html">
+                    <b>TÌM HIỂU VỀ LEARNENGLISH</b>
+                </a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="/blog/topics/tinh-nang-tren-learn-english/index.html">
+                    Tính năng trên LearnEnglish
+                </a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">KHÓA HỌC TRÊN LEARNENGLISH</a>
+            </div>
+        
+            <hr>
+        
+            <div class="post-topics-listitem my-2">
+                <a class="text-dark" href="#" onclick="showNotification()">
+                    <b>Review của học viên LearnEnglish</b>
+                </a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Học viên IELTS</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Học viên TOEIC</a>
+            </div>
+        
+            <hr>
+        
+            <div class="post-topics-listitem my-2">
+                <a class="text-dark" href="#" onclick="showNotification()">
+                    <b>Luyện thi IELTS</b>
+                </a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">IELTS Listening</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">IELTS Reading</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">IELTS Speaking</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">IELTS Writing</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">IELTS Materials</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Thông tin kỳ thi IELTS</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Kinh nghiệm thi IELTS</a>
+            </div>
+        
+            <hr>
+        
+            <div class="post-topics-listitem my-2">
+                <a class="text-dark" href="#" onclick="showNotification()">
+                    <b>Luyện thi TOEIC</b>
+                </a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">TOEIC Listening</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">TOEIC Reading</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">TOEIC Materials</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Thông tin kỳ thi TOEIC</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Kinh nghiệm thi TOEIC</a>
+            </div>
+        
+            <hr>
+        
+            <div class="post-topics-listitem my-2">
+                <a class="text-dark" href="#" onclick="showNotification()">
+                    <b>Tiếng Anh cơ bản</b>
+                </a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Phát âm</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Từ vựng</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Ngữ pháp</a>
+            </div>
+        
+            <hr>
+        
+            <div class="post-topics-listitem my-2">
+                <a class="text-dark" href="#" onclick="showNotification()">
+                    <b>Luyện Thi HSK-HSKK</b>
+                </a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Tiếng Trung cơ bản</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Kiến thức HSK-HSKK</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Thông tin kỳ thi HSK-HSKK</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Kinh nghiệm thi HSK-HSKK</a>
+            </div>
+        
+            <hr>
+        
+            <div class="post-topics-listitem my-2">
+                <a class="text-dark" href="#" onclick="showNotification()">
+                    <b>Tiếng Anh cho người đi làm</b>
+                </a>
+            </div>
+        
+            <hr>
+        
+            <div class="post-topics-listitem my-2">
+                <a class="text-dark" href="#" onclick="showNotification()">
+                    <b>Du học</b>
+                </a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Admission essays</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Kinh nghiệm du học</a>
+            </div>
+        
+            <hr>
+        </div>
+        
+        <script>
+            function showNotification() {
+                alert("Bài viết này sẽ được cập nhật trong tương lai");
+            }
+        </script>
+        
+
+<hr>
+
+</div>
+
+    </div>
+</div>
+</div>
+
+                
+            </div>
+            
+        </div>
+        
+
+        
+    
+
+    <div class="modal" id="site-modal-lg" tabindex="-1" aria-labelledby="site-modal-lg" aria-hidden="true" data-keyboard="false" data-backdrop="static">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+                <div class="modal-body" id="site-modal-lg-content"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="site-modal-md" tabindex="-1" aria-labelledby="site-modal-md" aria-hidden="true" data-keyboard="false" data-backdrop="static">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+                <div class="modal-body" id="site-modal-md-content"></div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+window.csrf_token = 's345NYxEBTc6HGgIz7rq4oP5Ci8hg2hkQ6oScGRKV7TP5CImNxwpl8rTTVcjdPDk';
+window.current_user =
+
+{
+    is_authenticated: true,
+    id: 1532546,
+    name: "chauthithuyquynh2019",
+    is_admin: false,
+    is_staff: false,
+    is_superuser: false,
+}
+
+</script>
+    <script type="text/javascript" src="/static/ckeditor/ckeditor-init-override.js?v=1735926895"></script>
+    <script type="text/javascript" src="/static/ckeditor/ckeditor/ckeditor.js"></script>
+    <script type="text/javascript" src="/static/js/webaudiorecorder/WebAudioRecorder.min.js"></script>
+    <script type="text/javascript" src="/static/dist/vendor.ad60eb658fc650d75097.js?v=1735926895"></script>
+    <script type="text/javascript" src="/static/dist/main.651d8fa8cadf332cd75a.js?v=1735926895"></script>
+
+    
+
+<script type="text/javascript">
+$(function() {
+    const isInternalCourseURL = (url) => (new URL(url).origin == location.origin && (url.indexOf('/courses/') > -1 || url.indexOf('/lp/')) > -1);
+    $('.post-content a').each(function(idx,el) {
+        var $link = $(el);
+        var url = $link.attr('href');
+        if (isInternalCourseURL(url)) {
+            var qs = generate_qs({
+                'itm_source': 'seo',
+                'itm_medium': 'article',
+                'itm_campaign': 'blogpost_internal_link',
+                'itm_content': '1565'
+            });
+            var new_url = url + '?' + qs;
+            $link.attr('href', new_url);
+        }
+    });
+});
+</script>
+
+    <script type="text/javascript">
+        function isFacebookApp() {
+            var ua = navigator.userAgent || navigator.vendor || window.opera;
+            return (ua.indexOf("FBAN") > -1) || (ua.indexOf("FBAV") > -1);
+        }
+        if (isFacebookApp()) {
+            $('.g-login-block').hide();
+        }
+    </script>
+
+    
+
+    
+    
+    
+
+
+    
+    
+    
+
+
+    
+    <script type="text/javascript">
+        (function(w,d,t,u,n,a,m){w['MauticTrackingObject']=n;
+            w[n]=w[n]||function(){(w[n].q=w[n].q||[]).push(arguments)},a=d.createElement(t),
+            m=d.getElementsByTagName(t)[0];a.async=1;a.src=u;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://mautic.LearnEnglish.com/mtc.js','mt');
+
+        
+            
+            mt('send', 'pageview', {
+                email: "chauthithuyquynh2019@gmail.com",
+                uid: "1532546",
+                username: "chauthithuyquynh2019",
+                is_paid: false,
+                is_trial: true
+            });
+            
+        
+    </script>
+    
+<script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon="{&quot;rayId&quot;:&quot;8fcd50c42bdb0d6f&quot;,&quot;serverTiming&quot;:{&quot;name&quot;:{&quot;cfExtPri&quot;:true,&quot;cfL4&quot;:true,&quot;cfSpeedBrain&quot;:true,&quot;cfCacheStatus&quot;:true}},&quot;version&quot;:&quot;2024.10.5&quot;,&quot;token&quot;:&quot;8d646591bd144e069b89dada41cfc02b&quot;}" crossorigin="anonymous"></script>
+
+
+    <div class="highlight-control" style="display: none; top: -35px;">
+        <div>
+            <span class="fas fa-trash highlight-icon highlight-remove" aria-hidden="true"></span>
+            <span class="fas fa-pencil highlight-icon highlight-note" aria-hidden="true"></span>
+            <span class="highlight-icon highlight-color blue"></span>
+            <span class="highlight-icon highlight-color pink"></span>
+            <span class="highlight-icon highlight-color green"></span>
+            <span class="highlight-icon highlight-color yellow"></span>
+            <span class="highlight-icon highlight-color underred"></span>
+            <span class="highlight-icon highlight-color crossed">abc</span>
+            <span class="ml-2 fas fa-plus highlight-icon highlight-flashcard" data-toggle="modal" data-target="#highlight-modal" aria-hidden="true"></span>
+        </div>
+        <div class="highlight-editor" style="display: none;">
+            <textarea rows="3"></textarea>
+            <div><span class="far fa-check highlight-icon highlight-save" aria-hidden="true"></span></div>
+        </div>
+    </div>
+    <div class="modal" id="highlight-modal" tabindex="-1" aria-labelledby="highlight-modal" aria-hidden="true" data-keyboard="false" data-backdrop="static">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+                <div class="modal-body" id="highlight-modal-content"></div>
+            </div>
+        </div>
+    </div>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+<!-- Code injected--></body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="footer-wrapper" bis_skin_checked="1">
+        <div class="footer-container" bis_skin_checked="1">
+            <footer>
+
+
+
+                <div class="row" bis_skin_checked="1">
+                    <div class="col-12 col-sm-12 col-md" bis_skin_checked="1">
+                        <a href="/"><img class="mb-2" src="/assets/img/Logo_LearnEnglish.svg" alt="" height="30"></a>
+                        <small class="mb-2">©</small>
+                        <div class="site-socials" style="width: 140px !important;" bis_skin_checked="1">
+                            <a target="_blank" href="https://facebook.com/" bis_skin_checked="1"><span
+                                    class="social-link fab fa-facebook-square"></span></a>
+                            <a target="_blank" href="https://instagram.com/" bis_skin_checked="1"><span
+                                    class="social-link fab fa-instagram"></span></a>
+                            <a target="_blank" href="https://twitter.com/" bis_skin_checked="1"><span
+                                    class="social-link fab fa-twitter"></span></a>
+                            <a target="_blank" href="https://youtube.com/" bis_skin_checked="1"><span
+                                    class="social-link fab fa-youtube"></span></a>
+                            <a target="_blank" href="https://www.tiktok.com" bis_skin_checked="1"><span
+                                    class="social-link fab fa-tiktok"></span></a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md" bis_skin_checked="1">
+                        <div class="footer-title" bis_skin_checked="1">Về LearnEnglish</div>
+                        <ul class="list-unstyled text-small">
+                            <li><a href="/about/" bis_skin_checked="1">Giới thiệu</a></li>
+                            <li><a href="/contact/" bis_skin_checked="1">Liên hệ</a></li>
+                            <li><a href="/privacy/" bis_skin_checked="1">Điều khoản bảo mật</a></li>
+                            <li><a href="/terms/" bis_skin_checked="1">Điều khoản sử dụng</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-6 col-md" bis_skin_checked="1">
+                        <div class="footer-title" bis_skin_checked="1">Tài nguyên</div>
+                        <ul class="list-unstyled text-small">
+
+                            <li><a href="/tests/" bis_skin_checked="1">Thư viện đề thi</a></li>
+                            <li><a href="/posts/" bis_skin_checked="1">Blog</a></li>
+                            <li><a href="/materials/" bis_skin_checked="1">Kho tài liệu</a></li>
+
+
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md" bis_skin_checked="1">
+                        <div class="footer-title" bis_skin_checked="1">Chính sách chung</div>
+                        <ul class="list-unstyled text-small">
+                            <li><a href="/user-guide/" bis_skin_checked="1">Hướng dẫn sử dụng</a></li>
+                            <li><a href="/buying-guide/" bis_skin_checked="1">Hướng dẫn thanh toán</a></li>
+
+                            <li><a href="/buying-terms/" bis_skin_checked="1">Điều khoản và Điều Kiện Giao Dịch</a></li>
+                            <li><a href="/checkout-policy" bis_skin_checked="1">Chính sách kiểm hàng</a></li>
+                            <li><a href="/delivery-policy" bis_skin_checked="1">Chính sách giao, nhận hàng</a></li>
+                            <li><a href="/feedback/" bis_skin_checked="1">Phản hồi, khiếu nại</a></li>
+                            <li><a href="/return-policy" bis_skin_checked="1">Chính sách chuyển đổi, hoàn hủy</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+
+                <div class="footer-copyright text-center" bis_skin_checked="1">
+                    LearnEnglish © Bản quyền của GROUP11.
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

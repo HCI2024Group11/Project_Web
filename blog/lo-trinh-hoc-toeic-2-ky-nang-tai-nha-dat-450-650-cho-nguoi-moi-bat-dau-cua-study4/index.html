@@ -1,0 +1,1984 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn English</title>
+    <link rel="icon" href="/assets/img/Avatar_LearnEnglish.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/f9374b778e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+    
+    <div class="topnav1 topnav-wrapper" bis_skin_checked="1">
+        <div class="topnav-container" bis_skin_checked="1">
+            <nav class="navbar  navbar-expand-lg">
+                <span class="navbar-brand">
+                    <a class="topnav-brand" href="/">
+                        <img class="topnav-logo" src="/assets/img/Logo_LearnEnglish.svg" alt="STUDY4">
+
+                    </a>
+                </span>
+                <button class="navbar-toggler pull-xs-right d-lg-none" type="button" data-toggle="collapse"
+                    data-target="#navbar-collapse">
+                    ☰
+
+                </button>
+                <div class="d-lg-block navbar-collapse justify-content-end collapse" id="navbar-collapse"
+                    bis_skin_checked="1">
+
+                    <ul class="nav">
+
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/courses/" bis_skin_checked="1">Course</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/skills/" bis_skin_checked="1">Skill</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/flashcards/me/" bis_skin_checked="1">Flashcards</a>
+                        </li>
+
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/blog/" bis_skin_checked="1">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/general-english/" bis_skin_checked="1">General english</a>
+                        </li>
+
+
+
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/courses/activate/" bis_skin_checked="1">
+                                Kích hoạt tài khoản
+                            </a>
+                        </li>
+
+                        <li class="nav-item user-topnav dropdown d-none d-lg-block">
+                            <a class="nav-link dropdown-toggle user-topnav-profile" href="/my-account/" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" bis_skin_checked="1">
+                                <span class="account-profile-img">
+
+                                    <img src="/assets/img/user_icon.webp" alt="ChuTanTai23130280">
+
+                                </span>
+
+                            </a>
+
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" bis_skin_checked="1">
+                                <div bis_skin_checked="1">
+                                    <h6 class="dropdown-header" id="thông-báo"> Thông báo </h6>
+                                    <div id="new-notis-dropdown-content" class="jqhtml-loader dropdown-text"
+                                        data-href="/notifications/newest/" bis_skin_checked="1">
+                                        <p class="font-sm"><i>Bạn chưa có thông báo mới.</i></p>
+
+
+                                        <div class="mt-2 link font-sm" bis_skin_checked="1"><a href="/notifications/"
+                                                bis_skin_checked="1">Xem tất cả &gt;&gt;</a></div>
+                                    </div>
+                                </div>
+
+                                <div class="dropdown-divider" bis_skin_checked="1"></div>
+                                <a class="dropdown-item" href="/studyplan/" bis_skin_checked="1">Lịch học của tôi</a>
+                                <a class="dropdown-item" href="/my-account/" bis_skin_checked="1">Trang cá nhân</a>
+                                <a class="dropdown-item" href="/logout/" bis_skin_checked="1">Đăng xuất</a>
+                            </div>
+                        </li>
+                        <li class="nav-item d-lg-none">
+                            <a class="nav-link" href="/notifications/" bis_skin_checked="1">Thông báo </a>
+                        </li>
+                        <li class="nav-item d-lg-none">
+                            <a class="nav-link" href="/studyplan/" bis_skin_checked="1">Lịch học của tôi</a>
+                        </li>
+                        <li class="nav-item d-lg-none">
+                            <a class="nav-link" href="/my-account/" bis_skin_checked="1">Trang cá nhân</a>
+                        </li>
+                        <li class="nav-item d-lg-none">
+                            <a class="nav-link" href="/logout/" bis_skin_checked="1">Đăng xuất</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+<script>
+    // JavaScript để xử lý dropdown
+    document.addEventListener('DOMContentLoaded', function() {
+        const profileBtn = document.querySelector('.user-topnav-profile');
+        const dropdownMenu = document.querySelector('.dropdown-menu');
+    
+        // Toggle dropdown khi click vào profile
+        profileBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            dropdownMenu.classList.toggle('show');
+        });
+    
+        // Đóng dropdown khi click ra ngoài
+        document.addEventListener('click', function(e) {
+            if (!profileBtn.contains(e.target) && !dropdownMenu.contains(e.target)) {
+                dropdownMenu.classList.remove('show');
+            }
+        });
+    });
+</script>
+    <script>
+        // JavaScript để xử lý dropdown
+        document.addEventListener('DOMContentLoaded', function () {
+            const profileBtn = document.querySelector('.user-topnav-profile');
+            const dropdownMenu = document.querySelector('.dropdown-menu');
+
+            // Toggle dropdown khi click vào profile
+            profileBtn.addEventListener('click', function (e) {
+                e.preventDefault();
+                dropdownMenu.classList.toggle('show');
+            });
+
+            // Đóng dropdown khi click ra ngoài
+            document.addEventListener('click', function (e) {
+                if (!profileBtn.contains(e.target) && !dropdownMenu.contains(e.target)) {
+                    dropdownMenu.classList.remove('show');
+                }
+            });
+        });
+    </script>
+
+
+
+
+
+<body class="highlighter-context">
+
+
+    <div class="topnav1 topnav-wrapper" bis_skin_checked="1">
+        
+    </div>
+    <script>
+        // JavaScript để xử lý dropdown
+        document.addEventListener('DOMContentLoaded', function () {
+            const profileBtn = document.querySelector('.user-topnav-profile');
+            const dropdownMenu = document.querySelector('.dropdown-menu');
+
+            // Toggle dropdown khi click vào profile
+            profileBtn.addEventListener('click', function (e) {
+                e.preventDefault();
+                dropdownMenu.classList.toggle('show');
+            });
+
+            // Đóng dropdown khi click ra ngoài
+            document.addEventListener('click', function (e) {
+                if (!profileBtn.contains(e.target) && !dropdownMenu.contains(e.target)) {
+                    dropdownMenu.classList.remove('show');
+                }
+            });
+        });
+    </script>
+
+
+
+        
+    <div id="fb-root" class=" fb_reset fb_reset"><div style="position: absolute; top: -10000px; width: 0px; height: 0px;"><div></div></div><div style="position: absolute; top: -10000px; width: 0px; height: 0px;"><div></div></div></div>
+    <script async="" defer="" crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&amp;version=v20.0&amp;appId=203430341284880&amp;autoLogAppEvents=1" nonce="1d3MdMH8" type="text/javascript"></script>
+    
+    
+
+    
+    <div class="site-elevator">
+        <div class="elevator-item elevator-open d-md-none">
+            <span class="fal fa-chevron-left" aria-hidden="true"></span>
+        </div>
+        <div class="elevator-item elevator-close d-md-none">
+            <span class="fal fa-chevron-right" aria-hidden="true"></span>
+        </div>
+        <div class="elevator-item">
+            <div class="jqdictionary-show" target="#">
+                <img src="/static/img/dictionary.png">
+                <div class="elevator-text">Từ điển</div>
+            </div>
+        </div>
+        <div class="jqdictionary-wrapper">
+            <span class="jqdictionary-expand fal fa-plus-square" aria-hidden="true"></span>
+            <span class="jqdictionary-close far fa-times" aria-hidden="true"></span>
+            <div class="h6 font-500 font-sm">
+                <a class="link jqdictionary-tab active" data-href="https://m.dict.laban.vn/">Anh-Việt</a> |
+                <a class="link jqdictionary-tab" data-href="https://www.wordreference.com/definition/">WordReference</a> |
+                <a class="link jqdictionary-tab" data-href="https://onelook.com/thesaurus/">Thesaurus</a> |
+                <a class="link jqdictionary-tab" data-href="https://vtudien.com/trung-viet/dictionary/nghia-cua-tu-%E4%BD%A0%E5%A5%BD">Tiếng Trung</a>
+            </div>
+            <div class="jqdictionary-iframe">
+                <iframe loading="lazy" frameborder="0"></iframe>
+            </div>
+        </div>
+
+
+        
+        <div class="elevator-item">
+            <a target="_blank" href="https://m.me/LearnEnglish.support">
+                <img src="/static/img/messenger.png">
+            </a>
+        </div>
+        
+
+        <div class="elevator-item">
+            <a target="_blank" href="https://zalo.me/LearnEnglish">
+                <img src="/static/img/zalo.jpg">
+            </a>
+        </div>
+
+
+        
+        <div class="elevator-item site-scrollTop" onclick="if (!window.__cfRLUnblockHandlers) return false; window.topFunction()" id="site-scrollTop" title="Go to top" style="display: flex;">
+            <span class="fal fa-chevron-up" aria-hidden="true"></span>
+        </div>
+    </div>
+    
+
+    
+
+    <div class="site-wrapper">
+
+        
+
+        
+
+
+<div class="topnav1 topnav-wrapper">
+<div class="topnav-container">
+    
+</div>
+</div>
+
+        
+
+        
+        <div class="site-content-wrapper">
+            
+
+            
+
+            
+            
+            
+            
+
+            
+<div class="container pb-0">
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/">Trang chủ</a></li>
+        
+        <li class="breadcrumb-item"><a href="/blog/index.html">Bài viết</a></li>
+        <li class="breadcrumb-item"><a href="/blog/lo-trinh-hoc-toeic-2-ky-nang-tai-nha-dat-450-650-cho-nguoi-moi-bat-dau-cua-study4/index.html">Kinh nghiệm thi TOEIC</a></li>
+        
+        <li class="breadcrumb-item active"><a href="/blog/lo-trinh-hoc-toeic-2-ky-nang-tai-nha-dat-450-650-cho-nguoi-moi-bat-dau-cua-study4/index.html">Lộ trình học TOEIC 2 kỹ năng tại nhà đạt 450-650+ cho người mới bắt đầu của LearnEnglish</a></li>
+    </ol>
+</nav>
+</div>
+
+
+            
+<div class="content-header py-0">
+<div class="container py-0">
+    <div class="image-wrapper">
+        <a href="/courses/level-test/">
+            
+        </a>
+    </div>
+    <br>
+    <h1 class="post-title" id="lộ-trình-học-toeic-2-kỹ-năng-tại-nhà-đạt-450-650+-cho-người-mới-bắt-đầu-của-LearnEnglish">
+        Lộ trình học TOEIC 2 kỹ năng tại nhà đạt 450-650+ cho người mới bắt đầu của LearnEnglish
+        
+    </h1>
+    
+    <p class="post-description">
+        Bạn đang loay hoay muốn tìm lộ trình luyện TOEIC online đạt 450 - 650+? Đọc bài viết của LearnEnglish dưới đây để tìm ra câu trả lời!
+    </p>
+    
+</div>
+</div>
+
+
+            
+            <div class="content-wrapper">
+                
+                
+<div class="container">
+<div class="row">
+    
+    <div class="col-12 col-md-7 order-md-2">
+        <div class="post-wrapper">
+            <div class="media post-author-media py-2 mb-3 border-bottom">
+                <div class="post-author-img">
+                    
+                    <img src="https://res.cloudinary.com/sandodep4/image/upload/w_300/sandodep4_x_179027497304743546577679031874613619737_cajgas" alt="hangbm.LearnEnglish">
+                    
+                </div>
+                <div class="media-body">
+                    <div class="post-author-name"><a target="_blank" href="/u/hangbm.LearnEnglish/">Bùi Hằng</a></div>
+                    <div class="post-meta">21/05/2024</div>
+                </div>
+            </div>
+
+            <div class="post-main-wrapper">
+
+                
+
+                
+
+                <div class="post-main mt-2">
+                    
+                    <div id="post-content" class="post-content md-content js-toc-content" prewrap="">
+                        <p><img alt="Lộ trình học TOEIC 2 kỹ năng tại nhà đạt 450 - 650+ LearnEnglish" src="https://study4.com/media/uploads/editor/hangbm.LearnEnglish/2024/05/21/cach-dung-23.png" style="height:674px; width:1200px"></p>
+
+<p>Đối với những người có trình độ tiếng Anh sơ cấp hoặc mới học tiếng Anh, việc bắt đầu học TOEIC có thể là một quá trình khá khó khăn. Điều này là do các bạn chưa nắm được mình cần chuẩn bị những gì để có thể bắt đầu học TOEIC.</p>
+
+<p>Tuy nhiên, nếu bạn là người bận rộn hoặc muốn tiết kiệm chi phí, chắc hẳn bạn sẽ suy nghĩ về việc tự học TOEIC tại nhà.</p>
+
+<p>Hiểu được nhu cầu, bài viết này của LearnEnglish sẽ chỉ cho bạn cách tự học TOEIC online ngay tại nhà: <strong>Lộ trình để đạt 450 - 650+ TOEIC</strong>.</p>
+
+<p>Hãy xem ngay lộ trình luyện TOEIC tại nhà chi tiết được LearnEnglish chia sẻ trong bài viết này nhé!</p>
+
+<h2 id="i.-tổng-quan-về-lộ-trình-học-toeic-cho-người-mới-bắt-đầu"><strong>I. Tổng quan về lộ trình học TOEIC cho người mới bắt đầu</strong></h2>
+
+<h3 id="1.-khái-quát"><span style="font-size:20px"><strong>1. Khái quát</strong></span></h3>
+
+<p><strong>TOEIC </strong>(hay Test of English for International Communication) là chứng chỉ tiếng Anh cung cấp cho các đối tượng tiếng Anh như ngôn ngữ thứ hai để sử dụng vào môi trường giao tiếp quốc tế.</p>
+
+<h3 id="2.-cấu-trúc-bài-thi-toeic-2-kỹ-năng"><span style="font-size:20px"><strong>2. Cấu trúc bài thi TOEIC 2 kỹ năng</strong></span></h3>
+
+<p>Trong 120 phút làm bài, phần nghe sẽ chiếm 45 phút và 75 phút còn lại sẽ dành cho phần đọc. Bạn sẽ phải hoàn thành 100 câu cho mỗi phần Listening và Reading.</p>
+
+<p>Số điểm tối đa cho mỗi phần thi này là 495 điểm. Tổng điểm tối đa cho cả bài thi là 990 điểm.</p>
+
+<p><strong><em>Xem thêm: </em></strong><a href="/blog/lo-trinh-hoc-toeic-2-ky-nang-tai-nha-dat-450-650-cho-nguoi-moi-bat-dau-cua-study4/thang-diem-toeic-va-cach-tinh-diem-bai-thi-toeic.html" style="text-decoration:none"><span style="color:#1155cc"><strong><em><u>Thang điểm TOEIC và cách tính điểm bài thi TOEIC</u></em></strong></span></a></p>
+
+<p><span style="font-size:18px"><strong>2.1. Phần nghe - Listening</strong></span></p>
+
+<p style="text-align:justify">Bài thi TOEIC Listening gồm 100 câu hỏi. Tổng thời gian thi TOEIC Listening là 45 phút với 4 phần.</p>
+
+<p><strong><em>Xem thêm: </em></strong><a href="/blog/lo-trinh-hoc-toeic-2-ky-nang-tai-nha-dat-450-650-cho-nguoi-moi-bat-dau-cua-study4/cau-truc-de-thi-toeic-chuan-va-chi-tiet-nam-2024.html" style="text-decoration:none"><span style="color:#1155cc"><strong><em><u>Cấu trúc đề thi TOEIC chuẩn và chi tiết</u></em></strong></span></a></p>
+
+<p style="text-align:justify">Cấu trúc đề thi TOEIC Listening cụ thể như sau:</p>
+
+<div>
+<table cellspacing="0" style="border-collapse:collapse; border:none; width:602px">
+<tbody>
+    <tr>
+        <td style="background-color:#fffdce; border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top; width:59px">
+        <p style="text-align:center"><strong>Part</strong></p>
+        </td>
+        <td style="background-color:#fffdce; border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top; width:84px">
+        <p style="text-align:center"><strong>Số lượng câu hỏi</strong></p>
+        </td>
+        <td style="background-color:#fffdce; border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top; width:102px">
+        <p style="text-align:center"><strong>Nội dung</strong></p>
+        </td>
+        <td style="background-color:#fffdce; border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top; width:357px">
+        <p style="text-align:center"><strong>Yêu cầu chi tiết</strong></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top; width:59px">
+        <p style="text-align:center">Part 1</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top; width:84px">
+        <p style="text-align:center">6</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top; width:102px">
+        <p>Mô tả hình ảnh</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top; width:357px">
+        <p>Các câu hỏi sẽ cách nhau khoảng 5 giây. Thí sinh được xem một bức tranh và nghe 4 câu miêu tả, tương đương A, B, C, D.</p>
+
+        <p>Thí sinh cần&nbsp; chọn câu miêu tả phù hợp nhất với bức tranh.</p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top; width:59px">
+        <p style="text-align:center">Part 2</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top; width:84px">
+        <p style="text-align:center">25</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top; width:102px">
+        <p>Hỏi đáp</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top; width:357px">
+        <p>Các câu hỏi sẽ cách nhau khoảng 5 giây. Thí sinh được nghe một câu hỏi. Sau đó sẽ có 4 câu trả lời, tương đương A, B, C, D.</p>
+
+        <p>Thí sinh cần chọn câu trả lời đúng nhất với câu hỏi. Các dạng câu hỏi chính ở phần 2 bao gồm:</p>
+
+        <ul>
+            <li style="list-style-type:disc">Câu hỏi thông tin</li>
+            <li style="list-style-type:disc">Câu hỏi YES/NO</li>
+            <li style="list-style-type:disc">Câu hỏi đuôi</li>
+            <li style="list-style-type:disc">Câu hỏi lựa chọn “or”</li>
+            <li style="list-style-type:disc">Các dạng câu đặc biệt (mời mọc, đề xuất ý kiến, yêu cầu, đề nghị, hỏi về trải nghiệm)</li>
+            <li style="list-style-type:disc">Phát biểu khẳng định</li>
+        </ul>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top; width:59px">
+        <p style="text-align:center">Part 3</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top; width:84px">
+        <p style="text-align:center">39</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top; width:102px">
+        <p>Cuộc hội thoại</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top; width:357px">
+        <p>Các câu hỏi sẽ cách nhau khoảng 8 giây. Thí sinh được nghe những đoạn hội thoại ngắn.</p>
+
+        <p>Tổng cộng có 13 hội thoại. Mỗi đoạn có 3 câu hỏi, mỗi câu có 4 lựa chọn trả lời là A, B, C, D. Thí sinh cần chọn câu trả lời đúng nhất.&nbsp; Các dạng câu hỏi chính trong phần 3 gồm:</p>
+
+        <ul>
+            <li style="list-style-type:disc">Câu hỏi thông tin tổng quát</li>
+            <li style="list-style-type:disc">Câu hỏi thông tin chi tiết</li>
+            <li style="list-style-type:disc">Câu hỏi ngụ ý</li>
+            <li style="list-style-type:disc">Câu hỏi liên quan bảng biểu, biểu đồ</li>
+        </ul>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top; width:59px">
+        <p style="text-align:center">Part 4</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top; width:84px">
+        <p style="text-align:center">30</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top; width:102px">
+        <p>Bài độc thoại</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top; width:357px">
+        <p>Các câu hỏi sẽ cách nhau khoảng 8 giây. Thí sinh được nghe những bài độc thoại ngắn.&nbsp;</p>
+
+        <p>Tổng cộng có 10 bài. Mỗi bài có 3 câu hỏi, mỗi câu có 4 lựa chọn trả lời là A, B, C, D. Thí sinh cần chọn câu trả lời đúng nhất. Các dạng câu hỏi chính trong phần 4 gồm:</p>
+
+        <ul>
+            <li style="list-style-type:disc">Câu hỏi thông tin tổng quát</li>
+            <li style="list-style-type:disc">Câu hỏi thông tin chi tiết</li>
+            <li style="list-style-type:disc">Câu hỏi ngụ ý</li>
+            <li style="list-style-type:disc">Câu hỏi liên quan bảng biểu, biểu đồ</li>
+        </ul>
+        </td>
+    </tr>
+</tbody>
+</table>
+</div>
+
+<p><span style="font-size:18px"><strong>2.2. Phần đọc - Reading</strong></span></p>
+
+<p style="text-align:justify">Bài thi TOEIC Reading gồm 100 câu hỏi với tổng thời gian làm bài là 75 phút. Thí sinh không cần làm theo thứ tự mà có thể chọn làm những câu phù hợp với bản thân trước. Dưới đây là cấu trúc đề thi TOEIC phần Reading.</p>
+
+<div>
+<table cellspacing="0" style="border-collapse:collapse; border:none; width:601px">
+<tbody>
+    <tr>
+        <td style="background-color:#fffdce; border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top; width:59px">
+        <p style="text-align:center"><strong>Part</strong></p>
+        </td>
+        <td style="background-color:#fffdce; border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top; width:94px">
+        <p style="text-align:center"><strong>Số lượng câu hỏi</strong></p>
+        </td>
+        <td style="background-color:#fffdce; border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top; width:120px">
+        <p style="text-align:center"><strong>Nội dung&nbsp;</strong></p>
+        </td>
+        <td style="background-color:#fffdce; border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top; width:328px">
+        <p style="text-align:center"><strong>Yêu cầu chi tiết</strong></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top; width:59px">
+        <p style="text-align:center">Part 5</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top; width:94px">
+        <p style="text-align:center">30</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top; width:120px">
+        <p>Hoàn thành câu</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top; width:328px">
+        <p>Đề thi gồm những câu chưa hoàn thiện. Thí sinh chọn 1 trong 4 đáp án A, B, C, D để điền vào, làm thành câu hoàn chỉnh. Các dạng câu hỏi chính trong phần 5:</p>
+
+        <ul>
+            <li style="list-style-type:disc">Từ vựng</li>
+            <li style="list-style-type:disc">Ngữ pháp</li>
+            <li style="list-style-type:disc">Từ loại</li>
+            <li style="list-style-type:disc">Thì động từ</li>
+            <li style="list-style-type:disc">Dạng động từ</li>
+            <li style="list-style-type:disc">Giới từ</li>
+            <li style="list-style-type:disc">Liên từ</li>
+            <li style="list-style-type:disc">Đại từ quan hệ</li>
+            <li style="list-style-type:disc">Câu so sánh, điều kiện</li>
+        </ul>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top; width:59px">
+        <p style="text-align:center">Part 6</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top; width:94px">
+        <p style="text-align:center">16</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top; width:120px">
+        <p>Hoàn thành đoạn văn bản</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top; width:328px">
+        <p>Phần thi gồm 4 đoạn văn ngắn, mỗi đoạn có vài chỗ trống. Thi sinh cần chọn 1 trong 4 đáp án A, B, C, D đúng nhất để điền vào đoạn văn. Các dạng câu hỏi chính trong phần 6:</p>
+
+        <ul>
+            <li style="list-style-type:disc">Từ vựng</li>
+            <li style="list-style-type:disc">Ngữ pháp</li>
+            <li style="list-style-type:disc">Từ loại</li>
+            <li style="list-style-type:disc">Thì động từ</li>
+            <li style="list-style-type:disc">Dạng động từ</li>
+            <li style="list-style-type:disc">Giới từ</li>
+            <li style="list-style-type:disc">Liên từ</li>
+            <li style="list-style-type:disc">Đại từ quan hệ</li>
+            <li style="list-style-type:disc">Câu so sánh, điều kiện</li>
+            <li style="list-style-type:disc">Điền một câu thích hợp vào chỗ trống</li>
+        </ul>
+        </td>
+    </tr>
+    <tr>
+        <td rowspan="2" style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top; width:59px">
+        <p style="text-align:center">Part 7</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top; width:94px">
+        <p style="text-align:center">29</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top; width:120px">
+        <p>Đọc hiểu văn bản ngắn (1 đoạn)</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top; width:328px">
+        <p>Phần thi gồm 10 đoạn văn ngắn, mỗi đoạn có từ 2 – 4 câu hỏi. Thí sinh cần chọn đáp án đúng nhất trong số 4 câu trả lời A, B, C, D.</p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top; width:59px">
+        <p style="text-align:center">25</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top; width:94px">
+        <p>Đọc hiểu văn bản dài (nhiều đoạn)</p>
+        </td>
+        <td style="border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-top:1px solid #000000; vertical-align:top; width:120px">
+        <p>Phần thi gồm 5 văn bản, mỗi bài có nhiều đoạn nhỏ. Mỗi văn bản có 5 câu hỏi. Thí sinh cần chọn câu trả lời đúng nhất trong số 4 đáp án A, B, C, D.</p>
+        </td>
+    </tr>
+</tbody>
+</table>
+</div>
+
+<h3 id="3.-cấu-trúc-bài-thi-toeic-4-kỹ-năng"><span style="font-size:20px"><strong>3. Cấu trúc bài thi TOEIC 4 kỹ năng</strong></span></h3>
+
+<p>Có đầy đủ cả 4 phần Nghe, Nói, Đọc và Viết. Ngoài 2 kỹ năng Listening và Reading tương tự như ở bài TOEIC 2 kỹ năng, thí sinh sẽ làm thêm bài thi đánh giá Speaking và Writing. Có Tổng cộng gồm 19 câu cho cả 2 phần thi.</p>
+
+<p>Thời gian thi là 80 phút cho 20 phút Speaking và 60 phút Writing. Như vậy, bạn sẽ có 1 tiếng 20 phút làm bài cho 19 câu hỏi ở bài thi này.</p>
+
+<p><span style="background-color:#fffdce"><strong><em>Bài viết này của LearnEnglish sẽ tập trung vào lộ trình học của 2 kỹ năng phổ biến nhất của TOEIC: Reading và Listening.</em></strong></span></p>
+
+<h2 id="ii.-xác-định-điểm-hiện-tại-và-mục-tiêu-học-toeic"><strong>II. Xác định điểm hiện tại và mục tiêu học TOEIC</strong></h2>
+
+<h3 id="1.-xác-định-điểm-hiện-tại"><span style="font-size:20px"><strong>1. Xác định điểm hiện tại</strong></span></h3>
+
+<p>Khi bắt đầu ôn luyện cho bất kỳ kỳ thi nào, chúng ta thường phải tự đánh giá bản thân xem mình đang ở trình độ nào, đã làm tốt ở những khía cạnh nào và cần cải thiện ở những khía cạnh nào. Các bài kiểm tra TOEIC cũng giống như vậy! Chúng ta cần biết mình đã đạt được mức điểm nào và cách chúng ta có thể cải thiện khả năng đọc và nghe của mình để đạt được con số 650+.</p>
+
+<p>Khi bạn xác định được trình độ hiện tại của mình, bạn sẽ có cơ sở để biết những gì bạn cần học để đạt được mục tiêu TOEIC 450 - 650+.</p>
+
+<p>Để xác định trình độ hiện tại một cách nhanh chóng và chính xác, bạn chỉ cần làm bài thi thử TOEIC online. Sau khi có điểm rồi, bạn hãy bình tĩnh xem xét kết quả.</p>
+
+<p>Nếu khả năng đọc hiểu kém hơn khả năng nghe hiểu, chúng ta dành nhiều thời gian hơn để cải thiện khả năng nghe và ngược lại.</p>
+
+<p>Nếu chúng ta thiếu từ vựng, hãy chọn một quyển học từ vựng để luyện tập. Đơn giản là sẽ có những phần thi mà chúng ta không thể hoàn thành tốt khi vào phòng thi nếu chúng ta phân bổ thời gian không hợp lý, và cuối cùng ảnh hưởng đến kết quả toàn bài.</p>
+
+<h3 id="2.-xác-định-mục-tiêu-điểm-toeic"><span style="font-size:20px"><strong>2. Xác định mục tiêu điểm TOEIC</strong></span></h3>
+
+<p>Sau khi đã nắm rõ được trình độ của bản thân, hãy xác định mục tiêu và ôn thi TOEIC 650+&nbsp; một cách có khoa học. Mục tiêu tốt phải phù hợp với sức khỏe của bạn, thực tiễn và có thời gian để hoàn thành.&nbsp;</p>
+
+<p>Tổ chức ra đề thi ETS sẽ phát hành bảng quy đổi điểm khác nhau cho mỗi bài thi. Những bảng này thường chỉ được sử dụng để tham khảo. Tuy nhiên, người học cũng cần một nguồn tham khảo đáng tin cậy để họ có thể đánh giá quá trình luyện tập của mình.</p>
+
+<p>Bảng quy đổi điểm TOEIC sau đây được phát hành bởi nhà xuất bản Oxford và tất cả nội dung đều được ETS, tổ chức ra đề thi TOEIC, chứng nhận:</p>
+
+<p style="text-align:center"><img src="https://lh7-us.googleusercontent.com/ksvybGvRV8xuqjFnuwqNRp8Gse2bzDUFG6Y5eUl4oO1otVD0fwMmMjd0_1p1lPtSrlEnxpQM2hTUY85Z58AHb34LAHc9jFD-jDEYSASn9H31cAwRE1JsZ9lf0-k9l6E6hqMsFJtBGVyILB4kl-YkSPo" style="height:396px; width:419px"></p>
+
+<p><strong>Bảng quy đổi sau đây cho thấy cách tính điểm TOEIC:</strong></p>
+
+<ul>
+<li style="list-style-type:disc">Số lượng câu đúng và điểm chỉ tương đối. Chẳng hạn, nếu đọc đúng 46 đến 50 câu nghe, bạn có thể nhận được 150 đến 220 điểm. Nếu đọc đúng 66 đến 70 câu đọc, bạn có thể nhận được 295 đến 350 điểm.</li>
+<li style="list-style-type:disc">Ví dụ, để đạt được TOEIC 500 điểm, có thể đặt mục tiêu luyện thi TOEIC như sau:</li>
+</ul>
+
+<p style="text-align:justify">Nếu bạn thường giỏi đọc hơn nghe, bạn cần đạt khoảng 300 điểm bài đọc, đúng từ 66 đến 70 câu bài đọc, và khoảng 200 điểm bài nghe, đúng từ 41 đến 45 câu bài nghe.</p>
+
+<p style="text-align:justify">Nếu bạn thường làm tốt việc nghe hơn là đọc, bạn cần đạt ít nhất 300 điểm cho bài nghe, đúng từ 61 đến 65 câu, và 200 điểm cho bài đọc, đúng từ 46 đến 50 câu.</p>
+
+<p style="text-align:justify">Kết quả chỉ đánh giá khả năng sử dụng tiếng Anh của thí sinh ở mọi kỹ năng, nghĩa là điểm cao hơn có nghĩa là khả năng sử dụng tiếng Anh tốt hơn. Để đánh giá dễ dàng hơn, bạn có thể suy ra được ý nghĩa của điểm thi TOEIC bằng Bảng đánh giá trình độ dựa trên điểm thi TOEIC sau đây:</p>
+
+<div>
+<table cellspacing="0" style="border-collapse:collapse; border:none; width:601px">
+<tbody>
+    <tr>
+        <td style="background-color:#fffdce; border-bottom:1px solid #808080; border-left:1px solid #808080; border-right:1px solid #808080; border-top:1px solid #808080; vertical-align:top; width:103px">
+        <p style="text-align:center"><strong>Số điểm</strong></p>
+        </td>
+        <td style="background-color:#fffdce; border-bottom:1px solid #808080; border-left:1px solid #808080; border-right:1px solid #808080; border-top:1px solid #808080; vertical-align:top; width:498px">
+        <p style="text-align:center"><strong>Mô tả chung</strong></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="background-color:#ffffff; border-bottom:1px solid #808080; border-left:1px solid #808080; border-right:1px solid #808080; border-top:1px solid #808080; vertical-align:top; width:103px">
+        <p style="text-align:center"><strong>905 - 990</strong></p>
+        </td>
+        <td style="background-color:#ffffff; border-bottom:1px solid #808080; border-left:1px solid #808080; border-right:1px solid #808080; border-top:1px solid #808080; vertical-align:top; width:498px">
+        <p style="text-align:justify"><strong>International Professional Proficiency</strong><br>
+        Có thể giao tiếp hiệu quả ở bất kỳ tình huống nào.</p>
+        </td>
+    </tr>
+    <tr>
+        <td style="background-color:#ffffff; border-bottom:1px solid #808080; border-left:1px solid #808080; border-right:1px solid #808080; border-top:1px solid #808080; vertical-align:top; width:103px">
+        <p style="text-align:center"><strong>785 - 900</strong></p>
+        </td>
+        <td style="background-color:#ffffff; border-bottom:1px solid #808080; border-left:1px solid #808080; border-right:1px solid #808080; border-top:1px solid #808080; vertical-align:top; width:498px">
+        <p style="text-align:justify"><strong>Working Proficiency Plus</strong><br>
+        Có thể thoả mãn hầu hết yêu cầu trong công việc nhưng hầu hết có thể chỉ ở mức hiệu quả và chấp nhận được.</p>
+        </td>
+    </tr>
+    <tr>
+        <td style="background-color:#ffffff; border-bottom:1px solid #808080; border-left:1px solid #808080; border-right:1px solid #808080; border-top:1px solid #808080; vertical-align:top; width:103px">
+        <p style="text-align:center"><strong>605 - 780</strong></p>
+        </td>
+        <td style="background-color:#ffffff; border-bottom:1px solid #808080; border-left:1px solid #808080; border-right:1px solid #808080; border-top:1px solid #808080; vertical-align:top; width:498px">
+        <p style="text-align:justify"><strong>Limited Working Proficiency</strong><br>
+        Có thể thỏa mãn hầu hết những yêu cầu giao tiếp nhưng yêu cầu công việc thì rất giới hạn.</p>
+        </td>
+    </tr>
+    <tr>
+        <td style="background-color:#ffffff; border-bottom:1px solid #808080; border-left:1px solid #808080; border-right:1px solid #808080; border-top:1px solid #808080; vertical-align:top; width:103px">
+        <p style="text-align:center"><strong>405 - 600</strong></p>
+        </td>
+        <td style="background-color:#ffffff; border-bottom:1px solid #808080; border-left:1px solid #808080; border-right:1px solid #808080; border-top:1px solid #808080; vertical-align:top; width:498px">
+        <p style="text-align:justify"><strong>Elementary Proficiency Plus</strong><br>
+        Có thể bắt đầu và duy trì các cuộc hội thoại đã đoán trước được và thỏa mãn một số yêu cầu giao tiếp tuy vẫn còn rất giới hạn.</p>
+        </td>
+    </tr>
+    <tr>
+        <td style="background-color:#ffffff; border-bottom:1px solid #808080; border-left:1px solid #808080; border-right:1px solid #808080; border-top:1px solid #808080; vertical-align:top; width:103px">
+        <p style="text-align:center"><strong>255 - 400</strong></p>
+        </td>
+        <td style="background-color:#ffffff; border-bottom:1px solid #808080; border-left:1px solid #808080; border-right:1px solid #808080; border-top:1px solid #808080; vertical-align:top; width:498px">
+        <p style="text-align:justify"><strong>Elementary Proficiency</strong><br>
+        Có thể duy trì những cuộc đối thoại rất đơn giản ở những chủ đề quen thuộc.</p>
+        </td>
+    </tr>
+    <tr>
+        <td style="background-color:#ffffff; border-bottom:1px solid #808080; border-left:1px solid #808080; border-right:1px solid #808080; border-top:1px solid #808080; vertical-align:top; width:103px">
+        <p style="text-align:center"><strong>10 - 250</strong></p>
+        </td>
+        <td style="background-color:#ffffff; border-bottom:1px solid #808080; border-left:1px solid #808080; border-right:1px solid #808080; border-top:1px solid #808080; vertical-align:top; width:498px">
+        <p style="text-align:justify"><strong>Basic Proficiency</strong><br>
+        Có thể thỏa mãn những yêu cầu rất cơ bản.</p>
+        </td>
+    </tr>
+</tbody>
+</table>
+</div>
+
+<h3 id="3.-những-lỗi-sai-khi-tự-học-toeic-tại-nhà-thường-gặp"><span style="font-size:20px"><strong>3. Những lỗi sai khi tự học TOEIC tại nhà thường gặp:</strong></span></h3>
+
+<p><span style="font-size:18px"><strong>3.1. Không có lộ trình rõ ràng</strong></span></p>
+
+<p>Việc thiếu lộ trình học rõ ràng là một sai lầm phổ biến mà người học TOEIC thường mắc phải khi tự học tại nhà.</p>
+
+<p>Một lộ trình học cụ thể và rõ ràng giúp người học biết được những gì cần làm để đạt được mục tiêu của mình. Thiếu lộ trình học rõ ràng có thể dẫn đến sự lạc hướng, lãng phí thời gian và cảm giác mất định hướng trong quá trình học tập.</p>
+
+<p style="text-align:center"><img src="https://lh7-us.googleusercontent.com/udea40DO6OREi_ckO1SIo4y1zuwA-o8-EQZOZlwcKbyksljhcatl0Y1WdmAGPgW_yQWXBJDFQ-R_fGLkmeRZ4UC8XBWsIlIW_bOfNvnkfiR5pKMcE2txRiwZKnjz_C83ibyJoqOO6KrUm7c-GYK4SL0" style="height:235px; width:351px"></p>
+
+<p style="text-align:center"><em>Một lộ trình học rõ ràng là thiết yếu trong quá trình học TOEIC tại nhà</em></p>
+
+<p><span style="font-size:18px"><strong>3.2. Không lập kế hoạch học tập</strong></span></p>
+
+<p>Thiếu kế hoạch cụ thể và có hệ thống khi tự học có thể dẫn đến việc lãng phí thời gian và không đạt được mục tiêu luyện TOEIC.</p>
+
+<p><span style="font-size:18px"><strong>3.3. Tập trung quá nhiều vào ngữ pháp</strong></span></p>
+
+<p>Ngữ pháp quan trọng, nhưng nếu tập trung quá nhiều vào việc học ngữ pháp mà bỏ qua việc luyện kỹ năng nghe, đọc, và viết, bạn sẽ mất điểm trong kỹ năng Listening.</p>
+
+<p><span style="font-size:18px"><strong>3.4. Không thực hành đủ</strong></span></p>
+
+<p>Việc chỉ học từ sách vở mà không thực hành, luyện tập đủ có thể làm giảm hiệu quả học tập.</p>
+
+<p style="text-align:center"><img src="https://lh7-us.googleusercontent.com/mfTJwd3ToftM0ASAF5yAMCAj9PgNPgK4t1GfkSz0JPr3_vb17MjuwVr5L6WvW_wVuAMftkR3ARsJ46EpQGCPYIFnpUJj5CoMcS2WiikvpNzxFGQuOzbQijp-ne4NpmIH6N6Rib60rqHBg9Nog0DDUdo" style="height:226px; width:306px"></p>
+
+<p style="text-align:center"><em>Bạn cần thực hành làm bài tập nhiều khi ôn TOEIC</em></p>
+
+<p><span style="font-size:18px"><strong>3.5. Đọc và ghi nhớ từ vựng một cách cơ bản</strong></span></p>
+
+<p>Thay vì chỉ đọc và ghi nhớ từ vựng một cách cơ bản, hãy sử dụng các kỹ thuật như việc đặt từ vựng vào ngữ cảnh, sử dụng từ vựng trong các bài viết và bài nói, và luyện từ vựng theo chủ đề.</p>
+
+<p><span style="font-size:18px"><strong>3.6. Thiếu kiên nhẫn và sự kiên trì</strong></span></p>
+
+<p>Học tiếng Anh là một quá trình dài hơi và đòi hỏi sự kiên nhẫn và sự kiên trì. Đừng mong đợi kết quả sẽ đến ngay sau một thời gian ngắn, hãy kiên nhẫn và tiếp tục nỗ lực.</p>
+
+<p style="text-align:center"><img src="https://lh7-us.googleusercontent.com/fgUabLNBAt61owKQxqjt_FPtqkxgey1hKfQ_-K3z7Q4bfTIY8TN6NYkNoOxMSeSCXvB6al7oHnnFlw9rWubZTxFNKMFF66qpUaFXiD5KF4lsAb7PzlVBGooLxxid_OOYrZxI7stVyhJhm4W1r70-1wM" style="height:259px; width:363px"></p>
+
+<p style="text-align:center"><em>Bạn cần có kỷ luật khi tự học TOEIC online ở nhà</em></p>
+
+<h2 id="iii.-lộ-trình-học-toeic-cho-người-mới-bắt-đầu"><strong>III. Lộ trình học TOEIC cho người mới bắt đầu</strong></h2>
+
+<p>Tham khảo chi tiết kiến thức và lộ trình học TOEIC từ con số 0 dưới đây để có thể học luyện thi TOEIC hiệu quả tại nhà nhé!</p>
+
+<p style="text-align:center"><span style="font-size:20px"><span style="color:#ffffff"><span style="background-color:#3c78d8"><strong>Lộ trình luyện thi TOEIC của LearnEnglish bao gồm:&nbsp;&nbsp;&nbsp;</strong></span></span></span></p>
+
+<p style="text-align:center"><iframe frameborder="0" height="315" src="https://www.youtube.com/embed/VPL358kfdQ4?si=2LeY3_RyXqidr9Es" title="YouTube video player" width="560"></iframe></p>
+
+<p style="text-align:center"><a href="https://LearnEnglish.com/courses/28/complete-toeic/?itm_source=seo&amp;itm_medium=article&amp;itm_campaign=blogpost_internal_link&amp;itm_content=928" style="text-decoration:none"><span style="color:#1155cc"><strong><u><img src="https://lh7-us.googleusercontent.com/WEqSQvhpXvRolCZ89Yb3PXWvA3QPk-setrPEne6NUI-LjIvlJU0lFz-1YY1T9y-K9M6NM7YWYVuIPcWWhoISBDRbVmFqvGnY9iE82u5n0qgaO4PFFSDBJGIzV1L3PxuQRGeRQI-ueXecHmYN7EHkpbQ" style="height:84px; width:600px"></u></strong></span></a></p>
+
+<h3 id="1.-từ-vựng-toeic---23-bài-học"><span style="font-size:20px"><strong>1. Từ vựng TOEIC - 23 bài học</strong></span></h3>
+
+<p>Trong phần này, bạn sẽ được bổ sung <strong>1200 từ vựng TOEIC, tổng hợp từ 100 bộ đề ETS</strong> có khả năng <strong>xuất hiện 99% trong bài thi thật </strong>với phương pháp phổ biến là <a href="https://LearnEnglish.com/posts/260/phuong-phap-lap-lai-ngat-quang-va-tip-hoc-tu-vung-tieng-anh-nho-lau/" style="text-decoration:none"><span style="color:#1155cc"><strong><u>Spaced-repetition (lặp lại ngắt quãng)</u></strong></span></a>.</p>
+
+<p>Với <strong>từ vựng</strong> <strong>Flashcard</strong>, bạn sẽ tập trung <strong>ôn lặp lại nhiều lần</strong> đến khi nhớ những từ vựng khó và hay quên. Với từ nào đã nhớ, bạn có thể bỏ qua không ôn từ đó nữa để tiết kiệm thời gian học.</p>
+
+<p style="text-align:center"><img src="https://lh7-us.googleusercontent.com/f2D6h-s0UYIHqeFoSthk1azbgA7ccwDrJXLV02lOamXGHYdKVdoAiXR2lVGCZfkz0HXubI6P78bIUX2vS4m34X7DBDL164WDTecroCv8EGHqLjwDtcuYVj5SMsFWiwRG8pz_BdPkTcMHSjcoWfBxAMI" style="height:515px; width:409px"></p>
+
+<p>Mỗi flashcard sẽ bao gồm <strong>2 mặt</strong>, mặt trước sẽ là <strong>từ tiếng Anh kèm audio, phát âm và từ loại</strong>; mặt còn lại gồm <strong>nghĩa tiếng Anh, tiếng Việt, hình ảnh minh hoạ, và các câu ví dụ</strong>.</p>
+
+<p style="text-align:center"><span style="color:#cc4125"><strong><img src="https://lh7-us.googleusercontent.com/v_tIucSpUzLlW2iA9N0SfGTnTQo29rQ_R2Y2OdV-bvzC-9Vzpy43N-6slyOD2VxCsw5zhcWKwU7e7D0umJPOKGaWQCTComfU3O6zdvvn4SM48vIM_41nY6Ei_IOJOtyYso51guooRZcIUJnBCVBZeEs" style="height:272px; width:624px"></strong></span></p>
+
+<p>Trong lúc luyện tập bạn có thể <strong>phân loại mức độ của từ vựng từ dễ đến khó</strong>. Các từ được đưa vào <strong>mức độ khó sẽ được xuất hiện nhiều hơn</strong> trong quá trình ôn luyện</p>
+
+<p>Với mỗi list bài học, bạn sẽ <strong>trải qua 5 bài luyện tập khác nhau</strong> bao gồm <strong>trắc nghiệm từ vựng, tìm cặp, nghe từ vựng, dịch nghĩa</strong> và<strong> điền từ</strong>, và cuối cùng là <strong>nghe chép chính tả từ vựng</strong> giúp bạn học và ghi nhớ cực lâu từ vựng mà không nhàm chán.&nbsp;</p>
+
+<p style="text-align:center"><span style="color:#cc4125"><strong><img src="https://lh7-us.googleusercontent.com/zWonoL_jbT8WSefpLZQAVTC3r0AVgWqbu_YUyAB7y4gP7nt9wU2NSme8XuVSv2HMLVNCzE5DZ88ljKq13bwRIl5hAbBZd0yxTvSB1xhrYkL5wg15nmNGfYSGGw0ERDESLicrhqksu92l_C9BdFCqxpg" style="height:331px; width:624px"></strong></span></p>
+
+<h3 id="2.-ngữ-pháp-toeic---18-bài-học"><span style="font-size:20px"><strong>2. Ngữ pháp TOEIC - 18 bài học</strong></span></h3>
+
+<p>Khóa học cung cấp cho bạn<strong> lý thuyết của 17 chủ điểm ngữ pháp quan trọng nhất </strong>giúp bạn trả lời đúng tất cả các câu hỏi ngữ pháp chiếm tới 40% trong phần thi Reading.</p>
+
+<p style="text-align:center"><span style="color:#cc4125"><strong><img src="https://lh7-us.googleusercontent.com/9dweSzRuiTVF69aVRPRPBllWPGkExNi2_BMTmf76DLE051BX6DVeMioURjNUKolnuemJ626YV8weBqSkmQXjp6RIBB2uEKPPRU-q0YEoPFYnfT1XRvWZfHMbM9_cDbXVGUI4vkSkazZ42xrDu71Rf2g" style="height:450px; width:520px"></strong></span></p>
+
+<p>Theo sau là phần luyện tập trắc nghiệm TOEIC với <strong>các câu hỏi trắc nghiệm theo chuẩn format bài thi TOEIC mới nhất</strong> đi kèm các câu hỏi sẽ là phần <strong>giải thích đáp án chi tiết</strong>.</p>
+
+<p style="text-align:center"><img src="https://lh7-us.googleusercontent.com/_4-PNnxBxbhXlJiY8gfU6UTqKaWC-l7FYAdNjEbEi9PMBfrbsHBBjQ9IFFJKBGv5FmlR1omSM7lqFigaPRpq9P3RSqesllxXGOHCDZC7Gq3iFLLlmZkOV3OaIKZy-GFel-nb6ZOyMy6PPGr4nsPgBBQ" style="height:200px; width:624px"></p>
+
+<p>Ngoài ra, trong mỗi chủ đề ngữ pháp sẽ bao gồm <strong>đa dạng các bài luyện tập</strong> đi sâu vào từng nhánh, nội dung thuộc chủ đề đó.</p>
+
+<p>Mỗi bài luyện tập sẽ bao gồm phần <strong>lý thuyết chi tiết</strong> được tổng hợp chọn lọc bởi đội ngũ giáo viên của LearnEnglish và các <strong>câu hỏi minigame</strong> giúp bạn thành thạo các kiến thức ngữ pháp vừa được học.</p>
+
+<p style="text-align:center"><span style="color:#cc4125"><strong><img src="https://lh7-us.googleusercontent.com/EjPS8NwhGDzDfIO4lez-zfreoi-VJZR6cMD9lHx8CHfzXeEsy47atbTSZlp3jnDD_Baq6dENFq3F8s73NfGQMDzzpnARFKB4Okk4F5b45Oh4oURnMPMEultE5jGwQIQPxr0hp3_RJSvut09SD9-lQDI" style="height:289px; width:572px"></strong></span></p>
+
+<p>Cụ thể một vài mục như sau:</p>
+
+<h4 id="2.1.-danh-từ"><span style="font-size:18px"><span style="background-color:#eaf5ff"><strong>2.1. Danh từ</strong></span></span></h4>
+
+<ul>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff">Lý thuyết về </span><span style="background-color:#eaf5ff"><em>Noun (Danh từ)</em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff">Luyện tập: </span><span style="background-color:#eaf5ff"><em>trắc nghiệm format TOEIC</em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff">Luyện tập: </span><span style="background-color:#eaf5ff"><em>Noun: countable, uncountable (Danh từ đếm được, không đếm được)</em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff">Luyện tập: </span><span style="background-color:#eaf5ff"><em>Plural nouns (Danh từ số nhiều)</em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff">Luyện tập: </span><span style="background-color:#eaf5ff"><em>Plural mix (Số nhiều tổng hợp)</em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff">Luyện tập: </span><span style="background-color:#eaf5ff"><em>Define articles (Xác định mạo từ)</em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff">Luyện tập: </span><span style="background-color:#eaf5ff"><em>Zero articles (Mạo từ rỗng)</em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff">Luyện tập: </span><span style="background-color:#eaf5ff"><em>Article: mix (Bài tập lẫn về mạo từ)</em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff">Luyện tập: </span><span style="background-color:#eaf5ff"><em>Few/less/little/much/many</em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff">Luyện tập: </span><span style="background-color:#eaf5ff"><em>Quantity mix (Bài tập về số lượng)</em></span></li>
+</ul>
+
+<h4 id="2.2.-đại-từ"><span style="font-size:18px"><span style="background-color:#eaf5ff"><strong>2.2. Đại từ</strong></span></span></h4>
+
+<ul>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff">Lý thuyết về </span><span style="background-color:#eaf5ff"><em>Verb (Động từ)</em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff">Luyện tập: </span><span style="background-color:#eaf5ff"><em>personal pronouns (Đại từ nhân xưng)</em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff">Luyện tập: </span><span style="background-color:#eaf5ff"><em>Reflexive pronouns (Đại từ phản thân)</em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff">Luyện tập: </span><span style="background-color:#eaf5ff"><em>Possessive pronouns (Đại từ sở hữu)</em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff">Luyện tập: </span><span style="background-color:#eaf5ff"><em>this/that/those/these</em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff">Luyện tập: </span><span style="background-color:#eaf5ff"><em>Some, any, no, every</em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff">Luyện tập: </span><span style="background-color:#eaf5ff"><em>Both, all, whole, every, each</em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff">Luyện tập: </span><span style="background-color:#eaf5ff"><em>Another, other, either, neither, each</em></span></li>
+</ul>
+
+<h4 id="2.3.-tính-từ"><span style="font-size:18px"><span style="background-color:#eaf5ff"><strong>2.3. Tính từ</strong></span></span></h4>
+
+<ul>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff">Lý thuyết về Adjective (Tính từ)</span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff">Luyện tập: </span><span style="background-color:#eaf5ff"><em>so, enough, too</em></span></li>
+</ul>
+
+<h4 id="2.4.-thì"><span style="font-size:18px"><span style="background-color:#eaf5ff"><strong>2.4. Thì</strong></span></span></h4>
+
+<ul>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff">Lý thuyết về </span><span style="background-color:#eaf5ff"><em>Tenses (các thì)</em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff">Luyện tập: </span><span style="background-color:#eaf5ff"><em>Thì hiện tại đơn</em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff">Luyện tập: </span><span style="background-color:#eaf5ff"><em>Thì hiện tại tiếp diễn</em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff">Luyện tập: </span><span style="background-color:#eaf5ff"><em>Thì hiện tại: câu hỏi và phủ định</em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff">Luyện tập: </span><span style="background-color:#eaf5ff"><em>Phân biệt thì hiện tại đơn và thì hiện tại tiếp diễn</em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff">Luyện tập: </span><span style="background-color:#eaf5ff"><em>Tổng hợp về thì hiện tại</em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff">Luyện tập: </span><span style="background-color:#eaf5ff"><em>Thì quá khứ đơn</em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff">Luyện tập: </span><span style="background-color:#eaf5ff"><em>Thì quá khứ: câu hỏi và câu phủ định</em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff">Luyện tập: </span><span style="background-color:#eaf5ff"><em>Thì quá khứ tiếp diễn</em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff">Luyện tập: </span><span style="background-color:#eaf5ff"><em>Thì hiện tại hoàn thành</em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff">Luyện tập: </span><span style="background-color:#eaf5ff"><em>Thì quá khứ hoàn thành</em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff">Luyện tập: </span><span style="background-color:#eaf5ff"><em>Phân biệt thì quá khứ đơn và quá khứ tiếp diễn</em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff">Luyện tập: </span><span style="background-color:#eaf5ff"><em>Phân biệt thì quá khứ đơn và hiện tại hoàn thành</em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff">Luyện tập: </span><span style="background-color:#eaf5ff"><em>Phân biệt thì hiện tại hoàn thành và thì hiện tại hoàn thành tiếp diễn</em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff">Luyện tập: </span><span style="background-color:#eaf5ff"><em>Phân biệt quá khứ đơn và quá khứ hoàn thành</em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff">Luyện tập: </span><span style="background-color:#eaf5ff"><em>Tổng hợp về thì quá khứ</em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff">Luyện tập: </span><span style="background-color:#eaf5ff"><em>Thì tương lai đơn</em></span></li>
+</ul>
+
+<h3 id="3.-phương-pháp-học-theo-các-part-trong-2-kỹ-năng"><span style="font-size:20px"><span style="color:#434343"><strong>3. Phương pháp học theo các part trong 2 kỹ năng</strong></span></span></h3>
+
+<p><span style="font-size:18px"><span style="background-color:#eaf5ff"><strong>Part 1: Photographs - Nghe tranh - 5 bài học</strong></span></span></p>
+
+<ul>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff"><em>Tổng quan</em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff"><em>Tranh tả người</em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff"><em>Tranh tả vật</em></span><span style="background-color:#eaf5ff"><em> </em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff"><em>Tranh tả cả người và vật</em></span><span style="background-color:#eaf5ff"><em> </em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff"><em>Luyện tập tổng hợp</em></span></li>
+</ul>
+
+<p><span style="font-size:18px"><span style="background-color:#eaf5ff"><strong>Part 2: Question - Response - Hỏi - đáp - 13 bài học</strong></span></span></p>
+
+<ul>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff"><em>Tổng quan</em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff"><em>Câu hỏi WHO</em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff"><em>Câu hỏi WHAT</em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff"><em>Câu hỏi WHERE</em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff"><em>Câu hỏi WHEN</em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff"><em>Câu hỏi WHY</em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff"><em>Câu hỏi HOW</em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff"><em>Câu hỏi YES/NO</em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff"><em>Câu hỏi lựa chọn</em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff"><em>Câu hỏi đuôi</em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff"><em>Câu đề nghị, yêu cầu</em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff"><em>Câu trần thuật</em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff"><em>Luyện tập tổng hợp</em></span></li>
+</ul>
+
+<p><span style="font-size:18px"><span style="background-color:#eaf5ff"><strong>Part 3: Conversations - Nghe hiểu đối thoại - 11 bài học</strong></span></span></p>
+
+<ul>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff"><em>Tổng quan</em></span><span style="background-color:#eaf5ff"><em> </em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff"><em>Câu hỏi về chủ đề, mục đích</em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff"><em>Câu hỏi về địa điểm hội thoại</em></span><span style="background-color:#eaf5ff"><em> </em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff"><em>Câu hỏi về danh tính người nói</em></span><span style="background-color:#eaf5ff"><em> </em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff"><em>Câu hỏi về chi tiết cuộc hội thoại</em></span><span style="background-color:#eaf5ff"><em> </em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff"><em>Câu hỏi về hành động tương lai</em></span><span style="background-color:#eaf5ff"><em> </em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff"><em>Câu hỏi về yêu cầu, gợi ý</em></span><span style="background-color:#eaf5ff"><em> </em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff"><em>Câu hỏi về hàm ý câu nói</em></span><span style="background-color:#eaf5ff"><em> </em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff"><em>Câu hỏi kết hợp bảng biểu</em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff"><em>Chủ đề các cuộc đối thoại</em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff"><em>Luyện tập tổng hợp</em></span></li>
+</ul>
+
+<p><span style="font-size:18px"><span style="background-color:#eaf5ff"><strong>Part 4: Talks - Nghe hiểu bài nói - 15 bài học</strong></span></span></p>
+
+<ul>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff"><em>Tổng quan</em></span><span style="background-color:#eaf5ff"><em> </em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff"><em>Câu hỏi về chủ đề, mục đích</em></span><span style="background-color:#eaf5ff"><em> </em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff"><em>Câu hỏi về danh tính, địa điểm</em></span><span style="background-color:#eaf5ff"><em> </em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff"><em>Câu hỏi về chi tiết</em></span><span style="background-color:#eaf5ff"><em> </em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff"><em>Câu hỏi yêu cầu, gợi ý</em></span><span style="background-color:#eaf5ff"><em> </em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff"><em>Câu hỏi về hành động tương lai</em></span><span style="background-color:#eaf5ff"><em> </em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff"><em>Câu hỏi về hàm ý câu nói</em></span><span style="background-color:#eaf5ff"><em> </em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff"><em>Câu hỏi kết hợp bảng biểu</em></span><span style="background-color:#eaf5ff"><em> </em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff"><em>Dạng bài Telephone message - Tin nhắn thoại</em></span><span style="background-color:#eaf5ff"><em> </em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff"><em>Dạng bài Advertisement - Quảng cáo</em></span><span style="background-color:#eaf5ff"><em> </em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff"><em>Dạng bài Announcement - Thông báo</em></span><span style="background-color:#eaf5ff"><em> </em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff"><em>Dạng bài Talk - Bài phát biểu, diễn văn</em></span><span style="background-color:#eaf5ff"><em> </em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff"><em>Dạng bài News report, Broadcast - Bản tin</em></span><span style="background-color:#eaf5ff"><em> </em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff"><em>Dạng bài Excerpt from a meeting - Trích dẫn từ buổi họp</em></span><span style="background-color:#eaf5ff"><em> </em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff"><em>Luyện tập tổng hợp</em></span></li>
+</ul>
+
+<p><span style="font-size:18px"><span style="background-color:#eaf5ff"><strong>Part 5: Incomplete Sentences - Điền từ vào câu - 25 bài học</strong></span></span></p>
+
+<ul>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff"><em>Tổng quan</em></span><span style="background-color:#eaf5ff"><em> </em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff"><em>Câu hỏi từ loại</em></span><span style="background-color:#eaf5ff"><em> </em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff"><em>Câu hỏi ngữ pháp</em></span><span style="background-color:#eaf5ff"><em> </em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff"><em>Câu hỏi từ vựng</em></span><span style="background-color:#eaf5ff"><em> </em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff"><em>[Câu hỏi từ vựng] Danh từ</em></span><span style="background-color:#eaf5ff"><em> </em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff"><em>[Câu hỏi từ vựng] Động từ</em></span><span style="background-color:#eaf5ff"><em> </em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff"><em>[Câu hỏi từ vựng] Tính từ</em></span><span style="background-color:#eaf5ff"><em> </em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff"><em>[Câu hỏi từ vựng] Trạng từ</em></span><span style="background-color:#eaf5ff"><em> </em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff"><em>[Câu hỏi từ loại] Danh từ</em></span><span style="background-color:#eaf5ff"><em> </em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff"><em>[Câu hỏi từ loại] Tính từ</em></span><span style="background-color:#eaf5ff"><em> </em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff"><em>[Câu hỏi từ loại] Trạng từ</em></span><span style="background-color:#eaf5ff"><em> </em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff"><em>[Câu hỏi từ loại] Động từ</em></span><span style="background-color:#eaf5ff"><em> </em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff"><em>[Câu hỏi ngữ pháp] Đại từ</em></span><span style="background-color:#eaf5ff"><em> </em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff"><em>[Câu hỏi ngữ pháp] Thì của động từ</em></span><span style="background-color:#eaf5ff"><em> </em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff"><em>[Câu hỏi ngữ pháp] Thể của động từ (chủ động và bị động)</em></span><span style="background-color:#eaf5ff"><em> </em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff"><em>[Câu hỏi ngữ pháp] Cấu trúc phân từ</em></span><span style="background-color:#eaf5ff"><em> </em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff"><em>[Câu hỏi ngữ pháp] Dạng của động từ - Động từ nguyên mẫu có "to" (to V)</em></span><span style="background-color:#eaf5ff"><em> </em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff"><em>[Câu hỏi ngữ pháp] Dạng của động từ - Danh động từ (Ving)</em></span><span style="background-color:#eaf5ff"><em> </em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff"><em>[Câu hỏi ngữ pháp] Dạng của động từ - Động từ nguyên mẫu (V inf)</em></span><span style="background-color:#eaf5ff"><em> </em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff"><em>[Câu hỏi ngữ pháp] Liên từ</em></span><span style="background-color:#eaf5ff"><em> </em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff"><em>[Câu hỏi ngữ pháp] Giới từ</em></span><span style="background-color:#eaf5ff"><em> </em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff"><em>[Câu hỏi ngữ pháp] Câu cầu khiến</em></span><span style="background-color:#eaf5ff"><em> </em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff"><em>[Câu hỏi ngữ pháp] Mệnh đề quan hệ</em></span><span style="background-color:#eaf5ff"><em> </em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff"><em>[Câu hỏi ngữ pháp] Cấu trúc so sánh</em></span><span style="background-color:#eaf5ff"><em> </em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff"><em>Luyện tập tổng hợp</em></span></li>
+</ul>
+
+<p><span style="font-size:18px"><span style="background-color:#eaf5ff"><strong>Part 6: Text Completion - Điền từ vào đoạn văn - 7 bài học</strong></span></span></p>
+
+<ul>
+<li style="list-style-type:disc"><em><span style="background-color:#eaf5ff">Tổng quan</span><span style="background-color:#eaf5ff"> </span></em></li>
+<li style="list-style-type:disc"><em><span style="background-color:#eaf5ff">Câu hỏi từ loại</span><span style="background-color:#eaf5ff"> </span></em></li>
+<li style="list-style-type:disc"><em><span style="background-color:#eaf5ff">Câu hỏi ngữ pháp</span><span style="background-color:#eaf5ff"> </span></em></li>
+<li style="list-style-type:disc"><em><span style="background-color:#eaf5ff">Câu hỏi từ vựng</span><span style="background-color:#eaf5ff"> </span></em></li>
+<li style="list-style-type:disc"><em><span style="background-color:#eaf5ff">Câu hỏi điền câu vào đoạn văn</span><span style="background-color:#eaf5ff"> </span></em></li>
+<li style="list-style-type:disc"><em><span style="background-color:#eaf5ff">Luyện tập theo hình thức văn bản</span><span style="background-color:#eaf5ff"> </span></em></li>
+<li style="list-style-type:disc"><em><span style="background-color:#eaf5ff">Luyện tập tổng hợp</span></em></li>
+</ul>
+
+<p><span style="font-size:18px"><span style="background-color:#eaf5ff"><strong>Part 7: Reading Comprehension - Đọc hiểu văn bản - 16 bài học</strong></span></span></p>
+
+<ul>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff"><em>Tổng quan</em></span><span style="background-color:#eaf5ff"><em> </em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff"><em>Câu hỏi về chủ đề, mục đích</em></span><span style="background-color:#eaf5ff"><em> </em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff"><em>Câu hỏi tìm thông tin</em></span><span style="background-color:#eaf5ff"><em> </em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff"><em>Câu hỏi suy luận</em></span><span style="background-color:#eaf5ff"><em> </em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff"><em>Câu hỏi tìm từ đồng nghĩa</em></span><span style="background-color:#eaf5ff"><em> </em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff"><em>Câu hỏi về hàm ý câu nói</em></span><span style="background-color:#eaf5ff"><em> </em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff"><em>Câu hỏi tìm chi tiết sai</em></span><span style="background-color:#eaf5ff"><em> </em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff"><em>Câu hỏi điền câu</em></span><span style="background-color:#eaf5ff"><em> </em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff"><em>Dạng bài Article/ Review - Bài báo/ Bài đánh giá</em></span><span style="background-color:#eaf5ff"><em> </em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff"><em>Dạng bài Announcement/ Notice - Thông báo</em></span><span style="background-color:#eaf5ff"><em> </em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff"><em>Dạng bài Email/ Letter - Thư điện tử/ Thư tay</em></span><span style="background-color:#eaf5ff"><em> </em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff"><em>Dạng bài Advertisement - Quảng cáo</em></span><span style="background-color:#eaf5ff"><em> </em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff"><em>Dạng bài Form - Biểu mẫu</em></span><span style="background-color:#eaf5ff"><em> </em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff"><em>Dạng bài Text message chain - Chuỗi tin nhắn</em></span><span style="background-color:#eaf5ff"><em> </em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff"><em>Luyện tập theo cấu trúc</em></span><span style="background-color:#eaf5ff"><em> </em></span></li>
+<li style="list-style-type:disc"><span style="background-color:#eaf5ff"><em>Luyện tập tổng hợp</em></span></li>
+</ul>
+
+<p><img src="https://study4.com/media/uploads/editor/hangbm.LearnEnglish/2024/05/22/image_lAJP9WW.png" style="height:439px; width:500px"></p>
+
+<h3 id="4.-luyện-nghe-chép-chính-tả-toeic"><span style="font-size:20px"><span style="color:#434343"><strong>4. Luyện nghe chép chính tả TOEIC</strong></span></span></h3>
+
+<p><a href="https://LearnEnglish.com/posts/261/nghe-chep-chinh-ta-va-cac-tip-nang-cao-trinh-do-listening/" style="text-decoration:none"><span style="color:#1155cc"><strong><u>Phương pháp Dictation - Nghe chép chính tả</u></strong></span></a> trong tiếng Anh, là một trong những phương pháp rèn luyện kỹ năng nghe tiếng Anh rất phổ biến trong giới học tiếng Anh nói chung, học và thi TOEIC nói riêng.</p>
+
+<p>Nếu bạn đang gặp khó khăn với phần Listening, phương pháp Dictation sẽ là trợ thủ đắc lực giúp bạn khai thác bài tiếng Anh.</p>
+
+<p>Nếu chưa biết áp dụng phương pháp này như thế nào, tham khảo ngay khóa học của LearnEnglish nhé!</p>
+
+<p>Để đạt hiệu quả tốt nhất, mỗi ngày bạn <strong>nên luyện tập ít nhất 20 phút với phương pháp này</strong>.</p>
+
+<p>Tốc độ nghe có thể được điều chỉnh nhanh hay chậm tùy theo khả năng của bạn!</p>
+
+<p style="text-align:center"><span style="color:#cc4125"><strong><img src="https://lh7-us.googleusercontent.com/bODLxkySjzMk4-lhqADz-TpeKAL9H97L3AM45ttkQHELf28P5m9VwfDnzRmC2GRXEWE6NmbFwbSPCWT5pLkPmfJcuVQux5AZ6L6bxfwrhd33JLGexoZ9dUcQEcCHWymuw2czphBkUm1KbUhfKsmpxXk" style="height:229px; width:624px"></strong></span></p>
+
+<h2 id="iv.-lộ-trình-học-để-đạt-target-toeic"><strong>IV. Lộ trình học để đạt target TOEIC</strong></h2>
+
+<h3 id="1.-để-đạt-target-450+-toeic"><span style="font-size:20px"><span style="color:#434343"><strong>1. Để đạt target 450+ TOEIC</strong></span></span></h3>
+
+<p>Để học những kiến thức trong khóa học hiệu quả, thầy cô giáo tại LearnEnglish đã biên soạn lộ trình học TOEIC 450+ chi tiết hàng ngày giúp thí sinh dễ dàng áp dụng.</p>
+
+<div>
+<table cellspacing="0" style="border-collapse:collapse; border:none; table-layout:fixed; width:624px">
+<tbody>
+    <tr>
+        <td style="background-color:#fffee8; border-bottom:1px solid #fffee8; border-left:1px solid #fffee8; border-right:1px solid #fffee8; border-top:1px solid #fffee8; vertical-align:top">
+        <p style="text-align:center"><span style="font-size:18px"><span style="color:#1155cc"><strong>Lộ trình đạt 450+ TOEIC</strong></span></span></p>
+
+        <p><strong>Bạn cần phải:</strong></p>
+
+        <p>💡Tập trung học từ vựng và ngữ pháp</p>
+
+        <p>💡Thứ tự học từng kỹ năng: chú ý CHỈ LUYỆN một part cho đến khi đạt tỉ lệ đúng 70-80% rồi mới chuyển sang part khác.</p>
+
+        <ul>
+            <li style="list-style-type:disc"><em>Listening: part 1 &gt; part 2 &gt; part 4 (dạng câu hỏi tìm thông tin)</em></li>
+            <li style="list-style-type:disc"><em>Reading: part 5 &gt; part 6</em></li>
+        </ul>
+
+        <p>💡Chú ý không luyện nhiều part của 1 kỹ năng cùng một lúc</p>
+
+        <hr>
+        <p><span style="color:#1155cc"><strong>Với kỹ năng Listening, mỗi ngày bạn sẽ:</strong></span></p>
+
+        <p><strong>Bước 1: </strong>Làm riêng từng part bạn muốn luyện tập trong thư viện đề thi (bấm thời gian 1 phút/câu). Bạn dựa theo mục Nghe chép chính tả đề tìm đề luyện tập.</p>
+
+        <p style="text-align:center"><span style="color:#cc4125"><strong><img src="https://lh7-us.googleusercontent.com/0wH2A6br6fO75ZavJZ_2LHCnaJ-0P5B7XNc1JfZGn6FiieZDt_JB4MHopzKNxLT--5TWzgwMVKRwHBcxpUSezojaaZq3eM8x6RoDm3iKxDg511JO50sUjg50xRqiGGKRwdmTy6UeRAefcI--XgZ_t9I" style="height:224px; width:610px"></strong></span></p>
+
+        <p><strong>Bước 2: </strong>Tự chữa các câu làm sai mà không đọc script</p>
+
+        <p style="text-align:center"><span style="color:#cc4125"><strong><img src="https://lh7-us.googleusercontent.com/845GjKzhSKwK-kCSfSm1-dUxCEvJTqFUpVoCYBAr2KpORcIk1OmGWD7cFBnuP5NQ-M8N-92c19mTh1AvThysALhXPiF0BpYzqEcR7SB8Y-sCqVqcYa3kiQlriMQFqVZxg_1HdSn8TDKzbkN9EkRZwmA" style="height:363px; width:610px"></strong></span></p>
+
+        <p><strong>Bước 3:</strong> Nghe chép chính tả bài vừa làm,&nbsp; với tốc độ 1.1x hoặc 1.25x để rèn luyện kỹ năng nghe chi tiết</p>
+
+        <p style="text-align:center"><img src="https://lh7-us.googleusercontent.com/DQ9JNw0A9N4C9PiHPiVxrS0J9HXt-1UQv-A27xKw-uEqpy0Zgh6hxwLtkZmKu-C3NIINn1fZDyyRQ75jRH7HiYxWx1w1DbaPm8XVYm1HHlRNi8LBBtG36Tz633WwSwYRxVJS2syT3jl2h31pMs6uv6A" style="height:255px; width:610px"></p>
+
+        <p><strong>Bước 4:</strong> Đọc transcript, giải thích, hoặc xem clip bài giảng.&nbsp;</p>
+
+        <p style="text-align:center"><span style="color:#cc4125"><strong><img src="https://lh7-us.googleusercontent.com/GXsW58Zhlt9bJcR97zIun2X9LGl4J5SyxhP9h9M-Rg85PjXFvR1FcU28PTjAoJNp-QEG-uD2e0m24okg5bN6AP2oIIhYChovyDFDI47SKeGN-YA9wlisxoM62FgOXTRZEhMM2f3GTrKMNRikE5PMkKA" style="height:460px; width:404px"></strong></span></p>
+
+        <hr>
+        <p><span style="color:#1155cc"><strong>Với kỹ năng Reading, mỗi ngày bạn sẽ:</strong></span></p>
+
+        <p><strong>Bước 1: </strong>Làm riêng từng part bạn muốn luyện tập trong thư viện đề thi (bấm thời gian 1 phút/câu).</p>
+
+        <p style="text-align:center"><em><img src="https://lh7-us.googleusercontent.com/N0vbVF9UHQCvKSxIti9ZV6ibXqzvUgZ9d0vCvUQMqtSsi7QsbyExRjz4BpCx7HHihdnk3F9RApXCzmqcbwxBM_IFpjm4YLVhUEultIqnnoXmAbnUEpY-fm7LskMN2RYxG5pz3y2xclWN7WYdXNuGPKU" style="height:288px; width:610px"></em></p>
+
+        <p><strong>Bước 2: </strong>Tự chữa các câu làm sai mà không đọc giải thích</p>
+
+        <p style="text-align:center"><img src="https://lh7-us.googleusercontent.com/WNXuvUtVEZPvwMnP9uTG2l7j7g-y_DRT8Oo8NUIp6Z_5JHyeDZuPo7KN0aW20kMDLDt5ObqvqTEMIv5l0tpvxdEIkT94cit6Vkk3EjQ1B0sqTz9iUHj4Izw718ZvEmoXL7NyFmU6W_rb8pnZ-PG24AE" style="height:216px; width:610px"></p>
+
+        <p><strong>Bước 3: </strong>Đọc giải thích các câu không tự chữa được, hoặc xem clip bài giảng.</p>
+
+        <p style="text-align:center"><img src="https://lh7-us.googleusercontent.com/N7DiWwzRqOn3d3ZUXrjRYO71j-6fxxcSO7XlUUM5oErrbGtvr5JvZIzv9gQEN1F7V9ZTRcjXZwmnmeL3zxc3BQiIcFEiZOsSvAmlQjG4wnFIbsBW8eguX5v7gQDfJ6pSSS493gfYyyLmA_OYdpX0c3w" style="height:436px; width:426px"></p>
+
+        <p>&nbsp;</p>
+
+        <hr>
+        <p><span style="color:#1155cc"><strong>Từ vựng/ ngữ pháp</strong></span></p>
+
+        <ul>
+            <li style="list-style-type:disc">Học từ vựng (flashcards mỗi ngày 20-30 từ)</li>
+        </ul>
+
+        <p style="text-align:center"><span style="color:#cc4125"><strong><img src="https://lh7-us.googleusercontent.com/HOi26KZ9vLHeZCFCFAbvQMN8eHkjFxRoBAb_7ldH3exKHxljVNFKk3EEPDb761o5u-4BzxTYHKQ7B7LpWR50hgPafF22-LZtuhRz7Cr3N3bEjDNSEaBF1tIMbq2XjGSBTrWqNHt9yNBEMOQ10NA1nIQ" style="height:451px; width:378px"></strong></span></p>
+
+        <ul>
+            <li style="list-style-type:disc">Học và làm bài tập ngữ pháp (3-4 ngày học 1 chủ đề ngữ pháp)</li>
+        </ul>
+
+        <p style="text-align:center"><span style="color:#cc4125"><strong><img src="https://lh7-us.googleusercontent.com/rnNRfhGPLH1SxGuGoMeFU800Qm0_VFbqDDG9nb6gaNnYFeQ5Un3XAz3WI0AK8v0dRFvn-KWqSDSez3APWhFKnTAG9bS852i6VqgiM-A8J-3GrhUhKNlsba35UpMMXHaKjdFROvaEPZ0UnHKIXavvXQY" style="height:264px; width:546px"></strong></span></p>
+        </td>
+    </tr>
+</tbody>
+</table>
+</div>
+
+<h3 id="2.-để-đạt-target-650+-toeic"><span style="font-size:20px"><span style="color:#434343"><strong>2. </strong></span><span style="color:#434343"><strong>Để đạt target 650+ TOEIC</strong></span></span></h3>
+
+<p>Để đạt 650+ TOEIC, bạn sẽ tập trung học và ôn luyện bao quát tất cả các part trong đề thi hơn.</p>
+
+<div>
+<table cellspacing="0" style="border-collapse:collapse; border:none; table-layout:fixed; width:624px">
+<tbody>
+    <tr>
+        <td style="background-color:#fffee8; border-bottom:1px solid #fffee8; border-left:1px solid #fffee8; border-right:1px solid #fffee8; border-top:1px solid #fffee8; vertical-align:top">
+        <p style="text-align:center"><span style="font-size:18px"><span style="color:#1155cc"><strong>Lộ trình đạt 650+ TOEIC</strong></span></span></p>
+
+        <p><strong>Bạn cần phải:</strong></p>
+
+        <p>💡Thứ tự học từng kỹ năng: chú ý CHỈ LUYỆN một part cho đến khi đạt tỉ lệ đúng 70-80% rồi mới chuyển sang part khác.</p>
+
+        <ul>
+            <li style="list-style-type:disc">Listening: part 1 &gt; part 2 &gt; part 4 &gt; part 3. <em>Riêng part 3 và part 4, tập trung vào dạng câu hỏi không cần suy luận: chủ đề, danh tính, địa điểm, mục đích và bàng biểu.</em></li>
+            <li style="list-style-type:disc">Reading: part 5 &gt; part 6 &gt; part 7. <em>Part 7 nên tập trung vào bài đọc đơn, đọc ghép 2 câu hỏi: Dạng câu hỏi tìm thông tin: danh tính, thời gian, địa điểm hoặc dạng tìm mục đích.</em></li>
+        </ul>
+
+        <p>💡Chú ý không luyện nhiều part của 1 kỹ năng cùng một lúc.</p>
+
+        <hr>
+        <p><span style="color:#1155cc"><strong>Với kỹ năng Listening, mỗi ngày bạn sẽ:</strong></span></p>
+
+        <p><strong>Bước 1: </strong>Làm riêng từng part bạn muốn luyện tập trong thư viện đề thi (bấm thời gian 1 phút/câu). Bạn dựa theo mục Nghe chép chính tả đề tìm đề luyện tập.</p>
+
+        <p><strong>Bước 2: </strong>Tự chữa các câu làm sai mà không đọc script</p>
+
+        <p><strong>Bước 3:</strong> Nghe chép chính tả bài vừa làm,&nbsp; với tốc độ 1.1x hoặc 1.25x để rèn luyện kỹ năng nghe chi tiết</p>
+
+        <p><strong>Bước 4:</strong> Đọc transcript, giải thích, hoặc xem clip bài giảng.&nbsp;</p>
+
+        <hr>
+        <p><span style="color:#1155cc"><strong>Với kỹ năng Reading, mỗi ngày bạn sẽ:</strong></span></p>
+
+        <p><strong>Bước 1: </strong>Làm riêng từng part bạn muốn luyện tập trong thư viện đề thi (bấm thời gian 1 phút/câu). Bạn dựa theo mục Nghe chép chính tả đề tìm đề luyện tập.</p>
+
+        <p><strong>Bước 2: </strong>Tự chữa các câu làm sai mà không đọc giải thích</p>
+
+        <p><strong>Bước 3: </strong>Đọc giải thích các câu không tự chữa được, hoặc xem clip bài giảng.</p>
+
+        <hr>
+        <p><span style="color:#1155cc"><strong>Từ vựng/ ngữ pháp</strong></span></p>
+
+        <ul>
+            <li style="list-style-type:disc">Học từ vựng (flashcards mỗi ngày 20-30 từ)</li>
+        </ul>
+
+        <ul>
+            <li style="list-style-type:disc">Học và làm bài tập ngữ pháp (1-2 ngày học 1 chủ đề ngữ pháp)</li>
+        </ul>
+        </td>
+    </tr>
+</tbody>
+</table>
+</div>
+
+<p style="text-align:center"><span style="font-size:18px"><span style="color:#ffffff"><span style="background-color:#3c78d8"><strong>Bạn sẽ đạt được gì sau kết thúc lộ trình của LearnEnglish:</strong></span></span></span></p>
+
+<p><span style="font-size:18px"><span style="color:#1155cc"><strong>📝Ngữ pháp:</strong></span></span></p>
+
+<p>Học viên sẽ được củng cố lại kiến thức về các thì cơ bản và nâng cao hiểu biết về các dạng thì phức tạp hơn, chẳng hạn như:</p>
+
+<ul>
+<li style="list-style-type:disc">Thì hiện tại hoàn thành (present perfect)</li>
+<li style="list-style-type:disc">Thì quá khứ hoàn thành (past perfect)</li>
+<li style="list-style-type:disc">Thì tương lai hoàn thành (future perfect)</li>
+<li style="list-style-type:disc">Thì hiện tại hoàn thành tiếp diễn (present perfect continuous)</li>
+<li style="list-style-type:disc">Bên cạnh đó, học viên cũng sẽ được hướng dẫn cách sử dụng câu gián tiếp và trực tiếp, cũng như quan hệ giữa chúng. Về mệnh đề quan hệ, học viên sẽ hiểu và áp dụng các trường hợp bắt buộc sử dụng từ "that" và cách rút gọn mệnh đề quan hệ.</li>
+<li style="list-style-type:disc">Kiến thức ngữ pháp về giới từ cũng sẽ được tập trung, bao gồm các giới từ chỉ thời gian, địa điểm, mục đích và nơi chốn.</li>
+<li style="list-style-type:disc">Học viên sẽ nắm vững các dạng so sánh bằng, so sánh hơn và so sánh nhất cũng như các loại câu điều kiện.</li>
+<li style="list-style-type:disc">Các kiến thức về thể câu bị động, các cách diễn đạt dưới dạng bị động và cách kết hợp giữa động từ và chủ ngữ cũng sẽ được học viên tiếp cận và thực hành.</li>
+</ul>
+
+<p>Đồng thời, các kiến thức khác liên quan cũng sẽ được đề cập và giải thích một cách chi tiết.</p>
+
+<p><span style="font-size:18px"><span style="color:#1155cc"><strong>📚Từ vựng:</strong></span></span></p>
+
+<p>Bên cạnh việc mở rộng vốn từ vựng, người học cũng sẽ tìm hiểu về các từ đồng nghĩa, các từ thông dụng và cách sử dụng collocation trong tiếng Anh. Việc này giúp họ dễ dàng phân loại các từ vựng mới cần học khi họ tham gia vào các hoạt động luyện tập giải đề trong phần 3 và 4 (nghe) cũng như phần 7 (đọc).</p>
+
+<p>Để bổ sung từ vựng, người học cần chú ý rằng một số phương án trong các câu hỏi có thể được diễn đạt tương đương với các từ, cụm từ hoặc câu trong bài.</p>
+
+<p>Ngoài ra, bạn cũng sẽ nắm được các từ vựng theo chủ đề và áp dụng chúng tích cực trong thực hành. Các chủ đề có thể bao gồm chủ đề về công việc như marketing, office, training, business planning; chủ đề về mua sắm như warranty, shipping, invoice, promotion; và chủ đề về cuộc sống hàng ngày như eating out, movies, hotels, car rental.</p>
+
+<p style="text-align:center"><img src="https://lh7-us.googleusercontent.com/bveu2vxDrVvdoD_rfG1o8q2rEnqJHmPiac6RTQWZWlaCNcpTjEauBcyqQZVTe0M0M3GSiq_ctKa_410dIKM12RX7B4iveQDPLERjAOM7_Dj0VdN659XjFHjcTRsXH53xvrh-Qplnxr85zFhVf735DV0" style="height:344px; width:480px"></p>
+
+<p style="text-align:center"><em>Khóa học sẽ giúp bạn nắm được kiến thức cơ bản của Từ vựng &amp; Ngữ pháp cần thiết cho kỳ thi TOEIC</em></p>
+
+<p><span style="font-size:18px"><span style="color:#1155cc"><strong>🎧Kỹ năng nghe:</strong></span></span></p>
+
+<p>Bạn sẽ có cơ hội rèn luyện và thao tác thành thạo để duy trì điểm số cao trong cả phần 1 và phần 2. Bạn sẽ có khả năng nhận diện các dạng câu hỏi và biết cách trả lời một cách gián tiếp (tránh được các "bẫy") trong phần 2, từ đó tối ưu hóa điểm số của mình.</p>
+
+<p>Ngoài ra, bạn cũng sẽ trở nên quen thuộc với mọi loại câu hỏi. Bằng cách nghiên cứu, thực hành và hiểu rõ <a href="https://LearnEnglish.com/posts/688/paraphrase-la-gi-5-cach-paraphrase-sau-trong-ielts/" style="text-decoration:none"><span style="color:#1155cc"><strong><u>kỹ năng paraphrasing</u></strong></span></a>, bạn sẽ nắm vững kỹ năng này.</p>
+
+<p>Khả năng nghe và hiểu câu hỏi trong phần 3 và phần 4 cũng sẽ được cải thiện, cùng với <a href="https://LearnEnglish.com/posts/263/ky-nang-skimming-va-scanning-bao-boi-cho-moi-de-ielts-reading/" style="text-decoration:none"><span style="color:#1155cc"><strong><u>kỹ năng scanning (đọc lướt)</u></strong></span></a> các câu hỏi trong phần 4.</p>
+
+<p>Bạn sẽ có khả năng xác định thông tin chính của câu hỏi và các lựa chọn đề xuất đồng thời, cũng như nhận diện thông tin cần thiết để trả lời câu hỏi. Việc nâng cao khả năng nắm bắt thông tin chính và từ khóa trong những bài nghe dài cũng sẽ được đảm bảo.</p>
+
+<p>Cuối cùng, bạn sẽ phát triển khả năng tập trung cao trong việc nghe trong thời gian dài.</p>
+
+<p><span style="font-size:18px"><span style="color:#1155cc"><strong>📖Kỹ năng đọc:</strong></span></span></p>
+
+<p>Trong phần 5 và 6, người học sẽ được khám phá và thực hành cách xử lý các loại câu hỏi khác nhau, bao gồm giới từ, liên từ và đại từ quan hệ. Trong quá trình này, bạn sẽ hiểu rõ vai trò, vị trí và ý nghĩa của các giới từ, liên từ và đại từ quan hệ, giúp bạn giải quyết các câu hỏi liên quan. Đồng thời, bạn cũng sẽ tối ưu hóa điểm số cho hai phần đầu tiên bằng cách làm quen với các dạng câu hỏi và các bẫy thường gặp trong từng loại câu hỏi.</p>
+
+<p>Trong phần 7, học viên sẽ được tập trung luyện tập với các bài đọc, tập trung vào việc xử lý các loại câu hỏi khác nhau trong các văn bản đơn. Các loại câu hỏi này bao gồm câu hỏi tổng quát, chi tiết, thông tin (không) được đề cập và ngụ ý. Đồng thời, bạn sẽ tìm hiểu và thực hành các kỹ năng như skimming và scanning và paraphrasing.</p>
+
+<p>Tiếp theo, người học sẽ tiến hành luyện tập làm bài đọc TOEIC đầy đủ để cải thiện tốc độ đọc và độ chính xác. Trong quá trình này, bạn cũng sẽ cập nhật và áp dụng các cấu trúc ngữ pháp và từ vựng mới đã học vào kỹ năng Writing (nếu bạn thi 4 kỹ năng).</p>
+
+<p style="text-align:center"><img src="https://lh7-us.googleusercontent.com/61_rUGTcoqN_nxX8R7Ps3ij0RyM2XtXUpi67lLUKmWZTVqQvVdrzCVpXut3aWWHX6qu1IJLaodRwSyzbZWaOnwI1vu_NlPUO27HC2OpOBEQQcA3IZ5-M0hHTb_Cyrg649lknDDcFmLNFfadaq10hP4g" style="height:347px; width:405px"></p>
+
+<p style="text-align:center"><em>Bạn sẽ dễ dàng đạt điểm số TOEIC mơ ước sau khi hoàn thành khóa học</em></p>
+
+<h2 id="v.-bí-quyết-luyện-thi-toeic-online"><strong>V. Bí quyết luyện thi TOEIC online&nbsp;</strong></h2>
+
+<h3 id="1.-kinh-nghiệm-ôn-luyện-toeic-listening-theo-từng-phần"><span style="font-size:20px"><strong>1. Kinh nghiệm ôn luyện TOEIC Listening theo từng phần</strong></span></h3>
+
+<p><strong>Part 1 (Photographs):</strong></p>
+
+<ul>
+<li style="list-style-type:disc">Hãy xem kỹ hình ảnh và lắng nghe các mô tả về hình ảnh một cách cẩn thận.</li>
+<li style="list-style-type:disc">Tìm hiểu về ngữ cảnh của hình ảnh và tìm từ khóa trong mô tả để chọn đáp án chính xác.</li>
+<li style="list-style-type:disc">Lưu ý các chi tiết nhỏ như môi trường, hành động của nhân vật và các vật dụng trong hình để giúp bạn hiểu rõ hơn.</li>
+</ul>
+
+<p><strong>Part 2 (Question-Response):</strong></p>
+
+<ul>
+<li style="list-style-type:disc">Lắng nghe các câu hỏi và phản ứng của người nói để hiểu ý nghĩa chính.</li>
+<li style="list-style-type:disc">Tập trung vào từ khóa và thông tin quan trọng trong câu hỏi để tìm ra đáp án chính xác.</li>
+<li style="list-style-type:disc">Lưu ý các tình huống và ngữ cảnh để giúp bạn hiểu rõ hơn về ngữ điệu và ý đồ của người nói.</li>
+</ul>
+
+<p><strong>Part 3 (Conversations):</strong></p>
+
+<ul>
+<li style="list-style-type:disc">Tập trung lắng nghe cả cuộc trò chuyện để hiểu nội dung chính và mục đích của cuộc trò chuyện.</li>
+<li style="list-style-type:disc">Lưu ý các thông tin về ai, khi nào, nơi đâu và tại sao trong cuộc trò chuyện để trả lời các câu hỏi một cách chính xác.</li>
+<li style="list-style-type:disc">Hãy chú ý đến ngữ điệu, giọng điệu và cảm xúc của người nói để hiểu rõ hơn về tình hình và ý định của họ.</li>
+</ul>
+
+<p><strong>Part 4 (Talks):</strong></p>
+
+<ul>
+<li style="list-style-type:disc">Hãy lắng nghe mô tả tổng quan và các thông tin chi tiết trong bài nói để hiểu chủ đề và mục đích của bài nói.</li>
+<li style="list-style-type:disc">Tìm hiểu về cấu trúc của bài nói, bao gồm sự giới thiệu, các thông tin chính và kết luận, để giúp bạn xác định các ý chính.</li>
+<li style="list-style-type:disc">Lưu ý các từ nối và cấu trúc ngữ pháp để hiểu rõ hơn về mối quan hệ giữa các ý trong bài nói.</li>
+</ul>
+
+<p>➡️<strong>Tổng quan:</strong></p>
+
+<ul>
+<li style="list-style-type:disc">Luyện nghe tiếng Anh hàng ngày bằng cách xem phim, nghe podcasts, và lắng nghe nhạc tiếng Anh để cải thiện khả năng nghe của bạn.</li>
+<li style="list-style-type:disc">Làm các bài tập mẫu và đề thi thử để quen với định dạng và tốc độ của bài thi TOEIC Listening.</li>
+<li style="list-style-type:disc">Hãy lắng nghe một cách chủ động và tập trung để không bỏ lỡ các thông tin quan trọng trong bài nghe.</li>
+</ul>
+
+<h3 id="2.-kinh-nghiệm-ôn-luyện-toeic-reading-theo-từng-phần"><span style="font-size:20px"><strong>2. Kinh nghiệm ôn luyện TOEIC Reading theo từng phần</strong></span></h3>
+
+<p><strong>Part 5 (Incomplete Sentences):</strong></p>
+
+<ul>
+<li style="list-style-type:disc">Hãy đọc câu hỏi trước khi đọc đoạn văn để biết được điều gì bạn cần tìm kiếm.</li>
+<li style="list-style-type:disc">Tập trung vào từ khóa trong câu hỏi để giúp bạn tìm ra đáp án đúng nhanh chóng.</li>
+<li style="list-style-type:disc">Lưu ý các từ chỉ thời gian, số lượng, trạng thái và mối quan hệ giữa các ý để chọn đáp án chính xác.</li>
+</ul>
+
+<p><strong>Part 6 (Text Completion):</strong></p>
+
+<ul>
+<li style="list-style-type:disc">Đọc kỹ đoạn văn để hiểu nội dung chính và ngữ cảnh của câu hỏi.</li>
+<li style="list-style-type:disc">Dựa vào ngữ cảnh và từ khóa để chọn từ hoặc cụm từ phù hợp nhất cho mỗi chỗ trống.</li>
+<li style="list-style-type:disc">Lưu ý các từ kết nối và các dấu hiệu ngữ pháp để giúp bạn xác định từ hoặc cụm từ thích hợp nhất.</li>
+</ul>
+
+<p><strong>Part 7 (Reading Comprehension):</strong></p>
+
+<ul>
+<li style="list-style-type:disc">Đọc đoạn văn một cách tổng quan trước để hiểu chủ đề và mục đích chính.</li>
+<li style="list-style-type:disc">Tập trung vào câu hỏi và tìm các chi tiết quan trọng trong đoạn văn để tìm đáp án chính xác.</li>
+<li style="list-style-type:disc">Hãy lưu ý các từ chuyển tiếp như "but", "however", "although" để hiểu rõ hơn về mối quan hệ giữa các ý trong đoạn văn.</li>
+</ul>
+
+<p><strong>➡️Tổng quan:</strong></p>
+
+<ul>
+<li style="list-style-type:disc">Luyện đọc tiếng Anh hàng ngày bằng cách đọc các bài báo, tạp chí, và sách tiếng Anh để cải thiện khả năng đọc hiểu.</li>
+<li style="list-style-type:disc">Làm các bài tập mẫu và đề thi thử để quen với định dạng và tốc độ của bài thi TOEIC Reading.</li>
+<li style="list-style-type:disc">Xây dựng từ vựng và ngữ pháp tiếng Anh của bạn để dễ dàng hiểu và áp dụng vào bài thi TOEIC Reading.</li>
+</ul>
+
+<h2 id="lời-kết"><strong>Lời kết</strong></h2>
+
+<p style="text-align:justify">Trên đây, LearnEnglish đã chia sẻ cho bạn Lộ trình học TOEIC 2 kỹ năng tại nhà đạt 650+ cho người mới bắt đầu&nbsp; và các mẹo cần nhớ để đạt điểm cao trong bài thi TOEIC rồi đó!</p>
+
+<p style="text-align:justify">Nếu bạn có bất kỳ thắc mắc hay câu hỏi nào, hãy bình luận bên dưới để LearnEnglish giải đáp cho bạn nhé!</p>
+                    </div>
+                    
+
+                    
+
+                    
+                </div>
+
+                
+                <div class="post-tags">
+                
+                    <span class="tag">toeic</span>
+                
+                </div>
+                
+                <br>
+
+                <div class="post-comments-wrapper">
+                    <h4 id="bình-luận">Bình luận</h4>
+                    
+
+
+
+<form action="/posts/928/comment/" method="POST" class="mt-2 md-comment-input jqform jqcomment-form" data-reload-html="#obj-comments-928" data-target="#md-comments-box" data-submitting="false">
+    
+<input name="csrfmiddlewaretoken" type="hidden" value="mxv8KPnL1qWgRBhRw7l9NZ6OIajPDurDKAPV9xHRlEDZfxJvKxq84JICZNnRAhND">
+
+
+    
+    
+
+    <div class="input-group">
+        <textarea name="content" rows="1" class="form-control custom-control jqcomment-textarea" placeholder="Chia sẻ cảm nghĩ của bạn ..."></textarea>
+        <div class="input-group-append">
+            <button class="input-group-addon btn btn-primary jqcomment-submit">Gửi</button>
+        </div>
+    </div>
+</form>
+
+
+
+                    <br>
+                    <div id="obj-comments-928" class="jqhtml-loader" data-href="/posts/928/comments/"><p><i>Chưa có bình luận nào. Hãy trở thành người đầu tiên bình luận bài này.</i></p></div>
+                </div>
+
+                
+
+                <br>
+                <div>
+                    <div class="h3">Các bài viết cùng chủ đề</div>
+                    
+<div class="">
+<div class="center">
+    
+        
+        <div class="posts-list">
+        
+            
+<div class="postlist-card">
+
+
+<div class="postlist-card-img sm mb-2">
+    <img class="lazyel card-img" data-src="https://study4.com/media/examprep/Post/files/2024/11/19/vocabulary_7.png">
+</div>
+
+<div class="postlist-card-content-wrapper">
+    
+    <span class="d-block post-topic"><a class="font-weight-bold small" href="/topics/tu-vung/">TỪ VỰNG</a></span>
+    
+    <div class="postlist-title-wrapper">
+        
+        <div class="postlist-card-img-sm mb-2">
+            <img class="lazyel card-img entered loaded" data-src="https://study4.com/media/examprep/Post/files/2024/11/19/vocabulary_7.png" data-ll-status="loaded" src="https://study4.com/media/examprep/Post/files/2024/11/19/vocabulary_7.png">
+        </div>
+        
+        <div class="postlist-title"><a href="/posts/1470/tong-hop-tu-vung-tieng-anh-chu-de-love-tinh-yeu/">Tổng hợp từ vựng tiếng Anh chủ đề Love (Tình yêu)</a></div>
+    </div>
+    <div class="postlist-card-content card-body d-flex flex-column p-0">
+        <p>Trong bài viết sau, LearnEnglish sẽ chia sẻ cho bạn các tips học từ vựng nói chung và một số từ vựng phổ biến thuộc chủ đề Love.</p>
+    </div>
+    
+    <div class="postlist-meta">
+        19/11/2024 bởi Bùi Hằng
+        
+    </div>
+    
+</div>
+</div>
+
+        
+            
+<div class="postlist-card">
+
+
+<div class="postlist-card-img sm mb-2">
+    <img class="lazyel card-img entered loaded" data-src="https://study4.com/media/examprep/Post/files/2024/11/19/vocabulary_6.png" data-ll-status="loaded" src="https://study4.com/media/examprep/Post/files/2024/11/19/vocabulary_6.png">
+</div>
+
+<div class="postlist-card-content-wrapper">
+    
+    <span class="d-block post-topic"><a class="font-weight-bold small" href="/topics/tu-vung/">TỪ VỰNG</a></span>
+    
+    <div class="postlist-title-wrapper">
+        
+        <div class="postlist-card-img-sm mb-2">
+            <img class="lazyel card-img entered loaded" data-src="https://study4.com/media/examprep/Post/files/2024/11/19/vocabulary_6.png" data-ll-status="loaded" src="https://study4.com/media/examprep/Post/files/2024/11/19/vocabulary_6.png">
+        </div>
+        
+        <div class="postlist-title"><a href="/posts/1469/tong-hop-tu-vung-tieng-anh-chu-de-restaurant-nha-hang/">Tổng hợp từ vựng tiếng Anh chủ đề Restaurant (Nhà hàng)</a></div>
+    </div>
+    <div class="postlist-card-content card-body d-flex flex-column p-0">
+        <p>Trong bài viết sau, LearnEnglish sẽ chia sẻ cho bạn các tips học từ vựng nói chung và một số từ vựng phổ biến thuộc chủ đề Restaurant.</p>
+    </div>
+    
+    <div class="postlist-meta">
+        19/11/2024 bởi Bùi Hằng
+        
+    </div>
+    
+</div>
+</div>
+
+        
+            
+<div class="postlist-card">
+
+
+<div class="postlist-card-img sm mb-2">
+    <img class="lazyel card-img entered loaded" data-src="https://study4.com/media/examprep/Post/files/2024/11/19/vocabulary_5.png" data-ll-status="loaded" src="https://study4.com/media/examprep/Post/files/2024/11/19/vocabulary_5.png">
+</div>
+
+<div class="postlist-card-content-wrapper">
+    
+    <span class="d-block post-topic"><a class="font-weight-bold small" href="/topics/tu-vung/">TỪ VỰNG</a></span>
+    
+    <div class="postlist-title-wrapper">
+        
+        <div class="postlist-card-img-sm mb-2">
+            <img class="lazyel card-img entered loaded" data-src="https://study4.com/media/examprep/Post/files/2024/11/19/vocabulary_5.png" data-ll-status="loaded" src="https://study4.com/media/examprep/Post/files/2024/11/19/vocabulary_5.png">
+        </div>
+        
+        <div class="postlist-title"><a href="/posts/1468/tong-hop-tu-vung-tieng-anh-chu-de-human-resources-quan-tri-nhan-luc/">Tổng hợp từ vựng tiếng Anh chủ đề Human Resources (Quản trị nhân lực)</a></div>
+    </div>
+    <div class="postlist-card-content card-body d-flex flex-column p-0">
+        <p>Trong bài viết sau, LearnEnglish sẽ chia sẻ cho bạn các tips học từ vựng nói chung và một số từ vựng phổ biến thuộc chủ đề Human Resources (Quản trị nhân lực).</p>
+    </div>
+    
+    <div class="postlist-meta">
+        19/11/2024 bởi Bùi Hằng
+        
+    </div>
+    
+</div>
+</div>
+
+        
+            
+<div class="postlist-card">
+
+
+<div class="postlist-card-img sm mb-2">
+    <img class="lazyel card-img entered loaded" data-src="https://study4.com/media/examprep/Post/files/2024/11/19/vocabulary_4.png" data-ll-status="loaded" src="https://study4.com/media/examprep/Post/files/2024/11/19/vocabulary_4.png">
+</div>
+
+<div class="postlist-card-content-wrapper">
+    
+    <span class="d-block post-topic"><a class="font-weight-bold small" href="/topics/tu-vung/">TỪ VỰNG</a></span>
+    
+    <div class="postlist-title-wrapper">
+        
+        <div class="postlist-card-img-sm mb-2">
+            <img class="lazyel card-img entered loaded" data-src="https://study4.com/media/examprep/Post/files/2024/11/19/vocabulary_4.png" data-ll-status="loaded" src="https://study4.com/media/examprep/Post/files/2024/11/19/vocabulary_4.png">
+        </div>
+        
+        <div class="postlist-title"><a href="/posts/1467/tong-hop-tu-vung-tieng-anh-chu-de-mathematics-toan-hoc/">Tổng hợp từ vựng tiếng Anh chủ đề Mathematics (Toán học)</a></div>
+    </div>
+    <div class="postlist-card-content card-body d-flex flex-column p-0">
+        <p>Trong bài viết sau, LearnEnglish sẽ chia sẻ cho bạn các tips học từ vựng nói chung và một số từ vựng phổ biến thuộc chủ đề Mathematics (Toán học).</p>
+    </div>
+    
+    <div class="postlist-meta">
+        19/11/2024 bởi Bùi Hằng
+        
+    </div>
+    
+</div>
+</div>
+
+        
+            
+<div class="postlist-card">
+
+
+<div class="postlist-card-img sm mb-2">
+    <img class="lazyel card-img entered loaded" data-src="https://study4.com/media/examprep/Post/files/2024/11/19/vocabulary_3.png" data-ll-status="loaded" src="https://study4.com/media/examprep/Post/files/2024/11/19/vocabulary_3.png">
+</div>
+
+<div class="postlist-card-content-wrapper">
+    
+    <span class="d-block post-topic"><a class="font-weight-bold small" href="/topics/tu-vung/">TỪ VỰNG</a></span>
+    
+    <div class="postlist-title-wrapper">
+        
+        <div class="postlist-card-img-sm mb-2">
+            <img class="lazyel card-img entered loaded" data-src="https://study4.com/media/examprep/Post/files/2024/11/19/vocabulary_3.png" data-ll-status="loaded" src="https://study4.com/media/examprep/Post/files/2024/11/19/vocabulary_3.png">
+        </div>
+        
+        <div class="postlist-title"><a href="/posts/1466/tong-hop-tu-vung-tieng-anh-chu-de-tet-lunar-new-year/">Tổng hợp từ vựng tiếng Anh chủ đề Tết (Lunar New Year)</a></div>
+    </div>
+    <div class="postlist-card-content card-body d-flex flex-column p-0">
+        <p>Trong bài viết sau, LearnEnglish sẽ chia sẻ cho bạn các tips học từ vựng nói chung và một số từ vựng phổ biến thuộc chủ đề Lunar New Year.</p>
+    </div>
+    
+    <div class="postlist-meta">
+        19/11/2024 bởi Bùi Hằng
+        
+    </div>
+    
+</div>
+</div>
+
+        
+        </div>
+
+        
+
+
+
+    
+</div>
+</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-md-2 order-md-1">
+        
+        <div class="post-topics-list">
+            <p class="font-12 font-600">
+                Chuyên mục
+            </p>
+        
+            <div class="post-topics-listitem my-2">
+                <a class="text-dark" href="/blog/topics/tim-hieu-ve-learn-english/index.html">
+                    <b>TÌM HIỂU VỀ LEARNENGLISH</b>
+                </a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="/blog/topics/tinh-nang-tren-learn-english/index.html">
+                    Tính năng trên LearnEnglish
+                </a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">KHÓA HỌC TRÊN LEARNENGLISH</a>
+            </div>
+        
+            <hr>
+        
+            <div class="post-topics-listitem my-2">
+                <a class="text-dark" href="#" onclick="showNotification()">
+                    <b>Review của học viên LearnEnglish</b>
+                </a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Học viên IELTS</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Học viên TOEIC</a>
+            </div>
+        
+            <hr>
+        
+            <div class="post-topics-listitem my-2">
+                <a class="text-dark" href="#" onclick="showNotification()">
+                    <b>Luyện thi IELTS</b>
+                </a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">IELTS Listening</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">IELTS Reading</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">IELTS Speaking</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">IELTS Writing</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">IELTS Materials</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Thông tin kỳ thi IELTS</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Kinh nghiệm thi IELTS</a>
+            </div>
+        
+            <hr>
+        
+            <div class="post-topics-listitem my-2">
+                <a class="text-dark" href="#" onclick="showNotification()">
+                    <b>Luyện thi TOEIC</b>
+                </a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">TOEIC Listening</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">TOEIC Reading</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">TOEIC Materials</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Thông tin kỳ thi TOEIC</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Kinh nghiệm thi TOEIC</a>
+            </div>
+        
+            <hr>
+        
+            <div class="post-topics-listitem my-2">
+                <a class="text-dark" href="#" onclick="showNotification()">
+                    <b>Tiếng Anh cơ bản</b>
+                </a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Phát âm</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Từ vựng</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Ngữ pháp</a>
+            </div>
+        
+            <hr>
+        
+            <div class="post-topics-listitem my-2">
+                <a class="text-dark" href="#" onclick="showNotification()">
+                    <b>Luyện Thi HSK-HSKK</b>
+                </a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Tiếng Trung cơ bản</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Kiến thức HSK-HSKK</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Thông tin kỳ thi HSK-HSKK</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Kinh nghiệm thi HSK-HSKK</a>
+            </div>
+        
+            <hr>
+        
+            <div class="post-topics-listitem my-2">
+                <a class="text-dark" href="#" onclick="showNotification()">
+                    <b>Tiếng Anh cho người đi làm</b>
+                </a>
+            </div>
+        
+            <hr>
+        
+            <div class="post-topics-listitem my-2">
+                <a class="text-dark" href="#" onclick="showNotification()">
+                    <b>Du học</b>
+                </a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Admission essays</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Kinh nghiệm du học</a>
+            </div>
+        
+            <hr>
+        </div>
+        
+        <script>
+            function showNotification() {
+                alert("Bài viết này sẽ được cập nhật trong tương lai");
+            }
+        </script>
+        
+
+<hr>
+
+</div>
+
+    </div>
+</div>
+</div>
+
+                
+            </div>
+            
+        </div>
+        
+
+        
+    
+
+    <div class="modal" id="site-modal-lg" tabindex="-1" aria-labelledby="site-modal-lg" aria-hidden="true" data-keyboard="false" data-backdrop="static">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+                <div class="modal-body" id="site-modal-lg-content"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="site-modal-md" tabindex="-1" aria-labelledby="site-modal-md" aria-hidden="true" data-keyboard="false" data-backdrop="static">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+                <div class="modal-body" id="site-modal-md-content"></div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+window.csrf_token = 'mxv8KPnL1qWgRBhRw7l9NZ6OIajPDurDKAPV9xHRlEDZfxJvKxq84JICZNnRAhND';
+window.current_user =
+
+{
+    is_authenticated: true,
+    id: 1532546,
+    name: "chauthithuyquynh2019",
+    is_admin: false,
+    is_staff: false,
+    is_superuser: false,
+}
+
+</script>
+    <script type="text/javascript" src="/static/ckeditor/ckeditor-init-override.js?v=1735926894"></script>
+    <script type="text/javascript" src="/static/ckeditor/ckeditor/ckeditor.js"></script>
+    <script type="text/javascript" src="/static/js/webaudiorecorder/WebAudioRecorder.min.js"></script>
+    <script type="text/javascript" src="/static/dist/vendor.ad60eb658fc650d75097.js?v=1735926894"></script>
+    <script type="text/javascript" src="/static/dist/main.651d8fa8cadf332cd75a.js?v=1735926894"></script>
+
+    
+
+<script type="text/javascript">
+$(function() {
+    const isInternalCourseURL = (url) => (new URL(url).origin == location.origin && (url.indexOf('/courses/') > -1 || url.indexOf('/lp/')) > -1);
+    $('.post-content a').each(function(idx,el) {
+        var $link = $(el);
+        var url = $link.attr('href');
+        if (isInternalCourseURL(url)) {
+            var qs = generate_qs({
+                'itm_source': 'seo',
+                'itm_medium': 'article',
+                'itm_campaign': 'blogpost_internal_link',
+                'itm_content': '928'
+            });
+            var new_url = url + '?' + qs;
+            $link.attr('href', new_url);
+        }
+    });
+});
+</script>
+
+    <script type="text/javascript">
+        function isFacebookApp() {
+            var ua = navigator.userAgent || navigator.vendor || window.opera;
+            return (ua.indexOf("FBAN") > -1) || (ua.indexOf("FBAV") > -1);
+        }
+        if (isFacebookApp()) {
+            $('.g-login-block').hide();
+        }
+    </script>
+
+    
+
+    
+    
+    
+
+
+    
+    
+    
+
+
+    
+    <script type="text/javascript">
+        (function(w,d,t,u,n,a,m){w['MauticTrackingObject']=n;
+            w[n]=w[n]||function(){(w[n].q=w[n].q||[]).push(arguments)},a=d.createElement(t),
+            m=d.getElementsByTagName(t)[0];a.async=1;a.src=u;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://mautic.LearnEnglish.com/mtc.js','mt');
+
+        
+            
+            mt('send', 'pageview', {
+                email: "chauthithuyquynh2019@gmail.com",
+                uid: "1532546",
+                username: "chauthithuyquynh2019",
+                is_paid: false,
+                is_trial: true
+            });
+            
+        
+    </script>
+    
+<script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon="{&quot;rayId&quot;:&quot;8fcc180e7ba2fd6c&quot;,&quot;serverTiming&quot;:{&quot;name&quot;:{&quot;cfExtPri&quot;:true,&quot;cfL4&quot;:true,&quot;cfSpeedBrain&quot;:true,&quot;cfCacheStatus&quot;:true}},&quot;version&quot;:&quot;2024.10.5&quot;,&quot;token&quot;:&quot;8d646591bd144e069b89dada41cfc02b&quot;}" crossorigin="anonymous"></script>
+
+
+    <div class="highlight-control" style="display: none; top: -35px;">
+        <div>
+            <span class="fas fa-trash highlight-icon highlight-remove" aria-hidden="true"></span>
+            <span class="fas fa-pencil highlight-icon highlight-note" aria-hidden="true"></span>
+            <span class="highlight-icon highlight-color blue"></span>
+            <span class="highlight-icon highlight-color pink"></span>
+            <span class="highlight-icon highlight-color green"></span>
+            <span class="highlight-icon highlight-color yellow"></span>
+            <span class="highlight-icon highlight-color underred"></span>
+            <span class="highlight-icon highlight-color crossed">abc</span>
+            <span class="ml-2 fas fa-plus highlight-icon highlight-flashcard" data-toggle="modal" data-target="#highlight-modal" aria-hidden="true"></span>
+        </div>
+        <div class="highlight-editor" style="display: none;">
+            <textarea rows="3"></textarea>
+            <div><span class="far fa-check highlight-icon highlight-save" aria-hidden="true"></span></div>
+        </div>
+    </div>
+    <div class="modal" id="highlight-modal" tabindex="-1" aria-labelledby="highlight-modal" aria-hidden="true" data-keyboard="false" data-backdrop="static">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+                <div class="modal-body" id="highlight-modal-content"></div>
+            </div>
+        </div>
+    </div>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+<!-- Code injected--></body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="footer-wrapper" bis_skin_checked="1">
+        <div class="footer-container" bis_skin_checked="1">
+            <footer>
+
+
+
+                <div class="row" bis_skin_checked="1">
+                    <div class="col-12 col-sm-12 col-md" bis_skin_checked="1">
+                        <a href="/"><img class="mb-2" src="/assets/img/Logo_LearnEnglish.svg" alt="" height="30"></a>
+                        <small class="mb-2">©</small>
+                        <div class="site-socials" style="width: 140px !important;" bis_skin_checked="1">
+                            <a target="_blank" href="https://facebook.com/" bis_skin_checked="1"><span
+                                    class="social-link fab fa-facebook-square"></span></a>
+                            <a target="_blank" href="https://instagram.com/" bis_skin_checked="1"><span
+                                    class="social-link fab fa-instagram"></span></a>
+                            <a target="_blank" href="https://twitter.com/" bis_skin_checked="1"><span
+                                    class="social-link fab fa-twitter"></span></a>
+                            <a target="_blank" href="https://youtube.com/" bis_skin_checked="1"><span
+                                    class="social-link fab fa-youtube"></span></a>
+                            <a target="_blank" href="https://www.tiktok.com" bis_skin_checked="1"><span
+                                    class="social-link fab fa-tiktok"></span></a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md" bis_skin_checked="1">
+                        <div class="footer-title" bis_skin_checked="1">Về LearnEnglish</div>
+                        <ul class="list-unstyled text-small">
+                            <li><a href="/about/" bis_skin_checked="1">Giới thiệu</a></li>
+                            <li><a href="/contact/" bis_skin_checked="1">Liên hệ</a></li>
+                            <li><a href="/privacy/" bis_skin_checked="1">Điều khoản bảo mật</a></li>
+                            <li><a href="/terms/" bis_skin_checked="1">Điều khoản sử dụng</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-6 col-md" bis_skin_checked="1">
+                        <div class="footer-title" bis_skin_checked="1">Tài nguyên</div>
+                        <ul class="list-unstyled text-small">
+
+                            <li><a href="/tests/" bis_skin_checked="1">Thư viện đề thi</a></li>
+                            <li><a href="/posts/" bis_skin_checked="1">Blog</a></li>
+                            <li><a href="/materials/" bis_skin_checked="1">Kho tài liệu</a></li>
+
+
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md" bis_skin_checked="1">
+                        <div class="footer-title" bis_skin_checked="1">Chính sách chung</div>
+                        <ul class="list-unstyled text-small">
+                            <li><a href="/user-guide/" bis_skin_checked="1">Hướng dẫn sử dụng</a></li>
+                            <li><a href="/buying-guide/" bis_skin_checked="1">Hướng dẫn thanh toán</a></li>
+
+                            <li><a href="/buying-terms/" bis_skin_checked="1">Điều khoản và Điều Kiện Giao Dịch</a></li>
+                            <li><a href="/checkout-policy" bis_skin_checked="1">Chính sách kiểm hàng</a></li>
+                            <li><a href="/delivery-policy" bis_skin_checked="1">Chính sách giao, nhận hàng</a></li>
+                            <li><a href="/feedback/" bis_skin_checked="1">Phản hồi, khiếu nại</a></li>
+                            <li><a href="/return-policy" bis_skin_checked="1">Chính sách chuyển đổi, hoàn hủy</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+
+                <div class="footer-copyright text-center" bis_skin_checked="1">
+                    LearnEnglish © Bản quyền của GROUP11.
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

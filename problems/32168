@@ -1,0 +1,1187 @@
+
+
+    
+
+
+    
+<!DOCTYPE html>
+<html lang='vi' class='clean-site no-fullheight'>
+    <head>
+        
+<link rel="preload" as="style" href="https://study4.com/static/css/fontawesome.min.css?v=1735926894" onload="this.rel='stylesheet'">
+<noscript>
+    <link rel="stylesheet" href="https://study4.com/static/css/fontawesome.min.css?v=1735926894">
+</noscript>
+
+    <script src="https://kit.fontawesome.com/f9374b778e.js" crossorigin="anonymous"></script>
+
+        
+<link rel="preload" as="style" href="https://study4.com/static/dist/vendor.ad60eb658fc650d75097.min.css?v=1735926894" onload="this.rel='stylesheet'">
+<noscript>
+    <link rel="stylesheet" href="https://study4.com/static/dist/vendor.ad60eb658fc650d75097.min.css?v=1735926894">
+</noscript>
+
+        <link rel='stylesheet' href="https://study4.com/static/dist/main.651d8fa8cadf332cd75a.min.css?v=1735926894" />
+        
+    </head>
+    <body>
+        
+        
+
+
+
+
+
+<div class='xl-container'>
+    <div class='listening-media-wrapper'>
+        <div class='listening-media-title'>
+            <h1 class='h4'>Can you solve the prisoner hat riddle? | Alex Gendler</h1>
+            <ul class="nav nav-horizontal nav-pills">
+                <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#nav-listening-dictation" data-mode='dictation' role="tab"
+                        aria-selected="true">Luyện nghe chép chính tả</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#nav-listening-subs" data-mode='listening' role="tab"
+                        aria-selected="true">Luyện nghe có transcript</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#nav-listening-subs" data-mode='speaking' role="tab"
+                        aria-selected="true">Luyện nói shadowing</a>
+                </li>
+                
+            </ul>
+        </div>
+        <div class='listening-media-main'>
+            
+            <div class='listening-media video'>
+                <div class='youtube-wrapper'>
+                    <div data-plyr-provider="youtube" data-plyr-embed-id='https://www.youtube.com/watch?v=N5vJSNXPEwA'
+                        id='listening-media-item'>
+                    </div>
+                </div>
+            </div>
+            
+            <div class='listening-media-content'>
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade" id="nav-listening-subs" role="tabpanel">
+                        <div class='listening-media-controls-group'>
+                            
+                            <div class="listening-speaking-mode-controls">
+                                <div class="listening-speaking-recorder mr-4">
+                                    <div class='listening-speaking-recorder-microphone'>
+                                        <span class='fas fa-microphone'></span>
+                                    </div>
+                                    <div class='listening-speaking-recorder-stop' style='display:none;'>
+                                        <span class='fas fa-square'></span>
+                                    </div>
+                                    <span class="font-09 ml-1"><i>Record</i></span>
+                                </div>
+                                <div class="custom-control custom-switch speaking-shadowing-mode">
+                                    <input checked type="checkbox" class="custom-control-input speaking-shadowing-mode"
+                                        id="speaking-shadowing-mode">
+                                    <label class="custom-control-label" for="speaking-shadowing-mode"><i>Vừa chạy audio vừa record</i></label>
+                                </div>
+                            </div>
+                            
+                            <div class="custom-control custom-switch autonext-toggle-box">
+                                <input checked type="checkbox" class="custom-control-input autonext-toggle"
+                                    id="autonext-toggle">
+                                <label class="custom-control-label" for="autonext-toggle"><i>Tự động chuyển câu</i></label>
+                            </div>
+                            <div class="listening-media-mode-controls">
+                                <div class="custom-control custom-switch subs-toggle-box">
+                                    <input type="checkbox" checked class="custom-control-input subs-toggle" id="subs-toggle">
+                                    <label class="custom-control-label" for="subs-toggle"><i>Hiện subtitles</i></label>
+                                </div>
+                                
+                                <div class="custom-control custom-switch replaysentence-toggle-box">
+                                    <input type="checkbox" class="custom-control-input replaysentence-toggle"
+                                        id="replaysentence-toggle">
+                                    <label class="custom-control-label" for="replaysentence-toggle"><i>Repeat</i></label>
+                                </div>
+                                
+                                <div class="custom-control custom-switch highlight-toggle-box">
+                                    <input type="checkbox" class="custom-control-input highlight-toggle" id="highlight-toggle">
+                                    <label class="custom-control-label" for="highlight-toggle"><i>Highlight</i></label>
+                                </div>
+                                <div class="btn-group">
+                                    <button class="ml-2 btn btn-sky btn-sm dropdown-toggle" type="button" data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false">Lưu/khôi phục highlight</button>
+                                    <div class="dropdown-menu no-toggle">
+                                        <div class='dropdown-item highlight-clear'>
+                                            <a>Xoá tất cả highlights</a>
+                                        </div>
+                                        <div class='dropdown-item highlight-store' data-target='/highlights/store/problems/32168/'>
+                                            <a>Lưu highlight</a>
+                                        </div>
+                                        <div class='dropdown-divider'></div>
+                                        <div class='text-muted px-4'>
+                                            Khôi phục highlight
+                                            <span class='ml-1 far fa-exclamation-circle' data-toggle="tooltip" data-placement="top"
+                                            title="Lựa chọn highlight bạn muốn khôi phục"></span>
+                                        </div>
+                                        <div class='dropdown-item'>
+                                            <select class='custom-select custom-select-sm highlight-storeditems'  data-target='/highlights/restore/problems/32168/'>
+                                                <option value='null' disabled selected>-- Chọn highlight --</option>
+                                                
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="listening-subs-wrapper">
+                            <div class='listening-subs text-highlightable'>
+                                
+                                <div class='listening-subs-item' data-time='10714'>
+                                    c
+                                    <div class='listening-subs-item-text'>
+                                        <span class="listening-subs-item-text-content">You and nine other individuals  have been captured</span>
+                                        
+                                    </div>
+                                    
+                                    <div class='listening-subs-item-subtext'>Bạn cùng với 9 người khác cùng bị bắt</div>
+                                    
+                                    <div class="listening-subs-item-speaking-results"></div>
+                                    
+                                </div>
+                                
+                                <div class='listening-subs-item' data-time='13842'>
+                                    
+                                    <div class='listening-subs-item-text'>
+                                        <span class="listening-subs-item-text-content">by super intelligent alien overlords.</span>
+                                        
+                                    </div>
+                                    
+                                    <div class='listening-subs-item-subtext'>bởi siêu chúa tể ngoài hành tinh.</div>
+                                    
+                                    <div class="listening-subs-item-speaking-results"></div>
+                                    
+                                </div>
+                                
+                                <div class='listening-subs-item' data-time='17495'>
+                                    
+                                    <div class='listening-subs-item-text'>
+                                        <span class="listening-subs-item-text-content">The aliens think humans look quite tasty,</span>
+                                        
+                                    </div>
+                                    
+                                    <div class='listening-subs-item-subtext'>Người ngoài hành tinh nghĩ rằng  loài người trông thật ngon,</div>
+                                    
+                                    <div class="listening-subs-item-speaking-results"></div>
+                                    
+                                </div>
+                                
+                                <div class='listening-subs-item' data-time='20807'>
+                                    
+                                    <div class='listening-subs-item-text'>
+                                        <span class="listening-subs-item-text-content">but their civilization forbids eating highly logical and cooperative beings.</span>
+                                        
+                                    </div>
+                                    
+                                    <div class='listening-subs-item-subtext'>nhưng nền văn minh của họ không cho phép  ăn những người chịu hợp tác và thông minh.</div>
+                                    
+                                    <div class="listening-subs-item-speaking-results"></div>
+                                    
+                                </div>
+                                
+                                <div class='listening-subs-item' data-time='26133'>
+                                    
+                                    <div class='listening-subs-item-text'>
+                                        <span class="listening-subs-item-text-content">Unfortunately, they&#39;re not sure  whether you qualify,</span>
+                                        
+                                    </div>
+                                    
+                                    <div class='listening-subs-item-subtext'>Thật không may, họ không chắc rằng bạn có đủ tiêu chuẩn hay không,</div>
+                                    
+                                    <div class="listening-subs-item-speaking-results"></div>
+                                    
+                                </div>
+                                
+                                <div class='listening-subs-item' data-time='29831'>
+                                    
+                                    <div class='listening-subs-item-text'>
+                                        <span class="listening-subs-item-text-content">so they decide to give you all a test.</span>
+                                        
+                                    </div>
+                                    
+                                    <div class='listening-subs-item-subtext'>vì thế họ quyết định cho bạn  một bài kiểm tra</div>
+                                    
+                                    <div class="listening-subs-item-speaking-results"></div>
+                                    
+                                </div>
+                                
+                                <div class='listening-subs-item' data-time='32753'>
+                                    
+                                    <div class='listening-subs-item-text'>
+                                        <span class="listening-subs-item-text-content">Through its universal translator,</span>
+                                        
+                                    </div>
+                                    
+                                    <div class='listening-subs-item-subtext'>Theo lời phiên dịch viên vũ trụ,</div>
+                                    
+                                    <div class="listening-subs-item-speaking-results"></div>
+                                    
+                                </div>
+                                
+                                <div class='listening-subs-item' data-time='34398'>
+                                    
+                                    <div class='listening-subs-item-text'>
+                                        <span class="listening-subs-item-text-content">the alien guarding you  tells you the following:</span>
+                                        
+                                    </div>
+                                    
+                                    <div class='listening-subs-item-subtext'>Người hướng dẫn viên ngoài hành tinh  nói rằng:</div>
+                                    
+                                    <div class="listening-subs-item-speaking-results"></div>
+                                    
+                                </div>
+                                
+                                <div class='listening-subs-item' data-time='37962'>
+                                    
+                                    <div class='listening-subs-item-text'>
+                                        <span class="listening-subs-item-text-content">You will be placed in a single-file line facing forward in size order</span>
+                                        
+                                    </div>
+                                    
+                                    <div class='listening-subs-item-subtext'>Tất cả các ngươi sẽ được xếp theo một hàng dọc từ cao đến thấp</div>
+                                    
+                                    <div class="listening-subs-item-speaking-results"></div>
+                                    
+                                </div>
+                                
+                                <div class='listening-subs-item' data-time='43423'>
+                                    
+                                    <div class='listening-subs-item-text'>
+                                        <span class="listening-subs-item-text-content">so that each of you can see  everyone lined up ahead of you.</span>
+                                        
+                                    </div>
+                                    
+                                    <div class='listening-subs-item-subtext'>sao cho người ở sau luôn nhìn thấy  người ở trước mình.</div>
+                                    
+                                    <div class="listening-subs-item-speaking-results"></div>
+                                    
+                                </div>
+                                
+                                <div class='listening-subs-item' data-time='47344'>
+                                    
+                                    <div class='listening-subs-item-text'>
+                                        <span class="listening-subs-item-text-content">You will not be able to look behind you or step out of line.</span>
+                                        
+                                    </div>
+                                    
+                                    <div class='listening-subs-item-subtext'>Ngươi sẽ không được nhìn phía sau  hay bước ra khỏi hàng.</div>
+                                    
+                                    <div class="listening-subs-item-speaking-results"></div>
+                                    
+                                </div>
+                                
+                                <div class='listening-subs-item' data-time='51073'>
+                                    
+                                    <div class='listening-subs-item-text'>
+                                        <span class="listening-subs-item-text-content">Each of you will have either a black or a white hat on your head</span>
+                                        
+                                    </div>
+                                    
+                                    <div class='listening-subs-item-subtext'>Mỗi người sẽ phải đội  một chiếc mũ đen hoặc trắng</div>
+                                    
+                                    <div class="listening-subs-item-speaking-results"></div>
+                                    
+                                </div>
+                                
+                                <div class='listening-subs-item' data-time='55304'>
+                                    
+                                    <div class='listening-subs-item-text'>
+                                        <span class="listening-subs-item-text-content">assigned randomly,</span>
+                                        
+                                    </div>
+                                    
+                                    <div class='listening-subs-item-subtext'>được chọn ngẫu nhiên</div>
+                                    
+                                    <div class="listening-subs-item-speaking-results"></div>
+                                    
+                                </div>
+                                
+                                <div class='listening-subs-item' data-time='57238'>
+                                    
+                                    <div class='listening-subs-item-text'>
+                                        <span class="listening-subs-item-text-content">and I won&#39;t tell you  how many of each color there are.</span>
+                                        
+                                    </div>
+                                    
+                                    <div class='listening-subs-item-subtext'>và ta sẽ không nói số lượng của mỗi loại.</div>
+                                    
+                                    <div class="listening-subs-item-speaking-results"></div>
+                                    
+                                </div>
+                                
+                                <div class='listening-subs-item' data-time='61255'>
+                                    
+                                    <div class='listening-subs-item-text'>
+                                        <span class="listening-subs-item-text-content">When I say to begin, each of you must guess the color of your hat</span>
+                                        
+                                    </div>
+                                    
+                                    <div class='listening-subs-item-subtext'>Khi ta nói bắt đầu, các ngươi phải  đoán được mình đang đội mũ màu gì</div>
+                                    
+                                    <div class="listening-subs-item-speaking-results"></div>
+                                    
+                                </div>
+                                
+                                <div class='listening-subs-item' data-time='65074'>
+                                    
+                                    <div class='listening-subs-item-text'>
+                                        <span class="listening-subs-item-text-content">starting with the person in the back and moving up the line.</span>
+                                        
+                                    </div>
+                                    
+                                    <div class='listening-subs-item-subtext'>bắt đầu từ người ở sau cùng  đến những người đằng trước.</div>
+                                    
+                                    <div class="listening-subs-item-speaking-results"></div>
+                                    
+                                </div>
+                                
+                                <div class='listening-subs-item' data-time='69474'>
+                                    
+                                    <div class='listening-subs-item-text'>
+                                        <span class="listening-subs-item-text-content">And don&#39;t even try saying words other than black or white</span>
+                                        
+                                    </div>
+                                    
+                                    <div class='listening-subs-item-subtext'>và đừng bao giờ cố gắng nói từ gì khác  ngoài &#34;trắng&#34; hoặc &#34;đen&#34;</div>
+                                    
+                                    <div class="listening-subs-item-speaking-results"></div>
+                                    
+                                </div>
+                                
+                                <div class='listening-subs-item' data-time='72522'>
+                                    
+                                    <div class='listening-subs-item-text'>
+                                        <span class="listening-subs-item-text-content">or signaling some other way, like intonation or volume;</span>
+                                        
+                                    </div>
+                                    
+                                    <div class='listening-subs-item-subtext'>hay ra ám hiệu bằng cách khác,  như ngữ điệu hay âm lượng;</div>
+                                    
+                                    <div class="listening-subs-item-speaking-results"></div>
+                                    
+                                </div>
+                                
+                                <div class='listening-subs-item' data-time='76987'>
+                                    
+                                    <div class='listening-subs-item-text'>
+                                        <span class="listening-subs-item-text-content">you&#39;ll all be eaten immediately.</span>
+                                        
+                                    </div>
+                                    
+                                    <div class='listening-subs-item-subtext'>các ngươi sẽ bị ăn thịt ngay lập tức.</div>
+                                    
+                                    <div class="listening-subs-item-speaking-results"></div>
+                                    
+                                </div>
+                                
+                                <div class='listening-subs-item' data-time='79749'>
+                                    
+                                    <div class='listening-subs-item-text'>
+                                        <span class="listening-subs-item-text-content">If at least nine of you guess correctly, you&#39;ll all be spared.</span>
+                                        
+                                    </div>
+                                    
+                                    <div class='listening-subs-item-subtext'>Nếu ít nhất chín người bọn ngươi  đoán đúng, tất cả sẽ được giải thoát.</div>
+                                    
+                                    <div class="listening-subs-item-speaking-results"></div>
+                                    
+                                </div>
+                                
+                                <div class='listening-subs-item' data-time='84117'>
+                                    
+                                    <div class='listening-subs-item-text'>
+                                        <span class="listening-subs-item-text-content">You have five minutes to discuss and come up with a plan,</span>
+                                        
+                                    </div>
+                                    
+                                    <div class='listening-subs-item-subtext'>Các ngươi có 5 phút để thảo luận  và đưa ra phương án,</div>
+                                    
+                                    <div class="listening-subs-item-speaking-results"></div>
+                                    
+                                </div>
+                                
+                                <div class='listening-subs-item' data-time='87243'>
+                                    
+                                    <div class='listening-subs-item-text'>
+                                        <span class="listening-subs-item-text-content">and then I&#39;ll line you up, assign your hats, and we&#39;ll begin.</span>
+                                        
+                                    </div>
+                                    
+                                    <div class='listening-subs-item-subtext'>sau đó ta sẽ gọi các ngươi ra xếp hàng,  phân chia mũ và bắt đầu.</div>
+                                    
+                                    <div class="listening-subs-item-speaking-results"></div>
+                                    
+                                </div>
+                                
+                                <div class='listening-subs-item' data-time='91991'>
+                                    
+                                    <div class='listening-subs-item-text'>
+                                        <span class="listening-subs-item-text-content">Can you think of a strategy guaranteed to save everyone?</span>
+                                        
+                                    </div>
+                                    
+                                    <div class='listening-subs-item-subtext'>Bạn đã nghĩ ra cách nào có thể đảm bảo cứu sống mọi người không?</div>
+                                    
+                                    <div class="listening-subs-item-speaking-results"></div>
+                                    
+                                </div>
+                                
+                                <div class='listening-subs-item' data-time='96042'>
+                                    
+                                    <div class='listening-subs-item-text'>
+                                        <span class="listening-subs-item-text-content">Pause the video now  to figure it out for yourself.</span>
+                                        
+                                    </div>
+                                    
+                                    <div class='listening-subs-item-subtext'>Dừng video và tìm câu trả lời nhé.</div>
+                                    
+                                    <div class="listening-subs-item-speaking-results"></div>
+                                    
+                                </div>
+                                
+                                <div class='listening-subs-item' data-time='99137'>
+                                    
+                                    <div class='listening-subs-item-text'>
+                                        <span class="listening-subs-item-text-content">Answer in: 3</span>
+                                        
+                                    </div>
+                                    
+                                    <div class='listening-subs-item-subtext'>Trả lời trong: 3</div>
+                                    
+                                    <div class="listening-subs-item-speaking-results"></div>
+                                    
+                                </div>
+                                
+                                <div class='listening-subs-item' data-time='100154'>
+                                    
+                                    <div class='listening-subs-item-text'>
+                                        <span class="listening-subs-item-text-content">Answer in: 2</span>
+                                        
+                                    </div>
+                                    
+                                    <div class='listening-subs-item-subtext'>Trả lời trong: 2</div>
+                                    
+                                    <div class="listening-subs-item-speaking-results"></div>
+                                    
+                                </div>
+                                
+                                <div class='listening-subs-item' data-time='101246'>
+                                    
+                                    <div class='listening-subs-item-text'>
+                                        <span class="listening-subs-item-text-content">Answer in: 1</span>
+                                        
+                                    </div>
+                                    
+                                    <div class='listening-subs-item-subtext'>Trả lời trong: 1</div>
+                                    
+                                    <div class="listening-subs-item-speaking-results"></div>
+                                    
+                                </div>
+                                
+                                <div class='listening-subs-item' data-time='103111'>
+                                    
+                                    <div class='listening-subs-item-text'>
+                                        <span class="listening-subs-item-text-content">The key is that the person  at the back of the line</span>
+                                        
+                                    </div>
+                                    
+                                    <div class='listening-subs-item-subtext'>Điểm mấu chốt nằm ở người cuối hàng</div>
+                                    
+                                    <div class="listening-subs-item-speaking-results"></div>
+                                    
+                                </div>
+                                
+                                <div class='listening-subs-item' data-time='105940'>
+                                    
+                                    <div class='listening-subs-item-text'>
+                                        <span class="listening-subs-item-text-content">who can see everyone else&#39;s hats can use the words &#34;black&#34; or &#34;white&#34;</span>
+                                        
+                                    </div>
+                                    
+                                    <div class='listening-subs-item-subtext'>người có thể thấy được tất cả mũ của  người khác và nói &#34;trắng&#34; hoặc &#34;đen&#34;</div>
+                                    
+                                    <div class="listening-subs-item-speaking-results"></div>
+                                    
+                                </div>
+                                
+                                <div class='listening-subs-item' data-time='110494'>
+                                    
+                                    <div class='listening-subs-item-text'>
+                                        <span class="listening-subs-item-text-content">to communicate some coded information.</span>
+                                        
+                                    </div>
+                                    
+                                    <div class='listening-subs-item-subtext'>để trao đổi một vài mật mã.</div>
+                                    
+                                    <div class="listening-subs-item-speaking-results"></div>
+                                    
+                                </div>
+                                
+                                <div class='listening-subs-item' data-time='113872'>
+                                    
+                                    <div class='listening-subs-item-text'>
+                                        <span class="listening-subs-item-text-content">So what meaning can be  assigned to those words</span>
+                                        
+                                    </div>
+                                    
+                                    <div class='listening-subs-item-subtext'>Vậy những từ ngữ đó có nghĩa như thế nào</div>
+                                    
+                                    <div class="listening-subs-item-speaking-results"></div>
+                                    
+                                </div>
+                                
+                                <div class='listening-subs-item' data-time='116540'>
+                                    
+                                    <div class='listening-subs-item-text'>
+                                        <span class="listening-subs-item-text-content">that will allow everyone else  to deduce their hat colors?</span>
+                                        
+                                    </div>
+                                    
+                                    <div class='listening-subs-item-subtext'>để mọi người có thể đoán đúng  màu mũ của họ?</div>
+                                    
+                                    <div class="listening-subs-item-speaking-results"></div>
+                                    
+                                </div>
+                                
+                                <div class='listening-subs-item' data-time='120742'>
+                                    
+                                    <div class='listening-subs-item-text'>
+                                        <span class="listening-subs-item-text-content">It can&#39;t be the total number of black or white hats.</span>
+                                        
+                                    </div>
+                                    
+                                    <div class='listening-subs-item-subtext'>Đó không thể là tổng số mũ trắng hay đen</div>
+                                    
+                                    <div class="listening-subs-item-speaking-results"></div>
+                                    
+                                </div>
+                                
+                                <div class='listening-subs-item' data-time='124109'>
+                                    
+                                    <div class='listening-subs-item-text'>
+                                        <span class="listening-subs-item-text-content">There are more than two possible values,</span>
+                                        
+                                    </div>
+                                    
+                                    <div class='listening-subs-item-subtext'>Có thể có nhiều hơn 2 giá trị,</div>
+                                    
+                                    <div class="listening-subs-item-speaking-results"></div>
+                                    
+                                </div>
+                                
+                                <div class='listening-subs-item' data-time='126872'>
+                                    
+                                    <div class='listening-subs-item-text'>
+                                        <span class="listening-subs-item-text-content">but what does have two possible values is that number&#39;s parity,</span>
+                                        
+                                    </div>
+                                    
+                                    <div class='listening-subs-item-subtext'>nhưng thứ có 2 giá trị chính là  tính chẵn - lẻ của con số</div>
+                                    
+                                    <div class="listening-subs-item-speaking-results"></div>
+                                    
+                                </div>
+                                
+                                <div class='listening-subs-item' data-time='131888'>
+                                    
+                                    <div class='listening-subs-item-text'>
+                                        <span class="listening-subs-item-text-content">that is whether it&#39;s odd or even.</span>
+                                        
+                                    </div>
+                                    
+                                    <div class='listening-subs-item-subtext'>rằng nó có thể là số lẻ hay số chẵn.</div>
+                                    
+                                    <div class="listening-subs-item-speaking-results"></div>
+                                    
+                                </div>
+                                
+                                <div class='listening-subs-item' data-time='135192'>
+                                    
+                                    <div class='listening-subs-item-text'>
+                                        <span class="listening-subs-item-text-content">So the solution is to agree that whoever goes first will,</span>
+                                        
+                                    </div>
+                                    
+                                    <div class='listening-subs-item-subtext'>Vậy đáp án là thỏa thuận xem  dù là ai nói trước cũng sẽ</div>
+                                    
+                                    <div class="listening-subs-item-speaking-results"></div>
+                                    
+                                </div>
+                                
+                                <div class='listening-subs-item' data-time='139008'>
+                                    
+                                    <div class='listening-subs-item-text'>
+                                        <span class="listening-subs-item-text-content">for example, say &#34;black&#34; if he sees an odd number of black hats</span>
+                                        
+                                    </div>
+                                    
+                                    <div class='listening-subs-item-subtext'>nói &#34;đen&#34; khi anh ta thấy tổng số mũ đen  là số lẻ</div>
+                                    
+                                    <div class="listening-subs-item-speaking-results"></div>
+                                    
+                                </div>
+                                
+                                <div class='listening-subs-item' data-time='143355'>
+                                    
+                                    <div class='listening-subs-item-text'>
+                                        <span class="listening-subs-item-text-content">and &#34;white&#34; if he sees  an even number of black hats.</span>
+                                        
+                                    </div>
+                                    
+                                    <div class='listening-subs-item-subtext'>và &#34;trắng&#34; nếu anh ta thấy tổng số mũ đen  là số chẵn.</div>
+                                    
+                                    <div class="listening-subs-item-speaking-results"></div>
+                                    
+                                </div>
+                                
+                                <div class='listening-subs-item' data-time='147787'>
+                                    
+                                    <div class='listening-subs-item-text'>
+                                        <span class="listening-subs-item-text-content">Let&#39;s see how it would play out if the hats were distributed like this.</span>
+                                        
+                                    </div>
+                                    
+                                    <div class='listening-subs-item-subtext'>Hãy cùng xem kết quả ra sao khi  những chiếc mũ được phân phát như sau:</div>
+                                    
+                                    <div class="listening-subs-item-speaking-results"></div>
+                                    
+                                </div>
+                                
+                                <div class='listening-subs-item' data-time='152411'>
+                                    
+                                    <div class='listening-subs-item-text'>
+                                        <span class="listening-subs-item-text-content">The tallest captive sees three black hats in front of him,</span>
+                                        
+                                    </div>
+                                    
+                                    <div class='listening-subs-item-subtext'>Tù nhân cao nhất thấy 3 chiếc mũ đen  trước mặt mình,</div>
+                                    
+                                    <div class="listening-subs-item-speaking-results"></div>
+                                    
+                                </div>
+                                
+                                <div class='listening-subs-item' data-time='155429'>
+                                    
+                                    <div class='listening-subs-item-text'>
+                                        <span class="listening-subs-item-text-content">so he says &#34;black,&#34; telling everyone else he sees an odd number of black hats.</span>
+                                        
+                                    </div>
+                                    
+                                    <div class='listening-subs-item-subtext'>vậy anh ta sẽ nói &#34;đen&#34; để báo với những người khác rằng tổng số mũ đen là số lẻ.</div>
+                                    
+                                    <div class="listening-subs-item-speaking-results"></div>
+                                    
+                                </div>
+                                
+                                <div class='listening-subs-item' data-time='160634'>
+                                    
+                                    <div class='listening-subs-item-text'>
+                                        <span class="listening-subs-item-text-content">He gets his own hat color wrong, but that&#39;s okay</span>
+                                        
+                                    </div>
+                                    
+                                    <div class='listening-subs-item-subtext'>Anh ta có thể nói sai màu nón của mình  nhưng không sao</div>
+                                    
+                                    <div class="listening-subs-item-speaking-results"></div>
+                                    
+                                </div>
+                                
+                                <div class='listening-subs-item' data-time='164006'>
+                                    
+                                    <div class='listening-subs-item-text'>
+                                        <span class="listening-subs-item-text-content">since you&#39;re collectively allowed  to have one wrong answer.</span>
+                                        
+                                    </div>
+                                    
+                                    <div class='listening-subs-item-subtext'>vì cả nhóm bạn được phép trả lời sai  một lần.</div>
+                                    
+                                    <div class="listening-subs-item-speaking-results"></div>
+                                    
+                                </div>
+                                
+                                <div class='listening-subs-item' data-time='168286'>
+                                    
+                                    <div class='listening-subs-item-text'>
+                                        <span class="listening-subs-item-text-content">Prisoner two also sees an odd number of black hats,</span>
+                                        
+                                    </div>
+                                    
+                                    <div class='listening-subs-item-subtext'>Tù nhân thứ 2 cũng thấy  số mũ đen là số lẻ,</div>
+                                    
+                                    <div class="listening-subs-item-speaking-results"></div>
+                                    
+                                </div>
+                                
+                                <div class='listening-subs-item' data-time='171040'>
+                                    
+                                    <div class='listening-subs-item-text'>
+                                        <span class="listening-subs-item-text-content">so she knows hers is white, and answers correctly.</span>
+                                        
+                                    </div>
+                                    
+                                    <div class='listening-subs-item-subtext'>nên cô ấy biết rằng mũ cô có màu trắng  và trả lời chính xác.</div>
+                                    
+                                    <div class="listening-subs-item-speaking-results"></div>
+                                    
+                                </div>
+                                
+                                <div class='listening-subs-item' data-time='175251'>
+                                    
+                                    <div class='listening-subs-item-text'>
+                                        <span class="listening-subs-item-text-content">Prisoner three sees  an even number of black hats,</span>
+                                        
+                                    </div>
+                                    
+                                    <div class='listening-subs-item-subtext'>Tù nhân thứ 3 thấy số mũ đen là số chẵn,</div>
+                                    
+                                    <div class="listening-subs-item-speaking-results"></div>
+                                    
+                                </div>
+                                
+                                <div class='listening-subs-item' data-time='178044'>
+                                    
+                                    <div class='listening-subs-item-text'>
+                                        <span class="listening-subs-item-text-content">so he knows that his must be  one of the black hats</span>
+                                        
+                                    </div>
+                                    
+                                    <div class='listening-subs-item-subtext'>vì thế anh ta biết rằng anh ta  hẳn đang đội một trong số mũ đen</div>
+                                    
+                                    <div class="listening-subs-item-speaking-results"></div>
+                                    
+                                </div>
+                                
+                                <div class='listening-subs-item' data-time='181256'>
+                                    
+                                    <div class='listening-subs-item-text'>
+                                        <span class="listening-subs-item-text-content">the first two prisoners saw.</span>
+                                        
+                                    </div>
+                                    
+                                    <div class='listening-subs-item-subtext'>mà hai người trước đã thấy.</div>
+                                    
+                                    <div class="listening-subs-item-speaking-results"></div>
+                                    
+                                </div>
+                                
+                                <div class='listening-subs-item' data-time='183601'>
+                                    
+                                    <div class='listening-subs-item-text'>
+                                        <span class="listening-subs-item-text-content">Prisoner four hears that and knows</span>
+                                        
+                                    </div>
+                                    
+                                    <div class='listening-subs-item-subtext'>Tù nhân thứ 4 nghe được và biết rằng</div>
+                                    
+                                    <div class="listening-subs-item-speaking-results"></div>
+                                    
+                                </div>
+                                
+                                <div class='listening-subs-item' data-time='185337'>
+                                    
+                                    <div class='listening-subs-item-text'>
+                                        <span class="listening-subs-item-text-content">that she should be looking for  an even number of black hats</span>
+                                        
+                                    </div>
+                                    
+                                    <div class='listening-subs-item-subtext'>cô đang tìm số mũ đen với số chẵn</div>
+                                    
+                                    <div class="listening-subs-item-speaking-results"></div>
+                                    
+                                </div>
+                                
+                                <div class='listening-subs-item' data-time='188578'>
+                                    
+                                    <div class='listening-subs-item-text'>
+                                        <span class="listening-subs-item-text-content">since one was behind her.</span>
+                                        
+                                    </div>
+                                    
+                                    <div class='listening-subs-item-subtext'>vì một người đội mũ đen  đã ở đằng sau cô.</div>
+                                    
+                                    <div class="listening-subs-item-speaking-results"></div>
+                                    
+                                </div>
+                                
+                                <div class='listening-subs-item' data-time='190510'>
+                                    
+                                    <div class='listening-subs-item-text'>
+                                        <span class="listening-subs-item-text-content">But she only sees one, so she deduces that her hat is also black.</span>
+                                        
+                                    </div>
+                                    
+                                    <div class='listening-subs-item-subtext'>Nhưng cô chỉ thấy một chiếc, vì thế cô  biết rằng mũ của mình cũng màu đen.</div>
+                                    
+                                    <div class="listening-subs-item-speaking-results"></div>
+                                    
+                                </div>
+                                
+                                <div class='listening-subs-item' data-time='196165'>
+                                    
+                                    <div class='listening-subs-item-text'>
+                                        <span class="listening-subs-item-text-content">Prisoners five through nine are each looking for an odd number of black hats,</span>
+                                        
+                                    </div>
+                                    
+                                    <div class='listening-subs-item-subtext'>Tù nhân từ thứ 5 đến thứ 9 trông chờ  số mũ đen là số lẻ,</div>
+                                    
+                                    <div class="listening-subs-item-speaking-results"></div>
+                                    
+                                </div>
+                                
+                                <div class='listening-subs-item' data-time='200499'>
+                                    
+                                    <div class='listening-subs-item-text'>
+                                        <span class="listening-subs-item-text-content">which they see, so they figure out that their hats are white.</span>
+                                        
+                                    </div>
+                                    
+                                    <div class='listening-subs-item-subtext'>và họ đã thấy một chiếc, vì thế họ  biết rằng mũ mình có màu trắng.</div>
+                                    
+                                    <div class="listening-subs-item-speaking-results"></div>
+                                    
+                                </div>
+                                
+                                <div class='listening-subs-item' data-time='205227'>
+                                    
+                                    <div class='listening-subs-item-text'>
+                                        <span class="listening-subs-item-text-content">Now it all comes down to you at the front of the line.</span>
+                                        
+                                    </div>
+                                    
+                                    <div class='listening-subs-item-subtext'>Và rồi đến lượt bạn ở đầu hàng</div>
+                                    
+                                    <div class="listening-subs-item-speaking-results"></div>
+                                    
+                                </div>
+                                
+                                <div class='listening-subs-item' data-time='209054'>
+                                    
+                                    <div class='listening-subs-item-text'>
+                                        <span class="listening-subs-item-text-content">If the ninth prisoner saw  an odd number of black hats,</span>
+                                        
+                                    </div>
+                                    
+                                    <div class='listening-subs-item-subtext'>Nếu tù nhân thứ 9 thấy số mũ đen là số lẻ,</div>
+                                    
+                                    <div class="listening-subs-item-speaking-results"></div>
+                                    
+                                </div>
+                                
+                                <div class='listening-subs-item' data-time='212235'>
+                                    
+                                    <div class='listening-subs-item-text'>
+                                        <span class="listening-subs-item-text-content">that can only mean one thing.</span>
+                                        
+                                    </div>
+                                    
+                                    <div class='listening-subs-item-subtext'>điều đó chỉ có thế mang một ý nghĩa.</div>
+                                    
+                                    <div class="listening-subs-item-speaking-results"></div>
+                                    
+                                </div>
+                                
+                                <div class='listening-subs-item' data-time='215026'>
+                                    
+                                    <div class='listening-subs-item-text'>
+                                        <span class="listening-subs-item-text-content">You&#39;ll find that this strategy works for any possible arrangement of the hats.</span>
+                                        
+                                    </div>
+                                    
+                                    <div class='listening-subs-item-subtext'>Bạn sẽ tìm thấy rằng chiến lược này có hiệu lực cho mọi sự sắp xếp mũ.</div>
+                                    
+                                    <div class="listening-subs-item-speaking-results"></div>
+                                    
+                                </div>
+                                
+                                <div class='listening-subs-item' data-time='219398'>
+                                    
+                                    <div class='listening-subs-item-text'>
+                                        <span class="listening-subs-item-text-content">The first prisoner has a 50% chance of giving a wrong answer about his own hat,</span>
+                                        
+                                    </div>
+                                    
+                                    <div class='listening-subs-item-subtext'>Người tù thứ nhất có 50% cơ hội  nói sai về chiếc mũ của anh ta,</div>
+                                    
+                                    <div class="listening-subs-item-speaking-results"></div>
+                                    
+                                </div>
+                                
+                                <div class='listening-subs-item' data-time='224512'>
+                                    
+                                    <div class='listening-subs-item-text'>
+                                        <span class="listening-subs-item-text-content">but the parity information he conveys</span>
+                                        
+                                    </div>
+                                    
+                                    <div class='listening-subs-item-subtext'>nhưng thông tin về tính chẵn lẻ của  con số mà anh ta truyền đi</div>
+                                    
+                                    <div class="listening-subs-item-speaking-results"></div>
+                                    
+                                </div>
+                                
+                                <div class='listening-subs-item' data-time='226821'>
+                                    
+                                    <div class='listening-subs-item-text'>
+                                        <span class="listening-subs-item-text-content">allows everyone else  to guess theirs with absolute certainty.</span>
+                                        
+                                    </div>
+                                    
+                                    <div class='listening-subs-item-subtext'>cho phép người còn lại đoán được đáp án một cách hoàn toàn chính xác.</div>
+                                    
+                                    <div class="listening-subs-item-speaking-results"></div>
+                                    
+                                </div>
+                                
+                                <div class='listening-subs-item' data-time='232020'>
+                                    
+                                    <div class='listening-subs-item-text'>
+                                        <span class="listening-subs-item-text-content">Each begins by expecting to see an odd or even number of hats</span>
+                                        
+                                    </div>
+                                    
+                                    <div class='listening-subs-item-subtext'>Mỗi người trông chờ số lượng mũ là chẵn hay lẻ</div>
+                                    
+                                    <div class="listening-subs-item-speaking-results"></div>
+                                    
+                                </div>
+                                
+                                <div class='listening-subs-item' data-time='236035'>
+                                    
+                                    <div class='listening-subs-item-text'>
+                                        <span class="listening-subs-item-text-content">of the specified color.</span>
+                                        
+                                    </div>
+                                    
+                                    <div class='listening-subs-item-subtext'>của một màu cụ thể.</div>
+                                    
+                                    <div class="listening-subs-item-speaking-results"></div>
+                                    
+                                </div>
+                                
+                                <div class='listening-subs-item' data-time='238066'>
+                                    
+                                    <div class='listening-subs-item-text'>
+                                        <span class="listening-subs-item-text-content">If what they count doesn&#39;t match, that means their own hat is that color.</span>
+                                        
+                                    </div>
+                                    
+                                    <div class='listening-subs-item-subtext'>Nếu cái họ thấy không đúng, có nghĩa là họ đang đội mũ màu đó.</div>
+                                    
+                                    <div class="listening-subs-item-speaking-results"></div>
+                                    
+                                </div>
+                                
+                                <div class='listening-subs-item' data-time='242502'>
+                                    
+                                    <div class='listening-subs-item-text'>
+                                        <span class="listening-subs-item-text-content">And everytime this happens,</span>
+                                        
+                                    </div>
+                                    
+                                    <div class='listening-subs-item-subtext'>Và mỗi khi điều đó xảy ra,</div>
+                                    
+                                    <div class="listening-subs-item-speaking-results"></div>
+                                    
+                                </div>
+                                
+                                <div class='listening-subs-item' data-time='244136'>
+                                    
+                                    <div class='listening-subs-item-text'>
+                                        <span class="listening-subs-item-text-content">the next person in line will switch the parity they expect to see.</span>
+                                        
+                                    </div>
+                                    
+                                    <div class='listening-subs-item-subtext'>người tiếp theo trong hàng sẽ đổi tính chẵn lẻ mà họ mong nhìn thấy.</div>
+                                    
+                                    <div class="listening-subs-item-speaking-results"></div>
+                                    
+                                </div>
+                                
+                                <div class='listening-subs-item' data-time='248883'>
+                                    
+                                    <div class='listening-subs-item-text'>
+                                        <span class="listening-subs-item-text-content">So that&#39;s it, you&#39;re free to go.</span>
+                                        
+                                    </div>
+                                    
+                                    <div class='listening-subs-item-subtext'>Vậy thôi, tất cả các bạn được tự do.</div>
+                                    
+                                    <div class="listening-subs-item-speaking-results"></div>
+                                    
+                                </div>
+                                
+                                <div class='listening-subs-item' data-time='250624'>
+                                    
+                                    <div class='listening-subs-item-text'>
+                                        <span class="listening-subs-item-text-content">It looks like these aliens  will have to go hungry,</span>
+                                        
+                                    </div>
+                                    
+                                    <div class='listening-subs-item-subtext'>Có lẽ những người ngoài hành tinh  sẽ phải chịu đói</div>
+                                    
+                                    <div class="listening-subs-item-speaking-results"></div>
+                                    
+                                </div>
+                                
+                                <div class='listening-subs-item' data-time='253032'>
+                                    
+                                    <div class='listening-subs-item-text'>
+                                        <span class="listening-subs-item-text-content">or find some less logical  organisms to abduct.</span>
+                                        
+                                    </div>
+                                    
+                                    <div class='listening-subs-item-subtext'>hay tìm sinh vật nào khác ít thông minh hơn để bắt cóc.</div>
+                                    
+                                    <div class="listening-subs-item-speaking-results"></div>
+                                    
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="tab-pane fade show active" id="nav-listening-dictation" role="tabpanel">
+                        <div class='listening-dictation-wrapper'>
+                            <div class='listening-dictation-mode mb-3'>
+                                Chọn chế độ:
+                                <select class='listening-dictation-mode-select'>
+                                    <option value='word' data-level='NORMAL' selected>Điền từ (trung bình)</option>
+                                    <option value='word_hard' data-level='HARD'>Điền từ (khó)</option>
+                                    <option value='sentence'>Chép cả câu</option>
+                                </select>
+                            </div>
+                            <div class='listening-dictation-control mb-2'>
+                                <button class='listening-dictation-control-btn prev'>
+                                    <span class='fas fa-chevron-left'></span>
+                                    Câu trước
+                                </button>
+                                <button class='listening-dictation-control-btn repeat'>
+                                    <span class='fas fa-redo'></span>
+                                    Nghe lại
+                                </button>
+                                <button class='listening-dictation-control-btn check sky-bg'>
+                                    <span class='fas fa-check-circle'></span>
+                                    Kiểm tra
+                                </button>
+                                <button class='listening-dictation-control-btn next'>
+                                    Câu sau
+                                    <span class='fas fa-chevron-right'></span>
+                                </button>
+                            </div>
+                            <div class='listening-dictation-sub'></div>
+                            <div class='listening-dictation-control mt-2'>
+                                <button class='listening-dictation-control-btn clear'>
+                                    <span class='fas fa-times-circle'></span>
+                                    Xoá hết
+                                </button>
+                                <button class='listening-dictation-control-btn showanswer'>
+                                    <span class='fas fa-pennant'></span>
+                                    Đáp án
+                                </button>
+                            </div>
+                            <div class='mt-3'>
+                                <div class="custom-control custom-switch autoreplay-toggle-box">
+                                    <input type="checkbox" class="custom-control-input autoreplay-toggle"
+                                        id="autoreplay-toggle">
+                                    <label class="custom-control-label font-sm" for="autoreplay-toggle"><span class='fas fa-repeat-alt mr-1'></span>Tự động phát lại câu</label>
+                                </div>
+                            </div>
+                            <div class='timer-wrap mt-2'  style='display:none;'>Chuyển câu tiếp theo sau: <span id='timer' style='color: #f50057'></span></div>
+
+                            <div class='listening-dictation-guide'>
+                                <div>Phím tắt: ấn [space] hoặc [tab] để chuyển sang ô trống tiếp theo; [enter] để nộp đáp án hoặc chuyển sang câu tiếp theo; [alt+tab]/[del]/[backspace] để về ô trống trước.</div>
+                                <div>Ấn [\] để phát lại câu; ấn [shift+sang trái] để chuyển câu trước, ấn [shift+sang phải] để chuyển câu sau.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal" id="user-settings-modal" tabindex="-1" aria-labelledby="user-settings-modal" aria-hidden="true" data-keyboard="false" data-backdrop="static">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="modal-body" id="user-settings-modal-content">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+        <div class="modal" id="site-modal-lg" tabindex="-1" aria-labelledby="site-modal-lg" aria-hidden="true" data-keyboard="false" data-backdrop="static">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <div class="modal-body" id="site-modal-lg-content"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="site-modal-md" tabindex="-1" aria-labelledby="site-modal-md" aria-hidden="true" data-keyboard="false" data-backdrop="static">
+            <div class="modal-dialog modal-md">
+                <div class="modal-content">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <div class="modal-body" id="site-modal-md-content"></div>
+                </div>
+            </div>
+        </div>
+
+        <script type='text/javascript'>
+    window.csrf_token = 'HPwfQ0vZfQcMJmzXNqwKyY7PbANtBat0svjn2znZGyMxiNbF78JTlA2kQu2Mrql9';
+    window.current_user =
+    
+    {
+        is_authenticated: true,
+        id: 1533594,
+        name: "nguyenthingoctai2005",
+        is_admin: false,
+        is_staff: false,
+        is_superuser: false,
+    }
+    
+</script>
+        <script>
+            window.iFrameResizer = {
+              targetOrigin: '*'
+            }
+        </script>
+        <script type='text/javascript' src="https://study4.com/static/js/webaudiorecorder/WebAudioRecorder.min.js"></script>
+        <script type='text/javascript' src="https://study4.com/static/dist/vendor.ad60eb658fc650d75097.js?v=1735926894"></script>
+        <script type='text/javascript' src="https://study4.com/static/dist/main.651d8fa8cadf332cd75a.js?v=1735926894" ></script>
+        <script type='text/javascript' src="https://study4.com/static/ckeditor/ckeditor-init.js"></script>
+        <script type='text/javascript' src="https://study4.com/static/ckeditor/ckeditor/ckeditor.js"></script>
+        <script type='text/javascript' src='https://study4.com/static/js/iframeresizer/iframeResizer.contentWindow.min.js?v=1735926894'></script>
+        
+<script type="text/javascript" src="https://study4.com/static/problems/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="https://study4.com/static/problems/js/string-similarity.min.js"></script>
+<script type="text/javascript" src="https://study4.com/static/problems/js/problem.js?v=1735926894"></script>
+<script type='text/javascript' src="https://study4.com/static/dist/siteproblem.99b7eb69b5c9bb621219.js?v=1735926894"></script>
+
+
+<script>var passage_practice = new SITEPROBLEMS.ListenPassages();</script>
+
+
+    <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"8fd99d6fbccf1091","serverTiming":{"name":{"cfExtPri":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}},"version":"2024.10.5","token":"8d646591bd144e069b89dada41cfc02b"}' crossorigin="anonymous"></script>
+</body>
+</html>

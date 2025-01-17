@@ -1,0 +1,1475 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn English</title>
+    <link rel="icon" href="/assets/img/Avatar_LearnEnglish.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/f9374b778e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+    
+    <div class="topnav1 topnav-wrapper" bis_skin_checked="1">
+        <div class="topnav-container" bis_skin_checked="1">
+            <nav class="navbar  navbar-expand-lg">
+                <span class="navbar-brand">
+                    <a class="topnav-brand" href="/">
+                        <img class="topnav-logo" src="/assets/img/Logo_LearnEnglish.svg" alt="STUDY4">
+
+                    </a>
+                </span>
+                <button class="navbar-toggler pull-xs-right d-lg-none" type="button" data-toggle="collapse"
+                    data-target="#navbar-collapse">
+                    ☰
+
+                </button>
+                <div class="d-lg-block navbar-collapse justify-content-end collapse" id="navbar-collapse"
+                    bis_skin_checked="1">
+
+                    <ul class="nav">
+
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/courses/" bis_skin_checked="1">Course</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/skills/" bis_skin_checked="1">Skill</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/flashcards/me/" bis_skin_checked="1">Flashcards</a>
+                        </li>
+
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/blog/" bis_skin_checked="1">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/general-english/" bis_skin_checked="1">General english</a>
+                        </li>
+
+
+
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/courses/activate/" bis_skin_checked="1">
+                                Kích hoạt tài khoản
+                            </a>
+                        </li>
+
+                        <li class="nav-item user-topnav dropdown d-none d-lg-block">
+                            <a class="nav-link dropdown-toggle user-topnav-profile" href="/my-account/" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" bis_skin_checked="1">
+                                <span class="account-profile-img">
+
+                                    <img src="/assets/img/user_icon.webp" alt="ChuTanTai23130280">
+
+                                </span>
+
+                            </a>
+
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" bis_skin_checked="1">
+                                <div bis_skin_checked="1">
+                                    <h6 class="dropdown-header" id="thông-báo"> Thông báo </h6>
+                                    <div id="new-notis-dropdown-content" class="jqhtml-loader dropdown-text"
+                                        data-href="/notifications/newest/" bis_skin_checked="1">
+                                        <p class="font-sm"><i>Bạn chưa có thông báo mới.</i></p>
+
+
+                                        <div class="mt-2 link font-sm" bis_skin_checked="1"><a href="/notifications/"
+                                                bis_skin_checked="1">Xem tất cả &gt;&gt;</a></div>
+                                    </div>
+                                </div>
+
+                                <div class="dropdown-divider" bis_skin_checked="1"></div>
+                                <a class="dropdown-item" href="/studyplan/" bis_skin_checked="1">Lịch học của tôi</a>
+                                <a class="dropdown-item" href="/my-account/" bis_skin_checked="1">Trang cá nhân</a>
+                                <a class="dropdown-item" href="/logout/" bis_skin_checked="1">Đăng xuất</a>
+                            </div>
+                        </li>
+                        <li class="nav-item d-lg-none">
+                            <a class="nav-link" href="/notifications/" bis_skin_checked="1">Thông báo </a>
+                        </li>
+                        <li class="nav-item d-lg-none">
+                            <a class="nav-link" href="/studyplan/" bis_skin_checked="1">Lịch học của tôi</a>
+                        </li>
+                        <li class="nav-item d-lg-none">
+                            <a class="nav-link" href="/my-account/" bis_skin_checked="1">Trang cá nhân</a>
+                        </li>
+                        <li class="nav-item d-lg-none">
+                            <a class="nav-link" href="/logout/" bis_skin_checked="1">Đăng xuất</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+<script>
+    // JavaScript để xử lý dropdown
+    document.addEventListener('DOMContentLoaded', function() {
+        const profileBtn = document.querySelector('.user-topnav-profile');
+        const dropdownMenu = document.querySelector('.dropdown-menu');
+    
+        // Toggle dropdown khi click vào profile
+        profileBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            dropdownMenu.classList.toggle('show');
+        });
+    
+        // Đóng dropdown khi click ra ngoài
+        document.addEventListener('click', function(e) {
+            if (!profileBtn.contains(e.target) && !dropdownMenu.contains(e.target)) {
+                dropdownMenu.classList.remove('show');
+            }
+        });
+    });
+</script>
+    <script>
+        // JavaScript để xử lý dropdown
+        document.addEventListener('DOMContentLoaded', function () {
+            const profileBtn = document.querySelector('.user-topnav-profile');
+            const dropdownMenu = document.querySelector('.dropdown-menu');
+
+            // Toggle dropdown khi click vào profile
+            profileBtn.addEventListener('click', function (e) {
+                e.preventDefault();
+                dropdownMenu.classList.toggle('show');
+            });
+
+            // Đóng dropdown khi click ra ngoài
+            document.addEventListener('click', function (e) {
+                if (!profileBtn.contains(e.target) && !dropdownMenu.contains(e.target)) {
+                    dropdownMenu.classList.remove('show');
+                }
+            });
+        });
+    </script>
+
+
+
+<body class="highlighter-context">
+        
+    <div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; width: 0px; height: 0px;"><div></div></div></div>
+    <script async="" defer="" crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&amp;version=v20.0&amp;appId=203430341284880&amp;autoLogAppEvents=1" nonce="1d3MdMH8" type="text/javascript"></script>
+    
+    
+
+    
+    <div class="site-elevator">
+        <div class="elevator-item elevator-open d-md-none">
+            <span class="fal fa-chevron-left"></span>
+        </div>
+        <div class="elevator-item elevator-close d-md-none">
+            <span class="fal fa-chevron-right"></span>
+        </div>
+        <div class="elevator-item">
+            <div class="jqdictionary-show" target="#">
+                <img src="/static/img/dictionary.png">
+                <div class="elevator-text">Từ điển</div>
+            </div>
+        </div>
+        <div class="jqdictionary-wrapper">
+            <span class="jqdictionary-expand fal fa-plus-square"></span>
+            <span class="jqdictionary-close far fa-times"></span>
+            <div class="h6 font-500 font-sm">
+                <a class="link jqdictionary-tab active" data-href="https://m.dict.laban.vn/">Anh-Việt</a> |
+                <a class="link jqdictionary-tab" data-href="https://www.wordreference.com/definition/">WordReference</a> |
+                <a class="link jqdictionary-tab" data-href="https://onelook.com/thesaurus/">Thesaurus</a> |
+                <a class="link jqdictionary-tab" data-href="https://vtudien.com/trung-viet/dictionary/nghia-cua-tu-%E4%BD%A0%E5%A5%BD">Tiếng Trung</a>
+            </div>
+            <div class="jqdictionary-iframe">
+                <iframe loading="lazy" frameborder="0"></iframe>
+            </div>
+        </div>
+
+
+        
+        <div class="elevator-item">
+            <a target="_blank" href="https://m.me/LearnEnglish.support">
+                <img src="/static/img/messenger.png">
+            </a>
+        </div>
+        
+
+        <div class="elevator-item">
+            <a target="_blank" href="https://zalo.me/LearnEnglish">
+                <img src="/static/img/zalo.jpg">
+            </a>
+        </div>
+
+
+        
+        <div class="elevator-item site-scrollTop" onclick="if (!window.__cfRLUnblockHandlers) return false; window.topFunction()" id="site-scrollTop" title="Go to top" style="display: flex;">
+            <span class="fal fa-chevron-up"></span>
+        </div>
+    </div>
+    
+
+    
+
+    <div class="site-wrapper">
+
+        
+
+        
+
+
+<div class="topnav1 topnav-wrapper">
+
+</div>
+
+        
+
+        
+        <div class="site-content-wrapper">
+            
+
+            
+
+            
+            
+            
+            
+
+            
+<div class="container pb-0">
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/">Trang chủ</a></li>
+        
+        <li class="breadcrumb-item"><a href="/blog/index.html">Bài viết</a></li>
+        <li class="breadcrumb-item"><a href="/blog/lo-trinh-tu-hoc-ielts-online-tai-nha-tu-so-0-den-7-cua-study4/index.html/cau-truc-de-thi-ielts-chi-tiet-va-chuan-nhat-2024.html">Thông tin kỳ thi IELTS</a></li>
+        
+        <li class="breadcrumb-item active"><a href="/blog/lo-trinh-tu-hoc-ielts-online-tai-nha-tu-so-0-den-7-cua-study4/index.html/thang-diem-ielts-va-cach-tinh-diem-ielts-overall-chuan-2024.html">Thang điểm IELTS và cách tính điểm IELTS Overall chuẩn 2024</a></li>
+    </ol>
+</nav>
+</div>
+
+
+            
+<div class="content-header py-0">
+<div class="container py-0">
+    <div class="image-wrapper">
+        <a href="/courses/level-test/">
+            
+        </a>
+    </div>
+    <br>
+    <h1 class="post-title" id="thang-điểm-ielts-và-cách-tính-điểm-ielts-overall-chuẩn-2024">
+        Thang điểm IELTS và cách tính điểm IELTS Overall chuẩn 2024
+        
+    </h1>
+    
+    <p class="post-description">
+        Thang điểm IELTS có những mức nào? Đâu là cách tính điểm IELTS Overall chuẩn xác nhất? Bạn sẽ tìm được giải đáp trong bài viết này của LearnEnglish.
+    </p>
+    
+</div>
+</div>
+
+
+            
+            <div class="content-wrapper">
+                
+                
+<div class="container">
+<div class="row">
+    <div class="col-12 col-md-3 order-md-3">
+        <div class="post-toc-wrapper">
+            <div class="post-toc-title font-11 font-600">Table of contents</div>
+            <div class="js-toc"><ol class="toc-list "><li class="toc-list-item"><a href="#i.-tổng-quan-về-ielts" class="toc-link node-name--H2 ">I. Tổng quan về IELTS</a><ol class="toc-list  is-collapsible is-collapsed"><li class="toc-list-item"><a href="#1.-ielts-là-gì?" class="toc-link node-name--H3 ">1. IELTS là gì?</a></li><li class="toc-list-item"><a href="#2.-lợi-ích-của-ielts" class="toc-link node-name--H3 ">2. Lợi ích của IELTS</a></li><li class="toc-list-item"><a href="#3.-cấu-trúc-bài-thi-ielts" class="toc-link node-name--H3 ">3. Cấu trúc bài thi IELTS</a></li></ol></li><li class="toc-list-item"><a href="#ii.-thang-điểm-ielts-và-cách-tính-điểm-ielts-overall" class="toc-link node-name--H2 ">II. Thang điểm IELTS và cách tính điểm IELTS Overall</a><ol class="toc-list  is-collapsible is-collapsed"><li class="toc-list-item"><a href="#1.-cách-tính-điểm-ielts-theo-4-kỹ-năng" class="toc-link node-name--H3 ">1. Cách tính điểm IELTS theo 4 kỹ năng</a></li><li class="toc-list-item"><a href="#2.-cách-tính-điểm-ielts-overall" class="toc-link node-name--H3 ">2. Cách tính điểm IELTS Overall</a></li></ol></li><li class="toc-list-item is-active-li"><a href="#iii.-ý-nghĩa-của-thang-điểm-ielts" class="toc-link node-name--H2  is-active-link">III. Ý nghĩa của thang điểm IELTS</a></li><li class="toc-list-item"><a href="#lời-kết" class="toc-link node-name--H2 ">Lời kết</a></li></ol></div>
+        </div>
+        <br>
+
+        
+
+
+<div class="h4">Tìm hiểu thêm</div>
+<div class="site-links">
+
+<a class="site-link" href="https://LearnEnglish.com/l/UUUGo-oOaEI/">🎧 KHÓA HỌC IELTS INTENSIVE LISTENING</a>
+
+<a class="site-link" href="https://LearnEnglish.com/l/MwC86SbHDWk/">📖 KHÓA HỌC IELTS INTENSIVE READING (ACADEMIC)</a>
+
+<a class="site-link" href="https://LearnEnglish.com/l/uuvrH_Ic4yw/">📢 KHÓA HỌC IELTS INTENSIVE SPEAKING</a>
+
+<a class="site-link" href="https://LearnEnglish.com/l/HBhnwajftic/">📝 KHÓA HỌC IELTS INTENSIVE WRITING (ACADEMIC)</a>
+
+<a class="site-link" href="https://LearnEnglish.com/l/MvNPpMGAe2s/">📖 KHÓA HỌC IELTS GENERAL READING</a>
+
+<a class="site-link" href="https://LearnEnglish.com/l/Q5o89C9aOUc/">📝 KHÓA HỌC IELTS GENERAL WRITING</a>
+
+<a class="site-link" href="https://LearnEnglish.com/l/TE5OM6J3mcg/">📒 KHÓA HỌC IELTS FUNDAMENTALS (cơ bản)</a>
+
+<a class="site-link" href="https://LearnEnglish.com/l/s4WacmdglSk/">💻 KHÓA HỌC COMPLETE TOEIC</a>
+
+<a class="site-link" href="https://LearnEnglish.com/posts/259/cau-truc-de-thi-ielts-chi-tiet-va-chuan-nhat-2023/">📌 Cấu trúc đề thi IELTS</a>
+
+<a class="site-link" href="https://LearnEnglish.com/posts/291/cau-truc-de-thi-toeic-chuan-va-chi-tiet-nam-2023/">📌 Cấu trúc đề thi TOEIC</a>
+
+<a class="site-link" href="https://LearnEnglish.com/posts/258/thang-diem-ielts-va-cach-tinh-diem-ielts-overall-chuan-2023/">📌 Thang điểm IELTS và cách tính điểm IELTS Overall</a>
+
+<a class="site-link" href="https://LearnEnglish.com/posts/361/thang-diem-toeic-va-cach-tinh-diem-bai-thi-toeic/">📌 Thang điểm TOEIC và cách tính điểm TOEIC</a>
+
+</div>
+<br>
+
+
+
+        
+
+        <br>
+        
+
+
+
+
+<div class="sidebar-post-wrapper">
+<div class="center">
+    
+        
+        <div class="h4">
+            Review của học viên LearnEnglish
+            
+            <a class="ml-1 font-09 font-italic" href="/topics/review-cua-hoc-vien-LearnEnglish/">
+                Xem thêm
+                <span class="fal fa-arrow-right"></span>
+            </a>
+            
+        </div>
+        
+        <div class="posts-list">
+        
+            
+<div class="postlist-card">
+
+
+<div class="postlist-card-img full mb-2">
+    <img class="lazyel card-img entered loaded" data-src="/media/examprep/Post/files/2024/08/05/865990_toeic.png" data-ll-status="loaded" src="/media/examprep/Post/files/2024/08/05/865990_toeic.png">
+</div>
+
+<div class="postlist-card-content-wrapper">
+    
+    <span class="d-block post-topic"><a class="font-weight-bold small" href="/topics/hoc-vien-toeic/">HỌC VIÊN TOEIC</a></span>
+    
+    <div class="postlist-title-wrapper">
+        
+        <div class="postlist-card-img-sm mb-2">
+            <img class="lazyel card-img" data-src="/media/examprep/Post/files/2024/08/05/865990_toeic.png">
+        </div>
+        
+        <div class="postlist-title"><a href="/posts/1186/kinh-nghiem-tu-hoc-dat-900-toeic-chia-se-tu-hoc-vien-LearnEnglish/">Kinh nghiệm tự học đạt 900 TOEIC - Chia sẻ từ học viên LearnEnglish</a></div>
+    </div>
+    <div class="postlist-card-content card-body d-flex flex-column p-0">
+        <p>Chia sẻ từ bạn Trung Nguyên về khóa học Complete TOEIC của LearnEnglish và kinh nghiệm của bạn để đạt 900 điểm TOEIC.</p>
+    </div>
+    
+</div>
+</div>
+
+        
+            
+<div class="postlist-card">
+
+
+<div class="postlist-card-img full mb-2">
+    <img class="lazyel card-img entered loaded" data-src="/media/examprep/Post/files/2024/06/07/865990_toeic_30.png" data-ll-status="loaded" src="/media/examprep/Post/files/2024/06/07/865990_toeic_30.png">
+</div>
+
+<div class="postlist-card-content-wrapper">
+    
+    <span class="d-block post-topic"><a class="font-weight-bold small" href="/topics/hoc-vien-toeic/">HỌC VIÊN TOEIC</a></span>
+    
+    <div class="postlist-title-wrapper">
+        
+        <div class="postlist-card-img-sm mb-2">
+            <img class="lazyel card-img" data-src="/media/examprep/Post/files/2024/06/07/865990_toeic_30.png">
+        </div>
+        
+        <div class="postlist-title"><a href="/posts/1012/hoc-vien-LearnEnglish-chia-se-bi-quyet-dat-625-diem-toeic/">Học viên LearnEnglish chia sẻ bí quyết đạt 625 điểm TOEIC</a></div>
+    </div>
+    <div class="postlist-card-content card-body d-flex flex-column p-0">
+        <p>Chia sẻ từ bạn Minh Đức về khóa học Complete TOEIC của LearnEnglish và kinh nghiệm của bạn để đạt 625 điểm TOEIC.</p>
+    </div>
+    
+</div>
+</div>
+
+        
+            
+<div class="postlist-card">
+
+
+<div class="postlist-card-img full mb-2">
+    <img class="lazyel card-img entered loaded" data-src="/media/examprep/Post/files/2024/06/07/865990_toeic_28.png" data-ll-status="loaded" src="/media/examprep/Post/files/2024/06/07/865990_toeic_28.png">
+</div>
+
+<div class="postlist-card-content-wrapper">
+    
+    <span class="d-block post-topic"><a class="font-weight-bold small" href="/topics/hoc-vien-toeic/">HỌC VIÊN TOEIC</a></span>
+    
+    <div class="postlist-title-wrapper">
+        
+        <div class="postlist-card-img-sm mb-2">
+            <img class="lazyel card-img" data-src="/media/examprep/Post/files/2024/06/07/865990_toeic_28.png">
+        </div>
+        
+        <div class="postlist-title"><a href="/posts/1011/hoc-vien-LearnEnglish-chia-se-bi-quyet-dat-790-diem-toeic/">Học viên LearnEnglish chia sẻ bí quyết đạt 790 điểm TOEIC</a></div>
+    </div>
+    <div class="postlist-card-content card-body d-flex flex-column p-0">
+        <p>Chia sẻ từ bạn Minh Hoàng về khóa học Complete TOEIC của LearnEnglish và kinh nghiệm của bạn để đạt 790 điểm TOEIC.</p>
+    </div>
+    
+</div>
+</div>
+
+        
+            
+<div class="postlist-card">
+
+
+<div class="postlist-card-img full mb-2">
+    <img class="lazyel card-img entered loaded" data-src="/media/examprep/Post/files/2024/06/07/865990_toeic_32.png" data-ll-status="loaded" src="/media/examprep/Post/files/2024/06/07/865990_toeic_32.png">
+</div>
+
+<div class="postlist-card-content-wrapper">
+    
+    <span class="d-block post-topic"><a class="font-weight-bold small" href="/topics/hoc-vien-toeic/">HỌC VIÊN TOEIC</a></span>
+    
+    <div class="postlist-title-wrapper">
+        
+        <div class="postlist-card-img-sm mb-2">
+            <img class="lazyel card-img" data-src="/media/examprep/Post/files/2024/06/07/865990_toeic_32.png">
+        </div>
+        
+        <div class="postlist-title"><a href="/posts/1010/chia-se-tu-hoc-vien-cua-LearnEnglish-dat-810-toeic/">Chia sẻ từ học viên của LearnEnglish đạt 810 TOEIC</a></div>
+    </div>
+    <div class="postlist-card-content card-body d-flex flex-column p-0">
+        <p>Chia sẻ từ bạn Hoàng Phúc về khóa học Complete TOEIC của LearnEnglish và kinh nghiệm của bạn để đạt 810 điểm TOEIC.</p>
+    </div>
+    
+</div>
+</div>
+
+        
+            
+<div class="postlist-card">
+
+
+<div class="postlist-card-img full mb-2">
+    <img class="lazyel card-img entered loaded" data-src="/media/examprep/Post/files/2024/06/07/865990_toeic_34.png" data-ll-status="loaded" src="/media/examprep/Post/files/2024/06/07/865990_toeic_34.png">
+</div>
+
+<div class="postlist-card-content-wrapper">
+    
+    <span class="d-block post-topic"><a class="font-weight-bold small" href="/topics/hoc-vien-ielts/">HỌC VIÊN IELTS</a></span>
+    
+    <div class="postlist-title-wrapper">
+        
+        <div class="postlist-card-img-sm mb-2">
+            <img class="lazyel card-img" data-src="/media/examprep/Post/files/2024/06/07/865990_toeic_34.png">
+        </div>
+        
+        <div class="postlist-title"><a href="/posts/1009/hoc-vien-LearnEnglish-dat-7-5-ielts-overall-sau-khoa-hoc/">Học viên LearnEnglish đạt 7.5 IELTS Overall sau khóa học</a></div>
+    </div>
+    <div class="postlist-card-content card-body d-flex flex-column p-0">
+        <p>Chia sẻ từ bạn Ngọc Huyền về khóa học IELTS Intensive của LearnEnglish và kinh nghiệm của bạn để đạt 7.5 điểm IELTS.</p>
+    </div>
+    
+</div>
+</div>
+
+        
+        </div>
+
+        
+
+
+
+    
+</div>
+</div>
+<br>
+
+
+
+
+        
+
+
+
+
+
+<h4 id="tham-gia-nhóm-facebook">Tham gia nhóm facebook</h4>
+
+<div class="image-wrapper fb-group mb-3">
+<a target="_blank" href="https://www.facebook.com/groups/1603927746835185"><img class="sidebar-banner" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXcb-nyj7JgdpDjze01TDO3e0wTOGOH20kLCmwTyWLGoulTXiomKbiTH_KI8wjscRzMg3igTeFnqr4OyAwvIk2yi2NrAKF89sooqNM0LoQYk2vj0jrIlACEK8g_Fynh-HWxfsnZYDE763X35JdesvBXmycM7?key=ezwyDTrTlQ8fa4GAczby1g"></a>
+</div>
+
+<div class="image-wrapper fb-group mb-3">
+<a target="_blank" href="https://www.facebook.com/groups/517057750992723"><img class="sidebar-banner" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXe6BuinESoVBd4lsp7D2Ng9_TjTMDDijwiTkdji1Y-L04RrggnZoOS8gdSZqD4OqQY3zsBtG_6N0RjvGQRL_85w3nGPp8UsC1QS572qY_Vf0cC8S-eK51DeDWFDSAw4CIZjlQlNrNxp4Vv7sSUVetoyScxn?key=ezwyDTrTlQ8fa4GAczby1g"></a>
+</div>
+
+<br>
+
+
+
+    </div>
+    <div class="col-12 col-md-7 order-md-2">
+        <div class="post-wrapper">
+            <div class="media post-author-media py-2 mb-3 border-bottom">
+                <div class="post-author-img">
+                    
+                    <img src="https://res.cloudinary.com/sandodep4/image/upload/w_300/sandodep4_x_179027497304743546577679031874613619737_cajgas" alt="hangbm.LearnEnglish">
+                    
+                </div>
+                <div class="media-body">
+                    <div class="post-author-name"><a target="_blank" href="/u/hangbm.LearnEnglish/">Bùi Hằng</a></div>
+                    <div class="post-meta">10/02/2023</div>
+                </div>
+            </div>
+
+            <div class="post-main-wrapper">
+
+                
+
+                
+                <br>
+                <div class="contentblock gray-bg">
+                    <div class="h5 font-italic">Các bài viết liên quan</div>
+                    
+<ul class="post-links">
+
+
+
+<li class="post-link"><a href="https://LearnEnglish.com/posts/259/cau-truc-de-thi-ielts-chi-tiet-va-chuan-nhat-2024/">Cấu trúc đề thi IELTS chi tiết và chuẩn nhất</a></li>
+
+
+
+
+<li class="post-link"><a href="https://LearnEnglish.com/posts/487/le-phi-thi-ielts-2024-moi-nhat/">Lệ phí thi IELTS mới nhất</a></li>
+
+
+</ul>
+
+                </div>
+                <br><br>
+                
+
+                <div class="post-main mt-2">
+                    
+                    <div id="post-content" class="post-content md-content js-toc-content" prewrap="">
+                        <p style="text-align:center"><strong><img alt="thang-diem-ielts-cach-tinh-diem-ielts" src="https://lh6.googleusercontent.com/cheBCW6_zcigybD7BfIj48OAzSdLqUCiTsEPYuF3-jAcmx9ORYh2l4fAv-QnO7X-UUmgJ3_hFiS5XMpmPE4D-qvrDWo2oOLv_oVqomNMs4fpe8lBraQA3hmzmswX-fxTbLjEBuBqqo-H3es_PM1J2EU" style="height:351px; width:624px"></strong></p>
+
+<p>IELTS luôn được đánh giá là một trong những bài thi tiếng Anh khó nhất. Nếu bạn mong muốn đạt được điểm cao IELTS, việc nắm rõ bảng điểm là một trong những bước đầu quan trọng. Một khi hiểu rõ thang điểm IELTS theo từng kỹ năng và cách tính điểm IELTS, bạn sẽ biết cần phải đạt những tiêu chí gì có được mức điểm mong ước. Hãy cùng LearnEnglish tìm hiểu về thang điểm IELTS và cách tính điểm IELTS Overall chuẩn xác nhất nhé.</p>
+
+<h2 id="i.-tổng-quan-về-ielts"><strong>I. Tổng quan về IELTS</strong></h2>
+
+<h3 id="1.-ielts-là-gì?"><span style="font-size:20px"><strong>1. IELTS là gì?</strong></span></h3>
+
+<p><strong>IELTS (</strong><strong>International English Language Testing System)</strong> là hệ thống đánh giá khả năng sử dụng tiếng Anh cho những người không có tiếng Anh là tiếng mẹ đẻ.</p>
+
+<p>Bài thi IELTS dựa theo 4 kỹ năng chính: <strong>Reading (Đọc), Listening (Nghe), Writing (Viết) và Speaking (Nói)</strong>. Điểm số trên chứng chỉ sẽ rơi vào các mức band điểm IELTS từ 1.0 đến 9.0 cho mỗi kỹ năng, sau đó sẽ được tính trung bình cho điểm overall IELTS.</p>
+
+<p>Hiện nay IELTS được chia thành hai dạng bài thi: <strong>IELTS Academic (Học thuật)</strong> và <strong>IELTS General Training (Tổng quát)</strong>. IELTS Academic chủ yếu được áp dụng cho đầu vào đại học hoặc ứng tuyển công việc, trong khi mục đích chính của IELTS General Training là định cư. Thế nên trước khi thi, bạn hãy xem nhu cầu của mình là gì để chọn bài thi thích hợp nhé!</p>
+
+<p style="text-align:center"><img alt="ielts-la-gi" src="https://lh5.googleusercontent.com/wT_Hui3DT0CX41T7_Km6Ez4rR35q2_BPE-d1Uri4kEvOXwPtoF61zG4b8QWZnvtEFoWko7-00JHeW3jiSrlHiAu7KHQEYqaz3MH0u-IPeUKyxHBUIGYj-cfeShgrib-I7xgcknN9gt17k5fVEXU6jS4" style="height:328px; width:624px"></p>
+
+<p style="text-align:center"><em>IELTS là một hệ thống đánh giá khả năng sử dụng tiếng Anh phổ biến toàn cầu</em></p>
+
+<h3 id="2.-lợi-ích-của-ielts"><span style="font-size:20px"><strong>2. Lợi ích của IELTS</strong></span></h3>
+
+<p>Hiện nay, tiếng Anh là ngôn ngữ toàn cầu số một trên thế giới, nên các chứng chỉ tiếng Anh, trong đó bao gồm IELTS, có sự quan trọng không kém.</p>
+
+<p><span style="-webkit-text-stroke-width:0px; background-color:#ffffff; box-sizing:border-box; color:#1155cc; cursor:pointer; font-family:Roboto,Arial,sans-serif; font-size:16px; font-style:normal; font-variant-caps:normal; font-variant-ligatures:normal; font-weight:400; letter-spacing:normal; orphans:2; text-align:center; text-decoration:none; text-indent:0px; text-transform:none; white-space:normal; widows:2; word-spacing:0px"><em><u><a href="https://LearnEnglish.com/posts/927/lo-trinh-tu-hoc-ielts-online-tu-so-0-den-7-cua-LearnEnglish/" style="box-sizing: border-box; color: rgb(33, 50, 97); text-decoration: none; background-color: rgb(255, 255, 255); cursor: pointer; font-family: Roboto, Arial, sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-align: center;"><img src="https://lh7-us.googleusercontent.com/docsz/AD_4nXdrbv0EPzFGzL0skmJdli6nGlt8TZxscNwKOE1y7BH5-gP4wVM0zYKxXD54Pdn8vbkBz2nZkCw1ANaHcf7lOrsZSrqkSoGS7K3fQgMrcVf2Tf2__YHR7SWvutHOnIyx53z9G0oTyxHoXJLDsq0mxtj6wyg?key=jfhhnNiO6wHc6s-lZa1NXg" style="border-style:none; box-sizing:border-box; display:block; height:84px; margin:1rem auto; max-width:100%; vertical-align:middle; width:600px"></a></u></em></span></p>
+
+<p>Chứng chỉ IELTS là một trong cách test trình độ tiếng Anh phổ biến nhất hiện nay trong môi trường làm việc và học tập. Ngày nay, rất nhiều trường đại học trong nước sử dụng chứng chỉ IELTS làm yêu cầu để được tuyển thẳng và được đổi điểm tốt nghiệp. Một số công ty cũng yêu cầu ứng viên phải có mức band điểm IELTS cụ thể mới được xét duyệt hồ sơ xin việc. Với những người có nhu cầu du học hoặc định cư nước ngoài, chứng chỉ IELTS thường được chọn làm thước đo khả năng thành thạo tiếng Anh.</p>
+
+<p>Thế nên, trong thời đại hội nhập ngày nay, việc sở hữu một chứng chỉ tiếng Anh hữu ích như IELTS nhất định sẽ đem lại nhiều cơ hội cho học tập, công việc và cả cuộc sống hàng ngày.</p>
+
+<p style="text-align:center"><img alt="ielts cho người đi làm" src="https://lh6.googleusercontent.com/AniVp3xnOdCd2Dabt6iPaTUbP2MvDMmgofeabEcKvV4Y3dtN1kyJDsVQoVeHsGdNfg0tdf8fYz4fsWSLeVhdB1B-vmPFvtK8Q_LPlOKHBeM2_cJIIAhsPM1dIjBnbeGnbm_zSKoXrW_doretMZiqkJ0" style="height:416px; width:624px"></p>
+
+<p style="text-align:center"><em>IELTS đem lại nhiều lợi thế trong thời đại ngày nay</em></p>
+
+<h3 id="3.-cấu-trúc-bài-thi-ielts"><span style="font-size:20px"><strong>3. Cấu trúc bài thi IELTS</strong></span></h3>
+
+<p>Bài thi IELTS bao gồm 4 bài thi dựa theo 4 kỹ năng ngôn ngữ chính: Reading, Listening, Writing và Speaking. Mỗi bài thi kỹ năng sẽ được chia thành những part hoặc task riêng, trong đó có nhiều dạng bài khác nhau. Để giúp bạn nắm rõ hơn, LearnEnglish đã cung cấp đầy đủ cấu trúc bài thi IELTS qua bài viết dưới đây.</p>
+
+<p><em><strong>Xem thêm: <a href="https://LearnEnglish.com/posts/259/phan-tich-cau-truc-de-thi-ielts-chi-tiet-2023/">Cấu trúc bài thi IELTS</a></strong></em></p>
+
+<p style="text-align:center"><img alt="format-cua-mot-de-thi-ielts" src="https://lh4.googleusercontent.com/gkHXBiwrVA9Vu94MBchsD1VBOHiQv0_DLoFwadUUiyzx-RzpcFR1I78gDrzlbrtp3-rfbLi6OeixDvVEYpKfLN0LUxOpoMpgQrlkbXdiEqTT9bLC3bGWDdbs0G5IVpLP_oQuF-HIWILFXws3OkEN3Lw" style="height:351px; width:624px"></p>
+
+<p style="text-align:center"><em>Format của một đề thi IELTS</em></p>
+
+<h2 id="ii.-thang-điểm-ielts-và-cách-tính-điểm-ielts-overall"><strong>II. Thang điểm IELTS và cách tính điểm IELTS Overall</strong></h2>
+
+<p>Vì band điểm IELTS được xác định qua điểm số của 4 kỹ năng, vậy nên LearnEnglish sẽ chỉ dẫn bạn cách tính điểm IELTS theo 4 kỹ năng, và sau đó là cách tính điểm overall IELTS nhé!</p>
+
+<h3 id="1.-cách-tính-điểm-ielts-theo-4-kỹ-năng"><span style="font-size:20px"><strong>1. Cách tính điểm IELTS theo 4 kỹ năng</strong></span></h3>
+
+<h4 id="1.1.-cách-tính-điểm-ielts-reading-và-listening"><span style="font-size:18px"><strong>1.1. Cách tính điểm IELTS Reading và Listening</strong></span></h4>
+
+<p>Tại phần thi IELTS Reading và Listening, người thi sẽ được tính điểm theo số câu đúng. Tổng số câu hỏi là 40 cho mỗi phần thi. Mức câu đúng sẽ tương ứng với mức điểm nhất định có trong bảng điểm IELTS bên dưới. Ví dụ, ở phần Listening, nếu bạn làm đúng 16 - 17/40 câu, band IELTS Listening của bạn sẽ là 5.0.</p>
+
+<p>Đối với IELTS Reading Academic và IELTS General Training, điểm Reading sẽ có sự khác biệt. Ví dụ, để đạt band IELTS Reading là 5.0, bạn phải làm đúng 18 - 19 câu trong bài thi Academic, 23-26 câu ở bài thi General. Lý do của sự khác biệt là vì nội dung của hai bài thi không giống nhau.</p>
+
+<p style="text-align:center"><em><img alt="bang-diem-ielts-listening-ielts-reading-academic-general" src="https://lh6.googleusercontent.com/NR5dibKVhyXjsENPbpVYp1OUSU01kz92-i7KB3Y-tp19uBNltto4fVAdkC41w4ZWIwBGj-rk5MOg4EZYF8dZl7kMbMINB67DEeyleapbyC3_hjAxu61JEgaVMByCJ8hgJCPJdLYOiJl7-anumNqRhvM" style="height:783px; width:624px"></em></p>
+
+<p style="text-align:center"><em>Bảng điểm IELTS Listening và IELTS Reading Academic - General Training</em></p>
+
+<h4 id="1.2.-cách-tính-điểm-ielts-writing"><span style="font-size:18px"><strong>1.2. Cách tính điểm IELTS Writing</strong></span></h4>
+
+<p>Phần thi IELTS Writing được chia thành hai task. Bài thi cũng được chia theo hai dạng bài thi IELTS Academic và IELTS General Training. Trong phần thi IELTS General, bài Task 1 có chủ đề là bức thư. IELTS Academic sẽ là các bài phân tích thông tin, dữ liệu như bản đồ, đồ thị, biểu đồ… Task 2 của hai bài sẽ là một bài yêu cầu viết luận theo một vấn đề hoặc chủ đề nào được đưa ra.</p>
+
+<p>Khi chấm điểm IELTS, giám khảo sẽ dựa theo các tiêu chí IELTS Writing được quy định để xác định band điểm của thí sinh:</p>
+
+<ul>
+<li style="list-style-type:disc"><strong>Task Response/Task Achievement: </strong>Xem xét thí sinh có trả lời đúng trọng tâm, hoàn thiện yêu cầu của đề bài không.</li>
+<li style="list-style-type:disc"><strong>Cohesion and Coherence: </strong>Đánh giá sự trôi chảy, mạch lạc trong bài văn. Các luận điểm của bài viết có đầy đủ các ý chính và ý phụ không, có được sắp xếp hợp lý, có sự thuyết phục người đọc không. Ngoài ra còn xem xét xem từ nối có được sử dụng một cách liền mạch và tự nhiên không.</li>
+<li style="list-style-type:disc"><strong>Lexical Resource: </strong>Đánh giá khả năng từ vựng của thí sinh. Từ vựng trong bài được chấm theo sự đa dạng, tự nhiên và đúng ngữ cảnh. Cùng với đó là không mắc lỗi chính tả cơ bản và không lặp đi lặp lại từ nhiều. Khả năng paraphrase (viết lại câu) cũng cần được linh hoạt và khéo léo.</li>
+<li style="list-style-type:disc"><strong>Grammatical Range and Accuracy: </strong>Độ chính xác và đa dạng về ngữ pháp. Để được điểm tốt, bài làm không mắc lỗi ngữ pháp cơ bản, ví dụ như chia động từ sai. Cấu trúc ngữ pháp trong bài cũng nên có sự thay đổi, kết hợp đồng bộ và phù hợp.</li>
+</ul>
+
+<p>Đây là 4 tiêu chí chính được giám khảo áp dụng để chấm điểm IELTS Writing của người thi. Ở mỗi band điểm IELTS Writing sẽ có các yêu cầu về tiêu chí. Vậy nên, nếu bạn muốn đạt được điểm IELTS Writing mong muốn, bạn hãy nắm rõ các tiêu chí này nhé.</p>
+
+<h4 id="1.3.-cách-tính-điểm-ielts-speaking"><span style="font-size:18px"><strong>1.3. Cách tính điểm IELTS Speaking</strong></span></h4>
+
+<p>Cả hai bài thi IELTS Academic và IELTS General đều áp dụng chung hình thức thi IELTS Speaking. Bài thi được thực hiện trực tiếp. Thí sinh và giám khảo sẽ ngồi đối diện nhau trong phòng kín. Tuy nhiên, trong một số trường hợp, ví dụ như khi đang có yêu cầu giãn cách do đại dịch COVID-19, bài thi sẽ được thực hiện theo hình thức online qua phần mềm Zoom.</p>
+
+<p>Thí sinh sẽ trả lời các câu hỏi được đưa ra bởi giám khảo, trong đó các câu hỏi này sẽ được chia thành 3 part. Thời gian làm bài thi IELTS Speaking sẽ nằm trong khoảng 11 đến 14 phút.</p>
+
+<p>Tiêu chí chấm IELTS Speaking được chia thành 4 mục chính tương tự như IELTS Writing:</p>
+
+<ul>
+<li style="list-style-type:disc"><strong>Fluency and Coherence: </strong>Tiêu chí này đánh giá độ lưu loát trong câu trả lời của thí sinh. Bài nói nên mạch lạc, không bị chững lại quá nhiều, quá lâu. Ngoài ra, thí sinh còn được kiểm tra khả năng dùng từ nối hoặc các cụm từ liên kết. Quan trọng nhất là câu trả lời không bị lạc đề.</li>
+<li style="list-style-type:disc"><strong>Lexical Resource:</strong> Tại đây thí sinh sẽ được xem xét vốn từ vựng. Khả năng từ vựng cần linh hoạt, hợp lý trong ngữ cảnh. Số từ không được lặp đi lặp lại nhiều, cùng với việc sử dụng khéo léo các idiom phù hợp và biết cách paraphrase tốt.</li>
+<li style="list-style-type:disc"><strong>Grammatical range and Accuracy: </strong>Cấu trúc ngữ pháp được áp dụng đa dạng và chuẩn xác. Người thi không mắc các lỗi sai cơ bản.</li>
+<li style="list-style-type:disc"><strong>Pronunciation: </strong>Giám khảo sẽ chấm khả năng phát âm của thí sinh xem có dễ nghe, chính xác, rõ ràng không. Cùng với đó là sự tự nhiên của ngữ điệu và không mắc các lỗi sai không đáng.</li>
+</ul>
+
+<h3 id="2.-cách-tính-điểm-ielts-overall"><span style="font-size:20px"><strong>2. Cách tính điểm IELTS Overall</strong></span></h3>
+
+<h4 id="2.1.-công-thức-tính-điểm-ielts-overall"><span style="font-size:18px"><strong>2.1. Công thức tính điểm IELTS Overall</strong></span></h4>
+
+<p>Sau khi đã có mức điểm của từng kỹ năng, điểm cuối cùng để xác định band điểm IELTS của người thi sẽ được tính bằng công thức trung bình cộng cả 4 kỹ năng. Thang điểm IELTS được rơi vào các band điểm từ 1.0 đến 9.0, bao gồm cả mức 0.5. Điểm này có thể được làm tròn lên toàn bộ hoặc lên mức gần nhất.&nbsp;</p>
+
+<p><span style="color:#c0392b"><strong><em>Ví dụ: Điểm thi IELTS bao gồm: 7.0 Reading, 7.5 Listening, 6.5 Writing, 7.0 Speaking.</em></strong></span></p>
+
+<p><span style="color:#c0392b"><strong><em>Vậy điểm overall IELTS sẽ là: (7.0 + 7.5 + 6.5 + 7.0)/4 = 7.</em></strong></span></p>
+
+<p style="text-align:center"><em><img alt="cách tính điểm ielts overall" src="https://lh3.googleusercontent.com/WpQyBl-Jj3WT4U44t7Zz9rmw1pw1hWGpLQIjkk8_7W5vJaF-Ocnc1YZD4BD-Ep1AFJ0iG5ELm-Kbc0LI00SNdqXHsNIppiM9r2q6h4H6FKsHL8uYGkpCTO9lz1Wg3OITbPdKt1Tfh67Da42EihwZacY" style="height:364px; width:624px"></em></p>
+
+<p style="text-align:center"><em>Công thức tính điểm IELTS Overall</em></p>
+
+<h4 id="2.2.-cách-làm-tròn-điểm-ielts-overall"><span style="font-size:18px"><strong>2.2. Cách làm tròn điểm IELTS Overall</strong></span></h4>
+
+<p>Tuy nhiên, điểm tổng của IELTS Overall không phải lúc nào cũng chỉ là một con số. Đôi khi, điểm IELTS sẽ rơi vào số thập phân. Lúc đó, hội đồng thi sẽ áp dụng quy ước làm tròn điểm IELTS để tính điểm cuối cùng cho thí sinh.</p>
+
+<p>Cách làm tròn điểm IELTS được thực hiện theo phần thập phân của kết quả như sau:</p>
+
+<ul>
+<li style="list-style-type:disc"><strong>0.0 đến dưới 0.25: Điểm IELTS sẽ được làm tròn xuống số nguyên đầu.</strong></li>
+<li style="list-style-type:disc"><strong>0.25 đến dưới 0.5: Điểm sẽ được làm tròn lên 0.5.</strong></li>
+<li style="list-style-type:disc"><strong>0.5 đến dưới 0.75: Điểm sẽ làm tròn xuống 0.5.</strong></li>
+<li style="list-style-type:disc"><strong>0.75 đến dưới 1.0: Điểm số làm tròn lên số nguyên sau.</strong></li>
+</ul>
+
+<p><span style="color:#c0392b"><strong><em>*Lưu ý: Quy ước làm tròn điểm chỉ áp dụng với band điểm IELTS cuối, không áp dụng với điểm của từng kỹ năng.</em></strong></span></p>
+
+<p style="text-align:center"><em><img alt="cach-lam-tron-diem-ielts" src="https://lh3.googleusercontent.com/iuXsbDX823uUGjJm8n346wQHJKqIKPa2rGKGMXd4_qw726ytnNaLYy4u769w6CwJylfHkbC0iZpQtcZzB_kFzRbPAiSKNw5yqpl3-7FLacB77SvylICFIkylMUYmW_R1y4OPCdjR-7Fs3Q7Qkp-i4xM" style="height:333px; width:390px"></em></p>
+
+<p style="text-align:center"><em>Cách làm tròn điểm IELTS</em></p>
+
+<p><span style="color:#c0392b"><strong><em>Ví dụ:</em></strong></span></p>
+
+<ul>
+<li style="list-style-type:disc"><span style="color:#c0392b"><strong><em>Điểm cho từng kỹ năng: Listening - 7.5, Reading - 7.5, Writing - 7.0, Speaking 6.5 =&gt; (7.5 + 7.5 + 6.5 + 7.0)/4 = 7.125 =&gt; Band điểm IELTS cuối cùng được làm tròn xuống 7.0.</em></strong></span></li>
+<li style="list-style-type:disc"><span style="color:#c0392b"><strong><em>Điểm cho từng kỹ năng: Listening - 6.0, Reading - 5.5, Writing - 5.0, Speaking 5.0 =&gt; (6.0 + 5.5 + 5.0 + 5.0)/4 = 5.375 =&gt; Band điểm IELTS cuối cùng được làm tròn lên 5.5.</em></strong></span></li>
+<li style="list-style-type:disc"><span style="color:#c0392b"><strong><em>Điểm cho từng kỹ năng: Listening - 6.0, Reading - 7.5, Writing - 5.0, Speaking 5.0 =&gt; (6.0 + 7.5 + 5.0 + 5.0)/4 = 5.875 =&gt; Band điểm IELTS cuối cùng được làm tròn lên 6.0.</em></strong></span></li>
+</ul>
+
+<p style="text-align:center"><em><img alt="cach-cham-diem-bai-thi-ielts" src="https://lh5.googleusercontent.com/IRAJFC64cYoBf47uhWDD91ZlGN-dIEn1b299NQYaFASwV2DfIdScIehjkkMMrAMRJXGRNOTUPhixXUUj_2qCIo25pRfUGFVq_8iejeiGFlCOkonrNqtBNjHXTbJZ4sKlxssEG73T6ZxNKjehjEro7QM" style="height:600px; width:418px"></em></p>
+
+<p style="text-align:center"><em>Cách tính điểm bài thi IELTS</em></p>
+
+<h2 id="iii.-ý-nghĩa-của-thang-điểm-ielts"><strong>III. Ý nghĩa của thang điểm IELTS</strong></h2>
+
+<p>Sau khi tính điểm IELTS, band điểm cuối cùng sẽ phản ánh được trình độ sử dụng tiếng Anh của thí sinh. Ý nghĩa của từng mức band trên thang điểm IELTS được phân tích như sau:</p>
+
+<ul>
+<li style="list-style-type:disc"><strong>Band 0: </strong>Bài làm không có một câu trả lời nào, tương tự như bỏ thi.</li>
+<li style="list-style-type:disc"><strong>Band 1:</strong> Không có kiến thức tiếng Anh nào. Thí sinh không thể dùng tiếng Anh hoặc chỉ biết một ít từ cơ bản.</li>
+<li style="list-style-type:disc"><strong>Band 2: </strong>Trình độ tiếng Anh kém. Thí sinh chỉ biết một ít câu từ đơn giản và áp dụng trong số ít tình huống, chứ chưa có khả năng giao tiếp và viết tiếng Anh.</li>
+<li style="list-style-type:disc"><strong>Band 3: </strong>Trình độ tiếng Anh hạn chế. Thí sinh có thể trò chuyện tiếng Anh đơn giản trong một số trường hợp, tuy nhiên sẽ gặp khó khăn trong giao tiếp hàng ngày.</li>
+<li style="list-style-type:disc"><strong>Band 4: </strong>Mức độ tiếng Anh vẫn còn thiếu sót. Thí sinh có thể cơ bản sử dụng tiếng Anh trong một số trường hợp, nhưng sẽ gặp khó khăn với trường hợp yêu cầu ngôn ngữ phức tạp hơn.</li>
+<li style="list-style-type:disc"><strong>Band 5: </strong>Khả năng dùng tiếng Anh ở mức bình thường. Thí sinh có thể dùng được tiếng Anh, hiểu ý trong phần lớn tình huống, nhưng vẫn còn hay mắc lỗi.</li>
+<li style="list-style-type:disc"><strong>Band 6: </strong>Thí sinh có trình độ tiếng Anh khá. Việc sử dụng tiếng Anh của thí sinh khá ổn, có hiệu quả trong các trường hợp. Tuy nhiên, thí sinh còn mắc một số lỗi nhỏ và ý truyền tải hơi khó hiểu. Nói chung, vẫn có thể sử dụng ổn tiếng Anh trong các trường hợp quen thuộc.</li>
+<li style="list-style-type:disc"><strong>Band 7: </strong>Trình độ tiếng Anh khá tốt. Khả năng ngôn ngữ vững, tuy có mắc một số lỗi sai và ý không rõ trong đôi ít tình huống. Thí sinh vẫn có thể hiểu và sử dụng ổn câu từ phức tạp.</li>
+<li style="list-style-type:disc"><strong>Band 8: </strong>Trình độ tiếng Anh rất tốt. Thí sinh nắm rõ ngôn ngữ, chỉ mắc một ít lỗi nhỏ không đáng kể. Có thể sử dụng ngôn ngữ tốt ở nhiều tình huống yêu cầu cao.</li>
+<li style="list-style-type:disc"><strong>Band 9:</strong> Thí sinh có thể sử dụng tiếng Anh thành thạo. Thí sinh vận dụng tiếng Anh một cách thành thục, có khả năng ngôn ngữ vững chắc, và sử dụng một cách khéo léo, lưu loát.</li>
+</ul>
+
+<p style="text-align:center"><em><img src="https://lh5.googleusercontent.com/9tcV-In_C8XRFANVZM7iLyYEWe0T1FOxgakt8sR7RAVQR97PcjVEC0KcYMDO53a8ZbKEOINgJs-HHywvJmW4dkJsuMktGAjcT50nN8F2f3V_WKHGW25qJ7C_TZXSgeIJ70FNKrfkGvX-UdIm5t595m4" style="height:684px; width:553px"></em></p>
+
+<p style="text-align:center"><em>Mỗi band điểm IELTS phản ánh trình độ tiếng Anh của thí sinh</em></p>
+
+<p>Ngoài ra, trình độ tiếng Anh của người thi có thể được chia theo thang điểm <strong>CEFR - Common European Framework of Reference for Languages</strong>, hay còn gọi là Khung tham chiếu trình độ ngôn ngữ chung của Châu Âu. Thang điểm này được phân thành 6 mức độ từ A1 đến C1. Đây là hệ thống điểm khá phổ biến trên toàn cầu, nhằm mô tả kỹ năng sử dụng tiếng Anh của người học ngôn ngữ.</p>
+
+<p>Cách quy đổi điểm IELTS sang CEFR:</p>
+
+<ul>
+<li style="list-style-type:disc"><strong>Basic User - Trình độ cơ bản: </strong>Chỉ nắm được một số câu từ đơn thuần nhưng vẫn còn yếu. Trình độ này được chia thành 2 mức chính: <strong>A1 - Elementary (Sơ cấp)</strong> và <strong>A2 - Pre-Intermediate (Tiền trung cấp)</strong>. Trong IELTS, người ở mức này thường chưa đủ khả năng để tham gia kì thi và thường rơi vào mức dưới 4.0.</li>
+<li style="list-style-type:disc"><strong>Independent User - Trình độ trung cấp: </strong>Người học tiếng Anh có khả năng tiếng Anh tiến bộ hơn một chút, có thể xác định một số lỗi sai và có khả năng tự học. Trình độ này gồm 2 mức chính: <strong>B1 - Intermediate (Trung cấp)</strong> và <strong>B2 - Upper Intermediate (Trên trung cấp)</strong>. Khi ở mức này người học có thể bắt đầu học và ôn thi IELTS. Người thi IELTS có mức điểm khoảng 4.0 - 6.5 ở trình độ này.</li>
+<li style="list-style-type:disc"><strong>Proficient User - Trình độ thành thạo: </strong>Người học có thể sử dụng tiếng Anh một cách thành thục, có thể áp dụng cho các mục đích yêu cầu cao, như đại học, du học, công việc, định cư… Ở bậc điểm này, ta có 2 mức chính là <strong>C1 - Advanced (Nâng cao)</strong> và <strong>C2 - Proficient (Thành thạo)</strong>. Đồng thời, thang điểm IELTS sẽ nằm trong khoảng mức 7.0 - 9.0.</li>
+</ul>
+
+<p style="text-align:center"><em><img alt="quy-doi-diem-ielts-sang-cefr" src="https://lh6.googleusercontent.com/RAeoFZPqnH9soDPNrweBlg_kZTtL8qWuGq0zSdmt_hCOVI8M4qai_U-ig1RFHnaM54POviOuRG4zIrBNNWtzYbxiZxlGatiLW4ashluuBsRpjigrfWrb2P8MFuzwfam3WiUsaFHM7TtUFg2gQjscGkI" style="height:510px; width:350px"></em></p>
+
+<p style="text-align:center"><em>Cách quy đổi điểm IELTS sang CEFR</em></p>
+
+<h2 id="lời-kết"><strong>Lời kết</strong></h2>
+
+<p>Mong rằng bài viết trên của LearnEnglish đã giúp bạn nắm rõ <strong>thang điểm IELTS và cách tính điểm IELTS </strong>mới nhất và chính xác nhất trong năm 2024. Một khi biết được cách tính điểm IELTS Overall, bạn sẽ dễ dàng xác định được trình độ của bản thân và các tiêu chí để đạt mức band IELTS mong muốn. Nếu có thắc mắc, vui lòng để lại bình luận và LearnEnglish sẽ giải đáp cho bạn nhé!</p>
+
+<p><span style="background-color:#ffffff; color:#1155cc"><em><u><span style="color:#213261; font-family:Roboto, Arial, sans-serif"><span style="background-color:#ffffff; cursor:pointer; font-size:16px; font-style:normal; margin:1rem auto; text-align:center; text-decoration-color:initial; text-decoration-style:initial; text-decoration-thickness:initial"><a href="https://LearnEnglish.com/posts/927/lo-trinh-tu-hoc-ielts-online-tu-so-0-den-7-cua-LearnEnglish/" style="box-sizing: border-box; color: rgb(33, 50, 97); text-decoration: none; background-color: rgb(255, 255, 255); cursor: pointer; font-family: Roboto, Arial, sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-align: center;"><img src="https://lh7-us.googleusercontent.com/docsz/AD_4nXdrbv0EPzFGzL0skmJdli6nGlt8TZxscNwKOE1y7BH5-gP4wVM0zYKxXD54Pdn8vbkBz2nZkCw1ANaHcf7lOrsZSrqkSoGS7K3fQgMrcVf2Tf2__YHR7SWvutHOnIyx53z9G0oTyxHoXJLDsq0mxtj6wyg?key=jfhhnNiO6wHc6s-lZa1NXg" style="border-style:none; box-sizing:border-box; display:block; height:84px; margin:1rem auto; max-width:100%; vertical-align:middle; width:600px"></a></span></span></u></em></span></p>
+                    </div>
+                    
+
+                    
+
+                    
+                </div>
+
+                
+                <div class="post-tags">
+                
+                    <span class="tag">ielts</span>
+                
+                </div>
+                
+                <br>
+
+                <div class="post-comments-wrapper">
+                    <h4 id="bình-luận">Bình luận</h4>
+                    
+
+
+
+<form action="/posts/258/comment/" method="POST" class="mt-2 md-comment-input jqform jqcomment-form" data-reload-html="#obj-comments-258" data-target="#md-comments-box" data-submitting="false">
+    
+<input name="csrfmiddlewaretoken" type="hidden" value="OscsLf1zAvhmabfDeweroM8xqPGxiwfzcvwfaXlFUJY5y7HhsWjqFwKlHsKzfjBz">
+
+
+    
+    
+
+    <div class="input-group">
+        <textarea name="content" rows="1" class="form-control custom-control jqcomment-textarea" placeholder="Chia sẻ cảm nghĩ của bạn ..."></textarea>
+        <div class="input-group-append">
+            <button class="input-group-addon btn btn-primary jqcomment-submit">Gửi</button>
+        </div>
+    </div>
+</form>
+
+
+
+                    <br>
+                    <div id="obj-comments-258" class="jqhtml-loader" data-href="/posts/258/comments/"><div class="comment-item media" style="margin-left: 0.0rem;">
+
+<img class="comment-avatar" src="https://res.cloudinary.com/sandodep7/image/upload/w_300/sandodep7_x_256956495235156974589130509095297641888_vaafcb" alt="Hoàng Quân">
+
+
+<div class="comment-body media-body">
+    <div class="comment-username">
+        <strong>
+            Hoàng Quân
+            
+        </strong>,
+        Tháng 1. 17, 2024
+    </div>
+    <div class="comment-content prewrap">10 điểm</div>
+
+    
+    <div class="comment-reply-action">
+        <a href="#comment-reply-form-69469" data-toggle="collapse" aria-expanded="false"><strong>Trả lời</strong></a>
+
+        
+
+        <div class="comment-reply-form collapse" id="comment-reply-form-69469">
+            
+
+
+
+<form action="/posts/258/comment/" method="POST" class="mt-2 md-comment-input jqform jqcomment-form" data-reload-html="#obj-comments-258" data-target="#md-comments-box" data-submitting="false">
+    
+<input name="csrfmiddlewaretoken" type="hidden" value="6EYgxmhMYIK2bgy67QV2YRpHSK07DZi9uHi3W4BSiWrLzc0Klg01fB1v9n49AME9">
+
+
+    
+    <input type="hidden" name="reply_to" value="69469">
+    
+    
+
+    <div class="input-group">
+        <textarea name="content" rows="1" class="form-control custom-control jqcomment-textarea" placeholder="Chia sẻ cảm nghĩ của bạn ..."></textarea>
+        <div class="input-group-append">
+            <button class="input-group-addon btn btn-primary jqcomment-submit">Gửi</button>
+        </div>
+    </div>
+</form>
+
+
+
+        </div>
+    </div>
+    
+</div>
+</div></div>
+                </div>
+
+                
+                <br>
+                <div class="">
+                    <div class="h3">Có thể bạn sẽ quan tâm</div>
+                    
+<ul class="post-links">
+
+
+
+<li class="post-link"><a href="https://LearnEnglish.com/posts/565/huong-dan-cach-dang-ky-thi-ielts-tai-idp-va-british-council/">Hướng dẫn cách đăng ký thi IELTS tại IDP và British Council</a></li>
+
+
+
+
+<li class="post-link"><a href="https://LearnEnglish.com/posts/655/cau-truc-de-thi-ielts-general-tat-tan-tat-thong-tin-ve-ielts-general-training/">Cấu trúc đề thi IELTS General - Tất tần tật thông tin về IELTS General Training</a></li>
+
+
+</ul>
+
+                </div>
+                
+
+                <br>
+                <div>
+                    <div class="h3">Các bài viết cùng chủ đề</div>
+                    
+<div class="">
+<div class="center">
+    
+        
+        <div class="posts-list">
+        
+            
+<div class="postlist-card">
+
+
+<div class="postlist-card-img sm mb-2">
+    <img class="lazyel card-img entered loaded" data-src="/media/examprep/Post/files/2024/12/05/C%C3%A1ch_d%C3%B9ng_25.png" data-ll-status="loaded" src="/media/examprep/Post/files/2024/12/05/C%C3%A1ch_d%C3%B9ng_25.png">
+</div>
+
+<div class="postlist-card-content-wrapper">
+    
+    <span class="d-block post-topic"><a class="font-weight-bold small" href="/topics/ielts-materials/">IELTS MATERIALS</a></span>
+    
+    <div class="postlist-title-wrapper">
+        
+        <div class="postlist-card-img-sm mb-2">
+            <img class="lazyel card-img" data-src="/media/examprep/Post/files/2024/12/05/C%C3%A1ch_d%C3%B9ng_25.png">
+        </div>
+        
+        <div class="postlist-title"><a href="/posts/1566/tong-hop-tu-vung-ielts-chu-de-education-giao-duc/">Tổng hợp từ vựng IELTS chủ đề Education (Giáo dục)</a></div>
+    </div>
+    <div class="postlist-card-content card-body d-flex flex-column p-0">
+        <p>Nằm lòng topic từ vựng Education cho kỳ thi IELTS qua bài viết này nhé!</p>
+    </div>
+    
+    <div class="postlist-meta">
+        02/12/2024 bởi Phuong Anh Do
+        
+    </div>
+    
+</div>
+</div>
+
+        
+            
+<div class="postlist-card">
+
+
+<div class="postlist-card-img sm mb-2">
+    <img class="lazyel card-img entered loaded" data-src="/media/examprep/Post/files/2024/12/05/C%C3%A1ch_d%C3%B9ng_26.png" data-ll-status="loaded" src="/media/examprep/Post/files/2024/12/05/C%C3%A1ch_d%C3%B9ng_26.png">
+</div>
+
+<div class="postlist-card-content-wrapper">
+    
+    <span class="d-block post-topic"><a class="font-weight-bold small" href="/topics/ielts-materials/">IELTS MATERIALS</a></span>
+    
+    <div class="postlist-title-wrapper">
+        
+        <div class="postlist-card-img-sm mb-2">
+            <img class="lazyel card-img" data-src="/media/examprep/Post/files/2024/12/05/C%C3%A1ch_d%C3%B9ng_26.png">
+        </div>
+        
+        <div class="postlist-title"><a href="/posts/1565/tong-hop-tu-vung-ielts-chu-de-crime-toi-pham/">Tổng hợp từ vựng IELTS chủ đề Crime (Tội phạm)</a></div>
+    </div>
+    <div class="postlist-card-content card-body d-flex flex-column p-0">
+        <p>Tham khảo tổng hợp từ vựng IELTS chủ đề Crime đầy đủ nhất để dễ dàng đạt điểm tốt trong kỳ thi IELTS nhé!</p>
+    </div>
+    
+    <div class="postlist-meta">
+        02/12/2024 bởi Phuong Anh Do
+        
+    </div>
+    
+</div>
+</div>
+
+        
+            
+<div class="postlist-card">
+
+
+<div class="postlist-card-img sm mb-2">
+    <img class="lazyel card-img entered loaded" data-src="/media/examprep/Post/files/2024/12/05/C%C3%A1ch_d%C3%B9ng_27.png" data-ll-status="loaded" src="/media/examprep/Post/files/2024/12/05/C%C3%A1ch_d%C3%B9ng_27.png">
+</div>
+
+<div class="postlist-card-content-wrapper">
+    
+    <span class="d-block post-topic"><a class="font-weight-bold small" href="/topics/ielts-materials/">IELTS MATERIALS</a></span>
+    
+    <div class="postlist-title-wrapper">
+        
+        <div class="postlist-card-img-sm mb-2">
+            <img class="lazyel card-img" data-src="/media/examprep/Post/files/2024/12/05/C%C3%A1ch_d%C3%B9ng_27.png">
+        </div>
+        
+        <div class="postlist-title"><a href="/posts/1564/tong-hop-tu-vung-ielts-chu-de-environment-moi-truong/">Tổng hợp từ vựng IELTS chủ đề Environment (Môi trường)</a></div>
+    </div>
+    <div class="postlist-card-content card-body d-flex flex-column p-0">
+        <p>Học và ghi nhớ chủ đề từ vựng Environment nhanh thuộc và nhớ lâu nhờ tổng hợp từ vựng và tip học từ sau đây!</p>
+    </div>
+    
+    <div class="postlist-meta">
+        02/12/2024 bởi Phuong Anh Do
+        
+    </div>
+    
+</div>
+</div>
+
+        
+            
+<div class="postlist-card">
+
+
+<div class="postlist-card-img sm mb-2">
+    <img class="lazyel card-img entered loaded" data-src="/media/examprep/Post/files/2024/12/05/C%C3%A1ch_d%C3%B9ng_28.png" data-ll-status="loaded" src="/media/examprep/Post/files/2024/12/05/C%C3%A1ch_d%C3%B9ng_28.png">
+</div>
+
+<div class="postlist-card-content-wrapper">
+    
+    <span class="d-block post-topic"><a class="font-weight-bold small" href="/topics/ielts-materials/">IELTS MATERIALS</a></span>
+    
+    <div class="postlist-title-wrapper">
+        
+        <div class="postlist-card-img-sm mb-2">
+            <img class="lazyel card-img" data-src="/media/examprep/Post/files/2024/12/05/C%C3%A1ch_d%C3%B9ng_28.png">
+        </div>
+        
+        <div class="postlist-title"><a href="/posts/1563/tong-hop-tu-vung-ielts-chu-de-vietnam/">Tổng hợp từ vựng IELTS chủ đề Vietnam</a></div>
+    </div>
+    <div class="postlist-card-content card-body d-flex flex-column p-0">
+        <p>Củng cố vốn từ vựng về Việt Nam để thật tự tin trình bày ý tưởng trong phòng thi IELTS nhé!</p>
+    </div>
+    
+    <div class="postlist-meta">
+        02/12/2024 bởi Phuong Anh Do
+        
+    </div>
+    
+</div>
+</div>
+
+        
+            
+<div class="postlist-card">
+
+
+<div class="postlist-card-img sm mb-2">
+    <img class="lazyel card-img entered loaded" data-src="/media/examprep/Post/files/2024/12/05/C%C3%A1ch_d%C3%B9ng_29.png" data-ll-status="loaded" src="/media/examprep/Post/files/2024/12/05/C%C3%A1ch_d%C3%B9ng_29.png">
+</div>
+
+<div class="postlist-card-content-wrapper">
+    
+    <span class="d-block post-topic"><a class="font-weight-bold small" href="/topics/ielts-materials/">IELTS MATERIALS</a></span>
+    
+    <div class="postlist-title-wrapper">
+        
+        <div class="postlist-card-img-sm mb-2">
+            <img class="lazyel card-img" data-src="/media/examprep/Post/files/2024/12/05/C%C3%A1ch_d%C3%B9ng_29.png">
+        </div>
+        
+        <div class="postlist-title"><a href="/posts/1562/tong-hop-tu-vung-ielts-chu-de-traveling-du-lich/">Tổng hợp từ vựng IELTS chủ đề Traveling (Du lịch)</a></div>
+    </div>
+    <div class="postlist-card-content card-body d-flex flex-column p-0">
+        <p>Nằm lòng topic từ vựng Traveling cho kỳ thi IELTS qua bài viết này nhé!</p>
+    </div>
+    
+    <div class="postlist-meta">
+        02/12/2024 bởi Phuong Anh Do
+        
+    </div>
+    
+</div>
+</div>
+
+        
+        </div>
+
+        
+
+
+
+    
+</div>
+</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-md-2 order-md-1">
+        
+        <div class="post-topics-list">
+            <p class="font-12 font-600">
+                Chuyên mục
+            </p>
+        
+            <div class="post-topics-listitem my-2">
+                <a class="text-dark" href="/blog/topics/tim-hieu-ve-learn-english/index.html">
+                    <b>TÌM HIỂU VỀ LEARNENGLISH</b>
+                </a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="/blog/topics/tinh-nang-tren-learn-english/index.html">
+                    Tính năng trên LearnEnglish
+                </a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">KHÓA HỌC TRÊN LEARNENGLISH</a>
+            </div>
+        
+            <hr>
+        
+            <div class="post-topics-listitem my-2">
+                <a class="text-dark" href="#" onclick="showNotification()">
+                    <b>Review của học viên LearnEnglish</b>
+                </a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Học viên IELTS</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Học viên TOEIC</a>
+            </div>
+        
+            <hr>
+        
+            <div class="post-topics-listitem my-2">
+                <a class="text-dark" href="#" onclick="showNotification()">
+                    <b>Luyện thi IELTS</b>
+                </a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">IELTS Listening</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">IELTS Reading</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">IELTS Speaking</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">IELTS Writing</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">IELTS Materials</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Thông tin kỳ thi IELTS</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Kinh nghiệm thi IELTS</a>
+            </div>
+        
+            <hr>
+        
+            <div class="post-topics-listitem my-2">
+                <a class="text-dark" href="#" onclick="showNotification()">
+                    <b>Luyện thi TOEIC</b>
+                </a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">TOEIC Listening</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">TOEIC Reading</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">TOEIC Materials</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Thông tin kỳ thi TOEIC</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Kinh nghiệm thi TOEIC</a>
+            </div>
+        
+            <hr>
+        
+            <div class="post-topics-listitem my-2">
+                <a class="text-dark" href="#" onclick="showNotification()">
+                    <b>Tiếng Anh cơ bản</b>
+                </a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Phát âm</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Từ vựng</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Ngữ pháp</a>
+            </div>
+        
+            <hr>
+        
+            <div class="post-topics-listitem my-2">
+                <a class="text-dark" href="#" onclick="showNotification()">
+                    <b>Luyện Thi HSK-HSKK</b>
+                </a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Tiếng Trung cơ bản</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Kiến thức HSK-HSKK</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Thông tin kỳ thi HSK-HSKK</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Kinh nghiệm thi HSK-HSKK</a>
+            </div>
+        
+            <hr>
+        
+            <div class="post-topics-listitem my-2">
+                <a class="text-dark" href="#" onclick="showNotification()">
+                    <b>Tiếng Anh cho người đi làm</b>
+                </a>
+            </div>
+        
+            <hr>
+        
+            <div class="post-topics-listitem my-2">
+                <a class="text-dark" href="#" onclick="showNotification()">
+                    <b>Du học</b>
+                </a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Admission essays</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Kinh nghiệm du học</a>
+            </div>
+        
+            <hr>
+        </div>
+        
+        <script>
+            function showNotification() {
+                alert("Bài viết này sẽ được cập nhật trong tương lai");
+            }
+        </script>
+        
+<hr>
+
+</div>
+
+    </div>
+</div>
+</div>
+
+                
+            </div>
+            
+        </div>
+        
+
+        <div class="footer-wrapper">
+
+</div>
+    </div>
+
+    <div class="modal" id="site-modal-lg" tabindex="-1" aria-labelledby="site-modal-lg" aria-hidden="true" data-keyboard="false" data-backdrop="static">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+                <div class="modal-body" id="site-modal-lg-content"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="site-modal-md" tabindex="-1" aria-labelledby="site-modal-md" aria-hidden="true" data-keyboard="false" data-backdrop="static">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+                <div class="modal-body" id="site-modal-md-content"></div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+window.csrf_token = 'OscsLf1zAvhmabfDeweroM8xqPGxiwfzcvwfaXlFUJY5y7HhsWjqFwKlHsKzfjBz';
+window.current_user =
+
+{
+    is_authenticated: true,
+    id: 1532546,
+    name: "chauthithuyquynh2019",
+    is_admin: false,
+    is_staff: false,
+    is_superuser: false,
+}
+
+</script>
+    <script type="text/javascript" src="/static/ckeditor/ckeditor-init-override.js?v=1735926894"></script>
+    <script type="text/javascript" src="/static/ckeditor/ckeditor/ckeditor.js"></script>
+    <script type="text/javascript" src="/static/js/webaudiorecorder/WebAudioRecorder.min.js"></script>
+    <script type="text/javascript" src="/static/dist/vendor.ad60eb658fc650d75097.js?v=1735926894"></script>
+    <script type="text/javascript" src="/static/dist/main.651d8fa8cadf332cd75a.js?v=1735926894"></script>
+
+    
+
+<script type="text/javascript">
+$(function() {
+    const isInternalCourseURL = (url) => (new URL(url).origin == location.origin && (url.indexOf('/courses/') > -1 || url.indexOf('/lp/')) > -1);
+    $('.post-content a').each(function(idx,el) {
+        var $link = $(el);
+        var url = $link.attr('href');
+        if (isInternalCourseURL(url)) {
+            var qs = generate_qs({
+                'itm_source': 'seo',
+                'itm_medium': 'article',
+                'itm_campaign': 'blogpost_internal_link',
+                'itm_content': '258'
+            });
+            var new_url = url + '?' + qs;
+            $link.attr('href', new_url);
+        }
+    });
+});
+</script>
+
+    <script type="text/javascript">
+        function isFacebookApp() {
+            var ua = navigator.userAgent || navigator.vendor || window.opera;
+            return (ua.indexOf("FBAN") > -1) || (ua.indexOf("FBAV") > -1);
+        }
+        if (isFacebookApp()) {
+            $('.g-login-block').hide();
+        }
+    </script>
+
+    
+
+    
+    
+    
+
+
+    
+    
+    
+
+
+    
+    <script type="text/javascript">
+        (function(w,d,t,u,n,a,m){w['MauticTrackingObject']=n;
+            w[n]=w[n]||function(){(w[n].q=w[n].q||[]).push(arguments)},a=d.createElement(t),
+            m=d.getElementsByTagName(t)[0];a.async=1;a.src=u;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://mautic.LearnEnglish.com/mtc.js','mt');
+
+        
+            
+            mt('send', 'pageview', {
+                email: "chauthithuyquynh2019@gmail.com",
+                uid: "1532546",
+                username: "chauthithuyquynh2019",
+                is_paid: false,
+                is_trial: true
+            });
+            
+        
+    </script>
+    
+<script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon="{&quot;rayId&quot;:&quot;8fcc79d388a9f93c&quot;,&quot;serverTiming&quot;:{&quot;name&quot;:{&quot;cfExtPri&quot;:true,&quot;cfL4&quot;:true,&quot;cfSpeedBrain&quot;:true,&quot;cfCacheStatus&quot;:true}},&quot;version&quot;:&quot;2024.10.5&quot;,&quot;token&quot;:&quot;8d646591bd144e069b89dada41cfc02b&quot;}" crossorigin="anonymous"></script>
+
+
+    <div class="highlight-control" style="display: none; top: -35px;">
+        <div>
+            <span class="fas fa-trash highlight-icon highlight-remove"></span>
+            <span class="fas fa-pencil highlight-icon highlight-note"></span>
+            <span class="highlight-icon highlight-color blue"></span>
+            <span class="highlight-icon highlight-color pink"></span>
+            <span class="highlight-icon highlight-color green"></span>
+            <span class="highlight-icon highlight-color yellow"></span>
+            <span class="highlight-icon highlight-color underred"></span>
+            <span class="highlight-icon highlight-color crossed">abc</span>
+            <span class="ml-2 fas fa-plus highlight-icon highlight-flashcard" data-toggle="modal" data-target="#highlight-modal"></span>
+        </div>
+        <div class="highlight-editor" style="display: none;">
+            <textarea rows="3"></textarea>
+            <div><span class="far fa-check highlight-icon highlight-save"></span></div>
+        </div>
+    </div>
+    <div class="modal" id="highlight-modal" tabindex="-1" aria-labelledby="highlight-modal" aria-hidden="true" data-keyboard="false" data-backdrop="static">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+                <div class="modal-body" id="highlight-modal-content"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="footer-wrapper" bis_skin_checked="1">
+        <div class="footer-container" bis_skin_checked="1">
+            <footer>
+
+
+
+                <div class="row" bis_skin_checked="1">
+                    <div class="col-12 col-sm-12 col-md" bis_skin_checked="1">
+                        <a href="/"><img class="mb-2" src="/assets/img/Logo_LearnEnglish.svg" alt="" height="30"></a>
+                        <small class="mb-2">©</small>
+                        <div class="site-socials" style="width: 140px !important;" bis_skin_checked="1">
+                            <a target="_blank" href="https://facebook.com/" bis_skin_checked="1"><span
+                                    class="social-link fab fa-facebook-square"></span></a>
+                            <a target="_blank" href="https://instagram.com/" bis_skin_checked="1"><span
+                                    class="social-link fab fa-instagram"></span></a>
+                            <a target="_blank" href="https://twitter.com/" bis_skin_checked="1"><span
+                                    class="social-link fab fa-twitter"></span></a>
+                            <a target="_blank" href="https://youtube.com/" bis_skin_checked="1"><span
+                                    class="social-link fab fa-youtube"></span></a>
+                            <a target="_blank" href="https://www.tiktok.com" bis_skin_checked="1"><span
+                                    class="social-link fab fa-tiktok"></span></a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md" bis_skin_checked="1">
+                        <div class="footer-title" bis_skin_checked="1">Về LearnEnglish</div>
+                        <ul class="list-unstyled text-small">
+                            <li><a href="/about/" bis_skin_checked="1">Giới thiệu</a></li>
+                            <li><a href="/contact/" bis_skin_checked="1">Liên hệ</a></li>
+                            <li><a href="/privacy/" bis_skin_checked="1">Điều khoản bảo mật</a></li>
+                            <li><a href="/terms/" bis_skin_checked="1">Điều khoản sử dụng</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-6 col-md" bis_skin_checked="1">
+                        <div class="footer-title" bis_skin_checked="1">Tài nguyên</div>
+                        <ul class="list-unstyled text-small">
+
+                            <li><a href="/tests/" bis_skin_checked="1">Thư viện đề thi</a></li>
+                            <li><a href="/posts/" bis_skin_checked="1">Blog</a></li>
+                            <li><a href="/materials/" bis_skin_checked="1">Kho tài liệu</a></li>
+
+
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md" bis_skin_checked="1">
+                        <div class="footer-title" bis_skin_checked="1">Chính sách chung</div>
+                        <ul class="list-unstyled text-small">
+                            <li><a href="/user-guide/" bis_skin_checked="1">Hướng dẫn sử dụng</a></li>
+                            <li><a href="/buying-guide/" bis_skin_checked="1">Hướng dẫn thanh toán</a></li>
+
+                            <li><a href="/buying-terms/" bis_skin_checked="1">Điều khoản và Điều Kiện Giao Dịch</a></li>
+                            <li><a href="/checkout-policy" bis_skin_checked="1">Chính sách kiểm hàng</a></li>
+                            <li><a href="/delivery-policy" bis_skin_checked="1">Chính sách giao, nhận hàng</a></li>
+                            <li><a href="/feedback/" bis_skin_checked="1">Phản hồi, khiếu nại</a></li>
+                            <li><a href="/return-policy" bis_skin_checked="1">Chính sách chuyển đổi, hoàn hủy</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+
+                <div class="footer-copyright text-center" bis_skin_checked="1">
+                    LearnEnglish © Bản quyền của GROUP11.
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,189 +1,407 @@
 <!DOCTYPE html>
 <html lang="vi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Learn English</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/footer.css">
-   
+    <link
+      rel="icon"
+      href="/assets/img/Avatar_LearnEnglish.svg"
+      type="image/svg+xml"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/f9374b778e.js"
+      crossorigin="anonymous"
+    ></script>
     <style>
+      /* Phần main */
+      main {
+        padding: 40px;
+      }
 
-/* Phần main */
-main {
-  padding: 40px;
-}
+      /* Phần giới thiệu */
+      .intro {
+        text-align: center;
+        margin-bottom: 40px;
+      }
 
-/* Phần giới thiệu */
-.intro {
-  text-align: center;
-  margin-bottom: 40px;
-}
+      .intro h1 {
+        margin-top: 66px;
+        font-size: 36px;
+        color: #333;
+        margin-bottom: 20px;
+      }
 
-.intro h1 {
-  font-size: 36px;
-  color: #333;
-  margin-bottom: 20px;
-}
+      /* Bố trí hình ảnh và phần text bên phải */
+      .image-container {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        max-width: 100%; /* Đảm bảo hình ảnh không quá lớn */
+      }
 
-/* Bố trí hình ảnh và phần text bên phải */
-.image-container {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+      .image-container img {
+        width: 100%;
+        height: auto; /* Giữ tỷ lệ khung hình của ảnh */
+        border-radius: 10px; /* Tùy chọn: bo góc ảnh */
+      }
+      .text-overlay {
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+        color: white;
+        text-align: center;
+      }
 
-.image-container img {
-  width: 100%;
-  height: auto;
-  max-width: 1200px;
-  border-radius: 10px; /* Bo tròn các góc của hình ảnh */
-}
+      .text-overlay p {
+        font-size: 18px;
+        margin-bottom: 15px;
+        background-color: rgba(0, 0, 0, 0.6); /* Nền mờ */
+        padding: 1%; /* Padding chỉ bao quanh text */
+        display: inline-block; /* Lọc phần nền chữ theo đúng kích thước chữ */
+        border-radius: 5px; /* Bo tròn nền chữ */
+      }
 
-.text-overlay {
-  position: absolute;
-  right: 20px;
-  bottom: 20px;
-  color: white;
-  text-align: center;
-}
+      /* Nút Start assessment không có nền đen */
+      .text-overlay button {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 58px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
 
-.text-overlay p {
-  font-size: 18px;
-  margin-bottom: 15px;
-  background-color: rgba(0, 0, 0, 0.6);  /* Nền mờ */
-  padding: 1%;   /* Padding chỉ bao quanh text */
-  display: inline-block; /* Lọc phần nền chữ theo đúng kích thước chữ */
-  border-radius: 5px; /* Bo tròn nền chữ */
-}
-
-/* Nút Start assessment không có nền đen */
-.text-overlay button {
-  padding: 10px 20px;
-  background-color: #007BFF;
-  color: white;
-  border: none;
-  border-radius: 58px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.text-overlay button:hover {
-  background-color: #0056b3;
-}
-
-
+      .text-overlay button:hover {
+        background-color: #0056b3;
+      }
     </style>
-</head>
+  </head>
 
-<body>
-    <header> 
-      <div class="logoweb">
-        <a href="index.html" style="text-decoration: none; color: inherit; display: flex; align-items: center;">
-          <img src="assets/img/logoWeb.png" alt="LearnEnglish" style="margin-right: 10px;"> <!-- Thêm margin-right để tạo khoảng cách giữa logo và chữ -->
-          <span>LearnEnglish</span> 
-        </a>
-      </div>
-        <nav>
-            <ul>
-                <li><a href="course.html" >Course</a></li>
-                <li><a href="flashcards.html">Flashcards</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="progressTracking.html">ProgressTracking</a></li>
-                <li><a href="Gamification.html">Gamification</a></li>
-                <li><a href="signIn.html" class="signIn">Sign In</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <main>
-        <section class="intro">
-            <h1>Welcome to a new day of growth and possibilities!</h1>
-            <div class="image-container">
-                <img src="assets/img/anhnen.svg" alt="English Learning">
-                <div class="text-overlay">
-                    <p>Unlock your potential – Free and reliable English</p>
-                    <button>Start !</button>
+  <body>
+    <div class="topnav1 topnav-wrapper" bis_skin_checked="1">
+      <div class="topnav-container" bis_skin_checked="1">
+        <nav class="navbar navbar-expand-lg">
+          <span class="navbar-brand">
+            <a class="topnav-brand" href="/">
+              <img
+                class="topnav-logo"
+                src="/assets/img/Logo_LearnEnglish.svg"
+                alt="STUDY4"
+              />
+            </a>
+          </span>
+          <button
+            class="navbar-toggler pull-xs-right d-lg-none"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbar-collapse"
+          >
+            ☰
+          </button>
+          <div
+            class="d-lg-block navbar-collapse justify-content-end collapse"
+            id="navbar-collapse"
+            bis_skin_checked="1"
+          >
+            <ul class="nav">
+              <li class="nav-item">
+                <a class="nav-link" href="/courses" bis_skin_checked="1"
+                  >Course</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/skills/" bis_skin_checked="1"
+                  >Skill</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/flashcards/me/" bis_skin_checked="1"
+                  >Flashcards</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/blog" bis_skin_checked="1">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="/general-english/"
+                  bis_skin_checked="1"
+                  >General english</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="/courses/activate/"
+                  bis_skin_checked="1"
+                >
+                  Kích hoạt tài khoản
+                </a>
+              </li>
+
+              <li class="nav-item user-topnav dropdown d-none d-lg-block">
+                <a
+                  class="nav-link dropdown-toggle user-topnav-profile"
+                  href="/my-account/"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  bis_skin_checked="1"
+                >
+                  <span class="account-profile-img">
+                    <img
+                      src="/assets/img/user_icon.webp"
+                      alt="ChuTanTai23130280"
+                    />
+                  </span>
+                </a>
+
+                <div
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink"
+                  bis_skin_checked="1"
+                >
+                  <div bis_skin_checked="1">
+                    <h6 class="dropdown-header" id="thông-báo">Thông báo</h6>
+                    <div
+                      id="new-notis-dropdown-content"
+                      class="jqhtml-loader dropdown-text"
+                      data-href="/notifications/newest/"
+                      bis_skin_checked="1"
+                    >
+                      <p class="font-sm"><i>Bạn chưa có thông báo mới.</i></p>
+
+                      <div class="mt-2 link font-sm" bis_skin_checked="1">
+                        <a href="/notifications/" bis_skin_checked="1"
+                          >Xem tất cả &gt;&gt;</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="dropdown-divider" bis_skin_checked="1"></div>
+                  <a
+                    class="dropdown-item"
+                    href="/studyplan/"
+                    bis_skin_checked="1"
+                    >Lịch học của tôi</a
+                  >
+                  <a
+                    class="dropdown-item"
+                    href="/my-account/"
+                    bis_skin_checked="1"
+                    >Trang cá nhân</a
+                  >
+                  <a class="dropdown-item" href="/logout/" bis_skin_checked="1"
+                    >Đăng xuất</a
+                  >
                 </div>
-            </div>
-        </section>
+              </li>
+              <li class="nav-item d-lg-none">
+                <a class="nav-link" href="/notifications/" bis_skin_checked="1"
+                  >Thông báo
+                </a>
+              </li>
+              <li class="nav-item d-lg-none">
+                <a class="nav-link" href="/studyplan/" bis_skin_checked="1"
+                  >Lịch học của tôi</a
+                >
+              </li>
+              <li class="nav-item d-lg-none">
+                <a class="nav-link" href="/my-account/" bis_skin_checked="1"
+                  >Trang cá nhân</a
+                >
+              </li>
+              <li class="nav-item d-lg-none">
+                <a class="nav-link" href="/logout/" bis_skin_checked="1"
+                  >Đăng xuất</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <script>
+      // JavaScript để xử lý dropdown
+      document.addEventListener("DOMContentLoaded", function () {
+        const profileBtn = document.querySelector(".user-topnav-profile");
+        const dropdownMenu = document.querySelector(".dropdown-menu");
+
+        // Toggle dropdown khi click vào profile
+        profileBtn.addEventListener("click", function (e) {
+          e.preventDefault();
+          dropdownMenu.classList.toggle("show");
+        });
+
+        // Đóng dropdown khi click ra ngoài
+        document.addEventListener("click", function (e) {
+          if (
+            !profileBtn.contains(e.target) &&
+            !dropdownMenu.contains(e.target)
+          ) {
+            dropdownMenu.classList.remove("show");
+          }
+        });
+      });
+    </script>
+
+    <main>
+      <section class="intro">
+        <h1>Welcome to a new day of growth and possibilities!</h1>
+        <div class="image-container">
+          <img src="assets/img/tai-lieu-hoc-tap.jpg" alt="English Learning" />
+          <div class="text-overlay">
+            <p>Unlock your potential – Free and reliable English</p>
+            <a href="/test">
+              <button>Start!</button>
+            </a>
+          </div>
+        </div>
+      </section>
     </main>
 
-
-
-    <div class="footer-wrapper"> <link rel="stylesheet" href="/css/footer.css">
-        <div class="footer-container">
-            <footer>
-                <div class="footer-row">
-                    <!-- Logo và các mạng xã hội -->
-                    <div class="footer-col">
-                        <a href="index.html"
-                            style="text-decoration: none; color: inherit; display: flex; align-items: center;">
-                            <img src="assets/img/logoWeb.png" height="65" style="margin-right: 5px;">
-                            <!-- Thêm margin-right để tạo khoảng cách giữa logo và chữ -->
-                            <span><b>LearnEnglish</b></span>
-                        </a>
-
-                        <div class="site-socials">
-                            <!-- Facebook -->
-                            <a target='_blank' href='https://facebook.com'>
-                                <img class='social-link' src='assets/img/fb_logo.jpg' height="50">
-                            </a>
-                            <!-- Instagram -->
-                            <a target='_blank' href='https://instagram.com'>
-                                <img class='social-link' src='assets/img/ins_logo.jpg' height="50" >
-                            </a>
-                            <!-- Tiktok -->
-                            <a target='_blank' href='https://www.tiktok.com'>
-                                <img class='social-link' src='assets/img/tik_logo.jpg' height="50">
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Liên kết các mục của footer -->
-                    <div class="footer-col">
-                        <div class='footer-title'>LearnEnglish</div>
-                        <ul class="footer-links">
-                            <li><a href="/about/">Về chúng tôi</a></li>
-                            <li><a href="/contact/">Liên hệ</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="footer-col">
-                        <div class='footer-title'>Tài nguyên</div>
-                        <ul class="footer-links">
-                            <li><a href="/tests/">Thư viện đề thi</a></li>
-                            <li><a href="/posts/">Blog</a></li>
-                            <li><a href="/materials/">Kho tài liệu</a></li>
-                            <li><a href="/groups/">Nhóm học tập</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="footer-col">
-                        <div class='footer-title'>Chính sách chung</div>
-                        <ul class="footer-links">
-                            <li><a href="/user-guide/">Hướng dẫn sử dụng</a></li>
-                            <li><a href="/buying-guide/">Hướng dẫn thanh toán</a></li>
-                            <li><a href="/privacy/">Điều khoản bảo mật</a></li>
-                            <li><a href="/terms/">Điều khoản sử dụng</a></li>
-                            <li><a href="/buying-terms/">Điều khoản và Điều Kiện Giao Dịch</a></li>
-                            <li><a href="/checkout-policy">Chính sách kiểm hàng</a></li>
-                            <li><a href="/delivery-policy">Chính sách giao, nhận hàng</a></li>
-                            <li><a href="/feedback/">Phản hồi, khiếu nại</a></li>
-                            <li><a href="/return-policy">Chính sách chuyển đổi, hoàn hủy</a></li>
-                        </ul>
-                    </div>
-                </div>
-
-
-            <div class='footer-copyright text-center'>
-                © Bản quyền của Công ty TNHH Công Nghệ TAQ.
+    <div class="footer-wrapper" bis_skin_checked="1">
+      <div class="footer-container" bis_skin_checked="1">
+        <footer>
+          <div class="row" bis_skin_checked="1">
+            <div class="col-12 col-sm-12 col-md" bis_skin_checked="1">
+              <a href="/"
+                ><img
+                  class="mb-2"
+                  src="/assets/img/Logo_LearnEnglish.svg"
+                  alt=""
+                  height="30"
+              /></a>
+              <small class="mb-2">©</small>
+              <div
+                class="site-socials"
+                style="width: 140px !important"
+                bis_skin_checked="1"
+              >
+                <a
+                  target="_blank"
+                  href="https://facebook.com/"
+                  bis_skin_checked="1"
+                  ><span class="social-link fab fa-facebook-square"></span
+                ></a>
+                <a
+                  target="_blank"
+                  href="https://instagram.com/"
+                  bis_skin_checked="1"
+                  ><span class="social-link fab fa-instagram"></span
+                ></a>
+                <a
+                  target="_blank"
+                  href="https://twitter.com/"
+                  bis_skin_checked="1"
+                  ><span class="social-link fab fa-twitter"></span
+                ></a>
+                <a
+                  target="_blank"
+                  href="https://youtube.com/"
+                  bis_skin_checked="1"
+                  ><span class="social-link fab fa-youtube"></span
+                ></a>
+                <a
+                  target="_blank"
+                  href="https://www.tiktok.com"
+                  bis_skin_checked="1"
+                  ><span class="social-link fab fa-tiktok"></span
+                ></a>
+              </div>
             </div>
-            </footer>
-        </div>
-    </div>
-</body>
+            <div class="col-6 col-md" bis_skin_checked="1">
+              <div class="footer-title" bis_skin_checked="1">
+                Về LearnEnglish
+              </div>
+              <ul class="list-unstyled text-small">
+                <li><a href="/about/" bis_skin_checked="1">Giới thiệu</a></li>
+                <li><a href="/contact/" bis_skin_checked="1">Liên hệ</a></li>
+                <li>
+                  <a href="/privacy/" bis_skin_checked="1"
+                    >Điều khoản bảo mật</a
+                  >
+                </li>
+                <li>
+                  <a href="/terms/" bis_skin_checked="1">Điều khoản sử dụng</a>
+                </li>
+              </ul>
+            </div>
 
+            <div class="col-6 col-md" bis_skin_checked="1">
+              <div class="footer-title" bis_skin_checked="1">Tài nguyên</div>
+              <ul class="list-unstyled text-small">
+                <li>
+                  <a href="/tests/" bis_skin_checked="1">Thư viện đề thi</a>
+                </li>
+                <li><a href="/posts/" bis_skin_checked="1">Blog</a></li>
+                <li>
+                  <a href="/materials/" bis_skin_checked="1">Kho tài liệu</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-6 col-md" bis_skin_checked="1">
+              <div class="footer-title" bis_skin_checked="1">
+                Chính sách chung
+              </div>
+              <ul class="list-unstyled text-small">
+                <li>
+                  <a href="/user-guide/" bis_skin_checked="1"
+                    >Hướng dẫn sử dụng</a
+                  >
+                </li>
+                <li>
+                  <a href="/buying-guide/" bis_skin_checked="1"
+                    >Hướng dẫn thanh toán</a
+                  >
+                </li>
+
+                <li>
+                  <a href="/buying-terms/" bis_skin_checked="1"
+                    >Điều khoản và Điều Kiện Giao Dịch</a
+                  >
+                </li>
+                <li>
+                  <a href="/checkout-policy" bis_skin_checked="1"
+                    >Chính sách kiểm hàng</a
+                  >
+                </li>
+                <li>
+                  <a href="/delivery-policy" bis_skin_checked="1"
+                    >Chính sách giao, nhận hàng</a
+                  >
+                </li>
+                <li>
+                  <a href="/feedback/" bis_skin_checked="1"
+                    >Phản hồi, khiếu nại</a
+                  >
+                </li>
+                <li>
+                  <a href="/return-policy" bis_skin_checked="1"
+                    >Chính sách chuyển đổi, hoàn hủy</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer-copyright text-center" bis_skin_checked="1">
+            LearnEnglish © Bản quyền của GROUP11.
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
 </html>

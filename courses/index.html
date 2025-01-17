@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn English</title>
+    <link rel="icon" href="/assets/img/Avatar_LearnEnglish.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/f9374b778e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  
+  
+
+  <div class="topnav1 topnav-wrapper" bis_skin_checked="1">
+    <div class="topnav-container" bis_skin_checked="1">
+        <nav class="navbar  navbar-expand-lg">
+            <span class="navbar-brand">
+                <a class="topnav-brand" href="/">
+                    <img class="topnav-logo" src="/assets/img/Logo_LearnEnglish.svg" alt="STUDY4">
+                    
+                </a>
+            </span>
+            <button class="navbar-toggler pull-xs-right d-lg-none" type="button" data-toggle="collapse" data-target="#navbar-collapse">
+                ☰
+                
+            </button>
+            <div class="d-lg-block navbar-collapse justify-content-end collapse" id="navbar-collapse" bis_skin_checked="1">
+                
+                <ul class="nav">
+                    
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="/courses" bis_skin_checked="1">Course</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="/skill.html" bis_skin_checked="1">Skill</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="/flashcards/me/" bis_skin_checked="1">Flashcards</a>
+                    </li>
+                    
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/blog" bis_skin_checked="1">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/generalEnglish.html" bis_skin_checked="1">General english</a>
+                    </li>
+
+                    
+
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/courses/activate/" bis_skin_checked="1">
+                            Kích hoạt tài khoản
+                        </a>
+                    </li>
+                    
+                    <li class="nav-item user-topnav dropdown d-none d-lg-block">
+                        <a class="nav-link dropdown-toggle user-topnav-profile" href="/my-account/" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" bis_skin_checked="1">
+                            <span class="account-profile-img">
+                                
+                                <img src="/assets/img/user_icon.webp" alt="ChuTanTai23130280">
+                                
+                            </span>
+                            
+                        </a>
+
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" bis_skin_checked="1">
+                            <div bis_skin_checked="1">
+                                <h6 class="dropdown-header" id="thông-báo"> Thông báo </h6>
+                                <div id="new-notis-dropdown-content" class="jqhtml-loader dropdown-text" data-href="/notifications/newest/" bis_skin_checked="1"><p class="font-sm"><i>Bạn chưa có thông báo mới.</i></p>
+
+
+<div class="mt-2 link font-sm" bis_skin_checked="1"><a href="/notifications/" bis_skin_checked="1">Xem tất cả &gt;&gt;</a></div></div>
+                            </div>
+
+                            <div class="dropdown-divider" bis_skin_checked="1"></div>
+                            <a class="dropdown-item" href="/studyplan/" bis_skin_checked="1">Lịch học của tôi</a>
+                            <a class="dropdown-item" href="/my-account/" bis_skin_checked="1">Trang cá nhân</a>
+                            <a class="dropdown-item" href="/logout/" bis_skin_checked="1">Đăng xuất</a>
+                        </div>
+                    </li>
+                    <li class="nav-item d-lg-none">
+                        <a class="nav-link" href="/notifications/" bis_skin_checked="1">Thông báo </a>
+                    </li>
+                    <li class="nav-item d-lg-none">
+                        <a class="nav-link" href="/studyplan/" bis_skin_checked="1">Lịch học của tôi</a>
+                    </li>
+                    <li class="nav-item d-lg-none">
+                        <a class="nav-link" href="/my-account/" bis_skin_checked="1">Trang cá nhân</a>
+                    </li>
+                    <li class="nav-item d-lg-none">
+                        <a class="nav-link" href="/logout/" bis_skin_checked="1">Đăng xuất</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </nav>
+    </div>
+</div>
+<script>
+    // JavaScript để xử lý dropdown
+    document.addEventListener('DOMContentLoaded', function() {
+        const profileBtn = document.querySelector('.user-topnav-profile');
+        const dropdownMenu = document.querySelector('.dropdown-menu');
+    
+        // Toggle dropdown khi click vào profile
+        profileBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            dropdownMenu.classList.toggle('show');
+        });
+    
+        // Đóng dropdown khi click ra ngoài
+        document.addEventListener('click', function(e) {
+            if (!profileBtn.contains(e.target) && !dropdownMenu.contains(e.target)) {
+                dropdownMenu.classList.remove('show');
+            }
+        });
+    });
+</script>
+
+
+
+
+  <!-- Main Course Section -->
+  <section class="course-section container mx-auto">
+    <h2 class="course-title1">Course</h2>
+
+    <!-- Search Bar -->
+    <div class="search-bar">
+      <input type="text" id="searchInput" oninput="searchCourses()" placeholder="Tìm kiếm khóa học..." />
+    </div>
+
+    <!-- Course 1 -->
+<a class="course-card course" href="/courses/practical1-english-ted.html">
+  <img src="/assets/img/practical1.webp" alt="Course Logo" />
+  <div class="course-info">
+    <h3 class="course-title">
+      Luyện nghe nói tiếng Anh cùng TED Talks
+    </h3>
+    <div class="course-meta">
+      <span>5.0 </span>
+      <span>(5 Đánh giá)</span>
+      <span>36,933 Học viên</span>
+    </div>
+    <ul style="list-style-type: disc;">
+      <li>Luyện kỹ năng nghe và đọc hiểu thông qua việc xem và chép chính tả với các video của TED và TED Talks.</li>
+      <li>Luyện kỹ năng nói thông qua phương pháp shadowing có chấm lỗi phát âm tự động.</li>
+      <li>Hơn 200 video thuộc nhiều lĩnh vực như khoa học, giáo dục, kinh tế, văn học… sẽ giúp bạn không những trau dồi tiếng Anh mà còn học được rất nhiều kiến thức bổ ích trong cuộc sống.</li>
+    </ul>
+  </div>
+</a>
+
+    <!-- Course 2 -->
+<a class="course-card course" href="/courses/practical2-english-3600.html">
+  <img src="/assets/img/practical2.webp" alt="Course Logo" />
+  <div class="course-info">
+    <h3 class="course-title">3600 từ vựng tiếng Anh thông dụng</h3>
+    <div class="course-meta">
+      <span>4.8 </span>
+      <span>(60 Đánh giá)</span>
+      <span>1,023 Học viên</span>
+    </div>
+    <ul style="list-style-type: disc;">
+      <li>Kho từ vựng siêu khủng với hơn 3600 từ vựng thông dụng trong 99% ngữ cảnh</li>
+      <li>Các bài học sắp xếp theo 100 chủ đề logic, khoa học</li>
+      <li>Học bằng flash card với hình ảnh sinh động, 20.000 câu hỏi luyện tập dưới dạng các trò chơi lý thú đảm bảo việc học hiệu quả và không nhàm chán</li>
+    </ul>
+  </div>
+</a>
+
+<!-- Course 3 -->
+<a class="course-card course" href="/courses/practical3-english-ngu-phap.html">
+  <img src="/assets/img/practical3.webp" alt="Course Logo" />
+  <div class="course-info">
+    <h3 class="course-title">Ngữ pháp tiếng Anh từ A-Z</h3>
+    <div class="course-meta">
+      <span>4.8 </span>
+      <span>(65 Đánh giá)</span>
+      <span>985 Học viên</span>
+    </div>
+    <ul style="list-style-type: disc;">
+      <li>Nằm lòng gần 100 chủ điểm ngữ pháp sắp xếp từ cơ bản đến nâng cao</li>
+      <li>Hơn 10.000 câu hỏi luyện tập dưới dạng các trò chơi lý thú đảm bảo việc học hiệu quả và không nhàm chán</li>
+    </ul>
+  </div>
+</a>
+
+<!-- Course 4 -->
+<a class="course-card course" href="/courses/practical4-english-phat-am.html">
+  <img src="/assets/img/practical4.webp" alt="Course Logo" />
+  <div class="course-info">
+    <h3 class="course-title">Học phát âm và thực hành giao tiếp tiếng Anh</h3>
+    <div class="course-meta">
+      <span>4.8 </span>
+      <span>(127 Đánh giá)</span>
+      <span>2,593 Học viên</span>
+    </div>
+    <ul style="list-style-type: disc;">
+      <li>Thành thạo 44 âm cơ bản tạo nên mọi từ vựng trong tiếng Anh. Luyện tập khẩu hình miệng và phát âm với 1000 từ vựng</li>
+      <li>Trau dồi kĩ năng nói với hàng trăm cách diễn đạt thuộc hơn 50 tình huống</li>
+      <li>Tự tin giao tiếp với 100 chủ đề phổ biến nhất trong tiếng Anh</li>
+    </ul>
+  </div>
+</a>
+
+<!-- Course 5 -->
+<a class="course-card course" href="/courses/practical5-english-music.html">
+  <img src="/assets/img/practical5.webp" alt="Course Logo" />
+  <div class="course-info">
+    <h3 class="course-title">Học tiếng Anh qua bài hát</h3>
+    <div class="course-meta">
+      <span>5.0 </span>
+      <span>(7 Đánh giá)</span>
+      <span>229 Học viên</span>
+    </div>
+    <ul style="list-style-type: disc;">
+      <li>Luyện kỹ năng nghe và đọc hiểu thông qua việc xem và chép chính tả với các bài hát nổi tiếng nhất thế giới</li>
+      <li>Hơn 1000 video ca nhạc với nhiều chủ đề khác nhau, chia thành 3 độ khó từ vựng: cơ bản, trung bình và nâng cao giúp bạn bắt đầu học ở bất kỳ trình độ nào</li>
+    </ul>
+  </div>
+</a>
+
+  </section>
+
+
+
+
+  
+<div class="footer-wrapper" bis_skin_checked="1">
+  <div class="footer-container" bis_skin_checked="1">
+      <footer>
+
+
+          
+          <div class="row" bis_skin_checked="1">
+              <div class="col-12 col-sm-12 col-md" bis_skin_checked="1">
+                  <a href="/"><img class="mb-2" src="/assets/img/Logo_LearnEnglish.svg" alt="" height="30"></a>
+                  <small class="mb-2">©</small>
+                  <div class="site-socials" style="width: 140px !important;" bis_skin_checked="1">
+                      <a target="_blank" href="https://facebook.com/" bis_skin_checked="1"><span class="social-link fab fa-facebook-square"></span></a>
+                      <a target="_blank" href="https://instagram.com/" bis_skin_checked="1"><span class="social-link fab fa-instagram"></span></a>
+                      <a target="_blank" href="https://twitter.com/" bis_skin_checked="1"><span class="social-link fab fa-twitter"></span></a>
+                      <a target="_blank" href="https://youtube.com/" bis_skin_checked="1"><span class="social-link fab fa-youtube"></span></a>
+                      <a target="_blank" href="https://www.tiktok.com" bis_skin_checked="1"><span class="social-link fab fa-tiktok"></span></a>
+                  </div>
+              </div>
+              <div class="col-6 col-md" bis_skin_checked="1">
+                  <div class="footer-title" bis_skin_checked="1">Về LearnEnglish</div>
+                  <ul class="list-unstyled text-small">
+                      <li><a href="/about/" bis_skin_checked="1">Giới thiệu</a></li>
+                      <li><a href="/contact/" bis_skin_checked="1">Liên hệ</a></li>
+                      <li><a href="/privacy/" bis_skin_checked="1">Điều khoản bảo mật</a></li>
+                      <li><a href="/terms/" bis_skin_checked="1">Điều khoản sử dụng</a></li>
+                  </ul>
+              </div>
+              
+              <div class="col-6 col-md" bis_skin_checked="1">
+                  <div class="footer-title" bis_skin_checked="1">Tài nguyên</div>
+                  <ul class="list-unstyled text-small">
+                      
+                      <li><a href="/tests/" bis_skin_checked="1">Thư viện đề thi</a></li>
+                      <li><a href="/posts/" bis_skin_checked="1">Blog</a></li>
+                      <li><a href="/materials/" bis_skin_checked="1">Kho tài liệu</a></li>
+                      
+                      
+                  </ul>
+              </div>
+              <div class="col-6 col-md" bis_skin_checked="1">
+                  <div class="footer-title" bis_skin_checked="1">Chính sách chung</div>
+                  <ul class="list-unstyled text-small">
+                      <li><a href="/user-guide/" bis_skin_checked="1">Hướng dẫn sử dụng</a></li>
+                      <li><a href="/buying-guide/" bis_skin_checked="1">Hướng dẫn thanh toán</a></li>
+                      
+                      <li><a href="/buying-terms/" bis_skin_checked="1">Điều khoản và Điều Kiện Giao Dịch</a></li>
+                      <li><a href="/checkout-policy" bis_skin_checked="1">Chính sách kiểm hàng</a></li>
+                      <li><a href="/delivery-policy" bis_skin_checked="1">Chính sách giao, nhận hàng</a></li>
+                      <li><a href="/feedback/" bis_skin_checked="1">Phản hồi, khiếu nại</a></li>
+                      <li><a href="/return-policy" bis_skin_checked="1">Chính sách chuyển đổi, hoàn hủy</a></li>
+                  </ul>
+              </div>
+          </div>
+
+          
+
+          <div class="footer-copyright text-center" bis_skin_checked="1">
+              LearnEnglish © Bản quyền của GROUP11.
+          </div>
+      </footer>
+  </div>
+</div>
+</body>
+<script>
+ document.addEventListener('DOMContentLoaded', function () {
+    const searchInput = document.getElementById('searchInput'); // Ô tìm kiếm
+    const courseCards = document.querySelectorAll('.course-card'); // Các khóa học
+
+    // Hàm tìm kiếm
+    function searchCourses() {
+        const searchValue = searchInput.value.toLowerCase(); // Lấy giá trị tìm kiếm, chuyển thành chữ thường
+
+        courseCards.forEach((card) => {
+            const courseTitle = card.querySelector('.course-title'); // Lấy tiêu đề khóa học
+            const titleText = courseTitle.textContent; // Nội dung tiêu đề
+
+            // Xóa highlight cũ
+            courseTitle.innerHTML = titleText;
+
+            if (searchValue && titleText.toLowerCase().includes(searchValue)) {
+                // Nếu tiêu đề khớp, làm nổi bật từ khóa
+                const regex = new RegExp(`(${searchValue})`, 'gi');
+                courseTitle.innerHTML = titleText.replace(regex, `<span class="highlight">$1</span>`);
+            }
+        });
+    }
+
+    // Lắng nghe sự kiện nhập vào ô tìm kiếm
+    searchInput.addEventListener('input', searchCourses);
+});
+
+
+
+    
+</script>
+
+</html>

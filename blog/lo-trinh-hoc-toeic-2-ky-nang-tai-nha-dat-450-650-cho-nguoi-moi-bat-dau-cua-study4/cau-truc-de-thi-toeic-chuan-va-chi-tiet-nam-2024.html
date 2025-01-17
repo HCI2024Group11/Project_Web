@@ -1,0 +1,1429 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn English</title>
+    <link rel="icon" href="/assets/img/Avatar_LearnEnglish.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/f9374b778e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+    
+    <div class="topnav1 topnav-wrapper" bis_skin_checked="1">
+        <div class="topnav-container" bis_skin_checked="1">
+            <nav class="navbar  navbar-expand-lg">
+                <span class="navbar-brand">
+                    <a class="topnav-brand" href="/">
+                        <img class="topnav-logo" src="/assets/img/Logo_LearnEnglish.svg" alt="STUDY4">
+
+                    </a>
+                </span>
+                <button class="navbar-toggler pull-xs-right d-lg-none" type="button" data-toggle="collapse"
+                    data-target="#navbar-collapse">
+                    ☰
+
+                </button>
+                <div class="d-lg-block navbar-collapse justify-content-end collapse" id="navbar-collapse"
+                    bis_skin_checked="1">
+
+                    <ul class="nav">
+
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/courses/" bis_skin_checked="1">Course</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/skills/" bis_skin_checked="1">Skill</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/flashcards/me/" bis_skin_checked="1">Flashcards</a>
+                        </li>
+
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/blog/" bis_skin_checked="1">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/general-english/" bis_skin_checked="1">General english</a>
+                        </li>
+
+
+
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/courses/activate/" bis_skin_checked="1">
+                                Kích hoạt tài khoản
+                            </a>
+                        </li>
+
+                        <li class="nav-item user-topnav dropdown d-none d-lg-block">
+                            <a class="nav-link dropdown-toggle user-topnav-profile" href="/my-account/" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" bis_skin_checked="1">
+                                <span class="account-profile-img">
+
+                                    <img src="/assets/img/user_icon.webp" alt="ChuTanTai23130280">
+
+                                </span>
+
+                            </a>
+
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" bis_skin_checked="1">
+                                <div bis_skin_checked="1">
+                                    <h6 class="dropdown-header" id="thông-báo"> Thông báo </h6>
+                                    <div id="new-notis-dropdown-content" class="jqhtml-loader dropdown-text"
+                                        data-href="/notifications/newest/" bis_skin_checked="1">
+                                        <p class="font-sm"><i>Bạn chưa có thông báo mới.</i></p>
+
+
+                                        <div class="mt-2 link font-sm" bis_skin_checked="1"><a href="/notifications/"
+                                                bis_skin_checked="1">Xem tất cả &gt;&gt;</a></div>
+                                    </div>
+                                </div>
+
+                                <div class="dropdown-divider" bis_skin_checked="1"></div>
+                                <a class="dropdown-item" href="/studyplan/" bis_skin_checked="1">Lịch học của tôi</a>
+                                <a class="dropdown-item" href="/my-account/" bis_skin_checked="1">Trang cá nhân</a>
+                                <a class="dropdown-item" href="/logout/" bis_skin_checked="1">Đăng xuất</a>
+                            </div>
+                        </li>
+                        <li class="nav-item d-lg-none">
+                            <a class="nav-link" href="/notifications/" bis_skin_checked="1">Thông báo </a>
+                        </li>
+                        <li class="nav-item d-lg-none">
+                            <a class="nav-link" href="/studyplan/" bis_skin_checked="1">Lịch học của tôi</a>
+                        </li>
+                        <li class="nav-item d-lg-none">
+                            <a class="nav-link" href="/my-account/" bis_skin_checked="1">Trang cá nhân</a>
+                        </li>
+                        <li class="nav-item d-lg-none">
+                            <a class="nav-link" href="/logout/" bis_skin_checked="1">Đăng xuất</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+<script>
+    // JavaScript để xử lý dropdown
+    document.addEventListener('DOMContentLoaded', function() {
+        const profileBtn = document.querySelector('.user-topnav-profile');
+        const dropdownMenu = document.querySelector('.dropdown-menu');
+    
+        // Toggle dropdown khi click vào profile
+        profileBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            dropdownMenu.classList.toggle('show');
+        });
+    
+        // Đóng dropdown khi click ra ngoài
+        document.addEventListener('click', function(e) {
+            if (!profileBtn.contains(e.target) && !dropdownMenu.contains(e.target)) {
+                dropdownMenu.classList.remove('show');
+            }
+        });
+    });
+</script>
+    <script>
+        // JavaScript để xử lý dropdown
+        document.addEventListener('DOMContentLoaded', function () {
+            const profileBtn = document.querySelector('.user-topnav-profile');
+            const dropdownMenu = document.querySelector('.dropdown-menu');
+
+            // Toggle dropdown khi click vào profile
+            profileBtn.addEventListener('click', function (e) {
+                e.preventDefault();
+                dropdownMenu.classList.toggle('show');
+            });
+
+            // Đóng dropdown khi click ra ngoài
+            document.addEventListener('click', function (e) {
+                if (!profileBtn.contains(e.target) && !dropdownMenu.contains(e.target)) {
+                    dropdownMenu.classList.remove('show');
+                }
+            });
+        });
+    </script>
+
+
+
+
+<body class="highlighter-context">
+
+
+    <div class="topnav1 topnav-wrapper" bis_skin_checked="1">
+        
+    </div>
+    <script>
+        // JavaScript để xử lý dropdown
+        document.addEventListener('DOMContentLoaded', function () {
+            const profileBtn = document.querySelector('.user-topnav-profile');
+            const dropdownMenu = document.querySelector('.dropdown-menu');
+
+            // Toggle dropdown khi click vào profile
+            profileBtn.addEventListener('click', function (e) {
+                e.preventDefault();
+                dropdownMenu.classList.toggle('show');
+            });
+
+            // Đóng dropdown khi click ra ngoài
+            document.addEventListener('click', function (e) {
+                if (!profileBtn.contains(e.target) && !dropdownMenu.contains(e.target)) {
+                    dropdownMenu.classList.remove('show');
+                }
+            });
+        });
+    </script>
+
+
+        
+    <div id="fb-root" class=" fb_reset fb_reset"><div style="position: absolute; top: -10000px; width: 0px; height: 0px;"><div></div></div><div style="position: absolute; top: -10000px; width: 0px; height: 0px;"><div></div></div></div>
+    <script async="" defer="" crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&amp;version=v20.0&amp;appId=203430341284880&amp;autoLogAppEvents=1" nonce="1d3MdMH8" type="text/javascript"></script>
+    
+    
+
+    
+    <div class="site-elevator">
+        <div class="elevator-item elevator-open d-md-none">
+            <span class="fal fa-chevron-left" aria-hidden="true"></span>
+        </div>
+        <div class="elevator-item elevator-close d-md-none">
+            <span class="fal fa-chevron-right" aria-hidden="true"></span>
+        </div>
+        <div class="elevator-item">
+            <div class="jqdictionary-show" target="#">
+                <img src="/static/img/dictionary.png">
+                <div class="elevator-text">Từ điển</div>
+            </div>
+        </div>
+        <div class="jqdictionary-wrapper">
+            <span class="jqdictionary-expand fal fa-plus-square" aria-hidden="true"></span>
+            <span class="jqdictionary-close far fa-times" aria-hidden="true"></span>
+            <div class="h6 font-500 font-sm">
+                <a class="link jqdictionary-tab active" data-href="https://m.dict.laban.vn/">Anh-Việt</a> |
+                <a class="link jqdictionary-tab" data-href="https://www.wordreference.com/definition/">WordReference</a> |
+                <a class="link jqdictionary-tab" data-href="https://onelook.com/thesaurus/">Thesaurus</a> |
+                <a class="link jqdictionary-tab" data-href="https://vtudien.com/trung-viet/dictionary/nghia-cua-tu-%E4%BD%A0%E5%A5%BD">Tiếng Trung</a>
+            </div>
+            <div class="jqdictionary-iframe">
+                <iframe loading="lazy" frameborder="0"></iframe>
+            </div>
+        </div>
+
+
+        
+        <div class="elevator-item">
+            <a target="_blank" href="https://m.me/LearnEnglish.support">
+                <img src="/static/img/messenger.png">
+            </a>
+        </div>
+        
+
+        <div class="elevator-item">
+            <a target="_blank" href="https://zalo.me/LearnEnglish">
+                <img src="/static/img/zalo.jpg">
+            </a>
+        </div>
+
+
+        
+        <div class="elevator-item site-scrollTop" onclick="if (!window.__cfRLUnblockHandlers) return false; window.topFunction()" id="site-scrollTop" title="Go to top" style="display: flex;">
+            <span class="fal fa-chevron-up" aria-hidden="true"></span>
+        </div>
+    </div>
+    
+
+    
+
+    <div class="site-wrapper">
+
+        
+
+        
+
+
+<div class="topnav1 topnav-wrapper">
+
+</div>
+
+        
+
+        
+        <div class="site-content-wrapper">
+            
+
+            
+
+            
+            
+            
+            
+
+            
+<div class="container pb-0">
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/">Trang chủ</a></li>
+        
+        <li class="breadcrumb-item"><a href="/blog/index.html">Bài viết</a></li>
+        <li class="breadcrumb-item"><a href="/blog/lo-trinh-hoc-toeic-2-ky-nang-tai-nha-dat-450-650-cho-nguoi-moi-bat-dau-cua-study4/index.html">Thông tin kỳ thi TOEIC</a></li>
+        
+        <li class="breadcrumb-item active"><a href="/blog/lo-trinh-hoc-toeic-2-ky-nang-tai-nha-dat-450-650-cho-nguoi-moi-bat-dau-cua-study4/cau-truc-de-thi-toeic-chuan-va-chi-tiet-nam-2024.html">Cấu trúc đề thi TOEIC chuẩn và chi tiết năm 2024</a></li>
+    </ol>
+</nav>
+</div>
+
+
+            
+<div class="content-header py-0">
+<div class="container py-0">
+    <div class="image-wrapper">
+        <a href="/courses/level-test/">
+            
+        </a>
+    </div>
+    <br>
+    <h1 class="post-title" id="cấu-trúc-đề-thi-toeic-chuẩn-và-chi-tiết-năm-2024">
+        Cấu trúc đề thi TOEIC chuẩn và chi tiết năm 2024
+        
+    </h1>
+    
+    <p class="post-description">
+        Cấu trúc đề thi TOEIC bao gồm những phần nào? Các hình thức thi TOEIC là gì? Quy trình thi TOEIC diễn ra như nào? Hãy tìm hiểu cùng LearnEnglish nhé!
+    </p>
+    
+</div>
+</div>
+
+
+            
+            <div class="content-wrapper">
+                
+                
+<div class="container">
+<div class="row">
+    
+    <div class="col-12 col-md-7 order-md-2">
+        <div class="post-wrapper">
+            <div class="media post-author-media py-2 mb-3 border-bottom">
+                <div class="post-author-img">
+                    
+                    <img src="https://res.cloudinary.com/sandodep4/image/upload/w_300/sandodep4_x_179027497304743546577679031874613619737_cajgas" alt="hangbm.LearnEnglish">
+                    
+                </div>
+                <div class="media-body">
+                    <div class="post-author-name"><a target="_blank" href="/u/hangbm.LearnEnglish/">Bùi Hằng</a></div>
+                    <div class="post-meta">08/03/2023</div>
+                </div>
+            </div>
+
+            <div class="post-main-wrapper">
+
+                
+
+                
+                <br>
+                <div class="contentblock gray-bg">
+                    <div class="h5 font-italic">Các bài viết liên quan</div>
+                    
+<ul class="post-links">
+
+
+
+<li class="post-link"><a href="https://LearnEnglish.com/posts/920/nen-thi-toeic-o-dau-cac-dia-diem-to-chuc-thi-toeic-toan-quoc/">Nên thi TOEIC ở đâu? Các địa điểm tổ chức thi TOEIC toàn quốc</a></li>
+
+
+
+
+<li class="post-link"><a href="https://LearnEnglish.com/posts/564/huong-dan-cach-dang-ky-thi-toeic-tai-iig/">Hướng dẫn cách đăng ký thi TOEIC tại IIG</a></li>
+
+
+</ul>
+
+                </div>
+                <br><br>
+                
+
+                <div class="post-main mt-2">
+                    
+                    <div id="post-content" class="post-content md-content js-toc-content" prewrap="">
+                        <p style="text-align:center"><img alt="cấu trúc đề thi Toeic" src="https://lh6.googleusercontent.com/MsH4qbMMrs9HTZ21tcl36Kpzm71VWrK1ASwGvIDXVQyGWi1OyVA5y5Ky2M2Gtyszqh3Ua55_OQk_wKbYzImXDERsID-RfZGHh-nUmexmmsaIIg1G5A4rQCmPxQCrgUR7VI88xNO0wtdRSZAh2UXLK3Y" style="height:351px; width:624px"></p>
+
+<p>Với hơn 14.000 tổ chức trên toàn thế giới sử dụng, chứng chỉ TOEIC đã trở thành tiêu chuẩn đánh giá đáng tin cậy. Hiện nay, TOEIC được công nhận rộng rãi trong môi trường học tập và làm việc. Trong bài viết này, LearnEnglish sẽ cùng bạn khám phá cấu trúc đề thi TOEIC và quy trình thi TOEIC.</p>
+
+<h2 id="i.-tổng-quan-cấu-trúc-đề-thi-toeic"><strong>I. Tổng quan cấu trúc đề thi TOEIC:</strong></h2>
+
+<p>Để giúp bạn nắm được cấu trúc bài thi TOEIC, LearnEnglish sẽ trả lời cho bạn một số câu hỏi phổ biến:</p>
+
+<h3 id="1.-bài-thi-toeic-là-gì?"><span style="font-size:20px"><strong>1. Bài thi TOEIC là gì?</strong></span></h3>
+
+<p><strong>TOEIC (Test of English for International Communication)</strong> là một bài kiểm tra tiêu chuẩn đo lường trình độ tiếng Anh của những người không phải người bản ngữ trong các môi trường chuyên nghiệp, như trường học, nơi làm việc…</p>
+
+<p>Bài thi này được quản lý bởi <strong>ETS (Educational Testing Service - Dịch vụ Kiểm tra Giáo dục)</strong>. Đây cũng chính là tổ chức quản lý và chuyên tổ chức một bài thi tiếng Anh không kém nổi tiếng khác, TOEFL (Test of English as a Foreign Language).</p>
+
+<p>Trong cấu trúc bài thi TOEIC, thí sinh sẽ được đánh giá khả năng hiểu và sử dụng tiếng Anh trong ngữ cảnh bao quanh lĩnh vực kinh doanh. Các kỹ năng này bao gồm đọc hiểu, nghe hiểu, ngữ pháp và từ vựng.</p>
+
+<p><span style="background-color:#ffffff; color:#1155cc; font-family:Roboto,Arial,sans-serif; font-size:16px"><u><a href="https://LearnEnglish.com/posts/928/lo-trinh-hoc-toeic-2-ky-nang-tai-nha-dat-450-650-cho-nguoi-moi-bat-dau/" style="box-sizing: border-box; color: rgb(33, 50, 97); text-decoration: none; background-color: rgb(255, 255, 255); cursor: pointer; font-family: Roboto, Arial, sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal;"><img alt="lộ trình toeic online cấp tốc LearnEnglish" src="https://lh7-us.googleusercontent.com/docsz/AD_4nXcBDFoyIzYTe395y6oZveeeqzOqYmoA6DI__UJ0QQU25Aa9aEnWDNZLXPNKdR0SNDvzNk0oMHXpHt5ZkEyWsDQYBnxT9-CHoSWqusNhU7StvmcGATADOdZ3PwkcQjSfAenB9r2RPk7mcZxYC1DRkqvMigRB?key=amAlq3bZrFYlrDOSk6qrlg" style="border-style:none; box-sizing:border-box; display:block; height:87px; margin:1rem auto; max-width:100%; vertical-align:middle; width:624px"></a></u></span></p>
+
+<h3 id="2.-cấu-trúc-đề-thi-toeic-gồm-những-phần-nào?"><span style="font-size:20px"><strong>&nbsp;2. Cấu trúc đề thi TOEIC gồm những phần nào?</strong></span></h3>
+
+<p>Bài thi TOEIC bao gồm hai phần chính: <strong>Listening (Nghe) và Reading (Đọc)</strong>. Ngoài ra còn có bài thi <strong>Speaking (Nói) và Writing (Viết)</strong>, trong đó người thi được phép chọn thi hay không. Bài này được thực hiện tách biệt với bài kiểm tra Listening và Reading.</p>
+
+<p><strong>TOEIC Listening: </strong>Phần này đánh giá khả năng hiểu tiếng Anh nói của thí sinh trong các ngữ cảnh khác nhau. Bài thi được chia thành bốn phần, mỗi phần có một trọng tâm khác nhau:</p>
+
+<ul>
+<li style="list-style-type:disc">Photographs - Hình ảnh</li>
+<li style="list-style-type:disc">Question-Response - Hỏi-Đáp</li>
+<li style="list-style-type:disc">Short Conversations - Hội thoại ngắn</li>
+<li style="list-style-type:disc">Short Talks - Bài nói ngắn</li>
+</ul>
+
+<p><strong>TOEIC Reading: </strong>Phần này đánh giá khả năng hiểu tiếng Anh viết của thí sinh trong các ngữ cảnh khác nhau. Bài cũng được chia thành bốn phần, mỗi phần có một trọng tâm khác nhau:</p>
+
+<ul>
+<li style="list-style-type:disc">Incomplete Sentences - Câu chưa hoàn thiện</li>
+<li style="list-style-type:disc">Text Completion - Hoàn thành văn bản</li>
+<li style="list-style-type:disc">Reading Comprehension - Đọc hiểu</li>
+</ul>
+
+<p><strong>TOEIC Speaking</strong>&nbsp;(không bắt buộc): Phần này đánh giá khả năng nói bằng tiếng Anh của thí sinh trong các tình huống khác nhau.</p>
+
+<ul>
+<li style="list-style-type:disc">Read Aloud - Đọc to</li>
+<li style="list-style-type:disc">Describe a Picture - Mô tả một bức tranh</li>
+<li style="list-style-type:disc">Respond to Questions - Trả lời các câu hỏi</li>
+<li style="list-style-type:disc">Respond to questions using information provided - Trả lời câu hỏi với thông tin được cung cấp</li>
+<li style="list-style-type:disc">Express an opinion - Bày tỏ ý kiến</li>
+</ul>
+
+<p><strong>TOEIC Writing </strong>(không bắt buộc):&nbsp;Phần này đánh giá khả năng viết bằng tiếng Anh của thí sinh trong các tình huống khác nhau.</p>
+
+<ul>
+<li style="list-style-type:disc">Write a sentence based on a picture - Viết câu theo hình ảnh</li>
+<li style="list-style-type:disc">Respond to a written request - Phản hồi yêu cầu văn bản</li>
+<li style="list-style-type:disc">Write an opinion essay - Viết văn bản ý kiến</li>
+</ul>
+
+<h3 id="3.-thời-gian-thi-toeic-là-bao-lâu?"><span style="font-size:20px"><strong>3. Thời gian thi TOEIC là bao lâu?</strong></span></h3>
+
+<p>Độ dài của bài thi TOEIC thường tùy thuộc vào hình thức bài thi mà bạn chọn. Bài thi TOEIC Listening và Reading có tổng thời gian là 2 giờ 30 phút. Phần Listening của bài kiểm tra kéo dài khoảng 45 phút và bao gồm 100 câu hỏi trắc nghiệm. Phần Reading kéo dài khoảng 75 phút và bao gồm 100 câu hỏi trắc nghiệm.</p>
+
+<p>Bài thi TOEIC Speaking và Writing là một bài thi riêng biệt, thường được thực hiện cùng bài thi Listening và Reading. Phần Speaking của bài kiểm tra kéo dài khoảng 20 phút và bao gồm 11 phần, trong khi phần Writing kéo dài khoảng 60 phút và bao gồm 8 phần. Tổng thời gian làm bài của bài thi TOEIC Writing và Speaking là khoảng 1 giờ 20 phút.</p>
+
+<p>Nói chung, độ dài của bài thi TOEIC có thể dao động từ 2 giờ 30 phút đến 3 giờ 50 phút, tùy thuộc vào hình thức bài kiểm tra mà bạn thực hiện và tùy vào việc bạn có tham gia cả bài kiểm tra cả 4 kỹ năng hay không.</p>
+
+<h3 id="4.-các-hình-thức-thi-toeic-là-gì?"><span style="font-size:20px"><strong>4. Các hình thức thi TOEIC là gì?</strong></span></h3>
+
+<p>Bài thi TOEIC có hai format chính: <strong>Bài thi trên giấy (Paper-based Test - PBT) và Bài thi trên máy tính (Computer-based Test - CBT)</strong>. Cả hai hình thức thi giấy và thi máy TOEIC đều có nội dung và cấu trúc giống nhau. Người học nên xem xét kỹ các tính năng, sở thích bản thân và chất lượng của nơi thi để chọn hình thức phù hợp.</p>
+
+<h3 id="5.-thang-điểm-của-bài-thi-toeic-được-tính-như-thế-nào?"><span style="font-size:20px"><strong>5. Thang điểm của bài thi TOEIC được tính như thế nào?</strong></span></h3>
+
+<p><a href="https://LearnEnglish.com/posts/361/thang-diem-toeic-va-cach-tinh-diem-bai-thi-toeic/"><strong>Thang điểm của bài thi TOEIC</strong></a> là từ 10 đến 990 cho phần Listening và Reading. Bài thi Speaking và Writing được chấm riêng theo thang điểm từ 0-200.</p>
+
+<p style="text-align:center"><img alt="cách tính điểm toeic" src="https://lh5.googleusercontent.com/xs6esRUYV6O0XDrAbGXTiUQK1_9kfEYcZts7U8HNZS6GH-XjigMrAYJAzImEx-0Y9RKVMQv2lCFO88JUpb09jXtGTyKloOMadAu_3l_ThkdL0CR45wN3IRtaipaf_G7KQ9GLNDFNmHjcdSvJ88RIWro" style="height:296px; width:583px"></p>
+
+<p style="text-align:center"><em>Các mức điểm TOEIC thể hiện trình độ của người thi</em></p>
+
+<h3 id="6.-các-đối-tượng-nào-nên-tham-gia-bài-thi-toeic?"><span style="font-size:20px"><strong>6. Các đối tượng nào nên tham gia bài thi TOEIC?</strong></span></h3>
+
+<p>Bài thi TOEIC được các doanh nghiệp và tổ chức trên toàn thế giới công nhận rộng rãi như một phương pháp đáng tin cậy để đánh giá khả năng giao tiếp bằng tiếng Anh của một người trong môi trường làm việc. Vậy nên, rất nhiều công ty yêu cầu chứng chỉ này khi tuyển dụng ứng viên hoặc thăng chức cho nhân viên, ví dụ như các công ty kinh doanh quốc tế, du lịch, kế toán hoặc khách sạn. Ngoài ra, nhiều trường đại học và cao đẳng yêu cầu điểm TOEIC như một phần trong quá trình tuyển sinh quốc tế hoặc các chương trình trao đổi tiếng Anh.</p>
+
+<p>Thế nên, với bất kỳ ai cần chứng minh trình độ tiếng Anh hoặc “làm đẹp” hồ sơ của bản thân cho các mục đích nghề nghiệp hoặc học thuật, chứng chỉ TOEIC là một trong những lựa chọn hoàn hảo.</p>
+
+<p style="text-align:center"><img alt="cấu trúc bài thi toeic" src="https://lh4.googleusercontent.com/cD00rQxf6sS8qsmVS7QzyOthMcW0crTVsKhfMUALr99Vv8hqDLo2HGfrxeocLOSyIN3YY4xkV3e74_dROYAhIhjzSUBjlriquZXc_xF63l6RWE_0KWwebM-hzqUjnBpBkd_tu2UwTNCeaSUttpN3uJg" style="height:309px; width:550px"></p>
+
+<p style="text-align:center"><em>TOEIC là một trong chứng chỉ được sử dụng rộng rãi</em></p>
+
+<h2 id="ii.-phân-tích-cấu-trúc-đề-thi-toeic-theo-từng-kỹ-năng"><strong>II. Phân tích cấu trúc đề thi TOEIC theo từng kỹ năng:</strong></h2>
+
+<h3 id="1.-cấu-trúc-đề-thi-toeic-listening"><span style="font-size:20px"><strong>1. Cấu trúc đề thi TOEIC Listening</strong></span></h3>
+
+<p>Phần TOEIC Listening được chia thành 4 part chín:</p>
+
+<h4 id="1.1.-part-1-photographs---hình-ảnh"><span style="font-size:18px"><strong>1.1. Part 1: Photographs - Hình ảnh</strong></span></h4>
+
+<p>Thí sinh sẽ được nhận 6&nbsp;bức ảnh và được yêu cầu chọn câu trả lời phù hợp trong số 4 lựa chọn cho mỗi bức ảnh.</p>
+
+<p>Mỗi bức ảnh được kèm theo một câu hỏi nói và ba câu trả lời.</p>
+
+<p><span style="color:#2980b9"><strong>Ví dụ:</strong></span></p>
+
+<p><strong>Choose the one that best describes what you see in the picture.</strong></p>
+
+<p>Answer choices:</p>
+
+<p>A) The woman is wearing glasses.</p>
+
+<p>B) There is a note on the keyboard.</p>
+
+<p>C) The woman is facing the monitor.</p>
+
+<p>D) There is a lamp above the computer.</p>
+
+<p style="text-align:center"><img alt="đề thi toeic mới nhất" src="https://lh6.googleusercontent.com/ZNIZP6wz8JJ8gqxaNuQahEuHUayEOFHzx-82vKxB37Qpy2fpR7ui_z0EG5Bhu6Ew4LH1_Fv-_S5vXyZXqVHBQzOG9aMs3L4FUVwvr6muYiwG9N11CgSu15WkBUTrzvOdJzQFTaMCZIgPvTlfV8rdO78" style="height:293px; width:390px"></p>
+
+<p style="text-align:center"><em>Ví dụ transcript một đề thi TOEIC Listening Part 1</em></p>
+
+<h4 id="1.2.-part-2-question-response---hỏi---đáp"><span style="font-size:18px"><strong>1.2. Part 2: Question-Response - Hỏi - Đáp</strong></span></h4>
+
+<p>Phần này đưa ra 25&nbsp;câu hỏi, thí sinh được yêu cầu chọn câu trả lời thích hợp từ ba lựa chọn. Mỗi câu hỏi được nói, theo sau là ba câu trả lời, nhưng thí sinh chỉ được chọn một câu trả lời đúng.</p>
+
+<p><span style="color:#2980b9"><strong>Ví dụ:</strong></span></p>
+
+<p><strong>What is the man's flight number?</strong></p>
+
+<p>Narrator: You will hear a conversation between a man and a woman who are discussing the man's upcoming flight.</p>
+
+<p>Man: Hi, I'm calling to check my flight details for tomorrow.</p>
+
+<p>Woman: Of course, can I have your booking reference number, please?</p>
+
+<p>Man: Yes, it's 7845B.</p>
+
+<p>Woman: Thank you. And can I confirm your flight number for tomorrow?</p>
+
+<p>Man: Yes, please.</p>
+
+<p>Woman: Your flight number is 3092, departing at 10:30am.</p>
+
+<p>In this example, the question is asking for the flight number that the man is taking. The correct answer would be "3092".</p>
+
+<h4 id="1.3.-part-3-short-conversations---hội-thoại-ngắn"><span style="font-size:18px"><strong>1.3. Part 3: Short Conversations - Hội thoại ngắn</strong></span></h4>
+
+<p>Phần này gồm 13&nbsp;đoạn hội thoại ngắn, 39 câu hỏi. Sau đó, thí sinh được yêu cầu chọn câu trả lời thích hợp từ bốn lựa chọn cho mỗi đoạn hội thoại.</p>
+
+<p>Mỗi cuộc hội thoại được nói và theo sau là một câu hỏi duy nhất với bốn câu trả lời.</p>
+
+<p><span style="color:#2980b9"><strong>Ví dụ:</strong></span></p>
+
+<p>You will hear a conversation between two people, followed by three statements. Your task is to select the statement that best summarizes the main point of the conversation.</p>
+
+<p><strong>Two colleagues are discussing their upcoming business trip to Tokyo.</strong></p>
+
+<p>Statement 1: The speakers are planning a trip to Tokyo together.</p>
+
+<p>Statement 2: One of the speakers is worried about the language barrier in Tokyo.</p>
+
+<p>Statement 3: The speakers have never been to Tokyo before and are excited to explore the city.</p>
+
+<h4 id="1.4.-part-4-short-talks---bài-nói-ngắn"><span style="font-size:18px"><strong>1.4. Part 4: Short Talks - Bài nói ngắn</strong></span></h4>
+
+<p>Phần này gồm 10 bài nói ngắn và 30 câu hỏi, thí sinh được yêu cầu chọn câu trả lời thích hợp từ bốn lựa chọn cho mỗi bài nói.</p>
+
+<p>Mỗi cuộc nói chuyện được nói và theo sau là một câu hỏi cùng bốn câu trả lời.</p>
+
+<p><span style="color:#2980b9"><strong>Ví dụ:</strong></span></p>
+
+<p>Male Speaker: Good afternoon, everyone. I'm here to introduce our new product line, which we will be launching next month. As you can see from the brochures in front of you, we have a range of products that cater to different segments of the market. We're confident that this product line will be a game-changer for our company.</p>
+
+<p>Female Speaker: Excuse me, sir. Could you tell us a little more about the product line?</p>
+
+<p>Male Speaker: Yes, certainly. As you can see, we have products for different segments of the market, from entry-level to premium. We've also made sure that the products have features that are aligned with customer needs. We believe that this product line will position us as a market leader.</p>
+
+<p><strong>Question: What does the speaker suggest about the company's new product line?</strong></p>
+
+<p>a) The company's new product line will be launched next year.</p>
+
+<p>b) The company's new product line will cater to only one segment of the market.</p>
+
+<p>c) The company's new product line has features that are aligned with customer needs.</p>
+
+<p>d) The company's new product line will not be a game-changer for the company.</p>
+
+<p>Tổng thời gian làm bài cho phần Nghe là khoảng 45 phút. Thí sinh nghe đoạn ghi âm của từng phần và được yêu cầu trả lời các câu hỏi trắc nghiệm dựa trên những gì nghe được. Các câu hỏi và các lựa chọn trả lời được trình bày trong tập đề thi được phát. Thí sinh được ghi chú trong phần Listening.</p>
+
+<h3 id="2.-cấu-trúc-đề-thi-toeic-reading"><span style="font-size:20px"><strong>2. Cấu trúc đề thi TOEIC Reading</strong></span></h3>
+
+<p>Bài thi TOEIC Reading bao gồm bốn phần, với tổng cộng 100 câu hỏi. Dưới đây là tổng quan về cấu trúc bài thi TOEIC Reading:</p>
+
+<h4 id="2.1.-part-5-incomplete-sentences---câu-chưa-hoàn-thiện"><span style="font-size:18px"><strong>2.1. Part 5: Incomplete Sentences - Câu chưa hoàn thiện</strong></span></h4>
+
+<p>Trong phần này, bạn sẽ thấy một câu có một từ hoặc cụm từ còn thiếu. Bạn sẽ phải đáp án từ bốn lựa chọn để hoàn thành câu. Có tổng 30 câu.</p>
+
+<p style="text-align:center"><img alt="đề thi mẫu toeic mới" src="https://lh3.googleusercontent.com/SDfZpRduJvkDH0IZPkPpNJjd_dPm82m5E9wVBMEW-BJK8PwMOCARjdcPWULq5rgs_P0Zuvyu_53XlxwSot3g1FUesXLTv8Hgl7b_iFB7bos1j8QGcb0W7p_4EnzNx-9HMrFjRXvxXYnWciv7zSOvmR4" style="height:369px; width:469px"></p>
+
+<p style="text-align:center"><em>Ví dụ một số câu hỏi Incomplete Sentences&nbsp;</em></p>
+
+<h4 id="2.2.-part-6-text-completion---hoàn-thành-văn-bản"><span style="font-size:18px"><strong>2.2. Part 6: Text Completion - Hoàn thành văn bản</strong></span></h4>
+
+<p>Phần này chứa một đoạn văn ngắn có chỗ trống. Thí sinh phải chọn đáp án trong số bốn đáp án để điền vào mỗi chỗ trống. Số câu hỏi là 16 với 4 bài đọc.</p>
+
+<p style="text-align:center"><img alt="format đề thi toeic" src="https://lh3.googleusercontent.com/Uoqka2uBbcTpMu35-xfRyQadJBpTXRUq9nuGGGY66DTaz5wFMm--I1kJzZvTVmYPkt0V2eEYgboFNyIw8a-dTTvRVVG5G-dY8xNbXYDl5jRpTatS6Bd-HOG7vSTtyFW3ZSYtI03mKULqm0NGn5YUoFQ" style="height:368px; width:501px"></p>
+
+<p style="text-align:center"><em>Ví dụ format đề thi TOEIC Text Completion</em></p>
+
+<h4 id="2.3.-part-7-reading-comprehension---đọc-hiểu"><span style="font-size:18px"><strong>2.3. Part 7: Reading Comprehension - Đọc hiểu</strong></span></h4>
+
+<p>Phần này sẽ có một số đoạn đọc ngắn, sau mỗi đoạn là một số câu hỏi. Thí sinh sẽ đọc đoạn văn và trả lời các câu hỏi dựa trên thông tin được trình bày trong đoạn văn. Số câu hỏi là 54 câu.</p>
+
+<p style="text-align:center"><img alt="đề thi toeic reading " src="https://lh5.googleusercontent.com/3jByhTOUjCi5dQobAvW5kLDn1wLe2zp_DRtsTvDilMCNiFHlEQot1TpmJ9nnpDCabtec480WB2RbMoafeugIHWBQVl2Uo0EuGHErTzGdtzt3h7q_0RLTIUYDYu4DX-vUw07VaSkoiJG3sInPj6SZAII" style="height:441px; width:491px"></p>
+
+<p style="text-align:center"><em>Ví dụ format đề thi TOEIC Reading</em></p>
+
+<p>Tổng thời gian làm bài Reading là 75 phút. Điều quan trọng cần lưu ý là phần Đọc chỉ là một phần của bài thi TOEIC tổng thể. Phần Listening đóng vai trò quan trọng trong tổng điểm.</p>
+
+<h3 id="3.-cấu-trúc-bài-thi-toeic-speaking"><span style="font-size:20px"><strong>3. Cấu trúc bài thi TOEIC Speaking</strong></span></h3>
+
+<p>Bài thi Speaking là một bài thi riêng biệt với bài thi Listening và Reading TOEIC. Dưới đây là tổng quan về cấu trúc của bài thi TOEIC Speaking:</p>
+
+<h4 id="3.1.-task-1-read-aloud---đọc-to"><span style="font-size:18px"><strong>3.1. Task 1: Read Aloud - Đọc to</strong></span></h4>
+
+<p>Trong bài này, bạn sẽ thấy 6 văn bản đã viết và được yêu cầu đọc to chúng. Thí sinh có 45 giây để chuẩn bị cho mỗi văn bản và sau đó có 45 giây để đọc.</p>
+
+<p style="text-align:center"><img alt="đề thi toeic speaking" src="https://lh3.googleusercontent.com/JTv6eDUMuDknOr5kRRjZNh4e02rJWAIVVlFcnL7yBEU0RpiTCW-el66Dk25KAK1xQ5hHsD0eSD0UzlgJlvyFjsJQ5AQdhd_z_qazqCNmbblLSoBvvzjVxuP5whZCaqGqJeh32oIb3z1nx2cgf9rnvDM" style="height:283px; width:470px"></p>
+
+<p style="text-align:center"><em>Ví dụ đề thi của TOEIC Speaking</em></p>
+
+<h4 id="3.2.-task-2-describe-a-picture---mô-tả-một-bức-tranh"><span style="font-size:18px"><strong>3.2. Task 2: Describe a Picture - Mô tả một bức tranh</strong></span></h4>
+
+<p>Trong phần này, thí sinh được xem một loạt bức tranh và được yêu cầu mô tả những gì họ nhìn thấy trong bức tranh. Thí sinh có 45 giây để chuẩn bị câu trả lời và 30 giây để nói.</p>
+
+<p style="text-align:center"><img src="https://lh6.googleusercontent.com/qFS7nRCygEr843vB3uI-o5dSR5j1rYIaPnZTg5FsrPmKmmCvM321PJzoKUUL9NiYUhHcK_bqycn5g1Vt_oCkynIRRL1a960S8o7BbfSU-sFVnZQmx5ahaXuAoxnM_Z2ORuRfx-uTIESSb62CxwdDwj8" style="height:310px; width:468px"></p>
+
+<p style="text-align:center"><em>Ví dụ một bức tranh được yêu cầu mô tả</em></p>
+
+<h4 id="3.3.-task-3-respond-to-questions---trả-lời-các-câu-hỏi"><span style="font-size:18px"><strong>3.3. Task 3: Respond to Questions - Trả lời các câu hỏi</strong></span></h4>
+
+<p>Trong phần này, bạn sẽ được hỏi một loạt câu hỏi về các tình huống hàng ngày liên quan đến công việc. Thí sinh có 3 giây để chuẩn bị câu trả lời, 15 giây để trả lời câu 5-6, và 30 giây cho cho câu 7.</p>
+
+<p style="text-align:center"><img src="https://lh4.googleusercontent.com/x7yABexVjqQKZ-8KlgzUsas-I_zRlNDTGSYjc3NKR1eSDZ-BVxPVjJ7FJDNS4OZw-hu1BSV2MNxbOXNixBQTW-WgpUrxQ7h15uuvpMURGRPpLrOzockven0k4umtIX4c9CDQ07Joc6CKGnyBGmNCACM" style="height:154px; width:488px"></p>
+
+<p style="text-align:center"><em>Ví dụ đề thi “Respond to Questions” của TOEIC Speaking</em></p>
+
+<h4 id="3.4.-task-4-respond-to-questions-using-information-provided---trả-lời-câu-hỏi-với-thông-tin-được-cung-cấp"><span style="font-size:18px"><strong>3.4. Task 4: Respond to questions using information provided - Trả lời câu hỏi với thông tin được cung cấp</strong></span></h4>
+
+<p>Trong phần này, thí sinh được trả lời câu hỏi, trong đó các thông tin được cung cấp ở đề bài. Thí sinh có 15 giây để trả lời câu 8,9, và 30 giây cho câu 10.</p>
+
+<p style="text-align:center"><img src="https://lh6.googleusercontent.com/Gt1HXKG6T9V7umnUpeQ6QA6-G_0os_nuxBx3_yA_2fP5u6DSXpvf0xhZx0Ub0e8GOCncdG6S8L5qfTCO9cBydDdpYTtdfhbly4g0lROHNDKCkJK1Pf_ZurR5jSyf5brAaCNLDxSozcDSHccsp9oU2xY" style="height:229px; width:511px"></p>
+
+<p style="text-align:center"><em>Ví dụ đề bài TOEIC Speaking cùng các thông tin</em></p>
+
+<h4 id="3.5.-task-5-express-an-opinion---bày-tỏ-ý-kiến"><span style="font-size:18px"><strong>3.5. Task 5: Express an opinion - Bày tỏ ý kiến</strong></span></h4>
+
+<p>Trong bài này bạn sẽ được cho một vấn đề nào đó, thường bao quanh chủ đề công việc. Bạn sẽ được yêu cầu bày tỏ ý kiến về vấn đề này.</p>
+
+<p style="text-align:center"><img src="https://lh4.googleusercontent.com/tVxMeDbaTAODED2BOb0PMGA76DVPI4Kum5k87yGMyyzUfLMnC04FPADVxwhwXT4rGlUygw48ZJ7alTt9Qyx8dQ4NioMJekppdndLTDtz6Me5mWX6UzlqeAMo7weg14Fo_g3iZwXU2NuJ1HB3stD9dMw" style="height:111px; width:624px"></p>
+
+<p style="text-align:center"><em>Ví dụ một đề bài Speaking “Express an opinion”</em></p>
+
+<p>Tổng thời gian làm bài của bài thi TOEIC Speaking là khoảng 20 phút. Bài thi được thực hiện trực tiếp với giám khảo hoặc thông qua hình thức làm trên máy tính. Bài thi Speaking được chấm theo thang điểm từ 0-200. Điểm số cho từng bài tập được cộng lại để cho điểm bài thi tổng thể.</p>
+
+<h3 id="4.-cấu-trúc-bài-thi-toeic-writing"><span style="font-size:20px"><strong>4. Cấu trúc bài thi TOEIC Writing</strong></span></h3>
+
+<p>Bài thi TOEIC Writing đánh giá khả năng viết tiếng Anh của bạn trong bối cảnh kinh doanh hoặc công việc tương tự. Bài thi bao gồm ba phần:</p>
+
+<h4 id="4.1.-task-1-write-a-sentence-based-on-a-picture---viết-câu-theo-hình-ảnh"><span style="font-size:18px"><strong>4.1. Task 1: Write a sentence based on a picture - Viết câu theo hình ảnh</strong></span></h4>
+
+<p>Với mỗi bức tranh, bạn sẽ được cho hai từ hoặc cụm từ mà bạn cần sử dụng trong một câu. Bạn có thể thay đổi dạng từ và sắp xếp từ theo thứ tự mong muốn.</p>
+
+<p style="text-align:center"><strong><img alt="đề thi toeic writing" src="https://lh5.googleusercontent.com/BWsyYN2bTVRFhCdRXm3KiaZ6jRCEZ68PGmeNmPLeRhRm2lg8bKeq6-7mOw-6T0tZB3dltPIv6y2znIRUSG3R4ZS0ZYDlvqAQu-oaQ45cP_C57fTIJWaTNnHaariEFsoELMvG-H9SMSBohBbf2nJXHZM" style="height:286px; width:570px"></strong></p>
+
+<p style="text-align:center"><em>Ví dụ một câu hỏi mẫu task 1 TOEIC Writing</em></p>
+
+<h4 id="4.2.-task-2-respond-to-a-written-request---phản-hồi-yêu-cầu-văn-bản"><span style="font-size:18px"><strong>4.2. Task 2: Respond to a written request - Phản hồi yêu cầu văn bản</strong></span></h4>
+
+<p>Bài thi để đánh giá khả năng viết email của thí sinh. Thí sinh có 10 phút để đọc và trả lời cho mỗi email.</p>
+
+<p style="text-align:center"><img src="https://lh3.googleusercontent.com/fFenYN7h2wlms1oaChMdlkncLn2W4WwdFe1x3uv5m3Pii0VaMPSe6sg6zInRpgv1xFTBX_RoXsFTEWLw4QzaDEEW9f1EOtkjWo-IGNyeBvlNAGIx7bbFvGcvPjnSmVr4YWbQbkspDGcqnQwS-J6IdUg" style="height:291px; width:494px"></p>
+
+<p style="text-align:center"><em>Ví dụ một câu hỏi task 2 TOEIC Writing</em></p>
+
+<h4 id="4.3.-task-3-write-an-opinion-essay---viết-văn-bản-ý-kiến"><span style="font-size:18px"><strong>4.3. Task 3: Write an opinion essay - Viết văn bản ý kiến</strong></span></h4>
+
+<p>Thí sinh phải viết một bài luận để trả lời một câu hỏi. Thí sinh phải trình bày, giải thích và chứng minh ý kiến ​​của bạn về vấn đề đó. Thông thường, một bài viết nên có tối thiểu 300 từ.</p>
+
+<p style="text-align:center"><strong><img src="https://lh4.googleusercontent.com/7PlUoS4-Xqzus_cmUSu8dOtocaNxcYkQORdCszz_eM-oko4V6_pBLpUP8B_rpLxSR0tO-PeJvDYs0VO0vHYZVSRe38cxba0-ZzjIr1MVLpS-nANzKRgHltunCJ7aIdr1expiOhX6_3AofDgkCkF8jp4" style="height:96px; width:560px"></strong></p>
+
+<p style="text-align:center"><em>Ví dụ một đề bài task 3 TOEIC Writing</em></p>
+
+<p style="text-align:center"><a href="https://LearnEnglish.com/posts/928/lo-trinh-hoc-toeic-2-ky-nang-tai-nha-dat-450-650-cho-nguoi-moi-bat-dau/" style="box-sizing: border-box; color: rgb(33, 50, 97); text-decoration: none; background-color: rgb(255, 255, 255); cursor: pointer; font-family: Roboto, Arial, sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal;"><span style="background-color:#ffffff; color:#1155cc; font-family:Roboto,Arial,sans-serif; font-size:16px"><u><img alt="lộ trình toeic online cấp tốc LearnEnglish" src="https://lh7-us.googleusercontent.com/docsz/AD_4nXcBDFoyIzYTe395y6oZveeeqzOqYmoA6DI__UJ0QQU25Aa9aEnWDNZLXPNKdR0SNDvzNk0oMHXpHt5ZkEyWsDQYBnxT9-CHoSWqusNhU7StvmcGATADOdZ3PwkcQjSfAenB9r2RPk7mcZxYC1DRkqvMigRB?key=amAlq3bZrFYlrDOSk6qrlg" style="border-style:none; box-sizing:border-box; display:block; height:87px; margin:1rem auto; max-width:100%; vertical-align:middle; width:624px"></u></span></a></p>
+
+<p><span style="font-size:18px">Khóa học <a href="https://LearnEnglish.com/courses/28/complete-toeic/?itm_source=seo&amp;itm_medium=article&amp;itm_campaign=blogpost_internal_link&amp;itm_content=291"><strong>Complete TOEIC</strong></a> sẽ giúp bạn nắm được đầy đủ Chiến lược làm bài - Từ vựng - Ngữ pháp và luyện nghe theo <a href="https://LearnEnglish.com/posts/261/nghe-chep-chinh-ta-va-cac-tip-nang-cao-trinh-do-listening/"><strong>phương pháp Dictation</strong></a>.</span></p>
+
+<p><span style="font-size:18px">Khi kết thúc khóa học, bạn sẽ được:</span></p>
+
+<p><span style="font-size:18px">1️⃣ Có nền tảng ngữ pháp vững chắc và xây dựng vốn từ vựng 99% sẽ xuất hiện trong bài thi TOEIC</span></p>
+
+<p><span style="font-size:18px">2️⃣ Cải thiện kỹ năng nghe, khắc phục các vấn đề khi nghe như miss thông tin, âm nối, tốc độ nói nhanh</span></p>
+
+<p><span style="font-size:18px">3️⃣ Nắm vững cách làm tất cả các dạng câu hỏi trong bài thi TOEIC Listening và Reading</span></p>
+
+<p style="text-align:center"><span style="font-size:18px"><strong>CÓ GÌ TẠI KHÓA HỌC CỦA LearnEnglish?</strong></span></p>
+
+<p style="text-align:center"><iframe frameborder="0" height="315" src="https://www.youtube.com/embed/VPL358kfdQ4" title="YouTube video player" width="560"></iframe></p>
+
+<p><span style="font-size:18px"><strong>📖Học từ vựng TOEIC: </strong>Khóa học cung cấp 1200 từ vựng 99% sẽ xuất hiện trong bài thi TOEIC. Mỗi flashcard gồm ảnh, nghĩa tiếng Việt - tiếng Anh, phát âm, phiên âm và ví dụ. Bạn có thể luyện tập thêm các list từ với đa dạng các bài tập mini-games.</span></p>
+
+<p style="text-align:center"><img src="https://study4.com/media/uploads/editor/hangbm.LearnEnglish/2023/05/06/image-20230506104419-1.gif" style="height:383px; width:700px"></p>
+
+<p><span style="font-size:18px"><strong>📝Nắm chắc ngữ pháp TOEIC: </strong>Khóa học cung cấp 17 chủ đề ngữ pháp quan trọng kèm theo bài tập trắc nghiệm có giải thích chi tiết để bạn thực hành.</span></p>
+
+<p style="text-align:center"><img src="https://study4.com/media/uploads/editor/hangbm.LearnEnglish/2023/05/06/image-20230506104420-2.gif" style="height:383px; width:700px"></p>
+
+<p><span style="font-size:18px"><strong>🧠Chiến lược và phương pháp làm bài: </strong>Khóa học cung cấp video bài giảng hướng dẫn chi tiết cách làm từng dạng câu hỏi trong TOEIC Reading và Listening kèm theo hơn 1000 câu hỏi trắc nghiệm có giải thích chi tiết.</span></p>
+
+<p style="text-align:center"><img src="https://study4.com/media/uploads/editor/hangbm.LearnEnglish/2023/05/06/image-20230506104420-3.gif" style="height:383px; width:700px"></p>
+
+<p><span style="font-size:18px"><strong>🎧Thực hành nghe chép chính tả TOEIC: </strong>Bạn có thể luyện tập nghe điền từ hoặc chép lại cả câu. Để đạt hiệu quả tốt nhất, mỗi ngày bạn nên luyện tập ít nhất 20 phút với phương pháp này. Tốc độ nghe có thể được điều chỉnh nhanh hay chậm tùy theo khả năng của bạn.</span></p>
+
+<p style="text-align:center"><img src="https://study4.com/media/uploads/editor/hangbm.LearnEnglish/2023/05/06/image-20230506104420-4.gif" style="height:383px; width:700px"></p>
+
+<p style="text-align:center"><span style="font-size:20px"><strong>👉</strong><a href="https://LearnEnglish.com/courses/28/complete-toeic/?itm_source=seo&amp;itm_medium=article&amp;itm_campaign=blogpost_internal_link&amp;itm_content=291"><strong>ĐĂNG KÝ HỌC THỬ MIỄN PHÍ NGAY!</strong></a><strong>👈</strong></span></p>
+
+<p>&nbsp;</p>
+
+<h2 id="lời-kết"><strong>Lời kết</strong></h2>
+
+<p>Mong rằng bài viết này của LearnEnglish về Cấu trúc đề thi TOEIC chuẩn và chi tiết năm 2024&nbsp;đã giúp bạn nắm rõ những thông tin về bài thi kỹ năng TOEIC.</p>
+
+<p>Nếu có thắc mắc, hãy để lại bình luận và LearnEnglish sẽ giải đáp cho bạn nhé!</p>
+                    </div>
+                    
+
+                    
+
+                    
+                </div>
+
+                
+                <div class="post-tags">
+                
+                    <span class="tag">toeic</span>
+                
+                </div>
+                
+                <br>
+
+                <div class="post-comments-wrapper">
+                    <h4 id="bình-luận">Bình luận</h4>
+                    
+
+
+
+<form action="/posts/291/comment/" method="POST" class="mt-2 md-comment-input jqform jqcomment-form" data-reload-html="#obj-comments-291" data-target="#md-comments-box" data-submitting="false">
+    
+<input name="csrfmiddlewaretoken" type="hidden" value="TuZQlc36HfM8x7wUuakAhdy61Fn3CIrkhxjDKUnc1ttRV3YyIApzyXaUiir5zvNk">
+
+
+    
+    
+
+    <div class="input-group">
+        <textarea name="content" rows="1" class="form-control custom-control jqcomment-textarea" placeholder="Chia sẻ cảm nghĩ của bạn ..."></textarea>
+        <div class="input-group-append">
+            <button class="input-group-addon btn btn-primary jqcomment-submit">Gửi</button>
+        </div>
+    </div>
+</form>
+
+
+
+                    <br>
+                    <div id="obj-comments-291" class="jqhtml-loader" data-href="/posts/291/comments/"><p><i>Chưa có bình luận nào. Hãy trở thành người đầu tiên bình luận bài này.</i></p></div>
+                </div>
+
+                
+                <br>
+                <div class="">
+                    <div class="h3">Có thể bạn sẽ quan tâm</div>
+                    
+<ul class="post-links">
+
+
+
+<li class="post-link"><a href="https://LearnEnglish.com/posts/485/le-phi-thi-toeic-2024-moi-nhat/">Lệ phí thi TOEIC mới nhất</a></li>
+
+
+
+
+<li class="post-link"><a href="https://LearnEnglish.com/posts/793/chung-chi-toeic-co-thoi-han-bao-lau-bao-lau-can-thi-lai-toeic/">Chứng chỉ TOEIC có thời hạn bao lâu? Bao lâu cần thi lại TOEIC?</a></li>
+
+
+</ul>
+
+                </div>
+                
+
+                <br>
+                <div>
+                    <div class="h3">Các bài viết cùng chủ đề</div>
+                    
+<div class="">
+<div class="center">
+    
+        
+        <div class="posts-list">
+        
+            
+<div class="postlist-card">
+
+
+<div class="postlist-card-img sm mb-2">
+    <img class="lazyel card-img entered loaded" data-src="https://study4.com/media/examprep/Post/files/2024/11/19/vocabulary_7.png" data-ll-status="loaded" src="https://study4.com/media/examprep/Post/files/2024/11/19/vocabulary_7.png">
+</div>
+
+<div class="postlist-card-content-wrapper">
+    
+    <span class="d-block post-topic"><a class="font-weight-bold small" href="/topics/tu-vung/">TỪ VỰNG</a></span>
+    
+    <div class="postlist-title-wrapper">
+        
+        <div class="postlist-card-img-sm mb-2">
+            <img class="lazyel card-img" data-src="https://study4.com/media/examprep/Post/files/2024/11/19/vocabulary_7.png">
+        </div>
+        
+        <div class="postlist-title"><a href="/posts/1470/tong-hop-tu-vung-tieng-anh-chu-de-love-tinh-yeu/">Tổng hợp từ vựng tiếng Anh chủ đề Love (Tình yêu)</a></div>
+    </div>
+    <div class="postlist-card-content card-body d-flex flex-column p-0">
+        <p>Trong bài viết sau, LearnEnglish sẽ chia sẻ cho bạn các tips học từ vựng nói chung và một số từ vựng phổ biến thuộc chủ đề Love.</p>
+    </div>
+    
+    <div class="postlist-meta">
+        19/11/2024 bởi Bùi Hằng
+        
+    </div>
+    
+</div>
+</div>
+
+        
+            
+<div class="postlist-card">
+
+
+<div class="postlist-card-img sm mb-2">
+    <img class="lazyel card-img entered loaded" data-src="https://study4.com/media/examprep/Post/files/2024/11/19/vocabulary_6.png" data-ll-status="loaded" src="https://study4.com/media/examprep/Post/files/2024/11/19/vocabulary_6.png">
+</div>
+
+<div class="postlist-card-content-wrapper">
+    
+    <span class="d-block post-topic"><a class="font-weight-bold small" href="/topics/tu-vung/">TỪ VỰNG</a></span>
+    
+    <div class="postlist-title-wrapper">
+        
+        <div class="postlist-card-img-sm mb-2">
+            <img class="lazyel card-img" data-src="https://study4.com/media/examprep/Post/files/2024/11/19/vocabulary_6.png">
+        </div>
+        
+        <div class="postlist-title"><a href="/posts/1469/tong-hop-tu-vung-tieng-anh-chu-de-restaurant-nha-hang/">Tổng hợp từ vựng tiếng Anh chủ đề Restaurant (Nhà hàng)</a></div>
+    </div>
+    <div class="postlist-card-content card-body d-flex flex-column p-0">
+        <p>Trong bài viết sau, LearnEnglish sẽ chia sẻ cho bạn các tips học từ vựng nói chung và một số từ vựng phổ biến thuộc chủ đề Restaurant.</p>
+    </div>
+    
+    <div class="postlist-meta">
+        19/11/2024 bởi Bùi Hằng
+        
+    </div>
+    
+</div>
+</div>
+
+        
+            
+<div class="postlist-card">
+
+
+<div class="postlist-card-img sm mb-2">
+    <img class="lazyel card-img entered loaded" data-src="https://study4.com/media/examprep/Post/files/2024/11/19/vocabulary_5.png" data-ll-status="loaded" src="https://study4.com/media/examprep/Post/files/2024/11/19/vocabulary_5.png">
+</div>
+
+<div class="postlist-card-content-wrapper">
+    
+    <span class="d-block post-topic"><a class="font-weight-bold small" href="/topics/tu-vung/">TỪ VỰNG</a></span>
+    
+    <div class="postlist-title-wrapper">
+        
+        <div class="postlist-card-img-sm mb-2">
+            <img class="lazyel card-img" data-src="https://study4.com/media/examprep/Post/files/2024/11/19/vocabulary_5.png">
+        </div>
+        
+        <div class="postlist-title"><a href="/posts/1468/tong-hop-tu-vung-tieng-anh-chu-de-human-resources-quan-tri-nhan-luc/">Tổng hợp từ vựng tiếng Anh chủ đề Human Resources (Quản trị nhân lực)</a></div>
+    </div>
+    <div class="postlist-card-content card-body d-flex flex-column p-0">
+        <p>Trong bài viết sau, LearnEnglish sẽ chia sẻ cho bạn các tips học từ vựng nói chung và một số từ vựng phổ biến thuộc chủ đề Human Resources (Quản trị nhân lực).</p>
+    </div>
+    
+    <div class="postlist-meta">
+        19/11/2024 bởi Bùi Hằng
+        
+    </div>
+    
+</div>
+</div>
+
+        
+            
+<div class="postlist-card">
+
+
+<div class="postlist-card-img sm mb-2">
+    <img class="lazyel card-img entered loaded" data-src="https://study4.com/media/examprep/Post/files/2024/11/19/vocabulary_4.png" data-ll-status="loaded" src="https://study4.com/media/examprep/Post/files/2024/11/19/vocabulary_4.png">
+</div>
+
+<div class="postlist-card-content-wrapper">
+    
+    <span class="d-block post-topic"><a class="font-weight-bold small" href="/topics/tu-vung/">TỪ VỰNG</a></span>
+    
+    <div class="postlist-title-wrapper">
+        
+        <div class="postlist-card-img-sm mb-2">
+            <img class="lazyel card-img" data-src="https://study4.com/media/examprep/Post/files/2024/11/19/vocabulary_4.png">
+        </div>
+        
+        <div class="postlist-title"><a href="/posts/1467/tong-hop-tu-vung-tieng-anh-chu-de-mathematics-toan-hoc/">Tổng hợp từ vựng tiếng Anh chủ đề Mathematics (Toán học)</a></div>
+    </div>
+    <div class="postlist-card-content card-body d-flex flex-column p-0">
+        <p>Trong bài viết sau, LearnEnglish sẽ chia sẻ cho bạn các tips học từ vựng nói chung và một số từ vựng phổ biến thuộc chủ đề Mathematics (Toán học).</p>
+    </div>
+    
+    <div class="postlist-meta">
+        19/11/2024 bởi Bùi Hằng
+        
+    </div>
+    
+</div>
+</div>
+
+        
+            
+<div class="postlist-card">
+
+
+<div class="postlist-card-img sm mb-2">
+    <img class="lazyel card-img entered loaded" data-src="https://study4.com/media/examprep/Post/files/2024/11/19/vocabulary_3.png" data-ll-status="loaded" src="https://study4.com/media/examprep/Post/files/2024/11/19/vocabulary_3.png">
+</div>
+
+<div class="postlist-card-content-wrapper">
+    
+    <span class="d-block post-topic"><a class="font-weight-bold small" href="/topics/tu-vung/">TỪ VỰNG</a></span>
+    
+    <div class="postlist-title-wrapper">
+        
+        <div class="postlist-card-img-sm mb-2">
+            <img class="lazyel card-img" data-src="https://study4.com/media/examprep/Post/files/2024/11/19/vocabulary_3.png">
+        </div>
+        
+        <div class="postlist-title"><a href="/posts/1466/tong-hop-tu-vung-tieng-anh-chu-de-tet-lunar-new-year/">Tổng hợp từ vựng tiếng Anh chủ đề Tết (Lunar New Year)</a></div>
+    </div>
+    <div class="postlist-card-content card-body d-flex flex-column p-0">
+        <p>Trong bài viết sau, LearnEnglish sẽ chia sẻ cho bạn các tips học từ vựng nói chung và một số từ vựng phổ biến thuộc chủ đề Lunar New Year.</p>
+    </div>
+    
+    <div class="postlist-meta">
+        19/11/2024 bởi Bùi Hằng
+        
+    </div>
+    
+</div>
+</div>
+
+        
+        </div>
+
+        
+
+
+
+    
+</div>
+</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-md-2 order-md-1">
+        
+        <div class="post-topics-list">
+            <p class="font-12 font-600">
+                Chuyên mục
+            </p>
+        
+            <div class="post-topics-listitem my-2">
+                <a class="text-dark" href="/blog/topics/tim-hieu-ve-learn-english/index.html">
+                    <b>TÌM HIỂU VỀ LEARNENGLISH</b>
+                </a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="/blog/topics/tinh-nang-tren-learn-english/index.html">
+                    Tính năng trên LearnEnglish
+                </a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">KHÓA HỌC TRÊN LEARNENGLISH</a>
+            </div>
+        
+            <hr>
+        
+            <div class="post-topics-listitem my-2">
+                <a class="text-dark" href="#" onclick="showNotification()">
+                    <b>Review của học viên LearnEnglish</b>
+                </a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Học viên IELTS</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Học viên TOEIC</a>
+            </div>
+        
+            <hr>
+        
+            <div class="post-topics-listitem my-2">
+                <a class="text-dark" href="#" onclick="showNotification()">
+                    <b>Luyện thi IELTS</b>
+                </a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">IELTS Listening</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">IELTS Reading</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">IELTS Speaking</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">IELTS Writing</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">IELTS Materials</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Thông tin kỳ thi IELTS</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Kinh nghiệm thi IELTS</a>
+            </div>
+        
+            <hr>
+        
+            <div class="post-topics-listitem my-2">
+                <a class="text-dark" href="#" onclick="showNotification()">
+                    <b>Luyện thi TOEIC</b>
+                </a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">TOEIC Listening</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">TOEIC Reading</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">TOEIC Materials</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Thông tin kỳ thi TOEIC</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Kinh nghiệm thi TOEIC</a>
+            </div>
+        
+            <hr>
+        
+            <div class="post-topics-listitem my-2">
+                <a class="text-dark" href="#" onclick="showNotification()">
+                    <b>Tiếng Anh cơ bản</b>
+                </a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Phát âm</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Từ vựng</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Ngữ pháp</a>
+            </div>
+        
+            <hr>
+        
+            <div class="post-topics-listitem my-2">
+                <a class="text-dark" href="#" onclick="showNotification()">
+                    <b>Luyện Thi HSK-HSKK</b>
+                </a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Tiếng Trung cơ bản</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Kiến thức HSK-HSKK</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Thông tin kỳ thi HSK-HSKK</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Kinh nghiệm thi HSK-HSKK</a>
+            </div>
+        
+            <hr>
+        
+            <div class="post-topics-listitem my-2">
+                <a class="text-dark" href="#" onclick="showNotification()">
+                    <b>Tiếng Anh cho người đi làm</b>
+                </a>
+            </div>
+        
+            <hr>
+        
+            <div class="post-topics-listitem my-2">
+                <a class="text-dark" href="#" onclick="showNotification()">
+                    <b>Du học</b>
+                </a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Admission essays</a>
+            </div>
+        
+            <div class="post-topics-listitem-sub">
+                <a class="text-dark" href="#" onclick="showNotification()">Kinh nghiệm du học</a>
+            </div>
+        
+            <hr>
+        </div>
+        
+        <script>
+            function showNotification() {
+                alert("Bài viết này sẽ được cập nhật trong tương lai");
+            }
+        </script>
+        
+<hr>
+
+</div>
+
+    </div>
+</div>
+</div>
+
+                
+            </div>
+            
+        </div>
+        
+
+        
+    
+
+    <div class="modal" id="site-modal-lg" tabindex="-1" aria-labelledby="site-modal-lg" aria-hidden="true" data-keyboard="false" data-backdrop="static">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+                <div class="modal-body" id="site-modal-lg-content"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="site-modal-md" tabindex="-1" aria-labelledby="site-modal-md" aria-hidden="true" data-keyboard="false" data-backdrop="static">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+                <div class="modal-body" id="site-modal-md-content"></div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+window.csrf_token = 'TuZQlc36HfM8x7wUuakAhdy61Fn3CIrkhxjDKUnc1ttRV3YyIApzyXaUiir5zvNk';
+window.current_user =
+
+{
+    is_authenticated: true,
+    id: 1532546,
+    name: "chauthithuyquynh2019",
+    is_admin: false,
+    is_staff: false,
+    is_superuser: false,
+}
+
+</script>
+    <script type="text/javascript" src="/static/ckeditor/ckeditor-init-override.js?v=1735926895"></script>
+    <script type="text/javascript" src="/static/ckeditor/ckeditor/ckeditor.js"></script>
+    <script type="text/javascript" src="/static/js/webaudiorecorder/WebAudioRecorder.min.js"></script>
+    <script type="text/javascript" src="/static/dist/vendor.ad60eb658fc650d75097.js?v=1735926895"></script>
+    <script type="text/javascript" src="/static/dist/main.651d8fa8cadf332cd75a.js?v=1735926895"></script>
+
+    
+
+<script type="text/javascript">
+$(function() {
+    const isInternalCourseURL = (url) => (new URL(url).origin == location.origin && (url.indexOf('/courses/') > -1 || url.indexOf('/lp/')) > -1);
+    $('.post-content a').each(function(idx,el) {
+        var $link = $(el);
+        var url = $link.attr('href');
+        if (isInternalCourseURL(url)) {
+            var qs = generate_qs({
+                'itm_source': 'seo',
+                'itm_medium': 'article',
+                'itm_campaign': 'blogpost_internal_link',
+                'itm_content': '291'
+            });
+            var new_url = url + '?' + qs;
+            $link.attr('href', new_url);
+        }
+    });
+});
+</script>
+
+    <script type="text/javascript">
+        function isFacebookApp() {
+            var ua = navigator.userAgent || navigator.vendor || window.opera;
+            return (ua.indexOf("FBAN") > -1) || (ua.indexOf("FBAV") > -1);
+        }
+        if (isFacebookApp()) {
+            $('.g-login-block').hide();
+        }
+    </script>
+
+    
+
+    
+    
+    
+
+
+    
+    
+    
+
+
+    
+    <script type="text/javascript">
+        (function(w,d,t,u,n,a,m){w['MauticTrackingObject']=n;
+            w[n]=w[n]||function(){(w[n].q=w[n].q||[]).push(arguments)},a=d.createElement(t),
+            m=d.getElementsByTagName(t)[0];a.async=1;a.src=u;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://mautic.LearnEnglish.com/mtc.js','mt');
+
+        
+            
+            mt('send', 'pageview', {
+                email: "chauthithuyquynh2019@gmail.com",
+                uid: "1532546",
+                username: "chauthithuyquynh2019",
+                is_paid: false,
+                is_trial: true
+            });
+            
+        
+    </script>
+    
+<script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon="{&quot;rayId&quot;:&quot;8fcc5b9a7e1c3f57&quot;,&quot;serverTiming&quot;:{&quot;name&quot;:{&quot;cfExtPri&quot;:true,&quot;cfL4&quot;:true,&quot;cfSpeedBrain&quot;:true,&quot;cfCacheStatus&quot;:true}},&quot;version&quot;:&quot;2024.10.5&quot;,&quot;token&quot;:&quot;8d646591bd144e069b89dada41cfc02b&quot;}" crossorigin="anonymous"></script>
+
+
+    <div class="highlight-control" style="display: none; top: -35px;">
+        <div>
+            <span class="fas fa-trash highlight-icon highlight-remove" aria-hidden="true"></span>
+            <span class="fas fa-pencil highlight-icon highlight-note" aria-hidden="true"></span>
+            <span class="highlight-icon highlight-color blue"></span>
+            <span class="highlight-icon highlight-color pink"></span>
+            <span class="highlight-icon highlight-color green"></span>
+            <span class="highlight-icon highlight-color yellow"></span>
+            <span class="highlight-icon highlight-color underred"></span>
+            <span class="highlight-icon highlight-color crossed">abc</span>
+            <span class="ml-2 fas fa-plus highlight-icon highlight-flashcard" data-toggle="modal" data-target="#highlight-modal" aria-hidden="true"></span>
+        </div>
+        <div class="highlight-editor" style="display: none;">
+            <textarea rows="3"></textarea>
+            <div><span class="far fa-check highlight-icon highlight-save" aria-hidden="true"></span></div>
+        </div>
+    </div>
+    <div class="modal" id="highlight-modal" tabindex="-1" aria-labelledby="highlight-modal" aria-hidden="true" data-keyboard="false" data-backdrop="static">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+                <div class="modal-body" id="highlight-modal-content"></div>
+            </div>
+        </div>
+    </div>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+<!-- Code injected--></body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="footer-wrapper" bis_skin_checked="1">
+        <div class="footer-container" bis_skin_checked="1">
+            <footer>
+
+
+
+                <div class="row" bis_skin_checked="1">
+                    <div class="col-12 col-sm-12 col-md" bis_skin_checked="1">
+                        <a href="/"><img class="mb-2" src="/assets/img/Logo_LearnEnglish.svg" alt="" height="30"></a>
+                        <small class="mb-2">©</small>
+                        <div class="site-socials" style="width: 140px !important;" bis_skin_checked="1">
+                            <a target="_blank" href="https://facebook.com/" bis_skin_checked="1"><span
+                                    class="social-link fab fa-facebook-square"></span></a>
+                            <a target="_blank" href="https://instagram.com/" bis_skin_checked="1"><span
+                                    class="social-link fab fa-instagram"></span></a>
+                            <a target="_blank" href="https://twitter.com/" bis_skin_checked="1"><span
+                                    class="social-link fab fa-twitter"></span></a>
+                            <a target="_blank" href="https://youtube.com/" bis_skin_checked="1"><span
+                                    class="social-link fab fa-youtube"></span></a>
+                            <a target="_blank" href="https://www.tiktok.com" bis_skin_checked="1"><span
+                                    class="social-link fab fa-tiktok"></span></a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md" bis_skin_checked="1">
+                        <div class="footer-title" bis_skin_checked="1">Về LearnEnglish</div>
+                        <ul class="list-unstyled text-small">
+                            <li><a href="/about/" bis_skin_checked="1">Giới thiệu</a></li>
+                            <li><a href="/contact/" bis_skin_checked="1">Liên hệ</a></li>
+                            <li><a href="/privacy/" bis_skin_checked="1">Điều khoản bảo mật</a></li>
+                            <li><a href="/terms/" bis_skin_checked="1">Điều khoản sử dụng</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-6 col-md" bis_skin_checked="1">
+                        <div class="footer-title" bis_skin_checked="1">Tài nguyên</div>
+                        <ul class="list-unstyled text-small">
+
+                            <li><a href="/tests/" bis_skin_checked="1">Thư viện đề thi</a></li>
+                            <li><a href="/posts/" bis_skin_checked="1">Blog</a></li>
+                            <li><a href="/materials/" bis_skin_checked="1">Kho tài liệu</a></li>
+
+
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md" bis_skin_checked="1">
+                        <div class="footer-title" bis_skin_checked="1">Chính sách chung</div>
+                        <ul class="list-unstyled text-small">
+                            <li><a href="/user-guide/" bis_skin_checked="1">Hướng dẫn sử dụng</a></li>
+                            <li><a href="/buying-guide/" bis_skin_checked="1">Hướng dẫn thanh toán</a></li>
+
+                            <li><a href="/buying-terms/" bis_skin_checked="1">Điều khoản và Điều Kiện Giao Dịch</a></li>
+                            <li><a href="/checkout-policy" bis_skin_checked="1">Chính sách kiểm hàng</a></li>
+                            <li><a href="/delivery-policy" bis_skin_checked="1">Chính sách giao, nhận hàng</a></li>
+                            <li><a href="/feedback/" bis_skin_checked="1">Phản hồi, khiếu nại</a></li>
+                            <li><a href="/return-policy" bis_skin_checked="1">Chính sách chuyển đổi, hoàn hủy</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+
+                <div class="footer-copyright text-center" bis_skin_checked="1">
+                    LearnEnglish © Bản quyền của GROUP11.
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>
