@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đánh giá kết quả và đề xuất khóa học phù hợp</title>
+    <link rel="icon" href="../../assets/img/Avatar_LearnEnglish.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/f9374b778e.js" crossorigin="anonymous"></script>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background-color: #f4f4f9;
+      }
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      h1 {
+        text-align: center;
+        color: #333;
+      }
+      .form-group {
+        margin-bottom: 20px;
+      }
+      label {
+        font-size: 16px;
+        margin-bottom: 5px;
+        display: block;
+      }
+      input[type="number"],
+      input[type="radio"] {
+        margin-top: 5px;
+      }
+      .btn {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      .btn:hover {
+        background-color: #45a049;
+      }
+      .result {
+        margin-top: 20px;
+        padding: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        background-color: #f9f9f9;
+      }
+      .recommendation {
+        margin-top: 10px;
+        font-weight: bold;
+      }
+      #wrapper {
+  background-color: #fff;
+  padding: 30px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  width: 100%;
+  max-width: 400px; /* Giới hạn chiều rộng của form đăng nhập */
+  text-align: center;
+  margin-left: 500px;
+}
+
+form h1 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.inputbox {
+  margin-bottom: 20px;
+}
+
+.inputbox input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+.inputbox input:focus {
+  border-color: #3498db;
+}
+
+.forgot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.forgot a {
+  text-decoration: none;
+  color: #3498db;
+  transition: color 0.3s;
+}
+
+.forgot a:hover {
+  color: #2980b9;
+}
+
+/* Cấu trúc chung cho phần bài tập */
+#dashboardScreen {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px;
+  text-align: center;
+}
+
+#dashboardScreen h1 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+#dashboardScreen h2 {
+  font-size: 24px;
+  color: #333;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+/* Phần lọc và tìm kiếm bài tập */
+.filter-section {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  align-items: center;
+}
+
+.filter-section label {
+  font-size: 16px;
+  color: #333;
+}
+
+.filter-section select,
+.filter-section input {
+  padding: 8px 15px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.filter-section select {
+  width: 200px;
+}
+
+.filter-section input {
+  width: 250px;
+}
+
+/* Thiết kế cho các nút bài tập */
+.exercises button {
+  padding: 15px 30px;
+  font-size: 18px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.exercises button:hover {
+  background-color: #2980b9;
+}
+
+/* Phần hiển thị câu hỏi */
+#questions-section {
+  margin-top: 30px;
+  display: none;
+  text-align: left;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#questions-section h3 {
+  font-size: 26px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.question {
+  margin-bottom: 20px;
+}
+
+.question p {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.question input[type="radio"] {
+  margin-right: 10px;
+}
+
+#result {
+  margin-top: 20px;
+  font-size: 20px;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Nút nộp bài */
+#questions-section button {
+  padding: 12px 25px;
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+#questions-section button:hover {
+  background-color: #2ecc71;
+}
+
+/* Cấu trúc phần câu hỏi */
+#questions-section {
+  margin-top: 30px;
+  display: none;
+  text-align: left;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Cấu trúc lưới cho câu hỏi */
+#questions-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Chia đều 2 cột */
+  gap: 30px; /* Khoảng cách giữa các câu hỏi */
+}
+
+.question {
+  margin-bottom: 20px;
+}
+
+.question p {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.question input[type="radio"] {
+  margin-right: 10px;
+}
+
+#result {
+  margin-top: 20px;
+  font-size: 20px;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Nút nộp bài */
+#questions-section button {
+  padding: 12px 25px;
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+#questions-section button:hover {
+  background-color: #2ecc71;
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="topnav1 topnav-wrapper" bis_skin_checked="1">
+      <div class="topnav-container" bis_skin_checked="1">
+        <nav class="navbar navbar-expand-lg">
+          <span class="navbar-brand">
+            <a class="topnav-brand" href="../../">
+              <img
+                class="topnav-logo"
+                src="../../assets/img/Logo_LearnEnglish.svg"
+                alt="STUDY4"
+              />
+            </a>
+          </span>
+          <button
+            class="navbar-toggler pull-xs-right d-lg-none"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbar-collapse"
+          >
+            ☰
+          </button>
+          <div
+            class="d-lg-block navbar-collapse justify-content-end collapse"
+            id="navbar-collapse"
+            bis_skin_checked="1"
+          >
+            <ul class="nav">
+              <li class="nav-item">
+                <a class="nav-link" href="../../courses/" bis_skin_checked="1"
+                  >Course</a
+                >
+              </li>
+  
+              <li class="nav-item">
+                <a class="nav-link" href="../../skills/" bis_skin_checked="1"
+                  >Skill</a
+                >
+              </li>
+  
+              <li class="nav-item">
+                <a class="nav-link" href="../../flashcards/me/" bis_skin_checked="1"
+                  >Flashcards</a
+                >
+              </li>
+  
+              <li class="nav-item">
+                <a class="nav-link" href="../../blog" bis_skin_checked="1">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="../../general-english/"
+                  bis_skin_checked="1"
+                  >General english</a
+                >
+              </li>
+  
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="../../courses/activate/"
+                  bis_skin_checked="1"
+                >
+                  Kích hoạt tài khoản
+                </a>
+              </li>
+  
+              <li class="nav-item user-topnav dropdown d-none d-lg-block">
+                <a
+                  class="nav-link dropdown-toggle user-topnav-profile"
+                  href="../../my-account/"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  bis_skin_checked="1"
+                >
+                  <span class="account-profile-img">
+                    <img
+                      src="../../assets/img/user_icon.webp"
+                      alt="ChuTanTai23130280"
+                    />
+                  </span>
+                </a>
+  
+                <div
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink"
+                  bis_skin_checked="1"
+                >
+                  <div bis_skin_checked="1">
+                    <h6 class="dropdown-header" id="thông-báo">Thông báo</h6>
+                    <div
+                      id="new-notis-dropdown-content"
+                      class="jqhtml-loader dropdown-text"
+                      data-href="/notifications/newest/"
+                      bis_skin_checked="1"
+                    >
+                      <p class="font-sm"><i>Bạn chưa có thông báo mới.</i></p>
+  
+                      <div class="mt-2 link font-sm" bis_skin_checked="1">
+                        <a href="../../notifications/" bis_skin_checked="1"
+                          >Xem tất cả &gt;&gt;</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+  
+                  <div class="dropdown-divider" bis_skin_checked="1"></div>
+                  <a
+                    class="dropdown-item"
+                    href="../../studyplan/"
+                    bis_skin_checked="1"
+                    >Lịch học của tôi</a
+                  >
+                  <a
+                    class="dropdown-item"
+                    href="../../my-account/"
+                    bis_skin_checked="1"
+                    >Trang cá nhân</a
+                  >
+                  <a class="dropdown-item" href="../../logout/" bis_skin_checked="1"
+                    >Đăng xuất</a
+                  >
+                </div>
+              </li>
+              <li class="nav-item d-lg-none">
+                <a class="nav-link" href="../../notifications/" bis_skin_checked="1"
+                  >Thông báo
+                </a>
+              </li>
+              <li class="nav-item d-lg-none">
+                <a class="nav-link" href="../../studyplan/" bis_skin_checked="1"
+                  >Lịch học của tôi</a
+                >
+              </li>
+              <li class="nav-item d-lg-none">
+                <a class="nav-link" href="../../my-account/" bis_skin_checked="1"
+                  >Trang cá nhân</a
+                >
+              </li>
+              <li class="nav-item d-lg-none">
+                <a class="nav-link" href="../../logout/" bis_skin_checked="1"
+                  >Đăng xuất</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <div class="container">
+      <h1>Đánh giá kết quả, đề xuất khóa học phù hợp</h1>
+
+      <section id="dashboardScreen">
+        <h1>Các bài tập có sẵn</h1>
+       
+        <div class="exercises">
+          <button onclick="startExercise(1)">Đề 1: Cơ bản.</button>
+          <button onclick="startExercise(2)">Đề 2: Nâng cao.</button>
+        </div>
+        
+        <!-- Phần hiển thị câu hỏi -->
+        <div id="questions-section" style="display: none">
+          <h3>Bài <span id="exercise-number"></span></h3>
+          <div id="questions-list"></div>
+          <button onclick="submitAnswers()">Nộp Bài</button>
+          <div id="result"></div>
+        </div>
+  
+    <script>
+        const questionsData = {
+          1: [
+            {
+              question: "1.She arrived at 8 p.m., opened the door and shouted “Good ______!",
+              options: ["A) morning", "B) evening", "C) night", "D) bye"],
+              answer: "B",
+            },
+            {
+              question: "2.I decided to put the table ______ the wall of the living room so that it would be out of the way.",
+              options: ["A) in front of", "B) opposed to", "C) against", "D) versus"],
+              answer: "C",
+            },
+            {
+              question: "3.The sold-out tickets made it clear that the speaker we invited to our charity event was ______ popular.",
+              options: ["A) somewhat", "B) extremely", "C) relatively", "D) objectively"],
+              answer: "B",
+            },
+            {
+              question: "4.They’ve been married for over fifty years, but she still remembers the day she first ______.",
+              options: ["A)keen on him ", "B)stuck on him ", "C)fell for him ", "D)wed him "],
+              answer: "C",
+            },
+            {
+              question: "5.Kang thought the spicy tofu dish was ______ tasty, so he ordered it again.",
+              options: ["A)mainly ", "B)fairly ", "C)especially ", "D)slightly "],
+              answer: "C",
+            },
+            {
+              question: "6.The source of her confidence was her mother’s often-repeated assertion that her daughter was her greatest ______.",
+              options: ["A)challenge", "B)realization ", "C)achievement ", "D)experiment "],
+              answer: "C",
+            },
+            {
+              question: "7.Often, Carl will do things for purely ______ reasons, but sometimes he is capable of great generosity.",
+              options: ["A)empathetic ", "B)selfish ", "C)juvenile ", "D)frivolous "],
+              answer: "B",
+            },
+            {
+              question: "8.Unfortunately, Mr. Dean’s assistant won’t be able to ______ the hotel he had requested.",
+              options: ["A)look him up at ", "B)make a reservation from ", "C)make contact for ", "D)book him into "],
+              answer: "D",
+            },
+            {
+              question: "9.Disheartened about the team’s prospects in the tournament after injuries to the two leading scorers, Kenji nevertheless tried to be ______ when he talked with his teammates.",
+              options: ["A)optimistic ", "B)gleeful ", "C)humble ", "D)respectful "],
+              answer: "A",
+            },
+            {
+              question: "10.Carlton and his wife tried to win friends not just by giving a birthday party, but rather creating a 24-hour ______, complete with acrobats, a band, professional dancers, and nonstop food and drink.",
+              options: ["A)gathering ", "B)extravaganza ", "C)fete ", "D)ritual "],
+              answer: "B",
+            },
+          ],
+          2: [
+            {
+              question: "1.He didn’t bat an eye when he realized he failed the exam again.",
+              options: ["A)surprised", "B) didn’t want to see", "C) was happy", "D) cared"],
+              answer: "D",
+            },
+            {
+              question: "2.At present, the new director ______ to foster a culture of open communication within the company.",
+              options: ["A) tried", "B) was trying", "C) is trying", "D) tries"],
+              answer: "C",
+            },
+            {
+              question: "3.It’s too noisy here for us to study. Can we go somewhere ______?",
+              options: ["A)the quietest ", "B)than quiet ", "C)quieter ", "D)quiet "],
+              answer: "C",
+            },
+            
+            {
+              question: "4.The water is ______. You can’t drink it.",
+              options: ["A)pollution ", "B)pollutant ", "C)polluted ", "D)polluting "],
+              answer: "C",
+            },
+            
+            {
+              question: "5.I’ve noticed that _____ Spanish eat a lot of vegetables.",
+              options: ["A)an ", "B)a ", "C)the ", "D)no article "],
+              answer: "C",
+            },
+            {
+              question: "6.The world people are now aware ______ the importance of environmental protection.",
+              options: ["A)of ", "B)for ", "C)about ", "D)to"],
+              answer: "A",
+            },
+            {
+              question: "7.Maths were one of his favourite subjects when he was at primary school.",
+              options: ["A)were ", "B)his ", "C)subjects ", "D)at "],
+              answer: "A",
+            },
+            {
+              question: "8.After driving for twenty miles, he suddenly realised that he has driven in the wrong direction.",
+              options: ["A)After driving ", "B)suddenly ", "C)realised ", "D)has driven "],
+              answer: "D",
+            },
+            {
+              question: "9.Miss Lan sang very beautiful at my birthday party last night.",
+              options: ["A)sang ", "B)very beautiful ", "C)at ", "D) last night"],
+              answer: "B",
+            },
+            {
+              question: "10.Aloha is a Hawaiian word meaning love, that can be used to say hello or goodbye",
+              options: ["A)is a ", "B)meaning ", "C)that ", "D)to say "],
+              answer: "C",
+            },
+            
+            
+          ],
+        };
+  
+        function startExercise(exerciseNumber) {
+          // Hiển thị câu hỏi của đề được chọn
+          document.getElementById("questions-section").style.display = "block";
+          document.getElementById("exercise-number").innerText = exerciseNumber;
+          const questionsList = document.getElementById("questions-list");
+          questionsList.innerHTML = ""; // Xóa nội dung cũ
+  
+          // Thêm câu hỏi vào danh sách
+          questionsData[exerciseNumber].forEach((item, index) => {
+            const questionDiv = document.createElement("div");
+            questionDiv.classList.add("question");
+            questionDiv.innerHTML = `<p>${item.question}</p>`;
+            item.options.forEach((option) => {
+              questionDiv.innerHTML += `<input type="radio" name="question${index}" value="${option.charAt(0)}"> ${option}<br>`;
+            });
+            questionsList.appendChild(questionDiv);
+          });
+        }
+  
+        function submitAnswers() {
+          const exerciseNumber = parseInt(document.getElementById("exercise-number").innerText);
+          const userAnswers = [];
+          let score = 0;
+  
+          // Kiểm tra câu trả lời của người dùng
+          questionsData[exerciseNumber].forEach((item, index) => {
+            const selectedOption = document.querySelector(`input[name="question${index}"]:checked`);
+            if (selectedOption) {
+              userAnswers.push(selectedOption.value);
+              if (selectedOption.value === item.answer) {
+                score++;
+              }
+            }
+          });
+  
+          // Hiển thị kết quả
+          document.getElementById("result").innerText = `Điểm của bạn: ${score} / ${questionsData[exerciseNumber].length}`;
+  
+          // Đề xuất khóa học phù hợp
+          let recommendation = "";
+          if (score <= 4) {
+            recommendation =
+              "Bạn có thể thử lại bài kiểm tra cơ bản hơn hoặc tham gia khóa học cơ bản về Toán/Khoa học.";
+          } else if (score <= 7) {
+            recommendation =
+              "Bạn đã có nền tảng vững, nhưng cần luyện tập thêm để nâng cao trình độ.";
+          } else {
+            recommendation =
+              "Chúc mừng bạn! Bạn đã đạt trình độ rất tốt.";
+          }
+          document.getElementById("result").innerHTML += `<div class="recommendation">${recommendation}</div>`;
+        }
+  
+        function filterExercises() {
+          const filter = document.getElementById("languageFilter").value.toLowerCase();
+          const exercises = document.querySelectorAll(".exercises button");
+          exercises.forEach((exercise) => {
+            if (filter === "all" || exercise.innerText.toLowerCase().includes(filter)) {
+              exercise.style.display = "block";
+            } else {
+              exercise.style.display = "none";
+            }
+          });
+        }
+  
+        function searchExercises() {
+          const searchValue = document.getElementById("search").value.toLowerCase();
+          const exercises = document.querySelectorAll(".exercises button");
+          exercises.forEach((exercise) => {
+            if (exercise.innerText.toLowerCase().includes(searchValue)) {
+              exercise.style.display = "block";
+            } else {
+              exercise.style.display = "none";
+            }
+          });
+        }
+    </script>
+    
+  </body>
+</html>
