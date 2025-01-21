@@ -1,0 +1,1116 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn English</title>
+    <link rel="icon" href="../../assets/img/Avatar_LearnEnglish.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/f9374b778e.js" crossorigin="anonymous"></script>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        iframe {
+            border: none;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+
+<body>
+
+
+    <div class="topnav1 topnav-wrapper" bis_skin_checked="1">
+        <div class="topnav-container" bis_skin_checked="1">
+            <nav class="navbar  navbar-expand-lg">
+                <span class="navbar-brand">
+                    <a class="topnav-brand" href="../../">
+                        <img class="topnav-logo" src="../../assets/img/Logo_LearnEnglish.svg" alt="LearnEnglish">
+
+                    </a>
+                </span>
+                <button class="navbar-toggler pull-xs-right d-lg-none" type="button" data-toggle="collapse"
+                    data-target="#navbar-collapse">
+                    ☰
+
+                </button>
+                <div class="d-lg-block navbar-collapse justify-content-end collapse" id="navbar-collapse"
+                    bis_skin_checked="1">
+
+                    <ul class="nav">
+
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../courses/" bis_skin_checked="1">Course</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../skills/" bis_skin_checked="1">Skill</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../flashcards/me/" bis_skin_checked="1">Flashcards</a>
+                        </li>
+
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../blog/" bis_skin_checked="1">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../general-english/" bis_skin_checked="1">General English</a>
+                        </li>
+
+
+
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../courses/activate/" bis_skin_checked="1">
+                                Kích hoạt tài khoản
+                            </a>
+                        </li>
+
+                        <li class="nav-item user-topnav dropdown d-none d-lg-block">
+                            <a class="nav-link dropdown-toggle user-topnav-profile" href="../../my-account/" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" bis_skin_checked="1">
+                                <span class="account-profile-img">
+
+                                    <img src="../../assets/img/user_icon.webp" alt="ChuTanTai23130280">
+
+                                </span>
+
+                            </a>
+
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" bis_skin_checked="1">
+                                <div bis_skin_checked="1">
+                                    <h6 class="dropdown-header" id="thông-báo"> Thông báo </h6>
+                                    <div id="new-notis-dropdown-content" class="jqhtml-loader dropdown-text"
+                                        data-href="../../notifications/newest/" bis_skin_checked="1">
+                                        <p class="font-sm"><i>Bạn chưa có thông báo mới.</i></p>
+
+
+                                        <div class="mt-2 link font-sm" bis_skin_checked="1"><a href="../../notifications/"
+                                                bis_skin_checked="1">Xem tất cả &gt;&gt;</a></div>
+                                    </div>
+                                </div>
+
+                                <div class="dropdown-divider" bis_skin_checked="1"></div>
+                                <a class="dropdown-item" href="../../studyplan/" bis_skin_checked="1">Lịch học của tôi</a>
+                                <a class="dropdown-item" href="../../my-account/" bis_skin_checked="1">Trang cá nhân</a>
+                                <a class="dropdown-item" href="../../login.html" bis_skin_checked="1">Đăng xuất</a>
+                            </div>
+                        </li>
+                        <li class="nav-item d-lg-none">
+                            <a class="nav-link" href="../../notifications/" bis_skin_checked="1">Thông báo </a>
+                        </li>
+                        <li class="nav-item d-lg-none">
+                            <a class="nav-link" href="../../studyplan/" bis_skin_checked="1">Lịch học của tôi</a>
+                        </li>
+                        <li class="nav-item d-lg-none">
+                            <a class="nav-link" href="../../my-account/" bis_skin_checked="1">Trang cá nhân</a>
+                        </li>
+                        <li class="nav-item d-lg-none">
+                            <a class="nav-link" href="../../login.html" bis_skin_checked="1">Đăng xuất</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <script>
+        // JavaScript để xử lý dropdown
+        document.addEventListener('DOMContentLoaded', function () {
+            const profileBtn = document.querySelector('.user-topnav-profile');
+            const dropdownMenu = document.querySelector('.dropdown-menu');
+
+            // Toggle dropdown khi click vào profile
+            profileBtn.addEventListener('click', function (e) {
+                e.preventDefault();
+                dropdownMenu.classList.toggle('show');
+            });
+
+            // Đóng dropdown khi click ra ngoài
+            document.addEventListener('click', function (e) {
+                if (!profileBtn.contains(e.target) && !dropdownMenu.contains(e.target)) {
+                    dropdownMenu.classList.remove('show');
+                }
+            });
+        });
+    </script>
+
+
+
+
+<div class="site-wrapper" bis_skin_checked="1">
+
+            
+
+            
+
+
+
+
+            
+
+            
+    <div class="site-content-wrapper" bis_skin_checked="1">
+        
+
+        
+
+        
+        
+        
+        
+
+        
+
+        
+<div class="content-header light-gradient-bg" bis_skin_checked="1">
+<div class="container pb-3" bis_skin_checked="1">
+<h1 class="d-flex align-items-center" id="lịch-học">
+    <i class="far fa-calendar-star mr-2"></i>
+    Lịch học
+</h1>
+
+<br>
+<ul class="nav nav-pills">
+    <li class="nav-item">
+        <a class="nav-link" href="../../studyplan/" bis_skin_checked="1">Lịch học của tôi</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link active" href="../../discover/" bis_skin_checked="1">Khám phá</a>
+    </li>
+</ul>
+</div>
+</div>
+
+
+        
+        <div class="content-wrapper" bis_skin_checked="1">
+            
+            
+<div class="container" bis_skin_checked="1">
+<div class="row" bis_skin_checked="1">
+<div class="col-12 col-md-12" bis_skin_checked="1">
+    
+        
+        
+
+
+<div class="contentblock" bis_skin_checked="1">
+<div class="sp-item-title" bis_skin_checked="1">
+IELTS General Reading Band 7+
+
+
+<span class="badge badge-success float-right">Active</span>
+
+</div>
+
+<div class="sp-item-course" bis_skin_checked="1">Khóa học: <a href="/courses/29/ielts-general-intensive-reading/" bis_skin_checked="1">IELTS General Reading</a></div>
+
+
+<div class="sp-item-description  prewrap" bis_skin_checked="1">- Dành cho các bạn học viên đăng ký khóa IELTS General Intensive Reading của LearnEnglish
+- Lộ trình học IELTS reading mỗi ngày để tăng band hiệu quả. Yêu cầu đầu vào band 4, target band 7+.
+- Bạn tập trung vào 1 dạng câu hỏi và luyện trong suốt 2-3 tuần cho đến khi tỉ lệ đúng đạt 70-80%.
+- Thứ tự học: Điền từ (completion) &gt; T/F/NG &gt; MCQ &gt; Matching</div>
+
+<div class="sp-item-todolists" bis_skin_checked="1">
+
+<div class="sp-item-todolist gray-bg" bis_skin_checked="1">
+    <div class="d-block" bis_skin_checked="1">
+        <span class="badge badge-info">
+            
+            Hàng ngày
+            
+        </span>
+    </div>
+    <ul class="sp-item-todolist-tasks">
+    
+        <li>
+            <span>Làm ít nhất 1 passage (bấm giờ 15-20 phút như thi thật)</span>
+        </li>
+    
+        <li>
+            <span>Tự chữa lại các câu làm sai mà không đọc giải thích/đáp án</span>
+        </li>
+    
+        <li>
+            <span>Học từ vựng</span>
+        </li>
+    
+        <li>
+            <span>Xem clip chữa đề / video bài giảng với dạng câu hỏi tương ứng</span>
+        </li>
+    
+    </ul>
+</div>
+
+<div class="sp-item-todolist gray-bg" bis_skin_checked="1">
+    <div class="d-block" bis_skin_checked="1">
+        <span class="badge badge-info">
+            
+            Ngày trong tháng
+             (7, 8)
+        </span>
+    </div>
+    <ul class="sp-item-todolist-tasks">
+    
+        <li>
+            <span>Làm full 1 đề reading (bấm giờ 60 phút)</span>
+        </li>
+    
+        <li>
+            <span>Làm lại các câu sai, tự chữa đề rồi sau đó mới xem video clip giải thích chi tiết</span>
+        </li>
+    
+    </ul>
+</div>
+
+</div>
+
+<div class="mt-2" bis_skin_checked="1">
+<button class="btn btn-sky btn-sm jqaction-link" data-href="/studyplan/39985/copy/" data-confirm_text="Bạn có chắc chắn muốn copy lịch học này?">Sử dụng lịch học này</button>
+</div>
+
+</div>
+
+
+<br>
+
+        
+        
+
+
+<div class="contentblock" bis_skin_checked="1">
+<div class="sp-item-title" bis_skin_checked="1">
+IELTS General Writing Band 6.5+
+
+
+<span class="badge badge-success float-right">Active</span>
+
+</div>
+
+<div class="sp-item-course" bis_skin_checked="1">Khóa học: <a href="/courses/30/ielts-general-intensive-writing/" bis_skin_checked="1">IELTS General Writing</a></div>
+
+
+<div class="sp-item-description  prewrap" bis_skin_checked="1">- Dành cho các bạn học viên đăng ký khóa IELTS General Intensive Writing của LearnEnglish
+- Lộ trình học IELTS writing general training mỗi ngày để tăng band hiệu quả. Yêu cầu đầu vào band 4, target band 6.5+</div>
+
+<div class="sp-item-todolists" bis_skin_checked="1">
+
+<div class="sp-item-todolist gray-bg" bis_skin_checked="1">
+    <div class="d-block" bis_skin_checked="1">
+        <span class="badge badge-info">
+            
+            Hàng ngày
+            
+        </span>
+    </div>
+    <ul class="sp-item-todolist-tasks">
+    
+        <li>
+            <span>Đọc sample task 1 hoặc 2</span>
+        </li>
+    
+        <li>
+            <span>Làm các bài tập từ vựng, ngữ pháp và (quan trọng) viết lại câu</span>
+        </li>
+    
+    </ul>
+</div>
+
+<div class="sp-item-todolist gray-bg" bis_skin_checked="1">
+    <div class="d-block" bis_skin_checked="1">
+        <span class="badge badge-info">
+            
+            Ngày trong tuần
+             (Thứ 7, Chủ nhật)
+        </span>
+    </div>
+    <ul class="sp-item-todolist-tasks">
+    
+        <li>
+            <span>Viết bài task 1 (20 phút)</span>
+        </li>
+    
+        <li>
+            <span>Viết bài task 2 (40 phút)</span>
+        </li>
+    
+    </ul>
+</div>
+
+</div>
+
+<div class="mt-2" bis_skin_checked="1">
+<button class="btn btn-sky btn-sm jqaction-link" data-href="/studyplan/39984/copy/" data-confirm_text="Bạn có chắc chắn muốn copy lịch học này?">Sử dụng lịch học này</button>
+</div>
+
+</div>
+
+
+<br>
+
+        
+        
+
+
+<div class="contentblock" bis_skin_checked="1">
+<div class="sp-item-title" bis_skin_checked="1">
+Complete TOEIC 650+
+
+
+<span class="badge badge-success float-right">Active</span>
+
+</div>
+
+<div class="sp-item-course" bis_skin_checked="1">Khóa học: <a href="/courses/28/complete-toeic/" bis_skin_checked="1">Complete TOEIC</a></div>
+
+
+<div class="sp-item-description  prewrap" bis_skin_checked="1">- Dành cho các bạn học viên target 650+ đã đăng ký khóa Complete TOEIC của LearnEnglish
+- Thứ tự học từng kỹ năng: chú ý CHỈ LUYỆN một part cho đến khi đạt tỉ lệ đúng 70-80% rồi mới chuyển sang part khác.
+--- Listening: part 1 &gt; part 2 &gt; part 4 &gt; part 3
+--------- Riêng part 3 và part 4, tập trung vào dạng câu hỏi không cần suy luận: chủ đề, danh tính, địa điểm, mục đích và bàng biểu.
+--- Reading: part 5 &gt; part 6 &gt; part 7
+--------- Part 7, tập trung vào bài đọc đơn, đọc ghép 2 câu hỏi. Dạng câu hỏi tìm thông tin: danh tính, thời gian, địa điểm hoặc dạng tìm mục đích.
+- Chú ý không luyện nhiều part của 1 kỹ năng cùng một lúc</div>
+
+<div class="sp-item-todolists" bis_skin_checked="1">
+
+<div class="sp-item-todolist gray-bg" bis_skin_checked="1">
+    <div class="d-block" bis_skin_checked="1">
+        <span class="badge badge-info">
+            Reading: 
+            Hàng ngày
+            
+        </span>
+    </div>
+    <ul class="sp-item-todolist-tasks">
+    
+        <li>
+            <span>Làm riêng từng part bạn muốn luyện tập (bấm thời gian 1 phút/câu)</span>
+        </li>
+    
+        <li>
+            <span>Tự chữa các câu làm sai mà không đọc giải thích</span>
+        </li>
+    
+        <li>
+            <span>Đọc giải thích chi tiết các câu không tự chữa được, hoặc xem clip bài giảng / chữa đề</span>
+        </li>
+    
+    </ul>
+</div>
+
+<div class="sp-item-todolist gray-bg" bis_skin_checked="1">
+    <div class="d-block" bis_skin_checked="1">
+        <span class="badge badge-info">
+            Listening: 
+            Hàng ngày
+            
+        </span>
+    </div>
+    <ul class="sp-item-todolist-tasks">
+    
+        <li>
+            <span>Làm riêng từng part bạn muốn luyện tập (bấm thời gian 1 phút/câu)</span>
+        </li>
+    
+        <li>
+            <span>Tự chữa các câu làm sai mà không đọc script</span>
+        </li>
+    
+        <li>
+            <span>Nghe chép chính tả bài vừa làm, tốc độ 1.1x hoặc 1.25x</span>
+        </li>
+    
+        <li>
+            <span>Đọc transcript, giải thích hoặc xem video bài giảng nếu cần</span>
+        </li>
+    
+    </ul>
+</div>
+
+<div class="sp-item-todolist gray-bg" bis_skin_checked="1">
+    <div class="d-block" bis_skin_checked="1">
+        <span class="badge badge-info">
+            Từ vựng/ngữ pháp: 
+            Hàng ngày
+            
+        </span>
+    </div>
+    <ul class="sp-item-todolist-tasks">
+    
+        <li>
+            <span>Học từ vựng (flashcards mỗi ngày 20-30 từ)</span>
+        </li>
+    
+        <li>
+            <span>Học và làm bài tập ngữ pháp (1-2 ngày học 1 chủ đề ngữ pháp)</span>
+        </li>
+    
+    </ul>
+</div>
+
+</div>
+
+<div class="mt-2" bis_skin_checked="1">
+<button class="btn btn-sky btn-sm jqaction-link" data-href="/studyplan/10117/copy/" data-confirm_text="Bạn có chắc chắn muốn copy lịch học này?">Sử dụng lịch học này</button>
+</div>
+
+</div>
+
+
+<br>
+
+        
+        
+
+
+<div class="contentblock" bis_skin_checked="1">
+<div class="sp-item-title" bis_skin_checked="1">
+Complete TOEIC 450+
+
+
+<span class="badge badge-success float-right">Active</span>
+
+</div>
+
+<div class="sp-item-course" bis_skin_checked="1">Khóa học: <a href="/courses/28/complete-toeic/" bis_skin_checked="1">Complete TOEIC</a></div>
+
+
+<div class="sp-item-description  prewrap" bis_skin_checked="1">- Dành cho các bạn học viên target 450+ đã đăng ký khóa Complete TOEIC của LearnEnglish
+- Tập trung học từ vựng và ngữ pháp
+- Thứ tự học từng kỹ năng: chú ý CHỈ LUYỆN một part cho đến khi đạt tỉ lệ đúng 70-80% rồi mới chuyển sang part khác.
+--- Listening: part 1 &gt; part 2 &gt; part 4 (dạng câu hỏi tìm thông tin)
+--- Reading: part 5 &gt; part 6
+- Chú ý không luyện nhiều part của 1 kỹ năng cùng một lúc</div>
+
+<div class="sp-item-todolists" bis_skin_checked="1">
+
+<div class="sp-item-todolist gray-bg" bis_skin_checked="1">
+    <div class="d-block" bis_skin_checked="1">
+        <span class="badge badge-info">
+            Reading: 
+            Hàng ngày
+            
+        </span>
+    </div>
+    <ul class="sp-item-todolist-tasks">
+    
+        <li>
+            <span>Làm riêng từng part bạn muốn luyện tập (bấm thời gian 1 phút/câu)</span>
+        </li>
+    
+        <li>
+            <span>Tự chữa lại các câu làm sai mà không đọc giải thích</span>
+        </li>
+    
+        <li>
+            <span>Đọc giải thích chi tiết các câu không tự chữa được, hoặc xem clip bài giảng</span>
+        </li>
+    
+    </ul>
+</div>
+
+<div class="sp-item-todolist gray-bg" bis_skin_checked="1">
+    <div class="d-block" bis_skin_checked="1">
+        <span class="badge badge-info">
+            Listening: 
+            Hàng ngày
+            
+        </span>
+    </div>
+    <ul class="sp-item-todolist-tasks">
+    
+        <li>
+            <span>Làm riêng từng part bạn muốn luyện tập (bấm thời gian 1 phút/câu)</span>
+        </li>
+    
+        <li>
+            <span>Tự chữa các câu làm sai mà không đọc script</span>
+        </li>
+    
+        <li>
+            <span>Nghe chép chính tả bài vừa làm, tốc độ 1.1x hoặc 1.25x</span>
+        </li>
+    
+        <li>
+            <span>Đọc transcript, giải thích hoặc xem video bài giảng nếu cần</span>
+        </li>
+    
+    </ul>
+</div>
+
+<div class="sp-item-todolist gray-bg" bis_skin_checked="1">
+    <div class="d-block" bis_skin_checked="1">
+        <span class="badge badge-info">
+            Từ vựng/ngữ pháp: 
+            Hàng ngày
+            
+        </span>
+    </div>
+    <ul class="sp-item-todolist-tasks">
+    
+        <li>
+            <span>Học từ vựng (flashcards mỗi ngày 20-30 từ)</span>
+        </li>
+    
+        <li>
+            <span>Học và làm bài tập ngữ pháp (3-4 ngày học 1 chủ đề ngữ pháp)</span>
+        </li>
+    
+    </ul>
+</div>
+
+</div>
+
+<div class="mt-2" bis_skin_checked="1">
+<button class="btn btn-sky btn-sm jqaction-link" data-href="/studyplan/10022/copy/" data-confirm_text="Bạn có chắc chắn muốn copy lịch học này?">Sử dụng lịch học này</button>
+</div>
+
+</div>
+
+
+<br>
+
+        
+        
+
+
+<div class="contentblock" bis_skin_checked="1">
+<div class="sp-item-title" bis_skin_checked="1">
+IELTS Fundamentals band 0-4
+
+
+<span class="badge badge-success float-right">Active</span>
+
+</div>
+
+<div class="sp-item-course" bis_skin_checked="1">Khóa học: <a href="/courses/26/ielts-fundamentals/" bis_skin_checked="1">IELTS Fundamentals</a></div>
+
+
+<div class="sp-item-description  prewrap" bis_skin_checked="1">- Dành cho các bạn học viên đăng ký khóa IELTS Fundamentals của LearnEnglish
+- Học 1800 từ vựng và 29 chủ đề ngữ pháp trong 3 tháng
+- Mỗi ngày cần dành 2-3 tiếng</div>
+
+<div class="sp-item-todolists" bis_skin_checked="1">
+
+<div class="sp-item-todolist gray-bg" bis_skin_checked="1">
+    <div class="d-block" bis_skin_checked="1">
+        <span class="badge badge-info">
+            
+            Hàng ngày
+            
+        </span>
+    </div>
+    <ul class="sp-item-todolist-tasks">
+    
+        <li>
+            <span>Học thêm 20 từ mới và review flashcards cũ (30 phút)</span>
+        </li>
+    
+        <li>
+            <span>Học lý thuyết và làm bài tập ngữ pháp (3 ngày/1 chủ đề)</span>
+        </li>
+    
+    </ul>
+</div>
+
+</div>
+
+<div class="mt-2" bis_skin_checked="1">
+<button class="btn btn-sky btn-sm jqaction-link" data-href="/studyplan/328/copy/" data-confirm_text="Bạn có chắc chắn muốn copy lịch học này?">Sử dụng lịch học này</button>
+</div>
+
+</div>
+
+
+<br>
+
+        
+        
+
+
+<div class="contentblock" bis_skin_checked="1">
+<div class="sp-item-title" bis_skin_checked="1">
+Listening intensive band 7+
+
+
+<span class="badge badge-success float-right">Active</span>
+
+</div>
+
+<div class="sp-item-course" bis_skin_checked="1">Khóa học: <a href="/courses/15/ielts-intensive-listening/" bis_skin_checked="1">IELTS Intensive Listening</a></div>
+
+
+<div class="sp-item-description  prewrap" bis_skin_checked="1">- Dành cho các bạn học viên đăng ký khóa IELTS Intensive Listening của LearnEnglish
+- Lộ trình học IELTS listening mỗi ngày để tăng band hiệu quả. Yêu cầu đầu vào band 4, target band 7+.
+- Bạn tập trung vào 1 dạng câu hỏi và luyện trong suốt 2-3 tuần cho đến khi tỉ lệ đúng đạt 70-80%.
+- Thứ tự học theo section: Section 1 &gt; 2 &gt; 4 &gt; 3
+- Thứ tự dạng câu hỏi: Điền từ (completion) &gt; MCQ &gt; Matching</div>
+
+<div class="sp-item-todolists" bis_skin_checked="1">
+
+<div class="sp-item-todolist gray-bg" bis_skin_checked="1">
+    <div class="d-block" bis_skin_checked="1">
+        <span class="badge badge-info">
+            
+            Hàng ngày
+            
+        </span>
+    </div>
+    <ul class="sp-item-todolist-tasks">
+    
+        <li>
+            <span>Nếu yếu listening, mỗi ngày dành 15-30 phút nghe chép chính tả từ vựng</span>
+        </li>
+    
+    </ul>
+</div>
+
+<div class="sp-item-todolist gray-bg" bis_skin_checked="1">
+    <div class="d-block" bis_skin_checked="1">
+        <span class="badge badge-info">
+            
+            Hàng ngày
+            
+        </span>
+    </div>
+    <ul class="sp-item-todolist-tasks">
+    
+        <li>
+            <span>Làm ít nhất 1 section (bấm giờ 12 phút), chú ý nghe 1 lần, tốc độ 1x như thi thật</span>
+        </li>
+    
+        <li>
+            <span>Tự chữa lại bài nghe vừa làm mà không đọc giải thích chi tiết</span>
+        </li>
+    
+        <li>
+            <span>Nghe chép chính tả bài vừa làm, tốc độ 1.1x hoặc 1.25x</span>
+        </li>
+    
+        <li>
+            <span>Đọc giải thích chi tiết, xem clip chữa đề / video bài giảng</span>
+        </li>
+    
+    </ul>
+</div>
+
+<div class="sp-item-todolist gray-bg" bis_skin_checked="1">
+    <div class="d-block" bis_skin_checked="1">
+        <span class="badge badge-info">
+            
+            Ngày trong tuần
+             (Thứ 7, Chủ nhật)
+        </span>
+    </div>
+    <ul class="sp-item-todolist-tasks">
+    
+        <li>
+            <span>Làm full 1 đề listening, làm bộ Cam 15-17.</span>
+        </li>
+    
+        <li>
+            <span>Tự chữa đề rồi sau đó mới xem giải thích chi tiết</span>
+        </li>
+    
+    </ul>
+</div>
+
+</div>
+
+<div class="mt-2" bis_skin_checked="1">
+<button class="btn btn-sky btn-sm jqaction-link" data-href="/studyplan/4/copy/" data-confirm_text="Bạn có chắc chắn muốn copy lịch học này?">Sử dụng lịch học này</button>
+</div>
+
+</div>
+
+
+<br>
+
+        
+        
+
+
+<div class="contentblock" bis_skin_checked="1">
+<div class="sp-item-title" bis_skin_checked="1">
+Reading intensive band 7+
+
+
+<span class="badge badge-success float-right">Active</span>
+
+</div>
+
+<div class="sp-item-course" bis_skin_checked="1">Khóa học: <a href="/courses/22/ielts-intensive-vocabulary-reading/" bis_skin_checked="1">IELTS Intensive Reading</a></div>
+
+
+<div class="sp-item-description  prewrap" bis_skin_checked="1">- Dành cho các bạn học viên đăng ký khóa IELTS Intensive Reading của LearnEnglish
+- Lộ trình học IELTS reading mỗi ngày để tăng band hiệu quả. Yêu cầu đầu vào band 4, target band 7+.
+- Bạn tập trung vào 1 dạng câu hỏi và luyện trong suốt 2-3 tuần cho đến khi tỉ lệ đúng đạt 70-80%.
+- Thứ tự học: Điền từ (completion) &gt; T/F/NG và Y/N/NG &gt; MCQ &gt; Matching</div>
+
+<div class="sp-item-todolists" bis_skin_checked="1">
+
+<div class="sp-item-todolist gray-bg" bis_skin_checked="1">
+    <div class="d-block" bis_skin_checked="1">
+        <span class="badge badge-info">
+            
+            Hàng ngày
+            
+        </span>
+    </div>
+    <ul class="sp-item-todolist-tasks">
+    
+        <li>
+            <span>Làm ít nhất 1 passage (bấm giờ 15-20 phút như thi thật)</span>
+        </li>
+    
+        <li>
+            <span>Tự chữa lại các câu làm sai mà không đọc giải thích/đáp án</span>
+        </li>
+    
+        <li>
+            <span>Học từ vựng</span>
+        </li>
+    
+        <li>
+            <span>Xem clip chữa đề / video bài giảng với dạng câu hỏi tương ứng</span>
+        </li>
+    
+    </ul>
+</div>
+
+<div class="sp-item-todolist gray-bg" bis_skin_checked="1">
+    <div class="d-block" bis_skin_checked="1">
+        <span class="badge badge-info">
+            
+            Ngày trong tuần
+             (Thứ 7, Chủ nhật)
+        </span>
+    </div>
+    <ul class="sp-item-todolist-tasks">
+    
+        <li>
+            <span>Làm full 1 đề reading (bấm giờ 60 phút), làm bộ Cam 15-17.</span>
+        </li>
+    
+        <li>
+            <span>Tự chữa đề rổi sau đó mới xem giải thích chi tiết</span>
+        </li>
+    
+    </ul>
+</div>
+
+</div>
+
+<div class="mt-2" bis_skin_checked="1">
+<button class="btn btn-sky btn-sm jqaction-link" data-href="/studyplan/3/copy/" data-confirm_text="Bạn có chắc chắn muốn copy lịch học này?">Sử dụng lịch học này</button>
+</div>
+
+</div>
+
+
+<br>
+
+        
+        
+
+
+<div class="contentblock" bis_skin_checked="1">
+<div class="sp-item-title" bis_skin_checked="1">
+Speaking band 7+
+
+
+<span class="badge badge-success float-right">Active</span>
+
+</div>
+
+<div class="sp-item-course" bis_skin_checked="1">Khóa học: <a href="/courses/27/ielts-intensive-speaking/" bis_skin_checked="1">IELTS Intensive Speaking</a></div>
+
+
+<div class="sp-item-description  prewrap" bis_skin_checked="1">- Dành cho các bạn học viên đăng ký khóa IELTS Intensive Speaking của LearnEnglish
+- Lộ trình học IELTS speaking mỗi ngày để tăng band hiệu quả. Yêu cầu đầu vào band 4, target band 6-6.5+.</div>
+
+<div class="sp-item-todolists" bis_skin_checked="1">
+
+<div class="sp-item-todolist gray-bg" bis_skin_checked="1">
+    <div class="d-block" bis_skin_checked="1">
+        <span class="badge badge-info">
+            
+            Hàng ngày
+            
+        </span>
+    </div>
+    <ul class="sp-item-todolist-tasks">
+    
+        <li>
+            <span>Đọc sample các topic part 1 và part 2+3</span>
+        </li>
+    
+        <li>
+            <span>Luyện tập các bài từ vựng, ngữ pháp và luyện nói shadowing</span>
+        </li>
+    
+        <li>
+            <span>Luyện phát âm IPA mỗi ngày</span>
+        </li>
+    
+    </ul>
+</div>
+
+<div class="sp-item-todolist gray-bg" bis_skin_checked="1">
+    <div class="d-block" bis_skin_checked="1">
+        <span class="badge badge-info">
+            
+            Ngày trong tuần
+             (Thứ 7, Chủ nhật)
+        </span>
+    </div>
+    <ul class="sp-item-todolist-tasks">
+    
+        <li>
+            <span>Nói full 1 bài speaking đủ 3 parts, có bấm giờ 10-12 phút</span>
+        </li>
+    
+    </ul>
+</div>
+
+</div>
+
+<div class="mt-2" bis_skin_checked="1">
+<button class="btn btn-sky btn-sm jqaction-link" data-href="/studyplan/7/copy/" data-confirm_text="Bạn có chắc chắn muốn copy lịch học này?">Sử dụng lịch học này</button>
+</div>
+
+</div>
+
+
+<br>
+
+        
+        
+
+
+<div class="contentblock" bis_skin_checked="1">
+<div class="sp-item-title" bis_skin_checked="1">
+Writing band 6-6.5+
+
+
+<span class="badge badge-success float-right">Active</span>
+
+</div>
+
+<div class="sp-item-course" bis_skin_checked="1">Khóa học: <a href="/courses/25/ielts-intensive-writing/" bis_skin_checked="1">IELTS Intensive Writing</a></div>
+
+
+<div class="sp-item-description  prewrap" bis_skin_checked="1">- Dành cho các bạn học viên đăng ký khóa IELTS Intensive Writing của LearnEnglish
+- Lộ trình học IELTS writing mỗi ngày để tăng band hiệu quả. Yêu cầu đầu vào band 4, target band 6+</div>
+
+<div class="sp-item-todolists" bis_skin_checked="1">
+
+<div class="sp-item-todolist gray-bg" bis_skin_checked="1">
+    <div class="d-block" bis_skin_checked="1">
+        <span class="badge badge-info">
+            
+            Hàng ngày
+            
+        </span>
+    </div>
+    <ul class="sp-item-todolist-tasks">
+    
+        <li>
+            <span>Đọc sample task 1 hoặc 2</span>
+        </li>
+    
+        <li>
+            <span>Làm các bài tập từ vựng, ngữ pháp và (quan trọng) viết lại câu</span>
+        </li>
+    
+    </ul>
+</div>
+
+<div class="sp-item-todolist gray-bg" bis_skin_checked="1">
+    <div class="d-block" bis_skin_checked="1">
+        <span class="badge badge-info">
+            
+            Ngày trong tuần
+             (Thứ 7, Chủ nhật)
+        </span>
+    </div>
+    <ul class="sp-item-todolist-tasks">
+    
+        <li>
+            <span>Viết 1 bài task 1 (20 phút)</span>
+        </li>
+    
+        <li>
+            <span>Viết 1 bài task 2 (40 phút)</span>
+        </li>
+    
+    </ul>
+</div>
+
+</div>
+
+<div class="mt-2" bis_skin_checked="1">
+<button class="btn btn-sky btn-sm jqaction-link" data-href="../../studyplan/" data-confirm_text="Bạn có chắc chắn muốn copy lịch học này?">Sử dụng lịch học này</button>
+</div>
+
+</div>
+
+
+<br>
+
+        
+        
+
+<nav class="jqpages">
+
+</nav>
+
+
+    
+</div>
+
+</div>
+</div>
+
+            
+        </div>
+        
+    </div>
+    
+
+    
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="footer-wrapper" bis_skin_checked="1">
+        <div class="footer-container" bis_skin_checked="1">
+            <footer>
+
+
+
+                <div class="row" bis_skin_checked="1">
+                    <div class="col-12 col-sm-12 col-md" bis_skin_checked="1">
+                        <a href="../../"><img class="mb-2" src="../../assets/img/Logo_LearnEnglish.svg" alt="" height="30"></a>
+                        <small class="mb-2">©</small>
+                        <div class="site-socials" style="width: 140px !important;" bis_skin_checked="1">
+                            <a target="_blank" href="https://facebook.com/" bis_skin_checked="1"><span
+                                    class="social-link fab fa-facebook-square"></span></a>
+                            <a target="_blank" href="https://instagram.com/" bis_skin_checked="1"><span
+                                    class="social-link fab fa-instagram"></span></a>
+                            <a target="_blank" href="https://twitter.com/" bis_skin_checked="1"><span
+                                    class="social-link fab fa-twitter"></span></a>
+                            <a target="_blank" href="https://youtube.com/" bis_skin_checked="1"><span
+                                    class="social-link fab fa-youtube"></span></a>
+                            <a target="_blank" href="https://www.tiktok.com" bis_skin_checked="1"><span
+                                    class="social-link fab fa-tiktok"></span></a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md" bis_skin_checked="1">
+                        <div class="footer-title" bis_skin_checked="1">Về LearnEnglish</div>
+                        <ul class="list-unstyled text-small">
+                            <li><a href="../../about/" bis_skin_checked="1">Giới thiệu</a></li>
+                            <li><a href="../../contact/" bis_skin_checked="1">Liên hệ</a></li>
+                            <li><a href="../../privacy/" bis_skin_checked="1">Điều khoản bảo mật</a></li>
+                            <li><a href="../../terms/" bis_skin_checked="1">Điều khoản sử dụng</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-6 col-md" bis_skin_checked="1">
+                        <div class="footer-title" bis_skin_checked="1">Tài nguyên</div>
+                        <ul class="list-unstyled text-small">
+
+                            
+                            <li><a href="../../posts/" bis_skin_checked="1">Blog</a></li>
+                            <li><a href="../../materials/" bis_skin_checked="1">Kho tài liệu</a></li>
+
+
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md" bis_skin_checked="1">
+                        <div class="footer-title" bis_skin_checked="1">Chính sách chung</div>
+                        <ul class="list-unstyled text-small">
+                            
+                            <li><a href="../../buying-guide/" bis_skin_checked="1">Hướng dẫn thanh toán</a></li>
+
+                            <li><a href="../../buying-terms/" bis_skin_checked="1">Điều khoản và Điều Kiện Giao Dịch</a></li>
+                            
+                            
+                            <li><a href="../../feedback/" bis_skin_checked="1">Phản hồi, khiếu nại</a></li>
+                            <li><a href="../../return-policy" bis_skin_checked="1">Chính sách chuyển đổi, hoàn hủy</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+
+                <div class="footer-copyright text-center" bis_skin_checked="1">
+                    LearnEnglish © Bản quyền của GROUP11.
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+<script>
+   document.addEventListener('DOMContentLoaded', function() {
+    // Lấy tất cả các nút với class .btn-sky
+    const buttons = document.querySelectorAll('.btn.btn-sky.btn-sm.jqaction-link');
+
+    if (buttons.length > 0) {
+        buttons.forEach(button => {
+            button.addEventListener('click', function(event) {
+                // Ngăn hành động mặc định khi nhấn nút
+                event.preventDefault();
+
+                // Hiển thị bảng thông báo
+                const userConfirmed = confirm('Bạn có chắc chắn muốn copy lịch học này?');
+
+                // Nếu người dùng chọn OK
+                if (userConfirmed) {
+                    // Chuyển hướng đến đường dẫn trong data-href của nút
+                    const url = button.getAttribute('data-href');
+                    if (url) {
+                        window.location.href = '../../studyplan/';
+                    } else {
+                        console.error('Không tìm thấy thuộc tính data-href trên nút.');
+                    }
+                } else {
+                    // Người dùng chọn Cancel, không làm gì cả
+                    console.log('Người dùng đã hủy copy lịch học.');
+                }
+            });
+        });
+    } else {
+        console.error('Không tìm thấy nút với class .btn.btn-sky.btn-sm.jqaction-link');
+    }
+});
+
+
+  </script>
+</html>
