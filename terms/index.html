@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn English</title>
+    <link rel="icon" href="../assets/img/Avatar_LearnEnglish.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/f9374b778e.js" crossorigin="anonymous"></script>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        iframe {
+            border: none;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+
+<body>
+
+
+    <div class="topnav1 topnav-wrapper" bis_skin_checked="1">
+        <div class="topnav-container" bis_skin_checked="1">
+            <nav class="navbar  navbar-expand-lg">
+                <span class="navbar-brand">
+                    <a class="topnav-brand" href="../">
+                        <img class="topnav-logo" src="../assets/img/Logo_LearnEnglish.svg" alt="LearnEnglish">
+
+                    </a>
+                </span>
+                <button class="navbar-toggler pull-xs-right d-lg-none" type="button" data-toggle="collapse"
+                    data-target="#navbar-collapse">
+                    ☰
+
+                </button>
+                <div class="d-lg-block navbar-collapse justify-content-end collapse" id="navbar-collapse"
+                    bis_skin_checked="1">
+
+                    <ul class="nav">
+
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="../courses/" bis_skin_checked="1">Course</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="../skills/" bis_skin_checked="1">Skill</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="../flashcards/me/" bis_skin_checked="1">Flashcards</a>
+                        </li>
+
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="../blog/" bis_skin_checked="1">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../general-english/" bis_skin_checked="1">General English</a>
+                        </li>
+
+
+
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="../courses/activate/" bis_skin_checked="1">
+                                Kích hoạt tài khoản
+                            </a>
+                        </li>
+
+                        <li class="nav-item user-topnav dropdown d-none d-lg-block">
+                            <a class="nav-link dropdown-toggle user-topnav-profile" href="../my-account/" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" bis_skin_checked="1">
+                                <span class="account-profile-img">
+
+                                    <img src="../assets/img/user_icon.webp" alt="ChuTanTai23130280">
+
+                                </span>
+
+                            </a>
+
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" bis_skin_checked="1">
+                                <div bis_skin_checked="1">
+                                    <h6 class="dropdown-header" id="thông-báo"> Thông báo </h6>
+                                    <div id="new-notis-dropdown-content" class="jqhtml-loader dropdown-text"
+                                        data-href="../notifications/newest/" bis_skin_checked="1">
+                                        <p class="font-sm"><i>Bạn chưa có thông báo mới.</i></p>
+
+
+                                        <div class="mt-2 link font-sm" bis_skin_checked="1"><a href="../notifications/"
+                                                bis_skin_checked="1">Xem tất cả &gt;&gt;</a></div>
+                                    </div>
+                                </div>
+
+                                <div class="dropdown-divider" bis_skin_checked="1"></div>
+                                <a class="dropdown-item" href="../studyplan/" bis_skin_checked="1">Lịch học của tôi</a>
+                                <a class="dropdown-item" href="../my-account/" bis_skin_checked="1">Trang cá nhân</a>
+                                <a class="dropdown-item" href=".login.html/" bis_skin_checked="1">Đăng xuất</a>
+                            </div>
+                        </li>
+                        <li class="nav-item d-lg-none">
+                            <a class="nav-link" href="../notifications/" bis_skin_checked="1">Thông báo </a>
+                        </li>
+                        <li class="nav-item d-lg-none">
+                            <a class="nav-link" href="../studyplan/" bis_skin_checked="1">Lịch học của tôi</a>
+                        </li>
+                        <li class="nav-item d-lg-none">
+                            <a class="nav-link" href="../my-account/" bis_skin_checked="1">Trang cá nhân</a>
+                        </li>
+                        <li class="nav-item d-lg-none">
+                            <a class="nav-link" href=".login.html/" bis_skin_checked="1">Đăng xuất</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <script>
+        // JavaScript để xử lý dropdown
+        document.addEventListener('DOMContentLoaded', function () {
+            const profileBtn = document.querySelector('.user-topnav-profile');
+            const dropdownMenu = document.querySelector('.dropdown-menu');
+
+            // Toggle dropdown khi click vào profile
+            profileBtn.addEventListener('click', function (e) {
+                e.preventDefault();
+                dropdownMenu.classList.toggle('show');
+            });
+
+            // Đóng dropdown khi click ra ngoài
+            document.addEventListener('click', function (e) {
+                if (!profileBtn.contains(e.target) && !dropdownMenu.contains(e.target)) {
+                    dropdownMenu.classList.remove('show');
+                }
+            });
+        });
+    </script>
+
+
+
+<div class="site-wrapper" bis_skin_checked="1">
+
+            
+
+
+
+            
+
+
+
+            
+
+
+
+            
+    <div class="site-content-wrapper" bis_skin_checked="1">
+        
+
+
+
+        
+        
+        
+        
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+        <div class="content-wrapper" bis_skin_checked="1">
+            
+            
+<div class="sm-container" bis_skin_checked="1">
+<h1 id="terms-of-use">Terms of Use</h1>
+<div class="content" bis_skin_checked="1">
+<h3 id="1.-terms">1. Terms</h3>
+<p>By accessing this website, operated by LearnEnglish, you agree to be bound by these Terms and Conditions of Use and accept responsibility for compliance with any applicable local laws. If you do not agree with any of these terms, you are prohibited from accessing this website. The materials contained on this website are protected by copyright and trademark law.</p>
+<h3 id="2.-who-can-use?">2. Who Can Use?</h3>
+<p>When people stand behind their opinions and actions, our community becomes safer and more accountable. For this reason, you must: Use the same name you use in everyday life. Provide accurate information about yourself. Create only one account (your own) and use your timeline for personal purposes. Do not share your password, grant others access to your LearnEnglish account, or transfer your account to anyone else (without our permission).</p>
+<p>We strive to make LearnEnglish widely available to everyone, but you may not use LearnEnglish if:</p>
+<ul>
+<li>You are under 13 years old.</li>
+<li>You are a convicted sex offender.</li>
+<li>We have previously disabled your account for violating our terms or policies.</li>
+<li>You are prohibited from receiving our products, services, or software under applicable laws.</li>
+</ul>
+<h3 id="3.-license-use">3. License Use</h3>
+<p>Permission is granted to temporarily download one copy of the materials on LearnEnglish’s website for personal, non-commercial transitory viewing only. This is the grant of a license, not a transfer of title, and under this license, you may not:</p>
+<ul>
+<li>Modify or copy the materials;</li>
+<li>Use the materials for any commercial purpose or public display;</li>
+<li>Attempt to reverse-engineer any software contained on LearnEnglish’s website;</li>
+<li>Remove any copyright or other proprietary notations from the materials; or<br>Transfer the materials to another person or "mirror" the materials on any other server.</li>
+</ul>
+<p><br>LearnEnglish reserves the right to terminate access upon violation of any of these restrictions. Upon termination, your right to view the materials will also be terminated, and you must destroy any downloaded materials in your possession, whether in printed or electronic format.</p>
+<h3 id="4.-disclaimer">4. Disclaimer</h3>
+<p>All the materials on LearnEnglish’s website are provided "as is." LearnEnglish makes no warranties, expressed or implied, and hereby disclaims all other warranties. Furthermore, LearnEnglish does not make any representations concerning the accuracy or reliability of the materials on its website or on any sites linked to this site.</p>
+<h3 id="5.-limitations">5. Limitations</h3>
+<p>LearnEnglish or its suppliers will not be held liable for any damages arising from the use or inability to use the materials on LearnEnglish’s website, even if LearnEnglish or an authorized representative has been notified orally or in writing of the possibility of such damage. Some jurisdictions do not allow limitations on implied warranties or liability for incidental damages, so these limitations may not apply to you.</p>
+<h3 id="6.-revisions">6. Revisions</h3>
+<p>The materials appearing on LearnEnglish’s website may include technical, typographical, or photographic errors. LearnEnglish does not warrant that any of the materials on its website are accurate, complete, or current. LearnEnglish may make changes to the materials on its website at any time without notice. LearnEnglish does not commit to updating the materials.</p>
+<h3 id="7.-links">7. Links</h3>
+<p>LearnEnglish has not reviewed all of the websites linked to its website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by LearnEnglish of the site. Use of any such linked website is at the user’s own risk.</p>
+<h3 id="8.-modifications-to-terms-of-use">8. Modifications to Terms of Use</h3>
+<p>LearnEnglish may revise these Terms of Use for its website at any time without prior notice. By using this website, you agree to be bound by the current version of these Terms and Conditions of Use.</p>
+<h3 id="9.-governing-law">9. Governing Law</h3>
+<p>Any claim related to LearnEnglish’s website shall be governed by the laws of our jurisdiction without regard to its conflict of law provisions.</p>
+</div>
+</div>
+
+            
+        </div>
+        
+    </div>
+    
+
+
+
+    
+</div>
+
+
+
+
+
+
+
+
+
+
+    <div class="footer-wrapper" bis_skin_checked="1">
+        <div class="footer-container" bis_skin_checked="1">
+            <footer>
+
+
+
+                <div class="row" bis_skin_checked="1">
+                    <div class="col-12 col-sm-12 col-md" bis_skin_checked="1">
+                        <a href="../"><img class="mb-2" src="../assets/img/Logo_LearnEnglish.svg" alt="" height="30"></a>
+                        <small class="mb-2">©</small>
+                        <div class="site-socials" style="width: 140px !important;" bis_skin_checked="1">
+                            <a target="_blank" href="https://facebook.com/" bis_skin_checked="1"><span
+                                    class="social-link fab fa-facebook-square"></span></a>
+                            <a target="_blank" href="https://instagram.com/" bis_skin_checked="1"><span
+                                    class="social-link fab fa-instagram"></span></a>
+                            <a target="_blank" href="https://twitter.com/" bis_skin_checked="1"><span
+                                    class="social-link fab fa-twitter"></span></a>
+                            <a target="_blank" href="https://youtube.com/" bis_skin_checked="1"><span
+                                    class="social-link fab fa-youtube"></span></a>
+                            <a target="_blank" href="https://www.tiktok.com" bis_skin_checked="1"><span
+                                    class="social-link fab fa-tiktok"></span></a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md" bis_skin_checked="1">
+                        <div class="footer-title" bis_skin_checked="1">Về LearnEnglish</div>
+                        <ul class="list-unstyled text-small">
+                            <li><a href="../about/" bis_skin_checked="1">Giới thiệu</a></li>
+                            <li><a href="../contact/" bis_skin_checked="1"></a></li>
+                            <li><a href="../privacy/" bis_skin_checked="1">Điều khoản bảo mật</a></li>
+                            <li><a href="../terms/" bis_skin_checked="1">Điều khoản sử dụng</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-6 col-md" bis_skin_checked="1">
+                        <div class="footer-title" bis_skin_checked="1">Tài nguyên</div>
+                        <ul class="list-unstyled text-small">
+
+                            <li><a href="../blog/" bis_skin_checked="1">Blog</a></li>
+                            <li><a href="../materials/" bis_skin_checked="1">Kho tài liệu</a></li>
+
+
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md" bis_skin_checked="1">
+                        <div class="footer-title" bis_skin_checked="1">Chính sách chung</div>
+                        <ul class="list-unstyled text-small">
+                            <li><a href="../user-guide/" bis_skin_checked="1"></a></li>
+                            <li><a href="../buying-guide/" bis_skin_checked="1"></a></li>
+
+                            <li><a href="../buying-terms/" bis_skin_checked="1">Điều khoản và Điều Kiện Giao Dịch</a></li>
+                            <li><a href="../checkout-policy" bis_skin_checked="1"></a></li>
+                                                        <li><a href="../feedback/" bis_skin_checked="1">Phản hồi, khiếu nại</a></li>
+                            <li><a href="../return-policy" bis_skin_checked="1">Chính sách chuyển đổi, hoàn hủy</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+
+                            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

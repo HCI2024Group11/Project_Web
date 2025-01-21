@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn English</title>
+    <link rel="icon" href="../assets/img/Avatar_LearnEnglish.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/f9374b778e.js" crossorigin="anonymous"></script>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        iframe {
+            border: none;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+
+<body>
+
+
+    <div class="topnav1 topnav-wrapper" bis_skin_checked="1">
+        <div class="topnav-container" bis_skin_checked="1">
+            <nav class="navbar  navbar-expand-lg">
+                <span class="navbar-brand">
+                    <a class="topnav-brand" href="../">
+                        <img class="topnav-logo" src="../assets/img/Logo_LearnEnglish.svg" alt="LearnEnglish">
+
+                    </a>
+                </span>
+                <button class="navbar-toggler pull-xs-right d-lg-none" type="button" data-toggle="collapse"
+                    data-target="#navbar-collapse">
+                    ☰
+
+                </button>
+                <div class="d-lg-block navbar-collapse justify-content-end collapse" id="navbar-collapse"
+                    bis_skin_checked="1">
+
+                    <ul class="nav">
+
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="../courses/" bis_skin_checked="1">Course</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="../skills/" bis_skin_checked="1">Skill</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="../flashcards/me/" bis_skin_checked="1">Flashcards</a>
+                        </li>
+
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="../blog/" bis_skin_checked="1">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../general-english/" bis_skin_checked="1">General English</a>
+                        </li>
+
+
+
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="../courses/activate/" bis_skin_checked="1">
+                                Kích hoạt tài khoản
+                            </a>
+                        </li>
+
+                        <li class="nav-item user-topnav dropdown d-none d-lg-block">
+                            <a class="nav-link dropdown-toggle user-topnav-profile" href="../my-account/" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" bis_skin_checked="1">
+                                <span class="account-profile-img">
+
+                                    <img src="../assets/img/user_icon.webp" alt="ChuTanTai23130280">
+
+                                </span>
+
+                            </a>
+
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" bis_skin_checked="1">
+                                <div bis_skin_checked="1">
+                                    <h6 class="dropdown-header" id="thông-báo"> Thông báo </h6>
+                                    <div id="new-notis-dropdown-content" class="jqhtml-loader dropdown-text"
+                                        data-href="../notifications/newest/" bis_skin_checked="1">
+                                        <p class="font-sm"><i>Bạn chưa có thông báo mới.</i></p>
+
+
+                                        <div class="mt-2 link font-sm" bis_skin_checked="1"><a href="../notifications/"
+                                                bis_skin_checked="1">Xem tất cả &gt;&gt;</a></div>
+                                    </div>
+                                </div>
+
+                                <div class="dropdown-divider" bis_skin_checked="1"></div>
+                                <a class="dropdown-item" href="../studyplan/" bis_skin_checked="1">Lịch học của tôi</a>
+                                <a class="dropdown-item" href="../my-account/" bis_skin_checked="1">Trang cá nhân</a>
+                                <a class="dropdown-item" href=".login.html/" bis_skin_checked="1">Đăng xuất</a>
+                            </div>
+                        </li>
+                        <li class="nav-item d-lg-none">
+                            <a class="nav-link" href="../notifications/" bis_skin_checked="1">Thông báo </a>
+                        </li>
+                        <li class="nav-item d-lg-none">
+                            <a class="nav-link" href="../studyplan/" bis_skin_checked="1">Lịch học của tôi</a>
+                        </li>
+                        <li class="nav-item d-lg-none">
+                            <a class="nav-link" href="../my-account/" bis_skin_checked="1">Trang cá nhân</a>
+                        </li>
+                        <li class="nav-item d-lg-none">
+                            <a class="nav-link" href=".login.html/" bis_skin_checked="1">Đăng xuất</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <script>
+        // JavaScript để xử lý dropdown
+        document.addEventListener('DOMContentLoaded', function () {
+            const profileBtn = document.querySelector('.user-topnav-profile');
+            const dropdownMenu = document.querySelector('.dropdown-menu');
+
+            // Toggle dropdown khi click vào profile
+            profileBtn.addEventListener('click', function (e) {
+                e.preventDefault();
+                dropdownMenu.classList.toggle('show');
+            });
+
+            // Đóng dropdown khi click ra ngoài
+            document.addEventListener('click', function (e) {
+                if (!profileBtn.contains(e.target) && !dropdownMenu.contains(e.target)) {
+                    dropdownMenu.classList.remove('show');
+                }
+            });
+        });
+    </script>
+
+
+
+<div class="site-wrapper" bis_skin_checked="1">
+
+            
+
+
+    <div class="site-wrapper" bis_skin_checked="1">
+
+            
+
+
+
+            
+
+
+
+            
+
+
+
+            
+        <div class="site-content-wrapper" bis_skin_checked="1">
+            
+
+
+
+            
+            
+            
+            
+            
+
+
+
+            
+
+
+
+            
+
+
+
+            
+            <div class="content-wrapper" bis_skin_checked="1">
+                
+                
+<div class="sm-container" bis_skin_checked="1">
+<h1 id="terms-and-conditions-of-transaction">Terms and Conditions of Transaction</h1>
+<div class="content" bis_skin_checked="1">
+    <p>The terms and conditions set forth herein constitute a binding agreement between you and A Plus Technology Co., Ltd. (“LearnEnglish” or “the Company”) regarding the registration of accounts, purchase, provision, and use of products and services, as well as after-sales services when you engage in transactions with LearnEnglish via the website  (hereinafter referred to as “Terms and Conditions”). The content of the Terms and Conditions is published on . Please read the Terms and Conditions carefully. By registering for software, courses, products, and services on the website , you confirm and accept these Terms and Conditions.</p>
+    <h2 id="1.-definitions"><strong>1. Definitions</strong></h2>
+    <p>- “LearnEnglish” or “the Company” refers to A Plus Technology Co., Ltd.</p>
+    <p>- “You” or “Learner” refers to the individual who accesses the website , registers an account, and/or purchases or uses the products and services provided by the Company.</p>
+    <h2 id="2.-introduction"><strong>2. Introduction</strong></h2>
+    <p>- A Plus Technology Co., Ltd. owns the brand, images, icons, and content displayed on this website.</p>
+    <p>-  is a website built and operated by LearnEnglish. It serves all customers who wish to purchase and use products and services provided by LearnEnglish.</p>
+    <p>- The domain name  has been legally registered for use by the Company.</p>
+    <p>- Products and services introduced and provided by LearnEnglish on the website  include learning programs, software, courses, and accompanying service packages.</p>
+    <p>- Communication between you and LearnEnglish will be conducted through the following channels: email, Fanpage Messenger, phone, and Zalo.</p>
+    <p>- For any inquiries or support, please contact: 096 369 5525.</p>
+    <p>- LearnEnglish ensures that all transactions conducted on  are transparent, public, and protect the rights of consumers.</p>
+    <p>- The transaction policy through the website  includes the following main contents:</p>
+    <p>- (a) Rights and obligations of LearnEnglish: Refer to Clause 4 of the Terms and Conditions.</p>
+    <p>- (b) Rights and obligations of the customer: Refer to Clause 5 of the Terms and Conditions.</p>
+    <h2 id="3.-validity-and-governing-law"><strong>3. Validity and Governing Law</strong></h2>
+    <p>- These Terms and Conditions take effect from the moment you register an account, purchase, or use the products and services provided by LearnEnglish.</p>
+    <p>- By registering an account and using the products, services, materials, or content on LearnEnglish’s website, learners agree to comply with these terms, take legal responsibility for their actions, and commit to adhering to all relevant regulations.</p>
+    <p>- These Terms and Conditions are governed and interpreted in accordance with the laws of Vietnam.</p>
+    <p>- LearnEnglish reserves the right to modify these Terms and Conditions at any time by publishing updates on the website .</p>
+    <p>- Any issues arising from transactions on  between LearnEnglish and customers not covered by these Terms and Conditions will be governed by Vietnamese law.</p>
+    <h2 id="4.-rights-and-obligations-of-LearnEnglish"><strong>4. Rights and Obligations of LearnEnglish</strong></h2>
+    <p>- Provide complete information about each specific product or service.</p>
+    <p>- Deliver the exact products or services that the customer has selected.</p>
+    <p>- Fully advise customers on information related to products and services, including pricing, transaction terms, payment methods, after-sales services, and other relevant requirements.</p>
+    <p>- Guide customers on how to use products and services after purchase and throughout the usage period.</p>
+    <p>- Implement a customer care policy after customers purchase products or services.</p>
+    <p>- Ensure that all products listed on the website meet the standards set by LearnEnglish and comply with legal regulations, excluding prohibited items.</p>
+    <p>- Not transfer or assign rights and obligations under these Terms and Conditions to any third party without the customer’s consent.</p>
+    <p>- Comply with the provisions of these Terms and Conditions.</p>
+    <p>- Require customers to provide complete information regarding their needs, name, address, phone number, and other related details to facilitate the provision of products and services.</p>
+    <h2 id="5.-rights-and-obligations-of-the-customer"><strong>5. Rights and Obligations of the Customer</strong></h2>
+    <p>- Provide complete information about your needs, purposes, and goals, as well as any other necessary conditions, to allow LearnEnglish’s business team to recommend the most suitable products and services.</p>
+    <p>- Register to use products and services through the account you create on LearnEnglish’s website or other official tools provided by LearnEnglish.</p>
+    <p>- Ensure that all transactions performed through your account are executed by you or your authorized representative and acknowledge the legal binding of all transactions conducted through this account, including but not limited to purchases, service requests, and payments.</p>
+    <p>- Do not rent, lend, or transfer your account to any third party without LearnEnglish’s approval.</p>
+    <p>- Maintain the confidentiality of your account information. LearnEnglish is not responsible for any issues or risks arising from you disclosing account information to others.</p>
+    <p>- You may use your account on up to three devices but can only access the software/courses on one device at a time. If LearnEnglish detects login attempts exceeding the supported device limit, the account will be temporarily locked after notifications.</p>
+    <p>- Fully cooperate with LearnEnglish in resolving any issues based on mutual agreement and voluntary cooperation.</p>
+    <p>- Provide LearnEnglish with complete information, including name, address, and phone number, for product delivery or region-specific advice.</p>
+    <p>- Pay LearnEnglish in full as stipulated in these Terms and Conditions.</p>
+    <p>- Use LearnEnglish’s products and services according to the specified rules. LearnEnglish may monitor your usage to ensure compliance.</p>
+    <h2 id="6.-program-pricing-and-service-fees"><strong>6. Program Pricing and Service Fees</strong></h2>
+    <p>- Prices for programs, software, courses, materials, and service package fees will be publicly announced on the website .</p>
+    <p>- If service fees are calculated weekly, monthly, quarterly, or annually, LearnEnglish will not refund fees if you terminate the service prematurely.</p>
+    <p>- LearnEnglish may offer certain free services at its discretion.</p>
+    <p>- LearnEnglish will provide invoices following Vietnamese regulations on electronic invoices for goods and services.</p>
+    <h2 id="7.-trademark-and-copyright"><strong>7. Trademark and Copyright</strong></h2>
+    <p>- It is strictly prohibited to use any content on this website for commercial purposes or on behalf of third parties without written permission from LearnEnglish.</p>
+    <p>- Intellectual property rights for all information, designs, text, graphics, software, images, videos, audio, source code, and proprietary software on  are owned by the Company.</p>
+    <p>- Legal action will be taken if violations occur.</p>
+    <h2 id="8.-policies-and-applicable-terms"><strong>8. Policies and Applicable Terms</strong></h2>
+    <p>- Compliance with service-specific rules, terms, and supplementary guidelines published on the website.</p>
+    <p>- LearnEnglish reserves the right to amend these terms as necessary by posting updates on the website.</p>
+    <h2 id="9.-account-regulations"><strong>9. Account Regulations</strong></h2>
+    <p>- Account creation requires Gmail or Facebook connection via secure OAuth2 authentication.</p>
+    <h2 id="10.-general-provisions"><strong>10. General Provisions</strong></h2>
+    <p>- Online accounts are activated immediately after payment confirmation.</p>
+    <p>- Accounts are non-transferable and for single-user access only.</p>
+    <p>- Service access will remain uninterrupted during the subscription period.</p>
+</div>
+</div>
+
+                
+            </div>
+            
+        </div>
+        
+
+
+
+        
+    </div>
+
+
+
+
+
+
+
+
+    <div class="footer-wrapper" bis_skin_checked="1">
+        <div class="footer-container" bis_skin_checked="1">
+            <footer>
+
+
+
+                <div class="row" bis_skin_checked="1">
+                    <div class="col-12 col-sm-12 col-md" bis_skin_checked="1">
+                        <a href="../"><img class="mb-2" src="../assets/img/Logo_LearnEnglish.svg" alt="" height="30"></a>
+                        <small class="mb-2">©</small>
+                        <div class="site-socials" style="width: 140px !important;" bis_skin_checked="1">
+                            <a target="_blank" href="https://facebook.com/" bis_skin_checked="1"><span
+                                    class="social-link fab fa-facebook-square"></span></a>
+                            <a target="_blank" href="https://instagram.com/" bis_skin_checked="1"><span
+                                    class="social-link fab fa-instagram"></span></a>
+                            <a target="_blank" href="https://twitter.com/" bis_skin_checked="1"><span
+                                    class="social-link fab fa-twitter"></span></a>
+                            <a target="_blank" href="https://youtube.com/" bis_skin_checked="1"><span
+                                    class="social-link fab fa-youtube"></span></a>
+                            <a target="_blank" href="https://www.tiktok.com" bis_skin_checked="1"><span
+                                    class="social-link fab fa-tiktok"></span></a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md" bis_skin_checked="1">
+                        <div class="footer-title" bis_skin_checked="1">Về LearnEnglish</div>
+                        <ul class="list-unstyled text-small">
+                            <li><a href="../about/" bis_skin_checked="1">Giới thiệu</a></li>
+                            <li><a href="../contact/" bis_skin_checked="1"></a></li>
+                            <li><a href="../privacy/" bis_skin_checked="1">Điều khoản bảo mật</a></li>
+                            <li><a href="../terms/" bis_skin_checked="1">Điều khoản sử dụng</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-6 col-md" bis_skin_checked="1">
+                        <div class="footer-title" bis_skin_checked="1">Tài nguyên</div>
+                        <ul class="list-unstyled text-small">
+
+                            <li><a href="../posts/" bis_skin_checked="1">Blog</a></li>
+                            <li><a href="../materials/" bis_skin_checked="1">Kho tài liệu</a></li>
+
+
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md" bis_skin_checked="1">
+                        <div class="footer-title" bis_skin_checked="1">Chính sách chung</div>
+                        <ul class="list-unstyled text-small">
+                            <li><a href="../user-guide/" bis_skin_checked="1"></a></li>
+                            <li><a href="../buying-guide/" bis_skin_checked="1"></a></li>
+
+                            <li><a href="../buying-terms/" bis_skin_checked="1">Điều khoản và Điều Kiện Giao Dịch</a></li>
+                            <li><a href="../checkout-policy" bis_skin_checked="1"></a></li>
+                                                        <li><a href="../feedback/" bis_skin_checked="1">Phản hồi, khiếu nại</a></li>
+                            <li><a href="../return-policy" bis_skin_checked="1">Chính sách chuyển đổi, hoàn hủy</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+
+                            </footer>
+        </div>
+    </div>
+</body>
+
+</html>
