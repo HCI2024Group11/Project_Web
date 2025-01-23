@@ -17,18 +17,141 @@
       crossorigin="anonymous"
     ></script>
     <style>
-      body,
-      html {
-        margin: 0;
-        padding: 0;
-        height: 100%;
-      }
+      /* Định dạng cơ bản */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
 
-      iframe {
-        border: none;
-        width: 100%;
-        height: 100%;
-      }
+.container {
+    width: 80%;
+    margin: auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.header-links {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+.header-links a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+.header-links .stop-link {
+    color: #FF4136;
+}
+
+.note {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 10px;
+}
+
+/* Flashcard */
+#flashcard-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.flashcard {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.flashcard img {
+  width: 500px; /* Đặt chiều rộng cố định */
+    height: 350px; /* Đặt chiều cao cố định */
+    object-fit: cover; /* Cắt ảnh nếu không vừa */
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.flashcard h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.flashcard .pronunciation {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.flashcard .audio-btn {
+    cursor: pointer;
+    color: #007BFF;
+}
+
+.flashcard .audio-btn:hover {
+    color: #0056b3;
+}
+
+.review-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.review-buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.review-buttons .easy {
+    background-color: #2ECC40;
+    color: white;
+}
+
+.review-buttons .medium {
+    background-color: #FFDC00;
+    color: white;
+}
+
+.review-buttons .hard {
+    background-color: #FF4136;
+    color: white;
+}
+
+.review-buttons .remove {
+    background-color: #007BFF;
+    color: white;
+}
+
+
+
     </style>
   </head>
 
@@ -207,21 +330,85 @@
       });
     </script>
 
-    <br />
-    <br />
-    <br />
-    <iframe
-      id="content-frame"
-      src="../../../../skills/writing/a2-writing/personal-profile/personal-profile.html"
-      style="width: 100%; border: none; overflow: hidden"
-    ></iframe>
-    <script>
-      const iframe = document.getElementById("content-frame");
-      iframe.onload = function () {
-        iframe.style.height =
-          iframe.contentWindow.document.body.scrollHeight + "px";
-      };
-    </script>
+
+<div class="site-wrapper" bis_skin_checked="1">
+
+            
+
+            
+
+
+    <div class="topnav1 topnav-wrapper" bis_skin_checked="1">
+        <div class="topnav-container" bis_skin_checked="1">
+            
+        </div>
+    </div>
+    
+                
+    
+                
+                <div class="site-content-wrapper" bis_skin_checked="1">
+                    
+    
+                    
+    
+                    
+                    
+                    
+                    
+    
+                    
+    
+                    
+    <div class="content-header pb-0" bis_skin_checked="1">
+        <div class="sm-container" bis_skin_checked="1">
+            <h1 id="luyện-tập-từ-vựng-tiếng-anh-văn-phòng">Luyện tập: Từ vựng tiếng Anh văn phòng</h1>
+        </div>
+    </div>
+    
+    
+                    
+                    <div class="content-wrapper" bis_skin_checked="1">
+                        
+                        
+    <div class="review-term-wrapper" bis_skin_checked="1">
+        <div class="sm-container pb-0" bis_skin_checked="1">
+            <div bis_skin_checked="1">
+                <a href="../../../lists/8683/" bis_skin_checked="1">&lt;&lt; Xem tất cả</a>
+                
+                <span class="text-danger link jqaction-link float-right">
+                  <span class="far fa-calendar-times"></span>
+                  <a href="../../../discover/" >Dừng học list từ này</a>
+                    
+                    
+                </span>
+            </div>
+        </div>
+        
+        <main>
+          <div id="flashcard-container">
+              <!-- Flashcard sẽ được render tại đây -->
+          </div>
+
+          <div class="review-buttons">
+              <button class="easy">Dễ</button>
+              <button class="medium">Trung bình</button>
+              <button class="hard">Khó</button>
+              <button class="remove">Đã biết, loại khỏi danh sách ôn tập</button>
+          </div>
+      </main>
+    </div>
+    
+                        
+                    </div>
+                    
+                </div>
+                
+    
+                
+            </div>
+
+
 
     <div class="footer-wrapper" bis_skin_checked="1">
       <div class="footer-container" bis_skin_checked="1">
@@ -352,4 +539,69 @@
       </div>
     </div>
   </body>
+  <script>
+   let currentIndex = 0;
+
+// Hàm render flashcard
+function loadFlashcard(index) {
+    const flashcardContainer = document.getElementById("flashcard-container");
+    const card = vocabulary[index];
+
+    if (!card) {
+        flashcardContainer.innerHTML = "<p>Không có từ vựng nào để hiển thị!</p>";
+        return;
+    }
+
+    flashcardContainer.innerHTML = `
+        <div class="flashcard">
+            <img src="${card.image}" alt="${card.word}">
+            <h2>${card.word}</h2>
+            <div class="pronunciation">
+                <span class="jq-audio-player">
+                    <audio id="audioUK-${index}" preload="auto">
+                        <source src="${card.audioUK}" type="audio/mpeg">
+                    </audio>
+                    <span class="audio-btn" onclick="document.getElementById('audioUK-${index}').play()">
+                        <i class="fas fa-volume-up"></i> UK
+                    </span>
+                </span>
+                <span class="jq-audio-player">
+                    <audio id="audioUS-${index}" preload="auto">
+                        <source src="${card.audioUS}" type="audio/mpeg">
+                    </audio>
+                    <span class="audio-btn" onclick="document.getElementById('audioUS-${index}').play()">
+                        <i class="fas fa-volume-up"></i> US
+                    </span>
+                </span>
+            </div>
+            <p class="type">(${card.type})</p>
+            <p class="phonetic">${card.pronunciation}</p>
+            <p class="definition">${card.definition}</p>
+        </div>
+    `;
+}
+
+// Hàm chuyển sang từ tiếp theo
+function nextCard() {
+    currentIndex = (currentIndex + 1) % vocabulary.length;
+    loadFlashcard(currentIndex);
+}
+
+// Gắn sự kiện cho các nút
+function setupEventListeners() {
+    const buttons = document.querySelectorAll(".review-buttons button");
+    buttons.forEach(button => {
+        button.addEventListener("click", nextCard);
+    });
+}
+
+// Khởi động trang
+document.addEventListener("DOMContentLoaded", () => {
+    loadFlashcard(currentIndex);
+    setupEventListeners();
+});
+
+  </script>
+
+<script src="../../../../assets/js/dataflashcard.js"></script>
 </html>

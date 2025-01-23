@@ -46,15 +46,13 @@ const pages = {
     
     
         <div class="flashcard-play" bis_skin_checked="1"id="flashcard-play"s>
-            <a class="btn-block btn btn-sky" href="/flashcards/lists/1835/review/" bis_skin_checked="1">
-                Luyện tập flashcards
-            </a>
+            <a class="btn-block btn btn-sky" href="/flashcards/lists/1835/review/" bis_skin_checked="1">Practice flashcards</a>
         </div>
         <br>
         <div bis_skin_checked="1"id="random-button">
             <a href="/flashcards/lists/1835/random/" bis_skin_checked="1">
                 <span class="fa fa-random"></span>
-                Xem ngẫu nhiên
+                Random review
             </a>
             
         </div>
@@ -65,7 +63,7 @@ const pages = {
     
         <br>
     
-        <p>List có 536 từ</p>
+        <p>The list contains 536 words.</p>
         
         
         <div class="termlist-item contentblock" bis_skin_checked="1">
@@ -8530,7 +8528,7 @@ const pages = {
             <div bis_skin_checked="1" id="random-button">
                 <a href="javascript:void(0);" bis_skin_checked="1">
                   <span class="fa fa-random"></span>
-                  Xem ngẫu nhiên
+                  Random review
                 </a>
               </div>
         
@@ -8542,7 +8540,7 @@ const pages = {
         
             <br>
         
-            <p>List có 536 từ</p>
+            <p>The list contains 536 words.</p>
             
             
             <div class="termlist-item contentblock" bis_skin_checked="1">
@@ -17173,7 +17171,7 @@ const pages = {
             <div bis_skin_checked="1"id="random-button">
                 <a href="" bis_skin_checked="1">
                     <span class="fa fa-random"></span>
-                    Xem ngẫu nhiên
+                    Random review
                 </a>
                 
                 
@@ -17188,7 +17186,7 @@ const pages = {
         
             <br>
         
-            <p>List có 536 từ</p>
+            <p>The list contains 536 words.</p>
             
             
             <div class="termlist-item contentblock" bis_skin_checked="1">
@@ -25819,7 +25817,7 @@ const pages = {
                 <div bis_skin_checked="1" id="random-button">
                     <a href="/flashcards/lists/1835/random/" bis_skin_checked="1">
                         <span class="fa fa-random"></span>
-                        Xem ngẫu nhiên
+                        Random review
                     </a>
 
 
@@ -25834,7 +25832,7 @@ const pages = {
 
                 <br>
 
-                <p>List có 536 từ</p>
+                <p>The list contains 536 words.</p>
 
 
                 <div class="termlist-item contentblock" bis_skin_checked="1">
@@ -35267,7 +35265,7 @@ const pages = {
             <div bis_skin_checked="1"id="random-button">
                 <a href="/flashcards/lists/1835/random/" bis_skin_checked="1">
                     <span class="fa fa-random"></span>
-                    Xem ngẫu nhiên
+                    Random review
                 </a>
                 
                 
@@ -35282,7 +35280,7 @@ const pages = {
         
             <br>
         
-            <p>List có 536 từ</p>
+            <p>The list contains 536 words.</p>
             
             
             <div class="termlist-item contentblock" bis_skin_checked="1">
