@@ -46,17 +46,10 @@ const pages = {
     
     
         <div class="flashcard-play" bis_skin_checked="1"id="flashcard-play"s>
-            <a class="btn-block btn btn-sky" href="/flashcards/lists/1835/review/" bis_skin_checked="1">Practice flashcards</a>
+            <a class="btn-block btn btn-sky" href="../../../flashcards/lists/8683/review/" bis_skin_checked="1">Practice flashcards</a>
         </div>
         <br>
-        <div bis_skin_checked="1"id="random-button">
-            <a href="/flashcards/lists/1835/random/" bis_skin_checked="1">
-                <span class="fa fa-random"></span>
-                Random review
-            </a>
-            
-        </div>
-    
+        
         
     
     
@@ -8519,18 +8512,11 @@ const pages = {
         
         
         
-            <div class="flashcard-play" bis_skin_checked="1" id="flashcard-play">
-                <a class="btn-block btn btn-sky" href="javascript:void(0);" bis_skin_checked="1">
-                    Luyện tập flashcards
-                </a>
-            </div>
+            <div class="flashcard-play" bis_skin_checked="1"id="flashcard-play"s>
+            <a class="btn-block btn btn-sky" href="../../../flashcards/lists/8683/review/" bis_skin_checked="1">Practice flashcards</a>
+        </div>
             <br>
-            <div bis_skin_checked="1" id="random-button">
-                <a href="javascript:void(0);" bis_skin_checked="1">
-                  <span class="fa fa-random"></span>
-                  Random review
-                </a>
-              </div>
+           
         
             
         
@@ -8538,7 +8524,6 @@ const pages = {
         
         
         
-            <br>
         
             <p>The list contains 536 words.</p>
             
@@ -17162,21 +17147,11 @@ const pages = {
         
         
         
-            <div class="flashcard-play" bis_skin_checked="1"id="flashcard-play">
-                <a class="btn-block btn btn-sky" href="" bis_skin_checked="1">
-                    Luyện tập flashcards
-                </a>
-            </div>
+            <div class="flashcard-play" bis_skin_checked="1"id="flashcard-play"s>
+            <a class="btn-block btn btn-sky" href="../../../flashcards/lists/8683/review/" bis_skin_checked="1">Practice flashcards</a>
+        </div>
             <br>
-            <div bis_skin_checked="1"id="random-button">
-                <a href="" bis_skin_checked="1">
-                    <span class="fa fa-random"></span>
-                    Random review
-                </a>
-                
-                
-                
-            </div>
+            
         
             
         
@@ -25809,20 +25784,12 @@ const pages = {
 
 
                 <div class="flashcard-play" bis_skin_checked="1" id="flashcard-play">
-                    <a class="btn-block btn btn-sky" href="/flashcards/lists/1835/review/" bis_skin_checked="1">
+                    <a class="btn-block btn btn-sky" href="../../../flashcards/lists/8683/review/" bis_skin_checked="1">
                         Luyện tập flashcards
                     </a>
                 </div>
                 <br>
-                <div bis_skin_checked="1" id="random-button">
-                    <a href="/flashcards/lists/1835/random/" bis_skin_checked="1">
-                        <span class="fa fa-random"></span>
-                        Random review
-                    </a>
-
-
-
-                </div>
+                
 
 
 
@@ -35257,20 +35224,12 @@ const pages = {
         
         
             <div class="flashcard-play" bis_skin_checked="1"id="flashcard-play">
-                <a class="btn-block btn btn-sky" href="/flashcards/lists/1835/review/" bis_skin_checked="1">
+                <a class="btn-block btn btn-sky" href="../../../flashcards/lists/8683/review/" bis_skin_checked="1">
                     Luyện tập flashcards
                 </a>
             </div>
             <br>
-            <div bis_skin_checked="1"id="random-button">
-                <a href="/flashcards/lists/1835/random/" bis_skin_checked="1">
-                    <span class="fa fa-random"></span>
-                    Random review
-                </a>
-                
-                
-                
-            </div>
+            
         
             
         
