@@ -26,7 +26,7 @@ const pages = {
             <h1 id="flashcards
     ------------từ-vựng-tiếng-anh-văn-phòng">
                 Flashcards:
-                Từ vựng tiếng Anh
+                English vocabulary
                 
             </h1>
             
@@ -8493,7 +8493,7 @@ const pages = {
                 <h1 id="flashcards
         ------------từ-vựng-tiếng-anh-văn-phòng">
                     Flashcards:
-                    Từ vựng tiếng Anh
+                    English vocabulary
                     
                 </h1>
                 
@@ -17128,7 +17128,7 @@ const pages = {
                 <h1 id="flashcards
         ------------từ-vựng-tiếng-anh-văn-phòng">
                     Flashcards:
-                    Từ vựng tiếng Anh
+                    English vocabulary
                     
                 </h1>
                 
@@ -25764,7 +25764,7 @@ const pages = {
                 <h1 id="flashcards
         ------------từ-vựng-tiếng-anh-văn-phòng">
                     Flashcards:
-                    Từ vựng tiếng Anh
+                    English vocabulary
 
                 </h1>
 
@@ -35204,7 +35204,7 @@ const pages = {
                 <h1 id="flashcards
         ------------từ-vựng-tiếng-anh-văn-phòng">
                     Flashcards:
-                    Từ vựng tiếng Anh
+                    English vocabulary
                     
                 </h1>
                 
